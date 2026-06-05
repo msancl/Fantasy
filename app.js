@@ -42,3 +42,18 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
 window.addEventListener("hashchange", showPage);
 showPage();
+
+document.querySelectorAll("[data-division]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const division = button.dataset.division;
+    const section = button.closest(".page-section");
+
+    section.querySelectorAll("[data-division]").forEach((item) => {
+      item.classList.toggle("is-active", item.dataset.division === division);
+    });
+
+    section.querySelectorAll("[data-division-panel]").forEach((panel) => {
+      panel.hidden = panel.dataset.divisionPanel !== division;
+    });
+  });
+});

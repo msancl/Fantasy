@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=16" />
-    <script src="app.js?v=2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=18" />
+    <script src="app.js?v=4" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -48,12 +48,62 @@
 
       <section id="equipes" class="panel page-section" data-page="equipes" hidden>
         <h2>Équipes</h2>
-        <p>La page Équipes arrive bientôt.</p>
+        <nav class="sub-nav" aria-label="Divisions des équipes">
+          <button class="sub-nav-button is-active" type="button" data-division="d1">
+            D1
+          </button>
+          <button class="sub-nav-button" type="button" data-division="d2a">
+            D2A
+          </button>
+          <button class="sub-nav-button" type="button" data-division="d2b">
+            D2B
+          </button>
+        </nav>
+
+        <div class="division-panel" data-division-panel="d1">
+          <h3>D1</h3>
+          <p>Les équipes de D1 arrivent bientôt.</p>
+        </div>
+
+        <div class="division-panel" data-division-panel="d2a" hidden>
+          <h3>D2A</h3>
+          <p>Les équipes de D2A arrivent bientôt.</p>
+        </div>
+
+        <div class="division-panel" data-division-panel="d2b" hidden>
+          <h3>D2B</h3>
+          <p>Les équipes de D2B arrivent bientôt.</p>
+        </div>
       </section>
 
       <section id="classements" class="panel page-section" data-page="classements" hidden>
         <h2>Classements</h2>
-        <p>La page Classements arrive bientôt.</p>
+        <nav class="sub-nav" aria-label="Divisions des classements">
+          <button class="sub-nav-button is-active" type="button" data-division="standings-d1">
+            D1
+          </button>
+          <button class="sub-nav-button" type="button" data-division="standings-d2a">
+            D2A
+          </button>
+          <button class="sub-nav-button" type="button" data-division="standings-d2b">
+            D2B
+          </button>
+        </nav>
+
+        <div class="division-panel" data-division-panel="standings-d1">
+          <h3>D1</h3>
+          <p>Le classement de D1 arrive bientôt.</p>
+        </div>
+
+        <div class="division-panel" data-division-panel="standings-d2a" hidden>
+          <h3>D2A</h3>
+          <p>Le classement de D2A arrive bientôt.</p>
+        </div>
+
+        <div class="division-panel" data-division-panel="standings-d2b" hidden>
+          <h3>D2B</h3>
+          <p>Le classement de D2B arrive bientôt.</p>
+        </div>
       </section>
 
       <section id="coupes" class="panel page-section" data-page="coupes" hidden>

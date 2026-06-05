@@ -110,7 +110,8 @@ p {
   backdrop-filter: blur(14px);
 }
 
-.top-nav a {
+.top-nav a,
+.sub-nav-button {
   display: inline-flex;
   min-height: 50px;
   align-items: center;
@@ -134,8 +135,13 @@ p {
     background 160ms ease;
 }
 
+.sub-nav-button {
+  cursor: pointer;
+}
+
 .top-nav a.is-active,
-.top-nav a[aria-current="page"] {
+.top-nav a[aria-current="page"],
+.sub-nav-button.is-active {
   border-color: #10b981;
   color: #ffffff;
   background:
@@ -167,6 +173,33 @@ p {
 
 .page-section[hidden] {
   display: none;
+}
+
+.sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 24px;
+}
+
+.division-panel {
+  border: 1px solid rgba(167, 184, 209, 0.12);
+  border-radius: 8px;
+  padding: 20px;
+  background: rgba(5, 8, 13, 0.36);
+}
+
+.division-panel[hidden] {
+  display: none;
+}
+
+.division-panel h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .panel h2 {
