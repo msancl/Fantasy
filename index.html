@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=29" />
-    <script src="app.js?v=4" defer></script>
+    <link rel="stylesheet" href="styles.css?v=42" />
+    <script src="app.js?v=12" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -63,18 +63,39 @@
         <div class="division-panel" data-division-panel="d1">
           <h3>D1</h3>
           <article class="team-card">
-            <header class="team-card-header">
+            <header
+              class="team-card-header team-card-summary team-details-toggle"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
               <div>
                 <h4 class="team-name">
                   <span class="team-initial">S</span>AN
                   <span class="team-initial">M</span>ATEO
                 </h4>
               </div>
+              <div class="team-card-actions">
+                <div class="team-rank" aria-label="Position et points au classement">
+                  <strong>1er · 484 points</strong>
+                </div>
+                <button class="team-details-toggle-hidden" type="button" aria-expanded="false">
+                  Détails
+                </button>
+              </div>
             </header>
 
             <div class="team-card-grid">
               <section class="team-card-block team-lineup-block">
-                <span>Joueurs</span>
+                <div class="block-title-row">
+                  <span>Joueurs</span>
+                  <div class="days-actions">
+                    <button class="days-toggle" type="button" aria-expanded="false">
+                      Voir journées
+                    </button>
+                    <div class="day-range-nav" aria-label="Périodes de journées"></div>
+                  </div>
+                </div>
                 <div class="squad-board" aria-label="Composition de l'équipe">
                   <div class="player-card player-table-head" aria-hidden="true">
                     <div></div>
@@ -84,7 +105,14 @@
                     <div>Buts</div>
                     <div>Assists</div>
                     <div>Points</div>
-                    <div>Journées</div>
+                    <div class="day-cell">J1</div>
+                    <div class="day-cell">J2</div>
+                    <div class="day-cell">J3</div>
+                    <div class="day-cell">J4</div>
+                    <div class="day-cell">J5</div>
+                    <div class="day-cell">J6</div>
+                    <div class="day-cell">J7</div>
+                    <div class="day-cell">J8</div>
                   </div>
                   <article class="player-card pos-gk">
                     <img src="assets/FRA.png" alt="" />
@@ -97,10 +125,14 @@
                     <div class="player-stat">0</div>
                     <div class="player-stat">1</div>
                     <div class="player-stat">42</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>5</i><b>J2</b><i>7</i><b>J3</b><i>4</i><b>J4</b><i>6</i><b>J5</b><i>3</i><b>J6</b><i>8</i><b>J7</b><i>5</i><b>J8</b><i>9</i></div>
-                    </details>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">3</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-def">
                     <img src="assets/BRA.png" alt="" />
@@ -113,10 +145,14 @@
                     <div class="player-stat">1</div>
                     <div class="player-stat">0</div>
                     <div class="player-stat">38</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>4</i><b>J2</b><i>6</i><b>J3</b><i>5</i><b>J4</b><i>4</i><b>J5</b><i>7</i><b>J6</b><i>3</i><b>J7</b><i>4</i><b>J8</b><i>5</i></div>
-                    </details>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">3</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">5</div>
                   </article>
                   <article class="player-card pos-def">
                     <img src="assets/ARG.png" alt="" />
@@ -129,10 +165,14 @@
                     <div class="player-stat">0</div>
                     <div class="player-stat">2</div>
                     <div class="player-stat">35</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i class="inactive">-</i><b>J2</b><i class="inactive">-</i><b>J3</b><i class="inactive">-</i><b>J4</b><i class="inactive">-</i><b>J5</b><i>8</i><b>J6</b><i>7</i><b>J7</b><i>9</i><b>J8</b><i>11</i></div>
-                    </details>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">9</div>
+                    <div class="day-cell">11</div>
                   </article>
                   <article class="player-card pos-def">
                     <img src="assets/ENG.png" alt="" />
@@ -145,10 +185,14 @@
                     <div class="player-stat">0</div>
                     <div class="player-stat">1</div>
                     <div class="player-stat">31</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>3</i><b>J2</b><i>4</i><b>J3</b><i>2</i><b>J4</b><i>5</i><b>J5</b><i>4</i><b>J6</b><i>3</i><b>J7</b><i>5</i><b>J8</b><i>4</i></div>
-                    </details>
+                    <div class="day-cell">3</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">2</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">3</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">4</div>
                   </article>
                   <article class="player-card pos-mid">
                     <img src="assets/ESP.png" alt="" />
@@ -161,10 +205,14 @@
                     <div class="player-stat">2</div>
                     <div class="player-stat">3</div>
                     <div class="player-stat">51</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>6</i><b>J2</b><i>8</i><b>J3</b><i>7</i><b>J4</b><i>5</i><b>J5</b><i>9</i><b>J6</b><i>6</i><b>J7</b><i>7</i><b>J8</b><i>8</i></div>
-                    </details>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">9</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">8</div>
                   </article>
                   <article class="player-card pos-mid">
                     <img src="assets/POR.png" alt="" />
@@ -177,10 +225,14 @@
                     <div class="player-stat">1</div>
                     <div class="player-stat">4</div>
                     <div class="player-stat">47</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>4</i><b>J2</b><i>7</i><b>J3</b><i>6</i><b>J4</b><i>5</i><b>J5</b><i>7</i><b>J6</b><i>5</i><b>J7</b><i>4</i><b>J8</b><i>9</i></div>
-                    </details>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-mid">
                     <img src="assets/GER.png" alt="" />
@@ -193,10 +245,14 @@
                     <div class="player-stat">2</div>
                     <div class="player-stat">1</div>
                     <div class="player-stat">44</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>5</i><b>J2</b><i>6</i><b>J3</b><i>4</i><b>J4</b><i>7</i><b>J5</b><i>5</i><b>J6</b><i>6</i><b>J7</b><i>4</i><b>J8</b><i>7</i></div>
-                    </details>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">4</div>
+                    <div class="day-cell">7</div>
                   </article>
                   <article class="player-card pos-att">
                     <img src="assets/NED.png" alt="" />
@@ -209,10 +265,14 @@
                     <div class="player-stat">4</div>
                     <div class="player-stat">2</div>
                     <div class="player-stat">62</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>8</i><b>J2</b><i>9</i><b>J3</b><i>7</i><b>J4</b><i>6</i><b>J5</b><i>10</i><b>J6</b><i>8</i><b>J7</b><i>7</i><b>J8</b><i>9</i></div>
-                    </details>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">9</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">10</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-att">
                     <img src="assets/USA.png" alt="" />
@@ -225,10 +285,14 @@
                     <div class="player-stat">3</div>
                     <div class="player-stat">2</div>
                     <div class="player-stat">56</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>7</i><b>J2</b><i>6</i><b>J3</b><i>8</i><b>J4</b><i>7</i><b>J5</b><i>6</i><b>J6</b><i>8</i><b>J7</b><i>7</i><b>J8</b><i>7</i></div>
-                    </details>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">7</div>
                   </article>
                   <article class="player-card pos-att">
                     <img src="assets/JPN.png" alt="" />
@@ -241,27 +305,49 @@
                     <div class="player-stat">3</div>
                     <div class="player-stat">1</div>
                     <div class="player-stat">49</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>6</i><b>J2</b><i>5</i><b>J3</b><i>7</i><b>J4</b><i>6</i><b>J5</b><i>5</i><b>J6</b><i>7</i><b>J7</b><i>6</i><b>J8</b><i>8</i></div>
-                    </details>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">5</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">8</div>
                   </article>
-                  <article class="player-card pos-rem">
+                  <article class="player-card pos-rem is-replaced">
                     <img src="assets/MOR.png" alt="" />
                     <div class="player-main">
                       <strong>Nayef Aguerd</strong>
-                      <small>Maroc</small>
+                      <small>Maroc · Remplacé J5</small>
                     </div>
                     <div class="player-position">REM</div>
                     <div class="player-stat">4</div>
                     <div class="player-stat">1</div>
                     <div class="player-stat">0</div>
                     <div class="player-stat">29</div>
-                    <details class="player-days">
-                      <summary>Voir</summary>
-                      <div class="day-strip"><b>J1</b><i>8</i><b>J2</b><i>7</i><b>J3</b><i>6</i><b>J4</b><i>8</i><b>J5</b><i class="inactive">-</i><b>J6</b><i class="inactive">-</i><b>J7</b><i class="inactive">-</i><b>J8</b><i class="inactive">-</i></div>
-                    </details>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell">7</div>
+                    <div class="day-cell">6</div>
+                    <div class="day-cell">8</div>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell inactive">-</div>
+                    <div class="day-cell inactive">-</div>
                   </article>
+                </div>
+                <div class="team-totals" aria-label="Totaux de San Mateo">
+                  <div>
+                    <span>Total points</span>
+                    <strong>484</strong>
+                  </div>
+                  <div>
+                    <span>Total buts</span>
+                    <strong>17</strong>
+                  </div>
+                  <div>
+                    <span>Total assists</span>
+                    <strong>17</strong>
+                  </div>
                 </div>
               </section>
             </div>
