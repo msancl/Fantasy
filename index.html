@@ -4,15 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=42" />
-    <script src="app.js?v=12" defer></script>
+    <link rel="stylesheet" href="styles.css?v=53" />
+    <script src="app.js?v=16" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="site-header-inner">
         <div>
           <h1>Fantasy 26-27</h1>
-          <p>Mode Coupe du Monde</p>
         </div>
         <div class="trophy-mark" aria-label="Trophée Coupe du Monde">
           <img
@@ -49,7 +48,7 @@
       <section id="equipes" class="panel page-section" data-page="equipes" hidden>
         <h2>Équipes</h2>
         <nav class="sub-nav" aria-label="Divisions des équipes">
-          <button class="sub-nav-button is-active" type="button" data-division="d1">
+          <button class="sub-nav-button" type="button" data-division="d1">
             D1
           </button>
           <button class="sub-nav-button" type="button" data-division="d2a">
@@ -58,11 +57,23 @@
           <button class="sub-nav-button" type="button" data-division="d2b">
             D2B
           </button>
+          <button
+            class="sub-nav-button is-active"
+            type="button"
+            data-division="world-cup"
+          >
+            Coupe du Monde
+          </button>
         </nav>
 
-        <div class="division-panel" data-division-panel="d1">
+        <div class="division-panel" data-division-panel="d1" hidden>
           <h3>D1</h3>
-          <article class="team-card">
+          <p>Les équipes de D1 arrivent bientôt.</p>
+        </div>
+
+        <div class="division-panel" data-division-panel="world-cup">
+          <h3>Coupe du Monde</h3>
+          <article class="team-card team-san-mateo">
             <header
               class="team-card-header team-card-summary team-details-toggle"
               role="button"
@@ -154,11 +165,11 @@
                     <div class="day-cell">4</div>
                     <div class="day-cell">5</div>
                   </article>
-                  <article class="player-card pos-def">
+                  <article class="player-card pos-def is-substitute">
                     <img src="assets/ARG.png" alt="" />
                     <div class="player-main">
                       <strong>Gonzalo Montiel</strong>
-                      <small>Argentine</small>
+                      <small>Argentine · Entré J5</small>
                     </div>
                     <div class="player-position">DF</div>
                     <div class="player-stat">4</div>
@@ -318,7 +329,7 @@
                     <img src="assets/MOR.png" alt="" />
                     <div class="player-main">
                       <strong>Nayef Aguerd</strong>
-                      <small>Maroc · Remplacé J5</small>
+                      <small>Maroc · Sorti J5</small>
                     </div>
                     <div class="player-position">REM</div>
                     <div class="player-stat">4</div>
@@ -377,6 +388,13 @@
           <button class="sub-nav-button" type="button" data-division="standings-d2b">
             D2B
           </button>
+          <button
+            class="sub-nav-button"
+            type="button"
+            data-division="standings-world-cup"
+          >
+            Coupe du Monde
+          </button>
         </nav>
 
         <div class="division-panel" data-division-panel="standings-d1">
@@ -393,11 +411,49 @@
           <h3>D2B</h3>
           <p>Le classement de D2B arrive bientôt.</p>
         </div>
+
+        <div
+          class="division-panel"
+          data-division-panel="standings-world-cup"
+          hidden
+        >
+          <h3>Coupe du Monde</h3>
+          <p>Le classement de la Coupe du Monde arrive bientôt.</p>
+        </div>
       </section>
 
       <section id="coupes" class="panel page-section" data-page="coupes" hidden>
         <h2>Coupes</h2>
-        <p>La page Coupes arrive bientôt.</p>
+        <nav class="sub-nav" aria-label="Compétitions">
+          <button
+            class="sub-nav-button is-active"
+            type="button"
+            data-division="tumulus-cup"
+          >
+            Tumulus Cup
+          </button>
+          <button
+            class="sub-nav-button"
+            type="button"
+            data-division="champions-trophy"
+          >
+            Champions' Trophy
+          </button>
+        </nav>
+
+        <div class="division-panel" data-division-panel="tumulus-cup">
+          <h3>Tumulus Cup</h3>
+          <p>La Tumulus Cup arrive bientôt.</p>
+        </div>
+
+        <div
+          class="division-panel"
+          data-division-panel="champions-trophy"
+          hidden
+        >
+          <h3>Champions' Trophy</h3>
+          <p>Le Champions' Trophy arrive bientôt.</p>
+        </div>
       </section>
 
       <section id="joueurs" class="panel page-section" data-page="joueurs" hidden>

@@ -43,6 +43,81 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 window.addEventListener("hashchange", showPage);
 showPage();
 
+const worldCupTeams = [
+  ["San Mateo", "san-mateo", "#050505", "5, 5, 5", "#cbd5e1", "203, 213, 225", "#ffffff"],
+  ["Nikhau FC", "nikhau", "#004d98", "0, 77, 152", "#7a1632", "122, 22, 50", "#ffffff"],
+  ["Aquarela do Brasil", "aquarela", "#168447", "22, 132, 71", "#f4d03f", "244, 208, 63", "#ffffff"],
+  ["FC Brusseleir", "brusseleir", "#cf2634", "207, 38, 52", "#8b919a", "139, 145, 154", "#ffffff"],
+  ["Schtumpik Rovers", "schtumpik", "#050505", "5, 5, 5", "#f4f4f5", "244, 244, 245", "#ffffff"],
+  ["Black Chihuahua United", "black-chihuahua", "#f97316", "249, 115, 22", "#090909", "9, 9, 9", "#ffffff"],
+  ["Portloe Wanderers", "portloe", "#1769e0", "23, 105, 224", "#080b12", "8, 11, 18", "#ffffff"],
+  ["Montreal Celtic Revival", "montreal-celtic", "#c62735", "198, 39, 53", "#6f3f2b", "111, 63, 43", "#ffffff"],
+  ["Lethal Weapon Athletic", "lethal-weapon", "#f97316", "249, 115, 22", "#20c9c3", "32, 201, 195", "#081012"],
+  ["Universal Players", "universal", "#7dd3fc", "125, 211, 252", "#f5cf3d", "245, 207, 61", "#071018"],
+  ["IFK Yvonedgar", "ifk-yvonedgar", "#8f2430", "143, 36, 48", "#f1c94a", "241, 201, 74", "#ffffff"],
+  ["Alex United", "alex-united", "#d62839", "214, 40, 57", "#ffffff", "255, 255, 255", "#ffffff"],
+];
+
+function formatTeamName(name) {
+  return name
+    .toUpperCase()
+    .split(" ")
+    .map(
+      (word) =>
+        `<span class="team-initial">${word.charAt(0)}</span>${word.slice(1)}`,
+    )
+    .join(" ");
+}
+
+function createWorldCupTeams() {
+  const source = document.querySelector(".team-san-mateo");
+  if (!source || document.querySelector(".team-aquarela")) {
+    return;
+  }
+
+  let lastCard = source;
+
+  worldCupTeams.forEach((team, index) => {
+    const [name, slug, primary, primaryRgb, secondary, secondaryRgb, ink] = team;
+    const teamCard = index === 0 ? source : source.cloneNode(true);
+    const teamName = teamCard.querySelector(".team-name");
+    const rank = teamCard.querySelector(".team-rank");
+    const totals = teamCard.querySelector(".team-totals");
+    const rankLabel = index === 0 ? "1er" : `${index + 1}e`;
+
+    teamCard.className = `team-card team-branded team-${slug}`;
+    teamCard.style.setProperty("--team-primary", primary);
+    teamCard.style.setProperty("--team-primary-rgb", primaryRgb);
+    teamCard.style.setProperty("--team-secondary", secondary);
+    teamCard.style.setProperty("--team-secondary-rgb", secondaryRgb);
+    teamCard.style.setProperty("--team-ink", ink);
+
+    if (teamName) {
+      teamName.innerHTML = formatTeamName(name);
+    }
+
+    if (rank) {
+      rank.setAttribute("aria-label", "Position et points au classement");
+      rank.querySelector("strong").textContent = `${rankLabel} · 484 points`;
+    }
+
+    if (totals) {
+      totals.setAttribute("aria-label", `Totaux de ${name}`);
+    }
+
+    teamCard.querySelectorAll("[aria-expanded]").forEach((element) => {
+      element.setAttribute("aria-expanded", "false");
+    });
+
+    if (index > 0) {
+      lastCard.insertAdjacentElement("afterend", teamCard);
+      lastCard = teamCard;
+    }
+  });
+}
+
+createWorldCupTeams();
+
 document.querySelectorAll("[data-division]").forEach((button) => {
   button.addEventListener("click", () => {
     const division = button.dataset.division;
@@ -166,13 +241,17 @@ function appendTeamTotalRows() {
       }, 0),
     );
 
+    const teamName =
+      board.closest(".team-card")?.querySelector(".team-name")?.textContent
+        .replace(/\s+/g, " ")
+        .trim() || "Équipe";
     const totalRow = document.createElement("article");
     totalRow.className = "player-card team-total-row";
     totalRow.innerHTML = `
       <div class="total-marker" aria-hidden="true"></div>
       <div class="player-main">
         <strong>Totaux</strong>
-        <small>San Mateo</small>
+        <small>${teamName}</small>
       </div>
       <div class="player-position">TOT</div>
       <div class="player-stat">${totals.matches}</div>
