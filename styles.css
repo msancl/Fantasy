@@ -335,7 +335,7 @@ p {
 }
 
 .national-team-section.has-player-table.is-open .national-team-roster {
-  max-height: 520px;
+  max-height: 2400px;
   height: auto;
 }
 
@@ -755,9 +755,14 @@ p {
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 8px;
-  scrollbar-color: rgba(245, 180, 46, 0.55) rgba(255, 255, 255, 0.05);
-  scrollbar-width: thin;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+}
+
+.squad-board::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .player-card {
@@ -1667,6 +1672,58 @@ p {
     overflow: hidden;
   }
 
+  .block-title-row,
+  .national-team-roster .block-title-row {
+    width: 100%;
+    height: auto;
+    min-height: 34px;
+    max-height: none;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .days-actions,
+  .national-team-roster .days-actions {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 34px;
+    max-height: none;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    touch-action: pan-x pan-y;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .days-actions::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .days-toggle,
+  .day-range-nav,
+  .national-day-selector {
+    flex: 0 0 auto;
+  }
+
+  .day-range-nav,
+  .national-day-selector {
+    flex-wrap: nowrap;
+  }
+
+  .team-lineup-block.is-days-open .national-day-selector {
+    width: max-content;
+    max-width: none;
+    overflow: visible;
+  }
+
   .team-card-header {
     align-items: flex-start;
     flex-direction: column;
@@ -1686,24 +1743,22 @@ p {
   }
 
   .squad-board {
-    position: relative;
     width: 100%;
     max-width: 100%;
     min-width: 0;
     grid-template-columns: 1fr;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-x: contain;
-    scroll-behavior: smooth;
     touch-action: pan-x pan-y;
-    box-shadow: inset -18px 0 16px -18px rgba(245, 180, 46, 0.9);
+    scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
   }
 
   .player-card {
     min-width: 620px;
     grid-template-columns: 32px minmax(120px, 1fr) 42px 34px 34px 46px 50px repeat(8, 0);
-    overflow: visible;
+    overflow: hidden;
   }
 
   .squad-board.is-days-open .player-card {
@@ -1715,45 +1770,6 @@ p {
     min-width: 520px;
     grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 44px repeat(8, 0);
     gap: 4px;
-  }
-
-  [data-division-panel="world-cup"] .player-card > :nth-child(1),
-  [data-division-panel="world-cup"] .player-card > :nth-child(2),
-  [data-division-panel="world-cup"] .player-card > :nth-child(3),
-  .national-squad-board .player-card > :nth-child(1),
-  .national-squad-board .player-card > :nth-child(2),
-  .national-squad-board .player-card > :nth-child(3) {
-    position: sticky;
-    z-index: 3;
-  }
-
-  [data-division-panel="world-cup"] .player-card > :nth-child(1),
-  .national-squad-board .player-card > :nth-child(1) {
-    left: 7px;
-  }
-
-  [data-division-panel="world-cup"] .player-card > :nth-child(2),
-  [data-division-panel="world-cup"] .player-card > :nth-child(3),
-  .national-squad-board .player-card > :nth-child(2),
-  .national-squad-board .player-card > :nth-child(3) {
-    background-color: #080b10;
-  }
-
-  [data-division-panel="world-cup"] .player-card > :nth-child(2),
-  .national-squad-board .player-card > :nth-child(2) {
-    left: 49px;
-  }
-
-  [data-division-panel="world-cup"] .player-card > :nth-child(3),
-  .national-squad-board .player-card > :nth-child(3) {
-    left: 77px;
-    box-shadow: 12px 0 14px -14px rgba(245, 180, 46, 0.95);
-  }
-
-  [data-division-panel="world-cup"] .player-table-head > :nth-child(-n + 3),
-  .national-squad-board .player-table-head > :nth-child(-n + 3) {
-    z-index: 5;
-    background-color: #12130f;
   }
 
   [data-division-panel="world-cup"]

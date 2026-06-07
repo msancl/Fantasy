@@ -15,8 +15,84 @@ function getCurrentPage() {
   return pages.includes(page) ? page : "accueil";
 }
 
+const defaultPageDivisions = {
+  equipes: "world-cup",
+  classements: "standings-world-cup",
+  coupes: "tumulus-cup",
+  joueurs: "players-world-cup",
+};
+let pageStateResetReady = false;
+
+function resetDivision(section, division) {
+  if (!section || !division) {
+    return;
+  }
+
+  section.querySelectorAll("[data-division]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.division === division);
+  });
+
+  section.querySelectorAll("[data-division-panel]").forEach((panel) => {
+    panel.hidden = panel.dataset.divisionPanel !== division;
+  });
+}
+
+function closeTeamCards(section) {
+  section?.querySelectorAll(".team-card").forEach((teamCard) => {
+    teamCard.classList.remove("is-open");
+    resetTeamDays(teamCard);
+    teamCard.querySelectorAll("[aria-expanded]").forEach((element) => {
+      element.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+function closeNationalTeams(section) {
+  section?.querySelectorAll(".national-team-section").forEach((country) => {
+    country.classList.remove("is-open");
+
+    const board = country.querySelector(".national-squad-board");
+    const lineupBlock = country.querySelector(".team-lineup-block");
+    const daysButton = country.querySelector(".days-toggle");
+
+    lineupBlock?.classList.remove("is-days-open");
+    board?.classList.remove("is-days-open");
+    if (board) {
+      clearNationalDayDetails(board);
+      board.scrollLeft = 0;
+    }
+    if (daysButton) {
+      daysButton.setAttribute("aria-expanded", "false");
+      daysButton.textContent = "Voir journées";
+    }
+
+    country.querySelectorAll("[aria-expanded]").forEach((element) => {
+      element.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+function resetPageState(page) {
+  if (!pageStateResetReady) {
+    return;
+  }
+
+  const section = document.querySelector(`[data-page="${page}"]`);
+  resetDivision(section, defaultPageDivisions[page]);
+
+  if (page === "equipes") {
+    closeTeamCards(section);
+  }
+
+  if (page === "joueurs") {
+    closeNationalTeams(section);
+  }
+}
+
 function showPage() {
   const currentPage = getCurrentPage();
+
+  resetPageState(currentPage);
 
   document.querySelectorAll("[data-page]").forEach((section) => {
     section.hidden = section.dataset.page !== currentPage;
@@ -166,21 +242,23 @@ function createNationalTeamSections() {
 
   nationalTeams.forEach(([code, name]) => {
     const section = document.createElement("article");
-    const playerRows = [
-      ["GB", "pos-gk", 0],
-      ["DF", "pos-def", 1],
-      ["MIL", "pos-mid", 2],
-      ["ATT", "pos-att", 3],
-    ]
+    const positionClasses = {
+      GB: "pos-gk",
+      DF: "pos-def",
+      MIL: "pos-mid",
+      ATT: "pos-att",
+    };
+    const squad = worldCupSquads[code] || [];
+    const playerRows = squad
       .map(
-        ([position, positionClass, playerIndex]) => `
-          <article class="player-card ${positionClass}" data-player-index="${playerIndex}">
+        (player, playerIndex) => `
+          <article class="player-card ${positionClasses[player.position]}" data-player-index="${playerIndex}">
             <img src="assets/shirts/${code}.png" alt="" />
             <div class="player-main">
-              <strong>FIRSTNAME LASTNAME</strong>
+              <strong>${player.name}</strong>
               <small>${name}</small>
             </div>
-            <div class="player-position">${position}</div>
+            <div class="player-position">${player.position}</div>
             <div class="player-stat">0</div>
             <div class="player-stat">0</div>
             <div class="player-stat">0</div>
@@ -336,11 +414,26 @@ const nationalDayStats = [
   ],
 ];
 
+const emptyNationalDayStat = {
+  matches: 0,
+  penalties: 0,
+  goals: 0,
+  assists: 0,
+  cleanSheets: 0,
+  penaltySaves: 0,
+};
+
+function getNationalDayStat() {
+  return emptyNationalDayStat;
+}
+
 function setNationalGeneralStats(board) {
   board.querySelectorAll(".player-card:not(.player-table-head)").forEach((row) => {
     const stats = row.querySelectorAll(".player-stat:not(.player-price)");
     const playerIndex = Number(row.dataset.playerIndex);
-    const playerDays = nationalDayStats.map((day) => day[playerIndex]);
+    const playerDays = nationalDayStats.map((_, dayIndex) =>
+      getNationalDayStat(dayIndex, playerIndex),
+    );
     const total = (key) =>
       playerDays.reduce((sum, day) => sum + day[key], 0);
     const values = [
@@ -441,7 +534,7 @@ function showNationalDayDetails(board, selectedDay) {
 
   board.querySelectorAll(".player-card:not(.player-table-head)").forEach((row) => {
     const playerIndex = Number(row.dataset.playerIndex);
-    const dayStats = nationalDayStats[selectedDay - 1][playerIndex];
+    const dayStats = getNationalDayStat(selectedDay - 1, playerIndex);
     const values = [
       dayStats.matches,
       dayStats.penalties,
@@ -981,10 +1074,14 @@ document.querySelectorAll(".days-toggle").forEach((button) => {
   button.addEventListener("click", () => {
     const lineupBlock = button.closest(".team-lineup-block");
     const squadBoard = lineupBlock.querySelector(".squad-board");
+    const daysActions = lineupBlock.querySelector(".days-actions");
     const isOpen = squadBoard.classList.toggle("is-days-open");
 
     resetDayRange(lineupBlock);
     lineupBlock.classList.toggle("is-days-open", isOpen);
+    if (daysActions) {
+      daysActions.scrollLeft = 0;
+    }
 
     if (squadBoard.classList.contains("national-squad-board")) {
       squadBoard.scrollLeft = 0;
@@ -1000,3 +1097,6 @@ document.querySelectorAll(".days-toggle").forEach((button) => {
     button.textContent = isOpen ? "Masquer journées" : "Voir journées";
   });
 });
+
+pageStateResetReady = true;
+showPage();
