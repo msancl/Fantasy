@@ -44,29 +44,32 @@ window.addEventListener("hashchange", showPage);
 showPage();
 
 const worldCupTeams = [
-  ["San Mateo", "san-mateo", "#050505", "5, 5, 5", "#cbd5e1", "203, 213, 225", "#ffffff"],
-  ["Nikhau FC", "nikhau", "#004d98", "0, 77, 152", "#7a1632", "122, 22, 50", "#ffffff"],
-  ["Aquarela do Brasil", "aquarela", "#168447", "22, 132, 71", "#f4d03f", "244, 208, 63", "#ffffff"],
-  ["FC Brusseleir", "brusseleir", "#cf2634", "207, 38, 52", "#8b919a", "139, 145, 154", "#ffffff"],
-  ["Schtumpik Rovers", "schtumpik", "#050505", "5, 5, 5", "#f4f4f5", "244, 244, 245", "#ffffff"],
-  ["Black Chihuahua United", "black-chihuahua", "#f97316", "249, 115, 22", "#090909", "9, 9, 9", "#ffffff"],
-  ["Portloe Wanderers", "portloe", "#1769e0", "23, 105, 224", "#080b12", "8, 11, 18", "#ffffff"],
-  ["Montreal Celtic Revival", "montreal-celtic", "#c62735", "198, 39, 53", "#6f3f2b", "111, 63, 43", "#ffffff"],
-  ["Lethal Weapon Athletic", "lethal-weapon", "#f97316", "249, 115, 22", "#20c9c3", "32, 201, 195", "#081012"],
-  ["Universal Players", "universal", "#7dd3fc", "125, 211, 252", "#f5cf3d", "245, 207, 61", "#071018"],
-  ["IFK Yvonedgar", "ifk-yvonedgar", "#8f2430", "143, 36, 48", "#f1c94a", "241, 201, 74", "#ffffff"],
   ["Alex United", "alex-united", "#d62839", "214, 40, 57", "#ffffff", "255, 255, 255", "#ffffff"],
+  ["Aquarela do Brasil", "aquarela", "#168447", "22, 132, 71", "#f4d03f", "244, 208, 63", "#ffffff"],
+  ["Black Chihuahua United", "black-chihuahua", "#f97316", "249, 115, 22", "#090909", "9, 9, 9", "#ffffff"],
+  ["FC Brusseleir", "brusseleir", "#cf2634", "207, 38, 52", "#8b919a", "139, 145, 154", "#ffffff"],
+  ["IFK Yvonedgar", "ifk-yvonedgar", "#8f2430", "143, 36, 48", "#f1c94a", "241, 201, 74", "#ffffff"],
+  ["Lethal Weapon Athletic", "lethal-weapon", "#f97316", "249, 115, 22", "#20c9c3", "32, 201, 195", "#081012"],
+  ["Montreal Celtic Revival", "montreal-celtic", "#c62735", "198, 39, 53", "#6f3f2b", "111, 63, 43", "#ffffff"],
+  ["Nikhau FC", "nikhau", "#004d98", "0, 77, 152", "#7a1632", "122, 22, 50", "#ffffff"],
+  ["Portloe Wanderers", "portloe", "#1769e0", "23, 105, 224", "#080b12", "8, 11, 18", "#ffffff"],
+  ["San Mateo", "san-mateo", "#050505", "5, 5, 5", "#cbd5e1", "203, 213, 225", "#ffffff"],
+  ["Schtumpik Rovers", "schtumpik", "#050505", "5, 5, 5", "#f4f4f5", "244, 244, 245", "#ffffff"],
+  ["Universal Players", "universal", "#7dd3fc", "125, 211, 252", "#f5cf3d", "245, 207, 61", "#071018"],
 ];
 
 function formatTeamName(name) {
+  return name.toUpperCase();
+}
+
+function getTeamMonogram(name) {
   return name
-    .toUpperCase()
     .split(" ")
-    .map(
-      (word) =>
-        `<span class="team-initial">${word.charAt(0)}</span>${word.slice(1)}`,
-    )
-    .join(" ");
+    .filter((word) => !["do", "du", "de"].includes(word.toLowerCase()))
+    .map((word) => word.charAt(0))
+    .join("")
+    .slice(0, 3)
+    .toUpperCase();
 }
 
 function createWorldCupTeams() {
@@ -93,7 +96,8 @@ function createWorldCupTeams() {
     teamCard.style.setProperty("--team-ink", ink);
 
     if (teamName) {
-      teamName.innerHTML = formatTeamName(name);
+      teamName.textContent = formatTeamName(name);
+      teamName.dataset.monogram = getTeamMonogram(name);
     }
 
     if (rank) {
@@ -117,6 +121,66 @@ function createWorldCupTeams() {
 }
 
 createWorldCupTeams();
+
+function movePositionsBeforeShirts() {
+  document.querySelectorAll(".squad-board .player-card").forEach((row) => {
+    const position = row.querySelector(".player-position");
+
+    if (position) {
+      row.prepend(position);
+      return;
+    }
+
+    if (row.classList.contains("player-table-head")) {
+      const positionHeading = Array.from(row.children).find(
+        (cell) => cell.textContent.trim() === "Poste",
+      );
+
+      if (positionHeading) {
+        row.prepend(positionHeading);
+      }
+    }
+  });
+}
+
+movePositionsBeforeShirts();
+
+function addPlayerPrices() {
+  document.querySelectorAll(".squad-board").forEach((board) => {
+    const header = board.querySelector(".player-table-head");
+
+    if (header && !header.querySelector(".player-price-heading")) {
+      const priceHeading = document.createElement("div");
+      const matchesHeading = Array.from(header.children).find(
+        (cell) => cell.textContent.trim() === "MJ",
+      );
+
+      priceHeading.className = "player-price-heading";
+      priceHeading.textContent = "£";
+      header.insertBefore(priceHeading, matchesHeading);
+    }
+
+    board
+      .querySelectorAll(".player-card:not(.player-table-head)")
+      .forEach((row) => {
+        if (row.querySelector(".player-price")) {
+          return;
+        }
+
+        const price = document.createElement("div");
+        const stats = row.querySelectorAll(".player-stat");
+        const firstStat = stats[0];
+
+        stats[3]?.classList.add("player-points");
+
+        price.className = "player-stat player-price";
+        price.textContent = "3";
+        row.insertBefore(price, firstStat);
+      });
+  });
+}
+
+addPlayerPrices();
 
 document.querySelectorAll("[data-division]").forEach((button) => {
   button.addEventListener("click", () => {
@@ -208,6 +272,72 @@ function extendSeasonDays() {
 
 extendSeasonDays();
 
+function applyWorldCupDayLabels() {
+  const knockoutRounds = {
+    4: { short: "1/16", full: "Seizièmes de finale" },
+    5: { short: "1/8", full: "Huitièmes de finale" },
+    6: { short: "1/4", full: "Quarts de finale" },
+    7: { short: "1/2", full: "Demi-finales" },
+    8: { short: "F", full: "Finale" },
+  };
+
+  document
+    .querySelectorAll(
+      '[data-division-panel="world-cup"] .player-table-head .day-cell',
+    )
+    .forEach((cell) => {
+      const round = knockoutRounds[Number(cell.dataset.day)];
+
+      if (!round) {
+        return;
+      }
+
+      cell.textContent = round.short;
+      cell.title = round.full;
+      cell.setAttribute("aria-label", round.full);
+    });
+}
+
+applyWorldCupDayLabels();
+
+function appendSubstituteSlots() {
+  document.querySelectorAll(".squad-board").forEach((board) => {
+    if (board.querySelector(".substitute-slot")) {
+      return;
+    }
+
+    for (let slotNumber = 1; slotNumber <= 2; slotNumber += 1) {
+      const slot = document.createElement("article");
+      slot.className = "player-card pos-rem substitute-slot";
+      slot.innerHTML = `
+        <div class="player-position">REM</div>
+        <div class="substitute-slot-marker" aria-hidden="true">+</div>
+        <div class="player-main">
+          <strong>Place disponible</strong>
+          <small>Remplaçant ${slotNumber + 1}</small>
+        </div>
+        <div class="player-stat player-price">-</div>
+        <div class="player-stat">-</div>
+        <div class="player-stat">-</div>
+        <div class="player-stat">-</div>
+        <div class="player-stat player-points">-</div>
+      `;
+
+      for (let day = 1; day <= 38; day += 1) {
+        const cell = document.createElement("div");
+        cell.className = "day-cell inactive";
+        cell.dataset.day = String(day);
+        cell.textContent = "-";
+        slot.append(cell);
+      }
+
+      board.append(slot);
+    }
+  });
+}
+
+appendSubstituteSlots();
+
 function appendTeamTotalRows() {
   document.querySelectorAll(".squad-board").forEach((board) => {
     if (board.querySelector(".team-total-row")) {
@@ -215,21 +345,24 @@ function appendTeamTotalRows() {
     }
 
     const playerRows = Array.from(
-      board.querySelectorAll(".player-card:not(.player-table-head)"),
+      board.querySelectorAll(
+        ".player-card:not(.player-table-head):not(.substitute-slot)",
+      ),
     );
 
     const totals = playerRows.reduce(
       (sum, row) => {
         const stats = row.querySelectorAll(".player-stat");
 
-        sum.matches += Number(stats[0]?.textContent || 0);
-        sum.goals += Number(stats[1]?.textContent || 0);
-        sum.assists += Number(stats[2]?.textContent || 0);
-        sum.points += Number(stats[3]?.textContent || 0);
+        sum.price += Number(stats[0]?.textContent || 0);
+        sum.matches += Number(stats[1]?.textContent || 0);
+        sum.goals += Number(stats[2]?.textContent || 0);
+        sum.assists += Number(stats[3]?.textContent || 0);
+        sum.points += Number(stats[4]?.textContent || 0);
 
         return sum;
       },
-      { matches: 0, goals: 0, assists: 0, points: 0 },
+      { matches: 0, goals: 0, assists: 0, points: 0, price: 0 },
     );
 
     const dayTotals = Array.from({ length: 38 }, (_, dayIndex) =>
@@ -248,16 +381,17 @@ function appendTeamTotalRows() {
     const totalRow = document.createElement("article");
     totalRow.className = "player-card team-total-row";
     totalRow.innerHTML = `
+      <div class="player-position">TOT</div>
       <div class="total-marker" aria-hidden="true"></div>
       <div class="player-main">
         <strong>Totaux</strong>
         <small>${teamName}</small>
       </div>
-      <div class="player-position">TOT</div>
+      <div class="player-stat player-price">${totals.price}</div>
       <div class="player-stat">${totals.matches}</div>
       <div class="player-stat">${totals.goals}</div>
       <div class="player-stat">${totals.assists}</div>
-      <div class="player-stat">${totals.points}</div>
+      <div class="player-stat player-points">${totals.points}</div>
     `;
 
     dayTotals.forEach((total, dayIndex) => {
