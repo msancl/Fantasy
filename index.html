@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=63" />
-    <script src="app.js?v=25" defer></script>
+    <link rel="stylesheet" href="styles.css?v=88" />
+    <script src="app.js?v=48" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -125,7 +125,7 @@
                     <div class="day-cell">J8</div>
                   </div>
                   <article class="player-card pos-gk">
-                    <img src="assets/FRA.png" alt="" />
+                    <img src="assets/shirts/FRA.png" alt="" />
                     <div class="player-main">
                       <strong>Mike Maignan</strong>
                       <small>France</small>
@@ -145,7 +145,7 @@
                     <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-def">
-                    <img src="assets/BRA.png" alt="" />
+                    <img src="assets/shirts/BRA.png" alt="" />
                     <div class="player-main">
                       <strong>Léo Pereira</strong>
                       <small>Brésil</small>
@@ -165,7 +165,7 @@
                     <div class="day-cell">5</div>
                   </article>
                   <article class="player-card pos-def is-substitute">
-                    <img src="assets/ARG.png" alt="" />
+                    <img src="assets/shirts/ARG.png" alt="" />
                     <div class="player-main">
                       <strong>Gonzalo Montiel</strong>
                       <small>Argentine · Entré J5</small>
@@ -185,7 +185,7 @@
                     <div class="day-cell">11</div>
                   </article>
                   <article class="player-card pos-def">
-                    <img src="assets/ENG.png" alt="" />
+                    <img src="assets/shirts/ENG.png" alt="" />
                     <div class="player-main">
                       <strong>Jarell Quansah</strong>
                       <small>Angleterre</small>
@@ -205,7 +205,7 @@
                     <div class="day-cell">4</div>
                   </article>
                   <article class="player-card pos-mid">
-                    <img src="assets/ESP.png" alt="" />
+                    <img src="assets/shirts/ESP.png" alt="" />
                     <div class="player-main">
                       <strong>Rodri</strong>
                       <small>Espagne</small>
@@ -225,7 +225,7 @@
                     <div class="day-cell">8</div>
                   </article>
                   <article class="player-card pos-mid">
-                    <img src="assets/POR.png" alt="" />
+                    <img src="assets/shirts/POR.png" alt="" />
                     <div class="player-main">
                       <strong>Vitinha</strong>
                       <small>Portugal</small>
@@ -245,7 +245,7 @@
                     <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-mid">
-                    <img src="assets/GER.png" alt="" />
+                    <img src="assets/shirts/GER.png" alt="" />
                     <div class="player-main">
                       <strong>Leon Goretzka</strong>
                       <small>Allemagne</small>
@@ -265,7 +265,7 @@
                     <div class="day-cell">7</div>
                   </article>
                   <article class="player-card pos-att">
-                    <img src="assets/NED.png" alt="" />
+                    <img src="assets/shirts/NED.png" alt="" />
                     <div class="player-main">
                       <strong>Donyell Malen</strong>
                       <small>Pays-Bas</small>
@@ -285,7 +285,7 @@
                     <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-att">
-                    <img src="assets/USA.png" alt="" />
+                    <img src="assets/shirts/USA.png" alt="" />
                     <div class="player-main">
                       <strong>Ricardo Pepi</strong>
                       <small>USA</small>
@@ -305,7 +305,7 @@
                     <div class="day-cell">7</div>
                   </article>
                   <article class="player-card pos-att">
-                    <img src="assets/JPN.png" alt="" />
+                    <img src="assets/shirts/JPN.png" alt="" />
                     <div class="player-main">
                       <strong>Ayase Ueda</strong>
                       <small>Japon</small>
@@ -325,7 +325,7 @@
                     <div class="day-cell">8</div>
                   </article>
                   <article class="player-card pos-rem is-replaced">
-                    <img src="assets/MOR.png" alt="" />
+                    <img src="assets/shirts/MOR.png" alt="" />
                     <div class="player-main">
                       <strong>Nayef Aguerd</strong>
                       <small>Maroc · Sorti J5</small>
@@ -457,7 +457,38 @@
 
       <section id="joueurs" class="panel page-section" data-page="joueurs" hidden>
         <h2>Joueurs</h2>
-        <p>La page Joueurs arrive bientôt.</p>
+        <nav class="sub-nav" aria-label="Compétitions des joueurs">
+          <button
+            class="sub-nav-button"
+            type="button"
+            data-division="players-premier-league"
+          >
+            Premier League
+          </button>
+          <button
+            class="sub-nav-button is-active"
+            type="button"
+            data-division="players-world-cup"
+          >
+            Coupe du Monde
+          </button>
+        </nav>
+
+        <div
+          class="division-panel"
+          data-division-panel="players-premier-league"
+          hidden
+        >
+          <h3>Premier League</h3>
+          <p>La partie Premier League arrive bientôt.</p>
+        </div>
+
+        <div
+          class="division-panel players-world-cup-panel"
+          data-division-panel="players-world-cup"
+        >
+          <div class="national-team-list" aria-label="Sélections de la Coupe du Monde"></div>
+        </div>
       </section>
 
       <section id="transferts" class="panel page-section" data-page="transferts" hidden>

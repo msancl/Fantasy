@@ -201,6 +201,194 @@ p {
   text-transform: uppercase;
 }
 
+.players-world-cup-panel {
+  padding: 14px;
+}
+
+.national-team-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.national-team-section {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent),
+    #080b10;
+  overflow: hidden;
+}
+
+.national-team-header {
+  display: flex;
+  width: 100%;
+  min-height: 86px;
+  align-items: center;
+  gap: 16px;
+  border: 0;
+  padding: 12px 16px;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+
+.national-team-header:hover,
+.national-team-header:focus-visible,
+.national-team-section.is-open .national-team-header {
+  background: rgba(255, 255, 255, 0.028);
+}
+
+.national-team-header:focus-visible {
+  outline: 2px solid rgba(245, 180, 46, 0.58);
+  outline-offset: -2px;
+}
+
+.national-team-shirt {
+  display: flex;
+  width: 42px;
+  height: 28px;
+  flex: 0 0 42px;
+  align-items: center;
+  justify-content: center;
+}
+
+.national-team-shirt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.national-team-name {
+  min-width: 0;
+  flex: 1;
+  color: #f7f8fa;
+  font-family: "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.55rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.national-team-indicator,
+.team-details-indicator {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: #0d1118;
+}
+
+.national-team-indicator::before,
+.national-team-indicator::after,
+.team-details-indicator::before,
+.team-details-indicator::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  background: #d5deeb;
+  content: "";
+  transform: translate(-50%, -50%);
+  transition: transform 220ms ease;
+}
+
+.national-team-indicator::after,
+.team-details-indicator::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.national-team-section.is-open .national-team-indicator::after,
+.team-card.is-open .team-details-indicator::after {
+  transform: translate(-50%, -50%) rotate(0);
+}
+
+.national-team-roster {
+  max-height: 0;
+  border-top: 1px solid transparent;
+  padding: 0 16px;
+  background: rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-5px);
+  transition:
+    max-height 300ms ease,
+    padding 240ms ease,
+    opacity 180ms ease,
+    transform 240ms ease;
+}
+
+.national-team-section.is-open .national-team-roster {
+  max-height: 90px;
+  border-top-color: rgba(255, 255, 255, 0.075);
+  padding: 14px 16px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.national-team-section.has-player-table.is-open .national-team-roster {
+  max-height: 520px;
+  height: auto;
+}
+
+.national-team-roster p {
+  font-size: 0.9rem;
+}
+
+.national-player-list {
+  display: grid;
+  gap: 6px;
+}
+
+.national-player-card {
+  display: grid;
+  grid-template-columns: 52px 36px minmax(0, 1fr);
+  gap: 10px;
+  min-height: 48px;
+  align-items: center;
+  border: 1px solid rgba(167, 184, 209, 0.12);
+  border-left-width: 3px;
+  border-radius: 7px;
+  padding: 6px 10px;
+  background: rgba(5, 8, 13, 0.62);
+}
+
+.national-player-card img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.national-player-name strong,
+.national-player-name small {
+  display: block;
+}
+
+.national-player-name strong {
+  color: #ffffff;
+  font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.national-player-name small {
+  margin-top: 3px;
+  color: #9fb0c7;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
 .team-card {
   margin-top: 18px;
   border: 1px solid rgba(245, 180, 46, 0.22);
@@ -237,7 +425,7 @@ p {
   margin: 0;
   color: #ffffff;
   font-family: "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.55rem;
   font-style: italic;
   font-weight: 800;
   line-height: 1;
@@ -248,12 +436,12 @@ p {
 .team-card h4::before {
   display: inline-flex;
   width: 42px;
-  height: 42px;
+  height: 28px;
   flex: 0 0 42px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 7px 7px 12px 12px;
+  border-radius: 5px 5px 8px 8px;
   color: #ffffff;
   background:
     linear-gradient(
@@ -384,6 +572,16 @@ p {
   grid-row: auto;
 }
 
+.national-team-roster .team-lineup-block {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  padding: 12px;
+  align-content: start;
+}
+
 .block-title-row {
   display: flex;
   align-items: center;
@@ -394,9 +592,51 @@ p {
 
 .days-actions {
   display: flex;
+  width: auto;
+  min-height: 34px;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px;
+}
+
+.national-team-roster .block-title-row {
+  display: flex;
+  width: 100%;
+  height: 34px;
+  min-height: 34px;
+  max-height: 34px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.national-team-roster .days-actions {
+  display: flex;
+  width: auto;
+  height: 34px;
+  min-height: 34px;
+  max-height: 34px;
+  flex: 0 0 auto;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.national-team-roster .days-toggle {
+  width: auto;
+  height: 34px;
+  min-height: 34px;
+  max-height: 34px;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+.national-team-roster .squad-board {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin-top: 10px;
+  align-content: start;
 }
 
 .days-toggle,
@@ -447,6 +687,57 @@ p {
   display: none;
 }
 
+.players-world-cup-panel
+  .day-range-button:not([data-start="1"]) {
+  display: none;
+}
+
+.national-day-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateX(18px);
+  transition:
+    max-width 320ms ease,
+    opacity 180ms ease,
+    transform 280ms ease;
+}
+
+.team-lineup-block.is-days-open .national-day-selector {
+  max-width: 620px;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.national-day-button {
+  display: inline-flex;
+  min-width: 42px;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(245, 180, 46, 0.28);
+  border-radius: 7px;
+  padding: 0 10px;
+  color: #f5d27a;
+  background: rgba(245, 180, 46, 0.055);
+  cursor: pointer;
+  font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.national-day-button:hover,
+.national-day-button.is-active {
+  border-color: #fff1b8;
+  color: #0b0903;
+  background: linear-gradient(135deg, #ffe08a, #f5b42e);
+}
+
 .day-range-button {
   min-height: 30px;
   padding: 0 10px;
@@ -455,16 +746,23 @@ p {
 
 .squad-board {
   display: grid;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   grid-template-columns: 1fr;
   gap: 4px;
   margin-top: 10px;
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 8px;
+  scrollbar-color: rgba(245, 180, 46, 0.55) rgba(255, 255, 255, 0.05);
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 
 .player-card {
   display: grid;
-  grid-template-columns: 52px 28px minmax(160px, 1fr) 42px 44px 44px 54px 58px repeat(8, 0);
+  grid-template-columns: 52px 28px minmax(160px, 1fr) 42px 44px 44px 54px 44px 58px repeat(8, 0);
   gap: 8px;
   align-items: center;
   min-height: 38px;
@@ -480,22 +778,130 @@ p {
 }
 
 .squad-board.is-days-open .player-card {
-  grid-template-columns: 52px 28px minmax(160px, 1fr) 42px 44px 44px 54px 58px repeat(8, 38px);
+  grid-template-columns: 52px 28px minmax(160px, 1fr) 42px 44px 44px 54px 44px 58px repeat(8, 38px);
 }
 
 [data-division-panel="world-cup"] .player-price,
-[data-division-panel="world-cup"] .player-price-heading {
+[data-division-panel="world-cup"] .player-price-heading,
+.national-squad-board .player-price,
+.national-squad-board .player-price-heading {
   display: none;
 }
 
 [data-division-panel="world-cup"] .player-card {
-  grid-template-columns: 52px 28px minmax(160px, 1fr) 44px 44px 54px 58px repeat(8, 0);
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 46px repeat(8, 0);
+  gap: 5px;
 }
 
 [data-division-panel="world-cup"]
   .squad-board.is-days-open
   .player-card {
-  grid-template-columns: 52px 28px minmax(160px, 1fr) 44px 44px 54px 58px repeat(8, 38px);
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 46px repeat(8, 32px);
+  gap: 5px;
+}
+
+[data-division-panel="world-cup"] .player-card > img {
+  width: 24px;
+  height: 24px;
+}
+
+.national-squad-board .player-card {
+  min-width: 540px;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 42px 46px 0;
+  gap: 5px;
+}
+
+.national-squad-board.is-days-open .player-card,
+.national-squad-board.has-selected-day .player-card {
+  min-width: 812px;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 42px 46px 272px;
+}
+
+.national-day-stats-group {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  grid-template-columns: repeat(7, 32px);
+  gap: 5px;
+  border-left: 1px solid rgba(56, 189, 248, 0.22);
+  padding-left: 18px;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateX(24px);
+  transition:
+    opacity 220ms ease,
+    transform 300ms ease;
+}
+
+.national-squad-board
+  .player-table-head
+  > .national-day-heading-group {
+  display: grid;
+  align-items: center;
+  justify-content: initial;
+}
+
+.national-squad-board .player-card > img {
+  width: 24px;
+  height: 24px;
+}
+
+.national-squad-board .national-day-stat {
+  min-height: 26px;
+  border-color: rgba(56, 189, 248, 0.34);
+  color: #dff6ff;
+  background:
+    linear-gradient(180deg, rgba(14, 116, 144, 0.24), rgba(8, 47, 73, 0.12)),
+    #08131d;
+  font-size: 0.78rem;
+}
+
+.national-squad-board .national-day-stat-heading {
+  display: flex;
+  width: 100%;
+  min-height: 26px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(56, 189, 248, 0.42);
+  border-radius: 6px;
+  color: #dff6ff;
+  background: rgba(8, 47, 73, 0.78);
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.national-squad-board.has-selected-day .national-day-stats-group {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.national-squad-board.is-day-switching
+  .national-day-stats-group {
+  animation: national-day-slide 260ms ease both;
+}
+
+@keyframes national-day-slide {
+  from {
+    opacity: 0.25;
+    transform: translateX(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.national-squad-board .national-day-group-start {
+  border-left: 2px solid #38bdf8;
+}
+
+.national-squad-board .player-table-head > div {
+  white-space: nowrap;
 }
 
 .team-totals {
@@ -700,23 +1106,43 @@ p {
 }
 
 .team-total-row {
-  border-left-color: rgba(245, 180, 46, 0.95);
+  margin-top: 8px;
+  border: 1px solid rgba(245, 180, 46, 0.28);
+  border-top: 2px solid rgba(245, 180, 46, 0.82);
+  border-left-color: rgba(245, 180, 46, 0.28);
+  border-radius: 6px;
   background:
-    linear-gradient(135deg, rgba(245, 180, 46, 0.14), transparent 42%),
-    rgba(13, 11, 7, 0.88);
+    linear-gradient(90deg, rgba(245, 180, 46, 0.11), transparent 34%),
+    rgba(8, 10, 13, 0.96);
 }
 
-.team-total-row .player-main strong {
+.team-total-label {
+  display: flex;
+  min-width: 0;
+  min-height: 28px;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 1 / 4;
+  align-self: center;
+  padding-left: 78px;
+  text-align: left;
+}
+
+.team-total-label strong {
+  margin-top: 0;
   color: #ffe8a6;
+  font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: translateY(-1px);
 }
 
-.team-total-row .player-main small {
-  color: #c9b175;
-}
-
-.team-total-row .player-position {
-  color: #0b0903;
-  background: linear-gradient(135deg, #ffe08a, #f5b42e);
+@media (max-width: 760px) {
+  .team-total-label {
+    padding-left: 70px;
+  }
 }
 
 .team-total-row .player-stat,
@@ -1025,6 +1451,27 @@ p {
     #11141a;
 }
 
+.team-branded .team-total-row {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-top: 2px solid var(--team-primary);
+  border-left-color: rgba(255, 255, 255, 0.13);
+  background:
+    linear-gradient(90deg, rgba(var(--team-primary-rgb), 0.12), transparent 34%),
+    #090b0f;
+}
+
+.team-branded .team-total-row .team-total-label strong {
+  color: #ffffff;
+}
+
+.team-branded .team-total-row > .player-points {
+  border-color: rgba(245, 180, 46, 0.52);
+  color: #fff4c7;
+  background:
+    linear-gradient(180deg, rgba(245, 180, 46, 0.2), rgba(245, 180, 46, 0.06)),
+    #17140c;
+}
+
 .player-card > .day-cell {
   display: none;
   border: 1px solid rgba(255, 255, 255, 0.11);
@@ -1210,11 +1657,14 @@ p {
   }
 
   .team-card-grid {
+    min-width: 0;
     grid-template-columns: 1fr;
   }
 
   .team-lineup-block {
+    min-width: 0;
     grid-row: auto;
+    overflow: hidden;
   }
 
   .team-card-header {
@@ -1231,17 +1681,104 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .squad-board {
+  .national-team-list {
     grid-template-columns: 1fr;
+  }
+
+  .squad-board {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-columns: 1fr;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    touch-action: pan-x pan-y;
+    box-shadow: inset -18px 0 16px -18px rgba(245, 180, 46, 0.9);
+    -webkit-overflow-scrolling: touch;
   }
 
   .player-card {
     min-width: 620px;
     grid-template-columns: 32px minmax(120px, 1fr) 42px 34px 34px 46px 50px repeat(8, 0);
+    overflow: visible;
   }
 
   .squad-board.is-days-open .player-card {
     min-width: 930px;
     grid-template-columns: 32px minmax(120px, 1fr) 42px 34px 34px 46px 50px repeat(8, 36px);
+  }
+
+  [data-division-panel="world-cup"] .player-card {
+    min-width: 520px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 44px repeat(8, 0);
+    gap: 4px;
+  }
+
+  [data-division-panel="world-cup"] .player-card > :nth-child(1),
+  [data-division-panel="world-cup"] .player-card > :nth-child(2),
+  [data-division-panel="world-cup"] .player-card > :nth-child(3),
+  .national-squad-board .player-card > :nth-child(1),
+  .national-squad-board .player-card > :nth-child(2),
+  .national-squad-board .player-card > :nth-child(3) {
+    position: sticky;
+    z-index: 3;
+  }
+
+  [data-division-panel="world-cup"] .player-card > :nth-child(1),
+  .national-squad-board .player-card > :nth-child(1) {
+    left: 7px;
+  }
+
+  [data-division-panel="world-cup"] .player-card > :nth-child(2),
+  [data-division-panel="world-cup"] .player-card > :nth-child(3),
+  .national-squad-board .player-card > :nth-child(2),
+  .national-squad-board .player-card > :nth-child(3) {
+    background-color: #080b10;
+  }
+
+  [data-division-panel="world-cup"] .player-card > :nth-child(2),
+  .national-squad-board .player-card > :nth-child(2) {
+    left: 49px;
+  }
+
+  [data-division-panel="world-cup"] .player-card > :nth-child(3),
+  .national-squad-board .player-card > :nth-child(3) {
+    left: 77px;
+    box-shadow: 12px 0 14px -14px rgba(245, 180, 46, 0.95);
+  }
+
+  [data-division-panel="world-cup"] .player-table-head > :nth-child(-n + 3),
+  .national-squad-board .player-table-head > :nth-child(-n + 3) {
+    z-index: 5;
+    background-color: #12130f;
+  }
+
+  [data-division-panel="world-cup"]
+    .squad-board.is-days-open
+    .player-card {
+    min-width: 800px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 44px repeat(8, 30px);
+    gap: 4px;
+  }
+
+  .national-squad-board .player-card {
+    min-width: 520px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 40px 44px 0;
+    gap: 4px;
+  }
+
+  .national-squad-board.is-days-open .player-card,
+  .national-squad-board.has-selected-day .player-card {
+    min-width: 770px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 40px 44px 250px;
+  }
+
+  .national-day-stats-group {
+    grid-template-columns: repeat(7, 30px);
+    gap: 4px;
+    padding-left: 16px;
   }
 }
