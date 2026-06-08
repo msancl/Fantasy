@@ -966,8 +966,9 @@ p {
 
 .substitute-slot-marker {
   display: inline-flex;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 24px;
+  justify-self: center;
   align-items: center;
   justify-content: center;
   border: 1px dashed rgba(167, 139, 250, 0.42);
@@ -975,7 +976,7 @@ p {
   color: #a78bfa;
   background: rgba(167, 139, 250, 0.045);
   font-family: "Manrope", "Segoe UI", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 

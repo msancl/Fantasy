@@ -584,6 +584,58 @@ function initializeNationalDayStats() {
   });
 }
 
+function resetFantasyTeamRosters() {
+  const formation = [
+    ["GB", "pos-gk", "FRA"],
+    ["DF", "pos-def", "BRA"],
+    ["DF", "pos-def", "ARG"],
+    ["DF", "pos-def", "ENG"],
+    ["MIL", "pos-mid", "ESP"],
+    ["MIL", "pos-mid", "POR"],
+    ["MIL", "pos-mid", "GER"],
+    ["MIL", "pos-mid", "NED"],
+    ["ATT", "pos-att", "USA"],
+    ["ATT", "pos-att", "JPN"],
+    ["ATT", "pos-att", "MOR"],
+  ];
+
+  document
+    .querySelectorAll(
+      '[data-division-panel="world-cup"] .squad-board:not(.national-squad-board)',
+    )
+    .forEach((board) => {
+      const header = board.querySelector(".player-table-head");
+      if (!header) {
+        return;
+      }
+
+      board.querySelectorAll(".player-card:not(.player-table-head)").forEach((row) => {
+        row.remove();
+      });
+
+      formation.forEach(([position, positionClass, shirtCode]) => {
+        const row = document.createElement("article");
+        row.className = `player-card ${positionClass}`;
+        row.innerHTML = `
+          <img src="assets/shirts/${shirtCode}.png" alt="" />
+          <div class="player-main">
+            <strong>FIRSTNAME LASTNAME</strong>
+            <small>À définir</small>
+          </div>
+          <div class="player-position">${position}</div>
+          <div class="player-stat">0</div>
+          <div class="player-stat">0</div>
+          <div class="player-stat">0</div>
+          <div class="player-stat">0</div>
+          ${Array.from({ length: 8 }, () => '<div class="day-cell">0</div>').join("")}
+        `;
+        board.append(row);
+      });
+    });
+}
+
+resetFantasyTeamRosters();
+
 function movePositionsBeforeShirts() {
   document.querySelectorAll(".squad-board .player-card").forEach((row) => {
     const position = row.querySelector(".player-position");
@@ -861,7 +913,7 @@ function appendSubstituteSlots() {
       return;
     }
 
-    for (let slotNumber = 1; slotNumber <= 2; slotNumber += 1) {
+    for (let slotNumber = 1; slotNumber <= 3; slotNumber += 1) {
       const slot = document.createElement("article");
       slot.className = "player-card pos-rem substitute-slot";
       slot.innerHTML = `
@@ -869,7 +921,7 @@ function appendSubstituteSlots() {
         <div class="substitute-slot-marker" aria-hidden="true">+</div>
         <div class="player-main">
           <strong>Place disponible</strong>
-          <small>Remplaçant ${slotNumber + 1}</small>
+          <small>Remplaçant ${slotNumber}</small>
         </div>
         <div class="player-stat player-price">-</div>
         <div class="player-stat">-</div>
