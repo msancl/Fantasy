@@ -150,6 +150,19 @@ p {
     0 12px 34px rgba(245, 180, 46, 0.18);
 }
 
+.world-cup-mode .top-nav a[href="#coupes"],
+.world-cup-mode .top-nav a[href="#archives"],
+.world-cup-mode .top-nav .world-cup-hidden-nav,
+.world-cup-mode #equipes [data-division="d1"],
+.world-cup-mode #equipes [data-division="d2a"],
+.world-cup-mode #equipes [data-division="d2b"],
+.world-cup-mode #classements [data-division="standings-d1"],
+.world-cup-mode #classements [data-division="standings-d2a"],
+.world-cup-mode #classements [data-division="standings-d2b"],
+.world-cup-mode #joueurs [data-division="players-premier-league"] {
+  display: none;
+}
+
 .shell {
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
@@ -199,6 +212,246 @@ p {
   font-size: 1.55rem;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.standings-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.standings-heading h3 {
+  margin-bottom: 2px;
+}
+
+.standings-heading p {
+  color: #8fa0b9;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.standings-heading > span {
+  border: 1px solid rgba(245, 180, 46, 0.28);
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #f5d27a;
+  background: rgba(245, 180, 46, 0.06);
+  font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.standings-table {
+  display: grid;
+  gap: 5px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.standings-table::-webkit-scrollbar {
+  display: none;
+}
+
+.standings-body {
+  display: grid;
+  gap: 5px;
+  min-width: 980px;
+}
+
+.standings-entry {
+  min-width: 0;
+}
+
+.standings-team-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-8px);
+  transition:
+    max-height 380ms ease,
+    opacity 220ms ease,
+    transform 300ms ease;
+}
+
+.standings-entry.is-open .standings-team-details {
+  max-height: 2800px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.standings-expanded-team {
+  margin-top: 5px;
+  border-color: rgba(var(--team-primary-rgb), 0.34);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.standings-expanded-team .team-card-grid {
+  margin-top: 12px;
+}
+
+.standings-row {
+  display: grid;
+  min-width: 980px;
+  grid-template-columns:
+    48px minmax(210px, 1fr)
+    repeat(8, minmax(48px, 54px))
+    66px;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(167, 184, 209, 0.12);
+  border-radius: 7px;
+  padding: 6px 10px;
+  background: rgba(5, 8, 13, 0.72);
+}
+
+.standings-table-head {
+  min-height: 34px;
+  border-left: 3px solid rgba(245, 180, 46, 0.65);
+  color: #9fb0c7;
+  background:
+    linear-gradient(180deg, rgba(245, 180, 46, 0.07), transparent),
+    #101216;
+  font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.standings-table-head span:nth-child(n + 3) {
+  text-align: center;
+}
+
+.standings-table-head span:first-child,
+.standings-table-head span:nth-child(2) {
+  text-align: center;
+}
+
+.standings-team {
+  position: relative;
+  border-left: 3px solid var(--team-primary);
+  background:
+    linear-gradient(90deg, rgba(var(--team-primary-rgb), 0.09), transparent 28%),
+    rgba(5, 8, 13, 0.76);
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.standings-team:hover,
+.standings-team:focus-visible {
+  border-color: var(--team-secondary);
+  outline: none;
+  background:
+    linear-gradient(90deg, rgba(var(--team-primary-rgb), 0.16), transparent 34%),
+    rgba(8, 12, 18, 0.92);
+  transform: translateX(2px);
+}
+
+.standings-entry:nth-child(-n + 3) > .standings-team {
+  border-color: rgba(245, 180, 46, 0.42);
+}
+
+.standings-rank,
+.standings-round-score,
+.standings-points {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.standings-rank {
+  color: #dce5f3;
+  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-size: 0.92rem;
+}
+
+.standings-entry:nth-child(1) .standings-rank {
+  color: #ffe08a;
+}
+
+.standings-team-name {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.standings-team-name i {
+  width: 30px;
+  height: 22px;
+  flex: 0 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px 4px 7px 7px;
+  background: linear-gradient(
+    135deg,
+    var(--team-primary) 0 48%,
+    var(--team-secondary) 48% 100%
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.standings-team-name b {
+  overflow: hidden;
+  color: #f7f8fa;
+  font-family: "Barlow Semi Condensed", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.standings-round-score {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(100, 116, 139, 0.25);
+  border-radius: 6px;
+  color: #e7edf6;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), transparent),
+    rgba(15, 21, 31, 0.9);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.standings-round-score.is-pending {
+  color: rgba(167, 184, 209, 0.4);
+  background: rgba(5, 8, 13, 0.42);
+}
+
+.standings-round-score.is-round-best {
+  border-color: #f5b42e;
+  color: #1a1000;
+  background:
+    linear-gradient(135deg, #fff0a8, #f5b42e 62%, #c98419);
+  box-shadow:
+    0 0 0 1px rgba(245, 180, 46, 0.16),
+    0 0 18px rgba(245, 180, 46, 0.2);
+}
+
+.standings-points {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(245, 180, 46, 0.38);
+  border-radius: 6px;
+  color: #fff1b8;
+  background:
+    linear-gradient(180deg, rgba(245, 180, 46, 0.16), rgba(245, 180, 46, 0.04)),
+    #141109;
 }
 
 .players-world-cup-panel {
@@ -683,6 +936,8 @@ p {
 }
 
 [data-division-panel="world-cup"]
+  .day-range-button:not([data-start="1"]),
+.standings-expanded-team
   .day-range-button:not([data-start="1"]) {
   display: none;
 }
@@ -788,6 +1043,8 @@ p {
 
 [data-division-panel="world-cup"] .player-price,
 [data-division-panel="world-cup"] .player-price-heading,
+.standings-expanded-team .player-price,
+.standings-expanded-team .player-price-heading,
 .national-squad-board .player-price,
 .national-squad-board .player-price-heading {
   display: none;
@@ -798,7 +1055,19 @@ p {
   gap: 5px;
 }
 
+.standings-expanded-team .player-card {
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 46px repeat(8, 0);
+  gap: 5px;
+}
+
 [data-division-panel="world-cup"]
+  .squad-board.is-days-open
+  .player-card {
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 46px repeat(8, 32px);
+  gap: 5px;
+}
+
+.standings-expanded-team
   .squad-board.is-days-open
   .player-card {
   grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 46px repeat(8, 32px);
@@ -1665,6 +1934,33 @@ p {
   .team-card-grid {
     min-width: 0;
     grid-template-columns: 1fr;
+  }
+
+  .standings-row {
+    grid-template-columns:
+      34px minmax(180px, 1fr)
+      repeat(8, 46px)
+      54px;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .standings-team-name {
+    gap: 7px;
+  }
+
+  .standings-team-name i {
+    width: 24px;
+    height: 18px;
+    flex-basis: 24px;
+  }
+
+  .standings-team-name b {
+    font-size: 0.86rem;
+  }
+
+  .standings-heading > span {
+    display: none;
   }
 
   .team-lineup-block {

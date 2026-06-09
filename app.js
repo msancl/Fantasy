@@ -1,7 +1,7 @@
 const pages = [
   "accueil",
-  "resultats",
   "equipes",
+  "resultats",
   "classements",
   "coupes",
   "joueurs",
@@ -87,6 +87,16 @@ function resetPageState(page) {
   if (page === "joueurs") {
     closeNationalTeams(section);
   }
+
+  if (page === "classements") {
+    section?.querySelectorAll(".standings-entry.is-open").forEach((entry) => {
+      entry.classList.remove("is-open");
+      entry
+        .querySelector(".standings-team")
+        ?.setAttribute("aria-expanded", "false");
+      entry.querySelector(".standings-team-details")?.replaceChildren();
+    });
+  }
 }
 
 function showPage() {
@@ -134,6 +144,146 @@ const worldCupTeams = [
   ["Universal Players", "universal", "#7dd3fc", "125, 211, 252", "#f5cf3d", "245, 207, 61", "#071018"],
 ];
 
+function createWorldCupStandings() {
+  const standings = document.querySelector(".standings-body");
+  if (!standings || standings.children.length) {
+    return;
+  }
+
+  const prototypeRoundScores = [
+    [13, 14, 15, null, null, null, null, null],
+    [15, 11, 13, null, null, null, null, null],
+    [10, 13, 13, null, null, null, null, null],
+    [12, 9, 13, null, null, null, null, null],
+    [11, 12, 8, null, null, null, null, null],
+    [9, 10, 9, null, null, null, null, null],
+    [8, 9, 8, null, null, null, null, null],
+    [7, 8, 7, null, null, null, null, null],
+    [6, 7, 6, null, null, null, null, null],
+    [5, 6, 5, null, null, null, null, null],
+    [4, 5, 4, null, null, null, null, null],
+    [3, 4, 3, null, null, null, null, null],
+  ];
+  const roundLabels = ["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"];
+  const bestRoundScores = roundLabels.map((_, roundIndex) =>
+    Math.max(
+      ...prototypeRoundScores
+        .map((scores) => scores[roundIndex])
+        .filter((score) => score !== null),
+    ),
+  );
+
+  worldCupTeams
+    .map((team, index) => {
+      const roundScores = prototypeRoundScores[index];
+      const points = roundScores.reduce(
+        (total, score) => total + (score ?? 0),
+        0,
+      );
+
+      return { team, points, roundScores };
+    })
+    .sort((a, b) => b.points - a.points)
+    .forEach(({ team, points, roundScores }, index) => {
+      const [name, slug, primary, primaryRgb, secondary, secondaryRgb] = team;
+      const entry = document.createElement("div");
+      const row = document.createElement("div");
+      const details = document.createElement("div");
+
+      entry.className = "standings-entry";
+      row.className = `standings-row standings-team team-${slug}`;
+      row.dataset.teamSlug = slug;
+      row.setAttribute("role", "button");
+      row.setAttribute("tabindex", "0");
+      row.setAttribute("aria-expanded", "false");
+      row.style.setProperty("--team-primary", primary);
+      row.setAttribute("aria-label", `Ouvrir l'équipe ${name}`);
+      row.style.setProperty("--team-primary-rgb", primaryRgb);
+      row.style.setProperty("--team-secondary", secondary);
+      row.style.setProperty("--team-secondary-rgb", secondaryRgb);
+      const roundCells = roundScores
+        .map((score, roundIndex) => {
+          const isBest =
+            score !== null && score === bestRoundScores[roundIndex];
+          const classes = [
+            "standings-round-score",
+            score === null ? "is-pending" : "",
+            isBest ? "is-round-best" : "",
+          ]
+            .filter(Boolean)
+            .join(" ");
+          const bestLabel = isBest
+            ? ` title="Meilleur score de ${roundLabels[roundIndex]}"`
+            : "";
+
+          return `<span class="${classes}"${bestLabel}>${score ?? "-"}</span>`;
+        })
+        .join("");
+      row.innerHTML = `
+        <strong class="standings-rank">${index + 1}</strong>
+        <span class="standings-team-name">
+          <i aria-hidden="true"></i>
+          <b>${name}</b>
+        </span>
+        ${roundCells}
+        <strong class="standings-points">${points}</strong>
+      `;
+      details.className = "standings-team-details";
+
+      const toggleTeam = () => {
+        const wasOpen = entry.classList.contains("is-open");
+
+        standings.querySelectorAll(".standings-entry.is-open").forEach((item) => {
+          item.classList.remove("is-open");
+          item
+            .querySelector(".standings-team")
+            ?.setAttribute("aria-expanded", "false");
+          const itemDetails = item.querySelector(".standings-team-details");
+          window.setTimeout(() => {
+            if (!item.classList.contains("is-open")) {
+              itemDetails?.replaceChildren();
+            }
+          }, 380);
+        });
+
+        if (wasOpen) {
+          return;
+        }
+
+        const source = document.querySelector(
+          `#equipes .team-card.team-${slug}`,
+        );
+        if (!source) {
+          return;
+        }
+
+        const teamCard = source.cloneNode(true);
+        teamCard.querySelector(".team-card-summary")?.remove();
+        teamCard.classList.add("is-open", "standings-expanded-team");
+        resetTeamDays(teamCard);
+        details.append(teamCard);
+        initializeTeamCardControls(teamCard);
+
+        void details.offsetHeight;
+        entry.classList.add("is-open");
+        row.setAttribute("aria-expanded", "true");
+      };
+
+      row.addEventListener("click", toggleTeam);
+      row.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleTeam();
+        }
+      });
+
+      entry.append(row, details);
+      standings.append(entry);
+    });
+}
+
+createWorldCupStandings();
+
 function formatTeamName(name) {
   return name.toUpperCase();
 }
@@ -150,7 +300,7 @@ function getTeamMonogram(name) {
 
 function createWorldCupTeams() {
   const source = document.querySelector(".team-san-mateo");
-  if (!source || document.querySelector(".team-aquarela")) {
+  if (!source || document.querySelector(".team-card.team-aquarela")) {
     return;
   }
 
@@ -1088,6 +1238,37 @@ function resetTeamDays(teamCard) {
     daysButton.setAttribute("aria-expanded", "false");
     daysButton.textContent = "Voir journées";
   }
+}
+
+function initializeTeamCardControls(teamCard) {
+  teamCard.querySelectorAll(".day-range-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      const lineupBlock = button.closest(".team-lineup-block");
+      setActiveDayRange(
+        lineupBlock,
+        Number(button.dataset.start),
+        Number(button.dataset.end),
+      );
+    });
+  });
+
+  teamCard.querySelectorAll(".days-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+      const lineupBlock = button.closest(".team-lineup-block");
+      const squadBoard = lineupBlock.querySelector(".squad-board");
+      const daysActions = lineupBlock.querySelector(".days-actions");
+      const isOpen = squadBoard.classList.toggle("is-days-open");
+
+      resetDayRange(lineupBlock);
+      lineupBlock.classList.toggle("is-days-open", isOpen);
+      if (daysActions) {
+        daysActions.scrollLeft = 0;
+      }
+
+      button.setAttribute("aria-expanded", String(isOpen));
+      button.textContent = isOpen ? "Masquer journées" : "Voir journées";
+    });
+  });
 }
 
 document.querySelectorAll(".team-details-toggle").forEach((summary) => {
