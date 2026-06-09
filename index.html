@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=98" />
+    <link rel="stylesheet" href="styles.css?v=109" />
     <script src="world-cup-squads.js?v=3" defer></script>
-    <script src="app.js?v=58" defer></script>
+    <script src="app.js?v=60" defer></script>
   </head>
   <body class="world-cup-mode">
     <header class="site-header">
@@ -27,8 +27,8 @@
     <nav class="top-nav" aria-label="Navigation principale">
       <a href="#accueil">Accueil</a>
       <a href="#equipes" class="world-cup-hidden-nav">Équipes</a>
-      <a href="#resultats">Résultats</a>
       <a href="#classements">Classements</a>
+      <a href="#resultats">Résultats</a>
       <a href="#coupes">Coupes</a>
       <a href="#joueurs">Joueurs</a>
       <a href="#transferts">Transferts</a>
@@ -127,7 +127,7 @@
                     <div class="day-cell">J8</div>
                   </div>
                   <article class="player-card pos-gk">
-                    <img src="assets/shirts/FRA.png" alt="" />
+                    <img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Mike Maignan</strong>
                       <small>France</small>
@@ -147,7 +147,7 @@
                     <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-def">
-                    <img src="assets/shirts/BRA.png" alt="" />
+                    <img src="assets/shirts/BRA.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Léo Pereira</strong>
                       <small>Brésil</small>
@@ -167,7 +167,7 @@
                     <div class="day-cell">5</div>
                   </article>
                   <article class="player-card pos-def is-substitute">
-                    <img src="assets/shirts/ARG.png" alt="" />
+                    <img src="assets/shirts/ARG.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Gonzalo Montiel</strong>
                       <small>Argentine · Entré J5</small>
@@ -187,7 +187,7 @@
                     <div class="day-cell">11</div>
                   </article>
                   <article class="player-card pos-def">
-                    <img src="assets/shirts/ENG.png" alt="" />
+                    <img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Jarell Quansah</strong>
                       <small>Angleterre</small>
@@ -207,7 +207,7 @@
                     <div class="day-cell">4</div>
                   </article>
                   <article class="player-card pos-mid">
-                    <img src="assets/shirts/ESP.png" alt="" />
+                    <img src="assets/shirts/ESP.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Rodri</strong>
                       <small>Espagne</small>
@@ -227,7 +227,7 @@
                     <div class="day-cell">8</div>
                   </article>
                   <article class="player-card pos-mid">
-                    <img src="assets/shirts/POR.png" alt="" />
+                    <img src="assets/shirts/POR.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Vitinha</strong>
                       <small>Portugal</small>
@@ -247,7 +247,7 @@
                     <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-mid">
-                    <img src="assets/shirts/GER.png" alt="" />
+                    <img src="assets/shirts/GER.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Leon Goretzka</strong>
                       <small>Allemagne</small>
@@ -267,7 +267,7 @@
                     <div class="day-cell">7</div>
                   </article>
                   <article class="player-card pos-att">
-                    <img src="assets/shirts/NED.png" alt="" />
+                    <img src="assets/shirts/NED.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Donyell Malen</strong>
                       <small>Pays-Bas</small>
@@ -287,7 +287,7 @@
                     <div class="day-cell">9</div>
                   </article>
                   <article class="player-card pos-att">
-                    <img src="assets/shirts/USA.png" alt="" />
+                    <img src="assets/shirts/USA.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Ricardo Pepi</strong>
                       <small>USA</small>
@@ -307,7 +307,7 @@
                     <div class="day-cell">7</div>
                   </article>
                   <article class="player-card pos-att">
-                    <img src="assets/shirts/JPN.png" alt="" />
+                    <img src="assets/shirts/JPN.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Ayase Ueda</strong>
                       <small>Japon</small>
@@ -327,7 +327,7 @@
                     <div class="day-cell">8</div>
                   </article>
                   <article class="player-card pos-rem is-replaced">
-                    <img src="assets/shirts/MOR.png" alt="" />
+                    <img src="assets/shirts/MOR.png" alt="" loading="lazy" decoding="async" />
                     <div class="player-main">
                       <strong>Nayef Aguerd</strong>
                       <small>Maroc · Sorti J5</small>
@@ -511,7 +511,253 @@
 
       <section id="transferts" class="panel page-section" data-page="transferts" hidden>
         <h2>Transferts</h2>
-        <p>La page Transferts arrive bientôt.</p>
+        <div class="transfer-page-grid">
+          <div class="transfer-ranking" aria-label="Top 15 des joueurs">
+          <h3>Top 15 des joueurs</h3>
+          <div class="transfer-ranking-head">
+            <span>Rang</span>
+            <span>Joueur</span>
+            <span>PTS</span>
+          </div>
+          <div class="transfer-ranking-list">
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">1</b><img src="assets/shirts/FRA.png" alt="Maillot de la France" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Kylian Mbappe</strong><small>France</small></span><strong class="transfer-points">64</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">2</b><img src="assets/shirts/NOR.png" alt="Maillot de la Norvege" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Erling Haaland</strong><small>Norvege</small></span><strong class="transfer-points">61</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">3</b><img src="assets/shirts/ENG.png" alt="Maillot de l'Angleterre" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Harry Kane</strong><small>Angleterre</small></span><strong class="transfer-points">58</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">4</b><img src="assets/shirts/BRA.png" alt="Maillot du Bresil" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Vinicius Junior</strong><small>Bresil</small></span><strong class="transfer-points">56</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">5</b><img src="assets/shirts/ARG.png" alt="Maillot de l'Argentine" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Lionel Messi</strong><small>Argentine</small></span><strong class="transfer-points">54</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">6</b><img src="assets/shirts/POR.png" alt="Maillot du Portugal" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Cristiano Ronaldo</strong><small>Portugal</small></span><strong class="transfer-points">52</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">7</b><img src="assets/shirts/ESP.png" alt="Maillot de l'Espagne" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Lamine Yamal</strong><small>Espagne</small></span><strong class="transfer-points">50</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">8</b><img src="assets/shirts/ENG.png" alt="Maillot de l'Angleterre" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Jude Bellingham</strong><small>Angleterre</small></span><strong class="transfer-points">48</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">9</b><img src="assets/shirts/FRA.png" alt="Maillot de la France" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Ousmane Dembele</strong><small>France</small></span><strong class="transfer-points">47</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">10</b><img src="assets/shirts/ENG.png" alt="Maillot de l'Angleterre" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Bukayo Saka</strong><small>Angleterre</small></span><strong class="transfer-points">46</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">11</b><img src="assets/shirts/BRA.png" alt="Maillot du Bresil" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Raphinha</strong><small>Bresil</small></span><strong class="transfer-points">45</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">12</b><img src="assets/shirts/ARG.png" alt="Maillot de l'Argentine" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Julian Alvarez</strong><small>Argentine</small></span><strong class="transfer-points">44</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">13</b><img src="assets/shirts/FRA.png" alt="Maillot de la France" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Michael Olise</strong><small>France</small></span><strong class="transfer-points">43</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">14</b><img src="assets/shirts/POR.png" alt="Maillot du Portugal" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Bruno Fernandes</strong><small>Portugal</small></span><strong class="transfer-points">42</strong>
+            </div>
+            <div class="transfer-ranking-row">
+              <b class="transfer-rank">15</b><img src="assets/shirts/URU.png" alt="Maillot de l'Uruguay" loading="lazy" decoding="async" />
+              <span class="transfer-player"><strong>Federico Valverde</strong><small>Uruguay</small></span><strong class="transfer-points">41</strong>
+            </div>
+          </div>
+        </div>
+          <div class="transfer-history" aria-label="Historique des transferts">
+            <h3>Historique des transferts</h3>
+            <div class="transfer-history-scroll">
+              <div class="transfer-history-head">
+                <span>Date</span>
+                <span>Équipe</span>
+                <span>N°</span>
+                <span>Joueur entrant</span>
+                <span aria-hidden="true"></span>
+                <span>Joueur sortant</span>
+              </div>
+              <div class="transfer-history-list">
+                <div class="transfer-history-row">
+                  <time datetime="2026-03-02T08:26">02/03 · 08h26</time>
+                  <span class="transfer-team" style="--club-primary:#050505;--club-secondary:#cbd5e1"><i></i><strong>San Mateo</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Kylian Mbappe</b><small>France</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Michael Olise</b><small>France</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-03-01T21:14">01/03 · 21h14</time>
+                  <span class="transfer-team" style="--club-primary:#004d98;--club-secondary:#7a1632"><i></i><strong>Nikhau FC</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/NOR.png" alt="" loading="lazy" decoding="async"><span><b>Erling Haaland</b><small>Norvege</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Harry Kane</b><small>Angleterre</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-28T18:42">28/02 · 18h42</time>
+                  <span class="transfer-team" style="--club-primary:#d62839;--club-secondary:#ffffff"><i></i><strong>Alex United</strong></span>
+                  <span class="transfer-number">3e</span>
+                  <span class="history-player"><img src="assets/shirts/BRA.png" alt="" loading="lazy" decoding="async"><span><b>Vinicius Junior</b><small>Bresil</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/BRA.png" alt="" loading="lazy" decoding="async"><span><b>Raphinha</b><small>Bresil</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-27T12:05">27/02 · 12h05</time>
+                  <span class="transfer-team" style="--club-primary:#168447;--club-secondary:#f4d03f"><i></i><strong>Aquarela do Brasil</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Jude Bellingham</b><small>Angleterre</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/POR.png" alt="" loading="lazy" decoding="async"><span><b>Bruno Fernandes</b><small>Portugal</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-26T09:31">26/02 · 09h31</time>
+                  <span class="transfer-team" style="--club-primary:#1769e0;--club-secondary:#080b12"><i></i><strong>Portloe Wanderers</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/ESP.png" alt="" loading="lazy" decoding="async"><span><b>Lamine Yamal</b><small>Espagne</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/URU.png" alt="" loading="lazy" decoding="async"><span><b>Federico Valverde</b><small>Uruguay</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-25T23:18">25/02 · 23h18</time>
+                  <span class="transfer-team" style="--club-primary:#f4f4f5;--club-secondary:#050505"><i></i><strong>Schtumpik Rovers</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/ARG.png" alt="" loading="lazy" decoding="async"><span><b>Lionel Messi</b><small>Argentine</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/ARG.png" alt="" loading="lazy" decoding="async"><span><b>Julian Alvarez</b><small>Argentine</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-24T16:47">24/02 · 16h47</time>
+                  <span class="transfer-team" style="--club-primary:#cf2634;--club-secondary:#8b919a"><i></i><strong>FC Brusseleir</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/POR.png" alt="" loading="lazy" decoding="async"><span><b>Cristiano Ronaldo</b><small>Portugal</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Ousmane Dembele</b><small>France</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-23T10:09">23/02 · 10h09</time>
+                  <span class="transfer-team" style="--club-primary:#7dd3fc;--club-secondary:#f5cf3d"><i></i><strong>Universal Players</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Bukayo Saka</b><small>Angleterre</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Michael Olise</b><small>France</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-22T19:52">22/02 · 19h52</time>
+                  <span class="transfer-team" style="--club-primary:#f97316;--club-secondary:#090909"><i></i><strong>Black Chihuahua United</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Harry Kane</b><small>Angleterre</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/USA.png" alt="" loading="lazy" decoding="async"><span><b>Christian Pulisic</b><small>USA</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-21T14:36">21/02 · 14h36</time>
+                  <span class="transfer-team" style="--club-primary:#8f2430;--club-secondary:#f1c94a"><i></i><strong>IFK Yvonedgar</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Ousmane Dembele</b><small>France</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/SEN.png" alt="" loading="lazy" decoding="async"><span><b>Sadio Mane</b><small>Senegal</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-20T08:18">20/02 · 08h18</time>
+                  <span class="transfer-team" style="--club-primary:#f97316;--club-secondary:#20c9c3"><i></i><strong>Lethal Weapon Athletic</strong></span>
+                  <span class="transfer-number">3e</span>
+                  <span class="history-player"><img src="assets/shirts/POR.png" alt="" loading="lazy" decoding="async"><span><b>Bruno Fernandes</b><small>Portugal</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/ESP.png" alt="" loading="lazy" decoding="async"><span><b>Pedri</b><small>Espagne</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-19T22:44">19/02 · 22h44</time>
+                  <span class="transfer-team" style="--club-primary:#c62735;--club-secondary:#6f3f2b"><i></i><strong>Montreal Celtic Revival</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/MOR.png" alt="" loading="lazy" decoding="async"><span><b>Achraf Hakimi</b><small>Maroc</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/GER.png" alt="" loading="lazy" decoding="async"><span><b>Leon Goretzka</b><small>Allemagne</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-18T17:03">18/02 · 17h03</time>
+                  <span class="transfer-team" style="--club-primary:#050505;--club-secondary:#cbd5e1"><i></i><strong>San Mateo</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/ARG.png" alt="" loading="lazy" decoding="async"><span><b>Gonzalo Montiel</b><small>Argentine</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/MOR.png" alt="" loading="lazy" decoding="async"><span><b>Nayef Aguerd</b><small>Maroc</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-17T11:27">17/02 · 11h27</time>
+                  <span class="transfer-team" style="--club-primary:#004d98;--club-secondary:#7a1632"><i></i><strong>Nikhau FC</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/BRA.png" alt="" loading="lazy" decoding="async"><span><b>Raphinha</b><small>Bresil</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/NED.png" alt="" loading="lazy" decoding="async"><span><b>Donyell Malen</b><small>Pays-Bas</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-16T20:15">16/02 · 20h15</time>
+                  <span class="transfer-team" style="--club-primary:#d62839;--club-secondary:#ffffff"><i></i><strong>Alex United</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Michael Olise</b><small>France</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/JPN.png" alt="" loading="lazy" decoding="async"><span><b>Ayase Ueda</b><small>Japon</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-15T13:48">15/02 · 13h48</time>
+                  <span class="transfer-team" style="--club-primary:#168447;--club-secondary:#f4d03f"><i></i><strong>Aquarela do Brasil</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/BRA.png" alt="" loading="lazy" decoding="async"><span><b>Vinicius Junior</b><small>Bresil</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/POR.png" alt="" loading="lazy" decoding="async"><span><b>Vitinha</b><small>Portugal</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-14T09:06">14/02 · 09h06</time>
+                  <span class="transfer-team" style="--club-primary:#1769e0;--club-secondary:#080b12"><i></i><strong>Portloe Wanderers</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/URU.png" alt="" loading="lazy" decoding="async"><span><b>Federico Valverde</b><small>Uruguay</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/ESP.png" alt="" loading="lazy" decoding="async"><span><b>Rodri</b><small>Espagne</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-13T18:39">13/02 · 18h39</time>
+                  <span class="transfer-team" style="--club-primary:#f4f4f5;--club-secondary:#050505"><i></i><strong>Schtumpik Rovers</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Bukayo Saka</b><small>Angleterre</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/USA.png" alt="" loading="lazy" decoding="async"><span><b>Ricardo Pepi</b><small>USA</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-12T07:54">12/02 · 07h54</time>
+                  <span class="transfer-team" style="--club-primary:#cf2634;--club-secondary:#8b919a"><i></i><strong>FC Brusseleir</strong></span>
+                  <span class="transfer-number">1er</span>
+                  <span class="history-player"><img src="assets/shirts/POR.png" alt="" loading="lazy" decoding="async"><span><b>Cristiano Ronaldo</b><small>Portugal</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/FRA.png" alt="" loading="lazy" decoding="async"><span><b>Kylian Mbappe</b><small>France</small></span></span>
+                </div>
+                <div class="transfer-history-row">
+                  <time datetime="2026-02-11T15:22">11/02 · 15h22</time>
+                  <span class="transfer-team" style="--club-primary:#7dd3fc;--club-secondary:#f5cf3d"><i></i><strong>Universal Players</strong></span>
+                  <span class="transfer-number">2e</span>
+                  <span class="history-player"><img src="assets/shirts/ESP.png" alt="" loading="lazy" decoding="async"><span><b>Lamine Yamal</b><small>Espagne</small></span></span>
+                  <i class="transfer-swap" aria-hidden="true">⇄</i>
+                  <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Jude Bellingham</b><small>Angleterre</small></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="archives" class="panel page-section" data-page="archives" hidden>

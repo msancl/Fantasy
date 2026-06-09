@@ -392,34 +392,10 @@ function createNationalTeamSections() {
 
   nationalTeams.forEach(([code, name]) => {
     const section = document.createElement("article");
-    const positionClasses = {
-      GB: "pos-gk",
-      DF: "pos-def",
-      MIL: "pos-mid",
-      ATT: "pos-att",
-    };
-    const squad = worldCupSquads[code] || [];
-    const playerRows = squad
-      .map(
-        (player, playerIndex) => `
-          <article class="player-card ${positionClasses[player.position]}" data-player-index="${playerIndex}">
-            <img src="assets/shirts/${code}.png" alt="" />
-            <div class="player-main">
-              <strong>${player.name}</strong>
-              <small>${name}</small>
-            </div>
-            <div class="player-position">${player.position}</div>
-            <div class="player-stat">0</div>
-            <div class="player-stat">0</div>
-            <div class="player-stat">0</div>
-            <div class="player-stat player-penalty-saves">0</div>
-            <div class="player-stat">0</div>
-          </article>
-        `,
-      )
-      .join("");
 
     section.className = "national-team-section has-player-table";
+    section.dataset.teamCode = code;
+    section.dataset.teamName = name;
     section.innerHTML = `
       <button
         class="national-team-header"
@@ -427,68 +403,23 @@ function createNationalTeamSections() {
         aria-expanded="false"
       >
         <span class="national-team-shirt">
-          <img src="assets/flags/${code}.png" alt="Drapeau de ${name}" />
+          <img
+            src="assets/flags/${code}.png"
+            alt="Drapeau de ${name}"
+            loading="lazy"
+            decoding="async"
+          />
         </span>
         <span class="national-team-name">${name}</span>
         <span class="national-team-indicator" aria-hidden="true"></span>
       </button>
-      <div class="national-team-roster">
-        <section class="team-card-block team-lineup-block">
-          <div class="block-title-row">
-            <div class="days-actions">
-              <button class="days-toggle" type="button" aria-expanded="false">
-                Voir journées
-              </button>
-              <div class="national-day-selector" aria-label="Journées">
-                ${["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"]
-                  .map(
-                    (label, dayIndex) => `
-                      <button
-                        class="national-day-button"
-                        type="button"
-                        data-day="${dayIndex + 1}"
-                        aria-pressed="false"
-                      >
-                        ${label}
-                      </button>
-                    `,
-                  )
-                  .join("")}
-              </div>
-            </div>
-          </div>
-          <div
-            class="squad-board national-squad-board"
-            data-no-substitutes
-            data-no-totals
-            data-no-season-extension
-            aria-label="Joueurs de ${name}"
-          >
-            <div class="player-card player-table-head">
-              <div></div>
-              <div>Joueur</div>
-              <div>Poste</div>
-              <div title="Matchs joués" aria-label="Matchs joués">MJ</div>
-              <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">G</div>
-              <div title="Assists" aria-label="Assists">A</div>
-              <div
-                class="clean-sheet-heading"
-                title="Clean Sheets"
-                aria-label="Clean Sheets"
-              >
-                CS
-              </div>
-              <div title="Pénaltys arrêtés" aria-label="Pénaltys arrêtés">P.ARR</div>
-              <div title="Points" aria-label="Points">Pts</div>
-            </div>
-            ${playerRows}
-          </div>
-        </section>
-      </div>
+      <div class="national-team-roster"></div>
     `;
 
     const toggle = section.querySelector(".national-team-header");
     toggle.addEventListener("click", () => {
+      ensureNationalTeamRoster(section);
+
       const lineupBlock = section.querySelector(".team-lineup-block");
       const board = section.querySelector(".national-squad-board");
       const daysButton = section.querySelector(".days-toggle");
@@ -509,6 +440,100 @@ function createNationalTeamSections() {
 
     list.append(section);
   });
+}
+
+function ensureNationalTeamRoster(section) {
+  if (section.dataset.rosterReady === "true") {
+    return;
+  }
+
+  const code = section.dataset.teamCode;
+  const name = section.dataset.teamName;
+  const roster = section.querySelector(".national-team-roster");
+  const positionClasses = {
+    GB: "pos-gk",
+    DF: "pos-def",
+    MIL: "pos-mid",
+    ATT: "pos-att",
+  };
+  const playerRows = (worldCupSquads[code] || [])
+    .map(
+      (player, playerIndex) => `
+        <article class="player-card ${positionClasses[player.position]}" data-player-index="${playerIndex}">
+          <img
+            src="assets/shirts/${code}.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="player-main">
+            <strong>${player.name}</strong>
+            <small>${name}</small>
+          </div>
+          <div class="player-position">${player.position}</div>
+          <div class="player-stat">0</div>
+          <div class="player-stat">0</div>
+          <div class="player-stat">0</div>
+          <div class="player-stat player-penalty-saves">0</div>
+          <div class="player-stat">0</div>
+        </article>
+      `,
+    )
+    .join("");
+
+  roster.innerHTML = `
+    <section class="team-card-block team-lineup-block">
+      <div class="block-title-row">
+        <div class="days-actions">
+          <button class="days-toggle" type="button" aria-expanded="false">
+            Voir journées
+          </button>
+          <div class="national-day-selector" aria-label="Journées">
+            ${["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"]
+              .map(
+                (label, dayIndex) => `
+                  <button
+                    class="national-day-button"
+                    type="button"
+                    data-day="${dayIndex + 1}"
+                    aria-pressed="false"
+                  >
+                    ${label}
+                  </button>
+                `,
+              )
+              .join("")}
+          </div>
+        </div>
+      </div>
+      <div
+        class="squad-board national-squad-board"
+        data-no-substitutes
+        data-no-totals
+        data-no-season-extension
+        aria-label="Joueurs de ${name}"
+      >
+        <div class="player-card player-table-head">
+          <div></div>
+          <div>Joueur</div>
+          <div>Poste</div>
+          <div title="Matchs joués" aria-label="Matchs joués">MJ</div>
+          <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">G</div>
+          <div title="Assists" aria-label="Assists">A</div>
+          <div class="clean-sheet-heading" title="Clean Sheets" aria-label="Clean Sheets">CS</div>
+          <div title="Pénaltys arrêtés" aria-label="Pénaltys arrêtés">P.ARR</div>
+          <div title="Points" aria-label="Points">Pts</div>
+        </div>
+        ${playerRows}
+      </div>
+    </section>
+  `;
+
+  section.dataset.rosterReady = "true";
+  movePositionsBeforeShirts();
+  addPlayerPrices();
+  addCleanSheetStats();
+  initializeNationalBoard(section.querySelector(".national-squad-board"));
 }
 
 createNationalTeamSections();
@@ -718,20 +743,51 @@ function showNationalDayDetails(board, selectedDay) {
   }
 }
 
-function initializeNationalDayStats() {
-  document.querySelectorAll(".national-squad-board").forEach((board) => {
-    setNationalGeneralStats(board);
-    createNationalDayDetailCells(board);
+function initializeNationalBoard(board) {
+  if (!board || board.dataset.controlsReady === "true") {
+    return;
+  }
 
-    const lineupBlock = board.closest(".team-lineup-block");
-    lineupBlock?.querySelectorAll(".national-day-button").forEach((button) => {
-      button.addEventListener("click", () => {
-        const day = Number(button.dataset.day);
-        const selectedDay = Number(board.dataset.selectedDay);
-        showNationalDayDetails(board, selectedDay === day ? 0 : day);
-      });
+  setNationalGeneralStats(board);
+
+  const lineupBlock = board.closest(".team-lineup-block");
+  const daysToggle = lineupBlock?.querySelector(".days-toggle");
+
+  lineupBlock?.querySelectorAll(".national-day-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      createNationalDayDetailCells(board);
+
+      const day = Number(button.dataset.day);
+      const selectedDay = Number(board.dataset.selectedDay);
+      showNationalDayDetails(board, selectedDay === day ? 0 : day);
     });
   });
+
+  daysToggle?.addEventListener("click", () => {
+    const isOpen = !board.classList.contains("is-days-open");
+
+    lineupBlock.classList.toggle("is-days-open", isOpen);
+    board.classList.toggle("is-days-open", isOpen);
+    board.scrollLeft = 0;
+
+    if (isOpen) {
+      createNationalDayDetailCells(board);
+      showNationalDayDetails(board, 1);
+    } else {
+      clearNationalDayDetails(board);
+    }
+
+    daysToggle.setAttribute("aria-expanded", String(isOpen));
+    daysToggle.textContent = isOpen ? "Masquer journées" : "Voir journées";
+  });
+
+  board.dataset.controlsReady = "true";
+}
+
+function initializeNationalDayStats() {
+  document
+    .querySelectorAll(".national-squad-board")
+    .forEach(initializeNationalBoard);
 }
 
 function resetFantasyTeamRosters() {
@@ -767,7 +823,12 @@ function resetFantasyTeamRosters() {
         const row = document.createElement("article");
         row.className = `player-card ${positionClass}`;
         row.innerHTML = `
-          <img src="assets/shirts/${shirtCode}.png" alt="" />
+          <img
+            src="assets/shirts/${shirtCode}.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
           <div class="player-main">
             <strong>FIRSTNAME LASTNAME</strong>
             <small>À définir</small>
