@@ -7,6 +7,276 @@
   background: #000000;
 }
 
+/* World Cup fixtures */
+.fixtures-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.fixtures-heading h2 {
+  margin-bottom: 4px;
+}
+
+.fixtures-heading p {
+  margin: 0;
+  color: #9ba8bb;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+}
+
+.fixtures-source {
+  flex: 0 0 auto;
+  color: #f8d77a;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(245, 180, 46, 0.55);
+}
+
+.fixtures-source:hover,
+.fixtures-source:focus-visible {
+  color: #ffffff;
+}
+
+.fixtures-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding-bottom: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.fixtures-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.fixtures-filters button {
+  min-height: 42px;
+  padding: 0 18px;
+  flex: 0 0 auto;
+  color: #cbd4e2;
+  font: inherit;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #0b1018;
+  border: 1px solid #202a38;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fixtures-filters button:hover,
+.fixtures-filters button:focus-visible {
+  color: #ffffff;
+  border-color: rgba(245, 180, 46, 0.55);
+}
+
+.fixtures-filters button.is-active {
+  color: #0b0a07;
+  background: linear-gradient(135deg, #ffe08a, #f5b42e);
+  border-color: #f5b42e;
+  box-shadow: 0 8px 22px rgba(245, 180, 46, 0.12);
+}
+
+.fixtures-list {
+  display: grid;
+  gap: 30px;
+}
+
+.fixture-day {
+  min-width: 0;
+}
+
+.fixture-day-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 4px 10px;
+  border-bottom: 1px solid rgba(245, 180, 46, 0.42);
+}
+
+.fixture-day-header h3 {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 1.12rem;
+  text-transform: capitalize;
+}
+
+.fixture-day-header span {
+  color: #8f9aae;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.fixture-day-matches {
+  display: grid;
+}
+
+.fixture-match {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: center;
+  min-height: 128px;
+  border-bottom: 1px solid #18202b;
+}
+
+.fixture-kickoff {
+  display: grid;
+  justify-items: start;
+  gap: 2px;
+}
+
+.fixture-kickoff time {
+  color: #f9dc8a;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.fixture-kickoff span {
+  color: #68758a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.fixture-teams {
+  display: grid;
+  gap: 8px;
+  padding: 14px 22px;
+  border-left: 2px solid rgba(245, 180, 46, 0.48);
+}
+
+.fixture-team {
+  display: grid;
+  grid-template-columns: 28px minmax(160px, 220px) 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.fixture-team img {
+  width: 28px;
+  height: 19px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.fixture-team i {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: #8390a3;
+  font-style: normal;
+  border: 1px solid #283241;
+  border-radius: 50%;
+}
+
+.fixture-team strong {
+  overflow: hidden;
+  color: #f3f5f8;
+  font-size: 0.96rem;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.fixture-team.is-placeholder strong {
+  color: #aeb8c7;
+}
+
+.fixture-score {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 25px;
+  color: #f7dda0;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 900;
+  background: rgba(245, 180, 46, 0.06);
+  border: 1px solid rgba(245, 180, 46, 0.22);
+  border-radius: 5px;
+}
+
+.fixture-team-events {
+  display: grid;
+  grid-template-columns:
+    minmax(120px, 1.35fr) minmax(90px, 1fr)
+    minmax(55px, 0.55fr) minmax(90px, 0.9fr);
+  gap: 10px;
+  min-width: 0;
+  margin-left: 10px;
+  padding: 7px 0 7px 18px;
+  border-left: 1px solid #222b38;
+}
+
+.fixture-team-events > span {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.fixture-team-events b {
+  color: #929eb1;
+  font-size: 0.66rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.fixture-team-events em {
+  min-height: 18px;
+  color: #dce3ed;
+  font-size: 0.78rem;
+  font-style: normal;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .fixtures-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .fixtures-filters {
+    width: calc(100% + 24px);
+    margin-right: -24px;
+    padding-right: 24px;
+  }
+
+  .fixture-match {
+    grid-template-columns: 54px minmax(0, 1fr);
+    min-height: 0;
+    padding: 14px 0;
+  }
+
+  .fixture-teams {
+    padding: 4px 12px;
+  }
+
+  .fixture-team {
+    grid-template-columns: 28px minmax(0, 1fr) 28px;
+    row-gap: 8px;
+  }
+
+  .fixture-team-events {
+    grid-column: 2 / 4;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: 0;
+    padding: 8px 0 4px;
+    border-top: 1px solid #202936;
+    border-left: 0;
+  }
+}
+
 .transfer-page-grid {
   display: grid;
   grid-template-columns: minmax(300px, 350px) minmax(0, 1fr);
@@ -518,7 +788,6 @@ p {
 
 .world-cup-mode .top-nav a[href="#coupes"],
 .world-cup-mode .top-nav a[href="#archives"],
-.world-cup-mode .top-nav .world-cup-hidden-nav,
 .world-cup-mode #equipes [data-division="d1"],
 .world-cup-mode #equipes [data-division="d2a"],
 .world-cup-mode #equipes [data-division="d2b"],
@@ -667,8 +936,7 @@ p {
   min-width: 980px;
   grid-template-columns:
     48px minmax(210px, 1fr)
-    repeat(8, minmax(48px, 54px))
-    66px;
+    repeat(8, minmax(48px, 54px));
   min-height: 48px;
   align-items: center;
   gap: 10px;
@@ -2334,8 +2602,7 @@ p {
   .standings-row {
     grid-template-columns:
       34px minmax(180px, 1fr)
-      repeat(8, 46px)
-      54px;
+      repeat(8, 46px);
     gap: 6px;
     padding: 6px;
   }
@@ -2497,4 +2764,15 @@ p {
     gap: 4px;
     padding-left: 16px;
   }
+}
+
+.panel .fixtures-heading h2 {
+  margin-bottom: 4px;
+}
+
+.panel .fixtures-heading p {
+  margin: 0;
+  color: #9ba8bb;
+  font-size: 0.92rem;
+  text-transform: uppercase;
 }

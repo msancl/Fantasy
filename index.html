@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=109" />
+    <link rel="stylesheet" href="styles.css?v=116" />
     <script src="world-cup-squads.js?v=3" defer></script>
-    <script src="app.js?v=60" defer></script>
+    <script src="world-cup-fixtures.js?v=1" defer></script>
+    <script src="app.js?v=68" defer></script>
   </head>
   <body class="world-cup-mode">
     <header class="site-header">
@@ -26,7 +27,7 @@
 
     <nav class="top-nav" aria-label="Navigation principale">
       <a href="#accueil">Accueil</a>
-      <a href="#equipes" class="world-cup-hidden-nav">Équipes</a>
+      <a href="#equipes">Équipes</a>
       <a href="#classements">Classements</a>
       <a href="#resultats">Résultats</a>
       <a href="#coupes">Coupes</a>
@@ -43,8 +44,28 @@
       </section>
 
       <section id="resultats" class="panel page-section" data-page="resultats" hidden>
-        <h2>Résultats</h2>
-        <p>La page Résultats arrive bientôt.</p>
+        <div class="fixtures-heading">
+          <div>
+            <h2>Résultats</h2>
+            <p>Heure de Bruxelles</p>
+          </div>
+        </div>
+
+        <nav class="fixtures-filters" aria-label="Filtrer le calendrier">
+          <button class="is-active" type="button" data-fixture-filter="group-1">
+            J1
+          </button>
+          <button type="button" data-fixture-filter="group-2">J2</button>
+          <button type="button" data-fixture-filter="group-3">J3</button>
+          <button type="button" data-fixture-filter="r32">1/16</button>
+          <button type="button" data-fixture-filter="r16">1/8</button>
+          <button type="button" data-fixture-filter="qf">1/4</button>
+          <button type="button" data-fixture-filter="sf">1/2</button>
+          <button type="button" data-fixture-filter="third">3e place</button>
+          <button type="button" data-fixture-filter="final">Finale</button>
+        </nav>
+
+        <div class="fixtures-list" aria-live="polite"></div>
       </section>
 
       <section id="equipes" class="panel page-section" data-page="equipes" hidden>
@@ -89,8 +110,8 @@
                 </h4>
               </div>
               <div class="team-card-actions">
-                <div class="team-rank" aria-label="Position et points au classement">
-                  <strong>1er · 484 points</strong>
+                <div class="team-rank" aria-label="Position au classement">
+                  <strong>1er</strong>
                 </div>
                 <button class="team-details-toggle-hidden" type="button" aria-expanded="false">
                   Détails
@@ -432,7 +453,6 @@
               <span title="Quarts de finale">1/4</span>
               <span title="Demi-finales">1/2</span>
               <span title="Finale">F</span>
-              <span>PTS</span>
             </div>
             <div class="standings-body"></div>
           </div>

@@ -1,0 +1,1223 @@
+DREAM TEAM WORLD CUP PLAYERS
+Source: https://dev-fantasy.uat-dreamteamfc.com/
+Fields: PLAYER | POSITION | NATIONAL TEAM
+Total players: 1123
+
+=== ALGERIA ===
+Luca Zidane | GK | Algeria
+Aïssa Mandi | DEF | Algeria
+Rafik Belghali | DEF | Algeria
+Ramy Bensebaini | DEF | Algeria
+Rayan Aït-Nouri | DEF | Algeria
+Zineddine Belaïd | DEF | Algeria
+Farès Chaïbi | MID | Algeria
+Hicham Boudaoui | MID | Algeria
+Houssem Aouar | MID | Algeria
+Ibrahim Maza | MID | Algeria
+Ramiz Zerrouki | MID | Algeria
+Riyad Mahrez | MID | Algeria
+Amine Gouiri | FWD | Algeria
+Mohammed Amoura | FWD | Algeria
+
+=== ARGENTINA ===
+Emiliano Martínez | GK | Argentina
+Gerónimo Rulli | GK | Argentina
+Juan Musso | GK | Argentina
+Cristian Romero | DEF | Argentina
+Gonzalo Montiel | DEF | Argentina
+Leonardo Balerdi | DEF | Argentina
+Lisandro Martínez | DEF | Argentina
+Marcos Javier Acuña | DEF | Argentina
+Marcos Nicolás Senesi Barón | DEF | Argentina
+Nahuel Molina | DEF | Argentina
+Nicolás Otamendi | DEF | Argentina
+Nicolás Tagliafico | DEF | Argentina
+Alexis Mac Allister | MID | Argentina
+Enzo Fernández | MID | Argentina
+Exequiel Palacios | MID | Argentina
+Giovani Lo Celso | MID | Argentina
+Giuliano Simeone | MID | Argentina
+Leandro Paredes | MID | Argentina
+Nico González | MID | Argentina
+Nico Paz | MID | Argentina
+Rodrigo De Paul | MID | Argentina
+Thiago Almada | MID | Argentina
+Julián Alvarez | FWD | Argentina
+Lautaro Martínez | FWD | Argentina
+Lionel Messi | FWD | Argentina
+Franco Mastantuono | STR | Argentina
+
+=== AUSTRALIA ===
+Mathew Ryan | GK | Australia
+Alessandro Circati | DEF | Australia
+Jordan Bos | DEF | Australia
+Kye Francis Rowles | DEF | Australia
+Milos Degenek | DEF | Australia
+Aiden O'Neill | MID | Australia
+Connor Metcalfe | MID | Australia
+Nestory Irankunda | MID | Australia
+Awer Mabil | FWD | Australia
+Martin Callie Boyle | STR | Australia
+
+=== AUSTRIA ===
+Alexander Schlager | GK | Austria
+Florian Wiegele | GK | Austria
+Patrick Pentz | GK | Austria
+Alexander Prass | DEF | Austria
+David Affengruber | DEF | Austria
+David Alaba | DEF | Austria
+Kevin Danso | DEF | Austria
+Marco Friedl | DEF | Austria
+Michael Svoboda | DEF | Austria
+Philipp Lienhart | DEF | Austria
+Phillipp Mwene | DEF | Austria
+Stefan Posch | DEF | Austria
+Alessandro Schöpf | MID | Austria
+Carney Chukwuemeka | MID | Austria
+Christoph Baumgartner | MID | Austria
+Florian Grillitsch | MID | Austria
+Konrad Laimer | MID | Austria
+Marcel Sabitzer | MID | Austria
+Nicolas Seiwald | MID | Austria
+Patrick Wimmer | MID | Austria
+Paul Wanner | MID | Austria
+Romano Schmid | MID | Austria
+Xaver Schlager | MID | Austria
+Marko Arnautovic | FWD | Austria
+Michael Gregoritsch | FWD | Austria
+Sasa Kalajdzic | FWD | Austria
+
+=== BELGIUM ===
+Mike Penders | GK | Belgium
+Senne Lammens | GK | Belgium
+Thibaut Courtois | GK | Belgium
+Arthur Theate | DEF | Belgium
+Brandon Mechele | DEF | Belgium
+Joaquin Seys | DEF | Belgium
+Koni De Winter | DEF | Belgium
+Maxim De Cuyper | DEF | Belgium
+Nathan Ngoy | DEF | Belgium
+Thomas Meunier | DEF | Belgium
+Timothy Castagne | DEF | Belgium
+Zeno Debast | DEF | Belgium
+Alexis Saelemaekers | MID | Belgium
+Amadou Onana | MID | Belgium
+Axel Witsel | MID | Belgium
+Diego Moreira | MID | Belgium
+Dodi Lukébakio | MID | Belgium
+Hans Vanaken | MID | Belgium
+Jérémy Doku | MID | Belgium
+Kevin De Bruyne | MID | Belgium
+Leandro Trossard | MID | Belgium
+Nicolas Raskin | MID | Belgium
+Youri Tielemans | MID | Belgium
+Charles De Ketelaere | FWD | Belgium
+Matias Fernandez-Pardo | FWD | Belgium
+Romelu Lukaku | FWD | Belgium
+
+=== BOSNIA-HERZEGOVINA ===
+Martin Zlomislic | GK | Bosnia-Herzegovina
+Nikola Vasilj | GK | Bosnia-Herzegovina
+Osman Hadžikić | GK | Bosnia-Herzegovina
+Amar Dedic | DEF | Bosnia-Herzegovina
+Dennis Hadzikadunic | DEF | Bosnia-Herzegovina
+Nidal Celik | DEF | Bosnia-Herzegovina
+Nihad Mujakic | DEF | Bosnia-Herzegovina
+Nikola Katic | DEF | Bosnia-Herzegovina
+Sead Kolasinac | DEF | Bosnia-Herzegovina
+Stjepan Radeljic | DEF | Bosnia-Herzegovina
+Tarik Muharemovic | DEF | Bosnia-Herzegovina
+Amar Memic | MID | Bosnia-Herzegovina
+Amir Hadziahmetovic | MID | Bosnia-Herzegovina
+Armin Gigovic | MID | Bosnia-Herzegovina
+Benjamin Tahirovic | MID | Bosnia-Herzegovina
+Dzenis Burnic | MID | Bosnia-Herzegovina
+Ermin Mahmic | MID | Bosnia-Herzegovina
+Esmir Bajraktarevic | MID | Bosnia-Herzegovina
+Ivan Basic | MID | Bosnia-Herzegovina
+Ivan Sunjic | MID | Bosnia-Herzegovina
+Kerim Alajbegovic | MID | Bosnia-Herzegovina
+Edin Dzeko | FWD | Bosnia-Herzegovina
+Ermedin Demirovic | FWD | Bosnia-Herzegovina
+Haris Tabakovic | FWD | Bosnia-Herzegovina
+Jovo Lukic | FWD | Bosnia-Herzegovina
+Samed Bazdar | FWD | Bosnia-Herzegovina
+
+=== BRAZIL ===
+Alisson Ramsés Becker | GK | Brazil
+Ederson Santana de Moraes | GK | Brazil
+Weverton Pereira da Silva | GK | Brazil
+Alex Sandro Lobo da Silva | DEF | Brazil
+Danilo Luiz da Silva | DEF | Brazil
+Douglas dos Santos Justino de Melo | DEF | Brazil
+Gabriel dos Santos Magalhães | DEF | Brazil
+Gleison Bremer Silva Nascimento | DEF | Brazil
+Leonardo Pereira | DEF | Brazil
+Marcos Aoás Corrêa | DEF | Brazil
+Roger Ibañez da Silva | DEF | Brazil
+Wesley Vinícius França Lima | DEF | Brazil
+Bruno Guimarães Rodriguez Moura | MID | Brazil
+Carlos Henrique Casimiro | MID | Brazil
+Danilo dos Santos de Oliveira | MID | Brazil
+Fábio Henrique Tavares | MID | Brazil
+Gabriel Teodoro Martinelli Silva | MID | Brazil
+Lucas Tolentino Coelho de Lima | MID | Brazil
+Luiz Henrique André Rosa da Silva | MID | Brazil
+Raphael Dias Belloli | MID | Brazil
+Rayan Vitor Simplício Rocha | MID | Brazil
+Vinícius José Paixão de Oliveira Júnior | MID | Brazil
+Endrick Felipe Moreira de Sousa | FWD | Brazil
+Igor Thiago Nascimento Rodrigues | FWD | Brazil
+Matheus Santos Carneiro da Cunha | FWD | Brazil
+Neymar da Silva Santos Júnior | FWD | Brazil
+
+=== CABO VERDE ===
+Carlos Joaquim Antunes dos Santos | GK | Cabo Verde
+Josimar José Évora Dias | GK | Cabo Verde
+Márcio Salomão Brazão da Rosa | GK | Cabo Verde
+Edilson Alberto Monteiro Sanches Borges | DEF | Cabo Verde
+Ianique dos Santos Tavares | DEF | Cabo Verde
+João Paulo Moreira Fernandes | DEF | Cabo Verde
+Kelvin Spencer Pires | DEF | Cabo Verde
+Logan Evans Costa | DEF | Cabo Verde
+Roberto Carlos Lopes | DEF | Cabo Verde
+Sidny Lopes Cabral | DEF | Cabo Verde
+Steven Moreira | DEF | Cabo Verde
+Wagner Fabrício Cardoso de Pina | DEF | Cabo Verde
+Deroy d'Encarnação Duarte | MID | Cabo Verde
+Garry Mendes Rodrigues | MID | Cabo Verde
+Hélio Sandro Oliveira Alves Varela | MID | Cabo Verde
+Jamiro Gregory Monteiro Alvarenga | MID | Cabo Verde
+Jovane Eduardo Borges Cabral | MID | Cabo Verde
+Kevin Lenini Gonçalves Pereira de Pina | MID | Cabo Verde
+Laros Michael d'Encarnação  Duarte | MID | Cabo Verde
+Ryan Isaac Mendes da Graça | MID | Cabo Verde
+Telmo Emanuel Gomes Arcanjo | MID | Cabo Verde
+Willy Johnson Semedo Afonso | MID | Cabo Verde
+Dailon Rocha Livramento do Rosário | FWD | Cabo Verde
+Gilson Benchimol Tavares | FWD | Cabo Verde
+Nuno Miguel da Costa Jóia | FWD | Cabo Verde
+
+=== CANADA ===
+Dayne St. Clair | GK | Canada
+Maxime Crépeau | GK | Canada
+Owen Goodman | GK | Canada
+Alistair Johnston | DEF | Canada
+Alphonso Davies | DEF | Canada
+Derek Cornelius | DEF | Canada
+Joel Waterman | DEF | Canada
+Luc De Fougerolles | DEF | Canada
+Moïse Bombito | DEF | Canada
+Niko Sigur | DEF | Canada
+Richie Laryea | DEF | Canada
+Ali Ahmed | MID | Canada
+Ismaël Koné | MID | Canada
+Jacob Shaffelburg | MID | Canada
+Jonathan Osorio | MID | Canada
+Liam Millar | MID | Canada
+Mathieu Choinière | MID | Canada
+Nathan Saliba | MID | Canada
+Stephen Eustaquio | MID | Canada
+Tajon Buchanan | MID | Canada
+Cyle Larin | FWD | Canada
+Jonathan David | FWD | Canada
+Promise David | FWD | Canada
+Tani Oluwaseyi | FWD | Canada
+Jayden Nelson | STR | Canada
+
+=== COLOMBIA ===
+Álvaro Montero | GK | Colombia
+Camilo Vargas | GK | Colombia
+David Ospina | GK | Colombia
+Daniel Muñoz | DEF | Colombia
+Davinson Sánchez | DEF | Colombia
+Deiver Machado | DEF | Colombia
+Jhon Lucumí | DEF | Colombia
+Johan Mojica | DEF | Colombia
+Santiago Arias | DEF | Colombia
+Willer Ditta | DEF | Colombia
+Yerry Mina | DEF | Colombia
+Andrés Gómez | MID | Colombia
+Gustavo Puerta | MID | Colombia
+James Rodríguez | MID | Colombia
+Jaminton Campaz | MID | Colombia
+Jefferson Lerma | MID | Colombia
+Jhon Arias | MID | Colombia
+Jorge Carrascal | MID | Colombia
+Juan Fernando Quintero | MID | Colombia
+Juan Portilla | MID | Colombia
+Kevin Castaño | MID | Colombia
+Luis Díaz | MID | Colombia
+Richard Ríos | MID | Colombia
+Cucho Hernández | FWD | Colombia
+Jhon Córdoba | FWD | Colombia
+Luis Suárez | FWD | Colombia
+
+=== CONGO DR ===
+Lionel Mpasi | GK | Congo DR
+Matthieu Epolo | GK | Congo DR
+Timothy Fayulu | GK | Congo DR
+Aaron Wan-Bissaka | DEF | Congo DR
+Arthur Masuaku | DEF | Congo DR
+Axel Tuanzebe | DEF | Congo DR
+Chancel Mbemba | DEF | Congo DR
+Dylan Batubinsika | DEF | Congo DR
+Gédéon Kalulu | DEF | Congo DR
+Joris Kayembe | DEF | Congo DR
+Steve Kapuadi | DEF | Congo DR
+Aaron Tshibola | MID | Congo DR
+Brian Cipenga | MID | Congo DR
+Charles Pickel | MID | Congo DR
+Edo Kayembe | MID | Congo DR
+Gaël Kakuta | MID | Congo DR
+Meschack Elia | MID | Congo DR
+Nathanaël Mbuku | MID | Congo DR
+Ngal'ayel Mukau | MID | Congo DR
+Noah Sadiki | MID | Congo DR
+Samuel Moutoussamy | MID | Congo DR
+Théo Bongonda | MID | Congo DR
+Cédric Bakambu | FWD | Congo DR
+Fiston Mayele | FWD | Congo DR
+Simon Banza | FWD | Congo DR
+Yoane Wissa | FWD | Congo DR
+
+=== CÔTE D'IVOIRE ===
+Alban Lafont | GK | Côte d'Ivoire
+Mohamed Koné | GK | Côte d'Ivoire
+Yahia Fofana | GK | Côte d'Ivoire
+Clément Akpa | DEF | Côte d'Ivoire
+Emmanuel Agbadou | DEF | Côte d'Ivoire
+Evan Ndicka | DEF | Côte d'Ivoire
+Ghislain Konan | DEF | Côte d'Ivoire
+Guéla Doué | DEF | Côte d'Ivoire
+Odilon Kossounou | DEF | Côte d'Ivoire
+Ousmane Diomande | DEF | Côte d'Ivoire
+Wilfried Singo | DEF | Côte d'Ivoire
+Amad Diallo | MID | Côte d'Ivoire
+Bazoumana Touré | MID | Côte d'Ivoire
+Christ Inao Oulaï | MID | Côte d'Ivoire
+Franck Kessie | MID | Côte d'Ivoire
+Ibrahim Sangaré | MID | Côte d'Ivoire
+Jean Michaël Seri | MID | Côte d'Ivoire
+Nicolas Pépé | MID | Côte d'Ivoire
+Parfait Guiagon | MID | Côte d'Ivoire
+Seko Fofana | MID | Côte d'Ivoire
+Simon Adingra | MID | Côte d'Ivoire
+Yan Diomande | MID | Côte d'Ivoire
+Ange-Yoan Bonny | FWD | Côte d'Ivoire
+Elye Wahi | FWD | Côte d'Ivoire
+Evann Guessand | FWD | Côte d'Ivoire
+Oumar Diakité | FWD | Côte d'Ivoire
+
+=== CROATIA ===
+Dominik Kotarski | GK | Croatia
+Dominik Livakovic | GK | Croatia
+Ivor Pandur | GK | Croatia
+Duje Caleta-Car | DEF | Croatia
+Josip Stanisic | DEF | Croatia
+Josip Sutalo | DEF | Croatia
+Josko Gvardiol | DEF | Croatia
+Luka Vuskovic | DEF | Croatia
+Marin Pongracic | DEF | Croatia
+Martin Erlic | DEF | Croatia
+Ivan Perisic | MID | Croatia
+Kristijan Jakic | MID | Croatia
+Luka Modric | MID | Croatia
+Luka Sucic | MID | Croatia
+Marco Pasalic | MID | Croatia
+Mario Pasalic | MID | Croatia
+Martin Baturina | MID | Croatia
+Mateo Kovacic | MID | Croatia
+Nikola Moro | MID | Croatia
+Nikola Vlasic | MID | Croatia
+Petar Sucic | MID | Croatia
+Toni Fruk | MID | Croatia
+Andrej Kramaric | FWD | Croatia
+Ante Budimir | FWD | Croatia
+Igor Matanovic | FWD | Croatia
+Petar Musa | FWD | Croatia
+
+=== CURAÇAO ===
+Eloy Room | GK | Curaçao
+Trevor Doornbusch | GK | Curaçao
+Tyrick Bodak | GK | Curaçao
+Armando Obispo | DEF | Curaçao
+Deveron Fonville | DEF | Curaçao
+Joshua Brenet | DEF | Curaçao
+Juriën Gaari | DEF | Curaçao
+Riechedly Bazoer | DEF | Curaçao
+Roshon van Eijma | DEF | Curaçao
+Sherel Floranus | DEF | Curaçao
+Shurandy Sambo | DEF | Curaçao
+Ar'Jany Martha | MID | Curaçao
+Godfried Roemeratoe | MID | Curaçao
+Jearl Margaritha | MID | Curaçao
+Jeremy Antonisse | MID | Curaçao
+Juninho Bacuna | MID | Curaçao
+Kenji Gorré | MID | Curaçao
+Kevin Felida | MID | Curaçao
+Leandro Bacuna | MID | Curaçao
+Livano Comenencia | MID | Curaçao
+Sontje Hansen | MID | Curaçao
+Tahith Chong | MID | Curaçao
+Tyrese Noslin | MID | Curaçao
+Brandley Kuwas | FWD | Curaçao
+Gervane Kastaneer | FWD | Curaçao
+Jürgen Locadia | FWD | Curaçao
+
+=== CZECHIA ===
+Jindrich Stanek | GK | Czechia
+Lukás Hornícek | GK | Czechia
+Matej Kovár | GK | Czechia
+David Jurásek | DEF | Czechia
+David Zima | DEF | Czechia
+Jaroslav Zeleny | DEF | Czechia
+Ladislav Krejcí | DEF | Czechia
+Robin Hranác | DEF | Czechia
+Tomás Holes | DEF | Czechia
+Vladimír Coufal | DEF | Czechia
+Adam Hlozek | MID | Czechia
+David Doudera | MID | Czechia
+Lukás Cerv | MID | Czechia
+Lukás Provod | MID | Czechia
+Michal Sadílek | MID | Czechia
+Pavel Sulc | MID | Czechia
+Tomás Soucek | MID | Czechia
+Vladimír Darida | MID | Czechia
+Mojmír Chytil | FWD | Czechia
+Patrik Schick | FWD | Czechia
+Tomás Chory | FWD | Czechia
+
+=== ECUADOR ===
+Hernán Galíndez | GK | Ecuador
+Joel Ordóñez | DEF | Ecuador
+Pervis Estupiñán | DEF | Ecuador
+Piero Hincapié | DEF | Ecuador
+Willian Pacho | DEF | Ecuador
+Gonzalo Plata | MID | Ecuador
+John Yeboah | MID | Ecuador
+Kendry Páez | MID | Ecuador
+Moisés Caicedo | MID | Ecuador
+Nilson Angulo | MID | Ecuador
+Pedro Vite | MID | Ecuador
+Enner Valencia | FWD | Ecuador
+Kevin Rodríguez | FWD | Ecuador
+
+=== EGYPT ===
+Mohamed El Sayed Mohamed El Shenawy Gomaa | GK | Egypt
+Mostafa Ahmed Abdelaziz Mohamed Shobeir | GK | Egypt
+Ahmed Mohamed Abou El Fotouh Mohamed | DEF | Egypt
+Hamdi Fathy Abdelhalim Abdel Fattah | DEF | Egypt
+Hossam Abdelmaguid Abdelsalam Abdelmaguid | DEF | Egypt
+Karim Hafez Ramadan Seif El Din | DEF | Egypt
+Mohamed Abdelmonem El Sayed Mohamed Ahmed | DEF | Egypt
+Mohamed Hany Gamal El Demerdash | DEF | Egypt
+Ramy Hisham Abdel Aziz Mostafa Rabia | DEF | Egypt
+Yasser Ahmed Ibrahim El Hanafi | DEF | Egypt
+Ahmed Mostafa Mohamed Sayed | MID | Egypt
+Emam Ashour Metwally Abdel Ghany | MID | Egypt
+Ibrahim Adel Ali Mohamed Hassan | MID | Egypt
+Mahmoud Ahmed Ibrahim Hassan | MID | Egypt
+Mahmoud Saber Abdelmohsen Hassan | MID | Egypt
+Marwan Attia Fahim Ghallab | MID | Egypt
+Mohanad Mostafa Ahmed Abdelmonem Lasheen | MID | Egypt
+Nabil Emad Aly El Mahdy | MID | Egypt
+Mohamed Salah Hamed Mahrous Ghaly | FWD | Egypt
+Omar Khaled Mohamed Abdelsalam Marmoush | FWD | Egypt
+
+=== ENGLAND ===
+Dean Henderson | GK | England
+James Trafford | GK | England
+Jordan Pickford | GK | England
+Dan Burn | DEF | England
+Djed Spence | DEF | England
+Ezri Konsa | DEF | England
+Jarell Quansah | DEF | England
+John Stones | DEF | England
+Marc Guéhi | DEF | England
+Nico O'Reilly | DEF | England
+Reece James | DEF | England
+Tino Livramento | DEF | England
+Anthony Gordon | MID | England
+Bukayo Saka | MID | England
+Declan Rice | MID | England
+Eberechi Eze | MID | England
+Elliot Anderson | MID | England
+Jordan Henderson | MID | England
+Jude Bellingham | MID | England
+Kobbie Mainoo | MID | England
+Marcus Rashford | MID | England
+Morgan Rogers | MID | England
+Noni Madueke | MID | England
+Harry Kane | FWD | England
+Ivan Toney | FWD | England
+Ollie Watkins | FWD | England
+
+=== FRANCE ===
+Brice Samba | GK | France
+Mike Maignan | GK | France
+Robin Risser | GK | France
+Dayot Upamecano | DEF | France
+Ibrahima Konaté | DEF | France
+Jules Koundé | DEF | France
+Lucas Digne | DEF | France
+Lucas Hernández | DEF | France
+Malo Gusto | DEF | France
+Maxence Lacroix | DEF | France
+Théo Hernández | DEF | France
+William Saliba | DEF | France
+Adrien Rabiot | MID | France
+Aurélien Tchouaméni | MID | France
+Bradley Barcola | MID | France
+Désiré Doué | MID | France
+Maghnes Akliouche | MID | France
+Manu Koné | MID | France
+Michael Olise | MID | France
+N'Golo Kanté | MID | France
+Ousmane Dembélé | MID | France
+Rayan Cherki | MID | France
+Warren Zaïre-Emery | MID | France
+Jean-Philippe Mateta | FWD | France
+Kylian Mbappé | FWD | France
+Marcus Thuram | FWD | France
+
+=== GERMANY ===
+Alexander Nübel | GK | Germany
+Manuel Neuer | GK | Germany
+Oliver Baumann | GK | Germany
+Antonio Rüdiger | DEF | Germany
+David Raum | DEF | Germany
+Jonathan Tah | DEF | Germany
+Joshua Kimmich | DEF | Germany
+Malick Thiaw | DEF | Germany
+Nathaniel Brown | DEF | Germany
+Nico Schlotterbeck | DEF | Germany
+Waldemar Anton | DEF | Germany
+Aleksandar Pavlovic | MID | Germany
+Angelo Stiller | MID | Germany
+Felix Nmecha | MID | Germany
+Florian Wirtz | MID | Germany
+Jamal Musiala | MID | Germany
+Jamie Leweling | MID | Germany
+Lennart Karl | MID | Germany
+Leon Goretzka | MID | Germany
+Leroy Sané | MID | Germany
+Nadiem Amiri | MID | Germany
+Pascal Groß | MID | Germany
+Deniz Undav | FWD | Germany
+Kai Havertz | FWD | Germany
+Maximilian Beier | FWD | Germany
+Nick Woltemade | FWD | Germany
+
+=== GHANA ===
+Benjamin Asare | GK | Ghana
+Lawrence Ati Zigi | GK | Ghana
+Alexander Kwabena Baidooh Djiku | DEF | Ghana
+Alidu Seidu | DEF | Ghana
+Caleb Yirenkyi | DEF | Ghana
+Gideon Mensah | DEF | Ghana
+Jerome Opoku | DEF | Ghana
+Jonas Adjetey | DEF | Ghana
+Kojo Peprah Oppong | DEF | Ghana
+Abdul Fatawu Issahaku | MID | Ghana
+Antoine Semenyo | MID | Ghana
+Brandon Thomas-Asante | MID | Ghana
+Christopher Bonsu Baah | MID | Ghana
+Elisha Owusu | MID | Ghana
+Ernest Nuamah | MID | Ghana
+Kamaldeen Sulemana | MID | Ghana
+Kwasi Sibo | MID | Ghana
+Thomas Partey | MID | Ghana
+Iñaki Williams | FWD | Ghana
+Jordan Ayew | FWD | Ghana
+Prince Adu | FWD | Ghana
+
+=== HAITI ===
+Alexandre Pierre | GK | Haiti
+Johny Placide | GK | Haiti
+Josué Duverger | GK | Haiti
+Carlens Arcus | DEF | Haiti
+Duke Lacroix | DEF | Haiti
+Hannes Delcroix | DEF | Haiti
+Jean-Kévin Duverne | DEF | Haiti
+Keeto Thermoncy | DEF | Haiti
+Martin Expérience | DEF | Haiti
+Ricardo Adé | DEF | Haiti
+Wilguens Paugain | DEF | Haiti
+Carl Sainté | MID | Haiti
+Danley Jean Jacques | MID | Haiti
+Derrick Etienne | MID | Haiti
+Dominique Simon | MID | Haiti
+Jean-Ricner Bellegarde | MID | Haiti
+Josué Casimir | MID | Haiti
+Leverton Pierre | MID | Haiti
+Ruben Providence | MID | Haiti
+Woodensky Pierre | MID | Haiti
+Yassin Fortuné | MID | Haiti
+Duckens Nazon | FWD | Haiti
+Frantzdy Pierrot | FWD | Haiti
+Lenny Joseph | FWD | Haiti
+Louicius Deedson | FWD | Haiti
+Wilson Isidor | FWD | Haiti
+
+=== IR IRAN ===
+Alireza Beiranvand | GK | IR Iran
+Hossein Hosseini | GK | IR Iran
+Payam Niazmand | GK | IR Iran
+Ali Nemati | DEF | IR Iran
+Aria Yousefi | DEF | IR Iran
+Ehsan Hajisafi | DEF | IR Iran
+Hossein Kanani | DEF | IR Iran
+Milad Mohammadi | DEF | IR Iran
+Ramin Rezaeian | DEF | IR Iran
+Saleh Hardani | DEF | IR Iran
+Shoja Khalilzadeh | DEF | IR Iran
+Alireza Jahanbakhsh | MID | IR Iran
+Mehdi Ghayedi | MID | IR Iran
+Mehdi Torabi | MID | IR Iran
+Mohammad Mohebbi | MID | IR Iran
+Omid Noorafkan | MID | IR Iran
+Saeid Ezatolahi | MID | IR Iran
+Saman Ghoddos | MID | IR Iran
+Ali Alipour | FWD | IR Iran
+Amirhossein Hosseinzadeh | FWD | IR Iran
+Mehdi Taremi | FWD | IR Iran
+
+=== IRAQ ===
+Ahmed Basil Fadhil Al Fadhli | GK | Iraq
+Fahad Talib Raheem | GK | Iraq
+Jalal Hassan Hachim | GK | Iraq
+Akam Hashim Rahman | DEF | Iraq
+Frans Dhia Jirjis Haddad | DEF | Iraq
+Hussein Haydar Ali | DEF | Iraq
+Merchas Ghazi Salih Doski | DEF | Iraq
+Munaf Younus Hashim Al Tekreeti | DEF | Iraq
+Rebin Ghareeb Sulaka Adhamat | DEF | Iraq
+Zaid Tahseen Abd Zaid Hantoosh | DEF | Iraq
+Ali Jasim Elaibi Al Tameemi | MID | Iraq
+Amir Fouad Abboud Al Ammari | MID | Iraq
+Hasan Abdulkareem Jabbar Sayyid | MID | Iraq
+Ibrahim Bayesh Kamil Al Kaabawi | MID | Iraq
+Marko Hussein Farji | MID | Iraq
+Youssef Wali Faeq Amyn | MID | Iraq
+Zidane Aamar Iqbal | MID | Iraq
+Ali Ibrahim Karim Ali Al Hamadi | FWD | Iraq
+Aymen Hussein Ghadhban Al Mafraje | FWD | Iraq
+Mohanad Ali Kadhim Al Shammari | FWD | Iraq
+
+=== JAPAN ===
+Keisuke Osako | GK | Japan
+Tomoki Hayakawa | GK | Japan
+Zion Suzuki | GK | Japan
+Ayumu Seko | DEF | Japan
+Hiroki Ito | DEF | Japan
+Junnosuke Suzuki | DEF | Japan
+Ko Itakura | DEF | Japan
+Shogo Taniguchi | DEF | Japan
+Takehiro Tomiyasu | DEF | Japan
+Tsuyoshi Watanabe | DEF | Japan
+Yukinari Sugawara | DEF | Japan
+Yuto Nagatomo | DEF | Japan
+Ao Tanaka | MID | Japan
+Daichi Kamada | MID | Japan
+Daizen Maeda | MID | Japan
+Junya Ito | MID | Japan
+Kaishu Sano | MID | Japan
+Keito Nakamura | MID | Japan
+Ritsu Doan | MID | Japan
+Takefusa Kubo | MID | Japan
+Wataru Endo | MID | Japan
+Yuito Suzuki | MID | Japan
+Ayase Ueda | FWD | Japan
+Keisuke Goto | FWD | Japan
+Kento Shiogai | FWD | Japan
+Koki Ogawa | FWD | Japan
+
+=== JORDAN ===
+Abdallah Ra'ed Mahmoud Al Fakhouri | GK | Jordan
+Yazeed Mo'ien Hasan Abulaila | GK | Jordan
+Abdallah Mousa Musallam Nasib | DEF | Jordan
+Ehsan Nabil Farhan Haddad | DEF | Jordan
+Husam Ali Mohammad Abu Al Dahab | DEF | Jordan
+Mohammad Majed Jamil Abu Al Nadi | DEF | Jordan
+Saed Ahmad Salameh Al Rosan | DEF | Jordan
+Yazan Mousa Mahmoud Abu Al Arab | DEF | Jordan
+Amer Rasem Adel Jamous | MID | Jordan
+Ibrahim Mohammad Sami Sadeh | MID | Jordan
+Mahmoud Nayef Ahmad Al Mardi | MID | Jordan
+Mohammad Ali Hasan Abu Hasheesh | MID | Jordan
+Mohammad Faisal Yousef Abu Zraiq | MID | Jordan
+Mohannad Mahmoud Saleh Abu Taha | MID | Jordan
+Mousa Mohammad Mousa Sulaiman Al Tamari | MID | Jordan
+Nizar Mahmoud Ahmed Al Rashdan | MID | Jordan
+Noor Al Deen Mahmoud Ali Al Rawabdeh | MID | Jordan
+Odeh Burhan Shehadeh Fakhoury | MID | Jordan
+Raja'ei Ayed Fadel Hasan | MID | Jordan
+Ali Iyad Ali Olwan | FWD | Jordan
+Ibrahim Mohammad Abdallah Sabra | FWD | Jordan
+
+=== KOREA REPUBLIC ===
+Bum-Keun Song | GK | Korea Republic
+Hyeon-Woo Jo | GK | Korea Republic
+Seung-Gyu Kim | GK | Korea Republic
+Gi-Hyuk Lee | DEF | Korea Republic
+Han-Beom Lee | DEF | Korea Republic
+Min-Jae Kim | DEF | Korea Republic
+Moon-Hwan Kim | DEF | Korea Republic
+Tae-Hyeon Kim | DEF | Korea Republic
+Tae-Seok Lee | DEF | Korea Republic
+Young-Woo Seol | DEF | Korea Republic
+Yu-Min Cho | DEF | Korea Republic
+Dong-Gyeong Lee | MID | Korea Republic
+In-Beom Hwang | MID | Korea Republic
+Jae-Sung Lee | MID | Korea Republic
+Jens Castrop | MID | Korea Republic
+Jin-Gyu Kim | MID | Korea Republic
+Jin-Seob Park | MID | Korea Republic
+Jun-Ho Bae | MID | Korea Republic
+Kang-In Lee | MID | Korea Republic
+Seung-Ho Paik | MID | Korea Republic
+Gue-Sung Cho | FWD | Korea Republic
+Hee-Chan Hwang | FWD | Korea Republic
+Heung-Min Son | FWD | Korea Republic
+Hyeon-Gyu Oh | FWD | Korea Republic
+Hyun-Jun Yang | FWD | Korea Republic
+Ji-Sung Eom | FWD | Korea Republic
+
+=== MEXICO ===
+Guillermo Ochoa | GK | Mexico
+Raúl Rangel | GK | Mexico
+César Montes | DEF | Mexico
+Israel Reyes | DEF | Mexico
+Jesús Gallardo | DEF | Mexico
+Johan Vásquez | DEF | Mexico
+Jorge Sánchez | DEF | Mexico
+Mateo Chávez | DEF | Mexico
+Alexis Vega | MID | Mexico
+Brian Gutiérrez | MID | Mexico
+Carlos Alberto Rodríguez Gómez | MID | Mexico
+Diego Lainez Leyva | MID | Mexico
+Edson Álvarez | MID | Mexico
+Érick Daniel Sánchez Ocegueda | MID | Mexico
+Érik Lira | MID | Mexico
+Marcel Alejandro Ruiz Suárez | MID | Mexico
+Orbelín Pineda | MID | Mexico
+Armando González | FWD | Mexico
+Julián Quiñones | FWD | Mexico
+Raúl Jiménez | FWD | Mexico
+Roberto Alvarado | FWD | Mexico
+Santiago Giménez | FWD | Mexico
+
+=== MOROCCO ===
+Ahmed Reda Tagnaouti | GK | Morocco
+Munir El Kajoui | GK | Morocco
+Yassine Bounou | GK | Morocco
+Achraf Hakimi | DEF | Morocco
+Anass Salah-Eddine | DEF | Morocco
+Chadi Riad | DEF | Morocco
+Issa Diop | DEF | Morocco
+Nayef Aguerd | DEF | Morocco
+Noussair Mazraoui | DEF | Morocco
+Redouane Halhal | DEF | Morocco
+Youssef Belammari | DEF | Morocco
+Zakaria El Ouahdi | DEF | Morocco
+Abde Ezzalzouli | MID | Morocco
+Ayoube Amaimouni-Echghouyab | MID | Morocco
+Ayyoub Bouaddi | MID | Morocco
+Azzedine Ounahi | MID | Morocco
+Bilal El Khannouss | MID | Morocco
+Brahim Díaz | MID | Morocco
+Chemsdine Talbi | MID | Morocco
+Gessime Yassine | MID | Morocco
+Ismael Saibari | MID | Morocco
+Neil El Aynaoui | MID | Morocco
+Samir El Mourabet | MID | Morocco
+Sofyan Amrabat | MID | Morocco
+Ayoub El Kaabi | FWD | Morocco
+Soufiane Rahimi | FWD | Morocco
+
+=== NETHERLANDS ===
+Bart Verbruggen | GK | Netherlands
+Mark Flekken | GK | Netherlands
+Robin Roefs | GK | Netherlands
+Denzel Dumfries | DEF | Netherlands
+Jan Paul van Hecke | DEF | Netherlands
+Jorrel Hato | DEF | Netherlands
+Jurriën Timber | DEF | Netherlands
+Micky van de Ven | DEF | Netherlands
+Nathan Aké | DEF | Netherlands
+Virgil van Dijk | DEF | Netherlands
+Cody Gakpo | MID | Netherlands
+Crysencio Summerville | MID | Netherlands
+Frenkie de Jong | MID | Netherlands
+Guus Til | MID | Netherlands
+Justin Kluivert | MID | Netherlands
+Marten de Roon | MID | Netherlands
+Mats Wieffer | MID | Netherlands
+Noa Lang | MID | Netherlands
+Quinten Timber | MID | Netherlands
+Ryan Gravenberch | MID | Netherlands
+Teun Koopmeiners | MID | Netherlands
+Tijjani Reijnders | MID | Netherlands
+Brian Brobbey | FWD | Netherlands
+Donyell Malen | FWD | Netherlands
+Memphis Depay | FWD | Netherlands
+Wout Weghorst | FWD | Netherlands
+
+=== NEW ZEALAND ===
+Alex Paulsen | GK | New Zealand
+Max Crocombe | GK | New Zealand
+Michael Woud | GK | New Zealand
+Callan Elliot | DEF | New Zealand
+Finn Surman | DEF | New Zealand
+Francis de Vries | DEF | New Zealand
+Liberato Cacace | DEF | New Zealand
+Michael Boxall | DEF | New Zealand
+Nando Pijnaker | DEF | New Zealand
+Tim Payne | DEF | New Zealand
+Tommy Smith | DEF | New Zealand
+Tyler Bindon | DEF | New Zealand
+Alex Rufer | MID | New Zealand
+Ben Old | MID | New Zealand
+Callum McCowatt | MID | New Zealand
+Elijah Just | MID | New Zealand
+Jesse Randall | MID | New Zealand
+Joe Bell | MID | New Zealand
+Lachlan Bayliss | MID | New Zealand
+Marko Stamenic | MID | New Zealand
+Matthew Garbett | MID | New Zealand
+Ryan Thomas | MID | New Zealand
+Sarpreet Singh | MID | New Zealand
+Ben Waine | FWD | New Zealand
+Chris Wood | FWD | New Zealand
+Kosta Barbarouses | FWD | New Zealand
+
+=== NORWAY ===
+Egil Selvik | GK | Norway
+Ørjan Nyland | GK | Norway
+Sander Tangvik | GK | Norway
+David Møller Wolfe | DEF | Norway
+Fredrik Bjørkan | DEF | Norway
+Henrik Falchener | DEF | Norway
+Julian Ryerson | DEF | Norway
+Kristoffer Ajer | DEF | Norway
+Leo Østigård | DEF | Norway
+Marcus Pedersen | DEF | Norway
+Sondre Langås | DEF | Norway
+Torbjørn Heggem | DEF | Norway
+Andreas Schjelderup | MID | Norway
+Antonio Nusa | MID | Norway
+Fredrik Aursnes | MID | Norway
+Jens Petter Hauge | MID | Norway
+Kristian Thorstvedt | MID | Norway
+Martin Ødegaard | MID | Norway
+Morten Thorsby | MID | Norway
+Oscar Bobb | MID | Norway
+Patrick Berg | MID | Norway
+Sander Berge | MID | Norway
+Thelo Aasgaard | MID | Norway
+Alexander Sørloth | FWD | Norway
+Erling Haaland | FWD | Norway
+Jørgen Strand Larsen | FWD | Norway
+
+=== PANAMA ===
+César Samudio | GK | Panama
+Luis Mejía | GK | Panama
+Orlando Mosquera | GK | Panama
+Amir Murillo | DEF | Panama
+Andrés Andrade | DEF | Panama
+César Blackman | DEF | Panama
+Edgardo Fariña | DEF | Panama
+Éric Davis | DEF | Panama
+Fidel Escobar | DEF | Panama
+Jiovany Ramos | DEF | Panama
+Jorge Gutiérrez | DEF | Panama
+José Córdoba | DEF | Panama
+Roderick Miller | DEF | Panama
+Adalberto Carrasquilla | MID | Panama
+Alberto Quintero | MID | Panama
+Aníbal Godoy | MID | Panama
+Azarías Londoño | MID | Panama
+Carlos Harvey | MID | Panama
+César Yanis | MID | Panama
+Cristian Martínez | MID | Panama
+Ismael Díaz | MID | Panama
+José Luis Rodríguez | MID | Panama
+Yoel Bárcenas | MID | Panama
+Cecilio Waterman | FWD | Panama
+José Fajardo | FWD | Panama
+Tomás Rodríguez | FWD | Panama
+
+=== PARAGUAY ===
+Orlando Gill | GK | Paraguay
+Roberto Fernández | GK | Paraguay
+Alan Max Benítez Domínguez | DEF | Paraguay
+Fabián Balbuena | DEF | Paraguay
+Gustavo Gómez | DEF | Paraguay
+Juan José Cáceres | DEF | Paraguay
+Júnior Alonso | DEF | Paraguay
+Omar Alderete | DEF | Paraguay
+Alejandro Romero | MID | Paraguay
+Andrés Cubas | MID | Paraguay
+Braian Ojeda | MID | Paraguay
+Damián Bobadilla | MID | Paraguay
+Diego Gómez | MID | Paraguay
+Julio Enciso | MID | Paraguay
+Matías Galarza | MID | Paraguay
+Miguel Almirón | MID | Paraguay
+Ramón Sosa | MID | Paraguay
+Álex Arce | FWD | Paraguay
+Antonio Sanabria | FWD | Paraguay
+Gabriel Ávalos | FWD | Paraguay
+
+=== PORTUGAL ===
+Diogo Meireles da Costa | GK | Portugal
+José Pedro Malheiro de Sá | GK | Portugal
+Rui Tiago Dantas da Silva | GK | Portugal
+Gonçalo Bernardo Inácio | DEF | Portugal
+João Pedro Cavaco Cancelo | DEF | Portugal
+José Diogo Dalot Teixeira | DEF | Portugal
+Matheus Luiz Nunes | DEF | Portugal
+Nélson Cabral Semedo | DEF | Portugal
+Nuno Alexandre Tavares Mendes | DEF | Portugal
+Renato Palma Veiga | DEF | Portugal
+Rúben dos Santos Gato Alves Dias | DEF | Portugal
+Tomás Lemos Araújo | DEF | Portugal
+Bernardo Mota Veiga de Carvalho e Silva | MID | Portugal
+Bruno Miguel Borges Fernandes | MID | Portugal
+Francisco António Machado Mota de Castro Trincão | MID | Portugal
+Francisco Fernandes da Conceição | MID | Portugal
+Gonçalo Manuel Ganchinho Guedes | MID | Portugal
+João Félix Sequeira | MID | Portugal
+João Pedro Gonçalves Neves | MID | Portugal
+Pedro Lomba Neto | MID | Portugal
+Rafael Alexandre da Conceição Leão | MID | Portugal
+Rúben Diogo da Silva Neves | MID | Portugal
+Samuel de Almeida Costa | MID | Portugal
+Vítor Machado Ferreira | MID | Portugal
+Cristiano Ronaldo dos Santos Aveiro | FWD | Portugal
+Gonçalo Matias Ramos | FWD | Portugal
+
+=== QATAR ===
+Meshaal Aissa Mohammed Barsham | GK | Qatar
+Salah Zakaria Mohamed Mousa Hassan | GK | Qatar
+Ayoub Mohamed Al Oui | DEF | Qatar
+Boualem Khoukhi | DEF | Qatar
+Homam El Amin Mohamed Ahmed | DEF | Qatar
+Pedro Miguel Carvalho Deus Correia | DEF | Qatar
+Sultan Hussain Mohamad Hussain Al Brake | DEF | Qatar
+Tarek Salman Suleiman Odeh | DEF | Qatar
+Abdulaziz Hatem Abdullah Mohammed | MID | Qatar
+Ahmed Fathy Mansi Abdoulla | MID | Qatar
+Akram Hassan Afif Yahya Afif | MID | Qatar
+Assim Omer Al Haj Madibo | MID | Qatar
+Jassem Gaber El Sayed Abdulsallam | MID | Qatar
+Karim Boudiaf | MID | Qatar
+Mohammad Naceur Al Mannai | MID | Qatar
+Mohammed Waad Abdulwahhab Jadoua Al Bayati | MID | Qatar
+Yusuf Abdurisag Yusuf | MID | Qatar
+Ahmed Alaaeldin Bader Mohammed Abdelmotaal | FWD | Qatar
+Almoez Ali Zainalabedeen Mohamed Abdulla | FWD | Qatar
+Mohammed Muntari | FWD | Qatar
+
+=== SAUDI ARABIA ===
+Mohammed bin Khalil bin Ibrahim Al Owais | GK | Saudi Arabia
+Nawaf bin Dhahi bin Faisal Al Shuweiti Al Aqidi | GK | Saudi Arabia
+Abdulelah bin Ali bin Awadh Al Amri | DEF | Saudi Arabia
+Aiman bin Yahya bin Yahya Salem Ahmed | DEF | Saudi Arabia
+Ali bin Hassan bin Mohammed Majrashi | DEF | Saudi Arabia
+Ali bin Mohammed bin Ali Lajami | DEF | Saudi Arabia
+Hassan bin Mohammed bin Osama Al Tambakti | DEF | Saudi Arabia
+Moteb bin Saad bin Salim Al Naqi Al Harbi | DEF | Saudi Arabia
+Nawaf bin Meshari bin Mohammed Bu Washl | DEF | Saudi Arabia
+Saud bin Abdullah bin Salem Abdulhamid | DEF | Saudi Arabia
+Khalid bin Essa bin Mohammed Al Ghannam | MID | Saudi Arabia
+Mohamed bin Ibrahim bin Abdullah Kanno | MID | Saudi Arabia
+Musab bin Fahad bin Zaid Al Juwayr | MID | Saudi Arabia
+Nasser bin Essa bin Shafi Al Shardan Al Dawsari | MID | Saudi Arabia
+Salem bin Mohammed bin Shafi Al Dawsari | MID | Saudi Arabia
+Ziyad bin Mubarak bin Eid Al Marwani Al Johani | MID | Saudi Arabia
+Abdullah bin Abdulrahman bin Abdullah Al Hamddan | FWD | Saudi Arabia
+Feras bin Tariq bin Nasser Al Brikan | FWD | Saudi Arabia
+Saleh bin Khalid bin Mohammed Al Shehri | FWD | Saudi Arabia
+Saleh bin Waheeb bin Saeed Abu Al Shamat | STR | Saudi Arabia
+
+=== SCOTLAND ===
+Angus Gunn | GK | Scotland
+Craig Gordon | GK | Scotland
+Liam Kelly | GK | Scotland
+Aaron Hickey | DEF | Scotland
+Andy Robertson | DEF | Scotland
+Anthony Ralston | DEF | Scotland
+Dominic Hyam | DEF | Scotland
+Grant Hanley | DEF | Scotland
+Jack Hendry | DEF | Scotland
+John Souttar | DEF | Scotland
+Kieran Tierney | DEF | Scotland
+Nathan Patterson | DEF | Scotland
+Scott McKenna | DEF | Scotland
+Ben Gannon-Doak | MID | Scotland
+Billy Clifford Gilmour | MID | Scotland
+Findlay Curtis | MID | Scotland
+John McGinn | MID | Scotland
+Kenny McLean | MID | Scotland
+Lewis Ferguson | MID | Scotland
+Ryan Christie | MID | Scotland
+Scott McTominay | MID | Scotland
+Ché Adams | FWD | Scotland
+George Hirst | FWD | Scotland
+Lawrence Shankland | FWD | Scotland
+Lyndon Dykes | FWD | Scotland
+Ross Stewart | FWD | Scotland
+
+=== SENEGAL ===
+Édouard Mendy | GK | Senegal
+Mory Diaw | GK | Senegal
+Yehvann Diouf | GK | Senegal
+Abdoulaye Seck | DEF | Senegal
+Antoine Mendy | DEF | Senegal
+El Hadji Malick Diouf | DEF | Senegal
+Ismail Jakobs | DEF | Senegal
+Kalidou Koulibaly | DEF | Senegal
+Krépin Diatta | DEF | Senegal
+Mamadou Sarr | DEF | Senegal
+Moussa Niakhaté | DEF | Senegal
+Habib Diarra | MID | Senegal
+Ibrahim Mbaye | MID | Senegal
+Idrissa Gueye | MID | Senegal
+Iliman Ndiaye | MID | Senegal
+Ismaïla Sarr | MID | Senegal
+Lamine Camara | MID | Senegal
+Pape Gueye | MID | Senegal
+Pape Matar Sarr | MID | Senegal
+Pathé Ciss | MID | Senegal
+Sadio Mané | MID | Senegal
+Bamba Dieng | FWD | Senegal
+Cherif Ndiaye | FWD | Senegal
+Nicolas Jackson | FWD | Senegal
+
+=== SOUTH AFRICA ===
+Ricardo Goss | GK | South Africa
+Ronwen Williams | GK | South Africa
+Sipho Chaine | GK | South Africa
+Aubrey Modiba | DEF | South Africa
+Ime Okon | DEF | South Africa
+Khuliso Mudau | DEF | South Africa
+Khulumani Ndamane | DEF | South Africa
+Mbekezeli Mbokazi | DEF | South Africa
+Nkosinathi Sibisi | DEF | South Africa
+Sphephelo S'Miso Sithole | MID | South Africa
+Teboho Mokoena | MID | South Africa
+Thalente Mbatha | MID | South Africa
+Themba Zwane | MID | South Africa
+Evidence Makgopa | FWD | South Africa
+Iqraam Rayners | FWD | South Africa
+Lyle Foster | FWD | South Africa
+Oswin Appollis | FWD | South Africa
+Thapelo Maseko | FWD | South Africa
+
+=== SPAIN ===
+David Raya | GK | Spain
+Joan García | GK | Spain
+Unai Simón | GK | Spain
+Alejandro Grimaldo | DEF | Spain
+Aymeric Laporte | DEF | Spain
+Eric García | DEF | Spain
+Marc Cucurella | DEF | Spain
+Marc Pubill | DEF | Spain
+Marcos Llorente | DEF | Spain
+Pau Cubarsí | DEF | Spain
+Pedro Porro | DEF | Spain
+Álex Baena | MID | Spain
+Dani Olmo | MID | Spain
+Fabián Ruiz | MID | Spain
+Lamine Yamal Nasraoui Ebana | MID | Spain
+Martín Zubimendi | MID | Spain
+Mikel Merino | MID | Spain
+Nico Williams | MID | Spain
+Pablo Páez Gavira | MID | Spain
+Pedro González López | MID | Spain
+Rodrigo Hernández Cascante | MID | Spain
+Víctor Muñoz | MID | Spain
+Yéremy Pino | MID | Spain
+Borja Iglesias | FWD | Spain
+Ferran Torres | FWD | Spain
+Mikel Oyarzabal | FWD | Spain
+
+=== SWEDEN ===
+Jacob Widell Zetterström | GK | Sweden
+Kristoffer Nordfeldt | GK | Sweden
+Viktor Johansson | GK | Sweden
+Carl Starfelt | DEF | Sweden
+Daniel Svensson | DEF | Sweden
+Elliot Stroud | DEF | Sweden
+Emil Alfons Holm | DEF | Sweden
+Eric Smith | DEF | Sweden
+Gabriel Gudmundsson | DEF | Sweden
+Gustaf Lagerbielke | DEF | Sweden
+Hjalmar Ekdal | DEF | Sweden
+Isak Hien | DEF | Sweden
+Victor Lindelöf | DEF | Sweden
+Alexander Bernhardsson | MID | Sweden
+Anthony Elanga | MID | Sweden
+Besfort Zeneli | MID | Sweden
+Jesper Karlström | MID | Sweden
+Ken Sema | MID | Sweden
+Lucas Bergvall | MID | Sweden
+Mattias Svanberg | MID | Sweden
+Taha Ali | MID | Sweden
+Yasin Ayari | MID | Sweden
+Alexander Isak | FWD | Sweden
+Benjamin Nygren | FWD | Sweden
+Gustaf Nilsson | FWD | Sweden
+Viktor Gyökeres | FWD | Sweden
+
+=== SWITZERLAND ===
+Gregor Kobel | GK | Switzerland
+Marvin Keller | GK | Switzerland
+Yvon Mvogo | GK | Switzerland
+Aurèle Amenda | DEF | Switzerland
+Eray Cömert | DEF | Switzerland
+Luca Jaquez | DEF | Switzerland
+Manuel Akanji | DEF | Switzerland
+Miro Muheim | DEF | Switzerland
+Nico Elvedi | DEF | Switzerland
+Ricardo Rodríguez | DEF | Switzerland
+Silvan Widmer | DEF | Switzerland
+Ardon Jashari | MID | Switzerland
+Christian Fassnacht | MID | Switzerland
+Dan Ndoye | MID | Switzerland
+Denis Zakaria | MID | Switzerland
+Djibril Sow | MID | Switzerland
+Fabian Rieder | MID | Switzerland
+Granit Xhaka | MID | Switzerland
+Johan Manzambi | MID | Switzerland
+Michel Aebischer | MID | Switzerland
+Remo Freuler | MID | Switzerland
+Rubén Vargas | MID | Switzerland
+Breel Embolo | FWD | Switzerland
+Cedric Itten | FWD | Switzerland
+Noah Okafor | FWD | Switzerland
+Zeki Amdouni | FWD | Switzerland
+
+=== TUNISIA ===
+Abdelmouhib Chamakh | GK | Tunisia
+Aymen Dahmen | GK | Tunisia
+Sabri Ben Hessen | GK | Tunisia
+Adem Arous | DEF | Tunisia
+Ali Abdi | DEF | Tunisia
+Dylan Bronn | DEF | Tunisia
+Mohamed Amine Ben Hmida | DEF | Tunisia
+Montassar Talbi | DEF | Tunisia
+Moutaz Neffati | DEF | Tunisia
+Omar Rekik | DEF | Tunisia
+Raed Chikhaoui | DEF | Tunisia
+Yan Valery | DEF | Tunisia
+Anis Ben Slimane | MID | Tunisia
+Elias Achouri | MID | Tunisia
+Elias Saad | MID | Tunisia
+Ellyes Skhiri | MID | Tunisia
+Hadj Mahmoud | MID | Tunisia
+Hannibal Mejbri | MID | Tunisia
+Ismaël Gharbi | MID | Tunisia
+Khalil Ayari | MID | Tunisia
+Mortadha Ben Ouanes | MID | Tunisia
+Rani Khedira | MID | Tunisia
+Sebastian Tounekti | MID | Tunisia
+Firas Chaouat | FWD | Tunisia
+Hazem Mastouri | FWD | Tunisia
+Rayan Elloumi | FWD | Tunisia
+
+=== TÜRKIYE ===
+Altay Bayindir | GK | Türkiye
+Mert Günok | GK | Türkiye
+Ugurcan Çakir | GK | Türkiye
+Abdülkerim Bardakci | DEF | Türkiye
+Ferdi Kadioglu | DEF | Türkiye
+Merih Demiral | DEF | Türkiye
+Mert Müldür | DEF | Türkiye
+Ozan Kabak | DEF | Türkiye
+Zeki Çelik | DEF | Türkiye
+Arda Güler | MID | Türkiye
+Baris Alper Yilmaz | MID | Türkiye
+Hakan Çalhanoglu | MID | Türkiye
+Irfan Can Kahveci | MID | Türkiye
+Ismail Yüksek | MID | Türkiye
+Kenan Yildiz | MID | Türkiye
+Orkun Kökçü | MID | Türkiye
+Salih Özcan | MID | Türkiye
+Yunus Akgün | MID | Türkiye
+Kerem Aktürkoglu | FWD | Türkiye
+
+=== UNITED STATES ===
+Chris Brady | GK | United States
+Matt Freese | GK | United States
+Matt Turner | GK | United States
+Alex Freeman | DEF | United States
+Antonee Robinson | DEF | United States
+Auston Trusty | DEF | United States
+Chris Richards | DEF | United States
+Joe Scally | DEF | United States
+Mark McKenzie | DEF | United States
+Miles Robinson | DEF | United States
+Sergiño Dest | DEF | United States
+Tim Ream | DEF | United States
+Álex Zendejas | MID | United States
+Brenden Aaronson | MID | United States
+Christian Pulisic | MID | United States
+Cristian Roldan | MID | United States
+Giovanni Reyna | MID | United States
+Malik Tillman | MID | United States
+Max Arfsten | MID | United States
+Sebastian Berhalter | MID | United States
+Timothy Weah | MID | United States
+Tyler Adams | MID | United States
+Weston McKennie | MID | United States
+Folarin Balogun | FWD | United States
+Haji Wright | FWD | United States
+Ricardo Pepi | FWD | United States
+
+=== URUGUAY ===
+Santiago Mele | GK | Uruguay
+Sergio Rochet | GK | Uruguay
+Guillermo Varela | DEF | Uruguay
+José María Giménez | DEF | Uruguay
+Mathías Olivera | DEF | Uruguay
+Matías Viña | DEF | Uruguay
+Ronald Araujo | DEF | Uruguay
+Brian Rodríguez | MID | Uruguay
+Federico Valverde | MID | Uruguay
+Giorgian de Arrascaeta | MID | Uruguay
+Manuel Ugarte | MID | Uruguay
+Maxi Araújo | MID | Uruguay
+Rodrigo Bentancur | MID | Uruguay
+Darwin Núñez | FWD | Uruguay
+Federico Viñas | FWD | Uruguay
+Rodrigo Aguirre | FWD | Uruguay
+
+=== UZBEKISTAN ===
+Abduvokhid Nematov | GK | Uzbekistan
+Botirali Ergashev | GK | Uzbekistan
+Utkir Yusupov | GK | Uzbekistan
+Abdukodir Khusanov | DEF | Uzbekistan
+Abdulla Abdullaev | DEF | Uzbekistan
+Farrukh Sayfiev | DEF | Uzbekistan
+Jakhongir Urozov | DEF | Uzbekistan
+Khojiakbar Alijonov | DEF | Uzbekistan
+Rustam Ashurmatov | DEF | Uzbekistan
+Sherzod Nasrullaev | DEF | Uzbekistan
+Umar Eshmurodov | DEF | Uzbekistan
+Abbosbek Fayzullaev | MID | Uzbekistan
+Akmal Mozgovoy | MID | Uzbekistan
+Aziz G'aniev | MID | Uzbekistan
+Azizbek Amonov | MID | Uzbekistan
+Dostonbek Khamdamov | MID | Uzbekistan
+Jaloliddin Masharipov | MID | Uzbekistan
+Jamshid Iskanderov | MID | Uzbekistan
+Odiljon Khamrobekov | MID | Uzbekistan
+Oston Urunov | MID | Uzbekistan
+Otabek Shukurov | MID | Uzbekistan
+Eldor Shomurodov | FWD | Uzbekistan
+Igor Sergeev | FWD | Uzbekistan
+Ruslanbek Jiyanov | STR | Uzbekistan
+Sherzod Temirov | STR | Uzbekistan

@@ -22,6 +22,7 @@ const defaultPageDivisions = {
   joueurs: "players-world-cup",
 };
 let pageStateResetReady = false;
+let pendingTeamSlug = null;
 
 function resetDivision(section, division) {
   if (!section || !division) {
@@ -118,6 +119,26 @@ function showPage() {
       link.removeAttribute("aria-current");
     }
   });
+
+  if (currentPage === "equipes" && pendingTeamSlug) {
+    const teamSlug = pendingTeamSlug;
+    pendingTeamSlug = null;
+
+    window.setTimeout(() => {
+      const teamCard = document.querySelector(
+        `#equipes .team-card.team-${teamSlug}`,
+      );
+      const summary = teamCard?.querySelector(".team-details-toggle");
+      if (!teamCard || !summary) {
+        return;
+      }
+
+      if (!teamCard.classList.contains("is-open")) {
+        summary.click();
+      }
+      teamCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  }
 }
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
@@ -151,18 +172,18 @@ function createWorldCupStandings() {
   }
 
   const prototypeRoundScores = [
-    [13, 14, 15, null, null, null, null, null],
-    [15, 11, 13, null, null, null, null, null],
-    [10, 13, 13, null, null, null, null, null],
-    [12, 9, 13, null, null, null, null, null],
-    [11, 12, 8, null, null, null, null, null],
-    [9, 10, 9, null, null, null, null, null],
-    [8, 9, 8, null, null, null, null, null],
-    [7, 8, 7, null, null, null, null, null],
-    [6, 7, 6, null, null, null, null, null],
-    [5, 6, 5, null, null, null, null, null],
-    [4, 5, 4, null, null, null, null, null],
-    [3, 4, 3, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
+    [null, null, null, null, null, null, null, null],
   ];
   const roundLabels = ["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"];
   const bestRoundScores = roundLabels.map((_, roundIndex) =>
@@ -188,16 +209,14 @@ function createWorldCupStandings() {
       const [name, slug, primary, primaryRgb, secondary, secondaryRgb] = team;
       const entry = document.createElement("div");
       const row = document.createElement("div");
-      const details = document.createElement("div");
 
       entry.className = "standings-entry";
       row.className = `standings-row standings-team team-${slug}`;
       row.dataset.teamSlug = slug;
       row.setAttribute("role", "button");
       row.setAttribute("tabindex", "0");
-      row.setAttribute("aria-expanded", "false");
       row.style.setProperty("--team-primary", primary);
-      row.setAttribute("aria-label", `Ouvrir l'équipe ${name}`);
+      row.setAttribute("aria-label", `Voir ${name} dans la page Equipes`);
       row.style.setProperty("--team-primary-rgb", primaryRgb);
       row.style.setProperty("--team-secondary", secondary);
       row.style.setProperty("--team-secondary-rgb", secondaryRgb);
@@ -226,58 +245,22 @@ function createWorldCupStandings() {
           <b>${name}</b>
         </span>
         ${roundCells}
-        <strong class="standings-points">${points}</strong>
       `;
-      details.className = "standings-team-details";
 
-      const toggleTeam = () => {
-        const wasOpen = entry.classList.contains("is-open");
-
-        standings.querySelectorAll(".standings-entry.is-open").forEach((item) => {
-          item.classList.remove("is-open");
-          item
-            .querySelector(".standings-team")
-            ?.setAttribute("aria-expanded", "false");
-          const itemDetails = item.querySelector(".standings-team-details");
-          window.setTimeout(() => {
-            if (!item.classList.contains("is-open")) {
-              itemDetails?.replaceChildren();
-            }
-          }, 380);
-        });
-
-        if (wasOpen) {
-          return;
-        }
-
-        const source = document.querySelector(
-          `#equipes .team-card.team-${slug}`,
-        );
-        if (!source) {
-          return;
-        }
-
-        const teamCard = source.cloneNode(true);
-        teamCard.querySelector(".team-card-summary")?.remove();
-        teamCard.classList.add("is-open", "standings-expanded-team");
-        resetTeamDays(teamCard);
-        details.append(teamCard);
-        initializeTeamCardControls(teamCard);
-
-        void details.offsetHeight;
-        entry.classList.add("is-open");
-        row.setAttribute("aria-expanded", "true");
+      const openTeamPage = () => {
+        pendingTeamSlug = slug;
+        window.location.hash = "equipes";
       };
 
-      row.addEventListener("click", toggleTeam);
+      row.addEventListener("click", openTeamPage);
       row.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          toggleTeam();
+          openTeamPage();
         }
       });
 
-      entry.append(row, details);
+      entry.append(row);
       standings.append(entry);
     });
 }
@@ -327,8 +310,8 @@ function createWorldCupTeams() {
     }
 
     if (rank) {
-      rank.setAttribute("aria-label", "Position et points au classement");
-      rank.querySelector("strong").textContent = `${rankLabel} · 484 points`;
+      rank.setAttribute("aria-label", "Position au classement");
+      rank.querySelector("strong").textContent = rankLabel;
     }
 
     if (totals) {
@@ -383,6 +366,239 @@ const nationalTeams = [
 ]
   .map(([code, name]) => [code === "MAR" ? "MOR" : code, name])
   .sort((a, b) => a[1].localeCompare(b[1], "fr"));
+
+function initializeWorldCupFixtures() {
+  const list = document.querySelector(".fixtures-list");
+  const filters = document.querySelectorAll("[data-fixture-filter]");
+  if (
+    !list ||
+    typeof worldCupFixtures === "undefined" ||
+    !worldCupFixtures.length
+  ) {
+    return;
+  }
+
+  const teamNames = new Map(nationalTeams);
+  const stageLabels = {
+    group: "Phase de groupes",
+    r32: "Seizièmes de finale",
+    r16: "Huitièmes de finale",
+    qf: "Quarts de finale",
+    sf: "Demi-finales",
+    third: "Match pour la 3e place",
+    final: "Finale",
+  };
+  const dateLabel = new Intl.DateTimeFormat("fr-FR", {
+    timeZone: "Europe/Brussels",
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  });
+  const dateKey = new Intl.DateTimeFormat("fr-CA", {
+    timeZone: "Europe/Brussels",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+  const timeLabel = new Intl.DateTimeFormat("fr-FR", {
+    timeZone: "Europe/Brussels",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
+
+  const describePlaceholder = (placeholder) => {
+    if (!placeholder) {
+      return "À déterminer";
+    }
+
+    const groupPlace = placeholder.match(/^([123])([A-L])$/);
+    if (groupPlace) {
+      const rank = { 1: "1er", 2: "2e", 3: "3e" }[groupPlace[1]];
+      return `${rank} du groupe ${groupPlace[2]}`;
+    }
+
+    const bestThird = placeholder.match(/^3([A-L]+)$/);
+    if (bestThird) {
+      return `Meilleur 3e (${bestThird[1].split("").join("/")})`;
+    }
+
+    const winner = placeholder.match(/^W(\d+)$/);
+    if (winner) {
+      return `Vainqueur M${winner[1]}`;
+    }
+
+    const runnerUp = placeholder.match(/^RU(\d+)$/);
+    if (runnerUp) {
+      return `Perdant M${runnerUp[1]}`;
+    }
+
+    return placeholder;
+  };
+
+  const demoMatchEvents = {
+    1: {
+      home: {
+        score: 10,
+        scorers:
+          "Raul Jimenez 4', Santiago Gimenez 11', Alexis Vega 18', Julian Quinones 27', Edson Alvarez 35', Orbelin Pineda 44', Luis Chavez 53', Roberto Alvarado 64', Cesar Huerta 76', Gilberto Mora 88'",
+        assists:
+          "Alexis Vega, Santiago Gimenez, Julian Quinones, Luis Chavez, Orbelin Pineda, Roberto Alvarado, Edson Alvarez, Cesar Huerta, Gilberto Mora, Raul Jimenez",
+        cleanSheets:
+          "Guillermo Ochoa, Cesar Montes, Johan Vasquez, Jesus Gallardo, Jorge Sanchez, Edson Alvarez, Luis Romo, Luis Chavez, Orbelin Pineda, Alexis Vega",
+        penaltySaves: "Guillermo Ochoa",
+      },
+      away: {
+        score: 0,
+        scorers: "—",
+        assists: "—",
+        cleanSheets: "—",
+        penaltySaves: "—",
+      },
+    },
+  };
+
+  const teamMarkup = (code, placeholder, score = null, events = {}) => {
+    const scoreMarkup = `<span class="fixture-score">${score ?? "-"}</span>`;
+    const eventsMarkup = `
+      <span class="fixture-team-events">
+        <span><b>Buteurs</b><em>${events.scorers || "—"}</em></span>
+        <span><b>Assists</b><em>${events.assists || "—"}</em></span>
+        <span><b>CS</b><em>${events.cleanSheets || "—"}</em></span>
+        <span><b>Pen. arrêtés</b><em>${events.penaltySaves || "—"}</em></span>
+      </span>
+    `;
+
+    if (!code) {
+      return `
+        <span class="fixture-team is-placeholder">
+          <i aria-hidden="true">?</i>
+          <strong>${describePlaceholder(placeholder)}</strong>
+          ${scoreMarkup}
+          ${eventsMarkup}
+        </span>
+      `;
+    }
+
+    return `
+      <span class="fixture-team">
+        <img src="assets/flags/${code}.png" alt="" loading="lazy" />
+        <strong>${teamNames.get(code) || code}</strong>
+        ${scoreMarkup}
+        ${eventsMarkup}
+      </span>
+    `;
+  };
+
+  const groupRoundTwoStart = Date.parse("2026-06-18T16:00:00Z");
+  const groupRoundTwoEnd = Date.parse("2026-06-24T02:00:00Z");
+
+  const fixtureMatchesFilter = (fixture, filter) => {
+    if (filter.startsWith("group-")) {
+      if (fixture.s !== "group") {
+        return false;
+      }
+
+      const kickoff = Date.parse(fixture.d);
+      if (filter === "group-1") {
+        return kickoff < groupRoundTwoStart;
+      }
+      if (filter === "group-2") {
+        return kickoff >= groupRoundTwoStart && kickoff <= groupRoundTwoEnd;
+      }
+      return kickoff > groupRoundTwoEnd;
+    }
+
+    return fixture.s === filter;
+  };
+
+  const renderFixtures = (filter = "group-1") => {
+    const selected = worldCupFixtures
+      .filter((fixture) => fixtureMatchesFilter(fixture, filter))
+      .sort(
+        (first, second) =>
+          Date.parse(first.d) - Date.parse(second.d) || first.n - second.n,
+      );
+    const days = new Map();
+
+    selected.forEach((fixture) => {
+      const date = new Date(fixture.d);
+      const key = dateKey.format(date);
+      if (!days.has(key)) {
+        days.set(key, { date, fixtures: [] });
+      }
+      days.get(key).fixtures.push(fixture);
+    });
+
+    list.innerHTML = Array.from(days.values())
+      .map(
+        ({ date, fixtures }) => `
+          <section class="fixture-day">
+            <header class="fixture-day-header">
+              <h3>${dateLabel.format(date)}</h3>
+            </header>
+            <div class="fixture-day-matches">
+              ${fixtures
+                .map((fixture) => {
+                  const demo = demoMatchEvents[fixture.n];
+                  const matchContext =
+                    fixture.s === "group" && fixture.g
+                      ? `Groupe ${fixture.g}`
+                      : stageLabels[fixture.s];
+                  return `
+                    <article class="fixture-match">
+                      <div class="fixture-kickoff">
+                        <time datetime="${fixture.d}">${timeLabel.format(
+                          new Date(fixture.d),
+                        )}</time>
+                        <span>M${fixture.n} · ${matchContext}</span>
+                      </div>
+                      <div class="fixture-teams">
+                        ${teamMarkup(
+                          fixture.h,
+                          fixture.hp,
+                          demo?.home.score ?? fixture.hs,
+                          demo?.home,
+                        )}
+                        ${teamMarkup(
+                          fixture.a,
+                          fixture.ap,
+                          demo?.away.score ?? fixture.as,
+                          demo?.away,
+                        )}
+                      </div>
+                    </article>
+                  `;
+                })
+                .join("")}
+            </div>
+          </section>
+        `,
+      )
+      .join("");
+  };
+
+  filters.forEach((button) => {
+    button.addEventListener("click", () => {
+      filters.forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+      renderFixtures(button.dataset.fixtureFilter);
+    });
+  });
+
+  filters.forEach((button) => {
+    button.setAttribute(
+      "aria-pressed",
+      String(button.classList.contains("is-active")),
+    );
+  });
+  renderFixtures();
+}
+
+initializeWorldCupFixtures();
 
 function createNationalTeamSections() {
   const list = document.querySelector(".national-team-list");
