@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=116" />
+    <link rel="stylesheet" href="styles.css?v=125" />
     <script src="world-cup-squads.js?v=3" defer></script>
     <script src="world-cup-fixtures.js?v=1" defer></script>
-    <script src="app.js?v=68" defer></script>
+    <script src="app.js?v=71" defer></script>
   </head>
   <body class="world-cup-mode">
     <header class="site-header">
@@ -39,8 +39,63 @@
 
     <main class="shell">
       <section id="accueil" class="panel page-section" data-page="accueil">
-        <h2>Accueil</h2>
-        <p>La page Accueil arrive bientôt.</p>
+        <div class="home-intro">
+          <div>
+            <h2>Accueil</h2>
+          </div>
+          <div class="home-live-status">
+            <i aria-hidden="true"></i>
+            <span data-home-status>Compétition en cours</span>
+          </div>
+        </div>
+
+        <div class="home-main-grid">
+          <section class="home-fixtures" aria-labelledby="home-fixtures-title">
+            <header class="home-section-heading">
+              <div>
+                <span>Calendrier</span>
+                <h3 id="home-fixtures-title">Prochains matchs</h3>
+              </div>
+              <a href="#resultats">Voir tous les résultats</a>
+            </header>
+            <div class="home-fixtures-list" aria-live="polite"></div>
+          </section>
+
+          <aside class="home-command">
+            <span class="home-command-label">Tour actuel</span>
+            <strong data-home-round>J1</strong>
+            <div class="home-progress" aria-label="Progression de la compétition">
+              <span data-home-progress></span>
+            </div>
+            <div class="home-command-actions">
+              <a href="#classements">Voir le classement</a>
+              <a href="#joueurs">Consulter les joueurs</a>
+            </div>
+          </aside>
+        </div>
+
+        <nav class="home-shortcuts" aria-label="Accès rapides">
+          <a href="#equipes">
+            <strong>Équipes</strong>
+            <small>Consulter les effectifs Fantasy</small>
+            <i aria-hidden="true">→</i>
+          </a>
+          <a href="#resultats">
+            <strong>Résultats</strong>
+            <small>Calendrier et feuilles de match</small>
+            <i aria-hidden="true">→</i>
+          </a>
+          <a href="#transferts">
+            <strong>Transferts</strong>
+            <small>Joueurs disponibles et historique</small>
+            <i aria-hidden="true">→</i>
+          </a>
+          <a href="#reglement">
+            <strong>Règlement</strong>
+            <small>Comprendre les règles du jeu</small>
+            <i aria-hidden="true">→</i>
+          </a>
+        </nav>
       </section>
 
       <section id="resultats" class="panel page-section" data-page="resultats" hidden>
@@ -61,8 +116,7 @@
           <button type="button" data-fixture-filter="r16">1/8</button>
           <button type="button" data-fixture-filter="qf">1/4</button>
           <button type="button" data-fixture-filter="sf">1/2</button>
-          <button type="button" data-fixture-filter="third">3e place</button>
-          <button type="button" data-fixture-filter="final">Finale</button>
+          <button type="button" data-fixture-filter="finals">Finales</button>
         </nav>
 
         <div class="fixtures-list" aria-live="polite"></div>
@@ -539,7 +593,7 @@
             <span>Joueur</span>
             <span>PTS</span>
           </div>
-          <div class="transfer-ranking-list">
+          <div class="transfer-ranking-list" hidden>
             <div class="transfer-ranking-row">
               <b class="transfer-rank">1</b><img src="assets/shirts/FRA.png" alt="Maillot de la France" loading="lazy" decoding="async" />
               <span class="transfer-player"><strong>Kylian Mbappe</strong><small>France</small></span><strong class="transfer-points">64</strong>
@@ -601,6 +655,7 @@
               <span class="transfer-player"><strong>Federico Valverde</strong><small>Uruguay</small></span><strong class="transfer-points">41</strong>
             </div>
           </div>
+          <p class="transfer-empty-state">Aucun point comptabilisé pour le moment.</p>
         </div>
           <div class="transfer-history" aria-label="Historique des transferts">
             <h3>Historique des transferts</h3>
@@ -613,7 +668,7 @@
                 <span aria-hidden="true"></span>
                 <span>Joueur sortant</span>
               </div>
-              <div class="transfer-history-list">
+              <div class="transfer-history-list" hidden>
                 <div class="transfer-history-row">
                   <time datetime="2026-03-02T08:26">02/03 · 08h26</time>
                   <span class="transfer-team" style="--club-primary:#050505;--club-secondary:#cbd5e1"><i></i><strong>San Mateo</strong></span>
@@ -775,6 +830,7 @@
                   <span class="history-player"><img src="assets/shirts/ENG.png" alt="" loading="lazy" decoding="async"><span><b>Jude Bellingham</b><small>Angleterre</small></span></span>
                 </div>
               </div>
+              <p class="transfer-empty-state">Aucun transfert enregistré pour le moment.</p>
             </div>
           </div>
         </div>
@@ -787,7 +843,89 @@
 
       <section id="reglement" class="panel page-section" data-page="reglement" hidden>
         <h2>Règlement</h2>
-        <p>La page Règlement arrive bientôt.</p>
+        <nav class="sub-nav rules-nav" aria-label="Type de règlement">
+          <button class="sub-nav-button is-active" type="button">
+            Coupe du Monde
+          </button>
+        </nav>
+
+        <article class="rules-document">
+          <header class="rules-document-header">
+            <h3>Règlement du jeu</h3>
+          </header>
+
+          <section class="rule-article">
+            <h4>Art. 1</h4>
+            <p><span class="rule-paragraph-number">§1</span> La Fantasy est un jeu gratuit basé sur les résultats réels de la Coupe du Monde.</p>
+            <p><span class="rule-paragraph-number">§2</span> Toute nouvelle équipe est autorisée à participer dans la compétition principale.</p>
+          </section>
+
+          <h3 class="rules-chapter">Chapitre 1 : Composition des équipes et budget</h3>
+
+          <section class="rule-article">
+            <h4>Art. 2</h4>
+            <p>Chaque équipe se compose de 11 joueurs repris sur le site du Sun « dreamteamfc.com ». La composition de l'équipe doit être transmise aux membres du secrétariat, sauf déclaration contraire, avant le premier match de la compétition, sous peine de voir les points réalisés par les joueurs ne pas être pris en considération, ainsi qu'une pénalité de 10 points.</p>
+          </section>
+
+          <section class="rule-article">
+            <h4>Art. 3</h4>
+            <p>L'équipe doit comporter :</p>
+            <div class="rules-squad-limits">
+              <div><strong>Minimum</strong><span>1 gardien</span><span>3 défenseurs</span><span>3 milieux</span><span>1 attaquant</span></div>
+              <div><strong>Maximum</strong><span>1 gardien</span><span>5 défenseurs</span><span>5 milieux</span><span>4 attaquants</span></div>
+            </div>
+          </section>
+
+          <section class="rule-article">
+            <h4>Art. 4</h4>
+            <p>Le prix des joueurs indiqué sur le site du Sun n'est pas pris en compte pour cette compétition.</p>
+          </section>
+
+          <section class="rule-article">
+            <h4>Art. 5</h4>
+            <p><span class="rule-paragraph-number">§1</span> Chaque équipe comprend au maximum 2 joueurs de chaque pays participant à la Coupe du Monde.</p>
+          </section>
+
+          <h3 class="rules-chapter">Chapitre 2 : Transferts</h3>
+
+          <section class="rule-article">
+            <h4>Art. 6</h4>
+            <p><span class="rule-paragraph-number">§1</span> En cours de compétition chaque joueur peut modifier son équipe en transférant au maximum 3 joueurs dans le respect des articles précédents.</p>
+            <p><span class="rule-paragraph-number">§2</span> Les nouveaux joueurs doivent être « libres », c'est-à-dire ne pas déjà être utilisés par 2 autres équipes participant à la Fantasy.</p>
+            <p><span class="rule-paragraph-number">§4</span> Tout joueur transféré hors d'une équipe ne peut pas y être transféré à nouveau même si ce joueur est libre. Tout joueur transféré dans une équipe peut être à nouveau transféré hors de cette équipe.</p>
+            <p><span class="rule-paragraph-number">§5</span> Les transferts doivent être transmis aux membres du secrétariat avant le premier match du tour correspondant de Coupe du Monde, sinon la prise de cours est reportée au tour suivant.</p>
+            <p><span class="rule-paragraph-number">§6</span> Si un joueur quitte la compétition (blessure, décès, fin de carrière), l'équipe Fantasy ne bénéficie cependant pas d'un transfert libre.</p>
+          </section>
+
+          <h3 class="rules-chapter">Chapitre 3 : Attribution des points</h3>
+
+          <section class="rule-article">
+            <h4>Art. 7</h4>
+            <ul class="rules-points-list">
+              <li>Gardien qui n'encaisse pas : 5 points</li>
+              <li>Gardien qui marque : 9 points</li>
+              <li>Gardien qui stoppe un penalty : 2 points</li>
+              <li>Défenseur qui n'encaisse pas : 2 points</li>
+              <li>Défenseur qui marque : 7 points</li>
+              <li>Milieu qui marque : 5 points</li>
+              <li>Attaquant qui marque : 3 points</li>
+              <li>Tout joueur qui marque un penalty direct : 3 points</li>
+              <li>Tout joueur qui effectue une passe décisive : 1 point</li>
+            </ul>
+          </section>
+
+          <section class="rule-article">
+            <h4>Art. 8</h4>
+            <p>Est déclarée gagnante, l'équipe qui au terme de la compétition a inscrit le plus de points. En cas d'égalité, celle qui a marqué le plus de buts, puis d'assists en cas de nouvelle égalité, est déclarée gagnante.</p>
+          </section>
+
+          <h3 class="rules-chapter">Chapitre 4 : Contestations</h3>
+
+          <section class="rule-article">
+            <h4>Art. 9</h4>
+            <p>Toute contestation doit être introduite auprès du Secrétaire principal qui tranche. Si le Secrétaire est impliqué dans la contestation, les parties choisissent un arbitre dont la décision est sans appel.</p>
+          </section>
+        </article>
       </section>
     </main>
   </body>

@@ -367,6 +367,127 @@ const nationalTeams = [
   .map(([code, name]) => [code === "MAR" ? "MOR" : code, name])
   .sort((a, b) => a[1].localeCompare(b[1], "fr"));
 
+const groupRoundTwoStart = Date.parse("2026-06-18T16:00:00Z");
+const groupRoundTwoEnd = Date.parse("2026-06-24T02:00:00Z");
+
+function getGroupRoundLabel(fixture) {
+  const kickoff = Date.parse(fixture.d);
+  if (kickoff < groupRoundTwoStart) {
+    return "Journée 1";
+  }
+  if (kickoff <= groupRoundTwoEnd) {
+    return "Journée 2";
+  }
+  return "Journée 3";
+}
+
+function initializeHomeDashboard() {
+  const fixtureList = document.querySelector(".home-fixtures-list");
+  if (
+    !fixtureList ||
+    typeof worldCupFixtures === "undefined" ||
+    !worldCupFixtures.length
+  ) {
+    return;
+  }
+
+  const teamNames = new Map(nationalTeams);
+  const now = new Date();
+  const sortedFixtures = [...worldCupFixtures].sort(
+    (first, second) => new Date(first.d) - new Date(second.d),
+  );
+  let selectedFixtures = sortedFixtures
+    .filter((fixture) => new Date(fixture.d) >= now)
+    .slice(0, 3);
+
+  if (!selectedFixtures.length) {
+    selectedFixtures = sortedFixtures.slice(-3);
+  }
+
+  const getTeamName = (code, placeholder) =>
+    code ? teamNames.get(code) || code : placeholder || "À déterminer";
+
+  fixtureList.innerHTML = selectedFixtures
+    .map((fixture) => {
+      const date = new Date(fixture.d);
+      const day = new Intl.DateTimeFormat("fr-BE", {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        timeZone: "Europe/Brussels",
+      })
+        .format(date)
+        .replace(".", "");
+      const time = new Intl.DateTimeFormat("fr-BE", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: "Europe/Brussels",
+      }).format(date);
+      const homeName = getTeamName(fixture.h, fixture.hp);
+      const awayName = getTeamName(fixture.a, fixture.ap);
+      const homeFlag = fixture.h
+        ? `<img src="assets/flags/${fixture.h}.png" alt="" loading="lazy" />`
+        : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
+      const awayFlag = fixture.a
+        ? `<img src="assets/flags/${fixture.a}.png" alt="" loading="lazy" />`
+        : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
+      const matchNumber =
+        fixture.s === "group" ? "" : `<small>M${fixture.n}</small>`;
+
+      return `
+        <article class="home-fixture${fixture.s === "group" ? " is-group-match" : ""}">
+          <div class="home-fixture-time">
+            <span>${day}</span>
+            <strong>${time}</strong>
+          </div>
+          <div class="home-fixture-teams">
+            <span>${homeFlag}<b>${homeName}</b></span>
+            <i>vs</i>
+            <span>${awayFlag}<b>${awayName}</b></span>
+          </div>
+          ${matchNumber}
+        </article>
+      `;
+    })
+    .join("");
+
+  const firstMatch = new Date(sortedFixtures[0].d);
+  const lastMatch = new Date(sortedFixtures.at(-1).d);
+  const status = document.querySelector("[data-home-status]");
+  const round = document.querySelector("[data-home-round]");
+  const progress = document.querySelector("[data-home-progress]");
+
+  if (now < firstMatch) {
+    status.textContent = "La compétition approche";
+    round.textContent = "Avant-tournoi";
+  } else if (now > lastMatch) {
+    status.textContent = "Compétition terminée";
+    round.textContent = "Finale";
+  } else {
+    const nextFixture = sortedFixtures.find((fixture) => new Date(fixture.d) >= now);
+    const roundLabels = {
+      r32: "1/16",
+      r16: "1/8",
+      qf: "1/4",
+      sf: "1/2",
+      third: "3e place",
+      final: "Finale",
+    };
+    status.textContent = "Compétition en cours";
+    round.textContent =
+      nextFixture?.s === "group"
+        ? getGroupRoundLabel(nextFixture)
+        : roundLabels[nextFixture?.s] || "Coupe du Monde";
+  }
+
+  const duration = lastMatch - firstMatch;
+  const elapsed = Math.min(Math.max(now - firstMatch, 0), duration);
+  progress.style.width = `${duration > 0 ? (elapsed / duration) * 100 : 0}%`;
+}
+
+initializeHomeDashboard();
+
 function initializeWorldCupFixtures() {
   const list = document.querySelector(".fixtures-list");
   const filters = document.querySelectorAll("[data-fixture-filter]");
@@ -436,24 +557,50 @@ function initializeWorldCupFixtures() {
     return placeholder;
   };
 
-  const demoMatchEvents = {
+  const matchResults = {
     1: {
       home: {
-        score: 10,
-        scorers:
-          "Raul Jimenez 4', Santiago Gimenez 11', Alexis Vega 18', Julian Quinones 27', Edson Alvarez 35', Orbelin Pineda 44', Luis Chavez 53', Roberto Alvarado 64', Cesar Huerta 76', Gilberto Mora 88'",
-        assists:
-          "Alexis Vega, Santiago Gimenez, Julian Quinones, Luis Chavez, Orbelin Pineda, Roberto Alvarado, Edson Alvarez, Cesar Huerta, Gilberto Mora, Raul Jimenez",
-        cleanSheets:
-          "Guillermo Ochoa, Cesar Montes, Johan Vasquez, Jesus Gallardo, Jorge Sanchez, Edson Alvarez, Luis Romo, Luis Chavez, Orbelin Pineda, Alexis Vega",
-        penaltySaves: "Guillermo Ochoa",
+        score: 2,
+        scorers: "J. Quinones 9', R. Jimenez 67'",
+        assists: "—",
+        cleanSheets: "Oui",
+        penaltySaves: "—",
       },
       away: {
         score: 0,
-        scorers: "—",
-        assists: "—",
-        cleanSheets: "—",
-        penaltySaves: "—",
+      },
+    },
+    2: {
+      home: {
+        score: 2,
+        scorers: "Hwang In-beom, Oh Hyeon-gyu",
+      },
+      away: {
+        score: 1,
+        scorers: "Ladislav Krejci",
+      },
+    },
+    3: {
+      home: {
+        score: 1,
+        scorers: "Cyle Larin 78'",
+        assists: "Promise David",
+      },
+      away: {
+        score: 1,
+        scorers: "Jovo Lukic 21'",
+        assists: "Vasic",
+      },
+    },
+    4: {
+      home: {
+        score: 4,
+        scorers: "Bobadilla c.s.c., Folarin Balogun (2), Gio Reyna",
+        assists: "Christian Pulisic",
+      },
+      away: {
+        score: 1,
+        scorers: "Mauricio 73'",
       },
     },
   };
@@ -490,9 +637,6 @@ function initializeWorldCupFixtures() {
     `;
   };
 
-  const groupRoundTwoStart = Date.parse("2026-06-18T16:00:00Z");
-  const groupRoundTwoEnd = Date.parse("2026-06-24T02:00:00Z");
-
   const fixtureMatchesFilter = (fixture, filter) => {
     if (filter.startsWith("group-")) {
       if (fixture.s !== "group") {
@@ -507,6 +651,10 @@ function initializeWorldCupFixtures() {
         return kickoff >= groupRoundTwoStart && kickoff <= groupRoundTwoEnd;
       }
       return kickoff > groupRoundTwoEnd;
+    }
+
+    if (filter === "finals") {
+      return fixture.s === "third" || fixture.s === "final";
     }
 
     return fixture.s === filter;
@@ -540,31 +688,35 @@ function initializeWorldCupFixtures() {
             <div class="fixture-day-matches">
               ${fixtures
                 .map((fixture) => {
-                  const demo = demoMatchEvents[fixture.n];
+                  const result = matchResults[fixture.n];
                   const matchContext =
                     fixture.s === "group" && fixture.g
                       ? `Groupe ${fixture.g}`
                       : stageLabels[fixture.s];
+                  const matchReference =
+                    fixture.s === "group"
+                      ? matchContext
+                      : `M${fixture.n} · ${matchContext}`;
                   return `
                     <article class="fixture-match">
                       <div class="fixture-kickoff">
                         <time datetime="${fixture.d}">${timeLabel.format(
                           new Date(fixture.d),
                         )}</time>
-                        <span>M${fixture.n} · ${matchContext}</span>
+                        <span>${matchReference}</span>
                       </div>
                       <div class="fixture-teams">
                         ${teamMarkup(
                           fixture.h,
                           fixture.hp,
-                          demo?.home.score ?? fixture.hs,
-                          demo?.home,
+                          result?.home.score ?? fixture.hs,
+                          result?.home,
                         )}
                         ${teamMarkup(
                           fixture.a,
                           fixture.ap,
-                          demo?.away.score ?? fixture.as,
-                          demo?.away,
+                          result?.away.score ?? fixture.as,
+                          result?.away,
                         )}
                       </div>
                     </article>
@@ -1017,7 +1169,7 @@ function resetFantasyTeamRosters() {
     ["MIL", "pos-mid", "GER"],
     ["MIL", "pos-mid", "NED"],
     ["ATT", "pos-att", "USA"],
-    ["ATT", "pos-att", "JPN"],
+    ["ATT", "pos-att", "NED"],
     ["ATT", "pos-att", "MOR"],
   ];
 
