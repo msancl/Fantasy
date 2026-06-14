@@ -563,7 +563,8 @@ function initializeWorldCupFixtures() {
         score: 2,
         scorers: "J. Quinones 9', R. Jimenez 67'",
         assists: "—",
-        cleanSheets: "Oui",
+        cleanSheets: "GB et défenseurs",
+        hasCleanSheet: true,
         penaltySaves: "—",
       },
       away: {
@@ -585,11 +586,39 @@ function initializeWorldCupFixtures() {
         score: 1,
         scorers: "Cyle Larin 78'",
         assists: "Promise David",
+        lineup: [
+          "Maxime Crepeau",
+          "Alistair Johnston",
+          "Luc de Fougerolles",
+          "Derek Cornelius",
+          "Richie Laryea",
+          "Tajon Buchanan",
+          "Ismael Kone",
+          "Stephen Eustaquio",
+          "Liam Millar",
+          "Jonathan David",
+          "Tani Oluwaseyi",
+        ],
+        substitutes: ["Cyle Larin", "Ali Ahmed", "Jonathan Osorio", "Promise David"],
       },
       away: {
         score: 1,
         scorers: "Jovo Lukic 21'",
         assists: "Vasic",
+        lineup: [
+          "Nikola Vasilj",
+          "Amar Dedic",
+          "Nikola Katic",
+          "Tarik Muharemovic",
+          "Sead Kolasinac",
+          "Esmir Bajraktarevic",
+          "Ivan Basic",
+          "Benjamin Tahirovic",
+          "Amar Memic",
+          "Ermedin Demirovic",
+          "Jovo Lukic",
+        ],
+        substitutes: ["Ivan Sunjic", "Kerim Alajbegovic"],
       },
     },
     4: {
@@ -605,24 +634,12 @@ function initializeWorldCupFixtures() {
     },
   };
 
-  const teamMarkup = (code, placeholder, score = null, events = {}) => {
-    const scoreMarkup = `<span class="fixture-score">${score ?? "-"}</span>`;
-    const eventsMarkup = `
-      <span class="fixture-team-events">
-        <span><b>Buteurs</b><em>${events.scorers || "—"}</em></span>
-        <span><b>Assists</b><em>${events.assists || "—"}</em></span>
-        <span><b>CS</b><em>${events.cleanSheets || "—"}</em></span>
-        <span><b>Pen. arrêtés</b><em>${events.penaltySaves || "—"}</em></span>
-      </span>
-    `;
-
+  const teamIdentityMarkup = (code, placeholder) => {
     if (!code) {
       return `
         <span class="fixture-team is-placeholder">
           <i aria-hidden="true">?</i>
           <strong>${describePlaceholder(placeholder)}</strong>
-          ${scoreMarkup}
-          ${eventsMarkup}
         </span>
       `;
     }
@@ -631,11 +648,137 @@ function initializeWorldCupFixtures() {
       <span class="fixture-team">
         <img src="assets/flags/${code}.png" alt="" loading="lazy" />
         <strong>${teamNames.get(code) || code}</strong>
-        ${scoreMarkup}
-        ${eventsMarkup}
       </span>
     `;
   };
+
+  const getPlayerPosition = (code, playerName) => {
+    if (!code || typeof worldCupSquads === "undefined") {
+      return "—";
+    }
+
+    const normalizedName = playerName
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+    const player = (worldCupSquads[code] || []).find(
+      (item) =>
+        item.name
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase() === normalizedName,
+    );
+
+    return player?.position || "—";
+  };
+
+  const placeholderLineup = [
+    { name: "FIRSTNAME LASTNAME", position: "GB" },
+    { name: "FIRSTNAME LASTNAME", position: "DF" },
+    { name: "FIRSTNAME LASTNAME", position: "DF" },
+    { name: "FIRSTNAME LASTNAME", position: "DF" },
+    { name: "FIRSTNAME LASTNAME", position: "DF" },
+    { name: "FIRSTNAME LASTNAME", position: "MIL" },
+    { name: "FIRSTNAME LASTNAME", position: "MIL" },
+    { name: "FIRSTNAME LASTNAME", position: "MIL" },
+    { name: "FIRSTNAME LASTNAME", position: "ATT" },
+    { name: "FIRSTNAME LASTNAME", position: "ATT" },
+    { name: "FIRSTNAME LASTNAME", position: "ATT" },
+  ];
+  const placeholderSubstitutes = [
+    { name: "FIRSTNAME LASTNAME", position: "DF" },
+    { name: "FIRSTNAME LASTNAME", position: "MIL" },
+    { name: "FIRSTNAME LASTNAME", position: "ATT" },
+  ];
+  const normalizeLineupPlayer = (code, player) =>
+    typeof player === "string"
+      ? { name: player, position: getPlayerPosition(code, player) }
+      : player;
+
+  const lineupMarkup = (code, events = {}) => {
+    const lineup = (events.lineup?.length ? events.lineup : placeholderLineup).map(
+      (player) => normalizeLineupPlayer(code, player),
+    );
+    const substitutes = (
+      events.substitutes?.length ? events.substitutes : placeholderSubstitutes
+    ).map((player) => normalizeLineupPlayer(code, player));
+    const playerRows = lineup
+      .map(
+        (player) => `
+          <li class="${
+            events.hasCleanSheet &&
+            (player.position === "GB" || player.position === "DF")
+              ? "has-clean-sheet"
+              : ""
+          }">
+            <span>${player.position}</span>
+            <img src="assets/shirts/${code}.png" alt="" loading="lazy" />
+            <strong>${player.name}</strong>
+            ${
+              events.hasCleanSheet &&
+              (player.position === "GB" || player.position === "DF")
+                ? `<em>CS</em>`
+                : ""
+            }
+          </li>
+        `,
+      )
+      .join("");
+    const substituteRows = substitutes
+      .map(
+        (player) => `
+          <li class="${
+            events.hasCleanSheet &&
+            (player.position === "GB" || player.position === "DF")
+              ? "has-clean-sheet"
+              : ""
+          }">
+            <span>${player.position}</span>
+            <img src="assets/shirts/${code}.png" alt="" loading="lazy" />
+            <strong>${player.name}</strong>
+            ${
+              events.hasCleanSheet &&
+              (player.position === "GB" || player.position === "DF")
+                ? `<em>CS</em>`
+                : ""
+            }
+          </li>
+        `,
+      )
+      .join("");
+
+    return `
+      <div class="fixture-lineup">
+        <h4>Composition</h4>
+        <ol>${playerRows}</ol>
+        <div class="fixture-substitutes">
+          <h5>Remplaçants entrés</h5>
+          <ul>${substituteRows}</ul>
+        </div>
+      </div>
+    `;
+  };
+
+  const matchDetailsMarkup = (code, placeholder, events = {}) => `
+    <section class="fixture-details-team">
+      <header>${teamIdentityMarkup(code, placeholder)}</header>
+      <div class="fixture-events-summary">
+        <div>
+          <b>Buteurs</b>
+          <span>${events.scorers || "—"}</span>
+        </div>
+        <div>
+          <b>Assists</b>
+          <span>${events.assists || "—"}</span>
+        </div>
+      </div>
+      ${lineupMarkup(code, events)}
+      <footer class="fixture-penalty-saves">
+        <b>Penalties arrêtés</b>
+        <span>${events.penaltySaves || "—"}</span>
+      </footer>
+    </section>
+  `;
 
   const fixtureMatchesFilter = (fixture, filter) => {
     if (filter.startsWith("group-")) {
@@ -698,26 +841,51 @@ function initializeWorldCupFixtures() {
                       ? matchContext
                       : `M${fixture.n} · ${matchContext}`;
                   return `
-                    <article class="fixture-match">
-                      <div class="fixture-kickoff">
-                        <time datetime="${fixture.d}">${timeLabel.format(
-                          new Date(fixture.d),
-                        )}</time>
-                        <span>${matchReference}</span>
+                    <article class="fixture-match" data-fixture="${fixture.n}">
+                      <div
+                        class="fixture-match-row"
+                        role="button"
+                        tabindex="0"
+                        aria-expanded="false"
+                        aria-controls="fixture-details-${fixture.n}"
+                        aria-label="Ouvrir les détails du match"
+                      >
+                        <div class="fixture-kickoff">
+                          <time datetime="${fixture.d}">${timeLabel.format(
+                            new Date(fixture.d),
+                          )}</time>
+                          <span>${matchReference}</span>
+                        </div>
+                        <div class="fixture-matchup">
+                          ${teamIdentityMarkup(fixture.h, fixture.hp)}
+                          <span class="fixture-score-center">
+                            <span class="fixture-scoreline" aria-label="Score">
+                              <b>${result?.home.score ?? fixture.hs ?? "-"}</b>
+                              <i>–</i>
+                              <b>${result?.away.score ?? fixture.as ?? "-"}</b>
+                            </span>
+                          </span>
+                          ${teamIdentityMarkup(fixture.a, fixture.ap)}
+                        </div>
+                        <span class="fixture-details-toggle" aria-hidden="true"></span>
                       </div>
-                      <div class="fixture-teams">
-                        ${teamMarkup(
+                      <div
+                        class="fixture-details"
+                        id="fixture-details-${fixture.n}"
+                        aria-hidden="true"
+                      >
+                        <div class="fixture-details-inner">
+                          ${matchDetailsMarkup(
                           fixture.h,
                           fixture.hp,
-                          result?.home.score ?? fixture.hs,
                           result?.home,
-                        )}
-                        ${teamMarkup(
+                          )}
+                          ${matchDetailsMarkup(
                           fixture.a,
                           fixture.ap,
-                          result?.away.score ?? fixture.as,
                           result?.away,
-                        )}
+                          )}
+                        </div>
                       </div>
                     </article>
                   `;
@@ -739,6 +907,44 @@ function initializeWorldCupFixtures() {
       });
       renderFixtures(button.dataset.fixtureFilter);
     });
+  });
+
+  const toggleFixtureDetails = (row) => {
+    if (!row) {
+      return;
+    }
+
+    const match = row.closest(".fixture-match");
+    const details = match?.querySelector(".fixture-details");
+    if (!match || !details) {
+      return;
+    }
+
+    const isOpen = match.classList.toggle("is-open");
+    row.setAttribute("aria-expanded", String(isOpen));
+    row.setAttribute(
+      "aria-label",
+      `${isOpen ? "Fermer" : "Ouvrir"} les détails du match`,
+    );
+    details.setAttribute("aria-hidden", String(!isOpen));
+  };
+
+  list.addEventListener("click", (event) => {
+    toggleFixtureDetails(event.target.closest(".fixture-match-row"));
+  });
+
+  list.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") {
+      return;
+    }
+
+    const row = event.target.closest(".fixture-match-row");
+    if (!row) {
+      return;
+    }
+
+    event.preventDefault();
+    toggleFixtureDetails(row);
   });
 
   filters.forEach((button) => {
@@ -905,6 +1111,100 @@ function ensureNationalTeamRoster(section) {
 }
 
 createNationalTeamSections();
+
+function initializeTransferPlayerSearch() {
+  const container = document.querySelector(".transfer-player-search");
+  if (
+    !container ||
+    typeof worldCupSquads === "undefined" ||
+    typeof nationalTeams === "undefined"
+  ) {
+    return;
+  }
+
+  const search = container.querySelector("[data-player-search]");
+  const positionFilter = container.querySelector("[data-player-position]");
+  const countryFilter = container.querySelector("[data-player-country]");
+  const sort = container.querySelector("[data-player-sort]");
+  const results = container.querySelector("[data-player-results]");
+  const count = container.querySelector("[data-player-count]");
+  const countryNames = new Map(nationalTeams);
+  const players = Object.entries(worldCupSquads).flatMap(([code, squad]) =>
+    squad.map((player) => ({
+      ...player,
+      code,
+      country: countryNames.get(code) || code,
+      points: Number(player.points || 0),
+    })),
+  );
+
+  Array.from(countryNames.entries())
+    .filter(([code]) => worldCupSquads[code]?.length)
+    .sort((first, second) => first[1].localeCompare(second[1], "fr"))
+    .forEach(([code, name]) => {
+      const option = document.createElement("option");
+      option.value = code;
+      option.textContent = name;
+      countryFilter.append(option);
+    });
+
+  const render = () => {
+    const query = search.value.trim().toLocaleLowerCase("fr");
+    const selectedPosition = positionFilter.value;
+    const selectedCountry = countryFilter.value;
+    const selectedSort = sort.value;
+    const filtered = players
+      .filter(
+        (player) =>
+          (!query ||
+            player.name.toLocaleLowerCase("fr").includes(query) ||
+            player.country.toLocaleLowerCase("fr").includes(query)) &&
+          (!selectedPosition || player.position === selectedPosition) &&
+          (!selectedCountry || player.code === selectedCountry),
+      )
+      .sort((first, second) => {
+        if (selectedSort === "points-asc") {
+          return first.points - second.points || first.name.localeCompare(second.name, "fr");
+        }
+        if (selectedSort === "name-asc") {
+          return first.name.localeCompare(second.name, "fr");
+        }
+        if (selectedSort === "name-desc") {
+          return second.name.localeCompare(first.name, "fr");
+        }
+        return second.points - first.points || first.name.localeCompare(second.name, "fr");
+      });
+    const visible = filtered.slice(0, 100);
+
+    results.innerHTML = visible
+      .map(
+        (player) => `
+          <article class="transfer-ranking-row">
+            <b class="transfer-position transfer-position-${player.position.toLowerCase()}">${player.position}</b>
+            <img src="assets/shirts/${player.code}.png" alt="" loading="lazy" decoding="async" />
+            <span class="transfer-player">
+              <strong>${player.name}</strong>
+              <small>${player.country}</small>
+            </span>
+            <strong class="transfer-points">${player.points}</strong>
+          </article>
+        `,
+      )
+      .join("");
+    count.textContent = filtered.length
+      ? `${filtered.length} joueur${filtered.length > 1 ? "s" : ""}${
+          filtered.length > visible.length ? " · 100 premiers affichés" : ""
+        }`
+      : "Aucun joueur trouvé";
+  };
+
+  [search, positionFilter, countryFilter, sort].forEach((control) => {
+    control.addEventListener(control === search ? "input" : "change", render);
+  });
+  render();
+}
+
+initializeTransferPlayerSearch();
 
 const nationalDayStats = [
   [

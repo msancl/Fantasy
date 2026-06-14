@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=125" />
+    <link rel="stylesheet" href="styles.css?v=132" />
     <script src="world-cup-squads.js?v=3" defer></script>
     <script src="world-cup-fixtures.js?v=1" defer></script>
-    <script src="app.js?v=71" defer></script>
+    <script src="app.js?v=78" defer></script>
   </head>
   <body class="world-cup-mode">
     <header class="site-header">
@@ -586,6 +586,47 @@
       <section id="transferts" class="panel page-section" data-page="transferts" hidden>
         <h2>Transferts</h2>
         <div class="transfer-page-grid">
+          <div class="transfer-ranking transfer-player-search" aria-label="Recherche de joueurs">
+            <h3>Rechercher un joueur</h3>
+            <div class="transfer-search-controls">
+              <label class="transfer-search-field">
+                <span>Nom</span>
+                <input type="search" data-player-search placeholder="Rechercher..." autocomplete="off" />
+              </label>
+              <label>
+                <span>Poste</span>
+                <select data-player-position>
+                  <option value="">Tous</option>
+                  <option value="GB">GB</option>
+                  <option value="DF">DF</option>
+                  <option value="MIL">MIL</option>
+                  <option value="ATT">ATT</option>
+                </select>
+              </label>
+              <label>
+                <span>Pays</span>
+                <select data-player-country>
+                  <option value="">Tous</option>
+                </select>
+              </label>
+              <label>
+                <span>Trier</span>
+                <select data-player-sort>
+                  <option value="points-desc">Points décroissants</option>
+                  <option value="points-asc">Points croissants</option>
+                  <option value="name-asc">Nom A-Z</option>
+                  <option value="name-desc">Nom Z-A</option>
+                </select>
+              </label>
+            </div>
+            <div class="transfer-ranking-head transfer-search-head">
+              <span>Poste</span>
+              <span>Joueur</span>
+              <span>PTS</span>
+            </div>
+            <div class="transfer-ranking-list" data-player-results></div>
+            <p class="transfer-results-count" data-player-count></p>
+          </div>
           <div class="transfer-ranking" aria-label="Top 15 des joueurs">
           <h3>Top 15 des joueurs</h3>
           <div class="transfer-ranking-head">
