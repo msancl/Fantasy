@@ -572,7 +572,7 @@
 
 .transfer-page-grid {
   display: grid;
-  grid-template-columns: minmax(300px, 350px) minmax(0, 1fr);
+  grid-template-columns: minmax(430px, 520px) minmax(0, 1fr);
   align-items: start;
   gap: 20px;
   margin-top: 22px;
@@ -580,7 +580,7 @@
 }
 
 .transfer-ranking {
-  width: min(100%, 350px);
+  width: min(100%, 520px);
   margin-top: 0;
 }
 
@@ -637,7 +637,7 @@
 
 .transfer-search-head,
 .transfer-player-search .transfer-ranking-row {
-  grid-template-columns: 44px 28px minmax(0, 1fr) 46px;
+  grid-template-columns: 44px 28px minmax(130px, 1fr) 96px 46px;
 }
 
 .transfer-position {
@@ -661,15 +661,6 @@
 
 .transfer-position-att {
   background: #481c20;
-}
-
-.transfer-results-count {
-  margin: 8px 0 0;
-  color: #78869a;
-  font-size: 0.68rem;
-  font-weight: 800;
-  text-align: right;
-  text-transform: uppercase;
 }
 
 .transfer-ranking h3,
@@ -713,15 +704,60 @@
   text-align: center;
 }
 
+.transfer-search-head span:nth-child(3) {
+  grid-column: 4;
+  text-align: center;
+}
+
 .transfer-ranking-head span:last-child {
   grid-column: 4;
   text-align: center;
+}
+
+.transfer-search-head span:last-child {
+  grid-column: 5;
 }
 
 .transfer-ranking-list {
   display: grid;
   gap: 3px;
   margin-top: 4px;
+}
+
+.transfer-player-search .transfer-ranking-list {
+  max-height: 315px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 5px;
+  scrollbar-color: rgba(212, 160, 48, 0.76) rgba(106, 76, 14, 0.16);
+  scrollbar-width: thin;
+}
+
+.transfer-player-search .transfer-ranking-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.transfer-player-search .transfer-ranking-list::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(106, 76, 14, 0.16);
+}
+
+.transfer-player-search .transfer-ranking-list::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(255, 224, 138, 0.34);
+  border-radius: 999px;
+  background: linear-gradient(#d8aa45, #9d721b);
+}
+
+.transfer-search-empty {
+  display: grid;
+  min-height: 90px;
+  margin: 0;
+  place-items: center;
+  color: #78869a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .transfer-ranking-list[hidden],
@@ -802,6 +838,58 @@
   color: #9fb0c7;
   font-size: 0.62rem;
   font-weight: 700;
+}
+
+.player-availability {
+  display: inline-flex;
+  min-width: 86px;
+  min-height: 24px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 3px 6px;
+  color: #ffffff;
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-size: 0.56rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.player-availability-cell {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-availability-heading {
+  text-align: center;
+}
+
+.player-availability-available {
+  border-color: #35d474;
+  background: #11883f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.player-availability-unavailable {
+  border-color: #ff6262;
+  background: #b51f2e;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.national-squad-board .player-main {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.national-squad-board .player-main > strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .transfer-points {
@@ -1008,7 +1096,7 @@
 
 @media (max-width: 1180px) {
   .transfer-page-grid {
-    grid-template-columns: minmax(0, 350px);
+    grid-template-columns: minmax(0, 520px);
   }
 
   .transfer-history {
@@ -1029,6 +1117,11 @@
   .transfer-ranking-row {
     grid-template-columns: 42px 32px minmax(0, 1fr) 50px;
     gap: 6px;
+  }
+
+  .transfer-search-head,
+  .transfer-player-search .transfer-ranking-row {
+    grid-template-columns: 42px 32px minmax(120px, 1fr) 92px 50px;
   }
 
   .transfer-ranking-head,
@@ -2454,25 +2547,25 @@ p {
 }
 
 .national-squad-board .player-card {
-  min-width: 540px;
-  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 42px 46px 0;
+  min-width: 640px;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 96px 34px 34px 34px 34px 42px 46px 0;
   gap: 5px;
 }
 
 .national-squad-board .player-table-head {
   height: 40px;
-  min-width: 540px;
+  min-width: 640px;
   min-height: 40px;
   max-height: 40px;
   box-sizing: border-box;
-  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 42px 46px 0;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 96px 34px 34px 34px 34px 42px 46px 0;
   overflow: hidden;
 }
 
 .national-squad-board.is-days-open .player-card,
 .national-squad-board.has-selected-day .player-card {
-  min-width: 812px;
-  grid-template-columns: 44px 24px minmax(140px, 1fr) 34px 34px 34px 34px 42px 46px 272px;
+  min-width: 912px;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 96px 34px 34px 34px 34px 42px 46px 272px;
 }
 
 .national-day-stats-group {
@@ -2737,6 +2830,7 @@ p {
 .player-card > .total-marker,
 .player-card > .substitute-slot-marker,
 .player-card > .player-main,
+.player-card > .player-availability-cell,
 .player-card > .player-position,
 .player-card > .player-stat,
 .player-card > .day-cell {
@@ -3647,23 +3741,23 @@ p {
   }
 
   .national-squad-board .player-card {
-    min-width: 520px;
-    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 40px 44px 0;
+    min-width: 620px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 92px 32px 32px 32px 32px 40px 44px 0;
     gap: 4px;
   }
 
   .national-squad-board .player-table-head {
     height: 40px;
-    min-width: 520px;
+    min-width: 620px;
     min-height: 40px;
     max-height: 40px;
-    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 40px 44px 0;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 92px 32px 32px 32px 32px 40px 44px 0;
   }
 
   .national-squad-board.is-days-open .player-card,
   .national-squad-board.has-selected-day .player-card {
-    min-width: 770px;
-    grid-template-columns: 38px 24px minmax(120px, 1fr) 32px 32px 32px 32px 40px 44px 250px;
+    min-width: 870px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 92px 32px 32px 32px 32px 40px 44px 250px;
   }
 
   .national-day-stats-group {

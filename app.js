@@ -1032,7 +1032,9 @@ function ensureNationalTeamRoster(section) {
   };
   const playerRows = (worldCupSquads[code] || [])
     .map(
-      (player, playerIndex) => `
+      (player, playerIndex) => {
+        const availability = getPlayerAvailability(player);
+        return `
         <article class="player-card ${positionClasses[player.position]}" data-player-index="${playerIndex}">
           <img
             src="assets/shirts/${code}.png"
@@ -1044,6 +1046,11 @@ function ensureNationalTeamRoster(section) {
             <strong>${player.name}</strong>
             <small>${name}</small>
           </div>
+          <div class="player-availability-cell">
+            <span class="player-availability player-availability-${availability.key}">
+              ${availability.label} ${availability.selectedBy}/${availability.limit}
+            </span>
+          </div>
           <div class="player-position">${player.position}</div>
           <div class="player-stat">0</div>
           <div class="player-stat">0</div>
@@ -1051,7 +1058,8 @@ function ensureNationalTeamRoster(section) {
           <div class="player-stat player-penalty-saves">0</div>
           <div class="player-stat">0</div>
         </article>
-      `,
+      `;
+      },
     )
     .join("");
 
@@ -1090,6 +1098,7 @@ function ensureNationalTeamRoster(section) {
         <div class="player-card player-table-head">
           <div></div>
           <div>Joueur</div>
+          <div class="player-availability-heading">Disponibilité</div>
           <div>Poste</div>
           <div title="Matchs joués" aria-label="Matchs joués">MJ</div>
           <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">G</div>
@@ -1112,6 +1121,27 @@ function ensureNationalTeamRoster(section) {
 
 createNationalTeamSections();
 
+function getPlayerAvailability(player) {
+  const limit = 2;
+  const selectedBy = Math.max(
+    0,
+    Number(player.selectedBy ?? player.teamsCount ?? player.ownership ?? 0),
+  );
+  const isAvailable =
+    player.availability === "unavailable"
+      ? false
+      : player.availability === "available"
+        ? true
+        : selectedBy < limit;
+
+  return {
+    key: isAvailable ? "available" : "unavailable",
+    label: isAvailable ? "Disponible" : "Indisponible",
+    selectedBy,
+    limit,
+  };
+}
+
 function initializeTransferPlayerSearch() {
   const container = document.querySelector(".transfer-player-search");
   if (
@@ -1125,9 +1155,9 @@ function initializeTransferPlayerSearch() {
   const search = container.querySelector("[data-player-search]");
   const positionFilter = container.querySelector("[data-player-position]");
   const countryFilter = container.querySelector("[data-player-country]");
+  const availabilityFilter = container.querySelector("[data-player-availability]");
   const sort = container.querySelector("[data-player-sort]");
   const results = container.querySelector("[data-player-results]");
-  const count = container.querySelector("[data-player-count]");
   const countryNames = new Map(nationalTeams);
   const players = Object.entries(worldCupSquads).flatMap(([code, squad]) =>
     squad.map((player) => ({
@@ -1135,6 +1165,8 @@ function initializeTransferPlayerSearch() {
       code,
       country: countryNames.get(code) || code,
       points: Number(player.points || 0),
+      selection: Number(player.selection || 0),
+      ...getPlayerAvailability(player),
     })),
   );
 
@@ -1152,6 +1184,7 @@ function initializeTransferPlayerSearch() {
     const query = search.value.trim().toLocaleLowerCase("fr");
     const selectedPosition = positionFilter.value;
     const selectedCountry = countryFilter.value;
+    const selectedAvailability = availabilityFilter.value;
     const selectedSort = sort.value;
     const filtered = players
       .filter(
@@ -1160,23 +1193,24 @@ function initializeTransferPlayerSearch() {
             player.name.toLocaleLowerCase("fr").includes(query) ||
             player.country.toLocaleLowerCase("fr").includes(query)) &&
           (!selectedPosition || player.position === selectedPosition) &&
-          (!selectedCountry || player.code === selectedCountry),
+          (!selectedCountry || player.code === selectedCountry) &&
+          (!selectedAvailability || player.key === selectedAvailability),
       )
       .sort((first, second) => {
-        if (selectedSort === "points-asc") {
-          return first.points - second.points || first.name.localeCompare(second.name, "fr");
+        if (selectedSort === "selection-desc") {
+          return (
+            second.selection - first.selection ||
+            second.points - first.points ||
+            first.name.localeCompare(second.name, "fr")
+          );
         }
         if (selectedSort === "name-asc") {
           return first.name.localeCompare(second.name, "fr");
         }
-        if (selectedSort === "name-desc") {
-          return second.name.localeCompare(first.name, "fr");
-        }
         return second.points - first.points || first.name.localeCompare(second.name, "fr");
       });
-    const visible = filtered.slice(0, 100);
 
-    results.innerHTML = visible
+    results.innerHTML = filtered
       .map(
         (player) => `
           <article class="transfer-ranking-row">
@@ -1186,19 +1220,22 @@ function initializeTransferPlayerSearch() {
               <strong>${player.name}</strong>
               <small>${player.country}</small>
             </span>
+            <span class="player-availability-cell">
+              <span class="player-availability player-availability-${player.key}">
+                ${player.label} ${player.selectedBy}/${player.limit}
+              </span>
+            </span>
             <strong class="transfer-points">${player.points}</strong>
           </article>
         `,
       )
       .join("");
-    count.textContent = filtered.length
-      ? `${filtered.length} joueur${filtered.length > 1 ? "s" : ""}${
-          filtered.length > visible.length ? " · 100 premiers affichés" : ""
-        }`
-      : "Aucun joueur trouvé";
+    if (!filtered.length) {
+      results.innerHTML = '<p class="transfer-search-empty">Aucun joueur trouvé</p>';
+    }
   };
 
-  [search, positionFilter, countryFilter, sort].forEach((control) => {
+  [search, positionFilter, countryFilter, availabilityFilter, sort].forEach((control) => {
     control.addEventListener(control === search ? "input" : "change", render);
   });
   render();

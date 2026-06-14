@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fantasy Football 26/27</title>
-    <link rel="stylesheet" href="styles.css?v=132" />
+    <link rel="stylesheet" href="styles.css?v=136" />
     <script src="world-cup-squads.js?v=3" defer></script>
     <script src="world-cup-fixtures.js?v=1" defer></script>
-    <script src="app.js?v=78" defer></script>
+    <script src="app.js?v=82" defer></script>
   </head>
   <body class="world-cup-mode">
     <header class="site-header">
@@ -610,22 +610,29 @@
                 </select>
               </label>
               <label>
+                <span>Disponibilité</span>
+                <select data-player-availability>
+                  <option value="">Tous</option>
+                  <option value="available">Disponible</option>
+                  <option value="unavailable">Indisponible</option>
+                </select>
+              </label>
+              <label>
                 <span>Trier</span>
                 <select data-player-sort>
-                  <option value="points-desc">Points décroissants</option>
-                  <option value="points-asc">Points croissants</option>
+                  <option value="points-desc">Points</option>
+                  <option value="selection-desc">% de sélection</option>
                   <option value="name-asc">Nom A-Z</option>
-                  <option value="name-desc">Nom Z-A</option>
                 </select>
               </label>
             </div>
             <div class="transfer-ranking-head transfer-search-head">
               <span>Poste</span>
               <span>Joueur</span>
+              <span>Disponibilité</span>
               <span>PTS</span>
             </div>
             <div class="transfer-ranking-list" data-player-results></div>
-            <p class="transfer-results-count" data-player-count></p>
           </div>
           <div class="transfer-ranking" aria-label="Top 15 des joueurs">
           <h3>Top 15 des joueurs</h3>
