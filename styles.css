@@ -842,19 +842,27 @@
 
 .player-availability {
   display: inline-flex;
+  width: 86px;
   min-width: 86px;
+  max-width: 86px;
+  height: 24px;
   min-height: 24px;
+  max-height: 24px;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 3px 6px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
   font-size: 0.56rem;
   font-weight: 900;
   line-height: 1.1;
+  opacity: 1 !important;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.48);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .player-availability-cell {

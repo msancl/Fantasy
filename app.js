@@ -1098,7 +1098,7 @@ function ensureNationalTeamRoster(section) {
         <div class="player-card player-table-head">
           <div></div>
           <div>Joueur</div>
-          <div class="player-availability-heading">Disponibilité</div>
+          <div class="player-availability-heading" aria-hidden="true"></div>
           <div>Poste</div>
           <div title="Matchs joués" aria-label="Matchs joués">MJ</div>
           <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">G</div>
