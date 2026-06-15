@@ -12,6 +12,34 @@ const pages = [
 
 const countries = Array.isArray(window.countryData) ? window.countryData : [];
 const countryById = new Map(countries.map((country) => [country.id, country]));
+const playerData = Array.isArray(window.playerData) ? window.playerData : [];
+const worldCupSquads = Object.fromEntries(
+  playerData.map((squad) => [squad.countryId, squad.players || []]),
+);
+const matchData = Array.isArray(window.matchData) ? window.matchData : [];
+const matchEventsData = Array.isArray(window.matchEventsData)
+  ? window.matchEventsData
+  : [];
+const playerById = new Map(
+  playerData.flatMap((squad) =>
+    (squad.players || []).map((player) => [player.id, player]),
+  ),
+);
+const fantasyTeamsData = Array.isArray(window.fantasyTeamsData)
+  ? window.fantasyTeamsData
+  : [];
+const fantasyTeamRostersData = Array.isArray(window.fantasyTeamRostersData)
+  ? window.fantasyTeamRostersData
+  : [];
+const fantasyRosterByTeamId = new Map(
+  fantasyTeamRostersData.map((roster) => [roster.teamId, roster]),
+);
+const nationalRoundKeys = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"];
+const fantasyRoundKeys = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"];
+
+function formatPlayerStat(value) {
+  return value === null || value === undefined ? "-" : String(value);
+}
 
 function getCountry(code) {
   return (
@@ -232,20 +260,148 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 window.addEventListener("hashchange", showPage);
 showPage();
 
-const worldCupTeams = [
-  ["Alex United", "alex-united", "#d62839", "214, 40, 57", "#ffffff", "255, 255, 255", "#ffffff"],
-  ["Aquarela do Brasil", "aquarela", "#168447", "22, 132, 71", "#f4d03f", "244, 208, 63", "#ffffff"],
-  ["Black Chihuahua United", "black-chihuahua", "#f97316", "249, 115, 22", "#090909", "9, 9, 9", "#ffffff"],
-  ["FC Brusseleir", "brusseleir", "#cf2634", "207, 38, 52", "#8b919a", "139, 145, 154", "#ffffff"],
-  ["IFK Yvonedgar", "ifk-yvonedgar", "#8f2430", "143, 36, 48", "#f1c94a", "241, 201, 74", "#ffffff"],
-  ["Lethal Weapon Athletic", "lethal-weapon", "#f97316", "249, 115, 22", "#20c9c3", "32, 201, 195", "#081012"],
-  ["Montreal Celtic Revival", "montreal-celtic", "#c62735", "198, 39, 53", "#6f3f2b", "111, 63, 43", "#ffffff"],
-  ["Nikhau FC", "nikhau", "#004d98", "0, 77, 152", "#7a1632", "122, 22, 50", "#ffffff"],
-  ["Portloe Wanderers", "portloe", "#1769e0", "23, 105, 224", "#080b12", "8, 11, 18", "#ffffff"],
-  ["San Mateo", "san-mateo", "#050505", "5, 5, 5", "#cbd5e1", "203, 213, 225", "#ffffff"],
-  ["Schtumpik Rovers", "schtumpik", "#f4f4f5", "244, 244, 245", "#050505", "5, 5, 5", "#071018"],
-  ["Universal Players", "universal", "#7dd3fc", "125, 211, 252", "#f5cf3d", "245, 207, 61", "#071018"],
-];
+function hexToRgbTriplet(hex) {
+  const normalized = String(hex || "#ffffff").replace("#", "");
+  const value =
+    normalized.length === 3
+      ? normalized
+          .split("")
+          .map((character) => character + character)
+          .join("")
+      : normalized.padEnd(6, "0").slice(0, 6);
+  const number = Number.parseInt(value, 16);
+
+  return [
+    (number >> 16) & 255,
+    (number >> 8) & 255,
+    number & 255,
+  ].join(", ");
+}
+
+function getReadableInk(primary, secondary) {
+  const rgb = hexToRgbTriplet(primary)
+    .split(",")
+    .map((value) => Number(value.trim()));
+  const brightness = (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
+
+  return brightness > 165 ? "#071018" : "#ffffff";
+}
+
+const worldCupTeams = fantasyTeamsData
+  .filter((team) => team.division === "world-cup" && team.status !== "inactive")
+  .map((team) => {
+    const primary = team.colors?.primary || team.crest?.primary || "#111827";
+    const secondary =
+      team.colors?.secondary || team.crest?.secondary || "#d6dce7";
+
+    return [
+      team.name,
+      team.id,
+      primary,
+      hexToRgbTriplet(primary),
+      secondary,
+      hexToRgbTriplet(secondary),
+      getReadableInk(primary, secondary),
+      team,
+    ];
+  });
+
+function getFantasyRoster(teamId) {
+  return fantasyRosterByTeamId.get(teamId) || { slots: [] };
+}
+
+function roundIndex(round) {
+  return fantasyRoundKeys.indexOf(round);
+}
+
+function isSlotActiveForRound(slot, round) {
+  if (!slot?.playerId) return false;
+  const current = roundIndex(round);
+  const joined = slot.joinedRound ? roundIndex(slot.joinedRound) : 0;
+  const left = slot.leftRound ? roundIndex(slot.leftRound) : fantasyRoundKeys.length - 1;
+
+  return current >= joined && current <= left;
+}
+
+function getSlotPlayer(slot) {
+  return slot?.playerId ? playerById.get(slot.playerId) || null : null;
+}
+
+function getFantasyTeamRoundStats(teamId, round) {
+  const roster = getFantasyRoster(teamId);
+
+  return roster.slots.reduce(
+    (sum, slot) => {
+      if (!isSlotActiveForRound(slot, round)) return sum;
+      const player = getSlotPlayer(slot);
+      const stats = player?.rounds?.[round];
+      if (!stats) return sum;
+
+      sum.matchesPlayed += stats.matchesPlayed ?? 0;
+      sum.goals += (stats.goals ?? 0) + (stats.penalties ?? 0);
+      sum.assists += stats.assists ?? 0;
+      sum.cleanSheets += stats.cleanSheets ?? 0;
+      sum.points += stats.points ?? 0;
+      return sum;
+    },
+    {
+      matchesPlayed: 0,
+      goals: 0,
+      assists: 0,
+      cleanSheets: 0,
+      points: 0,
+    },
+  );
+}
+
+function getFantasyTeamTotals(teamId) {
+  return fantasyRoundKeys.reduce(
+    (sum, round) => {
+      const roundStats = getFantasyTeamRoundStats(teamId, round);
+      sum.matchesPlayed += roundStats.matchesPlayed;
+      sum.goals += roundStats.goals;
+      sum.assists += roundStats.assists;
+      sum.cleanSheets += roundStats.cleanSheets;
+      sum.points += roundStats.points;
+      return sum;
+    },
+    {
+      matchesPlayed: 0,
+      goals: 0,
+      assists: 0,
+      cleanSheets: 0,
+      points: 0,
+    },
+  );
+}
+
+function getFantasyTeamRoundScores(teamId) {
+  return fantasyRoundKeys.map((round) => {
+    const roster = getFantasyRoster(teamId);
+    const hasRoundData = roster.slots.some((slot) => {
+      if (!isSlotActiveForRound(slot, round)) return false;
+      const player = getSlotPlayer(slot);
+      return player?.rounds?.[round]?.points !== null &&
+        player?.rounds?.[round]?.points !== undefined;
+    });
+    const score = getFantasyTeamRoundStats(teamId, round).points;
+    return hasRoundData ? score : null;
+  });
+}
+
+function getFantasyTeamRows() {
+  return worldCupTeams
+    .map((team) => ({
+      team,
+      roundScores: getFantasyTeamRoundScores(team[1]),
+      totals: getFantasyTeamTotals(team[1]),
+    }))
+    .sort(
+      (a, b) =>
+        b.totals.points - a.totals.points ||
+        a.team[0].localeCompare(b.team[0], "fr"),
+    );
+}
 
 function createWorldCupStandings() {
   const standings = document.querySelector(".standings-body");
@@ -253,41 +409,18 @@ function createWorldCupStandings() {
     return;
   }
 
-  const prototypeRoundScores = [
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-    [null, null, null, null, null, null, null, null],
-  ];
   const roundLabels = ["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"];
+  const fantasyRows = getFantasyTeamRows();
   const bestRoundScores = roundLabels.map((_, roundIndex) =>
     Math.max(
-      ...prototypeRoundScores
-        .map((scores) => scores[roundIndex])
+      ...fantasyRows
+        .map(({ roundScores }) => roundScores[roundIndex])
         .filter((score) => score !== null),
     ),
   );
 
-  worldCupTeams
-    .map((team, index) => {
-      const roundScores = prototypeRoundScores[index];
-      const points = roundScores.reduce(
-        (total, score) => total + (score ?? 0),
-        0,
-      );
-
-      return { team, points, roundScores };
-    })
-    .sort((a, b) => b.points - a.points)
-    .forEach(({ team, points, roundScores }, index) => {
+  fantasyRows
+    .forEach(({ team, totals, roundScores }, index) => {
       const [name, slug, primary, primaryRgb, secondary, secondaryRgb] = team;
       const entry = document.createElement("div");
       const row = document.createElement("div");
@@ -305,7 +438,9 @@ function createWorldCupStandings() {
       const roundCells = roundScores
         .map((score, roundIndex) => {
           const isBest =
-            score !== null && score === bestRoundScores[roundIndex];
+            score !== null &&
+            bestRoundScores[roundIndex] !== -Infinity &&
+            score === bestRoundScores[roundIndex];
           const classes = [
             "standings-round-score",
             score === null ? "is-pending" : "",
@@ -363,52 +498,174 @@ function getTeamMonogram(name) {
     .toUpperCase();
 }
 
+function rankLabel(index, points) {
+  return `${index + 1}${index === 0 ? "er" : "e"} - ${points} pts`;
+}
+
+function positionClass(position) {
+  return {
+    GB: "pos-gk",
+    DF: "pos-def",
+    MIL: "pos-mid",
+    ATT: "pos-att",
+    REM: "pos-rem",
+  }[position || "REM"] || "pos-rem";
+}
+
+function getRoundCellValue(slot, player, round) {
+  if (!slot?.playerId || !player || !isSlotActiveForRound(slot, round)) {
+    return "-";
+  }
+
+  return formatPlayerStat(player.rounds?.[round]?.points);
+}
+
+function createFantasyPlayerRow(slot, slotIndex) {
+  const player = getSlotPlayer(slot);
+  const position = player?.position || slot?.position || "REM";
+  const isEmpty = !player;
+  const countryCode = player?.countryId || "FRA";
+  const totals = player?.totals || {};
+  const roundCells = fantasyRoundKeys
+    .map((round, index) => {
+      const value = getRoundCellValue(slot, player, round);
+      const inactiveClass = value === "-" ? " inactive" : "";
+      return `<div class="day-cell${inactiveClass}" data-day="${index + 1}">${value}</div>`;
+    })
+    .join("");
+
+  if (isEmpty) {
+    const label =
+      slot?.slotType === "substitute"
+        ? slot.note || `Remplacant ${slotIndex + 1}`
+        : slot.note || "A definir";
+
+    return `
+      <article class="player-card ${positionClass(position)} substitute-slot">
+        <div class="player-position">REM</div>
+        <div class="substitute-slot-marker" aria-hidden="true">+</div>
+        <div class="player-main">
+          <strong>Place disponible</strong>
+          <small>${label}</small>
+        </div>
+        <div class="player-stat">-</div>
+        <div class="player-stat">-</div>
+        <div class="player-stat">-</div>
+        <div class="player-stat player-clean-sheets">-</div>
+        <div class="player-stat player-points">-</div>
+        ${roundCells}
+      </article>
+    `;
+  }
+
+  return `
+    <article class="player-card ${positionClass(position)}" data-player-id="${player.id}">
+      <img
+        src="${getCountryAsset(countryCode, "shirt")}"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="player-main">
+        <strong>${player.name}</strong>
+        <small>${getCountryName(countryCode)}</small>
+      </div>
+      <div class="player-position">${position}</div>
+      <div class="player-stat">${formatPlayerStat(totals.matchesPlayed)}</div>
+      <div class="player-stat">${formatPlayerStat((totals.goals ?? 0) + (totals.penalties ?? 0))}</div>
+      <div class="player-stat">${formatPlayerStat(totals.assists)}</div>
+      <div class="player-stat player-clean-sheets">${formatPlayerStat(totals.cleanSheets)}</div>
+      <div class="player-stat player-points">${formatPlayerStat(totals.points)}</div>
+      ${roundCells}
+    </article>
+  `;
+}
+
+function createFantasyTeamCard(row, index) {
+  const [name, slug, primary, primaryRgb, secondary, secondaryRgb, ink] = row.team;
+  const roster = getFantasyRoster(slug);
+  const totals = row.totals;
+  const slots = roster.slots || [];
+  const playerRows = slots
+    .map((slot, slotIndex) => createFantasyPlayerRow(slot, slotIndex))
+    .join("");
+
+  const article = document.createElement("article");
+  article.className = `team-card team-branded team-${slug}`;
+  article.style.setProperty("--team-primary", primary);
+  article.style.setProperty("--team-primary-rgb", primaryRgb);
+  article.style.setProperty("--team-secondary", secondary);
+  article.style.setProperty("--team-secondary-rgb", secondaryRgb);
+  article.style.setProperty("--team-ink", ink);
+  article.innerHTML = `
+    <header
+      class="team-card-header team-card-summary team-details-toggle"
+      role="button"
+      tabindex="0"
+      aria-expanded="false"
+    >
+      <div>
+        <h4 class="team-name" data-monogram="${getTeamMonogram(name)}">${formatTeamName(name)}</h4>
+      </div>
+      <div class="team-card-actions">
+        <div class="team-rank" aria-label="Position au classement">
+          <strong>${rankLabel(index, totals.points)}</strong>
+        </div>
+        <button class="team-details-toggle-hidden" type="button" aria-expanded="false">
+          Details
+        </button>
+      </div>
+    </header>
+
+    <div class="team-card-grid">
+      <section class="team-card-block team-lineup-block">
+        <div class="block-title-row">
+          <div class="days-actions">
+            <button class="days-toggle" type="button" aria-expanded="false">
+              Voir journÃ©es
+            </button>
+            <div class="day-range-nav" aria-label="PÃ©riodes de journÃ©es"></div>
+          </div>
+        </div>
+        <div
+          class="squad-board"
+          data-no-season-extension
+          aria-label="Composition de ${name}"
+        >
+          <div class="player-card player-table-head" aria-hidden="true">
+            <div>Poste</div>
+            <div>Joueur</div>
+            <div title="Matchs jouÃ©s" aria-label="Matchs jouÃ©s">MJ</div>
+            <div title="Buts, pÃ©naltys inclus" aria-label="Buts, pÃ©naltys inclus">G</div>
+            <div title="Assists" aria-label="Assists">A</div>
+            <div class="clean-sheet-heading" title="Clean Sheets" aria-label="Clean Sheets">CS</div>
+            <div title="Points" aria-label="Points">PTS</div>
+            ${["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"]
+              .map((label, dayIndex) => `<div class="day-cell" data-day="${dayIndex + 1}">${label}</div>`)
+              .join("")}
+          </div>
+          ${playerRows}
+        </div>
+      </section>
+    </div>
+  `;
+
+  return article;
+}
+
 function createWorldCupTeams() {
-  const source = document.querySelector(".team-san-mateo");
-  if (!source || document.querySelector(".team-card.team-aquarela")) {
+  const panel = document.querySelector('[data-division-panel="world-cup"]');
+  if (!panel || panel.dataset.fantasyTeamsReady === "true") {
     return;
   }
 
-  let lastCard = source;
-
-  worldCupTeams.forEach((team, index) => {
-    const [name, slug, primary, primaryRgb, secondary, secondaryRgb, ink] = team;
-    const teamCard = index === 0 ? source : source.cloneNode(true);
-    const teamName = teamCard.querySelector(".team-name");
-    const rank = teamCard.querySelector(".team-rank");
-    const totals = teamCard.querySelector(".team-totals");
-    const rankLabel = index === 0 ? "1er" : `${index + 1}e`;
-
-    teamCard.className = `team-card team-branded team-${slug}`;
-    teamCard.style.setProperty("--team-primary", primary);
-    teamCard.style.setProperty("--team-primary-rgb", primaryRgb);
-    teamCard.style.setProperty("--team-secondary", secondary);
-    teamCard.style.setProperty("--team-secondary-rgb", secondaryRgb);
-    teamCard.style.setProperty("--team-ink", ink);
-
-    if (teamName) {
-      teamName.textContent = formatTeamName(name);
-      teamName.dataset.monogram = getTeamMonogram(name);
-    }
-
-    if (rank) {
-      rank.setAttribute("aria-label", "Position au classement");
-      rank.querySelector("strong").textContent = rankLabel;
-    }
-
-    if (totals) {
-      totals.setAttribute("aria-label", `Totaux de ${name}`);
-    }
-
-    teamCard.querySelectorAll("[aria-expanded]").forEach((element) => {
-      element.setAttribute("aria-expanded", "false");
-    });
-
-    if (index > 0) {
-      lastCard.insertAdjacentElement("afterend", teamCard);
-      lastCard = teamCard;
-    }
+  const heading = panel.querySelector("h3");
+  panel.replaceChildren();
+  if (heading) panel.append(heading);
+  getFantasyTeamRows().forEach((row, index) => {
+    panel.append(createFantasyTeamCard(row, index));
   });
+  panel.dataset.fantasyTeamsReady = "true";
 }
 
 createWorldCupTeams();
@@ -520,6 +777,12 @@ function initializeHomeDashboard() {
         : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
       const matchNumber =
         fixture.s === "group" ? "" : `<small>M${fixture.n}</small>`;
+      const centerLabel =
+        fixture.status === "finished" &&
+        fixture.score?.home !== null &&
+        fixture.score?.away !== null
+          ? `${fixture.score.home} - ${fixture.score.away}`
+          : "vs";
 
       return `
         <article class="home-fixture${fixture.s === "group" ? " is-group-match" : ""}">
@@ -529,7 +792,7 @@ function initializeHomeDashboard() {
           </div>
           <div class="home-fixture-teams">
             <span>${homeFlag}<b>${homeName}</b></span>
-            <i>vs</i>
+            <i>${centerLabel}</i>
             <span>${awayFlag}<b>${awayName}</b></span>
           </div>
           ${matchNumber}
@@ -643,7 +906,7 @@ function initializeWorldCupFixtures() {
     return placeholder;
   };
 
-  const matchResults = {
+  const legacyMatchResults = {
     1: {
       home: {
         score: 2,
@@ -720,6 +983,78 @@ function initializeWorldCupFixtures() {
     },
   };
 
+  const eventsByMatchNumber = new Map(
+    matchEventsData.map((entry) => [entry.matchNumber, entry]),
+  );
+
+  const playerDetails = (id) => {
+    const player = playerById.get(id);
+    return player
+      ? { id: player.id, name: player.name, position: player.position }
+      : { id, name: `JOUEUR ${id}`, position: "-" };
+  };
+
+  const formatMinute = (event) =>
+    `${event.minute}${event.addedTime ? `+${event.addedTime}` : ""}'`;
+
+  const buildTeamMatchResult = (match, eventEntry, side) => {
+    const countryId =
+      side === "home" ? match.homeCountryId : match.awayCountryId;
+    const cleanSheetIds = new Set(
+      eventEntry?.cleanSheets?.[
+        side === "home" ? "homePlayerIds" : "awayPlayerIds"
+      ] || [],
+    );
+    const goals = (eventEntry?.goals || []).filter(
+      (goal) => goal.countryId === countryId,
+    );
+    const assists = goals
+      .filter((goal) => goal.assistId)
+      .map((goal) => playerDetails(goal.assistId).name);
+    const penaltySaves = (eventEntry?.penaltiesSaved || [])
+      .filter((event) => event.countryId === countryId)
+      .map(
+        (event) =>
+          `${playerDetails(event.goalkeeperId).name} ${formatMinute(event)}`,
+      );
+
+    return {
+      score: match.score?.[side] ?? null,
+      scorers: goals.length
+        ? goals
+            .map((goal) => {
+              const suffix = goal.isOwnGoal
+                ? " (CSC)"
+                : goal.isPenalty
+                  ? " (P)"
+                  : "";
+              return `${playerDetails(goal.scorerId).name} ${formatMinute(goal)}${suffix}`;
+            })
+            .join(", ")
+        : "-",
+      assists: assists.length ? assists.join(", ") : "-",
+      lineup: (eventEntry?.lineups?.[side]?.starters || []).map(playerDetails),
+      substitutes: (eventEntry?.lineups?.[side]?.substitutes || []).map(
+        playerDetails,
+      ),
+      cleanSheetPlayerIds: cleanSheetIds,
+      penaltySaves: penaltySaves.length ? penaltySaves.join(", ") : "-",
+    };
+  };
+
+  const matchResults = Object.fromEntries(
+    matchData.map((match) => {
+      const eventEntry = eventsByMatchNumber.get(match.number);
+      return [
+        match.number,
+        {
+          home: buildTeamMatchResult(match, eventEntry, "home"),
+          away: buildTeamMatchResult(match, eventEntry, "away"),
+        },
+      ];
+    }),
+  );
+
   const teamIdentityMarkup = (code, placeholder) => {
     if (!code) {
       return `
@@ -792,8 +1127,7 @@ function initializeWorldCupFixtures() {
       .map(
         (player) => `
           <li class="${
-            events.hasCleanSheet &&
-            (player.position === "GB" || player.position === "DF")
+            events.cleanSheetPlayerIds?.has(player.id)
               ? "has-clean-sheet"
               : ""
           }">
@@ -801,8 +1135,7 @@ function initializeWorldCupFixtures() {
             <img src="${getCountryAsset(code, "shirt")}" alt="" loading="lazy" />
             <strong>${player.name}</strong>
             ${
-              events.hasCleanSheet &&
-              (player.position === "GB" || player.position === "DF")
+              events.cleanSheetPlayerIds?.has(player.id)
                 ? `<em>CS</em>`
                 : ""
             }
@@ -814,8 +1147,7 @@ function initializeWorldCupFixtures() {
       .map(
         (player) => `
           <li class="${
-            events.hasCleanSheet &&
-            (player.position === "GB" || player.position === "DF")
+            events.cleanSheetPlayerIds?.has(player.id)
               ? "has-clean-sheet"
               : ""
           }">
@@ -823,8 +1155,7 @@ function initializeWorldCupFixtures() {
             <img src="${getCountryAsset(code, "shirt")}" alt="" loading="lazy" />
             <strong>${player.name}</strong>
             ${
-              events.hasCleanSheet &&
-              (player.position === "GB" || player.position === "DF")
+              events.cleanSheetPlayerIds?.has(player.id)
                 ? `<em>CS</em>`
                 : ""
             }
@@ -946,9 +1277,9 @@ function initializeWorldCupFixtures() {
                           ${teamIdentityMarkup(fixture.h, fixture.hp)}
                           <span class="fixture-score-center">
                             <span class="fixture-scoreline" aria-label="Score">
-                              <b>${result?.home.score ?? fixture.hs ?? "-"}</b>
+                              <b>${result?.home.score ?? "-"}</b>
                               <i>–</i>
-                              <b>${result?.away.score ?? fixture.as ?? "-"}</b>
+                              <b>${result?.away.score ?? "-"}</b>
                             </span>
                           </span>
                           ${teamIdentityMarkup(fixture.a, fixture.ap)}
@@ -1120,8 +1451,13 @@ function ensureNationalTeamRoster(section) {
     .map(
       (player, playerIndex) => {
         const availability = getPlayerAvailability(player);
+        const totals = player.totals || {};
         return `
-        <article class="player-card ${positionClasses[player.position]}" data-player-index="${playerIndex}">
+        <article
+          class="player-card ${positionClasses[player.position]}"
+          data-player-index="${playerIndex}"
+          data-player-id="${player.id}"
+        >
           <img
             src="${getCountryAsset(code, "shirt")}"
             alt=""
@@ -1138,11 +1474,11 @@ function ensureNationalTeamRoster(section) {
             </span>
           </div>
           <div class="player-position">${player.position}</div>
-          <div class="player-stat">0</div>
-          <div class="player-stat">0</div>
-          <div class="player-stat">0</div>
-          <div class="player-stat player-penalty-saves">0</div>
-          <div class="player-stat">0</div>
+          <div class="player-stat">${formatPlayerStat(totals.matchesPlayed)}</div>
+          <div class="player-stat">${formatPlayerStat(totals.goals)}</div>
+          <div class="player-stat">${formatPlayerStat(totals.assists)}</div>
+          <div class="player-stat player-penalty-saves">${formatPlayerStat(totals.penaltiesSaved)}</div>
+          <div class="player-stat">${formatPlayerStat(totals.points)}</div>
         </article>
       `;
       },
@@ -1208,15 +1544,16 @@ function ensureNationalTeamRoster(section) {
 createNationalTeamSections();
 
 function getPlayerAvailability(player) {
-  const limit = 2;
+  const availability = player.availability || {};
+  const limit = Number(availability.maximumSelections ?? 2);
   const selectedBy = Math.max(
     0,
-    Number(player.selectedBy ?? player.teamsCount ?? player.ownership ?? 0),
+    Number(availability.selectedBy ?? 0),
   );
   const isAvailable =
-    player.availability === "unavailable"
+    availability.status === "unavailable"
       ? false
-      : player.availability === "available"
+      : availability.status === "available"
         ? true
         : selectedBy < limit;
 
@@ -1250,8 +1587,9 @@ function initializeTransferPlayerSearch() {
       ...player,
       code,
       country: countryNames.get(code) || code,
-      points: Number(player.points || 0),
-      selection: Number(player.selection || 0),
+      points: Number(player.totals?.points ?? 0),
+      pointsDisplay: formatPlayerStat(player.totals?.points),
+      selection: Number(player.availability?.selectionPercentage ?? 0),
       ...getPlayerAvailability(player),
     })),
   );
@@ -1311,7 +1649,7 @@ function initializeTransferPlayerSearch() {
                 ${player.label} ${player.selectedBy}/${player.limit}
               </span>
             </span>
-            <strong class="transfer-points">${player.points}</strong>
+            <strong class="transfer-points">${player.pointsDisplay}</strong>
           </article>
         `,
       )
@@ -1329,90 +1667,43 @@ function initializeTransferPlayerSearch() {
 
 initializeTransferPlayerSearch();
 
-const nationalDayStats = [
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 1 },
-    { matches: 1, penalties: 0, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 1, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 1, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 1, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 0, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 1, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 1 },
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 1, cleanSheets: 1, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 1, goals: 2, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-  ],
-  [
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 0, assists: 0, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 0, goals: 1, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-    { matches: 1, penalties: 1, goals: 1, assists: 1, cleanSheets: 0, penaltySaves: 0 },
-  ],
-];
-
 const emptyNationalDayStat = {
-  matches: 0,
-  penalties: 0,
-  goals: 0,
-  assists: 0,
-  cleanSheets: 0,
-  penaltySaves: 0,
+  matchesPlayed: null,
+  penalties: null,
+  goals: null,
+  assists: null,
+  cleanSheets: null,
+  penaltiesSaved: null,
+  points: null,
 };
 
-function getNationalDayStat() {
-  return emptyNationalDayStat;
+function getNationalPlayer(board, playerIndex) {
+  const code = board.closest(".national-team-section")?.dataset.teamCode;
+  return worldCupSquads[code]?.[playerIndex] || null;
+}
+
+function getNationalDayStat(board, dayIndex, playerIndex) {
+  const player = getNationalPlayer(board, playerIndex);
+  const roundKey = nationalRoundKeys[dayIndex];
+  return player?.rounds?.[roundKey] || emptyNationalDayStat;
 }
 
 function setNationalGeneralStats(board) {
   board.querySelectorAll(".player-card:not(.player-table-head)").forEach((row) => {
     const stats = row.querySelectorAll(".player-stat:not(.player-price)");
     const playerIndex = Number(row.dataset.playerIndex);
-    const playerDays = nationalDayStats.map((_, dayIndex) =>
-      getNationalDayStat(dayIndex, playerIndex),
-    );
-    const total = (key) =>
-      playerDays.reduce((sum, day) => sum + day[key], 0);
+    const totals = getNationalPlayer(board, playerIndex)?.totals || {};
     const values = [
-      total("matches"),
-      total("penalties") + total("goals"),
-      total("assists"),
-      total("cleanSheets"),
-      total("penaltySaves"),
-      total("goals") * 4 + total("assists") * 3 + total("cleanSheets") * 2,
+      totals.matchesPlayed,
+      totals.goals,
+      totals.assists,
+      totals.cleanSheets,
+      totals.penaltiesSaved,
+      totals.points,
     ];
 
     stats.forEach((cell, index) => {
-      cell.textContent = String(values[index]);
+      cell.textContent = formatPlayerStat(values[index]);
     });
     stats[stats.length - 1]?.classList.add("player-points");
   });
@@ -1474,7 +1765,7 @@ function createNationalDayDetailCells(board) {
       if (index === 0) {
         cell.classList.add("national-day-group-start");
       }
-      cell.textContent = "0";
+      cell.textContent = "-";
       group.append(cell);
     });
   });
@@ -1500,22 +1791,19 @@ function showNationalDayDetails(board, selectedDay) {
 
   board.querySelectorAll(".player-card:not(.player-table-head)").forEach((row) => {
     const playerIndex = Number(row.dataset.playerIndex);
-    const dayStats = getNationalDayStat(selectedDay - 1, playerIndex);
+    const dayStats = getNationalDayStat(board, selectedDay - 1, playerIndex);
     const values = [
-      dayStats.matches,
+      dayStats.matchesPlayed,
       dayStats.penalties,
       dayStats.goals,
       dayStats.assists,
       dayStats.cleanSheets,
-      dayStats.penaltySaves,
-      dayStats.goals * 4 +
-        dayStats.assists * 3 +
-        dayStats.cleanSheets * 2 +
-        dayStats.penaltySaves * 5,
+      dayStats.penaltiesSaved,
+      dayStats.points,
     ];
 
     row.querySelectorAll(".national-day-stat").forEach((cell, index) => {
-      cell.textContent = String(values[index]);
+      cell.textContent = formatPlayerStat(values[index]);
     });
   });
 
@@ -1687,10 +1975,7 @@ function addPlayerPrices() {
         const stats = row.querySelectorAll(".player-stat");
         const firstStat = stats[0];
 
-        const points =
-          board.classList.contains("national-squad-board")
-            ? stats[stats.length - 1]
-            : stats[3];
+        const points = row.querySelector(".player-points") || stats[stats.length - 1];
 
         points?.classList.add("player-points");
 

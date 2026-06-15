@@ -1,0 +1,2992 @@
+[
+  {
+    "matchNumber": 1,
+    "lineups": {
+      "home": {
+        "starters": [
+          802855,
+          532937,
+          387687,
+          344854,
+          687558,
+          602324,
+          261503,
+          724443,
+          353583,
+          206040,
+          416090
+        ],
+        "substitutes": [
+          331059,
+          401356,
+          1155723,
+          424689,
+          837619
+        ]
+      },
+      "away": {
+        "starters": [
+          175577,
+          1378320,
+          399068,
+          1107265,
+          353432,
+          450806,
+          436372,
+          401736,
+          804472,
+          467623,
+          337884
+        ],
+        "substitutes": [
+          735697,
+          176578,
+          673381,
+          746781
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "MEX",
+        "scorerId": 416090,
+        "assistId": 602324,
+        "minute": 9,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "MEX",
+        "scorerId": 206040,
+        "assistId": 353583,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [
+        802855,
+        532937,
+        387687,
+        344854,
+        687558
+      ],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 2,
+    "lineups": {
+      "home": {
+        "starters": [
+          92076,
+          503482,
+          763349,
+          706963,
+          639027,
+          639414,
+          365394,
+          282689,
+          314398,
+          557149,
+          91845
+        ],
+        "substitutes": [
+          557469,
+          365377,
+          706968,
+          639246,
+          292246
+        ]
+      },
+      "away": {
+        "starters": [
+          550829,
+          345911,
+          620217,
+          944827,
+          142219,
+          157672,
+          283628,
+          826103,
+          500053,
+          292779,
+          242086
+        ],
+        "substitutes": [
+          321204,
+          198614,
+          405855,
+          552057
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "CZE",
+        "scorerId": 345911,
+        "assistId": 157672,
+        "minute": 59,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "KOR",
+        "scorerId": 365394,
+        "assistId": 557149,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "KOR",
+        "scorerId": 639246,
+        "assistId": 365394,
+        "minute": 80,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 3,
+    "lineups": {
+      "home": {
+        "starters": [
+          189014,
+          921995,
+          328609,
+          417348,
+          637446,
+          921655,
+          512913,
+          487417,
+          638793,
+          972465,
+          533738
+        ],
+        "substitutes": [
+          260807,
+          995642,
+          637632,
+          888785,
+          343463
+        ]
+      },
+      "away": {
+        "starters": [
+          248454,
+          679423,
+          422051,
+          94005,
+          519184,
+          787907,
+          620560,
+          638990,
+          925862,
+          335457,
+          457738
+        ],
+        "substitutes": [
+          226097,
+          251295,
+          651269,
+          929994,
+          710969
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "BOS",
+        "scorerId": 457738,
+        "assistId": 94005,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CAN",
+        "scorerId": 343463,
+        "assistId": 888785,
+        "minute": 78,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 4,
+    "lineups": {
+      "home": {
+        "starters": [
+          500309,
+          578539,
+          145466,
+          349701,
+          361104,
+          985806,
+          332705,
+          332697,
+          467437,
+          315779,
+          503770
+        ],
+        "substitutes": [
+          734761,
+          370846,
+          504215,
+          627207
+        ]
+      },
+      "away": {
+        "starters": [
+          643259,
+          215390,
+          273000,
+          353032,
+          756494,
+          323872,
+          996897,
+          861852,
+          660867,
+          272999,
+          234523
+        ],
+        "substitutes": [
+          389399,
+          355817,
+          678439,
+          745191,
+          970518
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "USA",
+        "scorerId": 861852,
+        "assistId": 332697,
+        "minute": 7,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 503770,
+        "assistId": 315779,
+        "minute": 31,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 503770,
+        "assistId": 467437,
+        "minute": 45,
+        "addedTime": 5,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 678439,
+        "assistId": 660867,
+        "minute": 73,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 504215,
+        "assistId": 985806,
+        "minute": 90,
+        "addedTime": 8,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 5,
+    "lineups": {
+      "home": {
+        "starters": [
+          51035,
+          338635,
+          278145,
+          804885,
+          371686,
+          628834,
+          450050,
+          536520,
+          646108,
+          494237,
+          492955
+        ],
+        "substitutes": [
+          763182,
+          342878,
+          815359
+        ]
+      },
+      "away": {
+        "starters": [
+          201574,
+          121385,
+          363223,
+          234803,
+          591949,
+          193116,
+          315969,
+          428563,
+          719673,
+          346779,
+          225744
+        ],
+        "substitutes": [
+          424015,
+          188077,
+          126600,
+          1082993,
+          347138
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "SCO",
+        "scorerId": 193116,
+        "assistId": 346779,
+        "minute": 28,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": [
+        201574,
+        121385,
+        363223,
+        234803,
+        591949,
+        424015
+      ]
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 6,
+    "lineups": {
+      "home": {
+        "starters": [
+          983578,
+          255788,
+          867137,
+          298091,
+          855731,
+          545810,
+          1064377,
+          385918,
+          522223,
+          956920,
+          742770
+        ],
+        "substitutes": [
+          136834,
+          185175,
+          192557,
+          888140,
+          849429
+        ]
+      },
+      "away": {
+        "starters": [
+          292199,
+          199316,
+          340879,
+          369316,
+          251075,
+          126414,
+          613725,
+          454567,
+          861410,
+          382528,
+          541537
+        ],
+        "substitutes": [
+          353922,
+          244940,
+          845654,
+          396908,
+          1063292
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "AUS",
+        "scorerId": 956920,
+        "assistId": 1064377,
+        "minute": 27,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "AUS",
+        "scorerId": 522223,
+        "assistId": null,
+        "minute": 75,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [
+        983578,
+        255788,
+        867137,
+        298091,
+        855731,
+        545810,
+        136834,
+        185175
+      ],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 7,
+    "lineups": {
+      "home": {
+        "starters": [
+          105470,
+          435338,
+          181767,
+          524481,
+          220793,
+          16306,
+          520624,
+          444523,
+          411295,
+          371998,
+          739443
+        ],
+        "substitutes": [
+          145707,
+          225693,
+          808509,
+          800175,
+          517894
+        ]
+      },
+      "away": {
+        "starters": [
+          207834,
+          689637,
+          272622,
+          340456,
+          398073,
+          593482,
+          901019,
+          1097139,
+          702869,
+          654982,
+          314678
+        ],
+        "substitutes": [
+          485584,
+          1130514,
+          598506,
+          743384,
+          799993
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "MOR",
+        "scorerId": 702869,
+        "assistId": 314678,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BRA",
+        "scorerId": 371998,
+        "assistId": 520624,
+        "minute": 32,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 8,
+    "lineups": {
+      "home": {
+        "starters": [
+          669629,
+          228727,
+          1264176,
+          222669,
+          556713,
+          1054631,
+          336667,
+          735813,
+          589099,
+          237846,
+          336646
+        ],
+        "substitutes": [
+          222385,
+          251183,
+          822935,
+          86286,
+          187987
+        ]
+      },
+      "away": {
+        "starters": [
+          257814,
+          192635,
+          284730,
+          86784,
+          111455,
+          334526,
+          148252,
+          237658,
+          345886,
+          365108,
+          237662
+        ],
+        "substitutes": [
+          298603,
+          608172,
+          927353,
+          507341,
+          548729
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "SWI",
+        "scorerId": 237662,
+        "assistId": 148252,
+        "minute": 17,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "QAT",
+        "scorerId": 298603,
+        "assistId": 556713,
+        "minute": 90,
+        "addedTime": 4,
+        "isPenalty": false,
+        "isOwnGoal": true
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 9,
+    "lineups": {
+      "home": {
+        "starters": [
+          418651,
+          683895,
+          648779,
+          422850,
+          711980,
+          182893,
+          294808,
+          1067904,
+          1390649,
+          343052,
+          659542
+        ],
+        "substitutes": [
+          644771,
+          375885,
+          1279526,
+          536835,
+          827734
+        ]
+      },
+      "away": {
+        "starters": [
+          77127,
+          893661,
+          661171,
+          659813,
+          687626,
+          400960,
+          659806,
+          592735,
+          897051,
+          439914,
+          139503
+        ],
+        "substitutes": [
+          491616,
+          450241,
+          903611,
+          684159
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "CIV",
+        "scorerId": 536835,
+        "assistId": 648779,
+        "minute": 90,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [
+        418651,
+        683895,
+        648779,
+        422850,
+        711980,
+        644771
+      ],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 10,
+    "lineups": {
+      "home": {
+        "starters": [
+          17259,
+          196357,
+          388198,
+          691892,
+          161056,
+          792380,
+          406640,
+          580195,
+          598577,
+          192565,
+          309400
+        ],
+        "substitutes": [
+          86202,
+          193004,
+          318204,
+          153084,
+          339314
+        ]
+      },
+      "away": {
+        "starters": [
+          79294,
+          339337,
+          708989,
+          216443,
+          315211,
+          626764,
+          348863,
+          126014,
+          344830,
+          485582,
+          166240
+        ],
+        "substitutes": [
+          594273,
+          538958,
+          240752
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "GER",
+        "scorerId": 406640,
+        "assistId": 598577,
+        "minute": 6,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CUW",
+        "scorerId": 626764,
+        "assistId": null,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 388198,
+        "assistId": 691892,
+        "minute": 38,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 309400,
+        "assistId": 406640,
+        "minute": 45,
+        "addedTime": 5,
+        "isPenalty": true,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 580195,
+        "assistId": 161056,
+        "minute": 47,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 691892,
+        "assistId": 339314,
+        "minute": 68,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 339314,
+        "assistId": 161056,
+        "minute": 78,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 309400,
+        "assistId": 339314,
+        "minute": 88,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 11,
+    "lineups": {
+      "home": {
+        "starters": [
+          565093,
+          576314,
+          139208,
+          557459,
+          321528,
+          478573,
+          460939,
+          326330,
+          474701,
+          434675,
+          326029
+        ],
+        "substitutes": [
+          177476,
+          360518,
+          420213,
+          473169,
+          167850
+        ]
+      },
+      "away": {
+        "starters": [
+          432298,
+          598791,
+          353892,
+          307870,
+          643574,
+          356141,
+          420931,
+          405397,
+          405398,
+          358504,
+          589128
+        ],
+        "substitutes": [
+          331560,
+          405385,
+          348791,
+          1144627,
+          351567
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "NED",
+        "scorerId": 139208,
+        "assistId": 478573,
+        "minute": 51,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "JPN",
+        "scorerId": 405397,
+        "assistId": 405398,
+        "minute": 57,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NED",
+        "scorerId": 474701,
+        "assistId": 478573,
+        "minute": 64,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "JPN",
+        "scorerId": 356141,
+        "assistId": 351567,
+        "minute": 88,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 12,
+    "lineups": {
+      "home": {
+        "starters": [
+          75890,
+          503075,
+          485395,
+          184573,
+          362108,
+          222855,
+          667287,
+          475949,
+          633454,
+          349066,
+          325443
+        ],
+        "substitutes": [
+          579287,
+          342405,
+          866246,
+          687622,
+          583189
+        ]
+      },
+      "away": {
+        "starters": [
+          584250,
+          578292,
+          496706,
+          211474,
+          454495,
+          406008,
+          290587,
+          124410,
+          607224,
+          546712,
+          526466
+        ],
+        "substitutes": [
+          673513,
+          539677,
+          645589,
+          810096,
+          402087
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "SWE",
+        "scorerId": 667287,
+        "assistId": null,
+        "minute": 7,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWE",
+        "scorerId": 349066,
+        "assistId": 325443,
+        "minute": 30,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "TUN",
+        "scorerId": 578292,
+        "assistId": 607224,
+        "minute": 43,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWE",
+        "scorerId": 325443,
+        "assistId": 349066,
+        "minute": 59,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWE",
+        "scorerId": 342405,
+        "assistId": 349066,
+        "minute": 84,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWE",
+        "scorerId": 667287,
+        "assistId": 866246,
+        "minute": 90,
+        "addedTime": 6,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 13,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 14,
+    "lineups": {
+      "home": {
+        "starters": [
+          262396,
+          176553,
+          962110,
+          284857,
+          282411,
+          357565,
+          350219,
+          646740,
+          683840,
+          351478,
+          398184
+        ],
+        "substitutes": [
+          338424,
+          293385,
+          709187,
+          937958
+        ]
+      },
+      "away": {
+        "starters": [
+          242277,
+          349570,
+          166158,
+          611855,
+          203517,
+          544586,
+          258513,
+          272930,
+          448466,
+          111627,
+          676411
+        ],
+        "substitutes": [
+          623965,
+          432852,
+          531450,
+          791528,
+          306166
+        ]
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [
+        262396,
+        176553,
+        962110,
+        284857,
+        282411
+      ],
+      "awayPlayerIds": [
+        242277,
+        349570,
+        166158,
+        611855,
+        203517,
+        623965
+      ]
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 15,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 16,
+    "lineups": {
+      "home": {
+        "starters": [
+          108390,
+          548254,
+          236168,
+          100986,
+          262226,
+          485706,
+          249565,
+          88755,
+          435772,
+          144028,
+          486049
+        ],
+        "substitutes": [
+          429915,
+          422763,
+          137576,
+          96341,
+          724129
+        ]
+      },
+      "away": {
+        "starters": [
+          661455,
+          237425,
+          465966,
+          343974,
+          340303,
+          479682,
+          734542,
+          604008,
+          896616,
+          148455,
+          445939
+        ],
+        "substitutes": [
+          172623,
+          333004,
+          677278,
+          320722,
+          1259085
+        ]
+      }
+    },
+    "goals": [
+      {
+        "countryId": "EGY",
+        "scorerId": 604008,
+        "assistId": 148455,
+        "minute": 19,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 343974,
+        "assistId": 100986,
+        "minute": 66,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-15T21:20:47.542Z"
+  },
+  {
+    "matchNumber": 17,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 18,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 19,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 20,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 21,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 22,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 23,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 24,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 25,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 26,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 27,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 28,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 29,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 30,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 31,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 32,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 33,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 34,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 35,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 36,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 37,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 38,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 39,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 40,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 41,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 42,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 43,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 44,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 45,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 46,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 47,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 48,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 49,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 50,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 51,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 52,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 53,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 54,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 55,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 56,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 57,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 58,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 59,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 60,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 61,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 62,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 63,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 64,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 65,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 66,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 67,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 68,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 69,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 70,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 71,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 72,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 73,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 74,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 75,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 76,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 77,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 78,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 79,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 80,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 81,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 82,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 83,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 84,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 85,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 86,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 87,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 88,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 89,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 90,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 91,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 92,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 93,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 94,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 95,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 96,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 97,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 98,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 99,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 100,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 101,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 102,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 103,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  },
+  {
+    "matchNumber": 104,
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": null
+  }
+]

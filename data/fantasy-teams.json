@@ -1,0 +1,498 @@
+[
+  {
+    "id": "rfc-enghien",
+    "name": "RFC ENGHIEN",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#0f7bc1",
+      "secondary": "#e11d48",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#0f7bc1",
+      "secondary": "#e11d48"
+    },
+    "status": "active"
+  },
+  {
+    "id": "san-mateo",
+    "name": "SAN MATEO",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#050505",
+      "secondary": "#cbd5e1",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#050505",
+      "secondary": "#cbd5e1"
+    },
+    "status": "active"
+  },
+  {
+    "id": "bogosteam-fc",
+    "name": "BOGOSTEAM FC",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#111827",
+      "accent": "#22c55e"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#facc15",
+      "secondary": "#111827"
+    },
+    "status": "active"
+  },
+  {
+    "id": "lethal-weapon-athletic",
+    "name": "LETHAL WEAPON ATHLETIC",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#f97316",
+      "secondary": "#20c9c3",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#f97316",
+      "secondary": "#20c9c3"
+    },
+    "status": "active"
+  },
+  {
+    "id": "fc-portuguesh",
+    "name": "FC PORTUGUESH",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#84cc16",
+      "secondary": "#166534",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#84cc16",
+      "secondary": "#166534"
+    },
+    "status": "active"
+  },
+  {
+    "id": "schtumpik-rovers",
+    "name": "SCHTUMPIK ROVERS",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#f4f4f5",
+      "secondary": "#050505",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#f4f4f5",
+      "secondary": "#050505"
+    },
+    "status": "active"
+  },
+  {
+    "id": "u2-united",
+    "name": "U2 UNITED",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#0ea5e9",
+      "secondary": "#111827",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#0ea5e9",
+      "secondary": "#111827"
+    },
+    "status": "active"
+  },
+  {
+    "id": "fc-buttercup",
+    "name": "FC BUTTERCUP",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#059669",
+      "secondary": "#facc15",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#059669",
+      "secondary": "#facc15"
+    },
+    "status": "active"
+  },
+  {
+    "id": "nikhau-fc",
+    "name": "NIKHAU FC",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#004d98",
+      "secondary": "#7a1632",
+      "accent": "#edbb00"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#004d98",
+      "secondary": "#7a1632"
+    },
+    "status": "active"
+  },
+  {
+    "id": "alex-united",
+    "name": "ALEX UNITED",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#d62839",
+      "secondary": "#ffffff",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#d62839",
+      "secondary": "#ffffff"
+    },
+    "status": "active"
+  },
+  {
+    "id": "golden-boys-waterloo",
+    "name": "GOLDEN BOYS WATERLOO",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#f4c430",
+      "secondary": "#7c3aed",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#f4c430",
+      "secondary": "#7c3aed"
+    },
+    "status": "active"
+  },
+  {
+    "id": "new-atomic",
+    "name": "NEW ATOMIC",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#7c3aed",
+      "secondary": "#ef4444",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#7c3aed",
+      "secondary": "#ef4444"
+    },
+    "status": "active"
+  },
+  {
+    "id": "lekcz",
+    "name": "LEKCZ",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#172554",
+      "secondary": "#facc15",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#172554",
+      "secondary": "#facc15"
+    },
+    "status": "active"
+  },
+  {
+    "id": "yellow-star-yulteam",
+    "name": "YELLOW STAR YULTEAM",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#111827",
+      "accent": "#0284c7"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#facc15",
+      "secondary": "#111827"
+    },
+    "status": "active"
+  },
+  {
+    "id": "aquarela-do-brasil",
+    "name": "AQUARELA DO BRASIL",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#168447",
+      "secondary": "#f4d03f",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#168447",
+      "secondary": "#f4d03f"
+    },
+    "status": "active"
+  },
+  {
+    "id": "west-hamster",
+    "name": "WEST HAMSTER",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#dc2626",
+      "secondary": "#ffffff",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#dc2626",
+      "secondary": "#ffffff"
+    },
+    "status": "active"
+  },
+  {
+    "id": "fc-brusseleir",
+    "name": "FC BRUSSELEIR",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#cf2634",
+      "secondary": "#8b919a",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#cf2634",
+      "secondary": "#8b919a"
+    },
+    "status": "active"
+  },
+  {
+    "id": "portloe-wanderers",
+    "name": "PORTLOE WANDERERS",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#1769e0",
+      "secondary": "#080b12",
+      "accent": "#93c5fd"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#1769e0",
+      "secondary": "#080b12"
+    },
+    "status": "active"
+  },
+  {
+    "id": "universal-players",
+    "name": "UNIVERSAL PLAYERS",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#7dd3fc",
+      "secondary": "#f5cf3d",
+      "accent": "#071018"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#7dd3fc",
+      "secondary": "#f5cf3d"
+    },
+    "status": "active"
+  },
+  {
+    "id": "rathmore-devils-united",
+    "name": "RATHMORE DEVILS UNITED",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#dc2626",
+      "secondary": "#050505",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#dc2626",
+      "secondary": "#050505"
+    },
+    "status": "active"
+  },
+  {
+    "id": "montreal-celtic-revival",
+    "name": "MONTREAL CELTIC REVIVAL",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#c62735",
+      "secondary": "#6f3f2b",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#c62735",
+      "secondary": "#6f3f2b"
+    },
+    "status": "active"
+  },
+  {
+    "id": "biarritz-bazooka-boys",
+    "name": "BIARRITZ BAZOOKA BOYS",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#16a34a",
+      "secondary": "#dc2626",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#16a34a",
+      "secondary": "#dc2626"
+    },
+    "status": "active"
+  },
+  {
+    "id": "rscarpagon",
+    "name": "RSCARPAGON",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#7e22ce",
+      "secondary": "#facc15",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#7e22ce",
+      "secondary": "#facc15"
+    },
+    "status": "active"
+  },
+  {
+    "id": "carnival-team",
+    "name": "CARNIVAL TEAM",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#e5f7fb",
+      "secondary": "#dc2626",
+      "accent": "#0f172a"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#e5f7fb",
+      "secondary": "#dc2626"
+    },
+    "status": "active"
+  },
+  {
+    "id": "fc-flo",
+    "name": "FC FLO",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#0b2f6b",
+      "secondary": "#facc15",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#0b2f6b",
+      "secondary": "#facc15"
+    },
+    "status": "active"
+  },
+  {
+    "id": "fc-mon-jardin",
+    "name": "FC MON JARDIN",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#22c55e",
+      "accent": "#0f172a"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#facc15",
+      "secondary": "#22c55e"
+    },
+    "status": "active"
+  },
+  {
+    "id": "fc-tasty-crousty",
+    "name": "FC TASTY CROUSTY",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#14b8a6",
+      "accent": "#0f172a"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#facc15",
+      "secondary": "#14b8a6"
+    },
+    "status": "active"
+  },
+  {
+    "id": "ssc-domecyn",
+    "name": "SSC DOMECYN",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#050505",
+      "accent": "#22c55e"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#facc15",
+      "secondary": "#050505"
+    },
+    "status": "active"
+  },
+  {
+    "id": "black-chihuahua-united",
+    "name": "BLACK CHIHUAHUA UNITED",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#f97316",
+      "secondary": "#090909",
+      "accent": "#ffffff"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#f97316",
+      "secondary": "#090909"
+    },
+    "status": "active"
+  },
+  {
+    "id": "the-blackshadows",
+    "name": "THE BLACKSHADOWS",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#050505",
+      "secondary": "#22c55e",
+      "accent": "#facc15"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#050505",
+      "secondary": "#22c55e"
+    },
+    "status": "active"
+  },
+  {
+    "id": "mirage",
+    "name": "MIRAGE",
+    "division": "world-cup",
+    "colors": {
+      "primary": "#facc15",
+      "secondary": "#06b6d4",
+      "accent": "#0f172a"
+    },
+    "crest": {
+      "type": "split",
+      "primary": "#facc15",
+      "secondary": "#06b6d4"
+    },
+    "status": "active"
+  }
+]
