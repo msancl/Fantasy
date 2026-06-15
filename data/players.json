@@ -1,0 +1,6472 @@
+[
+  {
+    "countryId": "RSA",
+    "players": [
+      {
+        "name": "SIPHO CHAINE",
+        "position": "GB",
+        "dreamTeamName": "Sipho Chaine"
+      },
+      {
+        "name": "RONWEN WILLIAMS",
+        "position": "GB",
+        "dreamTeamName": "Ronwen Williams"
+      },
+      {
+        "name": "RICARDO GOSS",
+        "position": "GB",
+        "dreamTeamName": "Ricardo Goss"
+      },
+      {
+        "name": "MBEKEZELI MBOKAZI",
+        "position": "DF",
+        "dreamTeamName": "Mbekezeli Mbokazi"
+      },
+      {
+        "name": "IME OKON",
+        "position": "DF",
+        "dreamTeamName": "Ime Okon"
+      },
+      {
+        "name": "OLWETHU MAKHANYA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NKOSINATHI SIBISI",
+        "position": "DF",
+        "dreamTeamName": "Nkosinathi Sibisi"
+      },
+      {
+        "name": "KHULUMANI NDAMANE",
+        "position": "DF",
+        "dreamTeamName": "Khulumani Ndamane"
+      },
+      {
+        "name": "SAMUKELE KABINI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AUBREY MODIBA",
+        "position": "DF",
+        "dreamTeamName": "Aubrey Modiba"
+      },
+      {
+        "name": "BRADLEY CROSS",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "THABANG MATULUDI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KHULISO MUDAU",
+        "position": "DF",
+        "dreamTeamName": "Khuliso Mudau"
+      },
+      {
+        "name": "KAMOGELO SEBELEBELE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "TEBOHO MOKOENA",
+        "position": "MIL",
+        "dreamTeamName": "Teboho Mokoena"
+      },
+      {
+        "name": "THALENTE MBATHA",
+        "position": "MIL",
+        "dreamTeamName": "Thalente Mbatha"
+      },
+      {
+        "name": "JAYDEN ADAMS",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "YAYA SITHOLE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "THEMBA ZWANE",
+        "position": "MIL",
+        "dreamTeamName": "Themba Zwane"
+      },
+      {
+        "name": "RELEBOHILE MOFOKENG",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "OSWIN APPOLLIS",
+        "position": "ATT",
+        "dreamTeamName": "Oswin Appollis"
+      },
+      {
+        "name": "TSHEPANG MOREMI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "THAPELO MASEKO",
+        "position": "ATT",
+        "dreamTeamName": "Thapelo Maseko"
+      },
+      {
+        "name": "LYLE FOSTER",
+        "position": "ATT",
+        "dreamTeamName": "Lyle Foster"
+      },
+      {
+        "name": "IQRAAM RAYNERS",
+        "position": "ATT",
+        "dreamTeamName": "Iqraam Rayners"
+      },
+      {
+        "name": "EVIDENCE MAKGOPA",
+        "position": "ATT",
+        "dreamTeamName": "Evidence Makgopa"
+      }
+    ]
+  },
+  {
+    "countryId": "ALG",
+    "players": [
+      {
+        "name": "LUCA ZIDANE",
+        "position": "GB",
+        "dreamTeamName": "Luca Zidane"
+      },
+      {
+        "name": "OUSSAMA BENBOUT",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MELVIN MASTIL",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RAMY BENSEBAINI",
+        "position": "DF",
+        "dreamTeamName": "Ramy Bensebaini"
+      },
+      {
+        "name": "SAMIR CHERGUI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ZINEDDINE BELAID",
+        "position": "DF",
+        "dreamTeamName": "Zineddine Belaïd"
+      },
+      {
+        "name": "MOHAMED AMINE TOUGAI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AISSA MANDI",
+        "position": "DF",
+        "dreamTeamName": "Aïssa Mandi"
+      },
+      {
+        "name": "ACHREF ABADA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RAYAN AIT-NOURI",
+        "position": "DF",
+        "dreamTeamName": "Rayan Aït-Nouri"
+      },
+      {
+        "name": "JAOUEN HADJAM",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RAFIK BELGHALI",
+        "position": "DF",
+        "dreamTeamName": "Rafik Belghali"
+      },
+      {
+        "name": "RAMIZ ZERROUKI",
+        "position": "MIL",
+        "dreamTeamName": "Ramiz Zerrouki"
+      },
+      {
+        "name": "NABIL BENTALEB",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HICHAM BOUDAOUI",
+        "position": "MIL",
+        "dreamTeamName": "Hicham Boudaoui"
+      },
+      {
+        "name": "YASSINE TITRAOUI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "IBRAHIM MAZA",
+        "position": "MIL",
+        "dreamTeamName": "Ibrahim Maza"
+      },
+      {
+        "name": "FARES CHAIBI",
+        "position": "MIL",
+        "dreamTeamName": "Farès Chaïbi"
+      },
+      {
+        "name": "HOUSSEM AOUAR",
+        "position": "MIL",
+        "dreamTeamName": "Houssem Aouar"
+      },
+      {
+        "name": "ADIL BOULBINA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ANIS HADJ MOUSSA",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FARES GHEDJEMIS",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RIYAD MAHREZ",
+        "position": "MIL",
+        "dreamTeamName": "Riyad Mahrez"
+      },
+      {
+        "name": "AMINE GOUIRI",
+        "position": "ATT",
+        "dreamTeamName": "Amine Gouiri"
+      },
+      {
+        "name": "MOHAMED AMOURA",
+        "position": "ATT",
+        "dreamTeamName": "Mohammed Amoura"
+      },
+      {
+        "name": "NADHIR BENBOUALI",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "GER",
+    "players": [
+      {
+        "name": "ALEXANDER NUBEL",
+        "position": "GB",
+        "dreamTeamName": "Alexander Nübel"
+      },
+      {
+        "name": "MANUEL NEUER",
+        "position": "GB",
+        "dreamTeamName": "Manuel Neuer"
+      },
+      {
+        "name": "OLIVER BAUMANN",
+        "position": "GB",
+        "dreamTeamName": "Oliver Baumann"
+      },
+      {
+        "name": "NICO SCHLOTTERBECK",
+        "position": "DF",
+        "dreamTeamName": "Nico Schlotterbeck"
+      },
+      {
+        "name": "MALICK THIAW",
+        "position": "DF",
+        "dreamTeamName": "Malick Thiaw"
+      },
+      {
+        "name": "JONATHAN TAH",
+        "position": "DF",
+        "dreamTeamName": "Jonathan Tah"
+      },
+      {
+        "name": "WALDEMAR ANTON",
+        "position": "DF",
+        "dreamTeamName": "Waldemar Anton"
+      },
+      {
+        "name": "ANTONIO RUDIGER",
+        "position": "DF",
+        "dreamTeamName": "Antonio Rüdiger"
+      },
+      {
+        "name": "NATHANIEL BROWN",
+        "position": "DF",
+        "dreamTeamName": "Nathaniel Brown"
+      },
+      {
+        "name": "DAVID RAUM",
+        "position": "DF",
+        "dreamTeamName": "David Raum"
+      },
+      {
+        "name": "ALEKSANDAR PAVLOVIC",
+        "position": "MIL",
+        "dreamTeamName": "Aleksandar Pavlovic"
+      },
+      {
+        "name": "ANGELO STILLER",
+        "position": "MIL",
+        "dreamTeamName": "Angelo Stiller"
+      },
+      {
+        "name": "JOSHUA KIMMICH",
+        "position": "DF",
+        "dreamTeamName": "Joshua Kimmich"
+      },
+      {
+        "name": "FELIX NMECHA",
+        "position": "MIL",
+        "dreamTeamName": "Felix Nmecha"
+      },
+      {
+        "name": "ASSAN OUEDRAOGO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NADIEM AMIRI",
+        "position": "MIL",
+        "dreamTeamName": "Nadiem Amiri"
+      },
+      {
+        "name": "LEON GORETZKA",
+        "position": "MIL",
+        "dreamTeamName": "Leon Goretzka"
+      },
+      {
+        "name": "PASCAL GROSS",
+        "position": "MIL",
+        "dreamTeamName": "Pascal Groß"
+      },
+      {
+        "name": "JAMAL MUSIALA",
+        "position": "MIL",
+        "dreamTeamName": "Jamal Musiala"
+      },
+      {
+        "name": "FLORIAN WIRTZ",
+        "position": "MIL",
+        "dreamTeamName": "Florian Wirtz"
+      },
+      {
+        "name": "JAMIE LEWELING",
+        "position": "MIL",
+        "dreamTeamName": "Jamie Leweling"
+      },
+      {
+        "name": "LEROY SANE",
+        "position": "MIL",
+        "dreamTeamName": "Leroy Sané"
+      },
+      {
+        "name": "KAI HAVERTZ",
+        "position": "ATT",
+        "dreamTeamName": "Kai Havertz"
+      },
+      {
+        "name": "NICK WOLTEMADE",
+        "position": "ATT",
+        "dreamTeamName": "Nick Woltemade"
+      },
+      {
+        "name": "MAXIMILIAN BEIER",
+        "position": "ATT",
+        "dreamTeamName": "Maximilian Beier"
+      },
+      {
+        "name": "DENIZ UNDAV",
+        "position": "ATT",
+        "dreamTeamName": "Deniz Undav"
+      }
+    ]
+  },
+  {
+    "countryId": "ENG",
+    "players": [
+      {
+        "name": "DEAN HENDERSON",
+        "position": "GB",
+        "dreamTeamName": "Dean Henderson"
+      },
+      {
+        "name": "JAMES TRAFFORD",
+        "position": "GB",
+        "dreamTeamName": "James Trafford"
+      },
+      {
+        "name": "JORDAN PICKFORD",
+        "position": "GB",
+        "dreamTeamName": "Jordan Pickford"
+      },
+      {
+        "name": "MARC GUEHI",
+        "position": "DF",
+        "dreamTeamName": "Marc Guéhi"
+      },
+      {
+        "name": "JARELL QUANSAH",
+        "position": "DF",
+        "dreamTeamName": "Jarell Quansah"
+      },
+      {
+        "name": "EZRI KONSA",
+        "position": "DF",
+        "dreamTeamName": "Ezri Konsa"
+      },
+      {
+        "name": "JOHN STONES",
+        "position": "DF",
+        "dreamTeamName": "John Stones"
+      },
+      {
+        "name": "DAN BURN",
+        "position": "DF",
+        "dreamTeamName": "Dan Burn"
+      },
+      {
+        "name": "NICO O'REILLY",
+        "position": "DF",
+        "dreamTeamName": "Nico O'Reilly"
+      },
+      {
+        "name": "DJED SPENCE",
+        "position": "DF",
+        "dreamTeamName": "Djed Spence"
+      },
+      {
+        "name": "REECE JAMES",
+        "position": "DF",
+        "dreamTeamName": "Reece James"
+      },
+      {
+        "name": "TINO LIVRAMENTO",
+        "position": "DF",
+        "dreamTeamName": "Tino Livramento"
+      },
+      {
+        "name": "JORDAN HENDERSON",
+        "position": "MIL",
+        "dreamTeamName": "Jordan Henderson"
+      },
+      {
+        "name": "DECLAN RICE",
+        "position": "MIL",
+        "dreamTeamName": "Declan Rice"
+      },
+      {
+        "name": "ELLIOT ANDERSON",
+        "position": "MIL",
+        "dreamTeamName": "Elliot Anderson"
+      },
+      {
+        "name": "KOBBIE MAINOO",
+        "position": "MIL",
+        "dreamTeamName": "Kobbie Mainoo"
+      },
+      {
+        "name": "JUDE BELLINGHAM",
+        "position": "MIL",
+        "dreamTeamName": "Jude Bellingham"
+      },
+      {
+        "name": "MORGAN ROGERS",
+        "position": "MIL",
+        "dreamTeamName": "Morgan Rogers"
+      },
+      {
+        "name": "EBERECHI EZE",
+        "position": "MIL",
+        "dreamTeamName": "Eberechi Eze"
+      },
+      {
+        "name": "ANTHONY GORDON",
+        "position": "MIL",
+        "dreamTeamName": "Anthony Gordon"
+      },
+      {
+        "name": "MARCUS RASHFORD",
+        "position": "MIL",
+        "dreamTeamName": "Marcus Rashford"
+      },
+      {
+        "name": "BUKAYO SAKA",
+        "position": "MIL",
+        "dreamTeamName": "Bukayo Saka"
+      },
+      {
+        "name": "NONI MADUEKE",
+        "position": "MIL",
+        "dreamTeamName": "Noni Madueke"
+      },
+      {
+        "name": "HARRY KANE",
+        "position": "ATT",
+        "dreamTeamName": "Harry Kane"
+      },
+      {
+        "name": "OLLIE WATKINS",
+        "position": "ATT",
+        "dreamTeamName": "Ollie Watkins"
+      },
+      {
+        "name": "IVAN TONEY",
+        "position": "ATT",
+        "dreamTeamName": "Ivan Toney"
+      }
+    ]
+  },
+  {
+    "countryId": "KSA",
+    "players": [
+      {
+        "name": "NAWAF AL-AQIDI",
+        "position": "GB",
+        "dreamTeamName": "Nawaf bin Dhahi bin Faisal Al Shuweiti Al Aqidi"
+      },
+      {
+        "name": "MOHAMMED AL-OWAIS",
+        "position": "GB",
+        "dreamTeamName": "Mohammed bin Khalil bin Ibrahim Al Owais"
+      },
+      {
+        "name": "AHMED AL-KASSAR",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HASSAN TAMBAKTI",
+        "position": "DF",
+        "dreamTeamName": "Hassan bin Mohammed bin Osama Al Tambakti"
+      },
+      {
+        "name": "ABDULELAH AL-AMRI",
+        "position": "DF",
+        "dreamTeamName": "Abdulelah bin Ali bin Awadh Al Amri"
+      },
+      {
+        "name": "JEHAD THAKRI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI LAJAMI",
+        "position": "DF",
+        "dreamTeamName": "Ali bin Mohammed bin Ali Lajami"
+      },
+      {
+        "name": "MOTEB AL-HARBI",
+        "position": "DF",
+        "dreamTeamName": "Moteb bin Saad bin Salim Al Naqi Al Harbi"
+      },
+      {
+        "name": "AYMAN YAHYA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HASSAN KADESH",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SAUD ABDULHAMID",
+        "position": "DF",
+        "dreamTeamName": "Saud bin Abdullah bin Salem Abdulhamid"
+      },
+      {
+        "name": "MOHAMMED ABU AL-SHAMAT",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI MAJRASHI",
+        "position": "DF",
+        "dreamTeamName": "Ali bin Hassan bin Mohammed Majrashi"
+      },
+      {
+        "name": "NAWAF BOUSHAL",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ZIYAD AL-JOHANI",
+        "position": "MIL",
+        "dreamTeamName": "Ziyad bin Mubarak bin Eid Al Marwani Al Johani"
+      },
+      {
+        "name": "ABDULLAH AL-KHAIBARI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MUSAB AL-JUWAYR",
+        "position": "MIL",
+        "dreamTeamName": "Musab bin Fahad bin Zaid Al Juwayr"
+      },
+      {
+        "name": "NASSER AL-DAWSARI",
+        "position": "MIL",
+        "dreamTeamName": "Nasser bin Essa bin Shafi Al Shardan Al Dawsari"
+      },
+      {
+        "name": "MOHAMED KANNO",
+        "position": "MIL",
+        "dreamTeamName": "Mohamed bin Ibrahim bin Abdullah Kanno"
+      },
+      {
+        "name": "ALAA HEJJI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KHALID AL-GHANNAM",
+        "position": "MIL",
+        "dreamTeamName": "Khalid bin Essa bin Mohammed Al Ghannam"
+      },
+      {
+        "name": "SALEM AL-DAWSARI",
+        "position": "MIL",
+        "dreamTeamName": "Salem bin Mohammed bin Shafi Al Dawsari"
+      },
+      {
+        "name": "SULTAN MANDASH",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FIRAS AL-BURAIKAN",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SALEH AL-SHEHRI",
+        "position": "ATT",
+        "dreamTeamName": "Saleh bin Khalid bin Mohammed Al Shehri"
+      },
+      {
+        "name": "ABDULLAH AL-HAMDAN",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "ARG",
+    "players": [
+      {
+        "name": "EMILIANO MARTINEZ",
+        "position": "GB",
+        "dreamTeamName": "Emiliano Martínez"
+      },
+      {
+        "name": "GERONIMO RULLI",
+        "position": "GB",
+        "dreamTeamName": "Gerónimo Rulli"
+      },
+      {
+        "name": "JUAN MUSSO",
+        "position": "GB",
+        "dreamTeamName": "Juan Musso"
+      },
+      {
+        "name": "CRISTIAN ROMERO",
+        "position": "DF",
+        "dreamTeamName": "Cristian Romero"
+      },
+      {
+        "name": "LISANDRO MARTINEZ",
+        "position": "DF",
+        "dreamTeamName": "Lisandro Martínez"
+      },
+      {
+        "name": "MARCOS SENESI",
+        "position": "DF",
+        "dreamTeamName": "Marcos Nicolás Senesi Barón"
+      },
+      {
+        "name": "FACUNDO MEDINA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NICOLAS OTAMENDI",
+        "position": "DF",
+        "dreamTeamName": "Nicolás Otamendi"
+      },
+      {
+        "name": "NICOLAS TAGLIAFICO",
+        "position": "DF",
+        "dreamTeamName": "Nicolás Tagliafico"
+      },
+      {
+        "name": "NAHUEL MOLINA",
+        "position": "DF",
+        "dreamTeamName": "Nahuel Molina"
+      },
+      {
+        "name": "GONZALO MONTIEL",
+        "position": "DF",
+        "dreamTeamName": "Gonzalo Montiel"
+      },
+      {
+        "name": "LEANDRO PAREDES",
+        "position": "MIL",
+        "dreamTeamName": "Leandro Paredes"
+      },
+      {
+        "name": "ENZO FERNANDEZ",
+        "position": "MIL",
+        "dreamTeamName": "Enzo Fernández"
+      },
+      {
+        "name": "ALEXIS MAC ALLISTER",
+        "position": "MIL",
+        "dreamTeamName": "Alexis Mac Allister"
+      },
+      {
+        "name": "VALENTIN BARCO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "EXEQUIEL PALACIOS",
+        "position": "MIL",
+        "dreamTeamName": "Exequiel Palacios"
+      },
+      {
+        "name": "RODRIGO DE PAUL",
+        "position": "MIL",
+        "dreamTeamName": "Rodrigo De Paul"
+      },
+      {
+        "name": "NICO PAZ",
+        "position": "MIL",
+        "dreamTeamName": "Nico Paz"
+      },
+      {
+        "name": "GIOVANI LO CELSO",
+        "position": "MIL",
+        "dreamTeamName": "Giovani Lo Celso"
+      },
+      {
+        "name": "NICO GONZALEZ",
+        "position": "MIL",
+        "dreamTeamName": "Nico González"
+      },
+      {
+        "name": "THIAGO ALMADA",
+        "position": "MIL",
+        "dreamTeamName": "Thiago Almada"
+      },
+      {
+        "name": "GIULIANO SIMEONE",
+        "position": "MIL",
+        "dreamTeamName": "Giuliano Simeone"
+      },
+      {
+        "name": "LIONEL MESSI",
+        "position": "ATT",
+        "dreamTeamName": "Lionel Messi"
+      },
+      {
+        "name": "JULIAN ALVAREZ",
+        "position": "ATT",
+        "dreamTeamName": "Julián Alvarez"
+      },
+      {
+        "name": "LAUTARO MARTINEZ",
+        "position": "ATT",
+        "dreamTeamName": "Lautaro Martínez"
+      },
+      {
+        "name": "JOSE MANUEL LOPEZ",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "AUS",
+    "players": [
+      {
+        "name": "MATHEW RYAN",
+        "position": "GB",
+        "dreamTeamName": "Mathew Ryan"
+      },
+      {
+        "name": "PATRICK BEACH",
+        "position": "GK",
+        "dreamTeamName": null
+      },
+      {
+        "name": "PAUL IZZO",
+        "position": "GK",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALESSANDRO CIRCATI",
+        "position": "DF",
+        "dreamTeamName": "Alessandro Circati"
+      },
+      {
+        "name": "LUCAS HERRINGTON",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HARRY SOUTTAR",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "CAMERON BURGESS",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MILOS DEGENEK",
+        "position": "DF",
+        "dreamTeamName": "Milos Degenek"
+      },
+      {
+        "name": "JORDAN BOS",
+        "position": "DF",
+        "dreamTeamName": "Jordan Bos"
+      },
+      {
+        "name": "AZIZ BEHICH",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JACOB ITALIANO",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JASON GERIA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AIDEN O'NEILL",
+        "position": "MIL",
+        "dreamTeamName": "Aiden O'Neill"
+      },
+      {
+        "name": "KAI TREWIN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "PAUL OKON-ENGSTLER",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "CAMMY DEVLIN",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "CONNOR METCALFE",
+        "position": "MIL",
+        "dreamTeamName": "Connor Metcalfe"
+      },
+      {
+        "name": "JACKSON IRVINE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AJDIN HRUSTIC",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "CRISTIAN VOLPATO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NISHAN VELUPILLAY",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AWER MABIL",
+        "position": "ATT",
+        "dreamTeamName": "Awer Mabil"
+      },
+      {
+        "name": "MATHEW LECKIE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NESTORY IRANKUNDA",
+        "position": "MIL",
+        "dreamTeamName": "Nestory Irankunda"
+      },
+      {
+        "name": "MOHAMED TOURE",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "TETE YENGI",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "AUT",
+    "players": [
+      {
+        "name": "FLORIAN WIEGELE",
+        "position": "GB",
+        "dreamTeamName": "Florian Wiegele"
+      },
+      {
+        "name": "PATRICK PENTZ",
+        "position": "GB",
+        "dreamTeamName": "Patrick Pentz"
+      },
+      {
+        "name": "ALEXANDER SCHLAGER",
+        "position": "GB",
+        "dreamTeamName": "Alexander Schlager"
+      },
+      {
+        "name": "DAVID AFFENGRUBER",
+        "position": "DF",
+        "dreamTeamName": "David Affengruber"
+      },
+      {
+        "name": "KEVIN DANSO",
+        "position": "DF",
+        "dreamTeamName": "Kevin Danso"
+      },
+      {
+        "name": "PHILIPP LIENHART",
+        "position": "DF",
+        "dreamTeamName": "Philipp Lienhart"
+      },
+      {
+        "name": "MARCO FRIEDL",
+        "position": "DF",
+        "dreamTeamName": "Marco Friedl"
+      },
+      {
+        "name": "STEFAN POSCH",
+        "position": "DF",
+        "dreamTeamName": "Stefan Posch"
+      },
+      {
+        "name": "MICHAEL SVOBODA",
+        "position": "DF",
+        "dreamTeamName": "Michael Svoboda"
+      },
+      {
+        "name": "DAVID ALABA",
+        "position": "DF",
+        "dreamTeamName": "David Alaba"
+      },
+      {
+        "name": "PHILLIPP MWENE",
+        "position": "DF",
+        "dreamTeamName": "Phillipp Mwene"
+      },
+      {
+        "name": "KONRAD LAIMER",
+        "position": "MIL",
+        "dreamTeamName": "Konrad Laimer"
+      },
+      {
+        "name": "NICOLAS SEIWALD",
+        "position": "MIL",
+        "dreamTeamName": "Nicolas Seiwald"
+      },
+      {
+        "name": "DEJAN LJUBICIC",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FLORIAN GRILLITSCH",
+        "position": "MIL",
+        "dreamTeamName": "Florian Grillitsch"
+      },
+      {
+        "name": "PAUL WANNER",
+        "position": "MIL",
+        "dreamTeamName": "Paul Wanner"
+      },
+      {
+        "name": "CARNEY CHUKWUEMEKA",
+        "position": "MIL",
+        "dreamTeamName": "Carney Chukwuemeka"
+      },
+      {
+        "name": "XAVER SCHLAGER",
+        "position": "MIL",
+        "dreamTeamName": "Xaver Schlager"
+      },
+      {
+        "name": "MARCEL SABITZER",
+        "position": "MIL",
+        "dreamTeamName": "Marcel Sabitzer"
+      },
+      {
+        "name": "ALESSANDRO SCHOPF",
+        "position": "MIL",
+        "dreamTeamName": "Alessandro Schöpf"
+      },
+      {
+        "name": "ALEXANDER PRASS",
+        "position": "DF",
+        "dreamTeamName": "Alexander Prass"
+      },
+      {
+        "name": "ROMANO SCHMID",
+        "position": "MIL",
+        "dreamTeamName": "Romano Schmid"
+      },
+      {
+        "name": "PATRICK WIMMER",
+        "position": "MIL",
+        "dreamTeamName": "Patrick Wimmer"
+      },
+      {
+        "name": "SASA KALAJDZIC",
+        "position": "ATT",
+        "dreamTeamName": "Sasa Kalajdzic"
+      },
+      {
+        "name": "MARKO ARNAUTOVIC",
+        "position": "ATT",
+        "dreamTeamName": "Marko Arnautovic"
+      },
+      {
+        "name": "MICHAEL GREGORITSCH",
+        "position": "ATT",
+        "dreamTeamName": "Michael Gregoritsch"
+      }
+    ]
+  },
+  {
+    "countryId": "BEL",
+    "players": [
+      {
+        "name": "SENNE LAMMENS",
+        "position": "GB",
+        "dreamTeamName": "Senne Lammens"
+      },
+      {
+        "name": "MIKE PENDERS",
+        "position": "GB",
+        "dreamTeamName": "Mike Penders"
+      },
+      {
+        "name": "THIBAUT COURTOIS",
+        "position": "GB",
+        "dreamTeamName": "Thibaut Courtois"
+      },
+      {
+        "name": "ZENO DEBAST",
+        "position": "DF",
+        "dreamTeamName": "Zeno Debast"
+      },
+      {
+        "name": "NATHAN NGOY",
+        "position": "DF",
+        "dreamTeamName": "Nathan Ngoy"
+      },
+      {
+        "name": "KONI DE WINTER",
+        "position": "DF",
+        "dreamTeamName": "Koni De Winter"
+      },
+      {
+        "name": "ARTHUR THEATE",
+        "position": "DF",
+        "dreamTeamName": "Arthur Theate"
+      },
+      {
+        "name": "BRANDON MECHELE",
+        "position": "DF",
+        "dreamTeamName": "Brandon Mechele"
+      },
+      {
+        "name": "MAXIM DE CUYPER",
+        "position": "DF",
+        "dreamTeamName": "Maxim De Cuyper"
+      },
+      {
+        "name": "JOAQUIN SEYS",
+        "position": "DF",
+        "dreamTeamName": "Joaquin Seys"
+      },
+      {
+        "name": "TIMOTHY CASTAGNE",
+        "position": "DF",
+        "dreamTeamName": "Timothy Castagne"
+      },
+      {
+        "name": "THOMAS MEUNIER",
+        "position": "DF",
+        "dreamTeamName": "Thomas Meunier"
+      },
+      {
+        "name": "AMADOU ONANA",
+        "position": "MIL",
+        "dreamTeamName": "Amadou Onana"
+      },
+      {
+        "name": "NICOLAS RASKIN",
+        "position": "MIL",
+        "dreamTeamName": "Nicolas Raskin"
+      },
+      {
+        "name": "AXEL WITSEL",
+        "position": "MIL",
+        "dreamTeamName": "Axel Witsel"
+      },
+      {
+        "name": "YOURI TIELEMANS",
+        "position": "MIL",
+        "dreamTeamName": "Youri Tielemans"
+      },
+      {
+        "name": "ALEXIS SAELEMAEKERS",
+        "position": "MIL",
+        "dreamTeamName": "Alexis Saelemaekers"
+      },
+      {
+        "name": "DIEGO MOREIRA",
+        "position": "MIL",
+        "dreamTeamName": "Diego Moreira"
+      },
+      {
+        "name": "CHARLES DE KETELAERE",
+        "position": "ATT",
+        "dreamTeamName": "Charles De Ketelaere"
+      },
+      {
+        "name": "KEVIN DE BRUYNE",
+        "position": "MIL",
+        "dreamTeamName": "Kevin De Bruyne"
+      },
+      {
+        "name": "HANS VANAKEN",
+        "position": "MIL",
+        "dreamTeamName": "Hans Vanaken"
+      },
+      {
+        "name": "JEREMY DOKU",
+        "position": "MIL",
+        "dreamTeamName": "Jérémy Doku"
+      },
+      {
+        "name": "LEANDRO TROSSARD",
+        "position": "MIL",
+        "dreamTeamName": "Leandro Trossard"
+      },
+      {
+        "name": "DODI LUKEBAKIO",
+        "position": "MIL",
+        "dreamTeamName": "Dodi Lukébakio"
+      },
+      {
+        "name": "MATIAS FERNANDEZ-PARDO",
+        "position": "ATT",
+        "dreamTeamName": "Matias Fernandez-Pardo"
+      },
+      {
+        "name": "ROMELU LUKAKU",
+        "position": "ATT",
+        "dreamTeamName": "Romelu Lukaku"
+      }
+    ]
+  },
+  {
+    "countryId": "BOS",
+    "players": [
+      {
+        "name": "NIKOLA VASILJ",
+        "position": "GB",
+        "dreamTeamName": "Nikola Vasilj"
+      },
+      {
+        "name": "MARTIN ZLOMISLIC",
+        "position": "GB",
+        "dreamTeamName": "Martin Zlomislic"
+      },
+      {
+        "name": "MLADEN JURKAS",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "TARIK MUHAREMOVIC",
+        "position": "DF",
+        "dreamTeamName": "Tarik Muharemovic"
+      },
+      {
+        "name": "SEAD KOLASINAC",
+        "position": "DF",
+        "dreamTeamName": "Sead Kolasinac"
+      },
+      {
+        "name": "STJEPAN RADELJIC",
+        "position": "DF",
+        "dreamTeamName": "Stjepan Radeljic"
+      },
+      {
+        "name": "NIKOLA KATIC",
+        "position": "DF",
+        "dreamTeamName": "Nikola Katic"
+      },
+      {
+        "name": "NIHAD MUJAKIC",
+        "position": "DF",
+        "dreamTeamName": "Nihad Mujakic"
+      },
+      {
+        "name": "DENNIS HADZIKADUNIC",
+        "position": "DF",
+        "dreamTeamName": "Dennis Hadzikadunic"
+      },
+      {
+        "name": "AMAR DEDIC",
+        "position": "DF",
+        "dreamTeamName": "Amar Dedic"
+      },
+      {
+        "name": "ARJAN MALIC",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AMIR HADZIAHMETOVIC",
+        "position": "MIL",
+        "dreamTeamName": "Amir Hadziahmetovic"
+      },
+      {
+        "name": "IVAN SUNJIC",
+        "position": "MIL",
+        "dreamTeamName": "Ivan Sunjic"
+      },
+      {
+        "name": "DZENIS BURNIC",
+        "position": "MIL",
+        "dreamTeamName": "Dzenis Burnic"
+      },
+      {
+        "name": "BENJAMIN TAHIROVIC",
+        "position": "MIL",
+        "dreamTeamName": "Benjamin Tahirovic"
+      },
+      {
+        "name": "ARMIN GIGOVIC",
+        "position": "MIL",
+        "dreamTeamName": "Armin Gigovic"
+      },
+      {
+        "name": "IVAN BASIC",
+        "position": "MIL",
+        "dreamTeamName": "Ivan Basic"
+      },
+      {
+        "name": "AMAR MEMIC",
+        "position": "MIL",
+        "dreamTeamName": "Amar Memic"
+      },
+      {
+        "name": "ERMIN MAHMIC",
+        "position": "MIL",
+        "dreamTeamName": "Ermin Mahmic"
+      },
+      {
+        "name": "KERIM ALAJBEGOVIC",
+        "position": "MIL",
+        "dreamTeamName": "Kerim Alajbegovic"
+      },
+      {
+        "name": "ESMIR BAJRAKTAREVIC",
+        "position": "MIL",
+        "dreamTeamName": "Esmir Bajraktarevic"
+      },
+      {
+        "name": "ERMEDIN DEMIROVIC",
+        "position": "ATT",
+        "dreamTeamName": "Ermedin Demirovic"
+      },
+      {
+        "name": "HARIS TABAKOVIC",
+        "position": "ATT",
+        "dreamTeamName": "Haris Tabakovic"
+      },
+      {
+        "name": "JOVO LUKIC",
+        "position": "ATT",
+        "dreamTeamName": "Jovo Lukic"
+      },
+      {
+        "name": "SAMED BAZDAR",
+        "position": "ATT",
+        "dreamTeamName": "Samed Bazdar"
+      },
+      {
+        "name": "EDIN DZEKO",
+        "position": "ATT",
+        "dreamTeamName": "Edin Dzeko"
+      }
+    ]
+  },
+  {
+    "countryId": "BRA",
+    "players": [
+      {
+        "name": "ALISSON",
+        "position": "GB",
+        "dreamTeamName": "Alisson Ramsés Becker"
+      },
+      {
+        "name": "EDERSON",
+        "position": "GB",
+        "dreamTeamName": "Ederson Santana de Moraes"
+      },
+      {
+        "name": "WEVERTON",
+        "position": "GB",
+        "dreamTeamName": "Weverton Pereira da Silva"
+      },
+      {
+        "name": "GABRIEL",
+        "position": "DF",
+        "dreamTeamName": "Gabriel dos Santos Magalhães"
+      },
+      {
+        "name": "BREMER",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MARQUINHOS",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ROGER IBANEZ",
+        "position": "DF",
+        "dreamTeamName": "Roger Ibañez da Silva"
+      },
+      {
+        "name": "LEO PEREIRA",
+        "position": "DF",
+        "dreamTeamName": "Leonardo Pereira"
+      },
+      {
+        "name": "DANILO",
+        "position": "DF",
+        "dreamTeamName": "Danilo Luiz da Silva"
+      },
+      {
+        "name": "DOUGLAS SANTOS",
+        "position": "DF",
+        "dreamTeamName": "Douglas dos Santos Justino de Melo"
+      },
+      {
+        "name": "ALEX SANDRO",
+        "position": "DF",
+        "dreamTeamName": "Alex Sandro Lobo da Silva"
+      },
+      {
+        "name": "FABINHO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "CASEMIRO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "BRUNO GUIMARAES",
+        "position": "MIL",
+        "dreamTeamName": "Bruno Guimarães Rodriguez Moura"
+      },
+      {
+        "name": "LUCAS PAQUETA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NEYMAR",
+        "position": "ATT",
+        "dreamTeamName": "Neymar da Silva Santos Júnior"
+      },
+      {
+        "name": "VINICIUS JUNIOR",
+        "position": "MIL",
+        "dreamTeamName": "Vinícius José Paixão de Oliveira Júnior"
+      },
+      {
+        "name": "RAPHINHA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GABRIEL MARTINELLI",
+        "position": "MIL",
+        "dreamTeamName": "Gabriel Teodoro Martinelli Silva"
+      },
+      {
+        "name": "RAYAN",
+        "position": "MIL",
+        "dreamTeamName": "Rayan Vitor Simplício Rocha"
+      },
+      {
+        "name": "LUIZ HENRIQUE",
+        "position": "MIL",
+        "dreamTeamName": "Luiz Henrique André Rosa da Silva"
+      },
+      {
+        "name": "MATHEUS CUNHA",
+        "position": "ATT",
+        "dreamTeamName": "Matheus Santos Carneiro da Cunha"
+      },
+      {
+        "name": "IGOR THIAGO",
+        "position": "ATT",
+        "dreamTeamName": "Igor Thiago Nascimento Rodrigues"
+      },
+      {
+        "name": "ENDRICK",
+        "position": "ATT",
+        "dreamTeamName": "Endrick Felipe Moreira de Sousa"
+      }
+    ]
+  },
+  {
+    "countryId": "CAN",
+    "players": [
+      {
+        "name": "DAYNE ST. CLAIR",
+        "position": "GB",
+        "dreamTeamName": "Dayne St. Clair"
+      },
+      {
+        "name": "MAXIME CREPEAU",
+        "position": "GB",
+        "dreamTeamName": "Maxime Crépeau"
+      },
+      {
+        "name": "OWEN GOODMAN",
+        "position": "GB",
+        "dreamTeamName": "Owen Goodman"
+      },
+      {
+        "name": "MOISE BOMBITO",
+        "position": "DF",
+        "dreamTeamName": "Moïse Bombito"
+      },
+      {
+        "name": "ALFIE JONES",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "DEREK CORNELIUS",
+        "position": "DF",
+        "dreamTeamName": "Derek Cornelius"
+      },
+      {
+        "name": "JOEL WATERMAN",
+        "position": "DF",
+        "dreamTeamName": "Joel Waterman"
+      },
+      {
+        "name": "LUC DE FOUGEROLLES",
+        "position": "DF",
+        "dreamTeamName": "Luc De Fougerolles"
+      },
+      {
+        "name": "ALPHONSO DAVIES",
+        "position": "DF",
+        "dreamTeamName": "Alphonso Davies"
+      },
+      {
+        "name": "ALISTAIR JOHNSTON",
+        "position": "DF",
+        "dreamTeamName": "Alistair Johnston"
+      },
+      {
+        "name": "RICHIE LARYEA",
+        "position": "DF",
+        "dreamTeamName": "Richie Laryea"
+      },
+      {
+        "name": "NIKO SIGUR",
+        "position": "DF",
+        "dreamTeamName": "Niko Sigur"
+      },
+      {
+        "name": "ISMAEL KONE",
+        "position": "MIL",
+        "dreamTeamName": "Ismaël Koné"
+      },
+      {
+        "name": "NATHAN-DYLAN SALIBA",
+        "position": "MIL",
+        "dreamTeamName": "Nathan Saliba"
+      },
+      {
+        "name": "STEPHEN EUSTAQUIO",
+        "position": "MIL",
+        "dreamTeamName": "Stephen Eustaquio"
+      },
+      {
+        "name": "JONATHAN OSORIO",
+        "position": "MIL",
+        "dreamTeamName": "Jonathan Osorio"
+      },
+      {
+        "name": "MATHIEU CHOINIERE",
+        "position": "MIL",
+        "dreamTeamName": "Mathieu Choinière"
+      },
+      {
+        "name": "ALI AHMED",
+        "position": "MIL",
+        "dreamTeamName": "Ali Ahmed"
+      },
+      {
+        "name": "LIAM MILLAR",
+        "position": "MIL",
+        "dreamTeamName": "Liam Millar"
+      },
+      {
+        "name": "JACOB SHAFFELBURG",
+        "position": "MIL",
+        "dreamTeamName": "Jacob Shaffelburg"
+      },
+      {
+        "name": "JAYDEN NELSON",
+        "position": "ATT",
+        "dreamTeamName": "Jayden Nelson"
+      },
+      {
+        "name": "TAJON BUCHANAN",
+        "position": "MIL",
+        "dreamTeamName": "Tajon Buchanan"
+      },
+      {
+        "name": "JONATHAN DAVID",
+        "position": "ATT",
+        "dreamTeamName": "Jonathan David"
+      },
+      {
+        "name": "PROMISE DAVID",
+        "position": "ATT",
+        "dreamTeamName": "Promise David"
+      },
+      {
+        "name": "TANI OLUWASEYI",
+        "position": "ATT",
+        "dreamTeamName": "Tani Oluwaseyi"
+      },
+      {
+        "name": "CYLE LARIN",
+        "position": "ATT",
+        "dreamTeamName": "Cyle Larin"
+      }
+    ]
+  },
+  {
+    "countryId": "CPV",
+    "players": [
+      {
+        "name": "CJ DOS SANTOS",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MARCIO ROSA",
+        "position": "GB",
+        "dreamTeamName": "Márcio Salomão Brazão da Rosa"
+      },
+      {
+        "name": "VOZINHA",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "LOGAN COSTA",
+        "position": "DF",
+        "dreamTeamName": "Logan Evans Costa"
+      },
+      {
+        "name": "DINEY BORGES",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KELVIN PIRES",
+        "position": "DF",
+        "dreamTeamName": "Kelvin Spencer Pires"
+      },
+      {
+        "name": "ROBERTO LOPES",
+        "position": "DF",
+        "dreamTeamName": "Roberto Carlos Lopes"
+      },
+      {
+        "name": "STOPIRA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SIDNY LOPES CABRAL",
+        "position": "DF",
+        "dreamTeamName": "Sidny Lopes Cabral"
+      },
+      {
+        "name": "WAGNER PINA",
+        "position": "DF",
+        "dreamTeamName": "Wagner Fabrício Cardoso de Pina"
+      },
+      {
+        "name": "STEVEN MOREIRA",
+        "position": "DF",
+        "dreamTeamName": "Steven Moreira"
+      },
+      {
+        "name": "KEVIN LENINI",
+        "position": "MIL",
+        "dreamTeamName": "Kevin Lenini Gonçalves Pereira de Pina"
+      },
+      {
+        "name": "LAROS DUARTE",
+        "position": "MIL",
+        "dreamTeamName": "Laros Michael d'Encarnação  Duarte"
+      },
+      {
+        "name": "JOAO PAULO",
+        "position": "DF",
+        "dreamTeamName": "João Paulo Moreira Fernandes"
+      },
+      {
+        "name": "DEROY DUARTE",
+        "position": "MIL",
+        "dreamTeamName": "Deroy d'Encarnação Duarte"
+      },
+      {
+        "name": "JAMIRO MONTEIRO",
+        "position": "MIL",
+        "dreamTeamName": "Jamiro Gregory Monteiro Alvarenga"
+      },
+      {
+        "name": "YANNICK SEMEDO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HELIO VARELA",
+        "position": "MIL",
+        "dreamTeamName": "Hélio Sandro Oliveira Alves Varela"
+      },
+      {
+        "name": "JOVANE CABRAL",
+        "position": "MIL",
+        "dreamTeamName": "Jovane Eduardo Borges Cabral"
+      },
+      {
+        "name": "WILLY SEMEDO",
+        "position": "MIL",
+        "dreamTeamName": "Willy Johnson Semedo Afonso"
+      },
+      {
+        "name": "RYAN MENDES",
+        "position": "MIL",
+        "dreamTeamName": "Ryan Isaac Mendes da Graça"
+      },
+      {
+        "name": "TELMO ARCANJO",
+        "position": "MIL",
+        "dreamTeamName": "Telmo Emanuel Gomes Arcanjo"
+      },
+      {
+        "name": "GARRY RODRIGUES",
+        "position": "MIL",
+        "dreamTeamName": "Garry Mendes Rodrigues"
+      },
+      {
+        "name": "BENCHIMOL",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "DAILON LIVRAMENTO",
+        "position": "ATT",
+        "dreamTeamName": "Dailon Rocha Livramento do Rosário"
+      },
+      {
+        "name": "NUNO DA COSTA",
+        "position": "ATT",
+        "dreamTeamName": "Nuno Miguel da Costa Jóia"
+      }
+    ]
+  },
+  {
+    "countryId": "COL",
+    "players": [
+      {
+        "name": "ALVARO MONTERO",
+        "position": "GB",
+        "dreamTeamName": "Álvaro Montero"
+      },
+      {
+        "name": "CAMILO VARGAS",
+        "position": "GB",
+        "dreamTeamName": "Camilo Vargas"
+      },
+      {
+        "name": "DAVID OSPINA",
+        "position": "GB",
+        "dreamTeamName": "David Ospina"
+      },
+      {
+        "name": "JHON LUCUMI",
+        "position": "DF",
+        "dreamTeamName": "Jhon Lucumí"
+      },
+      {
+        "name": "DAVINSON SANCHEZ",
+        "position": "DF",
+        "dreamTeamName": "Davinson Sánchez"
+      },
+      {
+        "name": "WILLER DITTA",
+        "position": "DF",
+        "dreamTeamName": "Willer Ditta"
+      },
+      {
+        "name": "YERRY MINA",
+        "position": "DF",
+        "dreamTeamName": "Yerry Mina"
+      },
+      {
+        "name": "DEIVER MACHADO",
+        "position": "DF",
+        "dreamTeamName": "Deiver Machado"
+      },
+      {
+        "name": "JOHAN MOJICA",
+        "position": "DF",
+        "dreamTeamName": "Johan Mojica"
+      },
+      {
+        "name": "DANIEL MUNOZ",
+        "position": "DF",
+        "dreamTeamName": "Daniel Muñoz"
+      },
+      {
+        "name": "SANTIAGO ARIAS",
+        "position": "DF",
+        "dreamTeamName": "Santiago Arias"
+      },
+      {
+        "name": "RICHARD RIOS",
+        "position": "MIL",
+        "dreamTeamName": "Richard Ríos"
+      },
+      {
+        "name": "JEFFERSON LERMA",
+        "position": "MIL",
+        "dreamTeamName": "Jefferson Lerma"
+      },
+      {
+        "name": "KEVIN CASTANO",
+        "position": "MIL",
+        "dreamTeamName": "Kevin Castaño"
+      },
+      {
+        "name": "GUSTAVO PUERTA",
+        "position": "MIL",
+        "dreamTeamName": "Gustavo Puerta"
+      },
+      {
+        "name": "JUAN PORTILLA",
+        "position": "MIL",
+        "dreamTeamName": "Juan Portilla"
+      },
+      {
+        "name": "JORGE CARRASCAL",
+        "position": "MIL",
+        "dreamTeamName": "Jorge Carrascal"
+      },
+      {
+        "name": "JUAN FERNANDO QUINTERO",
+        "position": "MIL",
+        "dreamTeamName": "Juan Fernando Quintero"
+      },
+      {
+        "name": "JAMES RODRIGUEZ",
+        "position": "MIL",
+        "dreamTeamName": "James Rodríguez"
+      },
+      {
+        "name": "LUIS DIAZ",
+        "position": "MIL",
+        "dreamTeamName": "Luis Díaz"
+      },
+      {
+        "name": "ANDRES GOMEZ",
+        "position": "MIL",
+        "dreamTeamName": "Andrés Gómez"
+      },
+      {
+        "name": "JAMINTON CAMPAZ",
+        "position": "MIL",
+        "dreamTeamName": "Jaminton Campaz"
+      },
+      {
+        "name": "JHON ARIAS",
+        "position": "MIL",
+        "dreamTeamName": "Jhon Arias"
+      },
+      {
+        "name": "LUIS SUAREZ",
+        "position": "ATT",
+        "dreamTeamName": "Luis Suárez"
+      },
+      {
+        "name": "CUCHO HERNANDEZ",
+        "position": "ATT",
+        "dreamTeamName": "Cucho Hernández"
+      },
+      {
+        "name": "JHON CORDOBA",
+        "position": "ATT",
+        "dreamTeamName": "Jhon Córdoba"
+      }
+    ]
+  },
+  {
+    "countryId": "KOR",
+    "players": [
+      {
+        "name": "BUM-KEUN SONG",
+        "position": "GB",
+        "dreamTeamName": "Bum-Keun Song"
+      },
+      {
+        "name": "HYEON-WOO JO",
+        "position": "GB",
+        "dreamTeamName": "Hyeon-Woo Jo"
+      },
+      {
+        "name": "SEUNG-GYU KIM",
+        "position": "GB",
+        "dreamTeamName": "Seung-Gyu Kim"
+      },
+      {
+        "name": "MIN-JAE KIM",
+        "position": "DF",
+        "dreamTeamName": "Min-Jae Kim"
+      },
+      {
+        "name": "HAN-BEOM LEE",
+        "position": "DF",
+        "dreamTeamName": "Han-Beom Lee"
+      },
+      {
+        "name": "TAE-HYEON KIM",
+        "position": "DF",
+        "dreamTeamName": "Tae-Hyeon Kim"
+      },
+      {
+        "name": "GI-HYUK LEE",
+        "position": "DF",
+        "dreamTeamName": "Gi-Hyuk Lee"
+      },
+      {
+        "name": "WI-JE CHO",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "TAE-SEOK LEE",
+        "position": "DF",
+        "dreamTeamName": "Tae-Seok Lee"
+      },
+      {
+        "name": "YOUNG-WOO SEOL",
+        "position": "DF",
+        "dreamTeamName": "Young-Woo Seol"
+      },
+      {
+        "name": "MOON-HWAN KIM",
+        "position": "DF",
+        "dreamTeamName": "Moon-Hwan Kim"
+      },
+      {
+        "name": "IN-BEOM HWANG",
+        "position": "MIL",
+        "dreamTeamName": "In-Beom Hwang"
+      },
+      {
+        "name": "JIN-SEOB PARK",
+        "position": "MIL",
+        "dreamTeamName": "Jin-Seob Park"
+      },
+      {
+        "name": "JENS CASTROP",
+        "position": "MIL",
+        "dreamTeamName": "Jens Castrop"
+      },
+      {
+        "name": "SEUNG-HO PAIK",
+        "position": "MIL",
+        "dreamTeamName": "Seung-Ho Paik"
+      },
+      {
+        "name": "JIN-GYU KIM",
+        "position": "MIL",
+        "dreamTeamName": "Jin-Gyu Kim"
+      },
+      {
+        "name": "KANG-IN LEE",
+        "position": "MIL",
+        "dreamTeamName": "Kang-In Lee"
+      },
+      {
+        "name": "JUN-HO BAE",
+        "position": "MIL",
+        "dreamTeamName": "Jun-Ho Bae"
+      },
+      {
+        "name": "JAE-SUNG LEE",
+        "position": "MIL",
+        "dreamTeamName": "Jae-Sung Lee"
+      },
+      {
+        "name": "DONG-GYEONG LEE",
+        "position": "MIL",
+        "dreamTeamName": "Dong-Gyeong Lee"
+      },
+      {
+        "name": "HEUNG-MIN SON",
+        "position": "ATT",
+        "dreamTeamName": "Heung-Min Son"
+      },
+      {
+        "name": "JI-SUNG EOM",
+        "position": "ATT",
+        "dreamTeamName": "Ji-Sung Eom"
+      },
+      {
+        "name": "HYUN-JUN YANG",
+        "position": "ATT",
+        "dreamTeamName": "Hyun-Jun Yang"
+      },
+      {
+        "name": "HYEON-GYU OH",
+        "position": "ATT",
+        "dreamTeamName": "Hyeon-Gyu Oh"
+      },
+      {
+        "name": "HEE-CHAN HWANG",
+        "position": "ATT",
+        "dreamTeamName": "Hee-Chan Hwang"
+      },
+      {
+        "name": "GUE-SUNG CHO",
+        "position": "ATT",
+        "dreamTeamName": "Gue-Sung Cho"
+      }
+    ]
+  },
+  {
+    "countryId": "CIV",
+    "players": [
+      {
+        "name": "YAHIA FOFANA",
+        "position": "GB",
+        "dreamTeamName": "Yahia Fofana"
+      },
+      {
+        "name": "ALBAN LAFONT",
+        "position": "GB",
+        "dreamTeamName": "Alban Lafont"
+      },
+      {
+        "name": "MOHAMED KONE",
+        "position": "GB",
+        "dreamTeamName": "Mohamed Koné"
+      },
+      {
+        "name": "OUSMANE DIOMANDE",
+        "position": "DF",
+        "dreamTeamName": "Ousmane Diomande"
+      },
+      {
+        "name": "EVAN NDICKA",
+        "position": "DF",
+        "dreamTeamName": "Evan Ndicka"
+      },
+      {
+        "name": "WILFRIED SINGO",
+        "position": "DF",
+        "dreamTeamName": "Wilfried Singo"
+      },
+      {
+        "name": "EMMANUEL AGBADOU",
+        "position": "DF",
+        "dreamTeamName": "Emmanuel Agbadou"
+      },
+      {
+        "name": "ODILON KOSSOUNOU",
+        "position": "DF",
+        "dreamTeamName": "Odilon Kossounou"
+      },
+      {
+        "name": "CHRISTOPHER OPERI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GHISLAIN KONAN",
+        "position": "DF",
+        "dreamTeamName": "Ghislain Konan"
+      },
+      {
+        "name": "GUELA DOUE",
+        "position": "DF",
+        "dreamTeamName": "Guéla Doué"
+      },
+      {
+        "name": "IBRAHIM SANGARE",
+        "position": "MIL",
+        "dreamTeamName": "Ibrahim Sangaré"
+      },
+      {
+        "name": "JEAN MICHAEL SERI",
+        "position": "MIL",
+        "dreamTeamName": "Jean Michaël Seri"
+      },
+      {
+        "name": "CHRIST INAO OULAI",
+        "position": "MIL",
+        "dreamTeamName": "Christ Inao Oulaï"
+      },
+      {
+        "name": "FRANCK KESSIE",
+        "position": "MIL",
+        "dreamTeamName": "Franck Kessie"
+      },
+      {
+        "name": "SEKO FOFANA",
+        "position": "MIL",
+        "dreamTeamName": "Seko Fofana"
+      },
+      {
+        "name": "YAN DIOMANDE",
+        "position": "MIL",
+        "dreamTeamName": "Yan Diomande"
+      },
+      {
+        "name": "BAZOUMANA TOURE",
+        "position": "MIL",
+        "dreamTeamName": "Bazoumana Touré"
+      },
+      {
+        "name": "SIMON ADINGRA",
+        "position": "MIL",
+        "dreamTeamName": "Simon Adingra"
+      },
+      {
+        "name": "PARFAIT GUIAGON",
+        "position": "MIL",
+        "dreamTeamName": "Parfait Guiagon"
+      },
+      {
+        "name": "AMAD DIALLO",
+        "position": "MIL",
+        "dreamTeamName": "Amad Diallo"
+      },
+      {
+        "name": "EVANN GUESSAND",
+        "position": "ATT",
+        "dreamTeamName": "Evann Guessand"
+      },
+      {
+        "name": "NICOLAS PEPE",
+        "position": "MIL",
+        "dreamTeamName": "Nicolas Pépé"
+      },
+      {
+        "name": "ANGE-YOAN BONNY",
+        "position": "ATT",
+        "dreamTeamName": "Ange-Yoan Bonny"
+      },
+      {
+        "name": "ELYE WAHI",
+        "position": "ATT",
+        "dreamTeamName": "Elye Wahi"
+      },
+      {
+        "name": "OUMAR DIAKITE",
+        "position": "ATT",
+        "dreamTeamName": "Oumar Diakité"
+      }
+    ]
+  },
+  {
+    "countryId": "CRO",
+    "players": [
+      {
+        "name": "DOMINIK KOTARSKI",
+        "position": "GB",
+        "dreamTeamName": "Dominik Kotarski"
+      },
+      {
+        "name": "IVOR PANDUR",
+        "position": "GB",
+        "dreamTeamName": "Ivor Pandur"
+      },
+      {
+        "name": "DOMINIK LIVAKOVIC",
+        "position": "GB",
+        "dreamTeamName": "Dominik Livakovic"
+      },
+      {
+        "name": "JOSKO GVARDIOL",
+        "position": "DF",
+        "dreamTeamName": "Josko Gvardiol"
+      },
+      {
+        "name": "LUKA VUSKOVIC",
+        "position": "DF",
+        "dreamTeamName": "Luka Vuskovic"
+      },
+      {
+        "name": "JOSIP SUTALO",
+        "position": "DF",
+        "dreamTeamName": "Josip Sutalo"
+      },
+      {
+        "name": "MARIN PONGRACIC",
+        "position": "DF",
+        "dreamTeamName": "Marin Pongracic"
+      },
+      {
+        "name": "MARTIN ERLIC",
+        "position": "DF",
+        "dreamTeamName": "Martin Erlic"
+      },
+      {
+        "name": "DUJE CALETA-CAR",
+        "position": "DF",
+        "dreamTeamName": "Duje Caleta-Car"
+      },
+      {
+        "name": "JOSIP STANISIC",
+        "position": "DF",
+        "dreamTeamName": "Josip Stanisic"
+      },
+      {
+        "name": "NIKOLA MORO",
+        "position": "MIL",
+        "dreamTeamName": "Nikola Moro"
+      },
+      {
+        "name": "KRISTIJAN JAKIC",
+        "position": "MIL",
+        "dreamTeamName": "Kristijan Jakic"
+      },
+      {
+        "name": "PETAR SUCIC",
+        "position": "MIL",
+        "dreamTeamName": "Petar Sucic"
+      },
+      {
+        "name": "MATEO KOVACIC",
+        "position": "MIL",
+        "dreamTeamName": "Mateo Kovacic"
+      },
+      {
+        "name": "LUKA SUCIC",
+        "position": "MIL",
+        "dreamTeamName": "Luka Sucic"
+      },
+      {
+        "name": "MARIO PASALIC",
+        "position": "MIL",
+        "dreamTeamName": "Mario Pasalic"
+      },
+      {
+        "name": "LUKA MODRIC",
+        "position": "MIL",
+        "dreamTeamName": "Luka Modric"
+      },
+      {
+        "name": "MARTIN BATURINA",
+        "position": "MIL",
+        "dreamTeamName": "Martin Baturina"
+      },
+      {
+        "name": "NIKOLA VLASIC",
+        "position": "MIL",
+        "dreamTeamName": "Nikola Vlasic"
+      },
+      {
+        "name": "TONI FRUK",
+        "position": "MIL",
+        "dreamTeamName": "Toni Fruk"
+      },
+      {
+        "name": "ANDREJ KRAMARIC",
+        "position": "ATT",
+        "dreamTeamName": "Andrej Kramaric"
+      },
+      {
+        "name": "IVAN PERISIC",
+        "position": "MIL",
+        "dreamTeamName": "Ivan Perisic"
+      },
+      {
+        "name": "MARCO PASALIC",
+        "position": "MIL",
+        "dreamTeamName": "Marco Pasalic"
+      },
+      {
+        "name": "IGOR MATANOVIC",
+        "position": "ATT",
+        "dreamTeamName": "Igor Matanovic"
+      },
+      {
+        "name": "PETAR MUSA",
+        "position": "ATT",
+        "dreamTeamName": "Petar Musa"
+      },
+      {
+        "name": "ANTE BUDIMIR",
+        "position": "ATT",
+        "dreamTeamName": "Ante Budimir"
+      }
+    ]
+  },
+  {
+    "countryId": "CUW",
+    "players": [
+      {
+        "name": "ELOY ROOM",
+        "position": "GB",
+        "dreamTeamName": "Eloy Room"
+      },
+      {
+        "name": "TREVOR DOORNBUSCH",
+        "position": "GB",
+        "dreamTeamName": "Trevor Doornbusch"
+      },
+      {
+        "name": "TYRICK BODAK",
+        "position": "GB",
+        "dreamTeamName": "Tyrick Bodak"
+      },
+      {
+        "name": "ARMANDO OBISPO",
+        "position": "DF",
+        "dreamTeamName": "Armando Obispo"
+      },
+      {
+        "name": "RIECHEDLY BAZOER",
+        "position": "DF",
+        "dreamTeamName": "Riechedly Bazoer"
+      },
+      {
+        "name": "DEVERON FONVILLE",
+        "position": "DF",
+        "dreamTeamName": "Deveron Fonville"
+      },
+      {
+        "name": "ROSHON VAN EIJMA",
+        "position": "DF",
+        "dreamTeamName": "Roshon van Eijma"
+      },
+      {
+        "name": "JURIEN GAARI",
+        "position": "DF",
+        "dreamTeamName": "Juriën Gaari"
+      },
+      {
+        "name": "SHEREL FLORANUS",
+        "position": "DF",
+        "dreamTeamName": "Sherel Floranus"
+      },
+      {
+        "name": "SHURANDY SAMBO",
+        "position": "DF",
+        "dreamTeamName": "Shurandy Sambo"
+      },
+      {
+        "name": "JOSHUA BRENET",
+        "position": "DF",
+        "dreamTeamName": "Joshua Brenet"
+      },
+      {
+        "name": "LIVANO COMENENCIA",
+        "position": "MIL",
+        "dreamTeamName": "Livano Comenencia"
+      },
+      {
+        "name": "KEVIN FELIDA",
+        "position": "MIL",
+        "dreamTeamName": "Kevin Felida"
+      },
+      {
+        "name": "GODFRIED ROEMERATOE",
+        "position": "MIL",
+        "dreamTeamName": "Godfried Roemeratoe"
+      },
+      {
+        "name": "JUNINHO BACUNA",
+        "position": "MIL",
+        "dreamTeamName": "Juninho Bacuna"
+      },
+      {
+        "name": "LEANDRO BACUNA",
+        "position": "MIL",
+        "dreamTeamName": "Leandro Bacuna"
+      },
+      {
+        "name": "TYRESE NOSLIN",
+        "position": "MIL",
+        "dreamTeamName": "Tyrese Noslin"
+      },
+      {
+        "name": "TAHITH CHONG",
+        "position": "MIL",
+        "dreamTeamName": "Tahith Chong"
+      },
+      {
+        "name": "JEARL MARGARITHA",
+        "position": "MIL",
+        "dreamTeamName": "Jearl Margaritha"
+      },
+      {
+        "name": "JEREMY ANTONISSE",
+        "position": "MIL",
+        "dreamTeamName": "Jeremy Antonisse"
+      },
+      {
+        "name": "KENJI GORRE",
+        "position": "MIL",
+        "dreamTeamName": "Kenji Gorré"
+      },
+      {
+        "name": "SONTJE HANSEN",
+        "position": "MIL",
+        "dreamTeamName": "Sontje Hansen"
+      },
+      {
+        "name": "AR'JANY MARTHA",
+        "position": "MIL",
+        "dreamTeamName": "Ar'Jany Martha"
+      },
+      {
+        "name": "BRANDLEY KUWAS",
+        "position": "ATT",
+        "dreamTeamName": "Brandley Kuwas"
+      },
+      {
+        "name": "GERVANE KASTANEER",
+        "position": "ATT",
+        "dreamTeamName": "Gervane Kastaneer"
+      },
+      {
+        "name": "JURGEN LOCADIA",
+        "position": "ATT",
+        "dreamTeamName": "Jürgen Locadia"
+      }
+    ]
+  },
+  {
+    "countryId": "EGY",
+    "players": [
+      {
+        "name": "OUFA SHOBEIR",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHAMED ALAA",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHAMED EL SHENAWY",
+        "position": "GB",
+        "dreamTeamName": "Mohamed El Sayed Mohamed El Shenawy Gomaa"
+      },
+      {
+        "name": "EL MAHDI SOLIMAN",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHAMED ABDELMONEM",
+        "position": "DF",
+        "dreamTeamName": "Mohamed Abdelmonem El Sayed Mohamed Ahmed"
+      },
+      {
+        "name": "HOSSAM ABDELMAGUID",
+        "position": "DF",
+        "dreamTeamName": "Hossam Abdelmaguid Abdelsalam Abdelmaguid"
+      },
+      {
+        "name": "RAMY RABIA",
+        "position": "DF",
+        "dreamTeamName": "Ramy Hisham Abdel Aziz Mostafa Rabia"
+      },
+      {
+        "name": "YASSER IBRAHIM",
+        "position": "DF",
+        "dreamTeamName": "Yasser Ahmed Ibrahim El Hanafi"
+      },
+      {
+        "name": "AHMED FATOUH",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KARIM HAFEZ",
+        "position": "DF",
+        "dreamTeamName": "Karim Hafez Ramadan Seif El Din"
+      },
+      {
+        "name": "MOHAMED HANY",
+        "position": "DF",
+        "dreamTeamName": "Mohamed Hany Gamal El Demerdash"
+      },
+      {
+        "name": "TAREK ALAA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MARWAN ATEYA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHANAD LASHEEN",
+        "position": "MIL",
+        "dreamTeamName": "Mohanad Mostafa Ahmed Abdelmonem Lasheen"
+      },
+      {
+        "name": "HAMDY FATHY",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NABIL DUNGA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "EMAM ASHOUR",
+        "position": "MIL",
+        "dreamTeamName": "Emam Ashour Metwally Abdel Ghany"
+      },
+      {
+        "name": "MAHMOUD SABER",
+        "position": "MIL",
+        "dreamTeamName": "Mahmoud Saber Abdelmohsen Hassan"
+      },
+      {
+        "name": "TREZEGUET",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "IBRAHIM ADEL",
+        "position": "MIL",
+        "dreamTeamName": "Ibrahim Adel Ali Mohamed Hassan"
+      },
+      {
+        "name": "MOSTAFA ZIKO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHAMED SALAH",
+        "position": "ATT",
+        "dreamTeamName": "Mohamed Salah Hamed Mahrous Ghaly"
+      },
+      {
+        "name": "HAISSEM HASSAN",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ZIZO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "OMAR MARMOUSH",
+        "position": "ATT",
+        "dreamTeamName": "Omar Khaled Mohamed Abdelsalam Marmoush"
+      },
+      {
+        "name": "HAMZA ABDELKARIM",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "ECU",
+    "players": [
+      {
+        "name": "GONZALO VALLE",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOISES RAMIREZ",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HERNAN GALINDEZ",
+        "position": "GB",
+        "dreamTeamName": "Hernán Galíndez"
+      },
+      {
+        "name": "WILLIAN PACHO",
+        "position": "DF",
+        "dreamTeamName": "Willian Pacho"
+      },
+      {
+        "name": "PIERO HINCAPIE",
+        "position": "DF",
+        "dreamTeamName": "Piero Hincapié"
+      },
+      {
+        "name": "JOEL ORDONEZ",
+        "position": "DF",
+        "dreamTeamName": "Joel Ordóñez"
+      },
+      {
+        "name": "JACKSON POROZO",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FELIX TORRES",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "PERVIS ESTUPINAN",
+        "position": "DF",
+        "dreamTeamName": "Pervis Estupiñán"
+      },
+      {
+        "name": "YAIMAR MEDINA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ANGELO PRECIADO",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOISES CAICEDO",
+        "position": "MIL",
+        "dreamTeamName": "Moisés Caicedo"
+      },
+      {
+        "name": "JORDY ALCIVAR",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "DENIL CASTILLO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALAN FRANCO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KENDRY PAEZ",
+        "position": "MIL",
+        "dreamTeamName": "Kendry Páez"
+      },
+      {
+        "name": "PEDRO VITE",
+        "position": "MIL",
+        "dreamTeamName": "Pedro Vite"
+      },
+      {
+        "name": "NILSON ANGULO",
+        "position": "MIL",
+        "dreamTeamName": "Nilson Angulo"
+      },
+      {
+        "name": "GONZALO PLATA",
+        "position": "MIL",
+        "dreamTeamName": "Gonzalo Plata"
+      },
+      {
+        "name": "ALAN MINDA",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ANTHONY VALENCIA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JOHN YEBOAH",
+        "position": "MIL",
+        "dreamTeamName": "John Yeboah"
+      },
+      {
+        "name": "JEREMY AREVALO",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KEVIN RODRIGUEZ",
+        "position": "ATT",
+        "dreamTeamName": "Kevin Rodríguez"
+      },
+      {
+        "name": "JORDY CAICEDO",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ENNER VALENCIA",
+        "position": "ATT",
+        "dreamTeamName": "Enner Valencia"
+      }
+    ]
+  },
+  {
+    "countryId": "SCO",
+    "players": [
+      {
+        "name": "ANGUS GUNN",
+        "position": "GB",
+        "dreamTeamName": "Angus Gunn"
+      },
+      {
+        "name": "LIAM KELLY",
+        "position": "GB",
+        "dreamTeamName": "Liam Kelly"
+      },
+      {
+        "name": "CRAIG GORDON",
+        "position": "GB",
+        "dreamTeamName": "Craig Gordon"
+      },
+      {
+        "name": "SCOTT MCKENNA",
+        "position": "DF",
+        "dreamTeamName": "Scott McKenna"
+      },
+      {
+        "name": "JACK HENDRY",
+        "position": "DF",
+        "dreamTeamName": "Jack Hendry"
+      },
+      {
+        "name": "JOHN SOUTTAR",
+        "position": "DF",
+        "dreamTeamName": "John Souttar"
+      },
+      {
+        "name": "DOMINIC HYAM",
+        "position": "DF",
+        "dreamTeamName": "Dominic Hyam"
+      },
+      {
+        "name": "GRANT HANLEY",
+        "position": "DF",
+        "dreamTeamName": "Grant Hanley"
+      },
+      {
+        "name": "KIERAN TIERNEY",
+        "position": "DF",
+        "dreamTeamName": "Kieran Tierney"
+      },
+      {
+        "name": "ANDREW ROBERTSON",
+        "position": "DF",
+        "dreamTeamName": "Andy Robertson"
+      },
+      {
+        "name": "AARON HICKEY",
+        "position": "DF",
+        "dreamTeamName": "Aaron Hickey"
+      },
+      {
+        "name": "NATHAN PATTERSON",
+        "position": "DF",
+        "dreamTeamName": "Nathan Patterson"
+      },
+      {
+        "name": "ANTHONY RALSTON",
+        "position": "DF",
+        "dreamTeamName": "Anthony Ralston"
+      },
+      {
+        "name": "SCOTT MCTOMINAY",
+        "position": "MIL",
+        "dreamTeamName": "Scott McTominay"
+      },
+      {
+        "name": "LEWIS FERGUSON",
+        "position": "MIL",
+        "dreamTeamName": "Lewis Ferguson"
+      },
+      {
+        "name": "JOHN MCGINN",
+        "position": "MIL",
+        "dreamTeamName": "John McGinn"
+      },
+      {
+        "name": "RYAN CHRISTIE",
+        "position": "MIL",
+        "dreamTeamName": "Ryan Christie"
+      },
+      {
+        "name": "TYLER FLETCHER",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KENNY MCLEAN",
+        "position": "MIL",
+        "dreamTeamName": "Kenny McLean"
+      },
+      {
+        "name": "FINDLAY CURTIS",
+        "position": "MIL",
+        "dreamTeamName": "Findlay Curtis"
+      },
+      {
+        "name": "BEN GANNON-DOAK",
+        "position": "MIL",
+        "dreamTeamName": "Ben Gannon-Doak"
+      },
+      {
+        "name": "GEORGE HIRST",
+        "position": "ATT",
+        "dreamTeamName": "George Hirst"
+      },
+      {
+        "name": "CHE ADAMS",
+        "position": "ATT",
+        "dreamTeamName": "Ché Adams"
+      },
+      {
+        "name": "LAWRENCE SHANKLAND",
+        "position": "ATT",
+        "dreamTeamName": "Lawrence Shankland"
+      },
+      {
+        "name": "ROSS STEWART",
+        "position": "ATT",
+        "dreamTeamName": "Ross Stewart"
+      },
+      {
+        "name": "LYNDON DYKES",
+        "position": "ATT",
+        "dreamTeamName": "Lyndon Dykes"
+      }
+    ]
+  },
+  {
+    "countryId": "ESP",
+    "players": [
+      {
+        "name": "JOAN GARCIA",
+        "position": "GB",
+        "dreamTeamName": "Joan García"
+      },
+      {
+        "name": "DAVID RAYA",
+        "position": "GB",
+        "dreamTeamName": "David Raya"
+      },
+      {
+        "name": "UNAI SIMON",
+        "position": "GB",
+        "dreamTeamName": "Unai Simón"
+      },
+      {
+        "name": "PAU CUBARSI",
+        "position": "DF",
+        "dreamTeamName": "Pau Cubarsí"
+      },
+      {
+        "name": "ERIC GARCIA",
+        "position": "DF",
+        "dreamTeamName": "Eric García"
+      },
+      {
+        "name": "MARC PUBILL",
+        "position": "DF",
+        "dreamTeamName": "Marc Pubill"
+      },
+      {
+        "name": "AYMERIC LAPORTE",
+        "position": "DF",
+        "dreamTeamName": "Aymeric Laporte"
+      },
+      {
+        "name": "MARC CUCURELLA",
+        "position": "DF",
+        "dreamTeamName": "Marc Cucurella"
+      },
+      {
+        "name": "ALEJANDRO GRIMALDO",
+        "position": "DF",
+        "dreamTeamName": "Alejandro Grimaldo"
+      },
+      {
+        "name": "PEDRO PORRO",
+        "position": "DF",
+        "dreamTeamName": "Pedro Porro"
+      },
+      {
+        "name": "MARCOS LLORENTE",
+        "position": "DF",
+        "dreamTeamName": "Marcos Llorente"
+      },
+      {
+        "name": "MARTIN ZUBIMENDI",
+        "position": "MIL",
+        "dreamTeamName": "Martín Zubimendi"
+      },
+      {
+        "name": "RODRI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "PEDRI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FABIAN RUIZ",
+        "position": "MIL",
+        "dreamTeamName": "Fabián Ruiz"
+      },
+      {
+        "name": "GAVI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MIKEL MERINO",
+        "position": "MIL",
+        "dreamTeamName": "Mikel Merino"
+      },
+      {
+        "name": "DANI OLMO",
+        "position": "MIL",
+        "dreamTeamName": "Dani Olmo"
+      },
+      {
+        "name": "ALEX BAENA",
+        "position": "MIL",
+        "dreamTeamName": "Álex Baena"
+      },
+      {
+        "name": "NICO WILLIAMS",
+        "position": "MIL",
+        "dreamTeamName": "Nico Williams"
+      },
+      {
+        "name": "VICTOR MUNOZ",
+        "position": "MIL",
+        "dreamTeamName": "Víctor Muñoz"
+      },
+      {
+        "name": "LAMINE YAMAL",
+        "position": "MIL",
+        "dreamTeamName": "Lamine Yamal Nasraoui Ebana"
+      },
+      {
+        "name": "YEREMY PINO",
+        "position": "MIL",
+        "dreamTeamName": "Yéremy Pino"
+      },
+      {
+        "name": "FERRAN TORRES",
+        "position": "ATT",
+        "dreamTeamName": "Ferran Torres"
+      },
+      {
+        "name": "MIKEL OYARZABAL",
+        "position": "ATT",
+        "dreamTeamName": "Mikel Oyarzabal"
+      },
+      {
+        "name": "BORJA IGLESIAS",
+        "position": "ATT",
+        "dreamTeamName": "Borja Iglesias"
+      }
+    ]
+  },
+  {
+    "countryId": "USA",
+    "players": [
+      {
+        "name": "MATT TURNER",
+        "position": "GB",
+        "dreamTeamName": "Matt Turner"
+      },
+      {
+        "name": "CHRIS BRADY",
+        "position": "GB",
+        "dreamTeamName": "Chris Brady"
+      },
+      {
+        "name": "MATT FREESE",
+        "position": "GB",
+        "dreamTeamName": "Matt Freese"
+      },
+      {
+        "name": "CHRIS RICHARDS",
+        "position": "DF",
+        "dreamTeamName": "Chris Richards"
+      },
+      {
+        "name": "MARK MCKENZIE",
+        "position": "DF",
+        "dreamTeamName": "Mark McKenzie"
+      },
+      {
+        "name": "AUSTON TRUSTY",
+        "position": "DF",
+        "dreamTeamName": "Auston Trusty"
+      },
+      {
+        "name": "MILES ROBINSON",
+        "position": "DF",
+        "dreamTeamName": "Miles Robinson"
+      },
+      {
+        "name": "TIM REAM",
+        "position": "DF",
+        "dreamTeamName": "Tim Ream"
+      },
+      {
+        "name": "ANTONEE ROBINSON",
+        "position": "DF",
+        "dreamTeamName": "Antonee Robinson"
+      },
+      {
+        "name": "SERGINO DEST",
+        "position": "DF",
+        "dreamTeamName": "Sergiño Dest"
+      },
+      {
+        "name": "JOE SCALLY",
+        "position": "DF",
+        "dreamTeamName": "Joe Scally"
+      },
+      {
+        "name": "ALEX FREEMAN",
+        "position": "DF",
+        "dreamTeamName": "Alex Freeman"
+      },
+      {
+        "name": "TYLER ADAMS",
+        "position": "MIL",
+        "dreamTeamName": "Tyler Adams"
+      },
+      {
+        "name": "WESTON MCKENNIE",
+        "position": "MIL",
+        "dreamTeamName": "Weston McKennie"
+      },
+      {
+        "name": "SEBASTIAN BERHALTER",
+        "position": "MIL",
+        "dreamTeamName": "Sebastian Berhalter"
+      },
+      {
+        "name": "CRISTIAN ROLDAN",
+        "position": "MIL",
+        "dreamTeamName": "Cristian Roldan"
+      },
+      {
+        "name": "TIMOTHY WEAH",
+        "position": "MIL",
+        "dreamTeamName": "Timothy Weah"
+      },
+      {
+        "name": "MALIK TILLMAN",
+        "position": "MIL",
+        "dreamTeamName": "Malik Tillman"
+      },
+      {
+        "name": "BRENDEN AARONSON",
+        "position": "MIL",
+        "dreamTeamName": "Brenden Aaronson"
+      },
+      {
+        "name": "GIOVANNI REYNA",
+        "position": "MIL",
+        "dreamTeamName": "Giovanni Reyna"
+      },
+      {
+        "name": "MAX ARFSTEN",
+        "position": "MIL",
+        "dreamTeamName": "Max Arfsten"
+      },
+      {
+        "name": "CHRISTIAN PULISIC",
+        "position": "MIL",
+        "dreamTeamName": "Christian Pulisic"
+      },
+      {
+        "name": "ALEX ZENDEJAS",
+        "position": "MIL",
+        "dreamTeamName": "Álex Zendejas"
+      },
+      {
+        "name": "FOLARIN BALOGUN",
+        "position": "ATT",
+        "dreamTeamName": "Folarin Balogun"
+      },
+      {
+        "name": "RICARDO PEPI",
+        "position": "ATT",
+        "dreamTeamName": "Ricardo Pepi"
+      },
+      {
+        "name": "HAJI WRIGHT",
+        "position": "ATT",
+        "dreamTeamName": "Haji Wright"
+      }
+    ]
+  },
+  {
+    "countryId": "FRA",
+    "players": [
+      {
+        "name": "ROBIN RISSER",
+        "position": "GB",
+        "dreamTeamName": "Robin Risser"
+      },
+      {
+        "name": "MIKE MAIGNAN",
+        "position": "GB",
+        "dreamTeamName": "Mike Maignan"
+      },
+      {
+        "name": "BRICE SAMBA",
+        "position": "GB",
+        "dreamTeamName": "Brice Samba"
+      },
+      {
+        "name": "WILLIAM SALIBA",
+        "position": "DF",
+        "dreamTeamName": "William Saliba"
+      },
+      {
+        "name": "DAYOT UPAMECANO",
+        "position": "DF",
+        "dreamTeamName": "Dayot Upamecano"
+      },
+      {
+        "name": "MAXENCE LACROIX",
+        "position": "DF",
+        "dreamTeamName": "Maxence Lacroix"
+      },
+      {
+        "name": "IBRAHIMA KONATE",
+        "position": "DF",
+        "dreamTeamName": "Ibrahima Konaté"
+      },
+      {
+        "name": "THEO HERNANDEZ",
+        "position": "DF",
+        "dreamTeamName": "Théo Hernández"
+      },
+      {
+        "name": "LUCAS HERNANDEZ",
+        "position": "DF",
+        "dreamTeamName": "Lucas Hernández"
+      },
+      {
+        "name": "LUCAS DIGNE",
+        "position": "DF",
+        "dreamTeamName": "Lucas Digne"
+      },
+      {
+        "name": "JULES KOUNDE",
+        "position": "DF",
+        "dreamTeamName": "Jules Koundé"
+      },
+      {
+        "name": "MALO GUSTO",
+        "position": "DF",
+        "dreamTeamName": "Malo Gusto"
+      },
+      {
+        "name": "AURELIEN TCHOUAMENI",
+        "position": "MIL",
+        "dreamTeamName": "Aurélien Tchouaméni"
+      },
+      {
+        "name": "N'GOLO KANTE",
+        "position": "MIL",
+        "dreamTeamName": "N'Golo Kanté"
+      },
+      {
+        "name": "WARREN ZAIRE-EMERY",
+        "position": "MIL",
+        "dreamTeamName": "Warren Zaïre-Emery"
+      },
+      {
+        "name": "MANU KONE",
+        "position": "MIL",
+        "dreamTeamName": "Manu Koné"
+      },
+      {
+        "name": "ADRIEN RABIOT",
+        "position": "MIL",
+        "dreamTeamName": "Adrien Rabiot"
+      },
+      {
+        "name": "RAYAN CHERKI",
+        "position": "MIL",
+        "dreamTeamName": "Rayan Cherki"
+      },
+      {
+        "name": "BRADLEY BARCOLA",
+        "position": "MIL",
+        "dreamTeamName": "Bradley Barcola"
+      },
+      {
+        "name": "MICHAEL OLISE",
+        "position": "MIL",
+        "dreamTeamName": "Michael Olise"
+      },
+      {
+        "name": "DESIRE DOUE",
+        "position": "MIL",
+        "dreamTeamName": "Désiré Doué"
+      },
+      {
+        "name": "MAGHNES AKLIOUCHE",
+        "position": "MIL",
+        "dreamTeamName": "Maghnes Akliouche"
+      },
+      {
+        "name": "KYLIAN MBAPPE",
+        "position": "ATT",
+        "dreamTeamName": "Kylian Mbappé"
+      },
+      {
+        "name": "OUSMANE DEMBELE",
+        "position": "MIL",
+        "dreamTeamName": "Ousmane Dembélé"
+      },
+      {
+        "name": "MARCUS THURAM",
+        "position": "ATT",
+        "dreamTeamName": "Marcus Thuram"
+      },
+      {
+        "name": "JEAN-PHILIPPE MATETA",
+        "position": "ATT",
+        "dreamTeamName": "Jean-Philippe Mateta"
+      }
+    ]
+  },
+  {
+    "countryId": "GHA",
+    "players": [
+      {
+        "name": "LAWRENCE ATI ZIGI",
+        "position": "GB",
+        "dreamTeamName": "Lawrence Ati Zigi"
+      },
+      {
+        "name": "JOSEPH ANANG",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "BENJAMIN ASARE",
+        "position": "GB",
+        "dreamTeamName": "Benjamin Asare"
+      },
+      {
+        "name": "KOJO PEPRAH OPPONG",
+        "position": "DF",
+        "dreamTeamName": "Kojo Peprah Oppong"
+      },
+      {
+        "name": "ALIDU SEIDU",
+        "position": "DF",
+        "dreamTeamName": "Alidu Seidu"
+      },
+      {
+        "name": "JONAS ADJETEY",
+        "position": "DF",
+        "dreamTeamName": "Jonas Adjetey"
+      },
+      {
+        "name": "JEROME OPOKU",
+        "position": "DF",
+        "dreamTeamName": "Jerome Opoku"
+      },
+      {
+        "name": "ABDUL MUMIN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "DERRICK LUCKASSEN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GIDEON MENSAH",
+        "position": "DF",
+        "dreamTeamName": "Gideon Mensah"
+      },
+      {
+        "name": "ABDUL RAHMAN BABA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MARVIN SENAYA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ELISHA OWUSU",
+        "position": "MIL",
+        "dreamTeamName": "Elisha Owusu"
+      },
+      {
+        "name": "THOMAS PARTEY",
+        "position": "MIL",
+        "dreamTeamName": "Thomas Partey"
+      },
+      {
+        "name": "CALEB YIRENKYI",
+        "position": "DF",
+        "dreamTeamName": "Caleb Yirenkyi"
+      },
+      {
+        "name": "KWASI SIBO",
+        "position": "MIL",
+        "dreamTeamName": "Kwasi Sibo"
+      },
+      {
+        "name": "AUGUSTINE BOAKYE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KAMALDEEN SULEMANA",
+        "position": "MIL",
+        "dreamTeamName": "Kamaldeen Sulemana"
+      },
+      {
+        "name": "CHRISTOPHER BONSU BAAH",
+        "position": "MIL",
+        "dreamTeamName": "Christopher Bonsu Baah"
+      },
+      {
+        "name": "ANTOINE SEMENYO",
+        "position": "MIL",
+        "dreamTeamName": "Antoine Semenyo"
+      },
+      {
+        "name": "ABDUL FATAWU",
+        "position": "MIL",
+        "dreamTeamName": "Abdul Fatawu Issahaku"
+      },
+      {
+        "name": "ERNEST NUAMAH",
+        "position": "MIL",
+        "dreamTeamName": "Ernest Nuamah"
+      },
+      {
+        "name": "INAKI WILLIAMS",
+        "position": "ATT",
+        "dreamTeamName": "Iñaki Williams"
+      },
+      {
+        "name": "BRANDON THOMAS-ASANTE",
+        "position": "MIL",
+        "dreamTeamName": "Brandon Thomas-Asante"
+      },
+      {
+        "name": "PRINCE ADU",
+        "position": "ATT",
+        "dreamTeamName": "Prince Adu"
+      },
+      {
+        "name": "JORDAN AYEW",
+        "position": "ATT",
+        "dreamTeamName": "Jordan Ayew"
+      }
+    ]
+  },
+  {
+    "countryId": "HAI",
+    "players": [
+      {
+        "name": "ALEXANDRE PIERRE",
+        "position": "GB",
+        "dreamTeamName": "Alexandre Pierre"
+      },
+      {
+        "name": "JOHNY PLACIDE",
+        "position": "GB",
+        "dreamTeamName": "Johny Placide"
+      },
+      {
+        "name": "JOSUE DUVERGER",
+        "position": "GB",
+        "dreamTeamName": "Josué Duverger"
+      },
+      {
+        "name": "HANNES DELCROIX",
+        "position": "DF",
+        "dreamTeamName": "Hannes Delcroix"
+      },
+      {
+        "name": "JEAN-KEVIN DUVERNE",
+        "position": "DF",
+        "dreamTeamName": "Jean-Kévin Duverne"
+      },
+      {
+        "name": "RICARDO ADE",
+        "position": "DF",
+        "dreamTeamName": "Ricardo Adé"
+      },
+      {
+        "name": "KEETO THERMONCY",
+        "position": "DF",
+        "dreamTeamName": "Keeto Thermoncy"
+      },
+      {
+        "name": "MARTIN EXPERIENCE",
+        "position": "DF",
+        "dreamTeamName": "Martin Expérience"
+      },
+      {
+        "name": "DUKE LACROIX",
+        "position": "DF",
+        "dreamTeamName": "Duke Lacroix"
+      },
+      {
+        "name": "CARLENS ARCUS",
+        "position": "DF",
+        "dreamTeamName": "Carlens Arcus"
+      },
+      {
+        "name": "WILGUENS PAUGAIN",
+        "position": "DF",
+        "dreamTeamName": "Wilguens Paugain"
+      },
+      {
+        "name": "DANLEY JEAN JACQUES",
+        "position": "MIL",
+        "dreamTeamName": "Danley Jean Jacques"
+      },
+      {
+        "name": "LEVERTON PIERRE",
+        "position": "MIL",
+        "dreamTeamName": "Leverton Pierre"
+      },
+      {
+        "name": "DOMINIQUE SIMON",
+        "position": "MIL",
+        "dreamTeamName": "Dominique Simon"
+      },
+      {
+        "name": "CARL SAINTE",
+        "position": "MIL",
+        "dreamTeamName": "Carl Sainté"
+      },
+      {
+        "name": "WOODENSKY PIERRE",
+        "position": "MIL",
+        "dreamTeamName": "Woodensky Pierre"
+      },
+      {
+        "name": "JEAN-RICNER BELLEGARDE",
+        "position": "MIL",
+        "dreamTeamName": "Jean-Ricner Bellegarde"
+      },
+      {
+        "name": "DERRICK ETIENNE JR.",
+        "position": "MIL",
+        "dreamTeamName": "Derrick Etienne"
+      },
+      {
+        "name": "RUBEN PROVIDENCE",
+        "position": "MIL",
+        "dreamTeamName": "Ruben Providence"
+      },
+      {
+        "name": "JOSUE CASIMIR",
+        "position": "MIL",
+        "dreamTeamName": "Josué Casimir"
+      },
+      {
+        "name": "LOUICIUS DEEDSON",
+        "position": "ATT",
+        "dreamTeamName": "Louicius Deedson"
+      },
+      {
+        "name": "WILSON ISIDOR",
+        "position": "ATT",
+        "dreamTeamName": "Wilson Isidor"
+      },
+      {
+        "name": "LENNY JOSEPH",
+        "position": "ATT",
+        "dreamTeamName": "Lenny Joseph"
+      },
+      {
+        "name": "FRANTZDY PIERROT",
+        "position": "ATT",
+        "dreamTeamName": "Frantzdy Pierrot"
+      },
+      {
+        "name": "DUCKENS NAZON",
+        "position": "ATT",
+        "dreamTeamName": "Duckens Nazon"
+      },
+      {
+        "name": "YASSIN FORTUNE",
+        "position": "MIL",
+        "dreamTeamName": "Yassin Fortuné"
+      }
+    ]
+  },
+  {
+    "countryId": "IRQ",
+    "players": [
+      {
+        "name": "AHMED BASIL FADHIL",
+        "position": "GB",
+        "dreamTeamName": "Ahmed Basil Fadhil Al Fadhli"
+      },
+      {
+        "name": "FAHAD TALIB",
+        "position": "GB",
+        "dreamTeamName": "Fahad Talib Raheem"
+      },
+      {
+        "name": "JALAL HASSAN",
+        "position": "GB",
+        "dreamTeamName": "Jalal Hassan Hachim"
+      },
+      {
+        "name": "AKAM HASHEM",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ZAID TAHSEEN",
+        "position": "DF",
+        "dreamTeamName": "Zaid Tahseen Abd Zaid Hantoosh"
+      },
+      {
+        "name": "FRANS PUTROS",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MANAF YOUNIS",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "REBIN SULAKA",
+        "position": "DF",
+        "dreamTeamName": "Rebin Ghareeb Sulaka Adhamat"
+      },
+      {
+        "name": "MERCHAS DOSKI",
+        "position": "DF",
+        "dreamTeamName": "Merchas Ghazi Salih Doski"
+      },
+      {
+        "name": "AHMED MAKNZI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HUSSEIN ALI",
+        "position": "DF",
+        "dreamTeamName": "Hussein Haydar Ali"
+      },
+      {
+        "name": "MUSTAFA SAADOON",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AMIR AL-AMMARI",
+        "position": "MIL",
+        "dreamTeamName": "Amir Fouad Abboud Al Ammari"
+      },
+      {
+        "name": "ZAID ISMAIL",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AIMAR SHER",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ZIDANE IQBAL",
+        "position": "MIL",
+        "dreamTeamName": "Zidane Aamar Iqbal"
+      },
+      {
+        "name": "KEVIN YAKOB",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "IBRAHIM BAYESH",
+        "position": "MIL",
+        "dreamTeamName": "Ibrahim Bayesh Kamil Al Kaabawi"
+      },
+      {
+        "name": "MARKO FARJI",
+        "position": "MIL",
+        "dreamTeamName": "Marko Hussein Farji"
+      },
+      {
+        "name": "YOUSSEF AMYN",
+        "position": "MIL",
+        "dreamTeamName": "Youssef Wali Faeq Amyn"
+      },
+      {
+        "name": "ALI JASIM",
+        "position": "MIL",
+        "dreamTeamName": "Ali Jasim Elaibi Al Tameemi"
+      },
+      {
+        "name": "AHMED QASEM",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI AL-HAMADI",
+        "position": "ATT",
+        "dreamTeamName": "Ali Ibrahim Karim Ali Al Hamadi"
+      },
+      {
+        "name": "MOHANAD ALI",
+        "position": "ATT",
+        "dreamTeamName": "Mohanad Ali Kadhim Al Shammari"
+      },
+      {
+        "name": "AYMEN HUSSEIN",
+        "position": "ATT",
+        "dreamTeamName": "Aymen Hussein Ghadhban Al Mafraje"
+      },
+      {
+        "name": "ALI YOUSIF",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "IRN",
+    "players": [
+      {
+        "name": "PAYAM NIAZMAND",
+        "position": "GB",
+        "dreamTeamName": "Payam Niazmand"
+      },
+      {
+        "name": "ALIREZA BEIRANVAND",
+        "position": "GB",
+        "dreamTeamName": "Alireza Beiranvand"
+      },
+      {
+        "name": "SEYED HOSSEIN HOSSEINI",
+        "position": "GB",
+        "dreamTeamName": "Hossein Hosseini"
+      },
+      {
+        "name": "HOSSEIN KANAANI",
+        "position": "DF",
+        "dreamTeamName": "Hossein Kanani"
+      },
+      {
+        "name": "DANIAL EIRI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI NEMATI",
+        "position": "DF",
+        "dreamTeamName": "Ali Nemati"
+      },
+      {
+        "name": "SHOJA KHALILZADEH",
+        "position": "DF",
+        "dreamTeamName": "Shoja Khalilzadeh"
+      },
+      {
+        "name": "MILAD MOHAMMADI",
+        "position": "DF",
+        "dreamTeamName": "Milad Mohammadi"
+      },
+      {
+        "name": "EHSAN HAJSAFI",
+        "position": "DF",
+        "dreamTeamName": "Ehsan Hajisafi"
+      },
+      {
+        "name": "ARYA YOUSEFI",
+        "position": "DF",
+        "dreamTeamName": "Aria Yousefi"
+      },
+      {
+        "name": "SALEH HARDANI",
+        "position": "DF",
+        "dreamTeamName": "Saleh Hardani"
+      },
+      {
+        "name": "RAMIN REZAEIAN",
+        "position": "DF",
+        "dreamTeamName": "Ramin Rezaeian"
+      },
+      {
+        "name": "SAEED EZATOLAHI",
+        "position": "MIL",
+        "dreamTeamName": "Saeid Ezatolahi"
+      },
+      {
+        "name": "MOHAMMAD GHORBANI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ROOZBEH CHESHMI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AMIRMOHAMMAD RAZZAGHINIA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SAMAN GHODDOS",
+        "position": "MIL",
+        "dreamTeamName": "Saman Ghoddos"
+      },
+      {
+        "name": "MEHDI GHAYEDI",
+        "position": "MIL",
+        "dreamTeamName": "Mehdi Ghayedi"
+      },
+      {
+        "name": "MOHAMMAD MOHEBI",
+        "position": "MIL",
+        "dreamTeamName": "Mohammad Mohebbi"
+      },
+      {
+        "name": "MEHDI TORABI",
+        "position": "MIL",
+        "dreamTeamName": "Mehdi Torabi"
+      },
+      {
+        "name": "ALIREZA JAHANBAKHSH",
+        "position": "MIL",
+        "dreamTeamName": "Alireza Jahanbakhsh"
+      },
+      {
+        "name": "AMIRHOSSEIN HOSSEINZADEH",
+        "position": "ATT",
+        "dreamTeamName": "Amirhossein Hosseinzadeh"
+      },
+      {
+        "name": "MEHDI TAREMI",
+        "position": "ATT",
+        "dreamTeamName": "Mehdi Taremi"
+      },
+      {
+        "name": "DENNIS ECKERT AYENSA",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI ALIPOUR",
+        "position": "ATT",
+        "dreamTeamName": "Ali Alipour"
+      },
+      {
+        "name": "SHAHRIAR MOGHANLOU",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "JPN",
+    "players": [
+      {
+        "name": "ZION SUZUKI",
+        "position": "GB",
+        "dreamTeamName": "Zion Suzuki"
+      },
+      {
+        "name": "KEISUKE OSAKO",
+        "position": "GB",
+        "dreamTeamName": "Keisuke Osako"
+      },
+      {
+        "name": "TOMOKI HAYAKAWA",
+        "position": "GB",
+        "dreamTeamName": "Tomoki Hayakawa"
+      },
+      {
+        "name": "HIROKI ITO",
+        "position": "DF",
+        "dreamTeamName": "Hiroki Ito"
+      },
+      {
+        "name": "TSUYOSHI WATANABE",
+        "position": "DF",
+        "dreamTeamName": "Tsuyoshi Watanabe"
+      },
+      {
+        "name": "KO ITAKURA",
+        "position": "DF",
+        "dreamTeamName": "Ko Itakura"
+      },
+      {
+        "name": "AYUMU SEKO",
+        "position": "DF",
+        "dreamTeamName": "Ayumu Seko"
+      },
+      {
+        "name": "TAKEHIRO TOMIYASU",
+        "position": "DF",
+        "dreamTeamName": "Takehiro Tomiyasu"
+      },
+      {
+        "name": "JUNNOSUKE SUZUKI",
+        "position": "DF",
+        "dreamTeamName": "Junnosuke Suzuki"
+      },
+      {
+        "name": "SHOGO TANIGUCHI",
+        "position": "DF",
+        "dreamTeamName": "Shogo Taniguchi"
+      },
+      {
+        "name": "YUTO NAGATOMO",
+        "position": "DF",
+        "dreamTeamName": "Yuto Nagatomo"
+      },
+      {
+        "name": "YUKINARI SUGAWARA",
+        "position": "DF",
+        "dreamTeamName": "Yukinari Sugawara"
+      },
+      {
+        "name": "KAISHU SANO",
+        "position": "MIL",
+        "dreamTeamName": "Kaishu Sano"
+      },
+      {
+        "name": "AO TANAKA",
+        "position": "MIL",
+        "dreamTeamName": "Ao Tanaka"
+      },
+      {
+        "name": "DAICHI KAMADA",
+        "position": "MIL",
+        "dreamTeamName": "Daichi Kamada"
+      },
+      {
+        "name": "DAIZEN MAEDA",
+        "position": "MIL",
+        "dreamTeamName": "Daizen Maeda"
+      },
+      {
+        "name": "KEITO NAKAMURA",
+        "position": "MIL",
+        "dreamTeamName": "Keito Nakamura"
+      },
+      {
+        "name": "TAKEFUSA KUBO",
+        "position": "MIL",
+        "dreamTeamName": "Takefusa Kubo"
+      },
+      {
+        "name": "RITSU DOAN",
+        "position": "MIL",
+        "dreamTeamName": "Ritsu Doan"
+      },
+      {
+        "name": "JUNYA ITO",
+        "position": "MIL",
+        "dreamTeamName": "Junya Ito"
+      },
+      {
+        "name": "YUITO SUZUKI",
+        "position": "MIL",
+        "dreamTeamName": "Yuito Suzuki"
+      },
+      {
+        "name": "AYASE UEDA",
+        "position": "ATT",
+        "dreamTeamName": "Ayase Ueda"
+      },
+      {
+        "name": "KEISUKE GOTO",
+        "position": "ATT",
+        "dreamTeamName": "Keisuke Goto"
+      },
+      {
+        "name": "KENTO SHIOGAI",
+        "position": "ATT",
+        "dreamTeamName": "Kento Shiogai"
+      },
+      {
+        "name": "SHUTO MACHINO",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KOKI OGAWA",
+        "position": "ATT",
+        "dreamTeamName": "Koki Ogawa"
+      }
+    ]
+  },
+  {
+    "countryId": "JOR",
+    "players": [
+      {
+        "name": "YAZEED ABULAILA",
+        "position": "GB",
+        "dreamTeamName": "Yazeed Mo'ien Hasan Abulaila"
+      },
+      {
+        "name": "NOOR BANE ATAYA",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ABDALLAH AL-FAKHOURI",
+        "position": "GB",
+        "dreamTeamName": "Abdallah Ra'ed Mahmoud Al Fakhouri"
+      },
+      {
+        "name": "YAZAN AL-ARAB",
+        "position": "DF",
+        "dreamTeamName": "Yazan Mousa Mahmoud Abu Al Arab"
+      },
+      {
+        "name": "SAED AL-ROUSAN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ABDALLAH NASIB",
+        "position": "DF",
+        "dreamTeamName": "Abdallah Mousa Musallam Nasib"
+      },
+      {
+        "name": "HUSAM ABU DAHAB",
+        "position": "DF",
+        "dreamTeamName": "Husam Ali Mohammad Abu Al Dahab"
+      },
+      {
+        "name": "MOHAMMAD ABUALNADI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SALEEM OBAID",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHANNAD ABU TAHA",
+        "position": "MIL",
+        "dreamTeamName": "Mohannad Mahmoud Saleh Abu Taha"
+      },
+      {
+        "name": "MOHAMMAD ABU HASHEESH",
+        "position": "MIL",
+        "dreamTeamName": "Mohammad Ali Hasan Abu Hasheesh"
+      },
+      {
+        "name": "MOHAMMAD ABU GHOUSH",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "EHSAN HADDAD",
+        "position": "DF",
+        "dreamTeamName": "Ehsan Nabil Farhan Haddad"
+      },
+      {
+        "name": "ANAS BADAWI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "NIZAR AL-RASHDAN",
+        "position": "MIL",
+        "dreamTeamName": "Nizar Mahmoud Ahmed Al Rashdan"
+      },
+      {
+        "name": "AMER JAMOUS",
+        "position": "MIL",
+        "dreamTeamName": "Amer Rasem Adel Jamous"
+      },
+      {
+        "name": "NOOR AL-RAWABDEH",
+        "position": "MIL",
+        "dreamTeamName": "Noor Al Deen Mahmoud Ali Al Rawabdeh"
+      },
+      {
+        "name": "IBRAHIM SAADEH",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RAJAEI AYED",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MOHAMMAD AL-DAWOUD",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ODEH FAKHOURY",
+        "position": "MIL",
+        "dreamTeamName": "Odeh Burhan Shehadeh Fakhoury"
+      },
+      {
+        "name": "MAHMOUD AL-MARDI",
+        "position": "MIL",
+        "dreamTeamName": "Mahmoud Nayef Ahmad Al Mardi"
+      },
+      {
+        "name": "MOUSA TAMARI",
+        "position": "MIL",
+        "dreamTeamName": "Mousa Mohammad Mousa Sulaiman Al Tamari"
+      },
+      {
+        "name": "SHARARH",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI AZAIZEH",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALI OLWAN",
+        "position": "ATT",
+        "dreamTeamName": "Ali Iyad Ali Olwan"
+      }
+    ]
+  },
+  {
+    "countryId": "MOR",
+    "players": [
+      {
+        "name": "YASSINE BOUNOU",
+        "position": "GB",
+        "dreamTeamName": "Yassine Bounou"
+      },
+      {
+        "name": "AHMED REDA TAGNAOUTI",
+        "position": "GB",
+        "dreamTeamName": "Ahmed Reda Tagnaouti"
+      },
+      {
+        "name": "MUNIR EL KAJOUI",
+        "position": "GB",
+        "dreamTeamName": "Munir El Kajoui"
+      },
+      {
+        "name": "CHADI RIAD",
+        "position": "DF",
+        "dreamTeamName": "Chadi Riad"
+      },
+      {
+        "name": "ISSA DIOP",
+        "position": "DF",
+        "dreamTeamName": "Issa Diop"
+      },
+      {
+        "name": "REDOUANE HALHAL",
+        "position": "DF",
+        "dreamTeamName": "Redouane Halhal"
+      },
+      {
+        "name": "MARWANE SAADANE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ANASS SALAH-EDDINE",
+        "position": "DF",
+        "dreamTeamName": "Anass Salah-Eddine"
+      },
+      {
+        "name": "YOUSSEF BELAMMARI",
+        "position": "DF",
+        "dreamTeamName": "Youssef Belammari"
+      },
+      {
+        "name": "ACHRAF HAKIMI",
+        "position": "DF",
+        "dreamTeamName": "Achraf Hakimi"
+      },
+      {
+        "name": "NOUSSAIR MAZRAOUI",
+        "position": "DF",
+        "dreamTeamName": "Noussair Mazraoui"
+      },
+      {
+        "name": "ZAKARIA EL OUAHDI",
+        "position": "DF",
+        "dreamTeamName": "Zakaria El Ouahdi"
+      },
+      {
+        "name": "SOFYAN AMRABAT",
+        "position": "MIL",
+        "dreamTeamName": "Sofyan Amrabat"
+      },
+      {
+        "name": "AYYOUB BOUADDI",
+        "position": "MIL",
+        "dreamTeamName": "Ayyoub Bouaddi"
+      },
+      {
+        "name": "NEIL EL AYNAOUI",
+        "position": "MIL",
+        "dreamTeamName": "Neil El Aynaoui"
+      },
+      {
+        "name": "SAMIR EL MOURABET",
+        "position": "MIL",
+        "dreamTeamName": "Samir El Mourabet"
+      },
+      {
+        "name": "AZZEDINE OUNAHI",
+        "position": "MIL",
+        "dreamTeamName": "Azzedine Ounahi"
+      },
+      {
+        "name": "ISMAEL SAIBARI",
+        "position": "MIL",
+        "dreamTeamName": "Ismael Saibari"
+      },
+      {
+        "name": "BILAL EL KHANNOUSS",
+        "position": "MIL",
+        "dreamTeamName": "Bilal El Khannouss"
+      },
+      {
+        "name": "SOUFIANE RAHIMI",
+        "position": "ATT",
+        "dreamTeamName": "Soufiane Rahimi"
+      },
+      {
+        "name": "AMINE SBAI",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "BRAHIM DIAZ",
+        "position": "MIL",
+        "dreamTeamName": "Brahim Díaz"
+      },
+      {
+        "name": "CHEMSDINE TALBI",
+        "position": "MIL",
+        "dreamTeamName": "Chemsdine Talbi"
+      },
+      {
+        "name": "GESSIME YASSINE",
+        "position": "MIL",
+        "dreamTeamName": "Gessime Yassine"
+      },
+      {
+        "name": "AYOUBE AMAIMOUNI-ECHGHOUYAB",
+        "position": "MIL",
+        "dreamTeamName": "Ayoube Amaimouni-Echghouyab"
+      },
+      {
+        "name": "AYOUB EL KAABI",
+        "position": "ATT",
+        "dreamTeamName": "Ayoub El Kaabi"
+      }
+    ]
+  },
+  {
+    "countryId": "MEX",
+    "players": [
+      {
+        "name": "RAUL RANGEL",
+        "position": "GB",
+        "dreamTeamName": "Raúl Rangel"
+      },
+      {
+        "name": "CARLOS ACEVEDO",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GUILLERMO OCHOA",
+        "position": "GB",
+        "dreamTeamName": "Guillermo Ochoa"
+      },
+      {
+        "name": "JOHAN VASQUEZ",
+        "position": "DF",
+        "dreamTeamName": "Johan Vásquez"
+      },
+      {
+        "name": "CESAR MONTES",
+        "position": "DF",
+        "dreamTeamName": "César Montes"
+      },
+      {
+        "name": "LUIS ROMO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MATEO CHAVEZ",
+        "position": "DF",
+        "dreamTeamName": "Mateo Chávez"
+      },
+      {
+        "name": "JESUS GALLARDO",
+        "position": "DF",
+        "dreamTeamName": "Jesús Gallardo"
+      },
+      {
+        "name": "ISRAEL REYES",
+        "position": "DF",
+        "dreamTeamName": "Israel Reyes"
+      },
+      {
+        "name": "JORGE SANCHEZ",
+        "position": "DF",
+        "dreamTeamName": "Jorge Sánchez"
+      },
+      {
+        "name": "EDSON ALVAREZ",
+        "position": "MIL",
+        "dreamTeamName": "Edson Álvarez"
+      },
+      {
+        "name": "ERIK LIRA",
+        "position": "MIL",
+        "dreamTeamName": "Érik Lira"
+      },
+      {
+        "name": "LUIS CHAVEZ",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "OBED VARGAS",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ORBELIN PINEDA",
+        "position": "MIL",
+        "dreamTeamName": "Orbelín Pineda"
+      },
+      {
+        "name": "ALVARO FIDALGO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GILBERTO MORA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "BRIAN GUTIERREZ",
+        "position": "MIL",
+        "dreamTeamName": "Brian Gutiérrez"
+      },
+      {
+        "name": "ALEXIS VEGA",
+        "position": "MIL",
+        "dreamTeamName": "Alexis Vega"
+      },
+      {
+        "name": "CESAR HUERTA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ROBERTO ALVARADO",
+        "position": "ATT",
+        "dreamTeamName": "Roberto Alvarado"
+      },
+      {
+        "name": "SANTIAGO GIMENEZ",
+        "position": "ATT",
+        "dreamTeamName": "Santiago Giménez"
+      },
+      {
+        "name": "ARMANDO GONZALEZ",
+        "position": "ATT",
+        "dreamTeamName": "Armando González"
+      },
+      {
+        "name": "JULIAN QUINONES",
+        "position": "ATT",
+        "dreamTeamName": "Julián Quiñones"
+      },
+      {
+        "name": "RAUL JIMENEZ",
+        "position": "ATT",
+        "dreamTeamName": "Raúl Jiménez"
+      },
+      {
+        "name": "GUILLERMO MARTINEZ",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "NOR",
+    "players": [
+      {
+        "name": "SANDER TANGVIK",
+        "position": "GB",
+        "dreamTeamName": "Sander Tangvik"
+      },
+      {
+        "name": "EGIL SELVIK",
+        "position": "GB",
+        "dreamTeamName": "Egil Selvik"
+      },
+      {
+        "name": "ORJAN NYLAND",
+        "position": "GB",
+        "dreamTeamName": "Ørjan Nyland"
+      },
+      {
+        "name": "KRISTOFFER AJER",
+        "position": "DF",
+        "dreamTeamName": "Kristoffer Ajer"
+      },
+      {
+        "name": "LEO OSTIGARD",
+        "position": "DF",
+        "dreamTeamName": "Leo Østigård"
+      },
+      {
+        "name": "TORBJORN HEGGEM",
+        "position": "DF",
+        "dreamTeamName": "Torbjørn Heggem"
+      },
+      {
+        "name": "HENRIK FALCHENER",
+        "position": "DF",
+        "dreamTeamName": "Henrik Falchener"
+      },
+      {
+        "name": "SONDRE LANGAS",
+        "position": "DF",
+        "dreamTeamName": "Sondre Langås"
+      },
+      {
+        "name": "DAVID MOLLER WOLFE",
+        "position": "DF",
+        "dreamTeamName": "David Møller Wolfe"
+      },
+      {
+        "name": "FREDRIK BJORKAN",
+        "position": "DF",
+        "dreamTeamName": "Fredrik Bjørkan"
+      },
+      {
+        "name": "JULIAN RYERSON",
+        "position": "DF",
+        "dreamTeamName": "Julian Ryerson"
+      },
+      {
+        "name": "MARCUS PEDERSEN",
+        "position": "DF",
+        "dreamTeamName": "Marcus Pedersen"
+      },
+      {
+        "name": "SANDER BERGE",
+        "position": "MIL",
+        "dreamTeamName": "Sander Berge"
+      },
+      {
+        "name": "PATRICK BERG",
+        "position": "MIL",
+        "dreamTeamName": "Patrick Berg"
+      },
+      {
+        "name": "FREDRIK AURSNES",
+        "position": "MIL",
+        "dreamTeamName": "Fredrik Aursnes"
+      },
+      {
+        "name": "KRISTIAN THORSTVEDT",
+        "position": "MIL",
+        "dreamTeamName": "Kristian Thorstvedt"
+      },
+      {
+        "name": "MORTEN THORSBY",
+        "position": "MIL",
+        "dreamTeamName": "Morten Thorsby"
+      },
+      {
+        "name": "MARTIN ODEGAARD",
+        "position": "MIL",
+        "dreamTeamName": "Martin Ødegaard"
+      },
+      {
+        "name": "THELO AASGAARD",
+        "position": "MIL",
+        "dreamTeamName": "Thelo Aasgaard"
+      },
+      {
+        "name": "ANTONIO NUSA",
+        "position": "MIL",
+        "dreamTeamName": "Antonio Nusa"
+      },
+      {
+        "name": "ANDREAS SCHJELDERUP",
+        "position": "MIL",
+        "dreamTeamName": "Andreas Schjelderup"
+      },
+      {
+        "name": "JENS PETTER HAUGE",
+        "position": "MIL",
+        "dreamTeamName": "Jens Petter Hauge"
+      },
+      {
+        "name": "OSCAR BOBB",
+        "position": "MIL",
+        "dreamTeamName": "Oscar Bobb"
+      },
+      {
+        "name": "ERLING HAALAND",
+        "position": "ATT",
+        "dreamTeamName": "Erling Haaland"
+      },
+      {
+        "name": "JORGEN STRAND LARSEN",
+        "position": "ATT",
+        "dreamTeamName": "Jørgen Strand Larsen"
+      },
+      {
+        "name": "ALEXANDER SORLOTH",
+        "position": "ATT",
+        "dreamTeamName": "Alexander Sørloth"
+      }
+    ]
+  },
+  {
+    "countryId": "NZL",
+    "players": [
+      {
+        "name": "MAX CROCOMBE",
+        "position": "GB",
+        "dreamTeamName": "Max Crocombe"
+      },
+      {
+        "name": "ALEX PAULSEN",
+        "position": "GB",
+        "dreamTeamName": "Alex Paulsen"
+      },
+      {
+        "name": "MICHAEL WOUD",
+        "position": "GB",
+        "dreamTeamName": "Michael Woud"
+      },
+      {
+        "name": "TYLER BINDON",
+        "position": "DF",
+        "dreamTeamName": "Tyler Bindon"
+      },
+      {
+        "name": "FINN SURMAN",
+        "position": "DF",
+        "dreamTeamName": "Finn Surman"
+      },
+      {
+        "name": "NANDO PIJNAKER",
+        "position": "DF",
+        "dreamTeamName": "Nando Pijnaker"
+      },
+      {
+        "name": "MICHAEL BOXALL",
+        "position": "DF",
+        "dreamTeamName": "Michael Boxall"
+      },
+      {
+        "name": "TOMMY SMITH",
+        "position": "DF",
+        "dreamTeamName": "Tommy Smith"
+      },
+      {
+        "name": "LIBERATO CACACE",
+        "position": "DF",
+        "dreamTeamName": "Liberato Cacace"
+      },
+      {
+        "name": "BEN OLD",
+        "position": "MIL",
+        "dreamTeamName": "Ben Old"
+      },
+      {
+        "name": "FRANCIS DE VRIES",
+        "position": "DF",
+        "dreamTeamName": "Francis de Vries"
+      },
+      {
+        "name": "CALLAN ELLIOT",
+        "position": "DF",
+        "dreamTeamName": "Callan Elliot"
+      },
+      {
+        "name": "TIM PAYNE",
+        "position": "DF",
+        "dreamTeamName": "Tim Payne"
+      },
+      {
+        "name": "JOE BELL",
+        "position": "MIL",
+        "dreamTeamName": "Joe Bell"
+      },
+      {
+        "name": "RYAN THOMAS",
+        "position": "MIL",
+        "dreamTeamName": "Ryan Thomas"
+      },
+      {
+        "name": "ALEX RUFER",
+        "position": "MIL",
+        "dreamTeamName": "Alex Rufer"
+      },
+      {
+        "name": "MARKO STAMENIC",
+        "position": "MIL",
+        "dreamTeamName": "Marko Stamenic"
+      },
+      {
+        "name": "LACHLAN BAYLISS",
+        "position": "MIL",
+        "dreamTeamName": "Lachlan Bayliss"
+      },
+      {
+        "name": "MATTHEW GARBETT",
+        "position": "MIL",
+        "dreamTeamName": "Matthew Garbett"
+      },
+      {
+        "name": "CALLUM MCCOWATT",
+        "position": "MIL",
+        "dreamTeamName": "Callum McCowatt"
+      },
+      {
+        "name": "SARPREET SINGH",
+        "position": "MIL",
+        "dreamTeamName": "Sarpreet Singh"
+      },
+      {
+        "name": "JESSE RANDALL",
+        "position": "MIL",
+        "dreamTeamName": "Jesse Randall"
+      },
+      {
+        "name": "ELIJAH JUST",
+        "position": "MIL",
+        "dreamTeamName": "Elijah Just"
+      },
+      {
+        "name": "CHRIS WOOD",
+        "position": "ATT",
+        "dreamTeamName": "Chris Wood"
+      },
+      {
+        "name": "BEN WAINE",
+        "position": "ATT",
+        "dreamTeamName": "Ben Waine"
+      },
+      {
+        "name": "KOSTA BARBAROUSES",
+        "position": "ATT",
+        "dreamTeamName": "Kosta Barbarouses"
+      }
+    ]
+  },
+  {
+    "countryId": "UZB",
+    "players": [
+      {
+        "name": "ABDUVOKHID NEMATOV",
+        "position": "GB",
+        "dreamTeamName": "Abduvokhid Nematov"
+      },
+      {
+        "name": "UTKIR YUSUPOV",
+        "position": "GB",
+        "dreamTeamName": "Utkir Yusupov"
+      },
+      {
+        "name": "BOTIRALI ERGASHEV",
+        "position": "GB",
+        "dreamTeamName": "Botirali Ergashev"
+      },
+      {
+        "name": "ABDUKODIR KHUSANOV",
+        "position": "DF",
+        "dreamTeamName": "Abdukodir Khusanov"
+      },
+      {
+        "name": "RUSTAM ASHURMATOV",
+        "position": "DF",
+        "dreamTeamName": "Rustam Ashurmatov"
+      },
+      {
+        "name": "JAKHONGIR UROZOV",
+        "position": "DF",
+        "dreamTeamName": "Jakhongir Urozov"
+      },
+      {
+        "name": "AVAZBEK ULMASALIEV",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "UMAR ESHMURODOV",
+        "position": "DF",
+        "dreamTeamName": "Umar Eshmurodov"
+      },
+      {
+        "name": "SHERZOD NASRULLAEV",
+        "position": "DF",
+        "dreamTeamName": "Sherzod Nasrullaev"
+      },
+      {
+        "name": "FARRUKH SAYFIEV",
+        "position": "DF",
+        "dreamTeamName": "Farrukh Sayfiev"
+      },
+      {
+        "name": "KHOZHIAKBAR ALIZHONOV",
+        "position": "DF",
+        "dreamTeamName": "Khojiakbar Alijonov"
+      },
+      {
+        "name": "BEKHRUZ KARIMOV",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ODILDZHON KHAMROBEKOV",
+        "position": "MIL",
+        "dreamTeamName": "Odiljon Khamrobekov"
+      },
+      {
+        "name": "ABDULLA ABDULLAEV",
+        "position": "DF",
+        "dreamTeamName": "Abdulla Abdullaev"
+      },
+      {
+        "name": "AZIZ GANIEV",
+        "position": "MIL",
+        "dreamTeamName": "Aziz G'aniev"
+      },
+      {
+        "name": "OTABEK SHUKUROV",
+        "position": "MIL",
+        "dreamTeamName": "Otabek Shukurov"
+      },
+      {
+        "name": "AKMAL MOZGOVOY",
+        "position": "MIL",
+        "dreamTeamName": "Akmal Mozgovoy"
+      },
+      {
+        "name": "SHERZOD ESANOV",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JAMSHID ISKANDEROV",
+        "position": "MIL",
+        "dreamTeamName": "Jamshid Iskanderov"
+      },
+      {
+        "name": "OSTON URUNOV",
+        "position": "MIL",
+        "dreamTeamName": "Oston Urunov"
+      },
+      {
+        "name": "JALOLIDDIN MASHARIPOV",
+        "position": "MIL",
+        "dreamTeamName": "Jaloliddin Masharipov"
+      },
+      {
+        "name": "ABBOSBEK FAYZULLAEV",
+        "position": "MIL",
+        "dreamTeamName": "Abbosbek Fayzullaev"
+      },
+      {
+        "name": "DOSTONBEK KHAMDAMOV",
+        "position": "MIL",
+        "dreamTeamName": "Dostonbek Khamdamov"
+      },
+      {
+        "name": "ELDOR SHOMURODOV",
+        "position": "ATT",
+        "dreamTeamName": "Eldor Shomurodov"
+      },
+      {
+        "name": "IGOR SERGEEV",
+        "position": "ATT",
+        "dreamTeamName": "Igor Sergeev"
+      },
+      {
+        "name": "AZIZBEK AMANOV",
+        "position": "MIL",
+        "dreamTeamName": "Azizbek Amonov"
+      }
+    ]
+  },
+  {
+    "countryId": "PAN",
+    "players": [
+      {
+        "name": "ORLANDO MOSQUERA",
+        "position": "GB",
+        "dreamTeamName": "Orlando Mosquera"
+      },
+      {
+        "name": "CESAR SAMUDIO",
+        "position": "GB",
+        "dreamTeamName": "César Samudio"
+      },
+      {
+        "name": "LUIS MEJIA",
+        "position": "GB",
+        "dreamTeamName": "Luis Mejía"
+      },
+      {
+        "name": "JOSE CORDOBA",
+        "position": "DF",
+        "dreamTeamName": "José Córdoba"
+      },
+      {
+        "name": "ANDRES ANDRADE",
+        "position": "DF",
+        "dreamTeamName": "Andrés Andrade"
+      },
+      {
+        "name": "EDGARDO FARINA",
+        "position": "DF",
+        "dreamTeamName": "Edgardo Fariña"
+      },
+      {
+        "name": "JIOVANY RAMOS",
+        "position": "DF",
+        "dreamTeamName": "Jiovany Ramos"
+      },
+      {
+        "name": "FIDEL ESCOBAR",
+        "position": "DF",
+        "dreamTeamName": "Fidel Escobar"
+      },
+      {
+        "name": "RODERICK MILLER",
+        "position": "DF",
+        "dreamTeamName": "Roderick Miller"
+      },
+      {
+        "name": "JORGE GUTIERREZ",
+        "position": "DF",
+        "dreamTeamName": "Jorge Gutiérrez"
+      },
+      {
+        "name": "ERIC DAVIS",
+        "position": "DF",
+        "dreamTeamName": "Éric Davis"
+      },
+      {
+        "name": "AMIR MURILLO",
+        "position": "DF",
+        "dreamTeamName": "Amir Murillo"
+      },
+      {
+        "name": "CESAR BLACKMAN",
+        "position": "DF",
+        "dreamTeamName": "César Blackman"
+      },
+      {
+        "name": "CRISTIAN MARTINEZ",
+        "position": "MIL",
+        "dreamTeamName": "Cristian Martínez"
+      },
+      {
+        "name": "CARLOS HARVEY",
+        "position": "MIL",
+        "dreamTeamName": "Carlos Harvey"
+      },
+      {
+        "name": "ANIBAL GODOY",
+        "position": "MIL",
+        "dreamTeamName": "Aníbal Godoy"
+      },
+      {
+        "name": "ADALBERTO CARRASQUILLA",
+        "position": "MIL",
+        "dreamTeamName": "Adalberto Carrasquilla"
+      },
+      {
+        "name": "JOSE LUIS RODRIGUEZ",
+        "position": "MIL",
+        "dreamTeamName": "José Luis Rodríguez"
+      },
+      {
+        "name": "ISMAEL DIAZ",
+        "position": "MIL",
+        "dreamTeamName": "Ismael Díaz"
+      },
+      {
+        "name": "YOEL BARCENAS",
+        "position": "MIL",
+        "dreamTeamName": "Yoel Bárcenas"
+      },
+      {
+        "name": "CESAR YANIS",
+        "position": "MIL",
+        "dreamTeamName": "César Yanis"
+      },
+      {
+        "name": "ALBERTO QUINTERO",
+        "position": "MIL",
+        "dreamTeamName": "Alberto Quintero"
+      },
+      {
+        "name": "TOMAS RODRIGUEZ",
+        "position": "ATT",
+        "dreamTeamName": "Tomás Rodríguez"
+      },
+      {
+        "name": "AZARIAS LONDONO",
+        "position": "MIL",
+        "dreamTeamName": "Azarías Londoño"
+      },
+      {
+        "name": "JOSE FAJARDO",
+        "position": "ATT",
+        "dreamTeamName": "José Fajardo"
+      },
+      {
+        "name": "CECILIO WATERMAN",
+        "position": "ATT",
+        "dreamTeamName": "Cecilio Waterman"
+      }
+    ]
+  },
+  {
+    "countryId": "PAR",
+    "players": [
+      {
+        "name": "ORLANDO GILL",
+        "position": "GB",
+        "dreamTeamName": "Orlando Gill"
+      },
+      {
+        "name": "GASTON OLVEIRA",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ROBERTO FERNANDEZ",
+        "position": "GB",
+        "dreamTeamName": "Roberto Fernández"
+      },
+      {
+        "name": "OMAR ALDERETE",
+        "position": "DF",
+        "dreamTeamName": "Omar Alderete"
+      },
+      {
+        "name": "GUSTAVO GOMEZ",
+        "position": "DF",
+        "dreamTeamName": "Gustavo Gómez"
+      },
+      {
+        "name": "JOSE CANALE",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JUNIOR ALONSO",
+        "position": "DF",
+        "dreamTeamName": "Júnior Alonso"
+      },
+      {
+        "name": "FABIAN BALBUENA",
+        "position": "DF",
+        "dreamTeamName": "Fabián Balbuena"
+      },
+      {
+        "name": "GUSTAVO VELAZQUEZ",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALEXANDRO MAIDANA",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JUAN JOSE CACERES",
+        "position": "DF",
+        "dreamTeamName": "Juan José Cáceres"
+      },
+      {
+        "name": "ANDRES CUBAS",
+        "position": "MIL",
+        "dreamTeamName": "Andrés Cubas"
+      },
+      {
+        "name": "BRAIAN OJEDA",
+        "position": "MIL",
+        "dreamTeamName": "Braian Ojeda"
+      },
+      {
+        "name": "DIEGO GOMEZ",
+        "position": "MIL",
+        "dreamTeamName": "Diego Gómez"
+      },
+      {
+        "name": "DAMIAN BOBADILLA",
+        "position": "MIL",
+        "dreamTeamName": "Damián Bobadilla"
+      },
+      {
+        "name": "MATIAS GALARZA",
+        "position": "MIL",
+        "dreamTeamName": "Matías Galarza"
+      },
+      {
+        "name": "JULIO ENCISO",
+        "position": "MIL",
+        "dreamTeamName": "Julio Enciso"
+      },
+      {
+        "name": "MAURICIO",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KAKU",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GUSTAVO CABALLERO",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MIGUEL ALMIRON",
+        "position": "MIL",
+        "dreamTeamName": "Miguel Almirón"
+      },
+      {
+        "name": "RAMON SOSA",
+        "position": "MIL",
+        "dreamTeamName": "Ramón Sosa"
+      },
+      {
+        "name": "ISIDRO PITTA",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALEX ARCE",
+        "position": "ATT",
+        "dreamTeamName": "Álex Arce"
+      },
+      {
+        "name": "ANTONIO SANABRIA",
+        "position": "ATT",
+        "dreamTeamName": "Antonio Sanabria"
+      },
+      {
+        "name": "GABRIEL AVALOS",
+        "position": "ATT",
+        "dreamTeamName": "Gabriel Ávalos"
+      }
+    ]
+  },
+  {
+    "countryId": "NED",
+    "players": [
+      {
+        "name": "BART VERBRUGGEN",
+        "position": "GB",
+        "dreamTeamName": "Bart Verbruggen"
+      },
+      {
+        "name": "ROBIN ROEFS",
+        "position": "GB",
+        "dreamTeamName": "Robin Roefs"
+      },
+      {
+        "name": "MARK FLEKKEN",
+        "position": "GB",
+        "dreamTeamName": "Mark Flekken"
+      },
+      {
+        "name": "MICKY VAN DE VEN",
+        "position": "DF",
+        "dreamTeamName": "Micky van de Ven"
+      },
+      {
+        "name": "JAN PAUL VAN HECKE",
+        "position": "DF",
+        "dreamTeamName": "Jan Paul van Hecke"
+      },
+      {
+        "name": "VIRGIL VAN DIJK",
+        "position": "DF",
+        "dreamTeamName": "Virgil van Dijk"
+      },
+      {
+        "name": "NATHAN AKE",
+        "position": "DF",
+        "dreamTeamName": "Nathan Aké"
+      },
+      {
+        "name": "JORREL HATO",
+        "position": "DF",
+        "dreamTeamName": "Jorrel Hato"
+      },
+      {
+        "name": "MATS WIEFFER",
+        "position": "MIL",
+        "dreamTeamName": "Mats Wieffer"
+      },
+      {
+        "name": "DENZEL DUMFRIES",
+        "position": "DF",
+        "dreamTeamName": "Denzel Dumfries"
+      },
+      {
+        "name": "LUTSHAREL GEERTRUIDA",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RYAN GRAVENBERCH",
+        "position": "MIL",
+        "dreamTeamName": "Ryan Gravenberch"
+      },
+      {
+        "name": "TEUN KOOPMEINERS",
+        "position": "MIL",
+        "dreamTeamName": "Teun Koopmeiners"
+      },
+      {
+        "name": "MARTEN DE ROON",
+        "position": "MIL",
+        "dreamTeamName": "Marten de Roon"
+      },
+      {
+        "name": "TIJJANI REIJNDERS",
+        "position": "MIL",
+        "dreamTeamName": "Tijjani Reijnders"
+      },
+      {
+        "name": "FRENKIE DE JONG",
+        "position": "MIL",
+        "dreamTeamName": "Frenkie de Jong"
+      },
+      {
+        "name": "QUINTEN TIMBER",
+        "position": "MIL",
+        "dreamTeamName": "Quinten Timber"
+      },
+      {
+        "name": "JUSTIN KLUIVERT",
+        "position": "MIL",
+        "dreamTeamName": "Justin Kluivert"
+      },
+      {
+        "name": "GUUS TIL",
+        "position": "MIL",
+        "dreamTeamName": "Guus Til"
+      },
+      {
+        "name": "CODY GAKPO",
+        "position": "MIL",
+        "dreamTeamName": "Cody Gakpo"
+      },
+      {
+        "name": "CRYSENCIO SUMMERVILLE",
+        "position": "MIL",
+        "dreamTeamName": "Crysencio Summerville"
+      },
+      {
+        "name": "NOA LANG",
+        "position": "MIL",
+        "dreamTeamName": "Noa Lang"
+      },
+      {
+        "name": "DONYELL MALEN",
+        "position": "ATT",
+        "dreamTeamName": "Donyell Malen"
+      },
+      {
+        "name": "BRIAN BROBBEY",
+        "position": "ATT",
+        "dreamTeamName": "Brian Brobbey"
+      },
+      {
+        "name": "MEMPHIS DEPAY",
+        "position": "ATT",
+        "dreamTeamName": "Memphis Depay"
+      },
+      {
+        "name": "WOUT WEGHORST",
+        "position": "ATT",
+        "dreamTeamName": "Wout Weghorst"
+      }
+    ]
+  },
+  {
+    "countryId": "POR",
+    "players": [
+      {
+        "name": "DIOGO COSTA",
+        "position": "GB",
+        "dreamTeamName": "Diogo Meireles da Costa"
+      },
+      {
+        "name": "RUI SILVA",
+        "position": "GB",
+        "dreamTeamName": "Rui Tiago Dantas da Silva"
+      },
+      {
+        "name": "JOSE SA",
+        "position": "GB",
+        "dreamTeamName": "José Pedro Malheiro de Sá"
+      },
+      {
+        "name": "RUBEN DIAS",
+        "position": "DF",
+        "dreamTeamName": "Rúben dos Santos Gato Alves Dias"
+      },
+      {
+        "name": "GONCALO INACIO",
+        "position": "DF",
+        "dreamTeamName": "Gonçalo Bernardo Inácio"
+      },
+      {
+        "name": "TOMAS ARAUJO",
+        "position": "DF",
+        "dreamTeamName": "Tomás Lemos Araújo"
+      },
+      {
+        "name": "RENATO VEIGA",
+        "position": "DF",
+        "dreamTeamName": "Renato Palma Veiga"
+      },
+      {
+        "name": "NUNO MENDES",
+        "position": "DF",
+        "dreamTeamName": "Nuno Alexandre Tavares Mendes"
+      },
+      {
+        "name": "MATHEUS NUNES",
+        "position": "DF",
+        "dreamTeamName": "Matheus Luiz Nunes"
+      },
+      {
+        "name": "DIOGO DALOT",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JOAO CANCELO",
+        "position": "DF",
+        "dreamTeamName": "João Pedro Cavaco Cancelo"
+      },
+      {
+        "name": "NELSON SEMEDO",
+        "position": "DF",
+        "dreamTeamName": "Nélson Cabral Semedo"
+      },
+      {
+        "name": "VITINHA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RUBEN NEVES",
+        "position": "MIL",
+        "dreamTeamName": "Rúben Diogo da Silva Neves"
+      },
+      {
+        "name": "SAMU COSTA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JOAO NEVES",
+        "position": "MIL",
+        "dreamTeamName": "João Pedro Gonçalves Neves"
+      },
+      {
+        "name": "FRANCISCO TRINCAO",
+        "position": "MIL",
+        "dreamTeamName": "Francisco António Machado Mota de Castro Trincão"
+      },
+      {
+        "name": "BRUNO FERNANDES",
+        "position": "MIL",
+        "dreamTeamName": "Bruno Miguel Borges Fernandes"
+      },
+      {
+        "name": "BERNARDO SILVA",
+        "position": "MIL",
+        "dreamTeamName": "Bernardo Mota Veiga de Carvalho e Silva"
+      },
+      {
+        "name": "RAFAEL LEAO",
+        "position": "MIL",
+        "dreamTeamName": "Rafael Alexandre da Conceição Leão"
+      },
+      {
+        "name": "GONCALO GUEDES",
+        "position": "MIL",
+        "dreamTeamName": "Gonçalo Manuel Ganchinho Guedes"
+      },
+      {
+        "name": "PEDRO NETO",
+        "position": "MIL",
+        "dreamTeamName": "Pedro Lomba Neto"
+      },
+      {
+        "name": "FRANCISCO CONCEICAO",
+        "position": "MIL",
+        "dreamTeamName": "Francisco Fernandes da Conceição"
+      },
+      {
+        "name": "JOAO FELIX",
+        "position": "MIL",
+        "dreamTeamName": "João Félix Sequeira"
+      },
+      {
+        "name": "GONCALO RAMOS",
+        "position": "ATT",
+        "dreamTeamName": "Gonçalo Matias Ramos"
+      },
+      {
+        "name": "CRISTIANO RONALDO",
+        "position": "ATT",
+        "dreamTeamName": "Cristiano Ronaldo dos Santos Aveiro"
+      }
+    ]
+  },
+  {
+    "countryId": "QAT",
+    "players": [
+      {
+        "name": "MESHAAL BARSHAM",
+        "position": "GB",
+        "dreamTeamName": "Meshaal Aissa Mohammed Barsham"
+      },
+      {
+        "name": "MAHMOUD ABUNADA",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SALAH ZAKARIA",
+        "position": "GB",
+        "dreamTeamName": "Salah Zakaria Mohamed Mousa Hassan"
+      },
+      {
+        "name": "LUCAS MENDES",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AL-HASHMI AL-HUSSAIN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ISSA LAYE",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "BOUALEM KHOUKHI",
+        "position": "DF",
+        "dreamTeamName": "Boualem Khoukhi"
+      },
+      {
+        "name": "PEDRO MIGUEL",
+        "position": "DF",
+        "dreamTeamName": "Pedro Miguel Carvalho Deus Correia"
+      },
+      {
+        "name": "HOMAM AL-AMIN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SULTAN AL-BRAKE",
+        "position": "DF",
+        "dreamTeamName": "Sultan Hussain Mohamad Hussain Al Brake"
+      },
+      {
+        "name": "AYOUB AL-OUI",
+        "position": "DF",
+        "dreamTeamName": "Ayoub Mohamed Al Oui"
+      },
+      {
+        "name": "JASSEM GABER",
+        "position": "MIL",
+        "dreamTeamName": "Jassem Gaber El Sayed Abdulsallam"
+      },
+      {
+        "name": "ASSIM MADIBO",
+        "position": "MIL",
+        "dreamTeamName": "Assim Omer Al Haj Madibo"
+      },
+      {
+        "name": "AHMED FATHI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KARIM BOUDIAF",
+        "position": "MIL",
+        "dreamTeamName": "Karim Boudiaf"
+      },
+      {
+        "name": "MOHAMED MANAI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ABDULAZIZ HATIM",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HASAN AL-HAYDOS",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AKRAM AFIF",
+        "position": "MIL",
+        "dreamTeamName": "Akram Hassan Afif Yahya Afif"
+      },
+      {
+        "name": "EDMILSON JUNIOR",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "YUSUF ABDURISAG",
+        "position": "MIL",
+        "dreamTeamName": "Yusuf Abdurisag Yusuf"
+      },
+      {
+        "name": "TAHSIN MOHAMMED JAMSHID",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "AHMED AL-GANEHI",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALMOEZ ALI",
+        "position": "ATT",
+        "dreamTeamName": "Almoez Ali Zainalabedeen Mohamed Abdulla"
+      },
+      {
+        "name": "AHMED ALAAELDIN",
+        "position": "ATT",
+        "dreamTeamName": "Ahmed Alaaeldin Bader Mohammed Abdelmotaal"
+      },
+      {
+        "name": "MOHAMMED MUNTARI",
+        "position": "ATT",
+        "dreamTeamName": "Mohammed Muntari"
+      }
+    ]
+  },
+  {
+    "countryId": "COD",
+    "players": [
+      {
+        "name": "MATTHIEU EPOLO",
+        "position": "GB",
+        "dreamTeamName": "Matthieu Epolo"
+      },
+      {
+        "name": "TIMOTHY FAYULU",
+        "position": "GB",
+        "dreamTeamName": "Timothy Fayulu"
+      },
+      {
+        "name": "LIONEL MPASI-NZAU",
+        "position": "GB",
+        "dreamTeamName": "Lionel Mpasi"
+      },
+      {
+        "name": "AXEL TUANZEBE",
+        "position": "DF",
+        "dreamTeamName": "Axel Tuanzebe"
+      },
+      {
+        "name": "STEVE KAPUADI",
+        "position": "DF",
+        "dreamTeamName": "Steve Kapuadi"
+      },
+      {
+        "name": "CHANCEL MBEMBA",
+        "position": "DF",
+        "dreamTeamName": "Chancel Mbemba"
+      },
+      {
+        "name": "DYLAN BATUBINSIKA",
+        "position": "DF",
+        "dreamTeamName": "Dylan Batubinsika"
+      },
+      {
+        "name": "JORIS KAYEMBE",
+        "position": "DF",
+        "dreamTeamName": "Joris Kayembe"
+      },
+      {
+        "name": "ARTHUR MASUAKU",
+        "position": "DF",
+        "dreamTeamName": "Arthur Masuaku"
+      },
+      {
+        "name": "AARON WAN-BISSAKA",
+        "position": "DF",
+        "dreamTeamName": "Aaron Wan-Bissaka"
+      },
+      {
+        "name": "GEDEON KALULU",
+        "position": "DF",
+        "dreamTeamName": "Gédéon Kalulu"
+      },
+      {
+        "name": "NGAL'AYEL MUKAU",
+        "position": "MIL",
+        "dreamTeamName": "Ngal'ayel Mukau"
+      },
+      {
+        "name": "CHARLES PICKEL",
+        "position": "MIL",
+        "dreamTeamName": "Charles Pickel"
+      },
+      {
+        "name": "NOAH SADIKI",
+        "position": "MIL",
+        "dreamTeamName": "Noah Sadiki"
+      },
+      {
+        "name": "EDO KAYEMBE",
+        "position": "MIL",
+        "dreamTeamName": "Edo Kayembe"
+      },
+      {
+        "name": "SAMUEL MOUTOUSSAMY",
+        "position": "MIL",
+        "dreamTeamName": "Samuel Moutoussamy"
+      },
+      {
+        "name": "AARON TSHIBOLA",
+        "position": "MIL",
+        "dreamTeamName": "Aaron Tshibola"
+      },
+      {
+        "name": "MESCHACK ELIA",
+        "position": "MIL",
+        "dreamTeamName": "Meschack Elia"
+      },
+      {
+        "name": "GAEL KAKUTA",
+        "position": "MIL",
+        "dreamTeamName": "Gaël Kakuta"
+      },
+      {
+        "name": "NATHANAEL MBUKU",
+        "position": "MIL",
+        "dreamTeamName": "Nathanaël Mbuku"
+      },
+      {
+        "name": "BRIAN CIPENGA",
+        "position": "MIL",
+        "dreamTeamName": "Brian Cipenga"
+      },
+      {
+        "name": "THEO BONGONDA",
+        "position": "MIL",
+        "dreamTeamName": "Théo Bongonda"
+      },
+      {
+        "name": "YOANE WISSA",
+        "position": "ATT",
+        "dreamTeamName": "Yoane Wissa"
+      },
+      {
+        "name": "SIMON BANZA",
+        "position": "ATT",
+        "dreamTeamName": "Simon Banza"
+      },
+      {
+        "name": "FISTON MAYELE",
+        "position": "ATT",
+        "dreamTeamName": "Fiston Mayele"
+      },
+      {
+        "name": "CEDRIC BAKAMBU",
+        "position": "ATT",
+        "dreamTeamName": "Cédric Bakambu"
+      }
+    ]
+  },
+  {
+    "countryId": "CZE",
+    "players": [
+      {
+        "name": "LUKAS HORNICEK",
+        "position": "GB",
+        "dreamTeamName": "Lukás Hornícek"
+      },
+      {
+        "name": "MATEJ KOVAR",
+        "position": "GB",
+        "dreamTeamName": "Matej Kovár"
+      },
+      {
+        "name": "JINDRICH STANEK",
+        "position": "GB",
+        "dreamTeamName": "Jindrich Stanek"
+      },
+      {
+        "name": "LADISLAV KREJCI",
+        "position": "DF",
+        "dreamTeamName": "Ladislav Krejcí"
+      },
+      {
+        "name": "ROBIN HRANAC",
+        "position": "DF",
+        "dreamTeamName": "Robin Hranác"
+      },
+      {
+        "name": "STEPAN CHALOUPEK",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "DAVID ZIMA",
+        "position": "DF",
+        "dreamTeamName": "David Zima"
+      },
+      {
+        "name": "TOMAS HOLES",
+        "position": "DF",
+        "dreamTeamName": "Tomás Holes"
+      },
+      {
+        "name": "JAROSLAV ZELENY",
+        "position": "DF",
+        "dreamTeamName": "Jaroslav Zeleny"
+      },
+      {
+        "name": "DAVID JURASEK",
+        "position": "DF",
+        "dreamTeamName": "David Jurásek"
+      },
+      {
+        "name": "VLADIMIR COUFAL",
+        "position": "DF",
+        "dreamTeamName": "Vladimír Coufal"
+      },
+      {
+        "name": "TOMAS SOUCEK",
+        "position": "MIL",
+        "dreamTeamName": "Tomás Soucek"
+      },
+      {
+        "name": "MICHAL SADILEK",
+        "position": "MIL",
+        "dreamTeamName": "Michal Sadílek"
+      },
+      {
+        "name": "LUKAS CERV",
+        "position": "MIL",
+        "dreamTeamName": "Lukás Cerv"
+      },
+      {
+        "name": "HUGO SOCHUREK",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ALEXANDR SOJKA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "VLADIMIR DARIDA",
+        "position": "MIL",
+        "dreamTeamName": "Vladimír Darida"
+      },
+      {
+        "name": "DAVID DOUDERA",
+        "position": "MIL",
+        "dreamTeamName": "David Doudera"
+      },
+      {
+        "name": "PAVEL SULC",
+        "position": "MIL",
+        "dreamTeamName": "Pavel Sulc"
+      },
+      {
+        "name": "DENIS VISINSKY",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "LUKAS PROVOD",
+        "position": "MIL",
+        "dreamTeamName": "Lukás Provod"
+      },
+      {
+        "name": "PATRIK SCHICK",
+        "position": "ATT",
+        "dreamTeamName": "Patrik Schick"
+      },
+      {
+        "name": "ADAM HLOZEK",
+        "position": "MIL",
+        "dreamTeamName": "Adam Hlozek"
+      },
+      {
+        "name": "MOJMIR CHYTIL",
+        "position": "ATT",
+        "dreamTeamName": "Mojmír Chytil"
+      },
+      {
+        "name": "JAN KUCHTA",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "TOMAS CHORY",
+        "position": "ATT",
+        "dreamTeamName": "Tomás Chory"
+      }
+    ]
+  },
+  {
+    "countryId": "SEN",
+    "players": [
+      {
+        "name": "YEHVANN DIOUF",
+        "position": "GB",
+        "dreamTeamName": "Yehvann Diouf"
+      },
+      {
+        "name": "EDOUARD MENDY",
+        "position": "GB",
+        "dreamTeamName": "Édouard Mendy"
+      },
+      {
+        "name": "MORY DIAW",
+        "position": "GB",
+        "dreamTeamName": "Mory Diaw"
+      },
+      {
+        "name": "MAMADOU SARR",
+        "position": "DF",
+        "dreamTeamName": "Mamadou Sarr"
+      },
+      {
+        "name": "MOUSSA NIAKHATE",
+        "position": "DF",
+        "dreamTeamName": "Moussa Niakhaté"
+      },
+      {
+        "name": "ANTOINE MENDY",
+        "position": "DF",
+        "dreamTeamName": "Antoine Mendy"
+      },
+      {
+        "name": "KALIDOU KOULIBALY",
+        "position": "DF",
+        "dreamTeamName": "Kalidou Koulibaly"
+      },
+      {
+        "name": "ABDOULAYE SECK",
+        "position": "DF",
+        "dreamTeamName": "Abdoulaye Seck"
+      },
+      {
+        "name": "EL HADJI MALICK DIOUF",
+        "position": "DF",
+        "dreamTeamName": "El Hadji Malick Diouf"
+      },
+      {
+        "name": "ISMAIL JAKOBS",
+        "position": "DF",
+        "dreamTeamName": "Ismail Jakobs"
+      },
+      {
+        "name": "IDRISSA GUEYE",
+        "position": "MIL",
+        "dreamTeamName": "Idrissa Gueye"
+      },
+      {
+        "name": "LAMINE CAMARA",
+        "position": "MIL",
+        "dreamTeamName": "Lamine Camara"
+      },
+      {
+        "name": "PAPE GUEYE",
+        "position": "MIL",
+        "dreamTeamName": "Pape Gueye"
+      },
+      {
+        "name": "HABIB DIARRA",
+        "position": "MIL",
+        "dreamTeamName": "Habib Diarra"
+      },
+      {
+        "name": "PAPE MATAR SARR",
+        "position": "MIL",
+        "dreamTeamName": "Pape Matar Sarr"
+      },
+      {
+        "name": "BARA SAPOKO NDIAYE",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "PATHE CISS",
+        "position": "MIL",
+        "dreamTeamName": "Pathé Ciss"
+      },
+      {
+        "name": "KREPIN DIATTA",
+        "position": "DF",
+        "dreamTeamName": "Krépin Diatta"
+      },
+      {
+        "name": "ASSANE DIAO",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SADIO MANE",
+        "position": "MIL",
+        "dreamTeamName": "Sadio Mané"
+      },
+      {
+        "name": "ILIMAN NDIAYE",
+        "position": "MIL",
+        "dreamTeamName": "Iliman Ndiaye"
+      },
+      {
+        "name": "ISMAILA SARR",
+        "position": "MIL",
+        "dreamTeamName": "Ismaïla Sarr"
+      },
+      {
+        "name": "IBRAHIM MBAYE",
+        "position": "MIL",
+        "dreamTeamName": "Ibrahim Mbaye"
+      },
+      {
+        "name": "NICOLAS JACKSON",
+        "position": "ATT",
+        "dreamTeamName": "Nicolas Jackson"
+      },
+      {
+        "name": "BAMBA DIENG",
+        "position": "ATT",
+        "dreamTeamName": "Bamba Dieng"
+      },
+      {
+        "name": "CHERIF NDIAYE",
+        "position": "ATT",
+        "dreamTeamName": "Cherif Ndiaye"
+      }
+    ]
+  },
+  {
+    "countryId": "SWE",
+    "players": [
+      {
+        "name": "VIKTOR JOHANSSON",
+        "position": "GB",
+        "dreamTeamName": "Viktor Johansson"
+      },
+      {
+        "name": "JACOB WIDELL ZETTERSTROM",
+        "position": "GB",
+        "dreamTeamName": "Jacob Widell Zetterström"
+      },
+      {
+        "name": "KRISTOFFER NORDFELDT",
+        "position": "GB",
+        "dreamTeamName": "Kristoffer Nordfeldt"
+      },
+      {
+        "name": "ISAK HIEN",
+        "position": "DF",
+        "dreamTeamName": "Isak Hien"
+      },
+      {
+        "name": "GUSTAF LAGERBIELKE",
+        "position": "DF",
+        "dreamTeamName": "Gustaf Lagerbielke"
+      },
+      {
+        "name": "VICTOR LINDELOF",
+        "position": "DF",
+        "dreamTeamName": "Victor Lindelöf"
+      },
+      {
+        "name": "HJALMAR EKDAL",
+        "position": "DF",
+        "dreamTeamName": "Hjalmar Ekdal"
+      },
+      {
+        "name": "ERIC SMITH",
+        "position": "DF",
+        "dreamTeamName": "Eric Smith"
+      },
+      {
+        "name": "CARL STARFELT",
+        "position": "DF",
+        "dreamTeamName": "Carl Starfelt"
+      },
+      {
+        "name": "DANIEL SVENSSON",
+        "position": "DF",
+        "dreamTeamName": "Daniel Svensson"
+      },
+      {
+        "name": "GABRIEL GUDMUNDSSON",
+        "position": "DF",
+        "dreamTeamName": "Gabriel Gudmundsson"
+      },
+      {
+        "name": "KEN SEMA",
+        "position": "MIL",
+        "dreamTeamName": "Ken Sema"
+      },
+      {
+        "name": "JESPER KARLSTROM",
+        "position": "MIL",
+        "dreamTeamName": "Jesper Karlström"
+      },
+      {
+        "name": "LUCAS BERGVALL",
+        "position": "MIL",
+        "dreamTeamName": "Lucas Bergvall"
+      },
+      {
+        "name": "YASIN AYARI",
+        "position": "MIL",
+        "dreamTeamName": "Yasin Ayari"
+      },
+      {
+        "name": "MATTIAS SVANBERG",
+        "position": "MIL",
+        "dreamTeamName": "Mattias Svanberg"
+      },
+      {
+        "name": "BESFORT ZENELI",
+        "position": "MIL",
+        "dreamTeamName": "Besfort Zeneli"
+      },
+      {
+        "name": "HERMAN JOHANSSON",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ELLIOT STROUD",
+        "position": "DF",
+        "dreamTeamName": "Elliot Stroud"
+      },
+      {
+        "name": "BENJAMIN NYGREN",
+        "position": "ATT",
+        "dreamTeamName": "Benjamin Nygren"
+      },
+      {
+        "name": "TAHA ALI",
+        "position": "MIL",
+        "dreamTeamName": "Taha Ali"
+      },
+      {
+        "name": "ANTHONY ELANGA",
+        "position": "MIL",
+        "dreamTeamName": "Anthony Elanga"
+      },
+      {
+        "name": "ALEXANDER BERNHARDSSON",
+        "position": "MIL",
+        "dreamTeamName": "Alexander Bernhardsson"
+      },
+      {
+        "name": "ALEXANDER ISAK",
+        "position": "ATT",
+        "dreamTeamName": "Alexander Isak"
+      },
+      {
+        "name": "VIKTOR GYOKERES",
+        "position": "ATT",
+        "dreamTeamName": "Viktor Gyökeres"
+      },
+      {
+        "name": "GUSTAF NILSSON",
+        "position": "ATT",
+        "dreamTeamName": "Gustaf Nilsson"
+      }
+    ]
+  },
+  {
+    "countryId": "SWI",
+    "players": [
+      {
+        "name": "GREGOR KOBEL",
+        "position": "GB",
+        "dreamTeamName": "Gregor Kobel"
+      },
+      {
+        "name": "MARVIN KELLER",
+        "position": "GB",
+        "dreamTeamName": "Marvin Keller"
+      },
+      {
+        "name": "YVON MVOGO",
+        "position": "GB",
+        "dreamTeamName": "Yvon Mvogo"
+      },
+      {
+        "name": "MANUEL AKANJI",
+        "position": "DF",
+        "dreamTeamName": "Manuel Akanji"
+      },
+      {
+        "name": "AURELE AMENDA",
+        "position": "DF",
+        "dreamTeamName": "Aurèle Amenda"
+      },
+      {
+        "name": "LUCA JAQUEZ",
+        "position": "DF",
+        "dreamTeamName": "Luca Jaquez"
+      },
+      {
+        "name": "NICO ELVEDI",
+        "position": "DF",
+        "dreamTeamName": "Nico Elvedi"
+      },
+      {
+        "name": "ERAY COMERT",
+        "position": "DF",
+        "dreamTeamName": "Eray Cömert"
+      },
+      {
+        "name": "MIRO MUHEIM",
+        "position": "DF",
+        "dreamTeamName": "Miro Muheim"
+      },
+      {
+        "name": "RICARDO RODRIGUEZ",
+        "position": "DF",
+        "dreamTeamName": "Ricardo Rodríguez"
+      },
+      {
+        "name": "SILVAN WIDMER",
+        "position": "DF",
+        "dreamTeamName": "Silvan Widmer"
+      },
+      {
+        "name": "DENIS ZAKARIA",
+        "position": "MIL",
+        "dreamTeamName": "Denis Zakaria"
+      },
+      {
+        "name": "ARDON JASHARI",
+        "position": "MIL",
+        "dreamTeamName": "Ardon Jashari"
+      },
+      {
+        "name": "GRANIT XHAKA",
+        "position": "MIL",
+        "dreamTeamName": "Granit Xhaka"
+      },
+      {
+        "name": "JOHAN MANZAMBI",
+        "position": "MIL",
+        "dreamTeamName": "Johan Manzambi"
+      },
+      {
+        "name": "DJIBRIL SOW",
+        "position": "MIL",
+        "dreamTeamName": "Djibril Sow"
+      },
+      {
+        "name": "MICHEL AEBISCHER",
+        "position": "MIL",
+        "dreamTeamName": "Michel Aebischer"
+      },
+      {
+        "name": "REMO FREULER",
+        "position": "MIL",
+        "dreamTeamName": "Remo Freuler"
+      },
+      {
+        "name": "FABIAN RIEDER",
+        "position": "MIL",
+        "dreamTeamName": "Fabian Rieder"
+      },
+      {
+        "name": "CHRISTIAN FASSNACHT",
+        "position": "MIL",
+        "dreamTeamName": "Christian Fassnacht"
+      },
+      {
+        "name": "NOAH OKAFOR",
+        "position": "ATT",
+        "dreamTeamName": "Noah Okafor"
+      },
+      {
+        "name": "RUBEN VARGAS",
+        "position": "MIL",
+        "dreamTeamName": "Rubén Vargas"
+      },
+      {
+        "name": "DAN NDOYE",
+        "position": "MIL",
+        "dreamTeamName": "Dan Ndoye"
+      },
+      {
+        "name": "BREEL EMBOLO",
+        "position": "ATT",
+        "dreamTeamName": "Breel Embolo"
+      },
+      {
+        "name": "ZEKI AMDOUNI",
+        "position": "ATT",
+        "dreamTeamName": "Zeki Amdouni"
+      },
+      {
+        "name": "CEDRIC ITTEN",
+        "position": "ATT",
+        "dreamTeamName": "Cedric Itten"
+      }
+    ]
+  },
+  {
+    "countryId": "TUN",
+    "players": [
+      {
+        "name": "ABDELMOUHIB CHAMAKH",
+        "position": "GB",
+        "dreamTeamName": "Abdelmouhib Chamakh"
+      },
+      {
+        "name": "AYMEN DAHMEN",
+        "position": "GB",
+        "dreamTeamName": "Aymen Dahmen"
+      },
+      {
+        "name": "SABRI BEN HESSEN",
+        "position": "GB",
+        "dreamTeamName": "Sabri Ben Hessen"
+      },
+      {
+        "name": "MONTASSAR TALBI",
+        "position": "DF",
+        "dreamTeamName": "Montassar Talbi"
+      },
+      {
+        "name": "ADEM AROUS",
+        "position": "DF",
+        "dreamTeamName": "Adem Arous"
+      },
+      {
+        "name": "DYLAN BRONN",
+        "position": "DF",
+        "dreamTeamName": "Dylan Bronn"
+      },
+      {
+        "name": "RAED CHIKHAOUI",
+        "position": "DF",
+        "dreamTeamName": "Raed Chikhaoui"
+      },
+      {
+        "name": "OMAR REKIK",
+        "position": "DF",
+        "dreamTeamName": "Omar Rekik"
+      },
+      {
+        "name": "ALI ABDI",
+        "position": "DF",
+        "dreamTeamName": "Ali Abdi"
+      },
+      {
+        "name": "MOHAMED AMINE BEN HAMIDA",
+        "position": "DF",
+        "dreamTeamName": "Mohamed Amine Ben Hmida"
+      },
+      {
+        "name": "YAN VALERY",
+        "position": "DF",
+        "dreamTeamName": "Yan Valery"
+      },
+      {
+        "name": "MOUTAZ NEFFATI",
+        "position": "DF",
+        "dreamTeamName": "Moutaz Neffati"
+      },
+      {
+        "name": "ELLYES SKHIRI",
+        "position": "MIL",
+        "dreamTeamName": "Ellyes Skhiri"
+      },
+      {
+        "name": "RANI KHEDIRA",
+        "position": "MIL",
+        "dreamTeamName": "Rani Khedira"
+      },
+      {
+        "name": "ANIS BEN SLIMANE",
+        "position": "MIL",
+        "dreamTeamName": "Anis Ben Slimane"
+      },
+      {
+        "name": "MOHAMED BELHADJ MAHMOUD",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "HANNIBAL",
+        "position": "MIL",
+        "dreamTeamName": "Hannibal Mejbri"
+      },
+      {
+        "name": "ISMAEL GHARBI",
+        "position": "MIL",
+        "dreamTeamName": "Ismaël Gharbi"
+      },
+      {
+        "name": "SEBASTIAN TOUNEKTI",
+        "position": "MIL",
+        "dreamTeamName": "Sebastian Tounekti"
+      },
+      {
+        "name": "ELIAS ACHOURI",
+        "position": "MIL",
+        "dreamTeamName": "Elias Achouri"
+      },
+      {
+        "name": "ELIAS SAAD",
+        "position": "MIL",
+        "dreamTeamName": "Elias Saad"
+      },
+      {
+        "name": "MORTADHA BEN OUANES",
+        "position": "MIL",
+        "dreamTeamName": "Mortadha Ben Ouanes"
+      },
+      {
+        "name": "KHALIL AYARI",
+        "position": "MIL",
+        "dreamTeamName": "Khalil Ayari"
+      },
+      {
+        "name": "FIRAS CHAOUAT",
+        "position": "ATT",
+        "dreamTeamName": "Firas Chaouat"
+      },
+      {
+        "name": "HAZEM MASTOURI",
+        "position": "ATT",
+        "dreamTeamName": "Hazem Mastouri"
+      },
+      {
+        "name": "RAYAN ELLOUMI",
+        "position": "ATT",
+        "dreamTeamName": "Rayan Elloumi"
+      }
+    ]
+  },
+  {
+    "countryId": "TUR",
+    "players": [
+      {
+        "name": "UGURCAN CAKIR",
+        "position": "GB",
+        "dreamTeamName": "Ugurcan Çakir"
+      },
+      {
+        "name": "ALTAY BAYINDIR",
+        "position": "GB",
+        "dreamTeamName": "Altay Bayindir"
+      },
+      {
+        "name": "MERT GUNOK",
+        "position": "GB",
+        "dreamTeamName": "Mert Günok"
+      },
+      {
+        "name": "OZAN KABAK",
+        "position": "DF",
+        "dreamTeamName": "Ozan Kabak"
+      },
+      {
+        "name": "MERIH DEMIRAL",
+        "position": "DF",
+        "dreamTeamName": "Merih Demiral"
+      },
+      {
+        "name": "ABDULKERIM BARDAKCI",
+        "position": "DF",
+        "dreamTeamName": "Abdülkerim Bardakci"
+      },
+      {
+        "name": "CAGLAR SOYUNCU",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "SAMET AKAYDIN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FERDI KADIOGLU",
+        "position": "DF",
+        "dreamTeamName": "Ferdi Kadioglu"
+      },
+      {
+        "name": "EREN ELMALI",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ZEKI CELIK",
+        "position": "DF",
+        "dreamTeamName": "Zeki Çelik"
+      },
+      {
+        "name": "MERT MULDUR",
+        "position": "DF",
+        "dreamTeamName": "Mert Müldür"
+      },
+      {
+        "name": "HAKAN CALHANOGLU",
+        "position": "MIL",
+        "dreamTeamName": "Hakan Çalhanoglu"
+      },
+      {
+        "name": "ISMAIL YUKSEK",
+        "position": "MIL",
+        "dreamTeamName": "Ismail Yüksek"
+      },
+      {
+        "name": "SALIH OZCAN",
+        "position": "MIL",
+        "dreamTeamName": "Salih Özcan"
+      },
+      {
+        "name": "KAAN AYHAN",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "ORKUN KOKCU",
+        "position": "MIL",
+        "dreamTeamName": "Orkun Kökçü"
+      },
+      {
+        "name": "ARDA GULER",
+        "position": "MIL",
+        "dreamTeamName": "Arda Güler"
+      },
+      {
+        "name": "CAN UZUN",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "KENAN YILDIZ",
+        "position": "MIL",
+        "dreamTeamName": "Kenan Yildiz"
+      },
+      {
+        "name": "BARIS ALPER YILMAZ",
+        "position": "MIL",
+        "dreamTeamName": "Baris Alper Yilmaz"
+      },
+      {
+        "name": "KEREM AKTURKOGLU",
+        "position": "ATT",
+        "dreamTeamName": "Kerem Aktürkoglu"
+      },
+      {
+        "name": "YUNUS AKGUN",
+        "position": "MIL",
+        "dreamTeamName": "Yunus Akgün"
+      },
+      {
+        "name": "OGUZ AYDIN",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "IRFAN CAN KAHVECI",
+        "position": "MIL",
+        "dreamTeamName": "Irfan Can Kahveci"
+      },
+      {
+        "name": "DENIZ GUL",
+        "position": "ATT",
+        "dreamTeamName": null
+      }
+    ]
+  },
+  {
+    "countryId": "URU",
+    "players": [
+      {
+        "name": "SANTIAGO MELE",
+        "position": "GB",
+        "dreamTeamName": "Santiago Mele"
+      },
+      {
+        "name": "SERGIO ROCHET",
+        "position": "GB",
+        "dreamTeamName": "Sergio Rochet"
+      },
+      {
+        "name": "FERNANDO MUSLERA",
+        "position": "GB",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RONALD ARAUJO",
+        "position": "DF",
+        "dreamTeamName": "Ronald Araujo"
+      },
+      {
+        "name": "SANTIAGO BUENO",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JOSE MARIA GIMENEZ",
+        "position": "DF",
+        "dreamTeamName": "José María Giménez"
+      },
+      {
+        "name": "SEBASTIAN CACERES",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MAXI ARAUJO",
+        "position": "MIL",
+        "dreamTeamName": "Maxi Araújo"
+      },
+      {
+        "name": "MATHIAS OLIVERA",
+        "position": "DF",
+        "dreamTeamName": "Mathías Olivera"
+      },
+      {
+        "name": "JOAQUIN PIQUEREZ",
+        "position": "DF",
+        "dreamTeamName": null
+      },
+      {
+        "name": "JUAN MANUEL SANABRIA",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "MATIAS VINA",
+        "position": "DF",
+        "dreamTeamName": "Matías Viña"
+      },
+      {
+        "name": "GUILLERMO VARELA",
+        "position": "DF",
+        "dreamTeamName": "Guillermo Varela"
+      },
+      {
+        "name": "MANUEL UGARTE",
+        "position": "MIL",
+        "dreamTeamName": "Manuel Ugarte"
+      },
+      {
+        "name": "RODRIGO BENTANCUR",
+        "position": "MIL",
+        "dreamTeamName": "Rodrigo Bentancur"
+      },
+      {
+        "name": "EMILIANO MARTINEZ",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "FEDERICO VALVERDE",
+        "position": "MIL",
+        "dreamTeamName": "Federico Valverde"
+      },
+      {
+        "name": "NICOLAS DE LA CRUZ",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "RODRIGO ZALAZAR",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "GIORGIAN DE ARRASCAETA",
+        "position": "MIL",
+        "dreamTeamName": "Giorgian de Arrascaeta"
+      },
+      {
+        "name": "AGUSTIN CANOBBIO",
+        "position": "ATT",
+        "dreamTeamName": null
+      },
+      {
+        "name": "BRIAN RODRIGUEZ",
+        "position": "MIL",
+        "dreamTeamName": "Brian Rodríguez"
+      },
+      {
+        "name": "FACUNDO PELLISTRI",
+        "position": "MIL",
+        "dreamTeamName": null
+      },
+      {
+        "name": "DARWIN NUNEZ",
+        "position": "ATT",
+        "dreamTeamName": "Darwin Núñez"
+      },
+      {
+        "name": "FEDERICO VINAS",
+        "position": "ATT",
+        "dreamTeamName": "Federico Viñas"
+      },
+      {
+        "name": "RODRIGO AGUIRRE",
+        "position": "ATT",
+        "dreamTeamName": "Rodrigo Aguirre"
+      }
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "RSA",
+    "name": "Afrique du Sud",
+    "flag": "assets/flags/RSA.png",
+    "shirt": "assets/shirts/RSA.png",
+    "transfermarkt": "https://www.transfermarkt.fr/sudafrika/startseite/verein/3806/saison_id/2026"
+  },
+  {
+    "id": "ALG",
+    "name": "Algérie",
+    "flag": "assets/flags/ALG.png",
+    "shirt": "assets/shirts/ALG.png",
+    "transfermarkt": "https://www.transfermarkt.fr/algerien/startseite/verein/3614/saison_id/2026"
+  },
+  {
+    "id": "GER",
+    "name": "Allemagne",
+    "flag": "assets/flags/GER.png",
+    "shirt": "assets/shirts/GER.png",
+    "transfermarkt": "https://www.transfermarkt.fr/deutschland/startseite/verein/3262/saison_id/2026"
+  },
+  {
+    "id": "ENG",
+    "name": "Angleterre",
+    "flag": "assets/flags/ENG.png",
+    "shirt": "assets/shirts/ENG.png",
+    "transfermarkt": "https://www.transfermarkt.fr/england/startseite/verein/3299/saison_id/2026"
+  },
+  {
+    "id": "KSA",
+    "name": "Arabie saoudite",
+    "flag": "assets/flags/KSA.png",
+    "shirt": "assets/shirts/KSA.png",
+    "transfermarkt": "https://www.transfermarkt.fr/saudi-arabien/startseite/verein/3807/saison_id/2026"
+  },
+  {
+    "id": "ARG",
+    "name": "Argentine",
+    "flag": "assets/flags/ARG.png",
+    "shirt": "assets/shirts/ARG.png",
+    "transfermarkt": "https://www.transfermarkt.fr/argentinien/startseite/verein/3437/saison_id/2026"
+  },
+  {
+    "id": "AUS",
+    "name": "Australie",
+    "flag": "assets/flags/AUS.png",
+    "shirt": "assets/shirts/AUS.png",
+    "transfermarkt": "https://www.transfermarkt.fr/australien/startseite/verein/3433/saison_id/2026"
+  },
+  {
+    "id": "AUT",
+    "name": "Autriche",
+    "flag": "assets/flags/AUT.png",
+    "shirt": "assets/shirts/AUT.png",
+    "transfermarkt": "https://www.transfermarkt.fr/osterreich/startseite/verein/3383/saison_id/2026"
+  },
+  {
+    "id": "BEL",
+    "name": "Belgique",
+    "flag": "assets/flags/BEL.png",
+    "shirt": "assets/shirts/BEL.png",
+    "transfermarkt": "https://www.transfermarkt.fr/belgien/startseite/verein/3382/saison_id/2026"
+  },
+  {
+    "id": "BOS",
+    "name": "Bosnie-Herzégovine",
+    "flag": "assets/flags/BOS.png",
+    "shirt": "assets/shirts/BOS.png",
+    "transfermarkt": "https://www.transfermarkt.fr/bosnien-herzegowina/startseite/verein/3446/saison_id/2026"
+  },
+  {
+    "id": "BRA",
+    "name": "Brésil",
+    "flag": "assets/flags/BRA.png",
+    "shirt": "assets/shirts/BRA.png",
+    "transfermarkt": "https://www.transfermarkt.fr/brasilien/startseite/verein/3439/saison_id/2026"
+  },
+  {
+    "id": "CAN",
+    "name": "Canada",
+    "flag": "assets/flags/CAN.png",
+    "shirt": "assets/shirts/CAN.png",
+    "transfermarkt": "https://www.transfermarkt.fr/kanada/startseite/verein/3510/saison_id/2026"
+  },
+  {
+    "id": "CPV",
+    "name": "Cap-Vert",
+    "flag": "assets/flags/CPV.png",
+    "shirt": "assets/shirts/CPV.png",
+    "transfermarkt": "https://www.transfermarkt.fr/kap-verde/startseite/verein/4311/saison_id/2026"
+  },
+  {
+    "id": "COL",
+    "name": "Colombie",
+    "flag": "assets/flags/COL.png",
+    "shirt": "assets/shirts/COL.png",
+    "transfermarkt": "https://www.transfermarkt.fr/kolumbien/startseite/verein/3816/saison_id/2026"
+  },
+  {
+    "id": "KOR",
+    "name": "Corée du Sud",
+    "flag": "assets/flags/KOR.png",
+    "shirt": "assets/shirts/KOR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/sudkorea/startseite/verein/3589/saison_id/2026"
+  },
+  {
+    "id": "CIV",
+    "name": "Côte d’Ivoire",
+    "flag": "assets/flags/CIV.png",
+    "shirt": "assets/shirts/CIV.png",
+    "transfermarkt": "https://www.transfermarkt.fr/elfenbeinkuste/startseite/verein/3591/saison_id/2026"
+  },
+  {
+    "id": "CRO",
+    "name": "Croatie",
+    "flag": "assets/flags/CRO.png",
+    "shirt": "assets/shirts/CRO.png",
+    "transfermarkt": "https://www.transfermarkt.fr/kroatien/startseite/verein/3556/saison_id/2026"
+  },
+  {
+    "id": "CUW",
+    "name": "Curaçao",
+    "flag": "assets/flags/CUW.png",
+    "shirt": "assets/shirts/CUW.png",
+    "transfermarkt": "https://www.transfermarkt.fr/curacao/startseite/verein/32364/saison_id/2026"
+  },
+  {
+    "id": "EGY",
+    "name": "Égypte",
+    "flag": "assets/flags/EGY.png",
+    "shirt": "assets/shirts/EGY.png",
+    "transfermarkt": "https://www.transfermarkt.fr/agypten/startseite/verein/3672/saison_id/2026"
+  },
+  {
+    "id": "ECU",
+    "name": "Équateur",
+    "flag": "assets/flags/ECU.png",
+    "shirt": "assets/shirts/ECU.png",
+    "transfermarkt": "https://www.transfermarkt.fr/ecuador/startseite/verein/5750/saison_id/2026"
+  },
+  {
+    "id": "SCO",
+    "name": "Écosse",
+    "flag": "assets/flags/SCO.png",
+    "shirt": "assets/shirts/SCO.png",
+    "transfermarkt": "https://www.transfermarkt.fr/schottland/startseite/verein/3380/saison_id/2026"
+  },
+  {
+    "id": "ESP",
+    "name": "Espagne",
+    "flag": "assets/flags/ESP.png",
+    "shirt": "assets/shirts/ESP.png",
+    "transfermarkt": "https://www.transfermarkt.fr/spanien/startseite/verein/3375/saison_id/2026"
+  },
+  {
+    "id": "USA",
+    "name": "États-Unis",
+    "flag": "assets/flags/USA.png",
+    "shirt": "assets/shirts/USA.png",
+    "transfermarkt": "https://www.transfermarkt.fr/vereinigte-staaten/startseite/verein/3505/saison_id/2026"
+  },
+  {
+    "id": "FRA",
+    "name": "France",
+    "flag": "assets/flags/FRA.png",
+    "shirt": "assets/shirts/FRA.png",
+    "transfermarkt": "https://www.transfermarkt.fr/frankreich/startseite/verein/3377/saison_id/2026"
+  },
+  {
+    "id": "GHA",
+    "name": "Ghana",
+    "flag": "assets/flags/GHA.png",
+    "shirt": "assets/shirts/GHA.png",
+    "transfermarkt": "https://www.transfermarkt.fr/ghana/startseite/verein/3441/saison_id/2026"
+  },
+  {
+    "id": "HAI",
+    "name": "Haïti",
+    "flag": "assets/flags/HAI.png",
+    "shirt": "assets/shirts/HAI.png",
+    "transfermarkt": "https://www.transfermarkt.fr/haiti/startseite/verein/14161/saison_id/2026"
+  },
+  {
+    "id": "IRQ",
+    "name": "Irak",
+    "flag": "assets/flags/IRQ.png",
+    "shirt": "assets/shirts/IRQ.png",
+    "transfermarkt": "https://www.transfermarkt.fr/irak/startseite/verein/3560/saison_id/2026"
+  },
+  {
+    "id": "IRN",
+    "name": "Iran",
+    "flag": "assets/flags/IRN.png",
+    "shirt": "assets/shirts/IRN.png",
+    "transfermarkt": "https://www.transfermarkt.fr/iran/startseite/verein/3582/saison_id/2026"
+  },
+  {
+    "id": "JPN",
+    "name": "Japon",
+    "flag": "assets/flags/JPN.png",
+    "shirt": "assets/shirts/JPN.png",
+    "transfermarkt": "https://www.transfermarkt.fr/japan/startseite/verein/3435/saison_id/2026"
+  },
+  {
+    "id": "JOR",
+    "name": "Jordanie",
+    "flag": "assets/flags/JOR.png",
+    "shirt": "assets/shirts/JOR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/jordanien/startseite/verein/15737/saison_id/2026"
+  },
+  {
+    "id": "MOR",
+    "name": "Maroc",
+    "flag": "assets/flags/MOR.png",
+    "shirt": "assets/shirts/MOR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/marokko/startseite/verein/3575/saison_id/2026"
+  },
+  {
+    "id": "MEX",
+    "name": "Mexique",
+    "flag": "assets/flags/MEX.png",
+    "shirt": "assets/shirts/MEX.png",
+    "transfermarkt": "https://www.transfermarkt.fr/mexiko/startseite/verein/6303/saison_id/2026"
+  },
+  {
+    "id": "NOR",
+    "name": "Norvège",
+    "flag": "assets/flags/NOR.png",
+    "shirt": "assets/shirts/NOR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/norwegen/startseite/verein/3440/saison_id/2026"
+  },
+  {
+    "id": "NZL",
+    "name": "Nouvelle-Zélande",
+    "flag": "assets/flags/NZL.png",
+    "shirt": "assets/shirts/NZL.png",
+    "transfermarkt": "https://www.transfermarkt.fr/neuseeland/startseite/verein/9171/saison_id/2026"
+  },
+  {
+    "id": "UZB",
+    "name": "Ouzbékistan",
+    "flag": "assets/flags/UZB.png",
+    "shirt": "assets/shirts/UZB.png",
+    "transfermarkt": "https://www.transfermarkt.fr/usbekistan/startseite/verein/3563/saison_id/2026"
+  },
+  {
+    "id": "PAN",
+    "name": "Panama",
+    "flag": "assets/flags/PAN.png",
+    "shirt": "assets/shirts/PAN.png",
+    "transfermarkt": "https://www.transfermarkt.fr/panama/startseite/verein/3577/saison_id/2026"
+  },
+  {
+    "id": "PAR",
+    "name": "Paraguay",
+    "flag": "assets/flags/PAR.png",
+    "shirt": "assets/shirts/PAR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/paraguay/startseite/verein/3581/saison_id/2026"
+  },
+  {
+    "id": "NED",
+    "name": "Pays-Bas",
+    "flag": "assets/flags/NED.png",
+    "shirt": "assets/shirts/NED.png",
+    "transfermarkt": "https://www.transfermarkt.fr/niederlande/startseite/verein/3379/saison_id/2026"
+  },
+  {
+    "id": "POR",
+    "name": "Portugal",
+    "flag": "assets/flags/POR.png",
+    "shirt": "assets/shirts/POR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/portugal/startseite/verein/3300/saison_id/2026"
+  },
+  {
+    "id": "QAT",
+    "name": "Qatar",
+    "flag": "assets/flags/QAT.png",
+    "shirt": "assets/shirts/QAT.png",
+    "transfermarkt": "https://www.transfermarkt.fr/katar/startseite/verein/14162/saison_id/2026"
+  },
+  {
+    "id": "COD",
+    "name": "RD Congo",
+    "flag": "assets/flags/COD.png",
+    "shirt": "assets/shirts/COD.png",
+    "transfermarkt": "https://www.transfermarkt.fr/demokratische-republik-kongo/startseite/verein/3854/saison_id/2026"
+  },
+  {
+    "id": "CZE",
+    "name": "République tchèque",
+    "flag": "assets/flags/CZE.png",
+    "shirt": "assets/shirts/CZE.png",
+    "transfermarkt": "https://www.transfermarkt.fr/tschechien/startseite/verein/3445/saison_id/2026"
+  },
+  {
+    "id": "SEN",
+    "name": "Sénégal",
+    "flag": "assets/flags/SEN.png",
+    "shirt": "assets/shirts/SEN.png",
+    "transfermarkt": "https://www.transfermarkt.fr/senegal/startseite/verein/3499/saison_id/2026"
+  },
+  {
+    "id": "SWE",
+    "name": "Suède",
+    "flag": "assets/flags/SWE.png",
+    "shirt": "assets/shirts/SWE.png",
+    "transfermarkt": "https://www.transfermarkt.fr/schweden/startseite/verein/3557/saison_id/2026"
+  },
+  {
+    "id": "SWI",
+    "name": "Suisse",
+    "flag": "assets/flags/SWI.png",
+    "shirt": "assets/shirts/SWI.png",
+    "transfermarkt": "https://www.transfermarkt.fr/schweiz/startseite/verein/3384/saison_id/2026"
+  },
+  {
+    "id": "TUN",
+    "name": "Tunisie",
+    "flag": "assets/flags/TUN.png",
+    "shirt": "assets/shirts/TUN.png",
+    "transfermarkt": "https://www.transfermarkt.fr/tunesien/startseite/verein/3670/saison_id/2026"
+  },
+  {
+    "id": "TUR",
+    "name": "Turquie",
+    "flag": "assets/flags/TUR.png",
+    "shirt": "assets/shirts/TUR.png",
+    "transfermarkt": "https://www.transfermarkt.fr/turkei/startseite/verein/3381/saison_id/2026"
+  },
+  {
+    "id": "URU",
+    "name": "Uruguay",
+    "flag": "assets/flags/URU.png",
+    "shirt": "assets/shirts/URU.png",
+    "transfermarkt": "https://www.transfermarkt.fr/uruguay/startseite/verein/3449/saison_id/2026"
+  }
+]

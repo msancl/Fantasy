@@ -10,6 +10,88 @@ const pages = [
   "reglement",
 ];
 
+const countries = Array.isArray(window.countryData) ? window.countryData : [];
+const countryById = new Map(countries.map((country) => [country.id, country]));
+
+function getCountry(code) {
+  return (
+    countryById.get(code) || {
+      id: code,
+      name: code,
+      flag: "",
+      shirt: "",
+    }
+  );
+}
+
+function getCountryName(code) {
+  return getCountry(code).name;
+}
+
+function getCountryAsset(code, type) {
+  return getCountry(code)[type];
+}
+
+function getCountryCodeFromAsset(source) {
+  return source?.match(/assets\/(?:flags|shirts)\/([A-Z]{3})\.[a-z]+(?:\?.*)?$/i)?.[1];
+}
+
+function replaceCountryLabel(label, countryName) {
+  if (!label) {
+    return;
+  }
+
+  const suffix = label.textContent.includes(" ·")
+    ? label.textContent.slice(label.textContent.indexOf(" ·"))
+    : "";
+  label.textContent = `${countryName}${suffix}`;
+}
+
+function hydrateCountryReferences(root = document) {
+  root.querySelectorAll?.('img[src*="assets/flags/"], img[src*="assets/shirts/"]').forEach(
+    (image) => {
+      const code = image.dataset.countryId || getCountryCodeFromAsset(image.getAttribute("src"));
+      if (!code || !countryById.has(code)) {
+        return;
+      }
+
+      const country = getCountry(code);
+      const type = image.getAttribute("src").includes("/flags/") ? "flag" : "shirt";
+      image.dataset.countryId = code;
+      if (image.getAttribute("src") !== country[type]) {
+        image.setAttribute("src", country[type]);
+      }
+      if (image.hasAttribute("alt") && image.getAttribute("alt")) {
+        image.setAttribute(
+          "alt",
+          type === "flag" ? `Drapeau de ${country.name}` : `Maillot de ${country.name}`,
+        );
+      }
+
+      if (image.closest(".history-player")) {
+        replaceCountryLabel(image.closest(".history-player").querySelector("small"), country.name);
+      } else if (image.closest(".transfer-ranking-row")) {
+        replaceCountryLabel(image.closest(".transfer-ranking-row").querySelector(".transfer-player small"), country.name);
+      } else if (image.closest(".player-card")) {
+        replaceCountryLabel(image.closest(".player-card").querySelector(".player-main small"), country.name);
+      }
+    },
+  );
+}
+
+hydrateCountryReferences();
+
+const countryReferenceObserver = new MutationObserver((records) => {
+  records.forEach((record) => {
+    record.addedNodes.forEach((node) => {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        hydrateCountryReferences(node);
+      }
+    });
+  });
+});
+countryReferenceObserver.observe(document.body, { childList: true, subtree: true });
+
 function getCurrentPage() {
   const page = window.location.hash.replace("#", "") || "accueil";
   return pages.includes(page) ? page : "accueil";
@@ -346,7 +428,7 @@ function addTeamDetailsIndicators() {
 
 addTeamDetailsIndicators();
 
-const nationalTeams = [
+const legacyNationalTeams = [
   ["ALG", "Algérie"], ["GER", "Allemagne"], ["ENG", "Angleterre"],
   ["ARG", "Argentine"], ["AUS", "Australie"], ["AUT", "Autriche"],
   ["BEL", "Belgique"], ["BOS", "Bosnie-Herzégovine"], ["BRA", "Brésil"],
@@ -365,6 +447,10 @@ const nationalTeams = [
   ["CPV", "Cap-Vert"], ["KSA", "Arabie saoudite"],
 ]
   .map(([code, name]) => [code === "MAR" ? "MOR" : code, name])
+  .sort((a, b) => a[1].localeCompare(b[1], "fr"));
+
+const nationalTeams = countries
+  .map(({ id, name }) => [id, name])
   .sort((a, b) => a[1].localeCompare(b[1], "fr"));
 
 const groupRoundTwoStart = Date.parse("2026-06-18T16:00:00Z");
@@ -427,10 +513,10 @@ function initializeHomeDashboard() {
       const homeName = getTeamName(fixture.h, fixture.hp);
       const awayName = getTeamName(fixture.a, fixture.ap);
       const homeFlag = fixture.h
-        ? `<img src="assets/flags/${fixture.h}.png" alt="" loading="lazy" />`
+        ? `<img src="${getCountryAsset(fixture.h, "flag")}" alt="" loading="lazy" />`
         : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
       const awayFlag = fixture.a
-        ? `<img src="assets/flags/${fixture.a}.png" alt="" loading="lazy" />`
+        ? `<img src="${getCountryAsset(fixture.a, "flag")}" alt="" loading="lazy" />`
         : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
       const matchNumber =
         fixture.s === "group" ? "" : `<small>M${fixture.n}</small>`;
@@ -646,7 +732,7 @@ function initializeWorldCupFixtures() {
 
     return `
       <span class="fixture-team">
-        <img src="assets/flags/${code}.png" alt="" loading="lazy" />
+        <img src="${getCountryAsset(code, "flag")}" alt="" loading="lazy" />
         <strong>${teamNames.get(code) || code}</strong>
       </span>
     `;
@@ -712,7 +798,7 @@ function initializeWorldCupFixtures() {
               : ""
           }">
             <span>${player.position}</span>
-            <img src="assets/shirts/${code}.png" alt="" loading="lazy" />
+            <img src="${getCountryAsset(code, "shirt")}" alt="" loading="lazy" />
             <strong>${player.name}</strong>
             ${
               events.hasCleanSheet &&
@@ -734,7 +820,7 @@ function initializeWorldCupFixtures() {
               : ""
           }">
             <span>${player.position}</span>
-            <img src="assets/shirts/${code}.png" alt="" loading="lazy" />
+            <img src="${getCountryAsset(code, "shirt")}" alt="" loading="lazy" />
             <strong>${player.name}</strong>
             ${
               events.hasCleanSheet &&
@@ -978,7 +1064,7 @@ function createNationalTeamSections() {
       >
         <span class="national-team-shirt">
           <img
-            src="assets/flags/${code}.png"
+            src="${getCountryAsset(code, "flag")}"
             alt="Drapeau de ${name}"
             loading="lazy"
             decoding="async"
@@ -1037,7 +1123,7 @@ function ensureNationalTeamRoster(section) {
         return `
         <article class="player-card ${positionClasses[player.position]}" data-player-index="${playerIndex}">
           <img
-            src="assets/shirts/${code}.png"
+            src="${getCountryAsset(code, "shirt")}"
             alt=""
             loading="lazy"
             decoding="async"
@@ -1215,7 +1301,7 @@ function initializeTransferPlayerSearch() {
         (player) => `
           <article class="transfer-ranking-row">
             <b class="transfer-position transfer-position-${player.position.toLowerCase()}">${player.position}</b>
-            <img src="assets/shirts/${player.code}.png" alt="" loading="lazy" decoding="async" />
+            <img src="${getCountryAsset(player.code, "shirt")}" alt="" loading="lazy" decoding="async" />
             <span class="transfer-player">
               <strong>${player.name}</strong>
               <small>${player.country}</small>
@@ -1529,7 +1615,7 @@ function resetFantasyTeamRosters() {
         row.className = `player-card ${positionClass}`;
         row.innerHTML = `
           <img
-            src="assets/shirts/${shirtCode}.png"
+            src="${getCountryAsset(shirtCode, "shirt")}"
             alt=""
             loading="lazy"
             decoding="async"
