@@ -22,7 +22,7 @@ const matchEventsData = Array.isArray(window.matchEventsData)
   : [];
 const playerById = new Map(
   playerData.flatMap((squad) =>
-    (squad.players || []).map((player) => [player.id, player]),
+    (squad.players || []).map((player) => [String(player.id), player]),
   ),
 );
 const fantasyTeamsData = Array.isArray(window.fantasyTeamsData)
@@ -31,6 +31,7 @@ const fantasyTeamsData = Array.isArray(window.fantasyTeamsData)
 const fantasyTeamRostersData = Array.isArray(window.fantasyTeamRostersData)
   ? window.fantasyTeamRostersData
   : [];
+const transferData = Array.isArray(window.transferData) ? window.transferData : [];
 const fantasyRosterByTeamId = new Map(
   fantasyTeamRostersData.map((roster) => [roster.teamId, roster]),
 );
@@ -324,7 +325,7 @@ function isSlotActiveForRound(slot, round) {
 }
 
 function getSlotPlayer(slot) {
-  return slot?.playerId ? playerById.get(slot.playerId) || null : null;
+  return slot?.playerId ? playerById.get(String(slot.playerId)) || null : null;
 }
 
 function getFantasyTeamRoundStats(teamId, round) {
@@ -502,6 +503,10 @@ function rankLabel(index, points) {
   return `${index + 1}${index === 0 ? "er" : "e"} - ${points} pts`;
 }
 
+function rankingLabel(rank, points) {
+  return `${rank}${rank === 1 ? "er" : "e"} - ${points} pts`;
+}
+
 function positionClass(position) {
   return {
     GB: "pos-gk",
@@ -526,6 +531,12 @@ function createFantasyPlayerRow(slot, slotIndex) {
   const isEmpty = !player;
   const countryCode = player?.countryId || "FRA";
   const totals = player?.totals || {};
+  const totalGoals =
+    totals.goals == null &&
+    totals.penalties == null
+      ? null
+      : (totals.goals ?? 0) + (totals.penalties ?? 0);
+  const totalPoints = totals.points ?? 0;
   const roundCells = fantasyRoundKeys
     .map((round, index) => {
       const value = getRoundCellValue(slot, player, round);
@@ -572,19 +583,20 @@ function createFantasyPlayerRow(slot, slotIndex) {
       </div>
       <div class="player-position">${position}</div>
       <div class="player-stat">${formatPlayerStat(totals.matchesPlayed)}</div>
-      <div class="player-stat">${formatPlayerStat((totals.goals ?? 0) + (totals.penalties ?? 0))}</div>
+      <div class="player-stat">${formatPlayerStat(totalGoals)}</div>
       <div class="player-stat">${formatPlayerStat(totals.assists)}</div>
       <div class="player-stat player-clean-sheets">${formatPlayerStat(totals.cleanSheets)}</div>
-      <div class="player-stat player-points">${formatPlayerStat(totals.points)}</div>
+      <div class="player-stat player-points">${formatPlayerStat(totalPoints)}</div>
       ${roundCells}
     </article>
   `;
 }
 
-function createFantasyTeamCard(row, index) {
+function createFantasyTeamCard(row) {
   const [name, slug, primary, primaryRgb, secondary, secondaryRgb, ink] = row.team;
   const roster = getFantasyRoster(slug);
   const totals = row.totals;
+  const rank = row.rank || 1;
   const slots = roster.slots || [];
   const playerRows = slots
     .map((slot, slotIndex) => createFantasyPlayerRow(slot, slotIndex))
@@ -609,7 +621,7 @@ function createFantasyTeamCard(row, index) {
       </div>
       <div class="team-card-actions">
         <div class="team-rank" aria-label="Position au classement">
-          <strong>${rankLabel(index, totals.points)}</strong>
+          <strong>${rankingLabel(rank, totals.points)}</strong>
         </div>
         <button class="team-details-toggle-hidden" type="button" aria-expanded="false">
           Details
@@ -630,10 +642,12 @@ function createFantasyTeamCard(row, index) {
         <div
           class="squad-board"
           data-no-season-extension
+          data-team-id="${slug}"
           aria-label="Composition de ${name}"
         >
           <div class="player-card player-table-head" aria-hidden="true">
             <div>Poste</div>
+            <div></div>
             <div>Joueur</div>
             <div title="Matchs jouÃ©s" aria-label="Matchs jouÃ©s">MJ</div>
             <div title="Buts, pÃ©naltys inclus" aria-label="Buts, pÃ©naltys inclus">G</div>
@@ -660,11 +674,23 @@ function createWorldCupTeams() {
   }
 
   const heading = panel.querySelector("h3");
+  const rankingByTeamId = new Map(
+    getFantasyTeamRows().map((row, index) => [row.team[1], index + 1]),
+  );
   panel.replaceChildren();
   if (heading) panel.append(heading);
-  getFantasyTeamRows().forEach((row, index) => {
-    panel.append(createFantasyTeamCard(row, index));
-  });
+  worldCupTeams
+    .slice()
+    .sort((a, b) => a[0].localeCompare(b[0], "fr"))
+    .forEach((team, index) => {
+      const row = {
+        team,
+        roundScores: getFantasyTeamRoundScores(team[1]),
+        totals: getFantasyTeamTotals(team[1]),
+        rank: rankingByTeamId.get(team[1]) || index + 1,
+      };
+      panel.append(createFantasyTeamCard(row));
+    });
   panel.dataset.fantasyTeamsReady = "true";
 }
 
@@ -1667,6 +1693,92 @@ function initializeTransferPlayerSearch() {
 
 initializeTransferPlayerSearch();
 
+function formatTransferDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return { label: "-", datetime: "" };
+  }
+
+  return {
+    label: `${String(date.getDate()).padStart(2, "0")}/${String(date.getMonth() + 1).padStart(2, "0")} · ${String(date.getHours()).padStart(2, "0")}h${String(date.getMinutes()).padStart(2, "0")}`,
+    datetime: date.toISOString(),
+  };
+}
+
+function transferOrdinal(value) {
+  return `${value}${value === 1 ? "er" : "e"}`;
+}
+
+function createTransferTeamMarkup(teamId) {
+  const team = fantasyTeamsData.find((item) => item.id === teamId);
+  const primary = team?.colors?.primary || team?.crest?.primary || "#111827";
+  const secondary = team?.colors?.secondary || team?.crest?.secondary || "#d6dce7";
+  const name = team?.name || teamId;
+
+  return `
+    <span class="transfer-team" style="--club-primary:${primary};--club-secondary:${secondary}">
+      <i></i>
+      <strong>${name}</strong>
+    </span>
+  `;
+}
+
+function createTransferPlayerMarkup(playerId) {
+  const player = playerById.get(String(playerId));
+  if (!player) {
+    return `
+      <span class="history-player">
+        <span><b>JOUEUR INCONNU</b><small>-</small></span>
+      </span>
+    `;
+  }
+
+  return `
+    <span class="history-player">
+      <img src="${getCountryAsset(player.countryId, "shirt")}" alt="" loading="lazy" decoding="async">
+      <span>
+        <b>${player.name}</b>
+        <small>${getCountryName(player.countryId)}</small>
+      </span>
+    </span>
+  `;
+}
+
+function initializeTransferHistory() {
+  const list = document.querySelector(".transfer-history-list");
+  const emptyState = document.querySelector(".transfer-history .transfer-empty-state");
+  if (!list) {
+    return;
+  }
+
+  list.replaceChildren();
+  const sortedTransfers = transferData
+    .slice()
+    .sort((first, second) => new Date(second.date) - new Date(first.date));
+
+  list.hidden = !sortedTransfers.length;
+  if (emptyState) {
+    emptyState.hidden = Boolean(sortedTransfers.length);
+  }
+
+  sortedTransfers.forEach((transfer) => {
+    const row = document.createElement("div");
+    const date = formatTransferDate(transfer.date);
+    row.className = `transfer-history-row${transfer.isFreeTransfer ? " is-free-transfer" : ""}`;
+    row.innerHTML = `
+      <time datetime="${date.datetime}">${date.label}</time>
+      ${createTransferTeamMarkup(transfer.fantasyTeamId)}
+      <span class="transfer-number">${transferOrdinal(transfer.teamTransferNumber)}</span>
+      ${createTransferPlayerMarkup(transfer.playerInId)}
+      <i class="transfer-swap" aria-hidden="true">⇄</i>
+      ${createTransferPlayerMarkup(transfer.playerOutId)}
+    `;
+    list.append(row);
+  });
+}
+
+initializeTransferHistory();
+
 const emptyNationalDayStat = {
   matchesPlayed: null,
   penalties: null,
@@ -1924,7 +2036,7 @@ function resetFantasyTeamRosters() {
     });
 }
 
-resetFantasyTeamRosters();
+// Legacy prototype helper kept for reference; JSON rosters now render the teams.
 
 function movePositionsBeforeShirts() {
   document.querySelectorAll(".squad-board .player-card").forEach((row) => {
@@ -2242,43 +2354,48 @@ function appendTeamTotalRows() {
       return;
     }
 
+    const teamId = board.dataset.teamId;
+    const readNumber = (value) => {
+      const number = Number(value);
+      return Number.isFinite(number) ? number : 0;
+    };
     const playerRows = Array.from(
       board.querySelectorAll(
         ".player-card:not(.player-table-head):not(.substitute-slot)",
       ),
     );
 
-    const totals = playerRows.reduce(
-      (sum, row) => {
-        const stats = row.querySelectorAll(".player-stat");
+    const totals = teamId
+      ? getFantasyTeamTotals(teamId)
+      : playerRows.reduce(
+          (sum, row) => {
+            const stats = row.querySelectorAll(".player-stat:not(.player-price)");
 
-        sum.price += Number(stats[0]?.textContent || 0);
-        sum.matches += Number(stats[1]?.textContent || 0);
-        sum.goals += Number(stats[2]?.textContent || 0);
-        sum.assists += Number(stats[3]?.textContent || 0);
-        sum.cleanSheets += Number(stats[4]?.textContent || 0);
-        sum.points += Number(stats[5]?.textContent || 0);
+            sum.matchesPlayed += readNumber(stats[0]?.textContent);
+            sum.goals += readNumber(stats[1]?.textContent);
+            sum.assists += readNumber(stats[2]?.textContent);
+            sum.cleanSheets += readNumber(stats[3]?.textContent);
+            sum.points += readNumber(stats[4]?.textContent);
 
-        return sum;
-      },
-      {
-        matches: 0,
-        goals: 0,
-        assists: 0,
-        cleanSheets: 0,
-        points: 0,
-        price: 0,
-      },
-    );
+            return sum;
+          },
+          {
+            matchesPlayed: 0,
+            goals: 0,
+            assists: 0,
+            cleanSheets: 0,
+            points: 0,
+          },
+        );
 
-    const dayTotals = Array.from({ length: 38 }, (_, dayIndex) =>
-      playerRows.reduce((sum, row) => {
-        const cell = row.querySelector(`.day-cell[data-day="${dayIndex + 1}"]`);
-        const value = Number(cell?.textContent || 0);
-
-        return Number.isNaN(value) ? sum : sum + value;
-      }, 0),
-    );
+    const dayTotals = teamId
+      ? getFantasyTeamRoundScores(teamId)
+      : Array.from({ length: 38 }, (_, dayIndex) =>
+          playerRows.reduce((sum, row) => {
+            const cell = row.querySelector(`.day-cell[data-day="${dayIndex + 1}"]`);
+            return sum + readNumber(cell?.textContent);
+          }, 0),
+        );
 
     const teamName =
       board.closest(".team-card")?.querySelector(".team-name")?.textContent
@@ -2290,8 +2407,7 @@ function appendTeamTotalRows() {
       <div class="team-total-label">
         <strong>Totaux</strong>
       </div>
-      <div class="player-stat player-price">${totals.price}</div>
-      <div class="player-stat" title="Matchs joués" aria-label="Matchs joués">${totals.matches}</div>
+      <div class="player-stat" title="Matchs joués" aria-label="Matchs joués">${totals.matchesPlayed}</div>
       <div class="player-stat" title="Buts" aria-label="Buts">${totals.goals}</div>
       <div class="player-stat" title="Assists" aria-label="Assists">${totals.assists}</div>
       <div class="player-stat player-clean-sheets" title="Clean Sheets" aria-label="Clean Sheets">${totals.cleanSheets}</div>
@@ -2302,7 +2418,7 @@ function appendTeamTotalRows() {
       const cell = document.createElement("div");
       cell.className = "day-cell";
       cell.dataset.day = String(dayIndex + 1);
-      cell.textContent = String(total);
+      cell.textContent = total === null || total === undefined ? "-" : String(total);
       totalRow.append(cell);
     });
 

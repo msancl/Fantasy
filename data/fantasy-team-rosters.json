@@ -1241,17 +1241,17 @@
         "replacesPlayerId": null,
         "note": null
       },
-      {
-        "slotId": "starter-11",
-        "slotType": "starter",
-        "playerId": null,
-        "position": null,
-        "joinedRound": null,
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": "A definir"
-      },
+        {
+          "slotId": "starter-11",
+          "slotType": "starter",
+          "playerId": 28003,
+          "position": "ATT",
+          "joinedRound": "J1",
+          "leftRound": null,
+          "replacedByPlayerId": null,
+          "replacesPlayerId": null,
+          "note": null
+        },
       {
         "slotId": "substitute-01",
         "slotType": "substitute",

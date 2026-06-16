@@ -157,6 +157,7 @@
         "match-events",
         "fantasy-teams",
         "fantasy-team-rosters",
+        "transfers",
       ].map((fileName) =>
         fetch(`data/${fileName}.json?v=${cacheKey}`, { cache: "no-store" }),
       ),
@@ -177,6 +178,7 @@
       matchEvents,
       fantasyTeams,
       fantasyTeamRosters,
+      transfers,
     ] = await Promise.all(
       responses.map((response) => response.json()),
     );
@@ -188,6 +190,7 @@
         matchEvents,
         fantasyTeams,
         fantasyTeamRosters,
+        transfers,
       ].every(Array.isArray)
     ) {
       throw new Error("Un des fichiers JSON est invalide.");
@@ -201,6 +204,7 @@
     window.matchEventsData = matchEvents;
     window.fantasyTeamsData = fantasyTeams;
     window.fantasyTeamRostersData = fantasyTeamRosters;
+    window.transferData = transfers;
     window.worldCupFixtures = matches.map((match) => ({
       n: match.number,
       d: match.kickoff,
@@ -217,7 +221,7 @@
     }));
 
     const appScript = document.createElement("script");
-    appScript.src = "app.js?v=87";
+    appScript.src = "app.js?v=93";
     appScript.defer = true;
     document.head.append(appScript);
   } catch (error) {
