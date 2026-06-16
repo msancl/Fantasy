@@ -1,0 +1,26 @@
+[
+  {
+    "matchNumber": 18,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "updatedAt": "2026-06-16T22:24:37.476079Z"
+  }
+]

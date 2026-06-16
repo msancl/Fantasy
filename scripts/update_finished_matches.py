@@ -7,6 +7,7 @@ It updates:
   - data/matches.json
   - data/match-events.json
   - data/players.json
+  - data/match-events-live.json (clears matches imported officially)
 
 Usage:
   python scripts/update_finished_matches.py
@@ -34,6 +35,7 @@ CACHE_DIR = ROOT / "match-pages"
 MATCHES_PATH = DATA_DIR / "matches.json"
 MATCH_EVENTS_PATH = DATA_DIR / "match-events.json"
 PLAYERS_PATH = DATA_DIR / "players.json"
+LIVE_EVENTS_PATH = DATA_DIR / "match-events-live.json"
 
 ROUND_NAMES = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"]
 STAT_NAMES = [
@@ -365,9 +367,11 @@ def main() -> int:
     matches = read_json(MATCHES_PATH)
     match_events = read_json(MATCH_EVENTS_PATH)
     players = read_json(PLAYERS_PATH)
+    live_events = read_json(LIVE_EVENTS_PATH) if LIVE_EVENTS_PATH.exists() else []
     original_matches = copy.deepcopy(matches)
     original_events = copy.deepcopy(match_events)
     original_players = copy.deepcopy(players)
+    original_live_events = copy.deepcopy(live_events)
 
     player_by_id = {
         int(player["id"]): player
@@ -439,6 +443,12 @@ def main() -> int:
                 if player_id and int(player_id) not in player_by_id:
                     warnings.append(f"M{number}: unknown player {player_id}")
 
+        live_events = [
+            entry
+            for entry in live_events
+            if int(entry.get("matchNumber", -1)) != number
+        ]
+
         updated.append(
             f"M{number} {match_data['homeCountryId']}-{match_data['awayCountryId']} {home_score}-{away_score}"
         )
@@ -449,10 +459,13 @@ def main() -> int:
         matches = original_matches
         match_events = original_events
         players = original_players
+        live_events = original_live_events
     else:
         write_json(MATCHES_PATH, matches)
         write_json(MATCH_EVENTS_PATH, match_events)
         write_json(PLAYERS_PATH, players)
+        if LIVE_EVENTS_PATH.exists():
+            write_json(LIVE_EVENTS_PATH, live_events)
 
     print(f"{'Would update' if args.dry_run else 'Updated'} {len(updated)} match(es).")
     for line in updated:

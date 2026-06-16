@@ -103,6 +103,60 @@
     );
   };
 
+  const mergeLiveMatchData = (matches, matchEvents, liveEvents) => {
+    const eventsByMatch = new Map(
+      matchEvents.map((entry) => [Number(entry.matchNumber), entry]),
+    );
+    const effectiveMatches = matches.map((match) => ({ ...match, score: { ...(match.score || {}) } }));
+    const effectiveEvents = matchEvents.map((entry) => ({ ...entry }));
+    const eventIndexByMatch = new Map(
+      effectiveEvents.map((entry, index) => [Number(entry.matchNumber), index]),
+    );
+
+    liveEvents.forEach((liveEntry) => {
+      const matchNumber = Number(liveEntry.matchNumber);
+      const match = effectiveMatches.find((item) => Number(item.number) === matchNumber);
+      if (!match || match.status === "finished") {
+        return;
+      }
+
+      match.status = "live";
+      if (liveEntry.score) {
+        match.score = {
+          ...(match.score || {}),
+          home: liveEntry.score.home,
+          away: liveEntry.score.away,
+        };
+      }
+
+      const official = eventsByMatch.get(matchNumber) || {};
+      const merged = {
+        ...official,
+        ...liveEntry,
+        matchNumber,
+        lineups: liveEntry.lineups || official.lineups || {
+          home: { starters: [], substitutes: [] },
+          away: { starters: [], substitutes: [] },
+        },
+        goals: liveEntry.goals || official.goals || [],
+        cleanSheets: liveEntry.cleanSheets || official.cleanSheets || {
+          homePlayerIds: [],
+          awayPlayerIds: [],
+        },
+        penaltiesSaved: liveEntry.penaltiesSaved || official.penaltiesSaved || [],
+      };
+
+      if (eventIndexByMatch.has(matchNumber)) {
+        effectiveEvents[eventIndexByMatch.get(matchNumber)] = merged;
+      } else {
+        eventIndexByMatch.set(matchNumber, effectiveEvents.length);
+        effectiveEvents.push(merged);
+      }
+    });
+
+    return { matches: effectiveMatches, matchEvents: effectiveEvents };
+  };
+
   const applyMatchEventsToPlayers = (players, matches, matchEvents) => {
     const playerById = new Map();
     const roundNames = getRoundNames();
@@ -122,7 +176,7 @@
     matchEvents.forEach((entry) => {
       const match = matchByNumber.get(entry.matchNumber);
       const round = match && getRoundKey(match);
-      if (!match || !round || match.status !== "finished") return;
+      if (!match || !round || !["finished", "live"].includes(match.status)) return;
 
       const participants = [
         ...(entry.lineups?.home?.starters || []),
@@ -242,6 +296,7 @@
         "players",
         "matches",
         "match-events",
+        "match-events-live",
         "fantasy-teams",
         "fantasy-team-rosters",
         "transfers",
@@ -263,6 +318,7 @@
       players,
       matches,
       matchEvents,
+      liveMatchEvents,
       fantasyTeams,
       fantasyTeamRosters,
       transfers,
@@ -275,6 +331,7 @@
         players,
         matches,
         matchEvents,
+        liveMatchEvents,
         fantasyTeams,
         fantasyTeamRosters,
         transfers,
@@ -283,18 +340,20 @@
       throw new Error("Un des fichiers JSON est invalide.");
     }
 
-    applyMatchEventsToPlayers(players, matches, matchEvents);
+    const effective = mergeLiveMatchData(matches, matchEvents, liveMatchEvents);
+    applyMatchEventsToPlayers(players, effective.matches, effective.matchEvents);
     applyRosterAvailabilityToPlayers(players, fantasyTeams, fantasyTeamRosters);
 
     window.settingsData = settings;
     window.countryData = countries;
     window.playerData = players;
-    window.matchData = matches;
-    window.matchEventsData = matchEvents;
+    window.matchData = effective.matches;
+    window.matchEventsData = effective.matchEvents;
+    window.matchEventsLiveData = liveMatchEvents;
     window.fantasyTeamsData = fantasyTeams;
     window.fantasyTeamRostersData = fantasyTeamRosters;
     window.transferData = transfers;
-    window.worldCupFixtures = matches.map((match) => ({
+    window.worldCupFixtures = effective.matches.map((match) => ({
       n: match.number,
       d: match.kickoff,
       s: match.stage,
