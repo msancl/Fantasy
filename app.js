@@ -847,7 +847,7 @@ function createFantasyPlayerRow(slot, slotIndex) {
   if (isEmpty) {
     const label =
       slot?.slotType === "substitute"
-        ? slot.note || `Remplacant ${slotIndex + 1}`
+        ? slot.note || `Remplaçant ${slotIndex + 1}`
         : slot.note || "A definir";
 
     return `
@@ -1478,7 +1478,7 @@ function initializeWorldCupFixtures() {
         <h4>Composition</h4>
         <ol>${playerRows}</ol>
         <div class="fixture-substitutes">
-          <h5>Rempla?ants entr?s</h5>
+          <h5>Remplaçants entrés</h5>
           <ul>${substituteRows}</ul>
         </div>
       </div>
@@ -1500,7 +1500,7 @@ function initializeWorldCupFixtures() {
       </div>
       ${lineupMarkup(code, events)}
       <footer class="fixture-penalty-saves">
-        <b>Penalties arr?t?s</b>
+        <b>Penalties arrêtés</b>
         <span>${events.penaltySaves || "-"}</span>
       </footer>
     </section>

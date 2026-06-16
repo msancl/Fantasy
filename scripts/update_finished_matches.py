@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Update finished World Cup match JSON files from Transfermarkt.
 
-The script only attempts matches whose kickoff time is at least 3 hours old.
+The script attempts matches whose kickoff time has passed, then only updates
+them when Transfermarkt already shows a final score.
 It updates:
   - data/matches.json
   - data/match-events.json
@@ -352,7 +353,7 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Show what would change without writing files.")
     parser.add_argument("--refresh-cache", action="store_true", help="Fetch pages even if cached HTML exists.")
     parser.add_argument("--match", type=int, action="append", help="Only update a specific match number. Can be repeated.")
-    parser.add_argument("--hours-after-kickoff", type=float, default=3, help="Safety delay after kickoff before importing.")
+    parser.add_argument("--hours-after-kickoff", type=float, default=0, help="Optional safety delay after kickoff before importing.")
     parser.add_argument("--now", help="Override current UTC time, for tests. Example: 2026-06-16T12:00:00Z")
     args = parser.parse_args()
 
@@ -385,7 +386,7 @@ def main() -> int:
             continue
         kickoff = parse_iso(match_data["kickoff"])
         if not wanted_matches and kickoff > cutoff:
-            skipped.append(f"M{number} not old enough")
+            skipped.append(f"M{number} not kicked off yet")
             continue
 
         try:
