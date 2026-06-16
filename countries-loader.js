@@ -1,5 +1,41 @@
 (async () => {
-  const roundNames = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"];
+  const defaultSettings = {
+    site: {
+      cacheVersion: 98,
+    },
+    scoring: {
+      goal: { GB: 9, DF: 7, MIL: 5, ATT: 3 },
+      cleanSheet: { GB: 5, DF: 2, MIL: 0, ATT: 0 },
+      penaltyGoal: 3,
+      assist: 1,
+      penaltySaved: 2,
+    },
+    rounds: [
+      { id: "J1", type: "group", startsAt: "2026-06-11T19:00:00Z", endsAt: "2026-06-18T15:59:59Z" },
+      { id: "J2", type: "group", startsAt: "2026-06-18T16:00:00Z", endsAt: "2026-06-24T02:00:00Z" },
+      { id: "J3", type: "group", startsAt: "2026-06-24T02:00:01Z", endsAt: "2026-06-27T23:59:59Z" },
+      { id: "R32", type: "knockout" },
+      { id: "R16", type: "knockout" },
+      { id: "QF", type: "knockout" },
+      { id: "SF", type: "knockout" },
+      { id: "F", type: "final" },
+    ],
+  };
+  let settings = defaultSettings;
+  const getRounds = () =>
+    Array.isArray(settings.rounds) && settings.rounds.length
+      ? settings.rounds
+      : defaultSettings.rounds;
+  const getRoundNames = () => getRounds().map((round) => round.id);
+  const stageRoundMap = {
+    r32: "R32",
+    r16: "R16",
+    qf: "QF",
+    sf: "SF",
+    third: "F",
+    final: "F",
+  };
+  const getScoring = () => settings.scoring || defaultSettings.scoring;
   const statNames = [
     "matchesPlayed",
     "penalties",
@@ -8,10 +44,6 @@
     "cleanSheets",
     "penaltiesSaved",
   ];
-  const goalPoints = { GB: 9, DF: 7, MIL: 5, ATT: 3 };
-  const cleanSheetPoints = { GB: 5, DF: 2, MIL: 0, ATT: 0 };
-  const groupRoundTwoStart = Date.parse("2026-06-18T16:00:00Z");
-  const groupRoundTwoEnd = Date.parse("2026-06-24T02:00:00Z");
 
   const emptyRound = () => ({
     matchesPlayed: null,
@@ -26,19 +58,17 @@
   const getRoundKey = (match) => {
     if (match.stage === "group") {
       const kickoff = Date.parse(match.kickoff);
-      if (kickoff < groupRoundTwoStart) return "J1";
-      if (kickoff <= groupRoundTwoEnd) return "J2";
-      return "J3";
+      const round = getRounds()
+        .filter((item) => item.type === "group" && item.startsAt && item.endsAt)
+        .find((item) => {
+          const start = Date.parse(item.startsAt);
+          const end = Date.parse(item.endsAt);
+          return kickoff >= start && kickoff <= end;
+        });
+      return round?.id || "J3";
     }
 
-    return {
-      r32: "R32",
-      r16: "R16",
-      qf: "QF",
-      sf: "SF",
-      third: "F",
-      final: "F",
-    }[match.stage];
+    return stageRoundMap[match.stage];
   };
 
   const increment = (player, round, statName, amount = 1) => {
@@ -60,18 +90,22 @@
     if (!statNames.some((statName) => round[statName] !== null)) {
       return null;
     }
+    const scoring = getScoring();
 
     return (
-      (round.goals ?? 0) * goalPoints[player.position] +
-      (round.penalties ?? 0) * 3 +
-      (round.assists ?? 0) +
-      (round.cleanSheets ?? 0) * cleanSheetPoints[player.position] +
-      (player.position === "GB" ? (round.penaltiesSaved ?? 0) * 2 : 0)
+      (round.goals ?? 0) * (scoring.goal?.[player.position] ?? 0) +
+      (round.penalties ?? 0) * (scoring.penaltyGoal ?? 0) +
+      (round.assists ?? 0) * (scoring.assist ?? 0) +
+      (round.cleanSheets ?? 0) * (scoring.cleanSheet?.[player.position] ?? 0) +
+      (player.position === "GB"
+        ? (round.penaltiesSaved ?? 0) * (scoring.penaltySaved ?? 0)
+        : 0)
     );
   };
 
   const applyMatchEventsToPlayers = (players, matches, matchEvents) => {
     const playerById = new Map();
+    const roundNames = getRoundNames();
     players.forEach((squad) => {
       squad.players?.forEach((player) => {
         player.rounds = Object.fromEntries(
@@ -147,8 +181,61 @@
     });
   };
 
+  const applyRosterAvailabilityToPlayers = (players, fantasyTeams, fantasyTeamRosters) => {
+    const playerById = new Map();
+    players.forEach((squad) => {
+      squad.players?.forEach((player) => {
+        playerById.set(String(player.id), player);
+      });
+    });
+
+    const activeTeamIds = new Set(
+      fantasyTeams
+        .filter((team) => team.status !== "inactive")
+        .map((team) => team.id),
+    );
+    const activeTeamCount = activeTeamIds.size || fantasyTeams.length || 1;
+    const maxSelections = Number(settings.competition?.maxSelectionsPerPlayer ?? 2);
+    const selectedByPlayerId = new Map();
+
+    fantasyTeamRosters
+      .filter((roster) => !activeTeamIds.size || activeTeamIds.has(roster.teamId))
+      .forEach((roster) => {
+        const playerIdsInTeam = new Set(
+          (roster.slots || [])
+            .filter((slot) => slot.playerId && slot.leftRound === null)
+            .map((slot) => String(slot.playerId)),
+        );
+        playerIdsInTeam.forEach((playerId) => {
+          selectedByPlayerId.set(playerId, (selectedByPlayerId.get(playerId) || 0) + 1);
+        });
+      });
+
+    playerById.forEach((player, playerId) => {
+      const selectedBy = selectedByPlayerId.get(playerId) || 0;
+      const limit = Number(player.availability?.maximumSelections ?? maxSelections);
+      player.availability = {
+        ...(player.availability || {}),
+        status: selectedBy >= limit ? "unavailable" : "available",
+        selectedBy,
+        maximumSelections: limit,
+        selectionPercentage: activeTeamCount
+          ? Math.round((selectedBy / activeTeamCount) * 1000) / 10
+          : 0,
+      };
+    });
+  };
+
   try {
     const cacheKey = Date.now();
+    const settingsResponse = await fetch(`data/settings.json?v=${cacheKey}`, {
+      cache: "no-store",
+    });
+    if (!settingsResponse.ok) {
+      throw new Error(`settings:${settingsResponse.status}`);
+    }
+    settings = await settingsResponse.json();
+
     const responses = await Promise.all(
       [
         "countries",
@@ -197,7 +284,9 @@
     }
 
     applyMatchEventsToPlayers(players, matches, matchEvents);
+    applyRosterAvailabilityToPlayers(players, fantasyTeams, fantasyTeamRosters);
 
+    window.settingsData = settings;
     window.countryData = countries;
     window.playerData = players;
     window.matchData = matches;
@@ -221,7 +310,7 @@
     }));
 
     const appScript = document.createElement("script");
-    appScript.src = "app.js?v=93";
+    appScript.src = `app.js?v=${settings.site?.cacheVersion || 93}`;
     appScript.defer = true;
     document.head.append(appScript);
   } catch (error) {

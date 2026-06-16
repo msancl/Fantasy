@@ -1,0 +1,350 @@
+{
+  "site": {
+    "title": "FANTASY 26-27",
+    "subtitle": "MODE COUPE DU MONDE",
+    "language": "fr-BE",
+    "timezone": "Europe/Brussels",
+    "defaultPage": "accueil",
+    "defaultMode": "world-cup",
+    "cacheVersion": 100
+  },
+  "competition": {
+    "id": "world-cup-2026",
+    "name": "Coupe du Monde",
+    "season": "2026",
+    "status": "in-progress",
+    "startDate": "2026-06-11T19:00:00Z",
+    "endDate": "2026-07-19T22:00:00Z",
+    "currentRoundId": "J1",
+    "maxSelectionsPerPlayer": 2,
+    "budgetEnabled": false,
+    "playerPricesEnabled": false,
+    "transfersEnabled": true
+  },
+  "rounds": [
+    {
+      "id": "J1",
+      "label": "J1",
+      "fullLabel": "Journée 1",
+      "type": "group",
+      "order": 1,
+      "visible": true,
+      "startsAt": "2026-06-11T19:00:00Z",
+      "endsAt": "2026-06-18T15:59:59Z"
+    },
+    {
+      "id": "J2",
+      "label": "J2",
+      "fullLabel": "Journée 2",
+      "type": "group",
+      "order": 2,
+      "visible": true,
+      "startsAt": "2026-06-18T16:00:00Z",
+      "endsAt": "2026-06-24T02:00:00Z"
+    },
+    {
+      "id": "J3",
+      "label": "J3",
+      "fullLabel": "Journée 3",
+      "type": "group",
+      "order": 3,
+      "visible": true,
+      "startsAt": "2026-06-24T02:00:01Z",
+      "endsAt": "2026-06-27T23:59:59Z"
+    },
+    {
+      "id": "R32",
+      "label": "1/16",
+      "fullLabel": "Seizièmes de finale",
+      "type": "knockout",
+      "order": 4,
+      "visible": true,
+      "startsAt": null,
+      "endsAt": null
+    },
+    {
+      "id": "R16",
+      "label": "1/8",
+      "fullLabel": "Huitièmes de finale",
+      "type": "knockout",
+      "order": 5,
+      "visible": true,
+      "startsAt": null,
+      "endsAt": null
+    },
+    {
+      "id": "QF",
+      "label": "1/4",
+      "fullLabel": "Quarts de finale",
+      "type": "knockout",
+      "order": 6,
+      "visible": true,
+      "startsAt": null,
+      "endsAt": null
+    },
+    {
+      "id": "SF",
+      "label": "1/2",
+      "fullLabel": "Demi-finales",
+      "type": "knockout",
+      "order": 7,
+      "visible": true,
+      "startsAt": null,
+      "endsAt": null
+    },
+    {
+      "id": "F",
+      "label": "F",
+      "fullLabel": "Finale",
+      "type": "final",
+      "order": 8,
+      "visible": true,
+      "startsAt": null,
+      "endsAt": null
+    }
+  ],
+  "pages": [
+    {
+      "id": "accueil",
+      "label": "Accueil",
+      "visible": true,
+      "defaultSubsection": null
+    },
+    {
+      "id": "resultats",
+      "label": "Résultats",
+      "visible": true,
+      "defaultSubsection": "J1"
+    },
+    {
+      "id": "classements",
+      "label": "Classements",
+      "visible": true,
+      "defaultSubsection": "standings-world-cup"
+    },
+    {
+      "id": "equipes",
+      "label": "Équipes",
+      "visible": true,
+      "defaultSubsection": "world-cup"
+    },
+    {
+      "id": "joueurs",
+      "label": "Joueurs",
+      "visible": true,
+      "defaultSubsection": "players-world-cup"
+    },
+    {
+      "id": "transferts",
+      "label": "Transferts",
+      "visible": true,
+      "defaultSubsection": null
+    },
+    {
+      "id": "reglement",
+      "label": "Règlement",
+      "visible": true,
+      "defaultSubsection": "rules-world-cup"
+    },
+    {
+      "id": "coupes",
+      "label": "Coupes",
+      "visible": false,
+      "defaultSubsection": "tumulus-cup"
+    },
+    {
+      "id": "archives",
+      "label": "Archives",
+      "visible": false,
+      "defaultSubsection": null
+    }
+  ],
+  "subsections": {
+    "equipes": [
+      {
+        "id": "world-cup",
+        "label": "Coupe du Monde",
+        "visible": true
+      },
+      {
+        "id": "d1",
+        "label": "D1",
+        "visible": false
+      },
+      {
+        "id": "d2a",
+        "label": "D2A",
+        "visible": false
+      },
+      {
+        "id": "d2b",
+        "label": "D2B",
+        "visible": false
+      }
+    ],
+    "classements": [
+      {
+        "id": "standings-world-cup",
+        "label": "Coupe du Monde",
+        "visible": true
+      },
+      {
+        "id": "standings-d1",
+        "label": "D1",
+        "visible": false
+      },
+      {
+        "id": "standings-d2a",
+        "label": "D2A",
+        "visible": false
+      },
+      {
+        "id": "standings-d2b",
+        "label": "D2B",
+        "visible": false
+      }
+    ],
+    "joueurs": [
+      {
+        "id": "players-world-cup",
+        "label": "Coupe du Monde",
+        "visible": true
+      },
+      {
+        "id": "players-premier-league",
+        "label": "Premier League",
+        "visible": false
+      }
+    ],
+    "coupes": [
+      {
+        "id": "tumulus-cup",
+        "label": "Tumulus Cup",
+        "visible": false
+      },
+      {
+        "id": "champions-trophy",
+        "label": "Champions' Trophy",
+        "visible": false
+      }
+    ],
+    "reglement": [
+      {
+        "id": "rules-world-cup",
+        "label": "Coupe du Monde",
+        "visible": true
+      }
+    ]
+  },
+  "scoring": {
+    "cleanSheet": {
+      "GB": 5,
+      "DF": 2,
+      "MIL": 0,
+      "ATT": 0
+    },
+    "goal": {
+      "GB": 9,
+      "DF": 7,
+      "MIL": 5,
+      "ATT": 3
+    },
+    "penaltyGoal": 3,
+    "assist": 1,
+    "penaltySaved": 2
+  },
+  "rosterRules": {
+    "starters": 11,
+    "benchSlots": 3,
+    "positions": {
+      "GB": {
+        "label": "Gardien",
+        "min": 1,
+        "max": 1,
+        "order": 1
+      },
+      "DF": {
+        "label": "Défenseur",
+        "min": 3,
+        "max": 5,
+        "order": 2
+      },
+      "MIL": {
+        "label": "Milieu",
+        "min": 3,
+        "max": 5,
+        "order": 3
+      },
+      "ATT": {
+        "label": "Attaquant",
+        "min": 1,
+        "max": 4,
+        "order": 4
+      },
+      "REM": {
+        "label": "Remplaçant",
+        "min": 0,
+        "max": 3,
+        "order": 5
+      }
+    }
+  },
+  "transfers": {
+    "enabled": true,
+    "maxTransfersPerTeam": 3,
+    "freeTransfersEnabled": true,
+    "allowReturningPlayer": false,
+    "deadlineRule": "before-round-first-match",
+    "defaultIsFreeTransfer": false
+  },
+  "standings": {
+    "sortOrder": [
+      "points",
+      "goals"
+    ],
+    "bestRoundHighlightEnabled": true,
+    "showRoundColumns": true,
+    "showMatchPlayed": false
+  },
+  "fixtures": {
+    "defaultFilter": "J1",
+    "showGroupMatchNumbers": false,
+    "showKnockoutMatchNumbers": true,
+    "showStadium": false,
+    "showStageDetails": false,
+    "scorePlaceholder": "-",
+    "timeLabel": "Heure de Bruxelles",
+    "finalsFilterIncludes": [
+      "third",
+      "final"
+    ]
+  },
+  "labels": {
+    "stats": {
+      "matchesPlayed": "MJ",
+      "goals": "G",
+      "penalties": "PEN",
+      "assists": "A",
+      "cleanSheets": "CS",
+      "penaltiesSaved": "P.ARR",
+      "points": "PTS",
+      "price": "£",
+      "selectionPercentage": "% sélection"
+    },
+    "actions": {
+      "showDays": "Voir journées",
+      "hideDays": "Masquer journées",
+      "showRanking": "Voir le classement",
+      "showAllResults": "Voir tous les résultats",
+      "showPlayers": "Consulter les joueurs",
+      "open": "Ouvrir",
+      "close": "Fermer"
+    },
+    "emptyStates": {
+      "noTransfers": "Aucun transfert enregistré pour le moment.",
+      "noPoints": "Aucun point comptabilisé pour le moment.",
+      "noResults": "Aucun résultat.",
+      "comingSoon": "Cette page arrive bientôt."
+    }
+  }
+}

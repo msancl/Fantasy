@@ -1720,7 +1720,7 @@ p {
 .standings-body {
   display: grid;
   gap: 5px;
-  min-width: 980px;
+  min-width: 1080px;
 }
 
 .standings-entry {
@@ -1757,9 +1757,9 @@ p {
 
 .standings-row {
   display: grid;
-  min-width: 980px;
+  min-width: 1080px;
   grid-template-columns:
-    48px minmax(210px, 1fr)
+    48px minmax(260px, 420px) minmax(58px, 66px)
     repeat(8, minmax(48px, 54px));
   min-height: 48px;
   align-items: center;
@@ -3610,7 +3610,7 @@ p {
 
   .standings-row {
     grid-template-columns:
-      34px minmax(180px, 1fr)
+      34px minmax(170px, 1fr) 46px
       repeat(8, 46px);
     gap: 6px;
     padding: 6px;

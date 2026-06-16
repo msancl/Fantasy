@@ -1,14 +1,237 @@
-const pages = [
-  "accueil",
-  "equipes",
-  "resultats",
-  "classements",
-  "coupes",
-  "joueurs",
-  "transferts",
-  "archives",
-  "reglement",
-];
+﻿const settings = window.settingsData || {};
+const siteSettings = settings.site || {};
+const competitionSettings = settings.competition || {};
+const fixtureSettings = settings.fixtures || {};
+const standingsSettings = settings.standings || {};
+const rosterRules = settings.rosterRules || {};
+const transferSettings = settings.transfers || {};
+const labelSettings = settings.labels || {};
+const appLocale = siteSettings.language || "fr-BE";
+const appTimeZone = siteSettings.timezone || "Europe/Brussels";
+const settingPages = Array.isArray(settings.pages) ? settings.pages : [];
+const settingSubsections = settings.subsections || {};
+const settingRounds = Array.isArray(settings.rounds) ? settings.rounds : [];
+const visiblePageSettings = settingPages.filter(
+  (page) =>
+    page.visible !== false &&
+    !(
+      page.id === "transferts" &&
+      (competitionSettings.transfersEnabled === false ||
+        transferSettings.enabled === false)
+    ),
+);
+const pages = visiblePageSettings.length
+  ? visiblePageSettings.map((page) => page.id)
+  : [
+      "accueil",
+      "equipes",
+      "resultats",
+      "classements",
+      "coupes",
+      "joueurs",
+      "transferts",
+      "archives",
+      "reglement",
+    ];
+const pageSettingsById = new Map(settingPages.map((page) => [page.id, page]));
+const roundSettings = settingRounds
+  .slice()
+  .sort((first, second) => (first.order ?? 0) - (second.order ?? 0));
+const visibleRounds = roundSettings.filter((round) => round.visible !== false);
+const roundSettingsById = new Map(roundSettings.map((round) => [round.id, round]));
+const nationalRoundKeys = visibleRounds.length
+  ? visibleRounds.map((round) => round.id)
+  : ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"];
+const fantasyRoundKeys = nationalRoundKeys;
+const groupRounds = roundSettings.filter((round) => round.type === "group");
+const stageRoundMap = {
+  r32: "R32",
+  r16: "R16",
+  qf: "QF",
+  sf: "SF",
+  third: "F",
+  final: "F",
+};
+const fallbackStageLabels = {
+  group: "Phase de groupes",
+  r32: "Seizièmes de finale",
+  r16: "Huitièmes de finale",
+  qf: "Quarts de finale",
+  sf: "Demi-finales",
+  third: "Match pour la 3e place",
+  final: "Finale",
+};
+const stageLabels = Object.fromEntries(
+  Object.entries(fallbackStageLabels).map(([stage, label]) => [
+    stage,
+    roundSettingsById.get(stageRoundMap[stage])?.fullLabel || label,
+  ]),
+);
+stageLabels.group = "Phase de groupes";
+const statusLabels = {
+  upcoming: "La compétition approche",
+  "in-progress": "Compétition en cours",
+  finished: "Compétition terminée",
+};
+
+function getStatLabel(key, fallback) {
+  return labelSettings.stats?.[key] || fallback;
+}
+
+function getActionLabel(key, fallback) {
+  return labelSettings.actions?.[key] || fallback;
+}
+
+function getEmptyStateLabel(key, fallback) {
+  return labelSettings.emptyStates?.[key] || fallback;
+}
+
+function getRoundLabel(roundId, fallback = roundId) {
+  return roundSettingsById.get(roundId)?.label || fallback;
+}
+
+function getRoundFullLabel(roundId, fallback = roundId) {
+  return roundSettingsById.get(roundId)?.fullLabel || fallback;
+}
+
+function getRoundFilter(roundId) {
+  if (roundId === "F") {
+    return "F";
+  }
+  return roundId;
+}
+
+function getRoundIdFromFilter(filter) {
+  const legacyMap = {
+    "group-1": "J1",
+    "group-2": "J2",
+    "group-3": "J3",
+    r32: "R32",
+    r16: "R16",
+    qf: "QF",
+    sf: "SF",
+    finals: "F",
+  };
+  return legacyMap[filter] || filter;
+}
+
+function getRoundForFixture(fixture) {
+  if (fixture.s === "group") {
+    const kickoff = Date.parse(fixture.d);
+    const round = groupRounds.find((item) => {
+      const start = Date.parse(item.startsAt);
+      const end = Date.parse(item.endsAt);
+      return kickoff >= start && kickoff <= end;
+    });
+    return round?.id || "J3";
+  }
+  return stageRoundMap[fixture.s] || fixture.s;
+}
+
+function getRoundByDayNumber(dayNumber) {
+  return nationalRoundKeys[dayNumber - 1];
+}
+
+function getPositionRule(position) {
+  return rosterRules.positions?.[position] || {};
+}
+
+function getPositionOrder(position) {
+  return getPositionRule(position).order ?? 999;
+}
+
+function getPositionLabel(position) {
+  return getPositionRule(position).label || position;
+}
+
+function getAvailabilityLabel(key, fallback) {
+  return labelSettings.availability?.[key] || fallback;
+}
+
+function applySettingsToStaticDom() {
+  document.documentElement.lang = siteSettings.language || "fr-BE";
+  document.title = siteSettings.title || document.title;
+
+  const headerTitle = document.querySelector(".site-header h1");
+  const headerSubtitle = document.querySelector(".site-header p");
+  if (headerTitle && siteSettings.title) {
+    headerTitle.textContent = siteSettings.title;
+  }
+  if (headerSubtitle && siteSettings.subtitle) {
+    headerSubtitle.textContent = siteSettings.subtitle;
+  }
+
+  document.querySelectorAll("[data-page]").forEach((section) => {
+    const page = pageSettingsById.get(section.dataset.page);
+    if (page?.label) {
+      const heading = section.querySelector(":scope > h2, .home-intro h2, .fixtures-heading h2");
+      if (heading) {
+        heading.textContent = page.label;
+      }
+    }
+    if (page?.visible === false) {
+      section.hidden = true;
+    }
+  });
+
+  document.querySelectorAll('.top-nav a[href^="#"]').forEach((link) => {
+    const pageId = link.getAttribute("href").slice(1);
+    const page = pageSettingsById.get(pageId);
+    if (page?.label) {
+      link.textContent = page.label;
+    }
+    link.hidden = page?.visible === false;
+  });
+
+  if (competitionSettings.transfersEnabled === false || transferSettings.enabled === false) {
+    document.querySelector('.top-nav a[href="#transferts"]')?.setAttribute("hidden", "");
+    const transfersSection = document.querySelector('[data-page="transferts"]');
+    if (transfersSection) {
+      transfersSection.hidden = true;
+    }
+  }
+
+  Object.entries(settingSubsections).forEach(([pageId, subsections]) => {
+    const section = document.querySelector(`[data-page="${pageId}"]`);
+    if (!section || !Array.isArray(subsections)) {
+      return;
+    }
+    subsections.forEach((subsection) => {
+      section
+        .querySelectorAll(
+          `[data-division="${subsection.id}"], [data-division-panel="${subsection.id}"]`,
+        )
+        .forEach((element) => {
+          if (subsection.label && element.matches("[data-division]")) {
+            element.textContent = subsection.label;
+          }
+          if (subsection.visible === false) {
+            element.hidden = true;
+          }
+        });
+    });
+  });
+
+  const timeText = document.querySelector(".fixtures-heading p");
+  if (timeText && fixtureSettings.timeLabel) {
+    timeText.textContent = fixtureSettings.timeLabel;
+  }
+
+  const showAllResults = document.querySelector('.home-section-heading a[href="#resultats"]');
+  if (showAllResults) {
+    showAllResults.textContent = getActionLabel("showAllResults", showAllResults.textContent);
+  }
+  const showRanking = document.querySelector('.home-command-actions a[href="#classements"]');
+  if (showRanking) {
+    showRanking.textContent = getActionLabel("showRanking", showRanking.textContent);
+  }
+  const showPlayers = document.querySelector('.home-command-actions a[href="#joueurs"]');
+  if (showPlayers) {
+    showPlayers.textContent = getActionLabel("showPlayers", showPlayers.textContent);
+  }
+}
+
+applySettingsToStaticDom();
 
 const countries = Array.isArray(window.countryData) ? window.countryData : [];
 const countryById = new Map(countries.map((country) => [country.id, country]));
@@ -35,8 +258,6 @@ const transferData = Array.isArray(window.transferData) ? window.transferData : 
 const fantasyRosterByTeamId = new Map(
   fantasyTeamRostersData.map((roster) => [roster.teamId, roster]),
 );
-const nationalRoundKeys = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"];
-const fantasyRoundKeys = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"];
 
 function formatPlayerStat(value) {
   return value === null || value === undefined ? "-" : String(value);
@@ -70,8 +291,8 @@ function replaceCountryLabel(label, countryName) {
     return;
   }
 
-  const suffix = label.textContent.includes(" ·")
-    ? label.textContent.slice(label.textContent.indexOf(" ·"))
+  const suffix = label.textContent.includes(" ?")
+    ? label.textContent.slice(label.textContent.indexOf(" ?"))
     : "";
   label.textContent = `${countryName}${suffix}`;
 }
@@ -122,16 +343,18 @@ const countryReferenceObserver = new MutationObserver((records) => {
 countryReferenceObserver.observe(document.body, { childList: true, subtree: true });
 
 function getCurrentPage() {
-  const page = window.location.hash.replace("#", "") || "accueil";
-  return pages.includes(page) ? page : "accueil";
+  const fallbackPage = pages.includes(siteSettings.defaultPage)
+    ? siteSettings.defaultPage
+    : pages[0] || "accueil";
+  const page = window.location.hash.replace("#", "") || fallbackPage;
+  return pages.includes(page) ? page : fallbackPage;
 }
 
-const defaultPageDivisions = {
-  equipes: "world-cup",
-  classements: "standings-world-cup",
-  coupes: "tumulus-cup",
-  joueurs: "players-world-cup",
-};
+const defaultPageDivisions = Object.fromEntries(
+  settingPages
+    .filter((page) => page.defaultSubsection)
+    .map((page) => [page.id, page.defaultSubsection]),
+);
 let pageStateResetReady = false;
 let pendingTeamSlug = null;
 
@@ -175,7 +398,7 @@ function closeNationalTeams(section) {
     }
     if (daysButton) {
       daysButton.setAttribute("aria-expanded", "false");
-      daysButton.textContent = "Voir journées";
+      daysButton.textContent = getActionLabel("showDays", "Voir journées");
     }
 
     country.querySelectorAll("[aria-expanded]").forEach((element) => {
@@ -308,7 +531,21 @@ const worldCupTeams = fantasyTeamsData
   });
 
 function getFantasyRoster(teamId) {
-  return fantasyRosterByTeamId.get(teamId) || { slots: [] };
+  const roster = fantasyRosterByTeamId.get(teamId) || { teamId, slots: [] };
+  const slots = Array.isArray(roster.slots) ? roster.slots.slice() : [];
+  const benchSlots = Number(rosterRules.benchSlots ?? 3);
+  const existingBench = slots.filter((slot) => slot.slotType === "substitute").length;
+
+  for (let index = existingBench; index < benchSlots; index += 1) {
+    slots.push({
+      slotType: "substitute",
+      position: "REM",
+      playerId: null,
+      note: `${getPositionLabel("REM")} ${index + 1}`,
+    });
+  }
+
+  return { ...roster, slots };
 }
 
 function roundIndex(round) {
@@ -391,17 +628,67 @@ function getFantasyTeamRoundScores(teamId) {
 }
 
 function getFantasyTeamRows() {
+  const sortOrder = Array.isArray(standingsSettings.sortOrder)
+    ? standingsSettings.sortOrder
+    : ["points", "goals"];
+  const compareStat = (a, b, statName) => {
+    const first = a.totals?.[statName] ?? 0;
+    const second = b.totals?.[statName] ?? 0;
+    return second - first;
+  };
+
   return worldCupTeams
     .map((team) => ({
       team,
       roundScores: getFantasyTeamRoundScores(team[1]),
       totals: getFantasyTeamTotals(team[1]),
     }))
-    .sort(
-      (a, b) =>
-        b.totals.points - a.totals.points ||
-        a.team[0].localeCompare(b.team[0], "fr"),
-    );
+    .sort((a, b) => {
+      for (const statName of sortOrder) {
+        const comparison = compareStat(a, b, statName);
+        if (comparison) {
+          return comparison;
+        }
+      }
+      return a.team[0].localeCompare(b.team[0], appLocale);
+    });
+}
+
+function applyStandingsHeadings() {
+  const header = document.querySelector(".standings-table-head");
+  if (!header) {
+    return;
+  }
+
+  const cells = Array.from(header.children);
+  const roundStart = 3;
+  const totalPointsCell = cells[2];
+  if (totalPointsCell) {
+    totalPointsCell.textContent = getStatLabel("points", "PTS");
+    totalPointsCell.title = "Points totaux";
+  }
+  fantasyRoundKeys.forEach((round, index) => {
+    const cell = cells[roundStart + index];
+    if (!cell) {
+      return;
+    }
+    cell.textContent = getRoundLabel(round);
+    cell.title = getRoundFullLabel(round);
+    cell.hidden = standingsSettings.showRoundColumns === false;
+  });
+
+}
+
+applyStandingsHeadings();
+
+function safeInit(name, callback) {
+  try {
+    callback();
+  } catch (error) {
+    console.error(`Erreur pendant l'initialisation de ${name}`, error);
+    document.body.dataset.lastInitError = name;
+    document.body.dataset.lastInitErrorMessage = error?.message || String(error);
+  }
 }
 
 function createWorldCupStandings() {
@@ -410,21 +697,31 @@ function createWorldCupStandings() {
     return;
   }
 
-  const roundLabels = ["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"];
+  const roundLabels = fantasyRoundKeys.map((round) => getRoundLabel(round));
   const fantasyRows = getFantasyTeamRows();
-  const bestRoundScores = roundLabels.map((_, roundIndex) =>
-    Math.max(
-      ...fantasyRows
-        .map(({ roundScores }) => roundScores[roundIndex])
-        .filter((score) => score !== null),
-    ),
-  );
+  const bestRoundScores = standingsSettings.bestRoundHighlightEnabled === false
+    ? []
+    : roundLabels.map((_, roundIndex) =>
+        Math.max(
+          ...fantasyRows
+            .map(({ roundScores }) => roundScores[roundIndex])
+            .filter((score) => score !== null),
+        ),
+      );
+
+  const isSameRank = (current, previous) =>
+    previous &&
+    (current.totals?.points ?? 0) === (previous.totals?.points ?? 0) &&
+    (current.totals?.goals ?? 0) === (previous.totals?.goals ?? 0);
 
   fantasyRows
     .forEach(({ team, totals, roundScores }, index) => {
       const [name, slug, primary, primaryRgb, secondary, secondaryRgb] = team;
       const entry = document.createElement("div");
       const row = document.createElement("div");
+      const rank = isSameRank(fantasyRows[index], fantasyRows[index - 1])
+        ? "-"
+        : String(index + 1);
 
       entry.className = "standings-entry";
       row.className = `standings-row standings-team team-${slug}`;
@@ -439,6 +736,7 @@ function createWorldCupStandings() {
       const roundCells = roundScores
         .map((score, roundIndex) => {
           const isBest =
+            standingsSettings.bestRoundHighlightEnabled !== false &&
             score !== null &&
             bestRoundScores[roundIndex] !== -Infinity &&
             score === bestRoundScores[roundIndex];
@@ -457,12 +755,13 @@ function createWorldCupStandings() {
         })
         .join("");
       row.innerHTML = `
-        <strong class="standings-rank">${index + 1}</strong>
+        <strong class="standings-rank">${rank}</strong>
         <span class="standings-team-name">
           <i aria-hidden="true"></i>
           <b>${name}</b>
         </span>
-        ${roundCells}
+        <strong class="standings-points">${totals.points}</strong>
+        ${standingsSettings.showRoundColumns === false ? "" : roundCells}
       `;
 
       const openTeamPage = () => {
@@ -483,7 +782,7 @@ function createWorldCupStandings() {
     });
 }
 
-createWorldCupStandings();
+safeInit("classements", createWorldCupStandings);
 
 function formatTeamName(name) {
   return name.toUpperCase();
@@ -634,9 +933,9 @@ function createFantasyTeamCard(row) {
         <div class="block-title-row">
           <div class="days-actions">
             <button class="days-toggle" type="button" aria-expanded="false">
-              Voir journÃ©es
+              ${getActionLabel("showDays", "Voir journées")}
             </button>
-            <div class="day-range-nav" aria-label="PÃ©riodes de journÃ©es"></div>
+            <div class="day-range-nav" aria-label="Périodes de journées"></div>
           </div>
         </div>
         <div
@@ -649,13 +948,13 @@ function createFantasyTeamCard(row) {
             <div>Poste</div>
             <div></div>
             <div>Joueur</div>
-            <div title="Matchs jouÃ©s" aria-label="Matchs jouÃ©s">MJ</div>
-            <div title="Buts, pÃ©naltys inclus" aria-label="Buts, pÃ©naltys inclus">G</div>
-            <div title="Assists" aria-label="Assists">A</div>
-            <div class="clean-sheet-heading" title="Clean Sheets" aria-label="Clean Sheets">CS</div>
-            <div title="Points" aria-label="Points">PTS</div>
-            ${["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"]
-              .map((label, dayIndex) => `<div class="day-cell" data-day="${dayIndex + 1}">${label}</div>`)
+            <div title="Matchs joués" aria-label="Matchs joués">${getStatLabel("matchesPlayed", "MJ")}</div>
+            <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">${getStatLabel("goals", "G")}</div>
+            <div title="Assists" aria-label="Assists">${getStatLabel("assists", "A")}</div>
+            <div class="clean-sheet-heading" title="Clean Sheets" aria-label="Clean Sheets">${getStatLabel("cleanSheets", "CS")}</div>
+            <div title="Points" aria-label="Points">${getStatLabel("points", "PTS")}</div>
+            ${fantasyRoundKeys
+              .map((round, dayIndex) => `<div class="day-cell" data-day="${dayIndex + 1}" title="${getRoundFullLabel(round)}">${getRoundLabel(round)}</div>`)
               .join("")}
           </div>
           ${playerRows}
@@ -681,7 +980,7 @@ function createWorldCupTeams() {
   if (heading) panel.append(heading);
   worldCupTeams
     .slice()
-    .sort((a, b) => a[0].localeCompare(b[0], "fr"))
+    .sort((a, b) => a[0].localeCompare(b[0], appLocale))
     .forEach((team, index) => {
       const row = {
         team,
@@ -694,7 +993,7 @@ function createWorldCupTeams() {
   panel.dataset.fantasyTeamsReady = "true";
 }
 
-createWorldCupTeams();
+safeInit("equipes", createWorldCupTeams);
 
 function addTeamDetailsIndicators() {
   document.querySelectorAll(".team-card-actions").forEach((actions) => {
@@ -712,42 +1011,32 @@ function addTeamDetailsIndicators() {
 addTeamDetailsIndicators();
 
 const legacyNationalTeams = [
-  ["ALG", "Algérie"], ["GER", "Allemagne"], ["ENG", "Angleterre"],
+  ["ALG", "Alg?rie"], ["GER", "Allemagne"], ["ENG", "Angleterre"],
   ["ARG", "Argentine"], ["AUS", "Australie"], ["AUT", "Autriche"],
-  ["BEL", "Belgique"], ["BOS", "Bosnie-Herzégovine"], ["BRA", "Brésil"],
-  ["CAN", "Canada"], ["COL", "Colombie"], ["KOR", "Corée du Sud"],
+  ["BEL", "Belgique"], ["BOS", "Bosnie-Herz?govine"], ["BRA", "Br?sil"],
+  ["CAN", "Canada"], ["COL", "Colombie"], ["KOR", "Cor?e du Sud"],
   ["CIV", "Côte d’Ivoire"], ["CRO", "Croatie"], ["CUW", "Curaçao"],
-  ["ECU", "Équateur"], ["EGY", "Égypte"], ["ESP", "Espagne"],
-  ["USA", "États-Unis"], ["FRA", "France"], ["GHA", "Ghana"],
-  ["HAI", "Haïti"], ["IRN", "Iran"], ["IRQ", "Irak"],
+  ["ECU", "?quateur"], ["EGY", "?gypte"], ["ESP", "Espagne"],
+  ["USA", "?tats-Unis"], ["FRA", "France"], ["GHA", "Ghana"],
+  ["HAI", "Ha?ti"], ["IRN", "Iran"], ["IRQ", "Irak"],
   ["JPN", "Japon"], ["JOR", "Jordanie"], ["MAR", "Maroc"],
-  ["MEX", "Mexique"], ["NOR", "Norvège"], ["NZL", "Nouvelle-Zélande"],
-  ["UZB", "Ouzbékistan"], ["PAN", "Panama"], ["PAR", "Paraguay"],
+  ["MEX", "Mexique"], ["NOR", "Norv?ge"], ["NZL", "Nouvelle-Z?lande"],
+  ["UZB", "Ouzb?kistan"], ["PAN", "Panama"], ["PAR", "Paraguay"],
   ["NED", "Pays-Bas"], ["POR", "Portugal"], ["QAT", "Qatar"],
-  ["COD", "RD Congo"], ["CZE", "République tchèque"], ["RSA", "Afrique du Sud"],
-  ["SCO", "Écosse"], ["SEN", "Sénégal"], ["SWE", "Suède"],
+  ["COD", "RD Congo"], ["CZE", "R?publique tch?que"], ["RSA", "Afrique du Sud"],
+  ["SCO", "?cosse"], ["SEN", "S?n?gal"], ["SWE", "Su?de"],
   ["SWI", "Suisse"], ["TUN", "Tunisie"], ["TUR", "Turquie"], ["URU", "Uruguay"],
   ["CPV", "Cap-Vert"], ["KSA", "Arabie saoudite"],
 ]
   .map(([code, name]) => [code === "MAR" ? "MOR" : code, name])
-  .sort((a, b) => a[1].localeCompare(b[1], "fr"));
+  .sort((a, b) => a[1].localeCompare(b[1], appLocale));
 
 const nationalTeams = countries
   .map(({ id, name }) => [id, name])
-  .sort((a, b) => a[1].localeCompare(b[1], "fr"));
-
-const groupRoundTwoStart = Date.parse("2026-06-18T16:00:00Z");
-const groupRoundTwoEnd = Date.parse("2026-06-24T02:00:00Z");
+  .sort((a, b) => a[1].localeCompare(b[1], appLocale));
 
 function getGroupRoundLabel(fixture) {
-  const kickoff = Date.parse(fixture.d);
-  if (kickoff < groupRoundTwoStart) {
-    return "Journée 1";
-  }
-  if (kickoff <= groupRoundTwoEnd) {
-    return "Journée 2";
-  }
-  return "Journée 3";
+  return getRoundFullLabel(getRoundForFixture(fixture), "Journee 3");
 }
 
 function initializeHomeDashboard() {
@@ -779,19 +1068,19 @@ function initializeHomeDashboard() {
   fixtureList.innerHTML = selectedFixtures
     .map((fixture) => {
       const date = new Date(fixture.d);
-      const day = new Intl.DateTimeFormat("fr-BE", {
+      const day = new Intl.DateTimeFormat(appLocale, {
         weekday: "short",
         day: "2-digit",
         month: "short",
-        timeZone: "Europe/Brussels",
+        timeZone: appTimeZone,
       })
         .format(date)
         .replace(".", "");
-      const time = new Intl.DateTimeFormat("fr-BE", {
+      const time = new Intl.DateTimeFormat(appLocale, {
         hour: "2-digit",
         minute: "2-digit",
         hour12: false,
-        timeZone: "Europe/Brussels",
+        timeZone: appTimeZone,
       }).format(date);
       const homeName = getTeamName(fixture.h, fixture.hp);
       const awayName = getTeamName(fixture.a, fixture.ap);
@@ -833,27 +1122,26 @@ function initializeHomeDashboard() {
   const round = document.querySelector("[data-home-round]");
   const progress = document.querySelector("[data-home-progress]");
 
-  if (now < firstMatch) {
-    status.textContent = "La compétition approche";
+  if (competitionSettings.status) {
+    status.textContent =
+      statusLabels[competitionSettings.status] || competitionSettings.status;
+    round.textContent = getRoundFullLabel(
+      competitionSettings.currentRoundId,
+      competitionSettings.name || "Coupe du Monde",
+    );
+  } else if (now < firstMatch) {
+    status.textContent = statusLabels.upcoming;
     round.textContent = "Avant-tournoi";
   } else if (now > lastMatch) {
-    status.textContent = "Compétition terminée";
-    round.textContent = "Finale";
+    status.textContent = statusLabels.finished;
+    round.textContent = getRoundFullLabel("F", "Finale");
   } else {
     const nextFixture = sortedFixtures.find((fixture) => new Date(fixture.d) >= now);
-    const roundLabels = {
-      r32: "1/16",
-      r16: "1/8",
-      qf: "1/4",
-      sf: "1/2",
-      third: "3e place",
-      final: "Finale",
-    };
-    status.textContent = "Compétition en cours";
+    status.textContent = statusLabels["in-progress"];
     round.textContent =
       nextFixture?.s === "group"
         ? getGroupRoundLabel(nextFixture)
-        : roundLabels[nextFixture?.s] || "Coupe du Monde";
+        : stageLabels[nextFixture?.s] || competitionSettings.name || "Coupe du Monde";
   }
 
   const duration = lastMatch - firstMatch;
@@ -861,7 +1149,7 @@ function initializeHomeDashboard() {
   progress.style.width = `${duration > 0 ? (elapsed / duration) * 100 : 0}%`;
 }
 
-initializeHomeDashboard();
+safeInit("accueil", initializeHomeDashboard);
 
 function initializeWorldCupFixtures() {
   const list = document.querySelector(".fixtures-list");
@@ -875,29 +1163,23 @@ function initializeWorldCupFixtures() {
   }
 
   const teamNames = new Map(nationalTeams);
-  const stageLabels = {
-    group: "Phase de groupes",
-    r32: "Seizièmes de finale",
-    r16: "Huitièmes de finale",
-    qf: "Quarts de finale",
-    sf: "Demi-finales",
-    third: "Match pour la 3e place",
-    final: "Finale",
-  };
-  const dateLabel = new Intl.DateTimeFormat("fr-FR", {
-    timeZone: "Europe/Brussels",
+  const defaultFixtureFilter = getRoundFilter(
+    fixtureSettings.defaultFilter || nationalRoundKeys[0],
+  );
+  const dateLabel = new Intl.DateTimeFormat(appLocale, {
+    timeZone: appTimeZone,
     weekday: "long",
     day: "numeric",
     month: "long",
   });
   const dateKey = new Intl.DateTimeFormat("fr-CA", {
-    timeZone: "Europe/Brussels",
+    timeZone: appTimeZone,
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
   });
-  const timeLabel = new Intl.DateTimeFormat("fr-FR", {
-    timeZone: "Europe/Brussels",
+  const timeLabel = new Intl.DateTimeFormat(appLocale, {
+    timeZone: appTimeZone,
     hour: "2-digit",
     minute: "2-digit",
     hour12: false,
@@ -937,10 +1219,10 @@ function initializeWorldCupFixtures() {
       home: {
         score: 2,
         scorers: "J. Quinones 9', R. Jimenez 67'",
-        assists: "—",
-        cleanSheets: "GB et défenseurs",
+        assists: "-",
+        cleanSheets: "GB et d?fenseurs",
         hasCleanSheet: true,
-        penaltySaves: "—",
+        penaltySaves: "-",
       },
       away: {
         score: 0,
@@ -1014,10 +1296,11 @@ function initializeWorldCupFixtures() {
   );
 
   const playerDetails = (id) => {
-    const player = playerById.get(id);
+    const normalizedId = String(id);
+    const player = playerById.get(normalizedId);
     return player
-      ? { id: player.id, name: player.name, position: player.position }
-      : { id, name: `JOUEUR ${id}`, position: "-" };
+      ? { id: String(player.id), name: player.name, position: player.position }
+      : { id: normalizedId, name: `JOUEUR ${normalizedId}`, position: "-" };
   };
 
   const formatMinute = (event) =>
@@ -1027,9 +1310,9 @@ function initializeWorldCupFixtures() {
     const countryId =
       side === "home" ? match.homeCountryId : match.awayCountryId;
     const cleanSheetIds = new Set(
-      eventEntry?.cleanSheets?.[
+      (eventEntry?.cleanSheets?.[
         side === "home" ? "homePlayerIds" : "awayPlayerIds"
-      ] || [],
+      ] || []).map(String),
     );
     const goals = (eventEntry?.goals || []).filter(
       (goal) => goal.countryId === countryId,
@@ -1101,7 +1384,7 @@ function initializeWorldCupFixtures() {
 
   const getPlayerPosition = (code, playerName) => {
     if (!code || typeof worldCupSquads === "undefined") {
-      return "—";
+      return "-";
     }
 
     const normalizedName = playerName
@@ -1116,7 +1399,7 @@ function initializeWorldCupFixtures() {
           .toLowerCase() === normalizedName,
     );
 
-    return player?.position || "—";
+    return player?.position || "-";
   };
 
   const placeholderLineup = [
@@ -1195,7 +1478,7 @@ function initializeWorldCupFixtures() {
         <h4>Composition</h4>
         <ol>${playerRows}</ol>
         <div class="fixture-substitutes">
-          <h5>Remplaçants entrés</h5>
+          <h5>Rempla?ants entr?s</h5>
           <ul>${substituteRows}</ul>
         </div>
       </div>
@@ -1208,45 +1491,40 @@ function initializeWorldCupFixtures() {
       <div class="fixture-events-summary">
         <div>
           <b>Buteurs</b>
-          <span>${events.scorers || "—"}</span>
+          <span>${events.scorers || "-"}</span>
         </div>
         <div>
           <b>Assists</b>
-          <span>${events.assists || "—"}</span>
+          <span>${events.assists || "-"}</span>
         </div>
       </div>
       ${lineupMarkup(code, events)}
       <footer class="fixture-penalty-saves">
-        <b>Penalties arrêtés</b>
-        <span>${events.penaltySaves || "—"}</span>
+        <b>Penalties arr?t?s</b>
+        <span>${events.penaltySaves || "-"}</span>
       </footer>
     </section>
   `;
 
   const fixtureMatchesFilter = (fixture, filter) => {
-    if (filter.startsWith("group-")) {
-      if (fixture.s !== "group") {
-        return false;
+    const roundId = getRoundIdFromFilter(filter);
+    if (roundSettingsById.has(roundId)) {
+      if (roundId === "F") {
+        const finalStages = fixtureSettings.finalsFilterIncludes || ["third", "final"];
+        return finalStages.includes(fixture.s);
       }
-
-      const kickoff = Date.parse(fixture.d);
-      if (filter === "group-1") {
-        return kickoff < groupRoundTwoStart;
-      }
-      if (filter === "group-2") {
-        return kickoff >= groupRoundTwoStart && kickoff <= groupRoundTwoEnd;
-      }
-      return kickoff > groupRoundTwoEnd;
+      return getRoundForFixture(fixture) === roundId;
     }
 
     if (filter === "finals") {
-      return fixture.s === "third" || fixture.s === "final";
+      const finalStages = fixtureSettings.finalsFilterIncludes || ["third", "final"];
+      return finalStages.includes(fixture.s);
     }
 
     return fixture.s === filter;
   };
 
-  const renderFixtures = (filter = "group-1") => {
+  const renderFixtures = (filter = defaultFixtureFilter) => {
     const selected = worldCupFixtures
       .filter((fixture) => fixtureMatchesFilter(fixture, filter))
       .sort(
@@ -1281,8 +1559,13 @@ function initializeWorldCupFixtures() {
                       : stageLabels[fixture.s];
                   const matchReference =
                     fixture.s === "group"
-                      ? matchContext
-                      : `M${fixture.n} · ${matchContext}`;
+                      ? fixtureSettings.showGroupMatchNumbers
+                        ? `M${fixture.n} · ${matchContext}`
+                        : matchContext
+                      : fixtureSettings.showKnockoutMatchNumbers === false
+                        ? matchContext
+                        : `M${fixture.n} · ${matchContext}`;
+                  const scorePlaceholder = fixtureSettings.scorePlaceholder || "-";
                   return `
                     <article class="fixture-match" data-fixture="${fixture.n}">
                       <div
@@ -1291,7 +1574,7 @@ function initializeWorldCupFixtures() {
                         tabindex="0"
                         aria-expanded="false"
                         aria-controls="fixture-details-${fixture.n}"
-                        aria-label="Ouvrir les détails du match"
+                        aria-label="${getActionLabel("open", "Ouvrir")} les détails du match"
                       >
                         <div class="fixture-kickoff">
                           <time datetime="${fixture.d}">${timeLabel.format(
@@ -1303,9 +1586,9 @@ function initializeWorldCupFixtures() {
                           ${teamIdentityMarkup(fixture.h, fixture.hp)}
                           <span class="fixture-score-center">
                             <span class="fixture-scoreline" aria-label="Score">
-                              <b>${result?.home.score ?? "-"}</b>
-                              <i>–</i>
-                              <b>${result?.away.score ?? "-"}</b>
+                              <b>${result?.home.score ?? scorePlaceholder}</b>
+                              <i>-</i>
+                              <b>${result?.away.score ?? scorePlaceholder}</b>
                             </span>
                           </span>
                           ${teamIdentityMarkup(fixture.a, fixture.ap)}
@@ -1342,6 +1625,20 @@ function initializeWorldCupFixtures() {
   };
 
   filters.forEach((button) => {
+    const legacyFilter = button.dataset.fixtureFilter;
+    const legacyRoundId = getRoundIdFromFilter(legacyFilter);
+    const round = roundSettingsById.get(legacyRoundId);
+    if (round) {
+      button.dataset.fixtureFilter = getRoundFilter(round.id);
+      button.textContent = getRoundLabel(round.id);
+      button.title = getRoundFullLabel(round.id);
+      button.hidden = round.visible === false;
+      button.classList.toggle(
+        "is-active",
+        button.dataset.fixtureFilter === defaultFixtureFilter,
+      );
+    }
+
     button.addEventListener("click", () => {
       filters.forEach((item) => {
         const isActive = item === button;
@@ -1367,7 +1664,7 @@ function initializeWorldCupFixtures() {
     row.setAttribute("aria-expanded", String(isOpen));
     row.setAttribute(
       "aria-label",
-      `${isOpen ? "Fermer" : "Ouvrir"} les détails du match`,
+      `${isOpen ? getActionLabel("close", "Fermer") : getActionLabel("open", "Ouvrir")} les détails du match`,
     );
     details.setAttribute("aria-hidden", String(!isOpen));
   };
@@ -1396,10 +1693,10 @@ function initializeWorldCupFixtures() {
       String(button.classList.contains("is-active")),
     );
   });
-  renderFixtures();
+  renderFixtures(defaultFixtureFilter);
 }
 
-initializeWorldCupFixtures();
+safeInit("resultats", initializeWorldCupFixtures);
 
 function createNationalTeamSections() {
   const list = document.querySelector(".national-team-list");
@@ -1448,7 +1745,7 @@ function createNationalTeamSections() {
       }
       if (daysButton) {
         daysButton.setAttribute("aria-expanded", "false");
-        daysButton.textContent = "Voir journées";
+        daysButton.textContent = getActionLabel("showDays", "Voir journées");
       }
 
       const isOpen = section.classList.toggle("is-open");
@@ -1495,7 +1792,11 @@ function ensureNationalTeamRoster(section) {
             <small>${name}</small>
           </div>
           <div class="player-availability-cell">
-            <span class="player-availability player-availability-${availability.key}">
+            <span
+              class="player-availability player-availability-${availability.key}"
+              title="Sélection: ${availability.selectionPercentage}%"
+              data-selection="${availability.selectionPercentage}"
+            >
               ${availability.label} ${availability.selectedBy}/${availability.limit}
             </span>
           </div>
@@ -1516,19 +1817,20 @@ function ensureNationalTeamRoster(section) {
       <div class="block-title-row">
         <div class="days-actions">
           <button class="days-toggle" type="button" aria-expanded="false">
-            Voir journées
+            ${getActionLabel("showDays", "Voir journées")}
           </button>
           <div class="national-day-selector" aria-label="Journées">
-            ${["J1", "J2", "J3", "1/16", "1/8", "1/4", "1/2", "F"]
+            ${nationalRoundKeys
               .map(
-                (label, dayIndex) => `
+                (round, dayIndex) => `
                   <button
                     class="national-day-button"
                     type="button"
                     data-day="${dayIndex + 1}"
+                    title="${getRoundFullLabel(round)}"
                     aria-pressed="false"
                   >
-                    ${label}
+                    ${getRoundLabel(round)}
                   </button>
                 `,
               )
@@ -1548,12 +1850,12 @@ function ensureNationalTeamRoster(section) {
           <div>Joueur</div>
           <div class="player-availability-heading" aria-hidden="true"></div>
           <div>Poste</div>
-          <div title="Matchs joués" aria-label="Matchs joués">MJ</div>
-          <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">G</div>
-          <div title="Assists" aria-label="Assists">A</div>
-          <div class="clean-sheet-heading" title="Clean Sheets" aria-label="Clean Sheets">CS</div>
-          <div title="Pénaltys arrêtés" aria-label="Pénaltys arrêtés">P.ARR</div>
-          <div title="Points" aria-label="Points">Pts</div>
+          <div title="Matchs joués" aria-label="Matchs joués">${getStatLabel("matchesPlayed", "MJ")}</div>
+          <div title="Buts, pénaltys inclus" aria-label="Buts, pénaltys inclus">${getStatLabel("goals", "G")}</div>
+          <div title="Assists" aria-label="Assists">${getStatLabel("assists", "A")}</div>
+          <div class="clean-sheet-heading" title="Clean Sheets" aria-label="Clean Sheets">${getStatLabel("cleanSheets", "CS")}</div>
+          <div title="Pénaltys arrêtés" aria-label="Pénaltys arrêtés">${getStatLabel("penaltiesSaved", "P.ARR")}</div>
+          <div title="Points" aria-label="Points">${getStatLabel("points", "PTS")}</div>
         </div>
         ${playerRows}
       </div>
@@ -1567,11 +1869,13 @@ function ensureNationalTeamRoster(section) {
   initializeNationalBoard(section.querySelector(".national-squad-board"));
 }
 
-createNationalTeamSections();
+safeInit("joueurs", createNationalTeamSections);
 
 function getPlayerAvailability(player) {
   const availability = player.availability || {};
-  const limit = Number(availability.maximumSelections ?? 2);
+  const limit = Number(
+    availability.maximumSelections ?? competitionSettings.maxSelectionsPerPlayer ?? 2,
+  );
   const selectedBy = Math.max(
     0,
     Number(availability.selectedBy ?? 0),
@@ -1585,9 +1889,12 @@ function getPlayerAvailability(player) {
 
   return {
     key: isAvailable ? "available" : "unavailable",
-    label: isAvailable ? "Disponible" : "Indisponible",
+    label: isAvailable
+      ? getAvailabilityLabel("available", "Disponible")
+      : getAvailabilityLabel("unavailable", "Indisponible"),
     selectedBy,
     limit,
+    selectionPercentage: Number(availability.selectionPercentage ?? 0),
   };
 }
 
@@ -1609,20 +1916,23 @@ function initializeTransferPlayerSearch() {
   const results = container.querySelector("[data-player-results]");
   const countryNames = new Map(nationalTeams);
   const players = Object.entries(worldCupSquads).flatMap(([code, squad]) =>
-    squad.map((player) => ({
-      ...player,
-      code,
-      country: countryNames.get(code) || code,
-      points: Number(player.totals?.points ?? 0),
-      pointsDisplay: formatPlayerStat(player.totals?.points),
-      selection: Number(player.availability?.selectionPercentage ?? 0),
-      ...getPlayerAvailability(player),
-    })),
+    squad.map((player) => {
+      const points = Math.max(0, Number(player.totals?.points ?? 0));
+      return {
+        ...player,
+        code,
+        country: countryNames.get(code) || code,
+        points,
+        pointsDisplay: String(points),
+        selection: Number(player.availability?.selectionPercentage ?? 0),
+        ...getPlayerAvailability(player),
+      };
+    }),
   );
 
   Array.from(countryNames.entries())
     .filter(([code]) => worldCupSquads[code]?.length)
-    .sort((first, second) => first[1].localeCompare(second[1], "fr"))
+    .sort((first, second) => first[1].localeCompare(second[1], appLocale))
     .forEach(([code, name]) => {
       const option = document.createElement("option");
       option.value = code;
@@ -1631,7 +1941,7 @@ function initializeTransferPlayerSearch() {
     });
 
   const render = () => {
-    const query = search.value.trim().toLocaleLowerCase("fr");
+    const query = search.value.trim().toLocaleLowerCase(appLocale);
     const selectedPosition = positionFilter.value;
     const selectedCountry = countryFilter.value;
     const selectedAvailability = availabilityFilter.value;
@@ -1641,7 +1951,7 @@ function initializeTransferPlayerSearch() {
         (player) =>
           (!query ||
             player.name.toLocaleLowerCase("fr").includes(query) ||
-            player.country.toLocaleLowerCase("fr").includes(query)) &&
+            player.country.toLocaleLowerCase(appLocale).includes(query)) &&
           (!selectedPosition || player.position === selectedPosition) &&
           (!selectedCountry || player.code === selectedCountry) &&
           (!selectedAvailability || player.key === selectedAvailability),
@@ -1651,13 +1961,16 @@ function initializeTransferPlayerSearch() {
           return (
             second.selection - first.selection ||
             second.points - first.points ||
-            first.name.localeCompare(second.name, "fr")
+            first.name.localeCompare(second.name, appLocale)
           );
         }
         if (selectedSort === "name-asc") {
-          return first.name.localeCompare(second.name, "fr");
+          return first.name.localeCompare(second.name, appLocale);
         }
-        return second.points - first.points || first.name.localeCompare(second.name, "fr");
+        return (
+          second.points - first.points ||
+          first.name.localeCompare(second.name, appLocale)
+        );
       });
 
     results.innerHTML = filtered
@@ -1671,7 +1984,11 @@ function initializeTransferPlayerSearch() {
               <small>${player.country}</small>
             </span>
             <span class="player-availability-cell">
-              <span class="player-availability player-availability-${player.key}">
+              <span
+                class="player-availability player-availability-${player.key}"
+                title="Sélection: ${player.selection}%"
+                data-selection="${player.selection}"
+              >
                 ${player.label} ${player.selectedBy}/${player.limit}
               </span>
             </span>
@@ -1681,7 +1998,10 @@ function initializeTransferPlayerSearch() {
       )
       .join("");
     if (!filtered.length) {
-      results.innerHTML = '<p class="transfer-search-empty">Aucun joueur trouvé</p>';
+      results.innerHTML = `<p class="transfer-search-empty">${getEmptyStateLabel(
+        "noResults",
+        "Aucun joueur trouvé",
+      )}</p>`;
     }
   };
 
@@ -1691,7 +2011,7 @@ function initializeTransferPlayerSearch() {
   render();
 }
 
-initializeTransferPlayerSearch();
+safeInit("recherche-transferts", initializeTransferPlayerSearch);
 
 function formatTransferDate(value) {
   const date = new Date(value);
@@ -1699,8 +2019,18 @@ function formatTransferDate(value) {
     return { label: "-", datetime: "" };
   }
 
+  const zonedParts = new Intl.DateTimeFormat("fr-CA", {
+    timeZone: appTimeZone,
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(date);
+  const part = (type) => zonedParts.find((item) => item.type === type)?.value || "00";
+
   return {
-    label: `${String(date.getDate()).padStart(2, "0")}/${String(date.getMonth() + 1).padStart(2, "0")} · ${String(date.getHours()).padStart(2, "0")}h${String(date.getMinutes()).padStart(2, "0")}`,
+    label: `${part("day")}/${part("month")} · ${part("hour")}h${part("minute")}`,
     datetime: date.toISOString(),
   };
 }
@@ -1759,6 +2089,10 @@ function initializeTransferHistory() {
   list.hidden = !sortedTransfers.length;
   if (emptyState) {
     emptyState.hidden = Boolean(sortedTransfers.length);
+    emptyState.textContent = getEmptyStateLabel(
+      "noTransfers",
+      emptyState.textContent,
+    );
   }
 
   sortedTransfers.forEach((transfer) => {
@@ -1770,14 +2104,14 @@ function initializeTransferHistory() {
       ${createTransferTeamMarkup(transfer.fantasyTeamId)}
       <span class="transfer-number">${transferOrdinal(transfer.teamTransferNumber)}</span>
       ${createTransferPlayerMarkup(transfer.playerInId)}
-      <i class="transfer-swap" aria-hidden="true">⇄</i>
+      <i class="transfer-swap" aria-hidden="true">?</i>
       ${createTransferPlayerMarkup(transfer.playerOutId)}
     `;
     list.append(row);
   });
 }
 
-initializeTransferHistory();
+safeInit("historique-transferts", initializeTransferHistory);
 
 const emptyNationalDayStat = {
   matchesPlayed: null,
@@ -1839,13 +2173,13 @@ function createNationalDayDetailCells(board) {
   }
 
   const labels = [
-    ["MJ", "Matchs joués"],
-    ["Pen", "Pénaltys"],
-    ["G", "Buts"],
-    ["A", "Assists"],
-    ["CS", "Clean Sheets"],
-    ["P.ARR", "Pénaltys arrêtés"],
-    ["Pts", "Points"],
+    [getStatLabel("matchesPlayed", "MJ"), "Matchs joués"],
+    [getStatLabel("penalties", "PEN"), "Pénaltys"],
+    [getStatLabel("goals", "G"), "Buts"],
+    [getStatLabel("assists", "A"), "Assists"],
+    [getStatLabel("cleanSheets", "CS"), "Clean Sheets"],
+    [getStatLabel("penaltiesSaved", "P.ARR"), "Pénaltys arrêtés"],
+    [getStatLabel("points", "PTS"), "Points"],
   ];
   const header = board.querySelector(".player-table-head");
   const headerGroup = document.createElement("div");
@@ -1969,7 +2303,9 @@ function initializeNationalBoard(board) {
     }
 
     daysToggle.setAttribute("aria-expanded", String(isOpen));
-    daysToggle.textContent = isOpen ? "Masquer journées" : "Voir journées";
+    daysToggle.textContent = isOpen
+      ? getActionLabel("hideDays", "Masquer journées")
+      : getActionLabel("showDays", "Voir journées");
   });
 
   board.dataset.controlsReady = "true";
@@ -2062,6 +2398,10 @@ function movePositionsBeforeShirts() {
 movePositionsBeforeShirts();
 
 function addPlayerPrices() {
+  if (competitionSettings.playerPricesEnabled === false) {
+    return;
+  }
+
   document.querySelectorAll(".squad-board").forEach((board) => {
     const header = board.querySelector(".player-table-head");
 
@@ -2072,7 +2412,7 @@ function addPlayerPrices() {
       );
 
       priceHeading.className = "player-price-heading";
-      priceHeading.textContent = "£";
+      priceHeading.textContent = getStatLabel("price", "£");
       header.insertBefore(priceHeading, matchesHeading);
     }
 
@@ -2092,7 +2432,7 @@ function addPlayerPrices() {
         points?.classList.add("player-points");
 
         price.className = "player-stat player-price";
-        price.textContent = "3";
+        price.textContent = String(competitionSettings.defaultPlayerPrice ?? 3);
         row.insertBefore(price, firstStat);
       });
   });
@@ -2205,7 +2545,9 @@ document.querySelectorAll(".team-details-toggle-old").forEach((button) => {
     const isOpen = teamCard.classList.toggle("is-open");
 
     button.setAttribute("aria-expanded", String(isOpen));
-    button.textContent = isOpen ? "Masquer" : "Détails";
+    button.textContent = isOpen
+      ? getActionLabel("close", "Fermer")
+      : getActionLabel("open", "Ouvrir");
   });
 });
 
@@ -2223,13 +2565,23 @@ const extraSeasonScores = [
   ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
 ];
 
-const dayRanges = [
-  { label: "J1-8", start: 1, end: 8 },
-  { label: "J9-16", start: 9, end: 16 },
-  { label: "J17-24", start: 17, end: 24 },
-  { label: "J25-32", start: 25, end: 32 },
-  { label: "J33-38", start: 33, end: 38 },
-];
+const dayRanges = (() => {
+  const totalRounds = fantasyRoundKeys.length || 8;
+  const chunkSize = totalRounds <= 8 ? totalRounds : 8;
+
+  return Array.from(
+    { length: Math.ceil(totalRounds / chunkSize) },
+    (_, index) => {
+      const start = index * chunkSize + 1;
+      const end = Math.min(start + chunkSize - 1, totalRounds);
+      return {
+        label: `J${start}-${end}`,
+        start,
+        end,
+      };
+    },
+  );
+})();
 
 function extendSeasonDays() {
   document.querySelectorAll(".squad-board").forEach((board) => {
@@ -2275,28 +2627,20 @@ function extendSeasonDays() {
 extendSeasonDays();
 
 function applyWorldCupDayLabels() {
-  const knockoutRounds = {
-    4: { short: "1/16", full: "Seizièmes de finale" },
-    5: { short: "1/8", full: "Huitièmes de finale" },
-    6: { short: "1/4", full: "Quarts de finale" },
-    7: { short: "1/2", full: "Demi-finales" },
-    8: { short: "F", full: "Finale" },
-  };
-
   document
     .querySelectorAll(
       '[data-division-panel="world-cup"] .player-table-head .day-cell',
     )
     .forEach((cell) => {
-      const round = knockoutRounds[Number(cell.dataset.day)];
+      const roundId = getRoundByDayNumber(Number(cell.dataset.day));
 
-      if (!round) {
+      if (!roundId) {
         return;
       }
 
-      cell.textContent = round.short;
-      cell.title = round.full;
-      cell.setAttribute("aria-label", round.full);
+      cell.textContent = getRoundLabel(roundId);
+      cell.title = getRoundFullLabel(roundId);
+      cell.setAttribute("aria-label", getRoundFullLabel(roundId));
     });
 }
 
@@ -2312,7 +2656,12 @@ function appendSubstituteSlots() {
       return;
     }
 
-    for (let slotNumber = 1; slotNumber <= 3; slotNumber += 1) {
+    const benchSlots = Number(rosterRules.benchSlots ?? 3);
+    const existingSubstitutes = board.querySelectorAll(".pos-rem").length;
+    const slotsToAdd = Math.max(0, benchSlots - existingSubstitutes);
+
+    for (let slotNumber = 1; slotNumber <= slotsToAdd; slotNumber += 1) {
+      const displayNumber = existingSubstitutes + slotNumber;
       const slot = document.createElement("article");
       slot.className = "player-card pos-rem substitute-slot";
       slot.innerHTML = `
@@ -2320,7 +2669,7 @@ function appendSubstituteSlots() {
         <div class="substitute-slot-marker" aria-hidden="true">+</div>
         <div class="player-main">
           <strong>Place disponible</strong>
-          <small>Remplaçant ${slotNumber}</small>
+          <small>${getPositionLabel("REM")} ${displayNumber}</small>
         </div>
         <div class="player-stat player-price">-</div>
         <div class="player-stat">-</div>
@@ -2330,7 +2679,7 @@ function appendSubstituteSlots() {
         <div class="player-stat player-points">-</div>
       `;
 
-      for (let day = 1; day <= 38; day += 1) {
+      for (let day = 1; day <= fantasyRoundKeys.length; day += 1) {
         const cell = document.createElement("div");
         cell.className = "day-cell inactive";
         cell.dataset.day = String(day);
@@ -2489,7 +2838,7 @@ function resetTeamDays(teamCard) {
 
   if (daysButton) {
     daysButton.setAttribute("aria-expanded", "false");
-    daysButton.textContent = "Voir journées";
+    daysButton.textContent = getActionLabel("showDays", "Voir journées");
   }
 }
 
@@ -2519,7 +2868,9 @@ function initializeTeamCardControls(teamCard) {
       }
 
       button.setAttribute("aria-expanded", String(isOpen));
-      button.textContent = isOpen ? "Masquer journées" : "Voir journées";
+      button.textContent = isOpen
+        ? getActionLabel("hideDays", "Masquer journées")
+        : getActionLabel("showDays", "Voir journées");
     });
   });
 }
@@ -2552,7 +2903,9 @@ document.querySelectorAll(".team-details-toggle-disabled").forEach((button) => {
     const isOpen = teamCard.classList.toggle("is-open");
 
     button.setAttribute("aria-expanded", String(isOpen));
-    button.textContent = isOpen ? "Masquer" : "Détails";
+    button.textContent = isOpen
+      ? getActionLabel("close", "Fermer")
+      : getActionLabel("open", "Ouvrir");
   });
 });
 
@@ -2580,7 +2933,9 @@ document.querySelectorAll(".days-toggle").forEach((button) => {
     }
 
     button.setAttribute("aria-expanded", String(isOpen));
-    button.textContent = isOpen ? "Masquer journées" : "Voir journées";
+    button.textContent = isOpen
+      ? getActionLabel("hideDays", "Masquer journées")
+      : getActionLabel("showDays", "Voir journées");
   });
 });
 
