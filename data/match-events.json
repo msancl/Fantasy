@@ -1757,21 +1757,112 @@
     "matchNumber": 22,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          130164,
+          186590,
+          413403,
+          743413,
+          472423,
+          567576,
+          357662,
+          581678,
+          503733,
+          503987,
+          132098
+        ],
+        "substitutes": [
+          392757,
+          483348,
+          503743,
+          258923,
+          433177
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          205927,
+          371001,
+          892160,
+          475959,
+          483046,
+          668207,
+          205938,
+          27992,
+          580451,
+          42460,
+          387110
+        ],
+        "substitutes": [
+          51471,
+          293200,
+          46580,
+          395928,
+          605268
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ENG",
+        "scorerId": 132098,
+        "assistId": null,
+        "minute": 12,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CRO",
+        "scorerId": 580451,
+        "assistId": 668207,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 132098,
+        "assistId": 357662,
+        "minute": 42,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CRO",
+        "scorerId": 387110,
+        "assistId": 42460,
+        "minute": 45,
+        "addedTime": 5,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": 567576,
+        "minute": 47,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 258923,
+        "assistId": 433177,
+        "minute": 85,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-17T22:48:19.180783Z"
   },
   {
     "matchNumber": 23,
