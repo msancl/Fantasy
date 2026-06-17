@@ -77,7 +77,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 2,
@@ -160,7 +160,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 3,
@@ -235,7 +235,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 4,
@@ -336,7 +336,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 5,
@@ -407,7 +407,7 @@
       ]
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 6,
@@ -491,7 +491,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 7,
@@ -566,7 +566,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 8,
@@ -641,7 +641,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 9,
@@ -713,7 +713,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 10,
@@ -840,7 +840,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 11,
@@ -933,7 +933,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 12,
@@ -1044,7 +1044,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 13,
@@ -1119,7 +1119,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 14,
@@ -1187,7 +1187,7 @@
       ]
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 15,
@@ -1279,7 +1279,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 16,
@@ -1354,7 +1354,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 17,
@@ -1444,67 +1444,294 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-16T21:38:41.562766Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 18,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          206782,
+          933541,
+          931147,
+          530527,
+          585325,
+          1132850,
+          303766,
+          877672,
+          560957,
+          401054,
+          610581
+        ],
+        "substitutes": [
+          952341,
+          686845,
+          663153,
+          833817,
+          589646
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          73517,
+          328658,
+          464469,
+          661427,
+          370789,
+          333014,
+          223367,
+          316264,
+          894914,
+          418560,
+          238407
+        ],
+        "substitutes": [
+          367284,
+          308439,
+          564785,
+          670103,
+          661207
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "NOR",
+        "scorerId": 418560,
+        "assistId": 661427,
+        "minute": 29,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "IRQ",
+        "scorerId": 401054,
+        "assistId": 303766,
+        "minute": 39,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 418560,
+        "assistId": null,
+        "minute": 43,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 367284,
+        "assistId": 316264,
+        "minute": 76,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 401054,
+        "assistId": 418560,
+        "minute": 90,
+        "addedTime": 6,
+        "isPenalty": false,
+        "isOwnGoal": true
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 19,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          111873,
+          355915,
+          480762,
+          474800,
+          402733,
+          534033,
+          648195,
+          255901,
+          576028,
+          28003,
+          406625
+        ],
+        "substitutes": [
+          54781,
+          424042,
+          948294,
+          486031,
+          576024
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          283489,
+          80293,
+          284732,
+          578391,
+          864306,
+          245537,
+          560593,
+          855015,
+          905011,
+          917911,
+          418659
+        ],
+        "substitutes": [
+          416660,
+          395693,
+          748443,
+          171424,
+          746910
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 255901,
+        "minute": 17,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 534033,
+        "minute": 60,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 486031,
+        "minute": 76,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        111873,
+        355915,
+        480762,
+        474800,
+        402733,
+        54781,
+        424042
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 20,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          186374,
+          59016,
+          225657,
+          223974,
+          127573,
+          223967,
+          404950,
+          223979,
+          106987,
+          346853,
+          369567
+        ],
+        "substitutes": [
+          263236,
+          900909,
+          659459,
+          533295,
+          41384
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          261850,
+          658052,
+          539961,
+          882197,
+          883111,
+          310943,
+          734751,
+          561485,
+          1252820,
+          551505,
+          664057
+        ],
+        "substitutes": [
+          561481,
+          658807,
+          310801,
+          401086,
+          1059056
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "AUT",
+        "scorerId": 346853,
+        "assistId": 223979,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "JOR",
+        "scorerId": 664057,
+        "assistId": 561485,
+        "minute": 50,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "AUT",
+        "scorerId": 539961,
+        "assistId": 106987,
+        "minute": 76,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      },
+      {
+        "countryId": "AUT",
+        "scorerId": 41384,
+        "assistId": 658807,
+        "minute": 90,
+        "addedTime": 12,
+        "isPenalty": true,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 21,
