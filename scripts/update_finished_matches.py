@@ -37,6 +37,8 @@ MATCH_EVENTS_PATH = DATA_DIR / "match-events.json"
 PLAYERS_PATH = DATA_DIR / "players.json"
 LIVE_EVENTS_PATH = DATA_DIR / "match-events-live.json"
 
+from bbc_match_events import apply_bbc_assists_to_event, preserve_existing_assists
+
 ROUND_NAMES = ["J1", "J2", "J3", "R32", "R16", "QF", "SF", "F"]
 STAT_NAMES = [
     "matchesPlayed",
@@ -184,7 +186,7 @@ def parse_goals(source: str, match_data: dict) -> list[dict]:
             {
                 "countryId": match_data["homeCountryId"] if side == "home" else match_data["awayCountryId"],
                 "scorerId": ids[0] if ids else None,
-                "assistId": ids[1] if len(ids) > 1 else None,
+                "assistId": None,
                 "minute": minute,
                 "addedTime": added_time,
                 "isPenalty": bool(re.search(r",\s*Penalty,", text, re.I)),
@@ -355,6 +357,7 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Show what would change without writing files.")
     parser.add_argument("--refresh-cache", action="store_true", help="Fetch pages even if cached HTML exists.")
     parser.add_argument("--match", type=int, action="append", help="Only update a specific match number. Can be repeated.")
+    parser.add_argument("--force", action="store_true", help="Re-import matches already imported from Transfermarkt.")
     parser.add_argument("--hours-after-kickoff", type=float, default=0, help="Optional safety delay after kickoff before importing.")
     parser.add_argument("--now", help="Override current UTC time, for tests. Example: 2026-06-16T12:00:00Z")
     args = parser.parse_args()
@@ -392,6 +395,9 @@ def main() -> int:
         if not wanted_matches and kickoff > cutoff:
             skipped.append(f"M{number} not kicked off yet")
             continue
+        if match_data.get("transfermarktImported") and not args.force:
+            skipped.append(f"M{number} already imported from Transfermarkt")
+            continue
 
         try:
             source = fetch_match_page(match_data, args.refresh_cache)
@@ -427,11 +433,22 @@ def main() -> int:
             event = {"matchNumber": number}
             match_events.append(event)
             event_by_match[number] = event
+
+        preserve_existing_assists(parsed["goals"], event.get("goals", []))
         event["lineups"] = parsed["lineups"]
         event["goals"] = parsed["goals"]
         event["cleanSheets"] = parsed["cleanSheets"]
         event["penaltiesSaved"] = parsed["penaltiesSaved"]
+
+        if match_data.get("bbc") and (not match_data.get("bbcAssistsImported") or args.force):
+            ok, bbc_warnings = apply_bbc_assists_to_event(match_data, event, players, args.refresh_cache)
+            if ok:
+                match_data["bbcAssistsImported"] = True
+            else:
+                warnings.extend(bbc_warnings)
+
         event["updatedAt"] = imported_at
+        match_data["transfermarktImported"] = True
 
         if len(parsed["lineups"]["home"]["starters"]) != 11 or len(parsed["lineups"]["away"]["starters"]) != 11:
             warnings.append(

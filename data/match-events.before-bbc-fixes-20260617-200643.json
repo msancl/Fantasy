@@ -235,7 +235,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 4,
@@ -288,7 +288,7 @@
       {
         "countryId": "USA",
         "scorerId": 861852,
-        "assistId": null,
+        "assistId": 332697,
         "minute": 7,
         "addedTime": null,
         "isPenalty": false,
@@ -336,7 +336,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 5,
@@ -620,7 +620,7 @@
       {
         "countryId": "SWI",
         "scorerId": 237662,
-        "assistId": null,
+        "assistId": 148252,
         "minute": 17,
         "addedTime": null,
         "isPenalty": true,
@@ -629,7 +629,7 @@
       {
         "countryId": "QAT",
         "scorerId": 298603,
-        "assistId": null,
+        "assistId": 556713,
         "minute": 90,
         "addedTime": 4,
         "isPenalty": false,
@@ -641,7 +641,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 9,
@@ -792,7 +792,7 @@
       {
         "countryId": "GER",
         "scorerId": 309400,
-        "assistId": null,
+        "assistId": 406640,
         "minute": 45,
         "addedTime": 5,
         "isPenalty": true,
@@ -819,7 +819,7 @@
       {
         "countryId": "GER",
         "scorerId": 339314,
-        "assistId": 161056,
+        "assistId": null,
         "minute": 78,
         "addedTime": null,
         "isPenalty": false,
@@ -828,7 +828,7 @@
       {
         "countryId": "GER",
         "scorerId": 309400,
-        "assistId": 339314,
+        "assistId": null,
         "minute": 88,
         "addedTime": null,
         "isPenalty": false,
@@ -840,7 +840,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 11,
@@ -912,7 +912,7 @@
       {
         "countryId": "NED",
         "scorerId": 474701,
-        "assistId": 478573,
+        "assistId": null,
         "minute": 64,
         "addedTime": null,
         "isPenalty": false,
@@ -933,7 +933,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 12,
@@ -1023,7 +1023,7 @@
       {
         "countryId": "SWE",
         "scorerId": 342405,
-        "assistId": 349066,
+        "assistId": null,
         "minute": 84,
         "addedTime": null,
         "isPenalty": false,
@@ -1044,7 +1044,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 13,
@@ -1342,7 +1342,7 @@
       {
         "countryId": "BEL",
         "scorerId": 343974,
-        "assistId": null,
+        "assistId": 100986,
         "minute": 66,
         "addedTime": null,
         "isPenalty": false,
@@ -1354,7 +1354,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 17,
@@ -1432,7 +1432,7 @@
       {
         "countryId": "FRA",
         "scorerId": 342229,
-        "assistId": null,
+        "assistId": 566723,
         "minute": 90,
         "addedTime": 6,
         "isPenalty": false,
@@ -1444,7 +1444,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 18,
@@ -1534,7 +1534,7 @@
       {
         "countryId": "NOR",
         "scorerId": 401054,
-        "assistId": null,
+        "assistId": 418560,
         "minute": 90,
         "addedTime": 6,
         "isPenalty": false,
@@ -1546,7 +1546,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 19,
@@ -1710,7 +1710,7 @@
       {
         "countryId": "AUT",
         "scorerId": 539961,
-        "assistId": null,
+        "assistId": 106987,
         "minute": 76,
         "addedTime": null,
         "isPenalty": false,
@@ -1719,7 +1719,7 @@
       {
         "countryId": "AUT",
         "scorerId": 41384,
-        "assistId": null,
+        "assistId": 658807,
         "minute": 90,
         "addedTime": 12,
         "isPenalty": true,
@@ -1731,7 +1731,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-17T18:07:39.566837Z"
+    "updatedAt": "2026-06-17T11:54:01.463596Z"
   },
   {
     "matchNumber": 21,
