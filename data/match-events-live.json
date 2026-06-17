@@ -22,7 +22,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-17T19:04:37.764406Z"
+    "updatedAt": "2026-06-17T19:57:20.117767Z"
   },
   {
     "matchNumber": 22,
@@ -47,51 +47,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-17T19:04:37.764406Z"
-  },
-  {
-    "matchNumber": 23,
-    "score": {
-      "home": 1,
-      "away": 1
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "POR",
-        "scorerId": 670681,
-        "assistId": 487465,
-        "minute": 6,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "COD",
-        "scorerId": 388165,
-        "assistId": 181380,
-        "minute": 45,
-        "addedTime": 5,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "updatedAt": "2026-06-17T19:04:37.764406Z"
+    "updatedAt": "2026-06-17T19:57:20.117767Z"
   },
   {
     "matchNumber": 24,
@@ -116,6 +72,6 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-17T19:04:37.764406Z"
+    "updatedAt": "2026-06-17T19:57:20.117767Z"
   }
 ]

@@ -625,17 +625,19 @@
     "transfermarktId": 4776619,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776619",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
+    "status": "finished",
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cjrg2r5pyl8t"
+    "updatedAt": "2026-06-17T19:57:20.366509Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cjrg2r5pyl8t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 24,

@@ -1777,21 +1777,75 @@
     "matchNumber": 23,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          357153,
+          805714,
+          504087,
+          616341,
+          182712,
+          487469,
+          670681,
+          240306,
+          241641,
+          487465,
+          8198
+        ],
+        "substitutes": [
+          231572,
+          357164,
+          487474,
+          550550
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          164915,
+          203348,
+          679709,
+          342046,
+          181380,
+          477758,
+          1016015,
+          486477,
+          353403,
+          127048,
+          388165
+        ],
+        "substitutes": [
+          129586,
+          395685,
+          243879,
+          727089,
+          344869
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "POR",
+        "scorerId": 670681,
+        "assistId": 487465,
+        "minute": 6,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "COD",
+        "scorerId": 388165,
+        "assistId": 181380,
+        "minute": 45,
+        "addedTime": 5,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-17T19:57:20.366509Z"
   },
   {
     "matchNumber": 24,
