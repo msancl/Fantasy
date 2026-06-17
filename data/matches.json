@@ -22,9 +22,10 @@
     "winnerCountryId": "MEX",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c0myn4dwvzkt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 2,
@@ -49,9 +50,10 @@
     "winnerCountryId": "KOR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/ckg0vvrg70vt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 3,
@@ -76,9 +78,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c1dy55edn2yt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 4,
@@ -103,9 +106,10 @@
     "winnerCountryId": "USA",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c78y1jyknv1t",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 5,
@@ -130,9 +134,10 @@
     "winnerCountryId": "SCO",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c4gy7dxk0xwt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 6,
@@ -157,9 +162,10 @@
     "winnerCountryId": "AUS",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/cn8kgrx2pl7t",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 7,
@@ -184,9 +190,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c20ym4y24ggt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 8,
@@ -211,9 +218,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c4gy0jy8dglt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 9,
@@ -238,9 +246,10 @@
     "winnerCountryId": "CIV",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c78ydgjxyvnt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 10,
@@ -265,9 +274,10 @@
     "winnerCountryId": "GER",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c621jz79r3jt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 11,
@@ -292,9 +302,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c30ypmd6g35t",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 12,
@@ -319,9 +330,10 @@
     "winnerCountryId": "SWE",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/cq61ldqg3yqt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 13,
@@ -346,9 +358,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/cz75wdgv3jwt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 14,
@@ -373,9 +386,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/cr7xnk3eygxt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 15,
@@ -400,9 +414,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c23yvpljjl9t",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 16,
@@ -427,9 +442,10 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/c93275wqzq7t",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 17,
@@ -454,9 +470,10 @@
     "winnerCountryId": "FRA",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/cze9nr5eg2xt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 18,
@@ -481,9 +498,10 @@
     "winnerCountryId": "NOR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/cr5j6rn5ng2t",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 19,
@@ -508,9 +526,10 @@
     "winnerCountryId": "ARG",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/ckg78g6pnyzt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 20,
@@ -535,9 +554,10 @@
     "winnerCountryId": "AUT",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T11:54:01.463596Z",
+    "updatedAt": "2026-06-17T18:39:17.933570Z",
     "bbc": "https://www.bbc.com/sport/football/live/czde4dj23qmt",
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 21,
