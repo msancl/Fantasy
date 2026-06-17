@@ -75,8 +75,19 @@ def main() -> int:
             continue
 
         try:
-            source = fetch_bbc_page(match_data, args.refresh_cache)
+            source = fetch_bbc_page(match_data, True)
             parsed = parse_bbc_match(match_data, players, source or "") if source else None
+            if (
+                parsed
+                and not args.refresh_cache
+                and not parsed.get("goals")
+                and parsed.get("score", {}).get("home") is None
+                and parsed.get("score", {}).get("away") is None
+            ):
+                fresh_source = fetch_bbc_page(match_data, True)
+                fresh_parsed = parse_bbc_match(match_data, players, fresh_source or "") if fresh_source else None
+                if fresh_parsed:
+                    parsed = fresh_parsed
         except Exception as error:
             warnings.append(f"M{number}: BBC fetch/parse failed ({error})")
             continue

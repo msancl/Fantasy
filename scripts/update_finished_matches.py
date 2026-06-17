@@ -111,6 +111,10 @@ def fetch_match_page(match: dict, refresh_cache: bool) -> str | None:
     return body
 
 
+def fetch_fresh_match_page(match: dict) -> str | None:
+    return fetch_match_page(match, True)
+
+
 def extract_player_ids(source: str) -> list[int]:
     ids: list[int] = []
     seen: set[int] = set()
@@ -402,6 +406,12 @@ def main() -> int:
         try:
             source = fetch_match_page(match_data, args.refresh_cache)
             parsed = parse_match_page(source or "", match_data, player_by_id) if source else None
+            if not parsed and source and not args.refresh_cache:
+                fresh_source = fetch_fresh_match_page(match_data)
+                fresh_parsed = parse_match_page(fresh_source or "", match_data, player_by_id) if fresh_source else None
+                if fresh_parsed:
+                    parsed = fresh_parsed
+                    source = fresh_source
         except Exception as error:
             warnings.append(f"M{number}: fetch/parse failed ({error})")
             continue
