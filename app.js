@@ -430,6 +430,29 @@ const defaultPageDivisions = Object.fromEntries(
 );
 let pageStateResetReady = false;
 let pendingTeamSlug = null;
+const initializedHeavyPages = new Set();
+
+function ensurePageInitialized(page) {
+  if (initializedHeavyPages.has(page)) {
+    return;
+  }
+
+  if (page === "equipes") {
+    safeInit("equipes", createWorldCupTeams);
+    initializedHeavyPages.add(page);
+  }
+
+  if (page === "joueurs") {
+    safeInit("joueurs", createNationalTeamSections);
+    initializedHeavyPages.add(page);
+  }
+
+  if (page === "transferts") {
+    safeInit("recherche-transferts", initializeTransferPlayerSearch);
+    safeInit("historique-transferts", initializeTransferHistory);
+    initializedHeavyPages.add(page);
+  }
+}
 
 function resetDivision(section, division) {
   if (!section || !division) {
@@ -510,6 +533,9 @@ function resetPageState(page) {
 function showPage() {
   const currentPage = getCurrentPage();
 
+  if (pageStateResetReady) {
+    ensurePageInitialized(currentPage);
+  }
   resetPageState(currentPage);
 
   document.querySelectorAll("[data-page]").forEach((section) => {
@@ -939,9 +965,12 @@ function createFantasyPlayerRow(slot, slotIndex) {
 
   return `
     <article class="player-card ${positionClass(position)}" data-player-id="${player.id}">
+      <div class="player-position">${position}</div>
       <img
         src="${getCountryAsset(countryCode, "shirt")}"
         alt=""
+        width="32"
+        height="32"
         loading="lazy"
         decoding="async"
       />
@@ -949,7 +978,6 @@ function createFantasyPlayerRow(slot, slotIndex) {
         <strong>${player.name}</strong>
         <small>${getCountryName(countryCode)}</small>
       </div>
-      <div class="player-position">${position}</div>
       <div class="player-stat">${formatPlayerStat(totals.matchesPlayed)}</div>
       <div class="player-stat">${formatPlayerStat(totalGoals)}</div>
       <div class="player-stat">${formatPlayerStat(totals.assists)}</div>
@@ -1032,6 +1060,7 @@ function createFantasyTeamCard(row) {
     </div>
   `;
 
+  initializeTeamCardControls(article);
   return article;
 }
 
@@ -1060,12 +1089,18 @@ function createWorldCupTeams() {
       panel.append(createFantasyTeamCard(row));
     });
   panel.dataset.fantasyTeamsReady = "true";
+  addTeamDetailsIndicators(panel);
+  movePositionsBeforeShirts();
+  addPlayerPrices();
+  addCleanSheetStats();
+  abbreviateTeamStatHeadings();
+  applyWorldCupDayLabels();
+  appendSubstituteSlots();
+  appendTeamTotalRows();
 }
 
-safeInit("equipes", createWorldCupTeams);
-
-function addTeamDetailsIndicators() {
-  document.querySelectorAll(".team-card-actions").forEach((actions) => {
+function addTeamDetailsIndicators(root = document) {
+  root.querySelectorAll(".team-card-actions").forEach((actions) => {
     if (actions.querySelector(".team-details-indicator")) {
       return;
     }
@@ -1076,8 +1111,6 @@ function addTeamDetailsIndicators() {
     actions.append(indicator);
   });
 }
-
-addTeamDetailsIndicators();
 
 const legacyNationalTeams = [
   ["ALG", "Alg?rie"], ["GER", "Allemagne"], ["ENG", "Angleterre"],
@@ -1154,10 +1187,10 @@ function initializeHomeDashboard() {
       const homeName = getTeamName(fixture.h, fixture.hp);
       const awayName = getTeamName(fixture.a, fixture.ap);
       const homeFlag = fixture.h
-        ? `<img src="${getCountryAsset(fixture.h, "flag")}" alt="" loading="lazy" />`
+        ? `<img src="${getCountryAsset(fixture.h, "flag")}" alt="" width="36" height="24" loading="lazy" decoding="async" />`
         : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
       const awayFlag = fixture.a
-        ? `<img src="${getCountryAsset(fixture.a, "flag")}" alt="" loading="lazy" />`
+        ? `<img src="${getCountryAsset(fixture.a, "flag")}" alt="" width="36" height="24" loading="lazy" decoding="async" />`
         : `<span class="home-fixture-placeholder" aria-hidden="true"></span>`;
       const matchNumber =
         fixture.s === "group" ? "" : `<small>M${fixture.n}</small>`;
@@ -1445,7 +1478,7 @@ function initializeWorldCupFixtures() {
 
     return `
       <span class="fixture-team">
-        <img src="${getCountryAsset(code, "flag")}" alt="" loading="lazy" />
+        <img src="${getCountryAsset(code, "flag")}" alt="" width="36" height="24" loading="lazy" decoding="async" />
         <strong>${teamNames.get(code) || code}</strong>
       </span>
     `;
@@ -1510,7 +1543,7 @@ function initializeWorldCupFixtures() {
               : ""
           }">
             <span>${player.position}</span>
-            <img src="${getCountryAsset(code, "shirt")}" alt="" loading="lazy" />
+            <img src="${getCountryAsset(code, "shirt")}" alt="" width="32" height="32" loading="lazy" decoding="async" />
             <strong>${player.name}</strong>
             ${
               events.cleanSheetPlayerIds?.has(player.id)
@@ -1530,7 +1563,7 @@ function initializeWorldCupFixtures() {
               : ""
           }">
             <span>${player.position}</span>
-            <img src="${getCountryAsset(code, "shirt")}" alt="" loading="lazy" />
+            <img src="${getCountryAsset(code, "shirt")}" alt="" width="32" height="32" loading="lazy" decoding="async" />
             <strong>${player.name}</strong>
             ${
               events.cleanSheetPlayerIds?.has(player.id)
@@ -1789,6 +1822,8 @@ function createNationalTeamSections() {
           <img
             src="${getCountryAsset(code, "flag")}"
             alt="Drapeau de ${name}"
+            width="48"
+            height="32"
             loading="lazy"
             decoding="async"
           />
@@ -1853,6 +1888,8 @@ function ensureNationalTeamRoster(section) {
           <img
             src="${getCountryAsset(code, "shirt")}"
             alt=""
+            width="32"
+            height="32"
             loading="lazy"
             decoding="async"
           />
@@ -1937,8 +1974,6 @@ function ensureNationalTeamRoster(section) {
   addCleanSheetStats();
   initializeNationalBoard(section.querySelector(".national-squad-board"));
 }
-
-safeInit("joueurs", createNationalTeamSections);
 
 function getPlayerAvailability(player) {
   const availability = player.availability || {};
@@ -2047,7 +2082,7 @@ function initializeTransferPlayerSearch() {
         (player) => `
           <article class="transfer-ranking-row">
             <b class="transfer-position transfer-position-${player.position.toLowerCase()}">${player.position}</b>
-            <img src="${getCountryAsset(player.code, "shirt")}" alt="" loading="lazy" decoding="async" />
+            <img src="${getCountryAsset(player.code, "shirt")}" alt="" width="32" height="32" loading="lazy" decoding="async" />
             <span class="transfer-player">
               <strong>${player.name}</strong>
               <small>${player.country}</small>
@@ -2079,8 +2114,6 @@ function initializeTransferPlayerSearch() {
   });
   render();
 }
-
-safeInit("recherche-transferts", initializeTransferPlayerSearch);
 
 function formatTransferDate(value) {
   const date = new Date(value);
@@ -2134,7 +2167,7 @@ function createTransferPlayerMarkup(playerId) {
 
   return `
     <span class="history-player">
-      <img src="${getCountryAsset(player.countryId, "shirt")}" alt="" loading="lazy" decoding="async">
+      <img src="${getCountryAsset(player.countryId, "shirt")}" alt="" width="32" height="32" loading="lazy" decoding="async">
       <span>
         <b>${player.name}</b>
         <small>${getCountryName(player.countryId)}</small>
@@ -2179,8 +2212,6 @@ function initializeTransferHistory() {
     list.append(row);
   });
 }
-
-safeInit("historique-transferts", initializeTransferHistory);
 
 const emptyNationalDayStat = {
   matchesPlayed: null,
@@ -2422,6 +2453,8 @@ function resetFantasyTeamRosters() {
           <img
             src="${getCountryAsset(shirtCode, "shirt")}"
             alt=""
+            width="32"
+            height="32"
             loading="lazy"
             decoding="async"
           />
@@ -2912,7 +2945,34 @@ function resetTeamDays(teamCard) {
 }
 
 function initializeTeamCardControls(teamCard) {
+  const summary = teamCard.querySelector(".team-details-toggle");
+  if (summary && summary.dataset.teamToggleReady !== "true") {
+    const toggleTeam = () => {
+      const card = summary.closest(".team-card");
+      if (!card) {
+        return;
+      }
+
+      const isOpen = card.classList.toggle("is-open");
+
+      resetTeamDays(card);
+      summary.setAttribute("aria-expanded", String(isOpen));
+    };
+
+    summary.addEventListener("click", toggleTeam);
+    summary.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleTeam();
+      }
+    });
+    summary.dataset.teamToggleReady = "true";
+  }
+
   teamCard.querySelectorAll(".day-range-button").forEach((button) => {
+    if (button.dataset.dayRangeReady === "true") {
+      return;
+    }
     button.addEventListener("click", () => {
       const lineupBlock = button.closest(".team-lineup-block");
       setActiveDayRange(
@@ -2921,9 +2981,13 @@ function initializeTeamCardControls(teamCard) {
         Number(button.dataset.end),
       );
     });
+    button.dataset.dayRangeReady = "true";
   });
 
   teamCard.querySelectorAll(".days-toggle").forEach((button) => {
+    if (button.dataset.daysToggleReady === "true") {
+      return;
+    }
     button.addEventListener("click", () => {
       const lineupBlock = button.closest(".team-lineup-block");
       const squadBoard = lineupBlock.querySelector(".squad-board");
@@ -2941,10 +3005,14 @@ function initializeTeamCardControls(teamCard) {
         ? getActionLabel("hideDays", "Masquer journées")
         : getActionLabel("showDays", "Voir journées");
     });
+    button.dataset.daysToggleReady = "true";
   });
 }
 
 document.querySelectorAll(".team-details-toggle").forEach((summary) => {
+  if (summary.dataset.teamToggleReady === "true") {
+    return;
+  }
   const toggleTeam = () => {
     const teamCard = summary.closest(".team-card");
     if (!teamCard) {
@@ -2964,6 +3032,7 @@ document.querySelectorAll(".team-details-toggle").forEach((summary) => {
       toggleTeam();
     }
   });
+  summary.dataset.teamToggleReady = "true";
 });
 
 document.querySelectorAll(".team-details-toggle-disabled").forEach((button) => {
