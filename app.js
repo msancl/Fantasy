@@ -1401,8 +1401,18 @@ function initializeWorldCupFixtures() {
     const normalizedId = String(id);
     const player = playerById.get(normalizedId);
     return player
-      ? { id: String(player.id), name: player.name, position: player.position }
-      : { id: normalizedId, name: `JOUEUR ${normalizedId}`, position: "-" };
+      ? {
+          id: String(player.id),
+          name: player.name,
+          shortName: player.shortStrongName || player.name,
+          position: player.position,
+        }
+      : {
+          id: normalizedId,
+          name: `JOUEUR ${normalizedId}`,
+          shortName: `JOUEUR ${normalizedId}`,
+          position: "-",
+        };
   };
 
   const formatMinute = (event) =>
@@ -1421,7 +1431,10 @@ function initializeWorldCupFixtures() {
     );
     const assists = goals
       .filter((goal) => goal.assistId)
-      .map((goal) => playerDetails(goal.assistId).name);
+      .map(
+        (goal) =>
+          `${playerDetails(goal.assistId).shortName} ${formatMinute(goal)}`,
+      );
     const penaltySaves = (eventEntry?.penaltiesSaved || [])
       .filter((event) => event.countryId === countryId)
       .map(
@@ -1439,7 +1452,7 @@ function initializeWorldCupFixtures() {
                 : goal.isPenalty
                   ? " (P)"
                   : "";
-              return `${playerDetails(goal.scorerId).name} ${formatMinute(goal)}${suffix}`;
+              return `${playerDetails(goal.scorerId).shortName} ${formatMinute(goal)}${suffix}`;
             })
             .join(", ")
         : "-",
