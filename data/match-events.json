@@ -2088,21 +2088,74 @@
     "matchNumber": 25,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          550829,
+          345911,
+          620217,
+          216278,
+          157672,
+          826103,
+          611049,
+          179643,
+          321204,
+          552057,
+          242086
+        ],
+        "substitutes": [
+          142219,
+          544149,
+          283628,
+          500053,
+          292779
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          175577,
+          1378320,
+          1107265,
+          353432,
+          450806,
+          436372,
+          804472,
+          735697,
+          983330,
+          673381,
+          337884
+        ],
+        "substitutes": [
+          994370,
+          1125037,
+          746781
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "CZE",
+        "scorerId": 321204,
+        "assistId": null,
+        "minute": 6,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "RSA",
+        "scorerId": 436372,
+        "assistId": null,
+        "minute": 83,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-18T18:32:14.971605Z"
   },
   {
     "matchNumber": 26,

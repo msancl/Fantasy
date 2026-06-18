@@ -122,7 +122,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -141,13 +141,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -326,7 +326,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -345,13 +345,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -530,7 +530,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -549,13 +549,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -632,7 +632,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -651,13 +651,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -836,7 +836,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -855,13 +855,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -1346,7 +1346,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -1365,13 +1365,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -1448,13 +1448,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -1467,13 +1467,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -1550,13 +1550,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
-          "penalties": 0,
+          "matchesPlayed": 2,
+          "penalties": 1,
           "goals": 0,
           "assists": 0,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 0
+          "points": 3
         },
         "rounds": {
           "J1": {
@@ -1569,13 +1569,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 1,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 3
           },
           "J3": {
             "matchesPlayed": null,
@@ -1652,7 +1652,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -1671,13 +1671,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -2060,7 +2060,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -2079,13 +2079,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -2162,7 +2162,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -2181,13 +2181,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -2366,7 +2366,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -2385,13 +2385,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -2468,13 +2468,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -2487,13 +2487,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -2570,13 +2570,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -2589,13 +2589,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109161,7 +109161,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -109180,13 +109180,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109365,13 +109365,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -109384,13 +109384,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109467,7 +109467,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -109486,13 +109486,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109569,7 +109569,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 1,
           "assists": 0,
@@ -109588,13 +109588,13 @@
             "points": 7
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109671,7 +109671,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -109690,13 +109690,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109875,13 +109875,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -109894,13 +109894,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -109977,7 +109977,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 1,
@@ -109996,13 +109996,13 @@
             "points": 1
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -110079,7 +110079,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -110098,13 +110098,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -110181,7 +110181,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -110200,13 +110200,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -110589,13 +110589,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -110608,13 +110608,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -110691,7 +110691,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -110710,13 +110710,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -110793,13 +110793,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
-          "goals": 0,
+          "goals": 1,
           "assists": 0,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 0
+          "points": 5
         },
         "rounds": {
           "J1": {
@@ -110812,13 +110812,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 1,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 5
           },
           "J3": {
             "matchesPlayed": null,
@@ -110895,7 +110895,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -110914,13 +110914,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -110997,7 +110997,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -111016,13 +111016,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -111099,13 +111099,13 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -111118,13 +111118,13 @@
             "points": null
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
@@ -111405,7 +111405,7 @@
           "selectionPercentage": null
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -111424,13 +111424,13 @@
             "points": 0
           },
           "J2": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           },
           "J3": {
             "matchesPlayed": null,
