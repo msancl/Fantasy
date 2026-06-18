@@ -1,0 +1,24 @@
+﻿# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated / cached HTML pages
+bbc-match-pages/
+bbc-pages/
+match-pages/
+country-pages/
+
+# Temporary backup data
+data/*.before-*.json
+data/*-review.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local vendored Python dependencies replaced by requirements.txt
+scripts/_vendor/
+

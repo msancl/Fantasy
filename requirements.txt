@@ -1,1 +1,1 @@
-# Current update scripts only use the Python standard library.
+﻿questionary>=2.1.1

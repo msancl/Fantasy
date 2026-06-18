@@ -72,7 +72,7 @@ window._sp_ = {
     <link rel="shortcut icon" sizes="192x192" href="/android-chrome-192x192.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
 <meta name="description" content="This is the match sheet of the World Cup game between England and Croatia on 17/06/2026." />
-<meta name="keywords" content="England, ENG, Croatia, CRO, World Cup, 1. Spieltag, Saison 25/26, " />
+<meta name="keywords" content="England, ENG, Croatia, CRO, 4:2, World Cup, 1. Spieltag, Saison 25/26, Harry Kane, Martin Baturina, Petar Musa, Jude Bellingham, Marcus Rashford" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://tmssl.akamaized.net/images/tm_logo.png" />
 <meta property="og:description" content="" />
@@ -133,9 +133,7 @@ window._sp_ = {
 <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-game-report.min.css?_sn=8?lm=1781184005" />
 <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-user-profile.min.css?lm=1781184005" />
 <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/spieltagsbox.css?lm=1781184004" />
-<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/spieltagsthread.css?lm=1781184004" />
-<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-club-comparison.min.css?lm=1781184005" />
-<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/tabellewidget.css?lm=1781184004" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-formation.min.css?lm=1781184005" />
 <style type="text/css">
 /*<![CDATA[*/
 
@@ -148,13 +146,10 @@ window._sp_ = {
 /*]]>*/
 </style>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/vendor/jquery.min.js?lm=1781184004"></script>
-<script type="text/javascript" src="https://tmssl.akamaized.net/ads/tisoomi.com.min.js?lm=1781727601"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/ads/tisoomi.com.min.js?lm=1781755202"></script>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/spielberichte.js?lm=1781184004"></script>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/foundation.js?lm=1781184004"></script>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/foundation-init.js?lm=1781184004"></script>
-<script type="text/javascript" src="https://tmssl.akamaized.net/assets/cb04a32d5eb46754e0f81b123b9c868d/highcharts.js?lm=1781184004"></script>
-<script type="text/javascript" src="https://tmssl.akamaized.net/assets/cb04a32d5eb46754e0f81b123b9c868d/themes/tm.js?lm=1781184004"></script>
-<script type="text/javascript" src="https://tmssl.akamaized.net/assets/cb04a32d5eb46754e0f81b123b9c868d/lang/lang_en.js?lm=1781184004"></script>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/main.js?lm=1781184004"></script>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.ajaxaddition.jquery.js?lm=1781184004"></script>
 <script type="text/javascript" src="https://tmssl.akamaized.net/js/functions.js?lm=1781184004"></script>
@@ -165,10 +160,6 @@ window._sp_ = {
 /*<![CDATA[*/
 console.info("%c [TM-ADs] Initialize Ads on domain .com (spielbericht/index)", "background: #282828; color: #bada55")
 console.info("%c [TM-ADs] Tisoomi is active -> add Tisoomi script", "background: #282828; color: #bada55")
-console.info("%c [TM-ADs] Render slot rectangle1 (/58778164/d_side_1) for google", "background: #282828; color: #bada55")
-console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format rectangle1", "background: #282828; color: #bada55")
-console.info("%c [TM-ADs] Render slot rectangle2 (/58778164/d_side_2) for google", "background: #282828; color: #bada55")
-console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format rectangle2", "background: #282828; color: #bada55")
 console.info("%c [TM-ADs] Render slot skyscraper (/58778164/d_right_1) for google", "background: #282828; color: #bada55")
 console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format skyscraper", "background: #282828; color: #bada55")
 console.info("%c [TM-ADs] Render slot billboard (/58778164/d_top_1) for google", "background: #282828; color: #bada55")
@@ -206,7 +197,7 @@ console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format fullsize_con
     };
     oddsServe.options={gdpr_wait:true};
     oddsServe.queue=[];
-console.info("%c [TM-ADs] Add adslot configuration for 5 ad slots rectangle1 | rectangle2 | skyscraper | billboard | fullsize_contentad", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Add adslot configuration for 3 ad slots skyscraper | billboard | fullsize_contentad", "background: #282828; color: #bada55")
 console.info("%c [TM-ADs] Adslots without configuration: fireplace | skyscraper-left-bound | skyscraperbtf | richmedia | 1by1px", "background: #282828; color: #bada55")
 console.info("%c [TM-ADs] Register slots with JS vendor lib", "background: #282828; color: #bada55")
 window.addEventListener('load', () => {
@@ -282,7 +273,7 @@ console.info("%c [TM-ADs] Added external ad script https://tmsi.akamaized.net/js
             isHomepage: 'false',
             name: 'England - Croatia, 17/06/2026 - World Cup - Match sheet | Transfermarkt',
             URL: window.location.href,
-            server: 'prod-tm-web-server-12135'
+            server: 'prod-tm-web-server-11207'
     },
     };
 
@@ -915,14 +906,14 @@ function tmTiming(value, name, event_category, event_label) {
                                             <div class="ergebnis-wrap">
                         <div class="sb-ergebnis">
                             <div class="sb-endstand">
-                                -:-                            </div>
+                                4:2<div class="sb-halbzeit">(<span>2:</span>2)</div>                            </div>
                         </div>
                     </div>
                     <p class="sb-zusatzinfos">
                         <span class="hide-for-small">
-                                                        <a href="/stadion/stadion/verein/3505/saison_id/2025">AT&T Stadium</a>                                                                                    <br />
+                                                        <a href="/stadion/stadion/verein/3505/saison_id/2025">AT&T Stadium</a>                            &nbsp;&nbsp;|&nbsp;&nbsp;<strong>Attendance: 70.389</strong>                                                        <br />
                         </span>
-                                                <strong>Referee:</strong> <br class="show-for-small" /> tbc                    </p>
+                                                <strong>Referee:</strong> <br class="show-for-small" /> <a title="Clément Turpin" href="/clement-turpin/profil/schiedsrichter/1276">Clément Turpin</a>                    </p>
                 </div>
                 <div class="sb-team sb-gast">
                     <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/normquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a><a title="Croatia" class="sb-vereinslink" href="/kroatien/startseite/verein/3556/saison_id/2025">Croatia</a>                </div>
@@ -976,11 +967,11 @@ function tmTiming(value, name, event_category, event_label) {
                                                 <td class="">
                             <img src="https://tmssl.akamaized.net//images/flagge/verysmall/136.png?lm=1520611569" title="Portugal" alt="Portugal" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="Match report" class="ergebnis-link" href="/spielbericht/index/spielbericht/4776619"><span class="matchresult finished">1:1</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/193.png?lm=1520611569" title="Democratic Republic of the Congo" alt="Democratic Republic of the Congo" class="flaggenrahmen" />                        </td>
                                                 <td class="sb-aktiv">
-                            <img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="Score Center" class="ergebnis-link live-ergebnis" href="/ticker/begegnung/live/4776621"><span class="matchresult liveresult">1:0</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" />                        </td>
+                            <img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="Match report" class="ergebnis-link" href="/spielbericht/index/spielbericht/4776621"><span class="matchresult finished">4:2</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" />                        </td>
                                                 <td class="">
-                            <img src="https://tmssl.akamaized.net//images/flagge/verysmall/54.png?lm=1520611569" title="Ghana" alt="Ghana" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="To the preview" href="/spielbericht/index/spielbericht/4776622"><span class="matchresult">1:00 AM</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/130.png?lm=1520611569" title="Panama" alt="Panama" class="flaggenrahmen" />                        </td>
+                            <img src="https://tmssl.akamaized.net//images/flagge/verysmall/54.png?lm=1520611569" title="Ghana" alt="Ghana" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="Match report" class="ergebnis-link" href="/spielbericht/index/spielbericht/4776622"><span class="matchresult finished">1:0</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/130.png?lm=1520611569" title="Panama" alt="Panama" class="flaggenrahmen" />                        </td>
                                                 <td class="">
-                            <img src="https://tmssl.akamaized.net//images/flagge/verysmall/180.png?lm=1520611569" title="Uzbekistan" alt="Uzbekistan" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="To the preview" href="/spielbericht/index/spielbericht/4776620"><span class="matchresult">4:00 AM</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/83.png?lm=1520611569" title="Colombia" alt="Colombia" class="flaggenrahmen" />                        </td>
+                            <img src="https://tmssl.akamaized.net//images/flagge/verysmall/180.png?lm=1520611569" title="Uzbekistan" alt="Uzbekistan" class="flaggenrahmen" /><span class="header-konfi-ergebnis"><a title="Match report" class="ergebnis-link" href="/spielbericht/index/spielbericht/4776620"><span class="matchresult finished">1:3</span></a></span><img src="https://tmssl.akamaized.net//images/flagge/verysmall/83.png?lm=1520611569" title="Colombia" alt="Colombia" class="flaggenrahmen" />                        </td>
                                     </tr>
         </tbody>
     </table>
@@ -1007,7 +998,7 @@ function tmTiming(value, name, event_category, event_label) {
                                                 <div class="ergebnis-wrap">
                             <div class="sb-ergebnis">
                                 <div class="sb-endstand">
-                                    -:-                                </div>
+                                    4:2<div class="sb-halbzeit">(<span>2:</span>2)</div>                                </div>
                             </div>
                         </div>
                     </div>
@@ -1040,14 +1031,14 @@ function tmTiming(value, name, event_category, event_label) {
     });
 </script>
 
-<a href="https://www.transfermarkt.com/whatsMyValue?cp=FIWC"
+<a href="https://www.transfermarkt.com/weltmeisterschaft/startseite/pokalwettbewerb/FIWC"
         target="0"
     class="db mt10"
-        onclick="tmEvent('banner', 'https://www.transfermarkt.com/whatsMyValue?cp=FIWC', 'd-day-banner');"
+        onclick="tmEvent('banner', 'https://www.transfermarkt.com/weltmeisterschaft/startseite/pokalwettbewerb/FIWC', 'd-day-banner');"
 >
     <img
         loading="lazy"
-        src="https://dzjovqk3zamsg.cloudfront.net/ENwhats-my-value-banner-desktop-ru.jpg"
+        src="https://dzjovqk3zamsg.cloudfront.net/WChomepagemobile.jpg"
         width="1034"
         height="99"
         alt="deadline-day banner"
@@ -1076,703 +1067,963 @@ function tmTiming(value, name, event_category, event_label) {
 
 
 <div class="row">
-    <div class="large-8 columns">
-        
-
-<div class="box facts-comparison">
-    <h2 class="content-box-headline">
-        Facts & figures compared    </h2>
-    <table>
-        <thead>
-            <tr>
-                <td class="facts-comparison__header-cell facts-comparison__header-cell--left">
-                    <div class="facts-comparison__header-cell--name">
-                        <a title="England" href="/england/startseite/verein/3299/saison_id/2025">England</a>                    </div>
-                    <div class="facts-comparison__header-cell--crest">
-                        <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a>                    </div>
-                </td>
-                <td class="facts-comparison__header-cell facts-comparison__header-cell--right">
-                    <div class="facts-comparison__header-cell--crest">
-                        <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a>                    </div>
-                    <div class="facts-comparison__header-cell--name">
-                        <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025">Croatia</a>                    </div>
-                </td>
-            </tr>
-        </thead>
-
-        <tbody>
-                            <tr>
-                    <td colspan="2" class="facts-comparison__category">
-                        Total market value                    </td>
-                </tr>
-                <tr>
-                    <td class="facts-comparison__bar facts-comparison__bar--left">
-                        <span class="facts-comparison__bar-fill facts-comparison__bar-fill--left" style="width:78%;">€1.36bn</span>
-                    </td>
-                    <td class="facts-comparison__bar facts-comparison__bar--right">
-                        <span class="facts-comparison__bar-fill facts-comparison__bar-fill--right" style="width:22%;">€387.30m</span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" class="facts-comparison__category">
-                        <span>ø-Market value</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="facts-comparison__bar facts-comparison__bar--left">
-                        <span class="facts-comparison__bar-fill facts-comparison__bar-fill--left" style="width:78%;">€52.24m</span>
-                    </td>
-                    <td class="facts-comparison__bar facts-comparison__bar--right">
-                        <span class="facts-comparison__bar-fill facts-comparison__bar-fill--right" style="width:22%;">€14.90m</span>
-                    </td>
-                </tr>
-                        <tr>
-                <td colspan="2" class="facts-comparison__category">
-                    <span>ø-Age</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="facts-comparison__bar facts-comparison__bar--left">
-                    <span class="facts-comparison__bar-fill facts-comparison__bar-fill--left" style="width:49.056942698042%;">27.3</span>
-                </td>
-                <td class="facts-comparison__bar facts-comparison__bar--right">
-                    <span class="facts-comparison__bar-fill facts-comparison__bar-fill--right" style="width:50.943057301958%;">28.4</span>
-                </td>
-            </tr>
-            
-                        <tr>
-                <td colspan="2" class="facts-comparison__category">
-                    <span>Foreigners</span>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="facts-comparison__bar facts-comparison__bar--left">
-                    <span class="facts-comparison__bar-fill facts-comparison__bar-fill--left" style="width:17.241379310345%;">5</span>
-                </td>
-                <td class="facts-comparison__bar facts-comparison__bar--right">
-                    <span class="facts-comparison__bar-fill facts-comparison__bar-fill--right" style="width:82.758620689655%;">24</span>
-                </td>
-            </tr>
-                    </tbody>
-    </table>
-</div><div class="box">
-    <h2 class="content-box-headline">
-        Last 10 meetings    </h2>
-    <table>
-        <thead>
-            <tr>
-                <th class="zentriert">Competition</th>
-                <th class="zentriert hide-for-small">Matchday</th>
-                <th class="zentriert">Date</th>
-                <th colspan="2">Home team</th>
-                <th colspan="2">Away team</th>
-                <th class="hide-for-small">Attendance</th>
-                <th class="zentriert">Result</th>
-            </tr>
-        </thead>
-        <tbody>
-                <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/euro.png?lm=1770900394" title="euro.png" alt="euro.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Sun 13/06/2021                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2020"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2020">England</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2020"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2020">Croatia</a></td>
-                    <td class="zentriert hide-for-small">18.497</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="3287204" href="/spielbericht/index/spielbericht/3287204"><span class="greentext">1:0 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/unla.png?lm=1512858223" title="unla.png" alt="unla.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Sun 18/11/2018                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2018"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2018">England</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2018"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2018">Croatia</a></td>
-                    <td class="zentriert hide-for-small">78.221</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="2996631" href="/spielbericht/index/spielbericht/2996631"><span class="greentext">2:1 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/unla.png?lm=1512858223" title="unla.png" alt="unla.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Fri 12/10/2018                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2018"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2018">Croatia</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2018"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2018">England</a></td>
-                    <td class="zentriert hide-for-small"></td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="2996610" href="/spielbericht/index/spielbericht/2996610"><span class="">0:0 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/fiwc.png?lm=1747989919" title="fiwc.png" alt="fiwc.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Semi-Finals</td>
-                    <td class="zentriert">
-                        Wed 11/07/2018                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2017"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2017">Croatia</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2017"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2017">England</a></td>
-                    <td class="zentriert hide-for-small">78.011</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="3067926" href="/spielbericht/index/spielbericht/3067926"><span class="redtext">2:1 <span class="ergebnis_zusatz">AET</span></span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/wmq6.png?lm=1734088642" title="wmq6.png" alt="wmq6.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Wed 09/09/2009                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2008"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2008">England</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2008"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2008">Croatia</a></td>
-                    <td class="zentriert hide-for-small">87.319</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="972729" href="/spielbericht/index/spielbericht/972729"><span class="greentext">5:1 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/wmq6.png?lm=1734088642" title="wmq6.png" alt="wmq6.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Wed 10/09/2008                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2008"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2008">Croatia</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2008"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2008">England</a></td>
-                    <td class="zentriert hide-for-small">35.218</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="912115" href="/spielbericht/index/spielbericht/912115"><span class="greentext">1:4 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/emq.png?lm=1410165817" title="emq.png" alt="emq.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Wed 21/11/2007                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2007"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2007">England</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2007"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2007">Croatia</a></td>
-                    <td class="zentriert hide-for-small">88.091</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="87039" href="/spielbericht/index/spielbericht/87039"><span class="redtext">2:3 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/emq.png?lm=1410165817" title="emq.png" alt="emq.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Wed 11/10/2006                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2007"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2007">Croatia</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2007"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2007">England</a></td>
-                    <td class="zentriert hide-for-small">38.000</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="64726" href="/spielbericht/index/spielbericht/64726"><span class="redtext">2:0 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/euro.png?lm=1770900394" title="euro.png" alt="euro.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">Group Stage</td>
-                    <td class="zentriert">
-                        Mon 21/06/2004                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2003"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2003">Croatia</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2003"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2003">England</a></td>
-                    <td class="zentriert hide-for-small">57.047</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="259" href="/spielbericht/index/spielbericht/259"><span class="greentext">2:4 </span></a></td>
-                </tr>
-                            <tr>
-                    <td class="zentriert">
-                        <img src="https://tmssl.akamaized.net//images/logo/tiny/fs.png?lm=1713854091" title="fs.png" alt="fs.png" class="wettbewerblogo" />                    </td>
-                    <td class="zentriert hide-for-small">1</td>
-                    <td class="zentriert">
-                        Wed 20/08/2003                    </td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="England" href="/england/spielplan/verein/3299/saison_id/2003"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="England" href="/england/spielplan/verein/3299/saison_id/2003">England</a></td>
-                    <td class="zentriert no-border-rechts tiny_wappen_zelle"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2003"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                    <td class="no-border-links"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2003">Croatia</a></td>
-                    <td class="zentriert hide-for-small">28.700</td>
-                    <td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="1182087" href="/spielbericht/index/spielbericht/1182087"><span class="greentext">3:1 </span></a></td>
-                </tr>
-                    </tbody>
-    </table>
-    <div class="table-footer"><a href="/vergleich/bilanzdetail/verein/3299/gegner_id/3556">all matches</a></div>
-</div>
-<div class="row">
-    <div class="large-6 columns">
+            <div class="large-12 columns">
             <div class="box">
-        <div class="box-header">
-            <div class="spielername-profil">
-                Current coach            </div>
-            <div class="icons-profil">
-                <div class="wappen">
-                    <a title="England" href="/england/startseite/verein/3299"><img src="https://tmssl.akamaized.net//images/wappen/profil/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                </div>
+                <h2 class="content-box-headline">
+                    Timeline                </h2>
+                <div id="sb-zeitleiste" class="box-content sb-zeitleiste hide-for-small-not-important">
+                    <div class="sb-zeitleiste-vereine">
+                        <a title="England" class="sb-vereinslink" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/promitipp/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                        <a title="Croatia" class="sb-vereinslink" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/promitipp/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                    </div>
+                    <div class="sb-zeitleiste-ereignisse sb-90-minuten">
+                        <span class="sb-sprite sb-uhr-0">&nbsp;</span>
+                                                                                                    <span class="sb-sprite sb-uhr-45">&nbsp;</span>
+                            <span class="sb-sprite sb-uhr-90">&nbsp;</span>
+                                                                                                                        <div class="sb-leiste-heim" style="background-color: #FCFCFC;">
+                            <div class="sb-leiste-ereignis" style="left: 13.333333333333%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037101" rel="tooltip"><span class="sb-sprite sb-tor">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 46.666666666667%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037103" rel="tooltip"><span class="sb-sprite sb-tor">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 52.222222222222%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037104" rel="tooltip"><span class="sb-sprite sb-tor">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 80%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037109" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis sb-leiste-abstand" style="left: 80%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037110" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis sb-leiste-abstand" style="left: 80%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037111" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 88.888888888889%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037114" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 94.444444444444%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037115" rel="tooltip"><span class="sb-sprite sb-tor">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 96.666666666667%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037116" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div>                        </div>
+                        <div class="sb-leiste-gast" style="background-color: #C8102E;">
+                            <div class="sb-leiste-ereignis" style="left: 40%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037102" rel="tooltip"><span class="sb-sprite sb-tor">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 52.777777777778%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037105" rel="tooltip"><span class="sb-sprite sb-tor">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 64.444444444444%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037106" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 73.333333333333%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037107" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis sb-leiste-abstand" style="left: 73.333333333333%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037108" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 86.666666666667%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037112" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div><div class="sb-leiste-ereignis" style="left: 87.777777777778%;" data-type="link" data-content="/ajax/ereignis/spielbericht/30037113" rel="tooltip"><span class="sb-sprite sb-wechsel">&nbsp;</span></div>                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box-content">
-            <div class="container-foto text-center">
-                <img src="https://img.a.transfermarkt.technology/portrait/medium/7471-1758823371.jpg?lm=1" title="Thomas Tuchel" alt="Thomas Tuchel" class="bilderrahmen max-medium-foto" />            </div>
-
-            <div class="container-inhalt">
-                <div class="container-hauptinfo s16">
-                    <a title="Thomas Tuchel" id="7471" href="/thomas-tuchel/profil/trainer/7471">Thomas Tuchel</a>                </div>
-                <div class="container-zusatzinfo-small">
-                    <b>Age:</b> 52                    Years&nbsp;
-
-                    <img src="https://tmssl.akamaized.net//images/flagge/tiny/40.png?lm=1520612525" title="Germany" alt="Germany" class="flaggenrahmen" />                    <br />
-                    <b>Appointed:</b> 01/01/2025                    <br />
-                    <b>Contract expires:</b> 31/07/2028                    <br />
-                    <b>Success rate as coach:</b>  1.94 PPM                </div>
-                <div class="container-zusatzinfo">
+        </div>
+<div class="row">
+    <div class="large-12 columns">
+        <div class="box">
+            <h2 class="content-box-headline">
+                Line-Ups            </h2>
+            <div class="large-6 columns aufstellung-box" style="padding: 0;">
+                <div class="unterueberschrift aufstellung-unterueberschrift-mannschaft">
+                    <div><a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></div>
+                    <div><nobr><a title="England" class="sb-vereinslink" href="/england/startseite/verein/3299/saison_id/2025">England</a></nobr></div>
+                </div>
+                        <div class="row" style="padding: 0px; margin: 0px;">
+            <div class="large-7 aufstellung-vereinsseite columns small-12 unterueberschrift formation-subtitle">
+                Starting Line-up: 4-2-3-1            </div>
+            <div class="large-5 aufstellung-vereinsseite columns small-12 hide-for-small unterueberschrift" style="border-left: 1px solid #e4e4e4; border-right: 0px solid #e4e4e4;">
+                Substitutes            </div>
+        </div>
+            <div class="large-7 columns small-12 aufstellung-vereinsseite" style="display: inline-block; position: relative;">
+                    <div style="margin-top: 76.20%;"></div>
+                <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+                            <img data-src="https://tmssl.akamaized.net//images/spielfeld_klein.png" style="position: absolute; height: auto; width: 1000px;" class="lazy"/>
+                                        <div class="formation-player-container" style="top: 80%; left: 40%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        1                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/jordan-pickford/profil/spieler/130164">Pickford</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 63%; left: 28%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        5                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/john-stones/profil/spieler/186590">Stones</a>                                    </span>
+                                </div>
+                                                    <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037116" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 63%; left: 52.5%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        2                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/ezri-konsa/profil/spieler/413403">Konsa</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 61%; left: 7.5%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        3                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/nico-oreilly/profil/spieler/743413">O'Reilly</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 61%; left: 73%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        24                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/reece-james/profil/spieler/472423">James</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 43%; left: 52%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        8                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/elliot-anderson/profil/spieler/567576">Anderson</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 43%; left: 28%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        4                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/declan-rice/profil/spieler/357662">Rice</a>                                    </span>
+                                </div>
+                                                    <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037109" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 23%; left: 40%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        10                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/jude-bellingham/profil/spieler/581678">Bellingham</a>                                    </span>
+                                </div>
+                                                        <div style="cursor: pointer; position: absolute; top: -5px; right: 12%;">
+                    <span class="icons_sprite icon-tor-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037104" rel="tooltip">&nbsp;</span>
+                </div>            <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037114" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 18%; left: 15%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        18                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/anthony-gordon/profil/spieler/503733">Gordon</a>                                    </span>
+                                </div>
+                                                    <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037111" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 18%; left: 65%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        20                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/noni-madueke/profil/spieler/503987">Madueke</a>                                    </span>
+                                </div>
+                                                    <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037110" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 3%; left: 40%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        9                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/harry-kane/profil/spieler/132098">Kane</a>                                    </span>
+                                </div>
+                                                                            <div class="kapitaenicon-formation" style="position: absolute; top: 17px; left:55%;">&nbsp;</div>
+                                                            <div style="cursor: pointer; position: absolute; top: -5px; right: 12%;">
+                    <span class="icons_sprite icon-tor-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037101" rel="tooltip">&nbsp;</span>
+                </div>                <div style="cursor: pointer; position: absolute; top: -5px; right: -10%;">
+                    <span class="icons_sprite icon-tor-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037103" rel="tooltip">&nbsp;</span>
+                </div>                        </div>
                                     </div>
-            </div>
-            <div class="clearer"></div>
+    </div>
+
+            <div class="large-5 columns small-12 aufstellung-ersatzbank-box aufstellung-vereinsseite" style="padding: 0px; margin-bottom: -1px; ">
+                            <table class="ersatzbank">
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">13</div>
+                            </td>
+                            <td>
+                                <a title="Dean Henderson" href="/dean-henderson/profil/spieler/258919">Dean Henderson</a>                                                                                                                            </td>
+                            <td>
+                                GK                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">23</div>
+                            </td>
+                            <td>
+                                <a title="James Trafford" href="/james-trafford/profil/spieler/566799">James Trafford</a>                                                                                                                            </td>
+                            <td>
+                                GK                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">26</div>
+                            </td>
+                            <td>
+                                <a title="Jarell Quansah" href="/jarell-quansah/profil/spieler/632349">Jarell Quansah</a>                                                                                                                            </td>
+                            <td>
+                                CB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">6</div>
+                            </td>
+                            <td>
+                                <a title="Marc Guéhi" href="/marc-guehi/profil/spieler/392757">Marc Guéhi</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037116" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                CB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">15</div>
+                            </td>
+                            <td>
+                                <a title="Dan Burn" href="/dan-burn/profil/spieler/134270">Dan Burn</a>                                                                                                                            </td>
+                            <td>
+                                CB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">25</div>
+                            </td>
+                            <td>
+                                <a title="Djed Spence" href="/djed-spence/profil/spieler/483348">Djed Spence</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037114" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                LB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">14</div>
+                            </td>
+                            <td>
+                                <a title="Jordan Henderson" href="/jordan-henderson/profil/spieler/61651">Jordan Henderson</a>                                                                                                                            </td>
+                            <td>
+                                DM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">16</div>
+                            </td>
+                            <td>
+                                <a title="Kobbie Mainoo" href="/kobbie-mainoo/profil/spieler/820374">Kobbie Mainoo</a>                                                                                                                            </td>
+                            <td>
+                                CM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">17</div>
+                            </td>
+                            <td>
+                                <a title="Morgan Rogers" href="/morgan-rogers/profil/spieler/503743">Morgan Rogers</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037109" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                AM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">21</div>
+                            </td>
+                            <td>
+                                <a title="Eberechi Eze" href="/eberechi-eze/profil/spieler/479999">Eberechi Eze</a>                                                                                                                            </td>
+                            <td>
+                                AM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">11</div>
+                            </td>
+                            <td>
+                                <a title="Marcus Rashford" href="/marcus-rashford/profil/spieler/258923">Marcus Rashford</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037111" rel="tooltip">&nbsp;</span>
+                                                                                            <span style="cursor: pointer !important;" class="icons_sprite icon-tor-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037115" rel="tooltip">&nbsp;</span>
+                                            </td>
+                            <td>
+                                LW                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">7</div>
+                            </td>
+                            <td>
+                                <a title="Bukayo Saka" href="/bukayo-saka/profil/spieler/433177">Bukayo Saka</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037110" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                RW                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">19</div>
+                            </td>
+                            <td>
+                                <a title="Ollie Watkins" href="/ollie-watkins/profil/spieler/324358">Ollie Watkins</a>                                                                                                                            </td>
+                            <td>
+                                CF                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">22</div>
+                            </td>
+                            <td>
+                                <a title="Ivan Toney" href="/ivan-toney/profil/spieler/251664">Ivan Toney</a>                                                                                                                            </td>
+                            <td>
+                                CF                            </td>
+                        </tr>
+                                        <tr class="bench-table__tr">
+                        <td>
+                            <div>Manager:</div>
+                        </td>
+                        <td class="bench-table__td">
+                            <a title="Thomas Tuchel" id="7471" href="/thomas-tuchel/profil/trainer/7471">Thomas Tuchel</a>                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                    </div>
+                    </div>
+
+            <div class="large-6 columns" style="padding: 0px;">
+                <div class="unterueberschrift aufstellung-unterueberschrift-mannschaft aufstellung-bordertop-small">
+                    <div><a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></div>
+                    <div><nobr><a title="Croatia" class="sb-vereinslink" href="/kroatien/startseite/verein/3556/saison_id/2025">Croatia</a></nobr></div>
+                </div>
+                        <div class="row" style="padding: 0px; margin: 0px;">
+            <div class="large-7 aufstellung-vereinsseite columns small-12 unterueberschrift formation-subtitle">
+                Starting Line-up: 3-4-2-1            </div>
+            <div class="large-5 aufstellung-vereinsseite columns small-12 hide-for-small unterueberschrift" style="border-left: 1px solid #e4e4e4; border-right: 0px solid #e4e4e4;">
+                Substitutes            </div>
+        </div>
+            <div class="large-7 columns small-12 aufstellung-vereinsseite" style="display: inline-block; position: relative;">
+                    <div style="margin-top: 76.20%;"></div>
+                <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+                            <img data-src="https://tmssl.akamaized.net//images/spielfeld_klein.png" style="position: absolute; height: auto; width: 1000px;" class="lazy"/>
+                                        <div class="formation-player-container" style="top: 80%; left: 40%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        1                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/dominik-livakovic/profil/spieler/205927">Livakovic</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 62%; left: 40%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        6                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/josip-sutalo/profil/spieler/371001">Sutalo</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 61%; left: 15%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        22                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/luka-vuskovic/profil/spieler/892160">Vuskovic</a>                                    </span>
+                                </div>
+                                                    <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037108" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 61%; left: 65%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        4                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/josko-gvardiol/profil/spieler/475959">Gvardiol</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 34%; left: 65%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        2                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/josip-stanisic/profil/spieler/483046">Stanisic</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 20%; left: 50%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        17                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/petar-sucic/profil/spieler/668207">Sučić</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 43%; left: 52%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        15                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/mario-pasalic/profil/spieler/205938">Pašalić</a>                                    </span>
+                                </div>
+                                                    <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037113" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 43%; left: 30%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        10                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/luka-modric/profil/spieler/27992">Modrić</a>                                    </span>
+                                </div>
+                                                                            <div class="kapitaenicon-formation" style="position: absolute; top: 17px; left:55%;">&nbsp;</div>
+                                                        <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037106" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 20%; left: 30%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        16                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/martin-baturina/profil/spieler/580451">Baturina</a>                                    </span>
+                                </div>
+                                                        <div style="cursor: pointer; position: absolute; top: -5px; right: 12%;">
+                    <span class="icons_sprite icon-tor-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037102" rel="tooltip">&nbsp;</span>
+                </div>            <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037112" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                                        <div class="formation-player-container" style="top: 34%; left: 15%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        14                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/ivan-perisic/profil/spieler/42460">Perišić</a>                                    </span>
+                                </div>
+                                                                </div>
+                                                        <div class="formation-player-container" style="top: 3%; left: 40%;">
+                                                                                                                                    <div class="tm-shirt-number tm-shirt-number--large tm-shirt-number--bordered">
+                                        26                                </div>
+                                <div style="color: white; font-weight: bold; font-size: 10px;">
+                                    <span class="formation-number-name">
+                                        <a href="/petar-musa/profil/spieler/387110">Musa</a>                                    </span>
+                                </div>
+                                                        <div style="cursor: pointer; position: absolute; top: -5px; right: 12%;">
+                    <span class="icons_sprite icon-tor-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037105" rel="tooltip">&nbsp;</span>
+                </div>            <div style="cursor: pointer; position: absolute; top: -5px; left: 10%;">
+                            <span style="cursor: pointer !important;" class="icons_sprite icon-auswechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037107" rel="tooltip">&nbsp;</span>
+                        </div>                        </div>
+                                    </div>
+    </div>
+
+            <div class="large-5 columns small-12 aufstellung-ersatzbank-box aufstellung-vereinsseite" style="padding: 0px; margin-bottom: -1px; ">
+                            <table class="ersatzbank">
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">23</div>
+                            </td>
+                            <td>
+                                <a title="Dominik Kotarski" href="/dominik-kotarski/profil/spieler/370997">Dominik Kotarski</a>                                                                                                                            </td>
+                            <td>
+                                GK                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">12</div>
+                            </td>
+                            <td>
+                                <a title="Ivor Pandur" href="/ivor-pandur/profil/spieler/371013">Ivor Pandur</a>                                                                                                                            </td>
+                            <td>
+                                GK                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">25</div>
+                            </td>
+                            <td>
+                                <a title="Martin Erlić" href="/martin-erlic/profil/spieler/357003">Martin Erlić</a>                                                                                                                            </td>
+                            <td>
+                                CB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">3</div>
+                            </td>
+                            <td>
+                                <a title="Marin Pongracic" href="/marin-pongracic/profil/spieler/282144">Marin Pongracic</a>                                                                                                                            </td>
+                            <td>
+                                CB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">5</div>
+                            </td>
+                            <td>
+                                <a title="Duje Caleta-Car" href="/duje-caleta-car/profil/spieler/238266">Duje Caleta-Car</a>                                                                                                                            </td>
+                            <td>
+                                CB                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">7</div>
+                            </td>
+                            <td>
+                                <a title="Nikola Moro" href="/nikola-moro/profil/spieler/316934">Nikola Moro</a>                                                                                                                            </td>
+                            <td>
+                                DM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">18</div>
+                            </td>
+                            <td>
+                                <a title="Kristijan Jakic" href="/kristijan-jakic/profil/spieler/374954">Kristijan Jakic</a>                                                                                                                            </td>
+                            <td>
+                                DM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">8</div>
+                            </td>
+                            <td>
+                                <a title="Mateo Kovacic" href="/mateo-kovacic/profil/spieler/51471">Mateo Kovacic</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037106" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                CM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">21</div>
+                            </td>
+                            <td>
+                                <a title="Luka Sucic" href="/luka-sucic/profil/spieler/502722">Luka Sucic</a>                                                                                                                            </td>
+                            <td>
+                                CM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">19</div>
+                            </td>
+                            <td>
+                                <a title="Toni Fruk" href="/toni-fruk/profil/spieler/432758">Toni Fruk</a>                                                                                                                            </td>
+                            <td>
+                                AM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">13</div>
+                            </td>
+                            <td>
+                                <a title="Nikola Vlašić" href="/nikola-vlasic/profil/spieler/293200">Nikola Vlašić</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037112" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                AM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">9</div>
+                            </td>
+                            <td>
+                                <a title="Andrej Kramaric" href="/andrej-kramaric/profil/spieler/46580">Andrej Kramaric</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037113" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                AM                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">24</div>
+                            </td>
+                            <td>
+                                <a title="Marco Pašalić" href="/marco-pasalic/profil/spieler/395928">Marco Pašalić</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037108" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                RW                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">11</div>
+                            </td>
+                            <td>
+                                <a title="Ante Budimir" href="/ante-budimir/profil/spieler/46413">Ante Budimir</a>                                                                                                                            </td>
+                            <td>
+                                CF                            </td>
+                        </tr>
+                                            <tr>
+                            <td class="nummer formation-number-substitute">
+                                <div class="tm-shirt-number tm-shirt-number--small">20</div>
+                            </td>
+                            <td>
+                                <a title="Igor Matanovic" href="/igor-matanovic/profil/spieler/605268">Igor Matanovic</a>                                            <span style="cursor: pointer !important;" class="icons_sprite icon-einwechslung-formation" data-type="link" data-content="/ajax/ereignis/spielbericht/30037107" rel="tooltip">&nbsp;</span>
+                                                                                                        </td>
+                            <td>
+                                CF                            </td>
+                        </tr>
+                                        <tr class="bench-table__tr">
+                        <td>
+                            <div>Manager:</div>
+                        </td>
+                        <td class="bench-table__td">
+                            <a title="Zlatko Dalic" id="2711" href="/zlatko-dalic/profil/trainer/2711">Zlatko Dalic</a>                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                    </div>
+                    </div>
+            <div class="clearer"><a>&nbsp;</a></div>
         </div>
     </div>
-        </div>
-    <div class="large-6 columns">
-            <div class="box">
-        <div class="box-header">
-            <div class="spielername-profil">
-                Current coach            </div>
-            <div class="icons-profil">
-                <div class="wappen">
-                    <a title="Croatia" href="/kroatien/startseite/verein/3556"><img src="https://tmssl.akamaized.net//images/wappen/profil/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                </div>
-            </div>
-        </div>
-        <div class="box-content">
-            <div class="container-foto text-center">
-                <img src="https://img.a.transfermarkt.technology/portrait/medium/2711-1669199027.jpg?lm=1" title="Zlatko Dalic" alt="Zlatko Dalic" class="bilderrahmen max-medium-foto" />            </div>
+</div>
 
-            <div class="container-inhalt">
-                <div class="container-hauptinfo s16">
-                    <a title="Zlatko Dalic" id="2711" href="/zlatko-dalic/profil/trainer/2711">Zlatko Dalic</a>                </div>
-                <div class="container-zusatzinfo-small">
-                    <b>Age:</b> 59                    Years&nbsp;
-
-                    <img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" />                    <br />
-                    <b>Appointed:</b> 07/10/2017                    <br />
-                    <b>Contract expires:</b> 31/07/2026                    <br />
-                    <b>Success rate as coach:</b>  1.68 PPM                </div>
-                <div class="container-zusatzinfo">
-                                            <table class="table-border">
-                            <tr class="">
-                                <td class="hauptlink bg_ueberschrift" colspan="5">Record against ENG</td>
-                            </tr>
-                            <tr>
-                                <td class="zentriert hauptlink">Matches</td>
-                                <td class="zentriert hauptlink">W</td>
-                                <td class="zentriert hauptlink">D</td>
-                                <td class="zentriert hauptlink">L</td>
-                                <td class="zentriert hauptlink">PPM</td>
-                            </tr>
-                            <tr>
-                                <td class="zentriert hauptlink"><a href="/zlatko-dalic/leistungsdatenDetail/trainer/2711/gegner_id/3299">4</a></td>
-                                <td class="zentriert">1</td>
-                                <td class="zentriert">1</td>
-                                <td class="zentriert">2</td>
-                                <td class="zentriert">
-                                    <a href="/zlatko-dalic/leistungsdatenDetail/trainer/2711/gegner_id/3299">1.00</a></td>
-                                </td>
-                            </tr>
-                        </table>
-                                        </div>
+<div class="row">
+    <div class="large-12 columns">
+        <div class="box">
+            <h2 class="content-box-headline">
+                Goals</h2>
+            </h2>
+            <div class="sb-ereignisse" id="sb-tore">
+                <ul>
+                                            <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -36px -36px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand"><b>1:0</b></div>
+                                <div class="sb-aktion-spielerbild">
+                                        <a href="/harry-kane/profil/spieler/132098">
+                                            <img src="https://img.a.transfermarkt.technology/portrait/small/132098-1700211169.jpg?lm=1" title="Harry Kane" alt="Harry Kane" class="bilderrahmen-fixed" />                                        </a>
+                                </div>
+                                <div class="sb-aktion-aktion">
+                                    <a title="Harry Kane" class="wichtig" href="/harry-kane/leistungsdatendetails/spieler/132098/saison/2025/wettbewerb/FIWC">Harry Kane</a>, Penalty, 1. Tournament Goal <br />
+                                                                    </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -180px -108px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand"><b>1:1</b></div>
+                                <div class="sb-aktion-spielerbild">
+                                        <a href="/martin-baturina/profil/spieler/580451">
+                                            <img src="https://img.a.transfermarkt.technology/portrait/small/580451-1716240952.jpg?lm=1" title="Martin Baturina" alt="Martin Baturina" class="bilderrahmen-fixed" />                                        </a>
+                                </div>
+                                <div class="sb-aktion-aktion">
+                                    <a title="Martin Baturina" class="wichtig" href="/martin-baturina/leistungsdatendetails/spieler/580451/saison/2025/wettbewerb/FIWC">Martin Baturina</a>, Right-footed shot, 1. Tournament Goal <br />
+                                    Assist: <a title="Petar Sučić" class="wichtig" href="/petar-sucic/leistungsdatendetails/spieler/668207/saison/2025/wettbewerb/FIWC">Petar Sučić</a>, Pass, 1. Tournament Assist                                                                        </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -36px -144px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand"><b>2:1</b></div>
+                                <div class="sb-aktion-spielerbild">
+                                        <a href="/harry-kane/profil/spieler/132098">
+                                            <img src="https://img.a.transfermarkt.technology/portrait/small/132098-1700211169.jpg?lm=1" title="Harry Kane" alt="Harry Kane" class="bilderrahmen-fixed" />                                        </a>
+                                </div>
+                                <div class="sb-aktion-aktion">
+                                    <a title="Harry Kane" class="wichtig" href="/harry-kane/leistungsdatendetails/spieler/132098/saison/2025/wettbewerb/FIWC">Harry Kane</a>, Header, 2. Tournament Goal <br />
+                                    Assist: <a title="Declan Rice" class="wichtig" href="/declan-rice/leistungsdatendetails/spieler/357662/saison/2025/wettbewerb/FIWC">Declan Rice</a>, Corner, 1. Tournament Assist                                                                        </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -144px -144px;">
+    +5</span>
+</div>
+                                <div class="sb-aktion-spielstand"><b>3:2</b></div>
+                                <div class="sb-aktion-spielerbild">
+                                        <a href="/petar-musa/profil/spieler/387110">
+                                            <img src="https://img.a.transfermarkt.technology/portrait/small/387110-1771675545.jpg?lm=1" title="Petar Musa" alt="Petar Musa" class="bilderrahmen-fixed" />                                        </a>
+                                </div>
+                                <div class="sb-aktion-aktion">
+                                    <a title="Petar Musa" class="wichtig" href="/petar-musa/leistungsdatendetails/spieler/387110/saison/2025/wettbewerb/FIWC">Petar Musa</a>, Right-footed shot, 1. Tournament Goal <br />
+                                    Assist: <a title="Ivan Perišić" class="wichtig" href="/ivan-perisic/leistungsdatendetails/spieler/42460/saison/2025/wettbewerb/FIWC">Ivan Perišić</a>, Pass, 1. Tournament Assist                                                                        </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -216px -144px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand"><b>3:1</b></div>
+                                <div class="sb-aktion-spielerbild">
+                                        <a href="/jude-bellingham/profil/spieler/581678">
+                                            <img src="https://img.a.transfermarkt.technology/portrait/small/581678-1748102891.jpg?lm=1" title="Jude Bellingham" alt="Jude Bellingham" class="bilderrahmen-fixed" />                                        </a>
+                                </div>
+                                <div class="sb-aktion-aktion">
+                                    <a title="Jude Bellingham" class="wichtig" href="/jude-bellingham/leistungsdatendetails/spieler/581678/saison/2025/wettbewerb/FIWC">Jude Bellingham</a>, Right-footed shot, 1. Tournament Goal <br />
+                                    Assist: <a title="Elliot Anderson" class="wichtig" href="/elliot-anderson/leistungsdatendetails/spieler/567576/saison/2025/wettbewerb/FIWC">Elliot Anderson</a>, Pass, 1. Tournament Assist                                                                        </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -144px -288px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand"><b>4:2</b></div>
+                                <div class="sb-aktion-spielerbild">
+                                        <a href="/marcus-rashford/profil/spieler/258923">
+                                            <img src="https://img.a.transfermarkt.technology/portrait/small/258923-1674473054.jpg?lm=1" title="Marcus Rashford" alt="Marcus Rashford" class="bilderrahmen-fixed" />                                        </a>
+                                </div>
+                                <div class="sb-aktion-aktion">
+                                    <a title="Marcus Rashford" class="wichtig" href="/marcus-rashford/leistungsdatendetails/spieler/258923/saison/2025/wettbewerb/FIWC">Marcus Rashford</a>, Right-footed shot, 1. Tournament Goal <br />
+                                    Assist: <a title="Bukayo Saka" class="wichtig" href="/bukayo-saka/leistungsdatendetails/spieler/433177/saison/2025/wettbewerb/FIWC">Bukayo Saka</a>, Pass, 1. Tournament Assist                                                                        </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                        </ul>
             </div>
-            <div class="clearer"></div>
         </div>
     </div>
-        </div>
 </div>
 <div class="row">
-    <div class="large-6 columns">
-        
-    <div class="box team-comparison-player">
-        <div class="box-header">
-            <div class="spielername-profil">
-                Most valuable player            </div>
-            <div class="icons-profil">
-                <div class="wappen">
-                    <a title="England" href="/england/startseite/verein/3299"><img src="https://tmssl.akamaized.net//images/wappen/profil/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                </div>
+    <div class="large-12 columns">
+        <div class="box">
+            <h2 class="content-box-headline">
+                Substitutions            </h2>
+            <div class="sb-ereignisse" id="sb-wechsel">
+                <ul>
+                                            <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -252px -180px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/luka-modric/profil/spieler/27992">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/27992-1687776160.jpg?lm=1" title="Luka Modrić" alt="Luka Modrić" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/mateo-kovacic/profil/spieler/51471">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/51471-1682668192.jpg?lm=1" title="Mateo Kovacic" alt="Mateo Kovacic" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Mateo Kovacic" class="wichtig" href="/mateo-kovacic/leistungsdatendetails/spieler/51471/saison/2025/wettbewerb/FIWC">Mateo Kovacic</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Luka Modrić" class="wichtig" href="/luka-modric/leistungsdatendetails/spieler/27992/saison/2025/wettbewerb/FIWC">Luka Modrić</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -180px -216px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/petar-musa/profil/spieler/387110">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/387110-1771675545.jpg?lm=1" title="Petar Musa" alt="Petar Musa" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/igor-matanovic/profil/spieler/605268">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/605268-1753984387.jpg?lm=1" title="Igor Matanovic" alt="Igor Matanovic" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Igor Matanovic" class="wichtig" href="/igor-matanovic/leistungsdatendetails/spieler/605268/saison/2025/wettbewerb/FIWC">Igor Matanovic</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Petar Musa" class="wichtig" href="/petar-musa/leistungsdatendetails/spieler/387110/saison/2025/wettbewerb/FIWC">Petar Musa</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -180px -216px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/luka-vuskovic/profil/spieler/892160">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/892160-1758187820.jpg?lm=1" title="Luka Vuskovic" alt="Luka Vuskovic" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/marco-pasalic/profil/spieler/395928">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/395928-1771712720.jpg?lm=1" title="Marco Pašalić" alt="Marco Pašalić" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Marco Pašalić" class="wichtig" href="/marco-pasalic/leistungsdatendetails/spieler/395928/saison/2025/wettbewerb/FIWC">Marco Pašalić</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Luka Vuskovic" class="wichtig" href="/luka-vuskovic/leistungsdatendetails/spieler/892160/saison/2025/wettbewerb/FIWC">Luka Vuskovic</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -36px -252px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/declan-rice/profil/spieler/357662">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/357662-1687962936.jpg?lm=1" title="Declan Rice" alt="Declan Rice" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/morgan-rogers/profil/spieler/503743">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/503743-1706786450.jpg?lm=1" title="Morgan Rogers" alt="Morgan Rogers" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Morgan Rogers" class="wichtig" href="/morgan-rogers/leistungsdatendetails/spieler/503743/saison/2025/wettbewerb/FIWC">Morgan Rogers</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Declan Rice" class="wichtig" href="/declan-rice/leistungsdatendetails/spieler/357662/saison/2025/wettbewerb/FIWC">Declan Rice</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -36px -252px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/noni-madueke/profil/spieler/503987">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/503987-1683102348.jpg?lm=1" title="Noni Madueke" alt="Noni Madueke" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/bukayo-saka/profil/spieler/433177">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/433177-1684155052.jpg?lm=1" title="Bukayo Saka" alt="Bukayo Saka" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Bukayo Saka" class="wichtig" href="/bukayo-saka/leistungsdatendetails/spieler/433177/saison/2025/wettbewerb/FIWC">Bukayo Saka</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Noni Madueke" class="wichtig" href="/noni-madueke/leistungsdatendetails/spieler/503987/saison/2025/wettbewerb/FIWC">Noni Madueke</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -36px -252px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/anthony-gordon/profil/spieler/503733">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/503733-1761080304.jpg?lm=1" title="Anthony Gordon" alt="Anthony Gordon" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/marcus-rashford/profil/spieler/258923">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/258923-1674473054.jpg?lm=1" title="Marcus Rashford" alt="Marcus Rashford" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Marcus Rashford" class="wichtig" href="/marcus-rashford/leistungsdatendetails/spieler/258923/saison/2025/wettbewerb/FIWC">Marcus Rashford</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Anthony Gordon" class="wichtig" href="/anthony-gordon/leistungsdatendetails/spieler/503733/saison/2025/wettbewerb/FIWC">Anthony Gordon</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -252px -252px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/martin-baturina/profil/spieler/580451">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/580451-1716240952.jpg?lm=1" title="Martin Baturina" alt="Martin Baturina" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/nikola-vlasic/profil/spieler/293200">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/293200-1695028630.jpg?lm=1" title="Nikola Vlašić" alt="Nikola Vlašić" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Nikola Vlašić" class="wichtig" href="/nikola-vlasic/leistungsdatendetails/spieler/293200/saison/2025/wettbewerb/FIWC">Nikola Vlašić</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Martin Baturina" class="wichtig" href="/martin-baturina/leistungsdatendetails/spieler/580451/saison/2025/wettbewerb/FIWC">Martin Baturina</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-gast">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -288px -252px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/mario-pasalic/profil/spieler/205938">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/205938-1716240830.jpg?lm=1" title="Mario Pašalić" alt="Mario Pašalić" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/andrej-kramaric/profil/spieler/46580">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/46580-1755089885.jpg?lm=1" title="Andrej Kramaric" alt="Andrej Kramaric" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Andrej Kramaric" class="wichtig" href="/andrej-kramaric/leistungsdatendetails/spieler/46580/saison/2025/wettbewerb/FIWC">Andrej Kramaric</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Mario Pašalić" class="wichtig" href="/mario-pasalic/leistungsdatendetails/spieler/205938/saison/2025/wettbewerb/FIWC">Mario Pašalić</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -324px -252px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/jude-bellingham/profil/spieler/581678">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/581678-1748102891.jpg?lm=1" title="Jude Bellingham" alt="Jude Bellingham" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/djed-spence/profil/spieler/483348">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/483348-1746645656.jpg?lm=1" title="Djed Spence" alt="Djed Spence" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Djed Spence" class="wichtig" href="/djed-spence/leistungsdatendetails/spieler/483348/saison/2025/wettbewerb/FIWC">Djed Spence</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="Jude Bellingham" class="wichtig" href="/jude-bellingham/leistungsdatendetails/spieler/581678/saison/2025/wettbewerb/FIWC">Jude Bellingham</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                                <li class="sb-aktion-heim">
+                            <div class="sb-aktion">
+                                <div class="sb-aktion-uhr"><span class="sb-sprite-uhr-klein" style="background-position: -216px -288px;">
+    &nbsp;</span>
+</div>
+                                <div class="sb-aktion-spielstand hide-for-small"><span class="sb-sprite sb-wechsel-401" title="Tactical">&nbsp;</span></div>
+                                <div class="sb-aktion-spielerbild">
+                                                                                <a href="/john-stones/profil/spieler/186590">
+                                                <img src="https://img.a.transfermarkt.technology/portrait/small/186590-1684764261.jpg?lm=1" title="John Stones" alt="John Stones" class="bilderrahmen-fixed" />                                            </a>
+                                                                    </div>
+                                <div class="sb-aktion-aktion">
+                                    <div class="sb-aktion-spielerbild">
+                                                                                        <a href="/marc-guehi/profil/spieler/392757">
+                                                    <img src="https://img.a.transfermarkt.technology/portrait/small/392757-1683030598.jpg?lm=1" title="Marc Guéhi" alt="Marc Guéhi" class="bilderrahmen-fixed" />                                                </a>
+                                                                            </div>
+                                    <span class="sb-aktion-wechsel-ein">
+                                        <span class="sb-sprite sb-ein">&nbsp;</span>&nbsp;<a title="Marc Guéhi" class="wichtig" href="/marc-guehi/leistungsdatendetails/spieler/392757/saison/2025/wettbewerb/FIWC">Marc Guéhi</a>                                    </span>
+                                    <span class="sb-aktion-wechsel-aus">
+                                                                                    <a title="John Stones" class="wichtig" href="/john-stones/leistungsdatendetails/spieler/186590/saison/2025/wettbewerb/FIWC">John Stones</a><span class="hide-for-small">, Tactical&nbsp;</span><span class="sb-sprite sb-aus">&nbsp;</span>
+                                                                            </span>
+                                </div>
+                                <div class="sb-aktion-wappen">
+                                    <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/smallquad/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>                                </div>
+                            </div>
+                        </li>
+                                        </ul>
             </div>
         </div>
-        <div class="box-content">
-            <div class="team-comparison-player__image">
-                <img src="https://img.a.transfermarkt.technology/portrait/medium/581678-1748102891.jpg?lm=1" title="Jude Bellingham" alt="Jude Bellingham" class="team-comparison-player__image--portrait" />            </div>
-            <div class="team-comparison-player__info">
-                <div class="team-comparison-player__info team-comparison-player__info--content">
-                    <table class="profilheader">
-                        <tr>
-                            <th>Surname:</th>
-                            <td class="hauptlink"><a title="Jude Bellingham" href="/jude-bellingham/profil/spieler/581678">Jude Bellingham</a></td>
-                        </tr>
-                                                    <tr>
-                                <th>Date of birth:</th>
-                                <td>29/06/2003</td>
-                            </tr>
-                                                            <tr>
-                                    <th>Place of birth:</th>
-                                    <td>
-                                         <span>
-                                                    Stourbridge&nbsp;&nbsp;<img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></span>                                    </td>
-                                </tr>
-                                                                                        <tr>
-                                    <th>Age:</th>
-                                    <td>22</td>
-                                </tr>
-                                                                                                                                <tr>
-                                <th>Height:</th>
-                                <td>1,86 m</td>
-                            </tr>
-                                                                            <tr>
-                                <th>Foot:</th>
-                                <td>right</td>
-                            </tr>
-                        
-                                                    <tr>
-                                <th class="show-for-small">
-                                    Market value:
-                                </th>
-                                <td class="show-for-small">
-                                    €130.00m                                </td>
-                            </tr>
-                        
-                                                    <tr>
-                                <th>Current club:</th>
-                                <td>
-                                    <a title="Real Madrid" href="/real-madrid/startseite/verein/418">Real Madrid</a>                                </td>
-                            </tr>
-                            <tr>
-                                <th>Contract expires:</th>
-                                <td>
-                                    30/06/2029                                </td>
-                            </tr>
-                                                <tr>
-                            <th>Position:</th>
-                            <td>
-                                Attacking Midfield                            </td>
-                        </tr>
-
-                                                    <tr>
-                                <th>Player agent:</th>
-                                <td>
-                                                                            <span>Relatives</span>                                                                    </td>
-                            </tr>
-                                                                    </table>
-                </div>
-            </div>
-        </div>
-                    <div class="team-comparison-player__current-market-value">
-                Current market value:<span class="team-comparison-player__current-market-value--sum"><span class="waehrung">€</span>130.00<span class="waehrung">m</span></span>            </div>
-            </div>
-    </div>
-    <div class="large-6 columns">
-        
-    <div class="box team-comparison-player">
-        <div class="box-header">
-            <div class="spielername-profil">
-                Most valuable player            </div>
-            <div class="icons-profil">
-                <div class="wappen">
-                    <a title="Croatia" href="/kroatien/startseite/verein/3556"><img src="https://tmssl.akamaized.net//images/wappen/profil/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>                </div>
-            </div>
-        </div>
-        <div class="box-content">
-            <div class="team-comparison-player__image">
-                <img src="https://img.a.transfermarkt.technology/portrait/medium/475959-1713391602.jpg?lm=1" title="Josko Gvardiol" alt="Josko Gvardiol" class="team-comparison-player__image--portrait" />            </div>
-            <div class="team-comparison-player__info">
-                <div class="team-comparison-player__info team-comparison-player__info--content">
-                    <table class="profilheader">
-                        <tr>
-                            <th>Surname:</th>
-                            <td class="hauptlink"><a title="Josko Gvardiol" href="/josko-gvardiol/profil/spieler/475959">Josko Gvardiol</a></td>
-                        </tr>
-                                                    <tr>
-                                <th>Date of birth:</th>
-                                <td>23/01/2002</td>
-                            </tr>
-                                                            <tr>
-                                    <th>Place of birth:</th>
-                                    <td>
-                                         <span>
-                                                    Zagreb&nbsp;&nbsp;<img src="https://tmssl.akamaized.net//images/flagge/verysmall/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></span>                                    </td>
-                                </tr>
-                                                                                        <tr>
-                                    <th>Age:</th>
-                                    <td>24</td>
-                                </tr>
-                                                                                                                                <tr>
-                                <th>Height:</th>
-                                <td>1,85 m</td>
-                            </tr>
-                                                                            <tr>
-                                <th>Foot:</th>
-                                <td>left</td>
-                            </tr>
-                        
-                                                    <tr>
-                                <th class="show-for-small">
-                                    Market value:
-                                </th>
-                                <td class="show-for-small">
-                                    €70.00m                                </td>
-                            </tr>
-                        
-                                                    <tr>
-                                <th>Current club:</th>
-                                <td>
-                                    <a title="Manchester City" href="/manchester-city/startseite/verein/281">Manchester City</a>                                </td>
-                            </tr>
-                            <tr>
-                                <th>Contract expires:</th>
-                                <td>
-                                    30/06/2028                                </td>
-                            </tr>
-                                                <tr>
-                            <th>Position:</th>
-                            <td>
-                                Centre-Back                            </td>
-                        </tr>
-
-                                                    <tr>
-                                <th>Player agent:</th>
-                                <td>
-                                                                            <a href="/marjan-sisic/beraterfirma/berater/8945">Marjan Sisic</a>                                                                    </td>
-                            </tr>
-                                                                    </table>
-                </div>
-            </div>
-        </div>
-                    <div class="team-comparison-player__current-market-value">
-                Current market value:<span class="team-comparison-player__current-market-value--sum"><span class="waehrung">€</span>70.00<span class="waehrung">m</span></span>            </div>
-            </div>
     </div>
 </div>
 
-    </div>
-    <div class="large-4 columns">
-        <script type="text/javascript">//RWGzztV("rectangle1")</script>
-<div class="ad-placement-note ad-placement-background werbung werbung-rectangle1"  data-ad-placement-note="Advertisement">
-  <div id="d_side_1" style="min-width: 336px; min-height: 280px;">
-  </div>
-</div>
 
-<span class="RWGzztV_end"></span>
 
-                <div class="box" id="tabelle-widget">
-                            <div>
-                    <h2 class="content-box-headline">
-                        Table World Cup                    </h2>
-                </div>
-            
-            <div class="responsive-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="zentriert">#</th>
-                            <th colspan="2">Club</th>
-                            <th class="zentriert">Matches</th>
-                            <th class="zentriert">+/-</th>
-                            <th class="zentriert">Pts</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                                                    <tr class="table-highlight">
-                                <td class="zentriert hauptlink nowrap" style="background-color:">1</td>
-                                <td class="zentriert no-border-rechts zelle-wappen"><a title="England" href="/england/spielplan/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/small/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a></td>
-                                <td class="no-border-links hauptlink">
-                                    <a title="England" href="/england/spielplan/verein/3299/saison_id/2025">England</a>                                                                    </td>
-                                <td class="fb zentriert">1</td>
-                                <td class="fb zentriert">1</td>
-                                                                <td class="fb zentriert">3</td>
-                            </tr>
-                                                        <tr class="">
-                                <td class="zentriert hauptlink nowrap" style="background-color:">2</td>
-                                <td class="zentriert no-border-rechts zelle-wappen"><a title="Panama" href="/panama/spielplan/verein/3577/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/small/130.png?lm=1520611569" title="Panama" alt="Panama" class="flaggenrahmen" /></a></td>
-                                <td class="no-border-links hauptlink">
-                                    <a title="Panama" href="/panama/spielplan/verein/3577/saison_id/2025">Panama</a>                                                                    </td>
-                                <td class="fb zentriert">-</td>
-                                <td class="fb zentriert">-</td>
-                                                                <td class="fb zentriert">0</td>
-                            </tr>
-                                                        <tr class="">
-                                <td class="zentriert hauptlink nowrap" style="background-color:">2</td>
-                                <td class="zentriert no-border-rechts zelle-wappen"><a title="Ghana" href="/ghana/spielplan/verein/3441/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/small/54.png?lm=1520611569" title="Ghana" alt="Ghana" class="flaggenrahmen" /></a></td>
-                                <td class="no-border-links hauptlink">
-                                    <a title="Ghana" href="/ghana/spielplan/verein/3441/saison_id/2025">Ghana</a>                                                                    </td>
-                                <td class="fb zentriert">-</td>
-                                <td class="fb zentriert">-</td>
-                                                                <td class="fb zentriert">0</td>
-                            </tr>
-                                                        <tr class="table-highlight">
-                                <td class="zentriert hauptlink nowrap" style="background-color:">4</td>
-                                <td class="zentriert no-border-rechts zelle-wappen"><a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/small/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a></td>
-                                <td class="no-border-links hauptlink">
-                                    <a title="Croatia" href="/kroatien/spielplan/verein/3556/saison_id/2025">Croatia</a>                                                                    </td>
-                                <td class="fb zentriert">1</td>
-                                <td class="fb zentriert">-1</td>
-                                                                <td class="fb zentriert">0</td>
-                            </tr>
-                                                </tbody>
-                </table>
-            </div>
-            <div class="table-footer">
-                <a title="Groups and matchdays" href="/weltmeisterschaft/gesamtspielplan/pokalwettbewerb/FIWC/saison_id/2025">Groups and matchdays</a>            </div>
-        </div>
-            <div class="box">
-        <h2 class="content-box-headline">
-            International record        </h2>
-                <div class="content pr">
-            <span class="heimwappen_bilanz">
-                <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/profil/3299.png?lm=1622017648" title="England" alt="England" class="" /></a>            </span>
-            <span class="gastwappen_bilanz">
-                <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/wappen/profil/3556.png?lm=1622018504" title="Croatia" alt="Croatia" class="" /></a>            </span>
-            <div id="yw1"></div>            <div class="bilanzTore">
-                <span style="width:62.857142857143%;background-color:#FCFCFC;color:#333;" class="verein">22 goals</span><span style="width:37.142857142857%;background-color:#C8102E;color:#FFFFFF;" class="verein">13 goals</span>            </div>
-        </div>
-        <div class="table-footer"><a href="/vergleich/bilanzdetail/verein/3299/gegner_id/3556">all matches</a></div>
-    </div>
-    <div class="box">
-    <h2 class="content-box-headline">
-        Missing players    </h2>
-    <div class="content" style="line-height:1.8;">
-        <b>
-            <a title="England" href="/england/startseite/verein/3299">England</a>        </b>
-        <br />
-        -        <br /><br />
-        <b>
-            <a title="Croatia" href="/kroatien/startseite/verein/3556">Croatia</a>        </b>
-        <br />
-        -    </div>
-</div><div class="box">
-    <h2 class="content-box-headline">Top fixture-goal scorers</h2>
-    <div class="responsive-table">
-        <table>
-            <thead>
-            <tr>
-                <th>Player</th>
-                <th class="zentriert">Club</th>
-                <th class="zentriert">Goals</th>
-            </tr>
-            </thead>
-            <tbody>
-                            <tr>
-                    <td>
-                        <table class="inline-table">
-                            <tr>
-                                <td rowspan="2">
-                                    <img src="https://img.a.transfermarkt.technology/portrait/small/3163-1674475335.jpg?lm=1" title="Frank Lampard" alt="Frank Lampard" class="bilderrahmen-fixed" />                                </td>
-                                <td class="hauptlink">
-                                    <a title="Frank Lampard" href="/frank-lampard/profil/spieler/3163">Frank Lampard</a>                                </td>
-                            </tr>
-                            <tr>
-                                <td>Central Midfield</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="zentriert">
-                        <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a>                    </td>
-                    <td class="zentriert hauptlink">
-                        <a title="Record of the player" href="/jumplist/bilanz/spieler/3163">5</a>                    </td>
-                </tr>
-                                <tr>
-                    <td>
-                        <table class="inline-table">
-                            <tr>
-                                <td rowspan="2">
-                                    <img src="https://img.a.transfermarkt.technology/portrait/small/3332-1406462596.jpg?lm=1" title="Wayne Rooney" alt="Wayne Rooney" class="bilderrahmen-fixed" />                                </td>
-                                <td class="hauptlink">
-                                    <a title="Wayne Rooney" href="/wayne-rooney/profil/spieler/3332">Wayne Rooney</a>                                </td>
-                            </tr>
-                            <tr>
-                                <td>Centre-Forward</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="zentriert">
-                        <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a>                    </td>
-                    <td class="zentriert hauptlink">
-                        <a title="Record of the player" href="/jumplist/bilanz/spieler/3332">4</a>                    </td>
-                </tr>
-                                <tr>
-                    <td>
-                        <table class="inline-table">
-                            <tr>
-                                <td rowspan="2">
-                                    <img src="https://img.a.transfermarkt.technology/portrait/small/33713-1685709936.jpg?lm=1" title="Theo Walcott" alt="Theo Walcott" class="bilderrahmen-fixed" />                                </td>
-                                <td class="hauptlink">
-                                    <a title="Theo Walcott" href="/theo-walcott/profil/spieler/33713">Theo Walcott</a>                                </td>
-                            </tr>
-                            <tr>
-                                <td>Right Winger</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="zentriert">
-                        <a title="England" href="/england/startseite/verein/3299/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></a>                    </td>
-                    <td class="zentriert hauptlink">
-                        <a title="Record of the player" href="/jumplist/bilanz/spieler/33713">3</a>                    </td>
-                </tr>
-                                <tr>
-                    <td>
-                        <table class="inline-table">
-                            <tr>
-                                <td rowspan="2">
-                                    <img src="https://img.a.transfermarkt.technology/portrait/small/34572-1669305573.jpg?lm=1" title="Mario Mandžukić" alt="Mario Mandžukić" class="bilderrahmen-fixed" />                                </td>
-                                <td class="hauptlink">
-                                    <a title="Mario Mandžukić" href="/mario-mandzukic/profil/spieler/34572">Mario Mandžukić</a>                                </td>
-                            </tr>
-                            <tr>
-                                <td>Centre-Forward</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="zentriert">
-                        <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a>                    </td>
-                    <td class="zentriert hauptlink">
-                        <a title="Record of the player" href="/jumplist/bilanz/spieler/34572">2</a>                    </td>
-                </tr>
-                                <tr>
-                    <td>
-                        <table class="inline-table">
-                            <tr>
-                                <td rowspan="2">
-                                    <img src="https://img.a.transfermarkt.technology/portrait/small/24633-1554732622.jpg?lm=1" title="Eduardo" alt="Eduardo" class="bilderrahmen-fixed" />                                </td>
-                                <td class="hauptlink">
-                                    <a title="Eduardo" href="/eduardo/profil/spieler/24633">Eduardo</a>                                </td>
-                            </tr>
-                            <tr>
-                                <td>Centre-Forward</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="zentriert">
-                        <a title="Croatia" href="/kroatien/startseite/verein/3556/saison_id/2025"><img src="https://tmssl.akamaized.net//images/flagge/tiny/37.png?lm=1520611569" title="Croatia" alt="Croatia" class="flaggenrahmen" /></a>                    </td>
-                    <td class="zentriert hauptlink">
-                        <a title="Record of the player" href="/jumplist/bilanz/spieler/24633">2</a>                    </td>
-                </tr>
-                            </tbody>
-        </table>
-    </div>
-</div>
-<script type="text/javascript">//RWGzztV("rectangle2")</script>
-<div class="ad-placement-note ad-placement-background werbung werbung-rectangle2"  data-ad-placement-note="Advertisement">
-  <div id="d_side_2" style="min-width: 336px; min-height: 280px;">
-  </div>
-</div>
-
-<span class="RWGzztV_end"></span>
-    </div>
-</div>
-    
 <div class="ad-placement-note ad-placement-background werbung werbung-fullsize_contentad"  data-ad-placement-note="Advertisement">
   <div id="d_bottom_1" style="min-width: 1024px; min-height: 250px;">
   </div>
@@ -2093,10 +2344,6 @@ function tmTiming(value, name, event_category, event_label) {
 	var onlyTablet = '';
 	var getUserID = '';
 
-oddsServe("46cb978c9cf101a662e3ab39468aad52", -1);
-jQuery(window).on('load',function() {
-Highcharts.setOptions([]); var chart = new Highcharts.Chart({'chart':{'renderTo':'yw1','height':240,'plotBackgroundColor':'\x23fff','plotBorderColor':'\x23fff','margin':[20,0,0,0],'spacing':[0,0,0,0]},'title':{'text':'11\x20matches','style':{'font\x2Dsize':'12px','font\x2Dweight':'bold'}},'colors':['\x23C8102E','\x23cccccc','\x23FCFCFC'],'series':[{'type':'pie','name':'','data':[['\x3Cb\x20style\x3D\x22color\x3A\x23FFFFFF\x20\x21important\x3B\x22\x20class\x3D\x22cp\x22\x3E3\x3Cbr\x20\x2F\x3Ewins\x20CRO\x3C\x2Fb\x3E',3],['\x3Cb\x20style\x3D\x22color\x3A\x23333\x20\x21important\x3B\x22\x20class\x3D\x22cp\x22\x3E2\x3Cbr\x20\x2F\x3EDraws\x3C\x2Fb\x3E',2],['\x3Cb\x20style\x3D\x22color\x3A\x23333\x20\x21important\x3B\x22\x20class\x3D\x22cp\x22\x3E6\x3Cbr\x20\x2F\x3Ewins\x20ENG\x3C\x2Fb\x3E',6]]}],'legend':{'enabled':true},'tooltip':{'enabled':false},'plotOptions':{'pie':{'allowPointSelect':true,'cursor':'pointer','size':220,'borderColor':'\x23ccc','borderWidth':1,'dataLabels':{'enabled':true,'inside':false,'color':'\x23444','connectorColor':'\x23fff','distance':-40,'style':{'':''},'useHTML':true,'formatter':function(){ return this.point.name; }}}},'credits':{'enabled':false}});
-});
 /*]]>*/
 </script>
 </body>
