@@ -637,7 +637,7 @@
 
 .transfer-search-head,
 .transfer-player-search .transfer-ranking-row {
-  grid-template-columns: 44px 28px minmax(130px, 1fr) 96px 46px;
+  grid-template-columns: 44px 28px minmax(130px, 1fr) 112px 46px;
 }
 
 .transfer-position {
@@ -842,9 +842,9 @@
 
 .player-availability {
   display: inline-flex;
-  width: 86px;
-  min-width: 86px;
-  max-width: 86px;
+  width: 106px;
+  min-width: 106px;
+  max-width: 106px;
   height: 24px;
   min-height: 24px;
   max-height: 24px;
@@ -1129,7 +1129,7 @@
 
   .transfer-search-head,
   .transfer-player-search .transfer-ranking-row {
-    grid-template-columns: 42px 32px minmax(120px, 1fr) 92px 50px;
+    grid-template-columns: 42px 32px minmax(120px, 1fr) 108px 50px;
   }
 
   .transfer-ranking-head,
@@ -2556,7 +2556,7 @@ p {
 
 .national-squad-board .player-card {
   min-width: 640px;
-  grid-template-columns: 44px 24px minmax(140px, 1fr) 96px 34px 34px 34px 34px 42px 46px 0;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 112px 34px 34px 34px 34px 42px 46px 0;
   gap: 5px;
 }
 
@@ -2573,7 +2573,7 @@ p {
 .national-squad-board.is-days-open .player-card,
 .national-squad-board.has-selected-day .player-card {
   min-width: 912px;
-  grid-template-columns: 44px 24px minmax(140px, 1fr) 96px 34px 34px 34px 34px 42px 46px 272px;
+  grid-template-columns: 44px 24px minmax(140px, 1fr) 112px 34px 34px 34px 34px 42px 46px 272px;
 }
 
 .national-day-stats-group {
@@ -3750,7 +3750,7 @@ p {
 
   .national-squad-board .player-card {
     min-width: 620px;
-    grid-template-columns: 38px 24px minmax(120px, 1fr) 92px 32px 32px 32px 32px 40px 44px 0;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 108px 32px 32px 32px 32px 40px 44px 0;
     gap: 4px;
   }
 
@@ -3765,7 +3765,7 @@ p {
   .national-squad-board.is-days-open .player-card,
   .national-squad-board.has-selected-day .player-card {
     min-width: 870px;
-    grid-template-columns: 38px 24px minmax(120px, 1fr) 92px 32px 32px 32px 32px 40px 44px 250px;
+    grid-template-columns: 38px 24px minmax(120px, 1fr) 108px 32px 32px 32px 32px 40px 44px 250px;
   }
 
   .national-day-stats-group {

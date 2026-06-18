@@ -236,6 +236,79 @@ applySettingsToStaticDom();
 const countries = Array.isArray(window.countryData) ? window.countryData : [];
 const countryById = new Map(countries.map((country) => [country.id, country]));
 const playerData = Array.isArray(window.playerData) ? window.playerData : [];
+
+function numberOrZero(value) {
+  return Number.isFinite(Number(value)) ? Number(value) : 0;
+}
+
+function calculatePlayerTotalsFromRounds(player) {
+  const totals = nationalRoundKeys.reduce(
+    (sum, round) => {
+      const stats = player?.rounds?.[round];
+      if (!stats) {
+        return sum;
+      }
+
+      const values = [
+        stats.matchesPlayed,
+        stats.penalties,
+        stats.goals,
+        stats.assists,
+        stats.cleanSheets,
+        stats.penaltiesSaved,
+        stats.points,
+      ];
+      const hasNumericValue = values.some(
+        (value) => value !== null && value !== undefined && Number.isFinite(Number(value)),
+      );
+      if (!hasNumericValue) {
+        return sum;
+      }
+
+      sum.hasData = true;
+      sum.matchesPlayed += numberOrZero(stats.matchesPlayed);
+      sum.penalties += numberOrZero(stats.penalties);
+      sum.goals += numberOrZero(stats.goals) + numberOrZero(stats.penalties);
+      sum.assists += numberOrZero(stats.assists);
+      sum.cleanSheets += numberOrZero(stats.cleanSheets);
+      sum.penaltiesSaved += numberOrZero(stats.penaltiesSaved);
+      sum.points += numberOrZero(stats.points);
+      return sum;
+    },
+    {
+      hasData: false,
+      matchesPlayed: 0,
+      penalties: 0,
+      goals: 0,
+      assists: 0,
+      cleanSheets: 0,
+      penaltiesSaved: 0,
+      points: 0,
+    },
+  );
+
+  if (!totals.hasData) {
+    return {
+      matchesPlayed: null,
+      penalties: null,
+      goals: null,
+      assists: null,
+      cleanSheets: null,
+      penaltiesSaved: null,
+      points: null,
+    };
+  }
+
+  delete totals.hasData;
+  return totals;
+}
+
+playerData.forEach((squad) => {
+  (squad.players || []).forEach((player) => {
+    player.totals = calculatePlayerTotalsFromRounds(player);
+  });
+});
+
 const worldCupSquads = Object.fromEntries(
   playerData.map((squad) => [squad.countryId, squad.players || []]),
 );
@@ -830,11 +903,7 @@ function createFantasyPlayerRow(slot, slotIndex) {
   const isEmpty = !player;
   const countryCode = player?.countryId || "FRA";
   const totals = player?.totals || {};
-  const totalGoals =
-    totals.goals == null &&
-    totals.penalties == null
-      ? null
-      : (totals.goals ?? 0) + (totals.penalties ?? 0);
+  const totalGoals = totals.goals ?? null;
   const totalPoints = totals.points ?? 0;
   const roundCells = fantasyRoundKeys
     .map((round, index) => {
