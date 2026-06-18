@@ -65423,20 +65423,20 @@
           "matchesPlayed": 1,
           "penalties": 0,
           "goals": 0,
-          "assists": 0,
+          "assists": 1,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 0
+          "points": 1
         },
         "rounds": {
           "J1": {
             "matchesPlayed": 1,
             "penalties": 0,
             "goals": 0,
-            "assists": 0,
+            "assists": 1,
             "cleanSheets": 0,
             "penaltiesSaved": 0,
-            "points": 0
+            "points": 1
           },
           "J2": {
             "matchesPlayed": null,

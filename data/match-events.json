@@ -1784,7 +1784,7 @@
       {
         "countryId": "GHA",
         "scorerId": 1240763,
-        "assistId": null,
+        "assistId": 451747,
         "minute": 90,
         "addedTime": 5,
         "isPenalty": false,
@@ -1804,7 +1804,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-18T04:09:13.904947Z"
+    "updatedAt": "2026-06-18T23:01:09.185278Z"
   },
   {
     "matchNumber": 22,
