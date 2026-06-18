@@ -2161,21 +2161,103 @@
     "matchNumber": 26,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          257814,
+          192635,
+          284730,
+          86784,
+          168989,
+          111455,
+          148252,
+          237658,
+          507341,
+          365108,
+          237662
+        ],
+        "substitutes": [
+          539798,
+          927353,
+          212723,
+          345886,
+          243856
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          248454,
+          679423,
+          422051,
+          94005,
+          519184,
+          226097,
+          787907,
+          638990,
+          929994,
+          335457,
+          28396
+        ],
+        "substitutes": [
+          293213,
+          620560,
+          803049,
+          925862,
+          457738
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "SWI",
+        "scorerId": 927353,
+        "assistId": null,
+        "minute": 74,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWI",
+        "scorerId": 345886,
+        "assistId": null,
+        "minute": 84,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWI",
+        "scorerId": 927353,
+        "assistId": null,
+        "minute": 90,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BOS",
+        "scorerId": 803049,
+        "assistId": null,
+        "minute": 90,
+        "addedTime": 3,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWI",
+        "scorerId": 111455,
+        "assistId": null,
+        "minute": 90,
+        "addedTime": 7,
+        "isPenalty": true,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-18T21:05:04.094344Z"
   },
   {
     "matchNumber": 27,
