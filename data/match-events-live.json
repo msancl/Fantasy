@@ -77,8 +77,8 @@
   {
     "matchNumber": 32,
     "score": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -90,13 +90,32 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "USA",
+        "scorerId": 255788,
+        "assistId": null,
+        "minute": 11,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 985806,
+        "assistId": null,
+        "minute": 43,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-19T17:05:46.386378Z"
+    "updatedAt": "2026-06-19T20:09:12.259096Z"
   }
 ]
