@@ -695,8 +695,9 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": "2026-06-18T18:32:14.971605Z",
-    "bbc": null,
-    "transfermarktImported": true
+    "bbc": "https://www.bbc.com/sport/football/live/cp8rk9gwzjnt",
+    "transfermarktImported": true,
+    "bbcAssistsImported": true
   },
   {
     "number": 26,
@@ -722,8 +723,9 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": "2026-06-18T21:05:04.094344Z",
-    "bbc": null,
-    "transfermarktImported": true
+    "bbc": "https://www.bbc.com/sport/football/live/clyxn1d72n7t",
+    "transfermarktImported": true,
+    "bbcAssistsImported": true
   },
   {
     "number": 27,
@@ -739,17 +741,19 @@
     "transfermarktId": 4776626,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776626",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 6,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "CAN",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": null
+    "updatedAt": "2026-06-19T17:05:50.449128Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cgqj0zw4nn9t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 28,
@@ -765,17 +769,19 @@
     "transfermarktId": 4776624,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776624",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "MEX",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": null
+    "updatedAt": "2026-06-19T17:05:50.449128Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cvgme6np19pt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 29,
@@ -801,7 +807,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cwy0e228196t"
   },
   {
     "number": 30,
@@ -827,7 +833,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/crr8dw70x51t"
   },
   {
     "number": 31,
@@ -853,7 +859,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c2kyg22l2n7t"
   },
   {
     "number": 32,
@@ -879,7 +885,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cvged6v90zlt"
   },
   {
     "number": 33,
