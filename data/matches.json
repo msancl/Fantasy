@@ -569,12 +569,13 @@
     "winnerCountryId": "NOR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T18:39:17.933570Z",
+    "updatedAt": "2026-06-19T22:15:56.421166Z",
     "bbc": "https://www.bbc.com/sport/football/live/cr5j6rn5ng2t",
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-19T18:22:30.419406Z"
+      "24h": "2026-06-19T18:22:30.419406Z",
+      "3d": "2026-06-19T22:15:52.172391Z"
     }
   },
   {
@@ -848,10 +849,13 @@
     "winnerCountryId": "CAN",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-19T17:05:50.449128Z",
+    "updatedAt": "2026-06-19T22:15:56.421166Z",
     "bbc": "https://www.bbc.com/sport/football/live/cgqj0zw4nn9t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-19T22:15:52.172391Z"
+    }
   },
   {
     "number": 28,

@@ -27,8 +27,8 @@
   {
     "matchNumber": 30,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "lineups": {
       "home": {
@@ -40,14 +40,24 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "MOR",
+        "scorerId": 702869,
+        "assistId": 314678,
+        "minute": 2,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-19T17:05:46.386378Z"
+    "updatedAt": "2026-06-19T22:15:54.885123Z"
   },
   {
     "matchNumber": 31,
