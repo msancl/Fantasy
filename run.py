@@ -43,8 +43,11 @@ BBC_KNOCKOUT_END_AFTER = timedelta(minutes=180)
 TRANSFERMARKT_START_AFTER = timedelta(minutes=105)
 TRANSFERMARKT_GROUP_END_AFTER = timedelta(minutes=180)
 TRANSFERMARKT_KNOCKOUT_END_AFTER = timedelta(minutes=240)
-RECHECK_START_AFTER = timedelta(hours=24)
-RECHECK_END_AFTER = timedelta(hours=24, minutes=30)
+RECHECK_SCHEDULE = {
+    "24h": timedelta(hours=24),
+    "3d": timedelta(days=3),
+    "7d": timedelta(days=7),
+}
 
 
 def run(command: list[str], *, check: bool = True) -> subprocess.CompletedProcess:
@@ -81,30 +84,58 @@ def in_window(now: datetime, start: datetime, end: datetime) -> bool:
     return start <= now <= end
 
 
-def auto_cloud_match_windows(now: datetime) -> tuple[list[int], list[int], list[int]]:
+def recheck_due_labels(match: dict, now: datetime) -> list[str]:
+    kickoff = parse_iso(match["kickoff"])
+    if match.get("status") != "finished":
+        return []
+    completed = match.get("rechecks") or {}
+    due = []
+    for label, delay in RECHECK_SCHEDULE.items():
+        if kickoff + delay <= now and not completed.get(label):
+            due.append(label)
+    return due
+
+
+def is_bbc_candidate(match: dict, now: datetime, recheck_due: bool) -> bool:
+    if not match.get("bbc"):
+        return False
+    kickoff = parse_iso(match["kickoff"])
+    if match.get("status") == "finished":
+        return recheck_due or not match.get("bbcAssistsImported")
+    return kickoff - BBC_START_BEFORE <= now
+
+
+def is_transfermarkt_candidate(match: dict, now: datetime, recheck_due: bool) -> bool:
+    if not match.get("transfermarkt"):
+        return False
+    kickoff = parse_iso(match["kickoff"])
+    if recheck_due:
+        return True
+    if not match.get("transfermarktImported"):
+        return kickoff + TRANSFERMARKT_START_AFTER <= now
+    return False
+
+
+def auto_cloud_match_windows(now: datetime) -> tuple[list[int], list[int], dict[int, list[str]]]:
     matches_path = ROOT / "data" / "matches.json"
     with matches_path.open("r", encoding="utf-8") as file:
         matches = json.load(file)
 
     bbc_matches: list[int] = []
     transfermarkt_matches: list[int] = []
-    recheck_matches: list[int] = []
+    recheck_matches: dict[int, list[str]] = {}
 
     for match in matches:
         number = int(match["number"])
-        kickoff = parse_iso(match["kickoff"])
-        group_match = is_group_match(match)
+        due_labels = recheck_due_labels(match, now)
+        if due_labels:
+            recheck_matches[number] = due_labels
 
-        bbc_end = kickoff + (BBC_GROUP_END_AFTER if group_match else BBC_KNOCKOUT_END_AFTER)
-        if match.get("bbc") and in_window(now, kickoff - BBC_START_BEFORE, bbc_end):
+        if is_bbc_candidate(match, now, bool(due_labels)):
             bbc_matches.append(number)
 
-        tm_end = kickoff + (TRANSFERMARKT_GROUP_END_AFTER if group_match else TRANSFERMARKT_KNOCKOUT_END_AFTER)
-        if match.get("transfermarkt") and in_window(now, kickoff + TRANSFERMARKT_START_AFTER, tm_end):
+        if is_transfermarkt_candidate(match, now, bool(due_labels)):
             transfermarkt_matches.append(number)
-
-        if in_window(now, kickoff + RECHECK_START_AFTER, kickoff + RECHECK_END_AFTER):
-            recheck_matches.append(number)
 
     return bbc_matches, transfermarkt_matches, recheck_matches
 
@@ -115,44 +146,76 @@ def extend_match_args(command: list[str], match_numbers: list[int]) -> list[str]
     return command
 
 
+def mark_rechecks_done(match_numbers: dict[int, list[str]], now: datetime) -> None:
+    if not match_numbers:
+        return
+    matches_path = ROOT / "data" / "matches.json"
+    with matches_path.open("r", encoding="utf-8") as file:
+        matches = json.load(file)
+    stamp = now.isoformat().replace("+00:00", "Z")
+    for match in matches:
+        number = int(match["number"])
+        labels = match_numbers.get(number)
+        if not labels:
+            continue
+        match.setdefault("rechecks", {})
+        for label in labels:
+            match["rechecks"][label] = stamp
+    with matches_path.open("w", encoding="utf-8", newline="\n") as file:
+        json.dump(matches, file, ensure_ascii=False, indent=2)
+        file.write("\n")
+
+
 def run_auto_cloud(python: str, dry_run: bool = False) -> int:
     now = datetime.now(timezone.utc)
+    print(f"Auto-cloud UTC: {now.isoformat().replace('+00:00', 'Z')}")
+    print("BBC discovery: enabled")
+
+    discovery = [python, "scripts/discover_bbc_links.py", "--refresh-cache"]
+    if dry_run:
+        discovery.append("--dry-run")
+    try:
+        run(discovery)
+    except subprocess.CalledProcessError as error:
+        print("\nERREUR : la decouverte des liens BBC a echoue.")
+        print("Aucun autre script ne doit etre lance.")
+        return error.returncode or 1
+
     bbc_matches, transfermarkt_matches, recheck_matches = auto_cloud_match_windows(now)
 
-    print(f"Auto-cloud UTC: {now.isoformat().replace('+00:00', 'Z')}")
     print(f"BBC live window matches: {bbc_matches or 'none'}")
     print(f"Transfermarkt final window matches: {transfermarkt_matches or 'none'}")
-    print(f"24h recheck matches: {recheck_matches or 'none'}")
+    print(
+        "Recheck due matches: "
+        + (
+            ", ".join(f"M{number}({','.join(labels)})" for number, labels in sorted(recheck_matches.items()))
+            if recheck_matches
+            else "none"
+        )
+    )
 
     commands: list[list[str]] = []
     if bbc_matches:
         command = [python, "scripts/update_bbc_live_events.py", "--refresh-cache"]
+        if recheck_matches:
+            command.append("--force")
         if dry_run:
             command.append("--dry-run")
         commands.append(extend_match_args(command, bbc_matches))
 
     if transfermarkt_matches:
         command = [python, "scripts/update_finished_matches.py", "--refresh-cache"]
+        if recheck_matches:
+            command.append("--force")
         if dry_run:
             command.append("--dry-run")
         commands.append(extend_match_args(command, transfermarkt_matches))
 
-    if recheck_matches:
-        bbc_recheck = [python, "scripts/update_bbc_live_events.py", "--refresh-cache", "--force"]
-        tm_recheck = [python, "scripts/update_finished_matches.py", "--refresh-cache", "--force"]
-        if dry_run:
-            bbc_recheck.append("--dry-run")
-            tm_recheck.append("--dry-run")
-        commands.append(extend_match_args(bbc_recheck, recheck_matches))
-        commands.append(extend_match_args(tm_recheck, recheck_matches))
-
-    if not commands:
-        print("No match is currently inside an update window.")
-        return 0
-
     try:
         for command in commands:
             run(command)
+        if recheck_matches and not dry_run:
+            mark_rechecks_done(recheck_matches, now)
     except subprocess.CalledProcessError as error:
         print("\nERREUR : un script de mise a jour a echoue.")
         print("Aucun commit/push ne doit etre lance.")
@@ -190,11 +253,19 @@ def main() -> int:
 
     update_commands = []
     if args.bbc:
+        discovery_args = ["--refresh-cache"] if args.refresh_cache else []
+        if args.dry_run:
+            discovery_args.append("--dry-run")
+        update_commands.append([python, "scripts/discover_bbc_links.py", *discovery_args])
         update_commands.append([python, "scripts/update_bbc_live_events.py", *common_args])
     elif args.transfermarkt:
         update_commands.append([python, "scripts/update_finished_matches.py", *common_args])
     else:
+        discovery_args = ["--refresh-cache"] if args.refresh_cache else []
+        if args.dry_run:
+            discovery_args.append("--dry-run")
         update_commands.extend([
+            [python, "scripts/discover_bbc_links.py", *discovery_args],
             [python, "scripts/update_bbc_live_events.py", *common_args],
             [python, "scripts/update_finished_matches.py", *common_args],
         ])

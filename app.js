@@ -1621,6 +1621,45 @@ function initializeWorldCupFixtures() {
     </section>
   `;
 
+  const hasFixtureDetails = (result) => {
+    if (!result) {
+      return false;
+    }
+    const sides = [result.home, result.away];
+    return sides.some(
+      (side) =>
+        side?.score !== null ||
+        side?.lineup?.length ||
+        side?.substitutes?.length ||
+        (side?.scorers && side.scorers !== "-") ||
+        (side?.assists && side.assists !== "-") ||
+        (side?.penaltySaves && side.penaltySaves !== "-"),
+    );
+  };
+
+  const fixtureUnavailableMessage = (fixture) => {
+    const kickoff = Date.parse(fixture.d);
+    if (!Number.isNaN(kickoff) && Date.now() < kickoff) {
+      return "Le match n'a pas encore commencé.";
+    }
+    return "Les résultats seront bientôt disponibles.";
+  };
+
+  const fixtureDetailsMarkup = (fixture, result) => {
+    if (!hasFixtureDetails(result)) {
+      return `
+        <div class="fixture-details-unavailable">
+          <p>${fixtureUnavailableMessage(fixture)}</p>
+        </div>
+      `;
+    }
+
+    return `
+      ${matchDetailsMarkup(fixture.h, fixture.hp, result?.home)}
+      ${matchDetailsMarkup(fixture.a, fixture.ap, result?.away)}
+    `;
+  };
+
   const fixtureMatchesFilter = (fixture, filter) => {
     const roundId = getRoundIdFromFilter(filter);
     if (roundSettingsById.has(roundId)) {
@@ -1716,16 +1755,7 @@ function initializeWorldCupFixtures() {
                         aria-hidden="true"
                       >
                         <div class="fixture-details-inner">
-                          ${matchDetailsMarkup(
-                          fixture.h,
-                          fixture.hp,
-                          result?.home,
-                          )}
-                          ${matchDetailsMarkup(
-                          fixture.a,
-                          fixture.ap,
-                          result?.away,
-                          )}
+                          ${fixtureDetailsMarkup(fixture, result)}
                         </div>
                       </div>
                     </article>

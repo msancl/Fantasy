@@ -326,6 +326,24 @@
   border-radius: 6px;
 }
 
+.fixture-details-unavailable {
+  grid-column: 1 / -1;
+  margin-bottom: 18px;
+  padding: 22px 24px;
+  color: #d7dde8;
+  background: linear-gradient(135deg, rgba(245, 180, 46, 0.08), rgba(7, 11, 17, 0.96) 52%);
+  border: 1px solid rgba(245, 180, 46, 0.18);
+  border-radius: 6px;
+}
+
+.fixture-details-unavailable p {
+  margin: 0;
+  color: #eef2f7;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .fixture-details-team header {
   margin-bottom: 14px;
   padding-bottom: 12px;
@@ -1720,7 +1738,7 @@ p {
 .standings-body {
   display: grid;
   gap: 5px;
-  min-width: 1080px;
+  min-width: 900px;
 }
 
 .standings-entry {
@@ -1757,13 +1775,13 @@ p {
 
 .standings-row {
   display: grid;
-  min-width: 1080px;
+  min-width: 900px;
   grid-template-columns:
-    48px minmax(260px, 420px) minmax(58px, 66px)
+    48px minmax(220px, 300px) minmax(58px, 66px)
     repeat(8, minmax(48px, 54px));
   min-height: 48px;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   border: 1px solid rgba(167, 184, 209, 0.12);
   border-radius: 7px;
   padding: 6px 10px;
@@ -3608,11 +3626,16 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .standings-body {
+    min-width: 760px;
+  }
+
   .standings-row {
+    min-width: 760px;
     grid-template-columns:
-      34px minmax(170px, 1fr) 46px
+      34px minmax(190px, 230px) 46px
       repeat(8, 46px);
-    gap: 6px;
+    gap: 5px;
     padding: 6px;
   }
 
