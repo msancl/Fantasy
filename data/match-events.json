@@ -2514,21 +2514,85 @@
     "matchNumber": 32,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          500309,
+          578539,
+          145466,
+          349701,
+          361104,
+          985806,
+          332705,
+          332697,
+          467437,
+          627207,
+          503770
+        ],
+        "substitutes": [
+          389253,
+          504153,
+          734761,
+          504215,
+          315291
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          983578,
+          255788,
+          867137,
+          298091,
+          855731,
+          545810,
+          385918,
+          1064377,
+          888140,
+          126214,
+          742770
+        ],
+        "substitutes": [
+          185175,
+          192557,
+          522223,
+          746891,
+          956920
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "USA",
+        "scorerId": 255788,
+        "assistId": null,
+        "minute": 11,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 985806,
+        "assistId": null,
+        "minute": 43,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        500309,
+        578539,
+        145466,
+        349701,
+        361104,
+        985806,
+        389253,
+        504153
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-19T21:19:36.551692Z"
   },
   {
     "matchNumber": 33,
