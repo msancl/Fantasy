@@ -2,8 +2,8 @@
   {
     "matchNumber": 33,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "lineups": {
       "home": {
@@ -15,14 +15,24 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "CIV",
+        "scorerId": 294808,
+        "assistId": null,
+        "minute": 30,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-20T19:47:29.739277Z"
+    "updatedAt": "2026-06-20T20:57:07.285614Z"
   },
   {
     "matchNumber": 35,
@@ -102,6 +112,6 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-20T19:47:29.739277Z"
+    "updatedAt": "2026-06-20T20:57:07.285614Z"
   }
 ]
