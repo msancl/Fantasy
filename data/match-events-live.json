@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "matchNumber": 35,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "NED",
+        "scorerId": 473169,
+        "assistId": 434675,
+        "minute": 5,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NED",
+        "scorerId": 473169,
+        "assistId": 321528,
+        "minute": 17,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "updatedAt": "2026-06-20T18:00:42.832958Z"
+  }
+]
