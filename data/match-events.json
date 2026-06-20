@@ -336,7 +336,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-19T18:22:32.934536Z"
+    "updatedAt": "2026-06-20T01:32:09.004697Z"
   },
   {
     "matchNumber": 5,
@@ -1638,7 +1638,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-19T18:22:32.934536Z"
+    "updatedAt": "2026-06-20T01:32:09.004697Z"
   },
   {
     "matchNumber": 20,
@@ -2448,7 +2448,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-06-19T17:05:50.449128Z"
+    "updatedAt": "2026-06-20T01:32:09.004697Z"
   },
   {
     "matchNumber": 29,
@@ -2474,21 +2474,72 @@
     "matchNumber": 30,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          201574,
+          121385,
+          363223,
+          300716,
+          234803,
+          424015,
+          315969,
+          193116,
+          188077,
+          428563,
+          346779
+        ],
+        "substitutes": [
+          388171,
+          126600,
+          719673,
+          347138,
+          447995
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          207834,
+          689637,
+          272622,
+          340456,
+          398073,
+          593482,
+          901019,
+          1097139,
+          702869,
+          654982,
+          314678
+        ],
+        "substitutes": [
+          1130514,
+          743384,
+          799993,
+          598506
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "MOR",
+        "scorerId": 702869,
+        "assistId": 314678,
+        "minute": 2,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
-      "awayPlayerIds": []
+      "awayPlayerIds": [
+        207834,
+        689637,
+        272622,
+        340456,
+        398073
+      ]
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-20T01:32:09.004697Z"
   },
   {
     "matchNumber": 31,

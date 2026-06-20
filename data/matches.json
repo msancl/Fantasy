@@ -121,13 +121,14 @@
     "winnerCountryId": "USA",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T18:39:17.933570Z",
+    "updatedAt": "2026-06-20T01:32:09.004697Z",
     "bbc": "https://www.bbc.com/sport/football/live/c78y1jyknv1t",
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-19T18:22:30.419406Z",
-      "3d": "2026-06-19T18:22:30.419406Z"
+      "3d": "2026-06-19T18:22:30.419406Z",
+      "7d": "2026-06-20T01:32:04.319044Z"
     }
   },
   {
@@ -601,12 +602,13 @@
     "winnerCountryId": "ARG",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-17T18:39:17.933570Z",
+    "updatedAt": "2026-06-20T01:32:09.004697Z",
     "bbc": "https://www.bbc.com/sport/football/live/ckg78g6pnyzt",
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-19T18:22:30.419406Z"
+      "24h": "2026-06-19T18:22:30.419406Z",
+      "3d": "2026-06-20T01:32:04.319044Z"
     }
   },
   {
@@ -880,10 +882,13 @@
     "winnerCountryId": "MEX",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-19T17:05:50.449128Z",
+    "updatedAt": "2026-06-20T01:32:09.004697Z",
     "bbc": "https://www.bbc.com/sport/football/live/cvgme6np19pt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-20T01:32:04.319044Z"
+    }
   },
   {
     "number": 29,
@@ -925,17 +930,19 @@
     "transfermarktId": 4776628,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776628",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "MOR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/crr8dw70x51t"
+    "updatedAt": "2026-06-20T01:32:09.004697Z",
+    "bbc": "https://www.bbc.com/sport/football/live/crr8dw70x51t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 31,

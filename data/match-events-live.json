@@ -2,33 +2,8 @@
   {
     "matchNumber": 29,
     "score": {
-      "home": null,
-      "away": null
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "updatedAt": "2026-06-19T17:05:46.386378Z"
-  },
-  {
-    "matchNumber": 30,
-    "score": {
-      "home": 0,
-      "away": 1
+      "home": 3,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -42,11 +17,29 @@
     },
     "goals": [
       {
-        "countryId": "MOR",
-        "scorerId": 702869,
-        "assistId": 314678,
-        "minute": 2,
+        "countryId": "BRA",
+        "scorerId": 517894,
+        "assistId": null,
+        "minute": 23,
         "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BRA",
+        "scorerId": 517894,
+        "assistId": 371998,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BRA",
+        "scorerId": 371998,
+        "assistId": 444523,
+        "minute": 45,
+        "addedTime": 3,
         "isPenalty": false,
         "isOwnGoal": false
       }
@@ -57,7 +50,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-19T23:16:54.724964Z"
+    "updatedAt": "2026-06-20T01:32:06.438732Z"
   },
   {
     "matchNumber": 31,
