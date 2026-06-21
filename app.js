@@ -116,8 +116,11 @@ function getRoundIdFromFilter(filter) {
 }
 
 function getRoundForFixture(fixture) {
-  if (fixture.s === "group") {
-    const kickoff = Date.parse(fixture.d);
+  const stage = fixture.s || fixture.stage;
+  const kickoffValue = fixture.d || fixture.kickoff;
+
+  if (stage === "group") {
+    const kickoff = Date.parse(kickoffValue);
     const round = groupRounds.find((item) => {
       const start = Date.parse(item.startsAt);
       const end = Date.parse(item.endsAt);
@@ -125,7 +128,7 @@ function getRoundForFixture(fixture) {
     });
     return round?.id || "J3";
   }
-  return stageRoundMap[fixture.s] || fixture.s;
+  return stageRoundMap[stage] || stage;
 }
 
 function getRoundByDayNumber(dayNumber) {
@@ -316,6 +319,36 @@ const matchData = Array.isArray(window.matchData) ? window.matchData : [];
 const matchEventsData = Array.isArray(window.matchEventsData)
   ? window.matchEventsData
   : [];
+const currentRoundId = (() => {
+  const fixtures = matchData
+    .filter((match) => (match?.d || match?.kickoff) && getRoundForFixture(match))
+    .slice()
+    .sort(
+      (first, second) =>
+        Date.parse(first.d || first.kickoff) - Date.parse(second.d || second.kickoff),
+    );
+
+  if (!fixtures.length) {
+    return competitionSettings.currentRoundId || nationalRoundKeys[0];
+  }
+
+  const now = Date.now();
+  const liveWindowMs = 4 * 60 * 60 * 1000;
+  const liveFixture = fixtures
+    .filter((fixture) => {
+      const kickoff = Date.parse(fixture.d || fixture.kickoff);
+      return kickoff <= now && now - kickoff <= liveWindowMs;
+    })
+    .at(-1);
+
+  const targetFixture =
+    liveFixture ||
+    fixtures.find((fixture) => Date.parse(fixture.d || fixture.kickoff) > now) ||
+    fixtures.at(-1);
+
+  return getRoundForFixture(targetFixture) || competitionSettings.currentRoundId || nationalRoundKeys[0];
+})();
+const currentDayNumber = Math.max(1, nationalRoundKeys.indexOf(currentRoundId) + 1);
 const playerById = new Map(
   playerData.flatMap((squad) =>
     (squad.players || []).map((player) => [String(player.id), player]),
@@ -1228,7 +1261,7 @@ function initializeHomeDashboard() {
     status.textContent =
       statusLabels[competitionSettings.status] || competitionSettings.status;
     round.textContent = getRoundFullLabel(
-      competitionSettings.currentRoundId,
+      currentRoundId,
       competitionSettings.name || "Coupe du Monde",
     );
   } else if (now < firstMatch) {
@@ -1266,7 +1299,7 @@ function initializeWorldCupFixtures() {
 
   const teamNames = new Map(nationalTeams);
   const defaultFixtureFilter = getRoundFilter(
-    fixtureSettings.defaultFilter || nationalRoundKeys[0],
+    currentRoundId || fixtureSettings.defaultFilter || nationalRoundKeys[0],
   );
   const dateLabel = new Intl.DateTimeFormat(appLocale, {
     timeZone: appTimeZone,
@@ -1747,6 +1780,10 @@ function initializeWorldCupFixtures() {
       button.classList.toggle(
         "is-active",
         button.dataset.fixtureFilter === defaultFixtureFilter,
+      );
+      button.setAttribute(
+        "aria-pressed",
+        String(button.dataset.fixtureFilter === defaultFixtureFilter),
       );
     }
 
@@ -2377,6 +2414,21 @@ function showNationalDayDetails(board, selectedDay) {
   }
 }
 
+function getCurrentVisibleDayNumber() {
+  return Math.min(Math.max(currentDayNumber, 1), nationalRoundKeys.length || 1);
+}
+
+function scrollActiveDayButtonIntoView(lineupBlock) {
+  const activeButton = lineupBlock?.querySelector(
+    ".national-day-button.is-active, .day-range-button.is-active",
+  );
+  activeButton?.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+    inline: "center",
+  });
+}
+
 function initializeNationalBoard(board) {
   if (!board || board.dataset.controlsReady === "true") {
     return;
@@ -2406,7 +2458,8 @@ function initializeNationalBoard(board) {
 
     if (isOpen) {
       createNationalDayDetailCells(board);
-      showNationalDayDetails(board, 1);
+      showNationalDayDetails(board, getCurrentVisibleDayNumber());
+      scrollActiveDayButtonIntoView(lineupBlock);
     } else {
       clearNationalDayDetails(board);
     }
@@ -2694,6 +2747,14 @@ const dayRanges = (() => {
   );
 })();
 
+function getCurrentDayRange() {
+  const day = Math.min(Math.max(currentDayNumber, 1), fantasyRoundKeys.length || 1);
+  return (
+    dayRanges.find((range) => day >= range.start && day <= range.end) ||
+    dayRanges[0]
+  );
+}
+
 function extendSeasonDays() {
   document.querySelectorAll(".squad-board").forEach((board) => {
     const header = board.querySelector(".player-table-head");
@@ -2922,7 +2983,8 @@ document.querySelectorAll(".day-range-nav").forEach((rangeNav) => {
     rangeNav.append(button);
   });
 
-  setActiveDayRange(lineupBlock, dayRanges[0].start, dayRanges[0].end);
+  const currentRange = getCurrentDayRange();
+  setActiveDayRange(lineupBlock, currentRange.start, currentRange.end);
 });
 
 function resetDayRange(lineupBlock) {
@@ -2930,7 +2992,8 @@ function resetDayRange(lineupBlock) {
     return;
   }
 
-  setActiveDayRange(lineupBlock, dayRanges[0].start, dayRanges[0].end);
+  const currentRange = getCurrentDayRange();
+  setActiveDayRange(lineupBlock, currentRange.start, currentRange.end);
 }
 
 function resetTeamDays(teamCard) {
@@ -3008,6 +3071,9 @@ function initializeTeamCardControls(teamCard) {
       if (daysActions) {
         daysActions.scrollLeft = 0;
       }
+      if (isOpen) {
+        scrollActiveDayButtonIntoView(lineupBlock);
+      }
 
       button.setAttribute("aria-expanded", String(isOpen));
       button.textContent = isOpen
@@ -3068,12 +3134,16 @@ document.querySelectorAll(".days-toggle").forEach((button) => {
     if (daysActions) {
       daysActions.scrollLeft = 0;
     }
+    if (isOpen) {
+      scrollActiveDayButtonIntoView(lineupBlock);
+    }
 
     if (squadBoard.classList.contains("national-squad-board")) {
       squadBoard.scrollLeft = 0;
 
       if (isOpen) {
-        showNationalDayDetails(squadBoard, 1);
+        showNationalDayDetails(squadBoard, getCurrentVisibleDayNumber());
+        scrollActiveDayButtonIntoView(lineupBlock);
       } else {
         clearNationalDayDetails(squadBoard);
       }
