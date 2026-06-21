@@ -105,7 +105,7 @@ def player_display_name(raw: Any) -> str:
     return str(raw or "")
 
 
-def collect_lineup_players(team_data: dict | None) -> list[dict]:
+def collect_lineup_players(team_data: dict | None, include_substitutes: bool = False) -> list[dict]:
     collected: dict[str, dict] = {}
 
     def add_player(item: dict) -> None:
@@ -136,17 +136,16 @@ def collect_lineup_players(team_data: dict | None) -> list[dict]:
             "aliases": sorted(aliases),
         }
 
-    def visit(value: Any) -> None:
-        if isinstance(value, dict):
-            if "shirtNumber" in value and ("name" in value or "urn" in value):
-                add_player(value)
-            for child in value.values():
-                visit(child)
-        elif isinstance(value, list):
-            for child in value:
-                visit(child)
+    player_groups = ((team_data or {}).get("players") or {})
+    for player in player_groups.get("starters", []) or []:
+        if isinstance(player, dict):
+            add_player(player)
 
-    visit(team_data or {})
+    if include_substitutes:
+        for player in player_groups.get("substitutes", []) or []:
+            if isinstance(player, dict):
+                add_player(player)
+
     return list(collected.values())
 
 
@@ -389,8 +388,12 @@ def parse_bbc_match(match_data: dict, players: list, source: str) -> dict:
         "home": collect_lineup_players(lineup_data.get("homeTeam")),
         "away": collect_lineup_players(lineup_data.get("awayTeam")),
     }
+    lookup_lineups = {
+        "home": collect_lineup_players(lineup_data.get("homeTeam"), include_substitutes=True),
+        "away": collect_lineup_players(lineup_data.get("awayTeam"), include_substitutes=True),
+    }
     indexes = build_local_player_indexes(players)
-    goals, unresolved = collect_bbc_goals(sport, match_data, lineups, indexes)
+    goals, unresolved = collect_bbc_goals(sport, match_data, lookup_lineups, indexes)
     status = sport.get("status") or ""
     period = (sport.get("periodLabel") or {}).get("accessible") or (sport.get("periodLabel") or {}).get("value") or ""
     is_finished = status == "PostEvent" or "full time" in str(period).lower()
