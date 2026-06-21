@@ -23,7 +23,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-21T20:08:22.092637Z"
+    "updatedAt": "2026-06-21T22:05:32.542922Z"
   },
   {
     "matchNumber": 39,
@@ -33,11 +33,35 @@
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          108390,
+          429915,
+          236168,
+          548254,
+          100986,
+          249565,
+          422763,
+          144028,
+          88755,
+          381950,
+          96341
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          229081,
+          527092,
+          213715,
+          249400,
+          77547,
+          697155,
+          603149,
+          249271,
+          204294,
+          188312,
+          307058
+        ],
         "substitutes": []
       }
     },
@@ -48,8 +72,8 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-21T20:51:11.387191Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-21T22:05:32.542922Z"
   },
   {
     "matchNumber": 40,
