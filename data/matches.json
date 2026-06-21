@@ -798,12 +798,13 @@
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-18T18:32:14.971605Z",
+    "updatedAt": "2026-06-21T16:18:19.486747Z",
     "bbc": "https://www.bbc.com/sport/football/live/cp8rk9gwzjnt",
     "transfermarktImported": true,
     "bbcAssistsImported": true,
     "rechecks": {
-      "24h": "2026-06-19T18:22:30.419406Z"
+      "24h": "2026-06-19T18:22:30.419406Z",
+      "3d": "2026-06-21T16:18:15.796801Z"
     }
   },
   {

@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "matchNumber": 38,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "updatedAt": "2026-06-21T16:18:18.181383Z"
+  }
+]
