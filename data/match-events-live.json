@@ -2,7 +2,7 @@
   {
     "matchNumber": 38,
     "score": {
-      "home": 0,
+      "home": 5,
       "away": 0
     },
     "lineups": {
@@ -15,13 +15,59 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ESP",
+        "scorerId": 937958,
+        "assistId": 351478,
+        "minute": 10,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 351478,
+        "assistId": 176553,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 351478,
+        "assistId": 293385,
+        "minute": 24,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 509897,
+        "assistId": null,
+        "minute": 49,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 398184,
+        "assistId": 553875,
+        "minute": 90,
+        "addedTime": 2,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "updatedAt": "2026-06-21T16:18:18.181383Z"
+    "updatedAt": "2026-06-21T17:56:48.631537Z"
   }
 ]
