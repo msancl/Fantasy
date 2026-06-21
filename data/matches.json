@@ -831,12 +831,13 @@
     "winnerCountryId": "SWI",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-19T20:09:18.376120Z",
+    "updatedAt": "2026-06-21T19:25:25.435944Z",
     "bbc": "https://www.bbc.com/sport/football/live/clyxn1d72n7t",
     "transfermarktImported": true,
     "bbcAssistsImported": true,
     "rechecks": {
-      "24h": "2026-06-19T20:09:08.999030Z"
+      "24h": "2026-06-19T20:09:08.999030Z",
+      "3d": "2026-06-21T19:25:21.465004Z"
     }
   },
   {
