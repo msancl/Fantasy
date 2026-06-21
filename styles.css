@@ -387,6 +387,20 @@
   min-width: 0;
 }
 
+.fixture-lineup.is-unavailable {
+  padding: 12px;
+  background: rgba(7, 11, 17, 0.58);
+  border: 1px solid rgba(167, 184, 209, 0.1);
+  border-radius: 6px;
+}
+
+.fixture-lineup.is-unavailable p {
+  margin: 10px 0 0;
+  color: #9aa7bb;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
 .fixture-lineup h4,
 .fixture-lineup h5 {
   margin: 0;

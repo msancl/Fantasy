@@ -1497,56 +1497,22 @@ function initializeWorldCupFixtures() {
     `;
   };
 
-  const getPlayerPosition = (code, playerName) => {
-    if (!code || typeof worldCupSquads === "undefined") {
-      return "-";
+  const lineupMarkup = (code, events = {}) => {
+    const lineup = events.lineup || [];
+    const substitutes = events.substitutes || [];
+    if (!lineup.length && !substitutes.length) {
+      const message =
+        events.score !== null && events.score !== undefined
+          ? "Les compositions seront bientôt disponibles."
+          : "Les compositions seront disponibles après le match.";
+      return `
+        <div class="fixture-lineup is-unavailable">
+          <h4>Composition</h4>
+          <p>${message}</p>
+        </div>
+      `;
     }
 
-    const normalizedName = playerName
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase();
-    const player = (worldCupSquads[code] || []).find(
-      (item) =>
-        item.name
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .toLowerCase() === normalizedName,
-    );
-
-    return player?.position || "-";
-  };
-
-  const placeholderLineup = [
-    { name: "FIRSTNAME LASTNAME", position: "GB" },
-    { name: "FIRSTNAME LASTNAME", position: "DF" },
-    { name: "FIRSTNAME LASTNAME", position: "DF" },
-    { name: "FIRSTNAME LASTNAME", position: "DF" },
-    { name: "FIRSTNAME LASTNAME", position: "DF" },
-    { name: "FIRSTNAME LASTNAME", position: "MIL" },
-    { name: "FIRSTNAME LASTNAME", position: "MIL" },
-    { name: "FIRSTNAME LASTNAME", position: "MIL" },
-    { name: "FIRSTNAME LASTNAME", position: "ATT" },
-    { name: "FIRSTNAME LASTNAME", position: "ATT" },
-    { name: "FIRSTNAME LASTNAME", position: "ATT" },
-  ];
-  const placeholderSubstitutes = [
-    { name: "FIRSTNAME LASTNAME", position: "DF" },
-    { name: "FIRSTNAME LASTNAME", position: "MIL" },
-    { name: "FIRSTNAME LASTNAME", position: "ATT" },
-  ];
-  const normalizeLineupPlayer = (code, player) =>
-    typeof player === "string"
-      ? { name: player, position: getPlayerPosition(code, player) }
-      : player;
-
-  const lineupMarkup = (code, events = {}) => {
-    const lineup = (events.lineup?.length ? events.lineup : placeholderLineup).map(
-      (player) => normalizeLineupPlayer(code, player),
-    );
-    const substitutes = (
-      events.substitutes?.length ? events.substitutes : placeholderSubstitutes
-    ).map((player) => normalizeLineupPlayer(code, player));
     const playerRows = lineup
       .map(
         (player) => `

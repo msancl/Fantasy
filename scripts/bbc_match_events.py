@@ -165,6 +165,42 @@ def build_local_player_indexes(players: list) -> dict:
     return {"by_country_shirt": by_country_shirt}
 
 
+def resolve_bbc_lineups(match_data: dict, players: list, lineups: dict) -> tuple[dict, list[str]]:
+    indexes = build_local_player_indexes(players)
+    resolved = {
+        "home": {"starters": [], "substitutes": []},
+        "away": {"starters": [], "substitutes": []},
+    }
+    warnings: list[str] = []
+
+    for side in ["home", "away"]:
+        country_id = match_data["homeCountryId"] if side == "home" else match_data["awayCountryId"]
+        side_ids: list[int] = []
+        for player in lineups.get(side, []):
+            shirt = player.get("shirtNumber")
+            try:
+                player_id = indexes["by_country_shirt"].get((country_id, int(shirt)))
+            except (TypeError, ValueError):
+                player_id = None
+            if player_id:
+                side_ids.append(player_id)
+            else:
+                warnings.append(
+                    f"M{match_data['number']}: BBC lineup unresolved: "
+                    f"{player.get('name')} ({country_id}, shirt {shirt})"
+                )
+
+        if len(side_ids) == 11:
+            resolved[side]["starters"] = side_ids
+        elif side_ids:
+            warnings.append(
+                f"M{match_data['number']}: BBC lineup ignored for {side}, "
+                f"{len(side_ids)} player(s) resolved instead of 11"
+            )
+
+    return resolved, warnings
+
+
 def parse_minute_label(label: str | None) -> tuple[int | None, int | None]:
     match = re.search(r"(\d+)\s*'?(?:\s*\+\s*(\d+))?", label or "")
     if not match:
@@ -363,6 +399,7 @@ def parse_bbc_match(match_data: dict, players: list, source: str) -> dict:
         "period": period,
         "isFinished": is_finished,
         "score": score_from_sport(sport),
+        "lineups": lineups,
         "goals": goals,
         "unresolved": unresolved,
     }

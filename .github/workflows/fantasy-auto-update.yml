@@ -33,7 +33,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run fantasy auto update
-        run: python run.py --auto-cloud
+        run: python run.py --auto-cloud --bbc-only
 
       - name: Commit and push data changes
         run: |

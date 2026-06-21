@@ -21,6 +21,7 @@ from bbc_match_events import (
     fetch_bbc_page,
     parse_bbc_match,
     read_json,
+    resolve_bbc_lineups,
     write_json,
 )
 from update_finished_matches import recalculate_players
@@ -58,20 +59,47 @@ def main() -> int:
             continue
 
         if match_data.get("status") == "finished":
-            if match_data.get("bbcAssistsImported") and not args.force:
-                skipped.append(f"M{number}: BBC assists already imported")
-                continue
             event = event_by_match.get(number)
             if not event:
                 skipped.append(f"M{number}: no official event yet")
                 continue
-            ok, issues = apply_bbc_assists_to_event(match_data, event, players, args.refresh_cache)
-            if ok:
-                match_data["bbcAssistsImported"] = True
-                event["updatedAt"] = now
-                updated_final.append(f"M{number}: official assists updated")
-            else:
-                warnings.extend(issues)
+            needs_bbc_lineups = (
+                not match_data.get("transfermarktImported")
+                and not (
+                    event.get("lineupSource") == "bbc"
+                    and event.get("lineups", {}).get("home", {}).get("starters")
+                    and event.get("lineups", {}).get("away", {}).get("starters")
+                )
+            )
+            if match_data.get("bbcAssistsImported") and not args.force and not needs_bbc_lineups:
+                skipped.append(f"M{number}: BBC assists already imported")
+                continue
+            if not match_data.get("bbcAssistsImported") or args.force:
+                ok, issues = apply_bbc_assists_to_event(match_data, event, players, args.refresh_cache)
+                if ok:
+                    match_data["bbcAssistsImported"] = True
+                    event["updatedAt"] = now
+                    updated_final.append(f"M{number}: official assists updated")
+                else:
+                    warnings.extend(issues)
+            if not match_data.get("transfermarktImported"):
+                try:
+                    source = fetch_bbc_page(match_data, args.refresh_cache)
+                    parsed = parse_bbc_match(match_data, players, source or "") if source else None
+                    if parsed and parsed.get("isFinished"):
+                        bbc_lineups, lineup_warnings = resolve_bbc_lineups(
+                            match_data,
+                            players,
+                            parsed.get("lineups", {}),
+                        )
+                        warnings.extend(lineup_warnings)
+                        if bbc_lineups["home"]["starters"] and bbc_lineups["away"]["starters"]:
+                            event["lineups"] = bbc_lineups
+                            event["lineupSource"] = "bbc"
+                            event["updatedAt"] = now
+                            updated_final.append(f"M{number}: BBC lineups updated")
+                except Exception as error:
+                    warnings.append(f"M{number}: BBC lineup update failed ({error})")
             continue
 
         try:
@@ -101,14 +129,33 @@ def main() -> int:
             )
 
         existing = live_by_match.get(number) or event_by_match.get(number) or {}
+        live_lineups = {
+            "home": {"starters": [], "substitutes": []},
+            "away": {"starters": [], "substitutes": []},
+        }
+        lineup_source = None
+        if parsed.get("isFinished"):
+            live_lineups, lineup_warnings = resolve_bbc_lineups(
+                match_data,
+                players,
+                parsed.get("lineups", {}),
+            )
+            warnings.extend(lineup_warnings)
+            if live_lineups["home"]["starters"] and live_lineups["away"]["starters"]:
+                lineup_source = "bbc"
+            else:
+                live_lineups = existing.get("lineups", live_lineups)
+                lineup_source = existing.get("lineupSource")
+
         live_event = {
             "matchNumber": number,
             "score": parsed.get("score"),
-            "lineups": existing.get("lineups", {"home": {"starters": [], "substitutes": []}, "away": {"starters": [], "substitutes": []}}),
+            "lineups": live_lineups,
             "goals": parsed.get("goals", []),
             "cleanSheets": existing.get("cleanSheets", {"homePlayerIds": [], "awayPlayerIds": []}),
             "penaltiesSaved": existing.get("penaltiesSaved", []),
             "source": "bbc-live",
+            "lineupSource": lineup_source,
             "updatedAt": now,
         }
         live_by_match[number] = live_event

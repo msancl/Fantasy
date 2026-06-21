@@ -166,7 +166,7 @@ def mark_rechecks_done(match_numbers: dict[int, list[str]], now: datetime) -> No
         file.write("\n")
 
 
-def run_auto_cloud(python: str, dry_run: bool = False) -> int:
+def run_auto_cloud(python: str, dry_run: bool = False, bbc_only: bool = False) -> int:
     now = datetime.now(timezone.utc)
     print(f"Auto-cloud UTC: {now.isoformat().replace('+00:00', 'Z')}")
     print("BBC discovery: enabled")
@@ -182,6 +182,8 @@ def run_auto_cloud(python: str, dry_run: bool = False) -> int:
         return error.returncode or 1
 
     bbc_matches, transfermarkt_matches, recheck_matches = auto_cloud_match_windows(now)
+    if bbc_only:
+        transfermarkt_matches = []
 
     print(f"BBC live window matches: {bbc_matches or 'none'}")
     print(f"Transfermarkt final window matches: {transfermarkt_matches or 'none'}")
@@ -228,6 +230,7 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Run update scripts in dry-run mode and do not commit/push.")
     parser.add_argument("--refresh-cache", action="store_true", help="Force BBC/Transfermarkt pages to be downloaded again.")
     parser.add_argument("--force", action="store_true", help="Force scripts to re-import matches they normally skip.")
+    parser.add_argument("--bbc-only", action="store_true", help="With --auto-cloud, skip Transfermarkt and run only BBC updates.")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--bbc", action="store_true", help="Run only the BBC live/final-assists update.")
     mode.add_argument("--transfermarkt", action="store_true", help="Run only the Transfermarkt final update.")
@@ -239,7 +242,7 @@ def main() -> int:
 
     python = sys.executable
     if args.auto_cloud:
-        return run_auto_cloud(python, args.dry_run)
+        return run_auto_cloud(python, args.dry_run, args.bbc_only)
 
     common_args: list[str] = []
     if args.dry_run:

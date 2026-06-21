@@ -446,6 +446,7 @@ def main() -> int:
 
         preserve_existing_assists(parsed["goals"], event.get("goals", []))
         event["lineups"] = parsed["lineups"]
+        event["lineupSource"] = "transfermarkt"
         event["goals"] = parsed["goals"]
         event["cleanSheets"] = parsed["cleanSheets"]
         event["penaltiesSaved"] = parsed["penaltiesSaved"]
