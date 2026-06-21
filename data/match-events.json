@@ -3158,21 +3158,100 @@
     "matchNumber": 38,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          262396,
+          176553,
+          962110,
+          284857,
+          553875,
+          357565,
+          683840,
+          293385,
+          548111,
+          937958,
+          351478
+        ],
+        "substitutes": [
+          350219,
+          338424,
+          709187,
+          568157,
+          398184
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          262845,
+          509894,
+          509897,
+          264909,
+          869509,
+          631927,
+          437903,
+          901181,
+          509911,
+          195332,
+          631922
+        ],
+        "substitutes": [
+          1181852,
+          443937,
+          308120,
+          631923,
+          68626
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ESP",
+        "scorerId": 937958,
+        "assistId": 351478,
+        "minute": 10,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 351478,
+        "assistId": 176553,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 351478,
+        "assistId": 293385,
+        "minute": 24,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 509897,
+        "assistId": null,
+        "minute": 49,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        262396,
+        176553,
+        962110,
+        284857,
+        553875
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-21T18:19:14.446075Z"
   },
   {
     "matchNumber": 39,
