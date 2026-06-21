@@ -24,7 +24,44 @@ from bbc_match_events import (
     resolve_bbc_lineups,
     write_json,
 )
-from update_finished_matches import recalculate_players
+from update_finished_matches import clean_sheet_ids, recalculate_players
+
+
+def build_player_by_id(players: list[dict]) -> dict[int, dict]:
+    player_by_id: dict[int, dict] = {}
+    for country in players:
+        for player in country.get("players", []):
+            player_id = player.get("id")
+            if player_id is not None:
+                player_by_id[int(player_id)] = player
+    return player_by_id
+
+
+def score_side(score: dict | None, side: str) -> int | None:
+    if not isinstance(score, dict):
+        return None
+    value = score.get(side)
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def clean_sheets_from_bbc_lineups(
+    lineups: dict,
+    score: dict | None,
+    player_by_id: dict[int, dict],
+) -> dict[str, list[int]]:
+    home_score = score_side(score, "home")
+    away_score = score_side(score, "away")
+    home_players = lineups.get("home", {}).get("starters", []) + lineups.get("home", {}).get("substitutes", [])
+    away_players = lineups.get("away", {}).get("starters", []) + lineups.get("away", {}).get("substitutes", [])
+    return {
+        "homePlayerIds": clean_sheet_ids(home_players, player_by_id) if away_score == 0 else [],
+        "awayPlayerIds": clean_sheet_ids(away_players, player_by_id) if home_score == 0 else [],
+    }
 
 
 def main() -> int:
@@ -43,6 +80,7 @@ def main() -> int:
 
     event_by_match = {int(event.get("matchNumber")): event for event in events if event.get("matchNumber") is not None}
     live_by_match = {int(event.get("matchNumber")): event for event in live_events if event.get("matchNumber") is not None}
+    player_by_id = build_player_by_id(players)
     wanted = set(args.match or [])
     updated_live: list[str] = []
     updated_final: list[str] = []
@@ -71,7 +109,8 @@ def main() -> int:
                     and event.get("lineups", {}).get("away", {}).get("starters")
                 )
             )
-            if match_data.get("bbcAssistsImported") and not args.force and not needs_bbc_lineups:
+            needs_bbc_final_data = not match_data.get("transfermarktImported")
+            if match_data.get("bbcAssistsImported") and not args.force and not needs_bbc_lineups and not needs_bbc_final_data:
                 skipped.append(f"M{number}: BBC assists already imported")
                 continue
             if not match_data.get("bbcAssistsImported") or args.force:
@@ -96,10 +135,15 @@ def main() -> int:
                         if bbc_lineups["home"]["starters"] and bbc_lineups["away"]["starters"]:
                             event["lineups"] = bbc_lineups
                             event["lineupSource"] = "bbc"
+                            event["cleanSheets"] = clean_sheets_from_bbc_lineups(
+                                bbc_lineups,
+                                parsed.get("score") or match_data.get("score"),
+                                player_by_id,
+                            )
                             event["updatedAt"] = now
-                            updated_final.append(f"M{number}: BBC lineups updated")
+                            updated_final.append(f"M{number}: BBC lineups/clean sheets updated")
                 except Exception as error:
-                    warnings.append(f"M{number}: BBC lineup update failed ({error})")
+                    warnings.append(f"M{number}: BBC lineup/clean sheet update failed ({error})")
             continue
 
         try:
@@ -147,12 +191,20 @@ def main() -> int:
                 live_lineups = existing.get("lineups", live_lineups)
                 lineup_source = existing.get("lineupSource")
 
+        live_clean_sheets = existing.get("cleanSheets", {"homePlayerIds": [], "awayPlayerIds": []})
+        if lineup_source == "bbc":
+            live_clean_sheets = clean_sheets_from_bbc_lineups(
+                live_lineups,
+                parsed.get("score") or existing.get("score"),
+                player_by_id,
+            )
+
         live_event = {
             "matchNumber": number,
             "score": parsed.get("score"),
             "lineups": live_lineups,
             "goals": parsed.get("goals", []),
-            "cleanSheets": existing.get("cleanSheets", {"homePlayerIds": [], "awayPlayerIds": []}),
+            "cleanSheets": live_clean_sheets,
             "penaltiesSaved": existing.get("penaltiesSaved", []),
             "source": "bbc-live",
             "lineupSource": lineup_source,
