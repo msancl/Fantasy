@@ -3403,21 +3403,96 @@
     "matchNumber": 40,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          207843,
+          81723,
+          724809,
+          469211,
+          149901,
+          345700,
+          617018,
+          350357,
+          400797,
+          485672,
+          108725
+        ],
+        "substitutes": [
+          1007720,
+          617021,
+          207061,
+          203357,
+          677509
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          661455,
+          237425,
+          465966,
+          343974,
+          340303,
+          479682,
+          734542,
+          604008,
+          896616,
+          148455,
+          445939
+        ],
+        "substitutes": [
+          172623,
+          566025,
+          737524,
+          234189,
+          320722,
+          1259085
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "NZL",
+        "scorerId": 724809,
+        "assistId": 149901,
+        "minute": 15,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 896616,
+        "assistId": 343974,
+        "minute": 58,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 148455,
+        "assistId": 896616,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 234189,
+        "assistId": 148455,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-22T15:19:52.259379Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 41,
