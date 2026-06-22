@@ -3,15 +3,39 @@
     "matchNumber": 40,
     "score": {
       "home": 1,
-      "away": 0
+      "away": 3
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          207843,
+          469211,
+          81723,
+          724809,
+          149901,
+          617018,
+          345700,
+          485672,
+          350357,
+          400797,
+          108725
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          661455,
+          465966,
+          340303,
+          237425,
+          343974,
+          479682,
+          734542,
+          604008,
+          148455,
+          896616,
+          445939
+        ],
         "substitutes": []
       }
     },
@@ -24,6 +48,33 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 896616,
+        "assistId": 343974,
+        "minute": 58,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 148455,
+        "assistId": 896616,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 234189,
+        "assistId": 148455,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -32,7 +83,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-22T02:07:42.999028Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-22T07:37:42.002477Z"
   }
 ]
