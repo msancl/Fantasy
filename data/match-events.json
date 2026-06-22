@@ -3538,21 +3538,94 @@
     "matchNumber": 43,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          111873,
+          355915,
+          480762,
+          474800,
+          424042,
+          255901,
+          648195,
+          534033,
+          576028,
+          28003,
+          406625
+        ],
+        "substitutes": [
+          54781,
+          131225,
+          166237,
+          486031,
+          576024
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          186374,
+          59016,
+          263236,
+          223974,
+          223967,
+          404950,
+          106987,
+          223979,
+          900909,
+          346853,
+          120205
+        ],
+        "substitutes": [
+          156990,
+          659459,
+          434116,
+          533295,
+          41384
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 474800,
+        "minute": 38,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": null,
+        "minute": 90,
+        "addedTime": 5,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": null,
+        "minute": 9,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        111873,
+        355915,
+        480762,
+        474800,
+        424042,
+        54781,
+        131225
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-22T19:52:44.046374Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 44,
