@@ -1,68 +1,5 @@
 [
   {
-    "matchNumber": 37,
-    "score": {
-      "home": 2,
-      "away": 2
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "URU",
-        "scorerId": 572675,
-        "assistId": null,
-        "minute": 44,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "URU",
-        "scorerId": 457533,
-        "assistId": 572675,
-        "minute": 45,
-        "addedTime": 6,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "CPV",
-        "scorerId": 544586,
-        "assistId": null,
-        "minute": 21,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "CPV",
-        "scorerId": 840836,
-        "assistId": null,
-        "minute": 61,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-21T23:39:34.964804Z"
-  },
-  {
     "matchNumber": 40,
     "score": {
       "home": null,
@@ -86,6 +23,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-21T23:06:34.621199Z"
+    "updatedAt": "2026-06-22T00:08:07.698378Z"
   }
 ]

@@ -3138,21 +3138,93 @@
     "matchNumber": 37,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          58088,
+          532389,
+          376514,
+          572675,
+          446106,
+          188862,
+          354362,
+          476701,
+          369081,
+          457533,
+          578419
+        ],
+        "substitutes": [
+          397458,
+          465818,
+          546543
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          242277,
+          349570,
+          166158,
+          611855,
+          203517,
+          544586,
+          272930,
+          111627,
+          791528,
+          170895,
+          820252
+        ],
+        "substitutes": [
+          258513,
+          432852,
+          620307,
+          840836,
+          306166
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "CPV",
+        "scorerId": 544586,
+        "assistId": null,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "URU",
+        "scorerId": 572675,
+        "assistId": null,
+        "minute": 44,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "URU",
+        "scorerId": 457533,
+        "assistId": 572675,
+        "minute": 45,
+        "addedTime": 6,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CPV",
+        "scorerId": 840836,
+        "assistId": null,
+        "minute": 61,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-22T00:08:09.100230Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 38,
