@@ -3878,3 +3878,66 @@ p {
   font-size: 0.92rem;
   text-transform: uppercase;
 }
+
+/* Performance: keep the desktop layout, but make large off-screen sections cheaper to paint. */
+@supports (content-visibility: auto) {
+  .team-card,
+  .national-team-section,
+  .fixture-day,
+  .fixture-match,
+  .transfer-ranking-row,
+  .transfer-history-row {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 96px;
+  }
+
+  .team-card.is-open,
+  .national-team-section.is-open,
+  .fixture-match.is-open {
+    contain-intrinsic-size: auto 900px;
+  }
+}
+
+.player-card > img,
+.transfer-ranking-row img,
+.history-player img,
+.national-team-shirt img,
+.home-fixture img,
+.fixture-team img {
+  display: block;
+  flex: 0 0 auto;
+  object-fit: contain;
+  contain: layout paint;
+}
+
+.transfer-player-results {
+  overscroll-behavior: contain;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .team-card,
+  .national-team-section,
+  .fixture-match,
+  .transfer-ranking-row,
+  .transfer-history-row,
+  .player-card,
+  .team-card-block {
+    box-shadow: none !important;
+  }
+
+  .team-card,
+  .national-team-section,
+  .fixture-match,
+  .transfer-player-search,
+  .transfer-history {
+    backdrop-filter: none !important;
+  }
+
+  .player-card,
+  .day-cell,
+  .team-card-grid,
+  .national-team-roster {
+    transition-duration: 140ms !important;
+  }
+}
+

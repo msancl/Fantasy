@@ -388,6 +388,48 @@ function getCountryAsset(code, type) {
   return getCountry(code)[type];
 }
 
+const warmedImageSources = new Set();
+
+function runWhenIdle(callback) {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(callback, { timeout: 1200 });
+  } else {
+    window.setTimeout(callback, 80);
+  }
+}
+
+function warmImageSource(source) {
+  if (!source || warmedImageSources.has(source)) {
+    return;
+  }
+
+  warmedImageSources.add(source);
+  runWhenIdle(() => {
+    const image = new Image();
+    image.decoding = "async";
+    image.src = source;
+  });
+}
+
+function warmPageImages(page) {
+  const countryCodes = Array.isArray(window.countryData)
+    ? window.countryData.map((country) => country.id).filter(Boolean)
+    : Object.keys(worldCupSquads);
+
+  if (page === "joueurs") {
+    countryCodes.slice(0, 12).forEach((code) => {
+      warmImageSource(getCountryAsset(code, "flag"));
+      warmImageSource(getCountryAsset(code, "shirt"));
+    });
+  }
+
+  if (page === "equipes" || page === "transferts") {
+    Object.keys(worldCupSquads).slice(0, 16).forEach((code) => {
+      warmImageSource(getCountryAsset(code, "shirt"));
+    });
+  }
+}
+
 function getCountryCodeFromAsset(source) {
   return source?.match(/assets\/(?:flags|shirts)\/([A-Z]{3})\.[a-z]+(?:\?.*)?$/i)?.[1];
 }
@@ -574,6 +616,8 @@ function showPage() {
   document.querySelectorAll("[data-page]").forEach((section) => {
     section.hidden = section.dataset.page !== currentPage;
   });
+
+  warmPageImages(currentPage);
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     const linkPage = link.getAttribute("href").replace("#", "");
@@ -2139,6 +2183,37 @@ function getPlayerAvailability(player) {
   };
 }
 
+let transferSearchPlayersCache = null;
+
+function getTransferSearchPlayers() {
+  if (transferSearchPlayersCache) {
+    return transferSearchPlayersCache;
+  }
+
+  const countryNames = new Map(nationalTeams);
+  transferSearchPlayersCache = Object.entries(worldCupSquads).flatMap(([code, squad]) =>
+    squad.map((player) => {
+      const points = Math.max(0, Number(player.totals?.points ?? 0));
+      const availability = getPlayerAvailability(player);
+      const country = countryNames.get(code) || code;
+
+      return {
+        ...player,
+        code,
+        country,
+        normalizedName: player.name.toLocaleLowerCase(appLocale),
+        normalizedCountry: country.toLocaleLowerCase(appLocale),
+        points,
+        pointsDisplay: String(points),
+        selection: Number(player.availability?.selectionPercentage ?? 0),
+        ...availability,
+      };
+    }),
+  );
+
+  return transferSearchPlayersCache;
+}
+
 function initializeTransferPlayerSearch() {
   const container = document.querySelector(".transfer-player-search");
   if (
@@ -2156,43 +2231,77 @@ function initializeTransferPlayerSearch() {
   const sort = container.querySelector("[data-player-sort]");
   const results = container.querySelector("[data-player-results]");
   const countryNames = new Map(nationalTeams);
-  const players = Object.entries(worldCupSquads).flatMap(([code, squad]) =>
-    squad.map((player) => {
-      const points = Math.max(0, Number(player.totals?.points ?? 0));
-      return {
-        ...player,
-        code,
-        country: countryNames.get(code) || code,
-        points,
-        pointsDisplay: String(points),
-        selection: Number(player.availability?.selectionPercentage ?? 0),
-        ...getPlayerAvailability(player),
-      };
-    }),
-  );
+  const players = getTransferSearchPlayers();
+  const renderBatchSize = 40;
+  let filteredPlayers = [];
+  let renderedCount = 0;
+  let renderToken = 0;
 
-  Array.from(countryNames.entries())
-    .filter(([code]) => worldCupSquads[code]?.length)
-    .sort((first, second) => first[1].localeCompare(second[1], appLocale))
-    .forEach(([code, name]) => {
-      const option = document.createElement("option");
-      option.value = code;
-      option.textContent = name;
-      countryFilter.append(option);
-    });
+  if (countryFilter.dataset.ready !== "true") {
+    Array.from(countryNames.entries())
+      .filter(([code]) => worldCupSquads[code]?.length)
+      .sort((first, second) => first[1].localeCompare(second[1], appLocale))
+      .forEach(([code, name]) => {
+        const option = document.createElement("option");
+        option.value = code;
+        option.textContent = name;
+        countryFilter.append(option);
+      });
+    countryFilter.dataset.ready = "true";
+  }
+
+  const playerMarkup = (player) => `
+    <article class="transfer-ranking-row">
+      <b class="transfer-position transfer-position-${player.position.toLowerCase()}">${player.position}</b>
+      <img src="${getCountryAsset(player.code, "shirt")}" alt="" width="32" height="32" loading="lazy" decoding="async" />
+      <span class="transfer-player">
+        <strong>${player.name}</strong>
+        <small>${player.country}</small>
+      </span>
+      <span class="player-availability-cell">
+        <span
+          class="player-availability player-availability-${player.key}"
+          title="Selection: ${player.selection}%"
+          data-selection="${player.selection}"
+        >
+          ${player.label} ${player.selectedBy}/${player.limit}
+        </span>
+      </span>
+      <strong class="transfer-points">${player.pointsDisplay}</strong>
+    </article>
+  `;
+
+  const renderNextBatch = () => {
+    if (renderedCount >= filteredPlayers.length) {
+      return;
+    }
+
+    const token = renderToken;
+    const nextRows = filteredPlayers
+      .slice(renderedCount, renderedCount + renderBatchSize)
+      .map(playerMarkup)
+      .join("");
+    renderedCount += renderBatchSize;
+
+    if (token === renderToken) {
+      results.insertAdjacentHTML("beforeend", nextRows);
+    }
+  };
 
   const render = () => {
+    renderToken += 1;
     const query = search.value.trim().toLocaleLowerCase(appLocale);
     const selectedPosition = positionFilter.value;
     const selectedCountry = countryFilter.value;
     const selectedAvailability = availabilityFilter.value;
     const selectedSort = sort.value;
-    const filtered = players
+
+    filteredPlayers = players
       .filter(
         (player) =>
           (!query ||
-            player.name.toLocaleLowerCase("fr").includes(query) ||
-            player.country.toLocaleLowerCase(appLocale).includes(query)) &&
+            player.normalizedName.includes(query) ||
+            player.normalizedCountry.includes(query)) &&
           (!selectedPosition || player.position === selectedPosition) &&
           (!selectedCountry || player.code === selectedCountry) &&
           (!selectedAvailability || player.key === selectedAvailability),
@@ -2214,40 +2323,36 @@ function initializeTransferPlayerSearch() {
         );
       });
 
-    results.innerHTML = filtered
-      .map(
-        (player) => `
-          <article class="transfer-ranking-row">
-            <b class="transfer-position transfer-position-${player.position.toLowerCase()}">${player.position}</b>
-            <img src="${getCountryAsset(player.code, "shirt")}" alt="" width="32" height="32" loading="lazy" decoding="async" />
-            <span class="transfer-player">
-              <strong>${player.name}</strong>
-              <small>${player.country}</small>
-            </span>
-            <span class="player-availability-cell">
-              <span
-                class="player-availability player-availability-${player.key}"
-                title="Sélection: ${player.selection}%"
-                data-selection="${player.selection}"
-              >
-                ${player.label} ${player.selectedBy}/${player.limit}
-              </span>
-            </span>
-            <strong class="transfer-points">${player.pointsDisplay}</strong>
-          </article>
-        `,
-      )
-      .join("");
-    if (!filtered.length) {
+    renderedCount = 0;
+    results.innerHTML = "";
+
+    if (!filteredPlayers.length) {
       results.innerHTML = `<p class="transfer-search-empty">${getEmptyStateLabel(
         "noResults",
-        "Aucun joueur trouvé",
+        "Aucun joueur trouve",
       )}</p>`;
+      return;
     }
+
+    renderNextBatch();
   };
 
+  const scheduleRender = (() => {
+    let frame = 0;
+    return () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(render);
+    };
+  })();
+
+  results.addEventListener("scroll", () => {
+    if (results.scrollTop + results.clientHeight >= results.scrollHeight - 160) {
+      renderNextBatch();
+    }
+  }, { passive: true });
+
   [search, positionFilter, countryFilter, availabilityFilter, sort].forEach((control) => {
-    control.addEventListener(control === search ? "input" : "change", render);
+    control.addEventListener(control === search ? "input" : "change", scheduleRender);
   });
   render();
 }

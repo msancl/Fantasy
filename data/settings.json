@@ -6,7 +6,7 @@
     "timezone": "Europe/Brussels",
     "defaultPage": "accueil",
     "defaultMode": "world-cup",
-    "cacheVersion": 103
+    "cacheVersion": 104
   },
   "competition": {
     "id": "world-cup-2026",
