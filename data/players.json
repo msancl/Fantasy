@@ -15857,11 +15857,11 @@
         "totals": {
           "matchesPlayed": 2,
           "penalties": 0,
-          "goals": 6,
+          "goals": 5,
           "assists": 0,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 18
+          "points": 15
         },
         "rounds": {
           "J1": {
@@ -15876,11 +15876,11 @@
           "J2": {
             "matchesPlayed": 1,
             "penalties": 0,
-            "goals": 3,
+            "goals": 2,
             "assists": 0,
             "cleanSheets": 0,
             "penaltiesSaved": 0,
-            "points": 9
+            "points": 6
           },
           "J3": {
             "matchesPlayed": null,

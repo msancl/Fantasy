@@ -1346,9 +1346,10 @@
     "winnerCountryId": "ARG",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": "2026-06-22T19:52:44.046374Z",
+    "updatedAt": "2026-06-22T20:16:07.069628Z",
     "bbc": "https://www.bbc.com/sport/football/live/cze914jw558t",
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "bbcAssistsImported": true
   },
   {
     "number": 44,
