@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Update finished World Cup match JSON files from Transfermarkt.
 
 The script attempts matches whose kickoff time has passed, then only updates
@@ -177,14 +177,28 @@ def parse_minute(source: str) -> tuple[int | None, int | None]:
 
 def parse_goals(source: str, match_data: dict) -> list[dict]:
     section = section_between(source, 'id="sb-tore"', "Substitutions")
+    missed_penalty_match = re.search(
+        r"(?:missed\s+penalt(?:y|ies)|verschossene(?:r)?\s+elfmeter)",
+        section,
+        re.I,
+    )
+    if missed_penalty_match:
+        section = section[: missed_penalty_match.start()]
+
     actions = re.findall(r'<li class="sb-aktion-(heim|gast)">[\s\S]*?</li>', section)
     full_actions = re.findall(r'<li class="sb-aktion-(?:heim|gast)">[\s\S]*?</li>', section)
     goals = []
 
     for side_marker, action in zip(actions, full_actions):
+        text = decode_text(action)
+        if (
+            re.search(r"verschoss", text, re.I)
+            or (re.search(r"penalt", text, re.I) and re.search(r"missed", text, re.I))
+        ):
+            continue
+
         side = "home" if side_marker == "heim" else "away"
         ids = [int(value) for value in re.findall(r"leistungsdatendetails/spieler/(\d+)", action)]
-        text = decode_text(action)
         minute, added_time = parse_minute(action)
         goals.append(
             {
@@ -198,7 +212,6 @@ def parse_goals(source: str, match_data: dict) -> list[dict]:
             }
         )
     return goals
-
 
 def parse_score(source: str) -> tuple[int, int] | None:
     score = re.search(r'<div class="sb-endstand">\s*(\d+):(\d+)', source)
