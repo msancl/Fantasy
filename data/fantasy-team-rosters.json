@@ -177,9 +177,9 @@
         "note": null
       },
       {
-        "slotId": "starter-02",
+        "slotId": "starter-03",
         "slotType": "starter",
-        "playerId": 616341,
+        "playerId": 548254,
         "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
@@ -188,9 +188,9 @@
         "note": null
       },
       {
-        "slotId": "starter-03",
+        "slotId": "starter-02",
         "slotType": "starter",
-        "playerId": 548254,
+        "playerId": 616341,
         "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
@@ -221,9 +221,20 @@
         "note": null
       },
       {
-        "slotId": "starter-06",
+        "slotId": "transfer-01",
         "slotType": "starter",
-        "playerId": 566723,
+        "playerId": 702869,
+        "position": "MIL",
+        "joinedRound": "J3",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 411295,
+        "note": null
+      },
+      {
+        "slotId": "starter-09",
+        "slotType": "starter",
+        "playerId": 580195,
         "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
@@ -243,9 +254,9 @@
         "note": null
       },
       {
-        "slotId": "starter-08",
+        "slotId": "starter-06",
         "slotType": "starter",
-        "playerId": 411295,
+        "playerId": 566723,
         "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
@@ -254,10 +265,10 @@
         "note": null
       },
       {
-        "slotId": "starter-09",
+        "slotId": "starter-11",
         "slotType": "starter",
-        "playerId": 580195,
-        "position": "MIL",
+        "playerId": 132098,
+        "position": "ATT",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
@@ -276,13 +287,13 @@
         "note": null
       },
       {
-        "slotId": "starter-11",
+        "slotId": "starter-08",
         "slotType": "starter",
-        "playerId": 132098,
-        "position": "ATT",
+        "playerId": 411295,
+        "position": "MIL",
         "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
+        "leftRound": "J2",
+        "replacedByPlayerId": 702869,
         "replacesPlayerId": null,
         "note": null
       },

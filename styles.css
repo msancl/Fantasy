@@ -967,10 +967,10 @@
 .transfer-history-head,
 .transfer-history-row {
   display: grid;
-  grid-template-columns: 92px minmax(130px, 0.8fr) 40px minmax(150px, 1fr) 30px minmax(150px, 1fr);
+  grid-template-columns: 96px 112px 34px minmax(128px, 1fr) 34px minmax(128px, 1fr);
   align-items: center;
   gap: 8px;
-  min-width: 760px;
+  min-width: 680px;
 }
 
 .transfer-history-head {
@@ -989,14 +989,19 @@
 }
 
 .transfer-history-head span {
+  text-align: left;
+}
+
+.transfer-history-head span:nth-child(3),
+.transfer-history-head span:nth-child(5) {
   text-align: center;
 }
 
 .transfer-history-list {
   display: grid;
-  gap: 6px;
+  gap: 4px;
   margin-top: 6px;
-  max-height: 700px;
+  max-height: 520px;
   overflow-y: auto;
   overscroll-behavior-y: contain;
   padding-right: 3px;
@@ -1011,17 +1016,18 @@
 }
 
 .transfer-history-row {
-  min-height: 58px;
-  padding: 7px 12px;
+  min-height: 42px;
+  padding: 4px 12px;
   border: 1px solid #20242b;
-  border-radius: 7px;
+  border-radius: 6px;
   background: rgba(5, 8, 13, 0.82);
 }
 
 .transfer-history-row time {
-  color: #aeb9c9;
-  font-size: 0.72rem;
-  font-weight: 700;
+  color: #f1d184;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
@@ -1034,58 +1040,50 @@
 }
 
 .transfer-team {
-  display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  align-items: center;
-  gap: 8px;
+  display: block;
   min-width: 0;
-  padding: 4px 6px;
-  border-radius: 5px;
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--club-primary) 18%, transparent), transparent 72%),
-    rgba(255, 255, 255, 0.015);
-  box-shadow:
-    inset 2px 0 var(--club-primary),
-    inset 0 -1px var(--club-secondary);
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .transfer-team > i {
-  width: 27px;
-  height: 21px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 4px 4px 7px 7px;
-  background: linear-gradient(135deg, var(--club-primary) 0 48%, var(--club-secondary) 48% 100%);
+  display: none;
 }
 
 .transfer-team strong {
   min-width: 0;
   color: #f4f6f9;
   font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.76rem;
   text-transform: uppercase;
 }
 
 .transfer-number {
   display: grid;
-  min-height: 32px;
+  width: 34px;
+  min-height: 22px;
+  justify-self: center;
   place-items: center;
-  border-radius: 6px;
+  border-radius: 5px;
   background: #171b22;
   color: #dbe2ec;
+  font-size: 0.72rem;
   font-weight: 800;
 }
 
 .history-player {
   display: grid;
-  grid-template-columns: 30px minmax(0, 1fr);
+  grid-template-columns: 22px minmax(0, 1fr);
   align-items: center;
-  gap: 7px;
+  gap: 5px;
   min-width: 0;
+  width: 100%;
 }
 
 .history-player > img {
-  width: 28px;
-  height: 34px;
+  width: 22px;
+  height: 26px;
   object-fit: contain;
 }
 
@@ -1101,7 +1099,7 @@
 .history-player b {
   color: #ffffff;
   font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.7rem;
   font-weight: 900;
   line-height: 1;
 }
@@ -1110,7 +1108,7 @@
   margin-top: 3px;
   overflow: hidden;
   color: #9fb0c7;
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   font-weight: 700;
   text-overflow: ellipsis;
   text-transform: uppercase;
@@ -1119,14 +1117,15 @@
 
 .transfer-swap {
   display: grid;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
+  justify-self: center;
   place-items: center;
   border: 1px solid #6f500a;
   border-radius: 50%;
   background: #241b07;
   color: #ffd66b;
-  font-size: 0.95rem;
+  font-size: 0.72rem;
   font-style: normal;
 }
 
@@ -2875,6 +2874,27 @@ p {
 .player-card > .player-stat,
 .player-card > .day-cell {
   align-self: center;
+}
+
+.player-card .player-main small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.player-movement {
+  color: #f4d47d;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.player-card.is-replaced .player-movement {
+  color: #c4b5fd;
+}
+
+.player-card.is-substitute .player-movement {
+  color: #67e8f9;
 }
 
 .player-table-head {

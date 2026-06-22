@@ -666,18 +666,31 @@ function getFantasyRoster(teamId) {
   const roster = fantasyRosterByTeamId.get(teamId) || { teamId, slots: [] };
   const slots = Array.isArray(roster.slots) ? roster.slots.slice() : [];
   const benchSlots = Number(rosterRules.benchSlots ?? 3);
-  const existingBench = slots.filter((slot) => slot.slotType === "substitute").length;
+  const occupiedSlots = slots.filter((slot) => slot.playerId);
+  const emptyBenchSlots = slots.filter(
+    (slot) => slot.slotType === "substitute" && !slot.playerId,
+  );
+  const replacedSlots = occupiedSlots.filter(
+    (slot) => slot.leftRound && slot.replacedByPlayerId,
+  );
+  const visibleEmptyBenchSlots = Math.max(0, benchSlots - replacedSlots.length);
+  const visibleBenchSlots = emptyBenchSlots
+    .slice(0, visibleEmptyBenchSlots)
+    .map((slot, index) => ({
+      ...slot,
+      note: `${getPositionLabel("REM")} ${replacedSlots.length + index + 1}`,
+    }));
 
-  for (let index = existingBench; index < benchSlots; index += 1) {
-    slots.push({
+  for (let index = visibleBenchSlots.length; index < visibleEmptyBenchSlots; index += 1) {
+    visibleBenchSlots.push({
       slotType: "substitute",
       position: "REM",
       playerId: null,
-      note: `${getPositionLabel("REM")} ${index + 1}`,
+      note: `${getPositionLabel("REM")} ${replacedSlots.length + index + 1}`,
     });
   }
 
-  return { ...roster, slots };
+  return { ...roster, slots: [...occupiedSlots, ...visibleBenchSlots] };
 }
 
 function roundIndex(round) {
@@ -956,14 +969,92 @@ function getRoundCellValue(slot, player, round) {
   return formatPlayerStat(player.rounds?.[round]?.points);
 }
 
+function getSlotTotals(slot, player) {
+  if (!slot?.playerId || !player) {
+    return {
+      matchesPlayed: null,
+      goals: null,
+      assists: null,
+      cleanSheets: null,
+      points: null,
+      hasData: false,
+    };
+  }
+
+  return fantasyRoundKeys.reduce(
+    (sum, round) => {
+      if (!isSlotActiveForRound(slot, round)) {
+        return sum;
+      }
+
+      const stats = player.rounds?.[round];
+      if (!stats) {
+        return sum;
+      }
+
+      sum.matchesPlayed += stats.matchesPlayed ?? 0;
+      sum.goals += (stats.goals ?? 0) + (stats.penalties ?? 0);
+      sum.assists += stats.assists ?? 0;
+      sum.cleanSheets += stats.cleanSheets ?? 0;
+      sum.points += stats.points ?? 0;
+      sum.hasData = true;
+      return sum;
+    },
+    {
+      matchesPlayed: 0,
+      goals: 0,
+      assists: 0,
+      cleanSheets: 0,
+      points: 0,
+      hasData: false,
+    },
+  );
+}
+
+function getNextFantasyRound(round) {
+  const index = roundIndex(round);
+  return index >= 0 ? fantasyRoundKeys[index + 1] || round : round;
+}
+
+function getSlotMovementLabel(slot, countryCode) {
+  const countryName = getCountryName(countryCode);
+  let movement = "";
+
+  if (slot?.replacesPlayerId && slot?.joinedRound) {
+    movement = `Entré ${getRoundLabel(slot.joinedRound)}`;
+  } else if (slot?.replacedByPlayerId && slot?.leftRound) {
+    movement = `Sorti ${getRoundLabel(getNextFantasyRound(slot.leftRound))}`;
+  }
+
+  return { countryName, movement };
+}
+
+function createMovementMarkup(slot, countryCode) {
+  const { countryName, movement } = getSlotMovementLabel(slot, countryCode);
+
+  return `
+    <small class="player-meta">
+      <span>${countryName}</span>
+      ${movement ? `<span class="player-movement">${movement}</span>` : ""}
+    </small>
+  `;
+}
+
 function createFantasyPlayerRow(slot, slotIndex) {
   const player = getSlotPlayer(slot);
-  const position = player?.position || slot?.position || "REM";
+  const hasLeftTeam = Boolean(slot?.leftRound && slot?.replacedByPlayerId);
+  const position = hasLeftTeam ? "REM" : player?.position || slot?.position || "REM";
   const isEmpty = !player;
   const countryCode = player?.countryId || "FRA";
-  const totals = player?.totals || {};
-  const totalGoals = totals.goals ?? null;
-  const totalPoints = totals.points ?? 0;
+  const totals = getSlotTotals(slot, player);
+  const totalGoals = totals.hasData ? totals.goals : null;
+  const totalPoints = totals.hasData ? totals.points : 0;
+  const movementClasses = [
+    hasLeftTeam ? "is-replaced" : "",
+    slot?.replacesPlayerId ? "is-substitute" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
   const roundCells = fantasyRoundKeys
     .map((round, index) => {
       const value = getRoundCellValue(slot, player, round);
@@ -997,7 +1088,7 @@ function createFantasyPlayerRow(slot, slotIndex) {
   }
 
   return `
-    <article class="player-card ${positionClass(position)}" data-player-id="${player.id}">
+    <article class="player-card ${positionClass(position)} ${movementClasses}" data-player-id="${player.id}">
       <div class="player-position">${position}</div>
       <img
         src="${getCountryAsset(countryCode, "shirt")}"
@@ -1009,7 +1100,7 @@ function createFantasyPlayerRow(slot, slotIndex) {
       />
       <div class="player-main">
         <strong>${player.name}</strong>
-        <small>${getCountryName(countryCode)}</small>
+        ${createMovementMarkup(slot, countryCode)}
       </div>
       <div class="player-stat">${formatPlayerStat(totals.matchesPlayed)}</div>
       <div class="player-stat">${formatPlayerStat(totalGoals)}</div>
@@ -2224,7 +2315,7 @@ function createTransferPlayerMarkup(playerId) {
 
 function initializeTransferHistory() {
   const list = document.querySelector(".transfer-history-list");
-  const emptyState = document.querySelector(".transfer-history .transfer-empty-state");
+  const emptyStates = document.querySelectorAll(".transfer-history .transfer-empty-state");
   if (!list) {
     return;
   }
@@ -2235,13 +2326,14 @@ function initializeTransferHistory() {
     .sort((first, second) => new Date(second.date) - new Date(first.date));
 
   list.hidden = !sortedTransfers.length;
-  if (emptyState) {
+  emptyStates.forEach((emptyState) => {
     emptyState.hidden = Boolean(sortedTransfers.length);
+    emptyState.style.display = sortedTransfers.length ? "none" : "";
     emptyState.textContent = getEmptyStateLabel(
       "noTransfers",
       emptyState.textContent,
     );
-  }
+  });
 
   sortedTransfers.forEach((transfer) => {
     const row = document.createElement("div");
@@ -2252,7 +2344,7 @@ function initializeTransferHistory() {
       ${createTransferTeamMarkup(transfer.fantasyTeamId)}
       <span class="transfer-number">${transferOrdinal(transfer.teamTransferNumber)}</span>
       ${createTransferPlayerMarkup(transfer.playerInId)}
-      <i class="transfer-swap" aria-hidden="true">?</i>
+      <i class="transfer-swap" aria-hidden="true">⇄</i>
       ${createTransferPlayerMarkup(transfer.playerOutId)}
     `;
     list.append(row);

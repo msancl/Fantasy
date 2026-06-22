@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "san-mateo-01",
+    "date": "2026-06-20T11:00:00Z",
+    "fantasyTeamId": "san-mateo",
+    "teamTransferNumber": 1,
+    "playerInId": 702869,
+    "playerOutId": 411295,
+    "effectiveRound": "J3",
+    "isFreeTransfer": true
+  }
+]
