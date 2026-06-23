@@ -1,1 +1,125 @@
-[]
+[
+  {
+    "matchNumber": 45,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
+  },
+  {
+    "matchNumber": 46,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
+  },
+  {
+    "matchNumber": 47,
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "POR",
+        "scorerId": 8198,
+        "assistId": 182712,
+        "minute": 6,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "POR",
+        "scorerId": 616341,
+        "assistId": null,
+        "minute": 17,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
+  },
+  {
+    "matchNumber": 48,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
+  }
+]
