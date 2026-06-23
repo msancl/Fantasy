@@ -361,6 +361,16 @@ const fantasyTeamRostersData = Array.isArray(window.fantasyTeamRostersData)
   ? window.fantasyTeamRostersData
   : [];
 const transferData = Array.isArray(window.transferData) ? window.transferData : [];
+const transferInByPlayerId = new Map();
+const transferOutByPlayerId = new Map();
+transferData.forEach((transfer) => {
+  if (transfer?.playerInId !== undefined && transfer.playerInId !== null) {
+    transferInByPlayerId.set(String(transfer.playerInId), transfer);
+  }
+  if (transfer?.playerOutId !== undefined && transfer.playerOutId !== null) {
+    transferOutByPlayerId.set(String(transfer.playerOutId), transfer);
+  }
+});
 const fantasyRosterByTeamId = new Map(
   fantasyTeamRostersData.map((roster) => [roster.teamId, roster]),
 );
@@ -1062,12 +1072,18 @@ function getNextFantasyRound(round) {
 
 function getSlotMovementLabel(slot, countryCode) {
   const countryName = getCountryName(countryCode);
+  const playerKey = slot?.playerId !== undefined && slot?.playerId !== null
+    ? String(slot.playerId)
+    : null;
+  const transferIn = playerKey ? transferInByPlayerId.get(playerKey) : null;
+  const transferOut = playerKey ? transferOutByPlayerId.get(playerKey) : null;
   let movement = "";
 
-  if (slot?.replacesPlayerId && slot?.joinedRound) {
-    movement = `Entré ${getRoundLabel(slot.joinedRound)}`;
-  } else if (slot?.replacedByPlayerId && slot?.leftRound) {
-    movement = `Sorti ${getRoundLabel(getNextFantasyRound(slot.leftRound))}`;
+  if ((slot?.replacesPlayerId || transferIn) && (slot?.joinedRound || transferIn?.effectiveRound)) {
+    movement = `Entré ${getRoundLabel(slot?.joinedRound || transferIn?.effectiveRound)}`;
+  } else if ((slot?.replacedByPlayerId || transferOut) && (slot?.leftRound || transferOut?.effectiveRound)) {
+    const exitRound = transferOut?.effectiveRound || getNextFantasyRound(slot.leftRound);
+    movement = `Sorti ${getRoundLabel(exitRound)}`;
   }
 
   return { countryName, movement };
@@ -1075,11 +1091,11 @@ function getSlotMovementLabel(slot, countryCode) {
 
 function createMovementMarkup(slot, countryCode) {
   const { countryName, movement } = getSlotMovementLabel(slot, countryCode);
+  const label = movement ? `${countryName} - ${movement}` : countryName;
 
   return `
     <small class="player-meta">
-      <span>${countryName}</span>
-      ${movement ? `<span class="player-movement">${movement}</span>` : ""}
+      <span>${label}</span>
     </small>
   `;
 }

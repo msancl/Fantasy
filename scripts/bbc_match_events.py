@@ -368,12 +368,24 @@ def collect_bbc_goals(sport: dict, match_data: dict, lineups: dict, indexes: dic
         key = (assist["_side"], assist.get("minute"), assist.get("addedTime"))
         assist_buckets.setdefault(key, []).append(assist)
 
-    for goal in goals:
+    for index, goal in enumerate(goals):
         key = (goal["_side"], goal.get("minute"), goal.get("addedTime"))
         bucket = assist_buckets.get(key) or []
         if bucket:
             goal["assistId"] = bucket.pop(0).get("assistId")
+        goal["_order"] = index
         goal.pop("_side", None)
+
+    goals.sort(
+        key=lambda goal: (
+            goal.get("minute") is None,
+            goal.get("minute") or 999,
+            goal.get("addedTime") or 0,
+            goal.get("_order", 0),
+        )
+    )
+    for goal in goals:
+        goal.pop("_order", None)
 
     return goals, unresolved
 

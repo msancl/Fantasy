@@ -967,15 +967,15 @@
 .transfer-history-head,
 .transfer-history-row {
   display: grid;
-  grid-template-columns: 96px 112px 34px minmax(128px, 1fr) 34px minmax(128px, 1fr);
+  grid-template-columns: 64px minmax(70px, 0.55fr) 28px minmax(92px, 1fr) 22px minmax(92px, 1fr);
   align-items: center;
-  gap: 8px;
-  min-width: 680px;
+  gap: 5px;
+  min-width: 0;
 }
 
 .transfer-history-head {
-  min-height: 42px;
-  padding: 0 12px;
+  min-height: 36px;
+  padding: 0 8px;
   border: 1px solid #2a2d33;
   border-left: 3px solid #c89425;
   background:
@@ -983,7 +983,7 @@
     #101216;
   color: #9fb0c7;
   font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -1016,8 +1016,8 @@
 }
 
 .transfer-history-row {
-  min-height: 42px;
-  padding: 4px 12px;
+  min-height: 38px;
+  padding: 3px 8px;
   border: 1px solid #20242b;
   border-radius: 6px;
   background: rgba(5, 8, 13, 0.82);
@@ -1025,7 +1025,7 @@
 
 .transfer-history-row time {
   color: #f1d184;
-  font-size: 0.66rem;
+  font-size: 0.54rem;
   font-weight: 900;
   letter-spacing: 0;
   white-space: nowrap;
@@ -1061,29 +1061,29 @@
 
 .transfer-number {
   display: grid;
-  width: 34px;
-  min-height: 22px;
+  width: 28px;
+  min-height: 20px;
   justify-self: center;
   place-items: center;
   border-radius: 5px;
   background: #171b22;
   color: #dbe2ec;
-  font-size: 0.72rem;
+  font-size: 0.64rem;
   font-weight: 800;
 }
 
 .history-player {
   display: grid;
-  grid-template-columns: 22px minmax(0, 1fr);
+  grid-template-columns: 18px minmax(0, 1fr);
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   min-width: 0;
   width: 100%;
 }
 
 .history-player > img {
-  width: 22px;
-  height: 26px;
+  width: 18px;
+  height: 22px;
   object-fit: contain;
 }
 
@@ -1099,7 +1099,7 @@
 .history-player b {
   color: #ffffff;
   font-family: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   font-weight: 900;
   line-height: 1;
 }
@@ -1108,7 +1108,7 @@
   margin-top: 3px;
   overflow: hidden;
   color: #9fb0c7;
-  font-size: 0.58rem;
+  font-size: 0.54rem;
   font-weight: 700;
   text-overflow: ellipsis;
   text-transform: uppercase;
@@ -1117,8 +1117,8 @@
 
 .transfer-swap {
   display: grid;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   justify-self: center;
   place-items: center;
   border: 1px solid #6f500a;
