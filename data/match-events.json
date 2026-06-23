@@ -3498,21 +3498,104 @@
     "matchNumber": 41,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          73517,
+          328658,
+          464469,
+          661427,
+          370789,
+          333014,
+          223367,
+          316264,
+          894914,
+          418560,
+          238407
+        ],
+        "substitutes": [
+          367284,
+          583404,
+          308439,
+          670103,
+          661207
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          442531,
+          291200,
+          93128,
+          1111589,
+          126665,
+          918969,
+          485963,
+          490426,
+          200512,
+          410225,
+          776890
+        ],
+        "substitutes": [
+          164904,
+          375137,
+          568693,
+          525578,
+          1185888
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "NOR",
+        "scorerId": 583404,
+        "assistId": null,
+        "minute": 43,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 418560,
+        "assistId": 316264,
+        "minute": 48,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 410225,
+        "assistId": 200512,
+        "minute": 53,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 418560,
+        "assistId": 308439,
+        "minute": 58,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 410225,
+        "assistId": 776890,
+        "minute": 90,
+        "addedTime": 3,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-23T05:23:12.651401Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 42,
@@ -3694,21 +3777,86 @@
     "matchNumber": 44,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          261850,
+          895291,
+          539961,
+          882197,
+          883111,
+          310943,
+          734751,
+          561485,
+          401086,
+          551505,
+          664057
+        ],
+        "substitutes": [
+          658807,
+          895249,
+          1252820,
+          677986,
+          1059056
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          283489,
+          80293,
+          284732,
+          578391,
+          864306,
+          416660,
+          560593,
+          855015,
+          905011,
+          171424,
+          418659
+        ],
+        "substitutes": [
+          625142,
+          750903,
+          245537,
+          917911,
+          840254
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "JOR",
+        "scorerId": 734751,
+        "assistId": 551505,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ALG",
+        "scorerId": 840254,
+        "assistId": 171424,
+        "minute": 69,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ALG",
+        "scorerId": 418659,
+        "assistId": null,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-23T05:23:12.651401Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 45,
