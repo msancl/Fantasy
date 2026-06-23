@@ -23,7 +23,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-23T17:52:08.687777Z"
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
   },
   {
     "matchNumber": 46,
@@ -49,12 +49,12 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-23T17:52:08.687777Z"
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
   },
   {
     "matchNumber": 47,
     "score": {
-      "home": 3,
+      "home": 2,
       "away": 0
     },
     "lineups": {
@@ -79,15 +79,6 @@
       },
       {
         "countryId": "POR",
-        "scorerId": 8198,
-        "assistId": 240306,
-        "minute": 39,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "POR",
         "scorerId": 616341,
         "assistId": null,
         "minute": 17,
@@ -103,7 +94,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-23T17:52:08.687777Z"
+    "updatedAt": "2026-06-23T17:23:21.104934Z"
   },
   {
     "matchNumber": 48,
@@ -129,6 +120,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-23T17:52:08.687777Z"
+    "updatedAt": "2026-06-23T17:18:59.828030Z"
   }
 ]
