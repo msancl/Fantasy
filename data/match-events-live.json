@@ -3,7 +3,7 @@
     "matchNumber": 49,
     "score": {
       "home": 0,
-      "away": 2
+      "away": 3
     },
     "lineups": {
       "home": {
@@ -33,6 +33,15 @@
         "addedTime": 3,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "BRA",
+        "scorerId": 517894,
+        "assistId": 520624,
+        "minute": 60,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -42,7 +51,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T22:52:01.572654Z"
+    "updatedAt": "2026-06-24T23:38:24.574656Z"
   },
   {
     "matchNumber": 50,
@@ -105,7 +114,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T22:52:01.572654Z"
+    "updatedAt": "2026-06-24T23:38:24.574656Z"
   },
   {
     "matchNumber": 53,
