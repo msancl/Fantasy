@@ -33,13 +33,13 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T22:42:13.865171Z"
+    "updatedAt": "2026-06-24T22:50:06.118711Z"
   },
   {
     "matchNumber": 50,
     "score": {
-      "home": 1,
-      "away": 1
+      "home": 2,
+      "away": 2
     },
     "lineups": {
       "home": {
@@ -69,6 +69,24 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "HAI",
+        "scorerId": 494237,
+        "assistId": 344864,
+        "minute": 43,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "MOR",
+        "scorerId": 702869,
+        "assistId": 398073,
+        "minute": 45,
+        "addedTime": 1,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -78,7 +96,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T22:42:13.865171Z"
+    "updatedAt": "2026-06-24T22:50:06.118711Z"
   },
   {
     "matchNumber": 53,
@@ -104,7 +122,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T22:42:13.865171Z"
+    "updatedAt": "2026-06-24T22:50:06.118711Z"
   },
   {
     "matchNumber": 54,
@@ -130,6 +148,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T22:42:13.865171Z"
+    "updatedAt": "2026-06-24T22:50:06.118711Z"
   }
 ]
