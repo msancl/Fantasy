@@ -1,9 +1,9 @@
 [
   {
-    "matchNumber": 51,
+    "matchNumber": 49,
     "score": {
-      "home": 2,
-      "away": 1
+      "home": null,
+      "away": null
     },
     "lineups": {
       "home": {
@@ -15,35 +15,7 @@
         "substitutes": []
       }
     },
-    "goals": [
-      {
-        "countryId": "SWI",
-        "scorerId": 345886,
-        "assistId": 927353,
-        "minute": 46,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SWI",
-        "scorerId": 927353,
-        "assistId": 237662,
-        "minute": 57,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "CAN",
-        "scorerId": 888785,
-        "assistId": 842420,
-        "minute": 76,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
+    "goals": [],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -51,93 +23,84 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-24T21:01:55.525462Z"
+    "updatedAt": "2026-06-24T21:29:23.585804Z"
   },
   {
-    "matchNumber": 52,
+    "matchNumber": 50,
     "score": {
-      "home": 3,
-      "away": 1
+      "home": null,
+      "away": null
     },
     "lineups": {
       "home": {
-        "starters": [
-          248454,
-          94005,
-          384568,
-          422051,
-          805534,
-          929994,
-          226097,
-          620560,
-          925862,
-          28396,
-          335457
-        ],
+        "starters": [],
         "substitutes": []
       },
       "away": {
-        "starters": [
-          669629,
-          336665,
-          1264176,
-          222669,
-          228727,
-          222385,
-          251183,
-          735813,
-          86286,
-          336646,
-          237846
-        ],
+        "starters": [],
         "substitutes": []
       }
     },
-    "goals": [
-      {
-        "countryId": "BOS",
-        "scorerId": 929994,
-        "assistId": 620560,
-        "minute": 29,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BOS",
-        "scorerId": 669629,
-        "assistId": null,
-        "minute": 34,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": true
-      },
-      {
-        "countryId": "QAT",
-        "scorerId": 86286,
-        "assistId": 237846,
-        "minute": 42,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BOS",
-        "scorerId": 803049,
-        "assistId": 322065,
-        "minute": 80,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
+    "goals": [],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-24T21:01:55.525462Z"
+    "lineupSource": null,
+    "updatedAt": "2026-06-24T21:29:23.585804Z"
+  },
+  {
+    "matchNumber": 53,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-24T21:29:23.585804Z"
+  },
+  {
+    "matchNumber": 54,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-24T21:29:23.585804Z"
   }
 ]
