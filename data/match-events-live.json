@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "matchNumber": 55,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "CIV",
+        "scorerId": 343052,
+        "assistId": 1390649,
+        "minute": 7,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-25T20:25:37.218273Z"
+  },
+  {
+    "matchNumber": 56,
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "GER",
+        "scorerId": 192565,
+        "assistId": 598577,
+        "minute": 2,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ECU",
+        "scorerId": 903611,
+        "assistId": 659806,
+        "minute": 9,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-25T20:25:37.218273Z"
+  }
+]
