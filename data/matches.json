@@ -787,7 +787,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-19T18:22:30.419406Z",
-      "3d": "2026-06-21T06:31:53.113681Z"
+      "3d": "2026-06-21T06:31:53.113681Z",
+      "7d": "2026-06-25T05:48:56.253477Z"
     }
   },
   {
@@ -1545,7 +1546,10 @@
     "updatedAt": "2026-06-24T04:00:42.499040Z",
     "bbc": "https://www.bbc.com/sport/football/live/clywx7rkx9kt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-25T05:48:56.253477Z"
+    }
   },
   {
     "number": 49,
@@ -1739,7 +1743,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cy5vw7z101kt"
   },
   {
     "number": 56,
@@ -1765,7 +1769,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c5yzkv5wwe9t"
   },
   {
     "number": 57,
@@ -1791,7 +1795,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c74ydkzdg7et"
   },
   {
     "number": 58,
@@ -1817,7 +1821,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c2ly7jz75x0t"
   },
   {
     "number": 59,
@@ -1843,7 +1847,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cly0j8wjlwjt"
   },
   {
     "number": 60,
@@ -1869,7 +1873,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c8d2e4geze2t"
   },
   {
     "number": 61,
@@ -2188,10 +2192,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-06-28T19:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "2A",
-    "awayPlaceholder": "2B",
+    "homeCountryId": "RSA",
+    "awayCountryId": "CAN",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Los Angeles Stadium",
     "city": "Los Angeles",
     "transfermarktId": 4776679,
