@@ -72,7 +72,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-06-25T21:58:32.582540Z"
+    "updatedAt": "2026-06-25T23:19:08.929355Z"
   },
   {
     "matchNumber": 56,
@@ -150,6 +150,77 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-06-25T21:58:32.582540Z"
+    "updatedAt": "2026-06-25T23:19:08.929355Z"
+  },
+  {
+    "matchNumber": 57,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-25T23:19:08.929355Z"
+  },
+  {
+    "matchNumber": 58,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "NED",
+        "scorerId": 290587,
+        "assistId": null,
+        "minute": 3,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      },
+      {
+        "countryId": "NED",
+        "scorerId": 473169,
+        "assistId": 139208,
+        "minute": 7,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-25T23:19:08.929355Z"
   }
 ]
