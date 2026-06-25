@@ -1560,17 +1560,19 @@
     "transfermarktId": 4776651,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776651",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 3,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "BRA",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cdx75ry1q9kt"
+    "updatedAt": "2026-06-25T00:16:24.918295Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cdx75ry1q9kt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 50,
@@ -1586,17 +1588,19 @@
     "transfermarktId": 4776652,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776652",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 4,
+      "away": 2,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "MOR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cjegl3yqlp3t"
+    "updatedAt": "2026-06-25T00:16:24.918295Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cjegl3yqlp3t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 51,
