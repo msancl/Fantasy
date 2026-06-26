@@ -1870,17 +1870,18 @@
     "transfermarktId": 4868899,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4868899",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 3,
+      "away": 2,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "TUR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cly0j8wjlwjt"
+    "updatedAt": "2026-06-26T04:19:32.707350Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cly0j8wjlwjt",
+    "transfermarktImported": true
   },
   {
     "number": 60,
@@ -1896,17 +1897,19 @@
     "transfermarktId": 4868900,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4868900",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
+    "status": "finished",
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/c8d2e4geze2t"
+    "updatedAt": "2026-06-26T04:19:32.707350Z",
+    "bbc": "https://www.bbc.com/sport/football/live/c8d2e4geze2t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 61,
