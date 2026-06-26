@@ -919,7 +919,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-20T01:32:04.319044Z",
-      "3d": "2026-06-22T02:07:40.250738Z"
+      "3d": "2026-06-22T02:07:40.250738Z",
+      "7d": "2026-06-26T01:32:49.812186Z"
     }
   },
   {
@@ -1334,7 +1335,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-24T01:27:47.550843Z"
+      "24h": "2026-06-24T01:27:47.550843Z",
+      "3d": "2026-06-26T01:32:49.812186Z"
     }
   },
   {
@@ -1706,7 +1708,10 @@
     "updatedAt": "2026-06-25T03:08:13.015378Z",
     "bbc": "https://www.bbc.com/sport/football/live/cy04wdz19kqt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-26T01:32:49.812186Z"
+    }
   },
   {
     "number": 54,
@@ -1734,7 +1739,10 @@
     "updatedAt": "2026-06-25T03:08:13.015378Z",
     "bbc": "https://www.bbc.com/sport/football/live/cy9rxgz1551t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-26T01:32:49.812186Z"
+    }
   },
   {
     "number": 55,
@@ -2261,10 +2269,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-06-30T01:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1F",
-    "awayPlaceholder": "2C",
+    "homeCountryId": "NED",
+    "awayCountryId": "MOR",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Monterrey Stadium",
     "city": "Monterrey",
     "transfermarktId": 4776681,
@@ -2287,10 +2295,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-06-29T17:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1C",
-    "awayPlaceholder": "2F",
+    "homeCountryId": "BRA",
+    "awayCountryId": "JPN",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Houston Stadium",
     "city": "Houston",
     "transfermarktId": 4776682,
@@ -2417,10 +2425,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-02T00:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1D",
-    "awayPlaceholder": "3BEFIJ",
+    "homeCountryId": "USA",
+    "awayCountryId": "BOS",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "San Francisco Bay Area Stadium",
     "city": "San Francisco Bay Area",
     "transfermarktId": 4776687,

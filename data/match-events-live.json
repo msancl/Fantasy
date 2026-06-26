@@ -72,7 +72,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-06-25T23:19:08.929355Z"
+    "updatedAt": "2026-06-26T01:32:52.017372Z"
   },
   {
     "matchNumber": 56,
@@ -150,47 +150,114 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-06-25T23:19:08.929355Z"
+    "updatedAt": "2026-06-26T01:32:52.017372Z"
   },
   {
     "matchNumber": 57,
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          432298,
+          353892,
+          355816,
+          405389,
+          405397,
+          356141,
+          489359,
+          405385,
+          420931,
+          358504,
+          589128
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          549440,
+          362108,
+          503075,
+          485395,
+          687622,
+          667287,
+          184573,
+          633454,
+          349066,
+          325443,
+          583189
+        ],
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "JPN",
+        "scorerId": 420931,
+        "assistId": 358504,
+        "minute": 56,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWE",
+        "scorerId": 583189,
+        "assistId": 325443,
+        "minute": 62,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-25T23:19:08.929355Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-26T01:32:52.017372Z"
   },
   {
     "matchNumber": 58,
     "score": {
-      "home": 0,
-      "away": 2
+      "home": 1,
+      "away": 3
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          569433,
+          454495,
+          290587,
+          496706,
+          211474,
+          406008,
+          607224,
+          124410,
+          810096,
+          546712,
+          953150
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          565093,
+          177476,
+          139208,
+          576314,
+          321528,
+          460939,
+          326330,
+          478573,
+          434675,
+          473169,
+          326029
+        ],
         "substitutes": []
       }
     },
@@ -212,6 +279,24 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "TUN",
+        "scorerId": 953150,
+        "assistId": 607224,
+        "minute": 54,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NED",
+        "scorerId": 576314,
+        "assistId": 460939,
+        "minute": 62,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -220,7 +305,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-25T23:19:08.929355Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-26T01:32:52.017372Z"
   }
 ]
