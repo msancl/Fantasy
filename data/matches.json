@@ -984,7 +984,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-20T22:03:56.165461Z",
-      "3d": "2026-06-22T22:20:58.969179Z"
+      "3d": "2026-06-22T22:20:58.969179Z",
+      "7d": "2026-06-26T22:15:40.970446Z"
     }
   },
   {
@@ -2373,10 +2374,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-06-30T17:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "2E",
-    "awayPlaceholder": "2I",
+    "homeCountryId": "CIV",
+    "awayCountryId": "NOR",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Dallas Stadium",
     "city": "Dallas",
     "transfermarktId": 4776684,
