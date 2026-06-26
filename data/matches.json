@@ -1525,7 +1525,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-24T17:51:29.632698Z"
+      "24h": "2026-06-24T17:51:29.632698Z",
+      "3d": "2026-06-26T17:30:00.449758Z"
     }
   },
   {
