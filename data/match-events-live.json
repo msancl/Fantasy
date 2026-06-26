@@ -3,7 +3,7 @@
     "matchNumber": 61,
     "score": {
       "home": 1,
-      "away": 3
+      "away": 4
     },
     "lineups": {
       "home": {
@@ -51,6 +51,15 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 914562,
+        "assistId": 708265,
+        "minute": 90,
+        "addedTime": 4,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -60,12 +69,12 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-26T19:44:50.085208Z"
+    "updatedAt": "2026-06-26T20:58:53.204810Z"
   },
   {
     "matchNumber": 62,
     "score": {
-      "home": 1,
+      "home": 5,
       "away": 0
     },
     "lineups": {
@@ -87,6 +96,42 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 410225,
+        "assistId": 918969,
+        "minute": 56,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 485963,
+        "assistId": 410225,
+        "minute": 59,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 485963,
+        "assistId": 623570,
+        "minute": 71,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 623570,
+        "assistId": 485963,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -96,7 +141,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-26T19:44:50.085208Z"
+    "updatedAt": "2026-06-26T20:58:53.204810Z"
   },
   {
     "matchNumber": 63,
