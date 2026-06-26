@@ -1,299 +1,44 @@
 [
   {
-    "matchNumber": 55,
-    "score": {
-      "home": 0,
-      "away": 2
-    },
-    "lineups": {
-      "home": {
-        "starters": [
-          79294,
-          708989,
-          339337,
-          328455,
-          315211,
-          207006,
-          348863,
-          126014,
-          626764,
-          344830,
-          166240
-        ],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [
-          418651,
-          469976,
-          974982,
-          644771,
-          711980,
-          294808,
-          375885,
-          1390649,
-          343052,
-          536835,
-          827734
-        ],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "CIV",
-        "scorerId": 343052,
-        "assistId": 1390649,
-        "minute": 7,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "CIV",
-        "scorerId": 343052,
-        "assistId": 375885,
-        "minute": 64,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": [
-        418651,
-        469976,
-        974982,
-        644771,
-        711980
-      ]
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-26T01:32:52.017372Z"
-  },
-  {
-    "matchNumber": 56,
+    "matchNumber": 59,
     "score": {
       "home": 2,
       "away": 1
     },
     "lineups": {
       "home": {
-        "starters": [
-          77127,
-          659813,
-          661171,
-          893661,
-          400960,
-          903611,
-          659806,
-          687626,
-          439914,
-          139503,
-          592735
-        ],
+        "starters": [],
         "substitutes": []
       },
       "away": {
-        "starters": [
-          17259,
-          86202,
-          196357,
-          161056,
-          318204,
-          792380,
-          406640,
-          192565,
-          598577,
-          580195,
-          309400
-        ],
+        "starters": [],
         "substitutes": []
       }
     },
     "goals": [
       {
-        "countryId": "GER",
-        "scorerId": 192565,
-        "assistId": 598577,
-        "minute": 2,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ECU",
-        "scorerId": 903611,
-        "assistId": 659806,
-        "minute": 9,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ECU",
-        "scorerId": 592735,
-        "assistId": 684159,
-        "minute": 77,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-26T01:32:52.017372Z"
-  },
-  {
-    "matchNumber": 57,
-    "score": {
-      "home": 1,
-      "away": 1
-    },
-    "lineups": {
-      "home": {
-        "starters": [
-          432298,
-          353892,
-          355816,
-          405389,
-          405397,
-          356141,
-          489359,
-          405385,
-          420931,
-          358504,
-          589128
-        ],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [
-          549440,
-          362108,
-          503075,
-          485395,
-          687622,
-          667287,
-          184573,
-          633454,
-          349066,
-          325443,
-          583189
-        ],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "JPN",
-        "scorerId": 420931,
-        "assistId": 358504,
-        "minute": 56,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SWE",
-        "scorerId": 583189,
-        "assistId": 325443,
-        "minute": 62,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-26T01:32:52.017372Z"
-  },
-  {
-    "matchNumber": 58,
-    "score": {
-      "home": 1,
-      "away": 3
-    },
-    "lineups": {
-      "home": {
-        "starters": [
-          569433,
-          454495,
-          290587,
-          496706,
-          211474,
-          406008,
-          607224,
-          124410,
-          810096,
-          546712,
-          953150
-        ],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [
-          565093,
-          177476,
-          139208,
-          576314,
-          321528,
-          460939,
-          326330,
-          478573,
-          434675,
-          473169,
-          326029
-        ],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "NED",
-        "scorerId": 290587,
-        "assistId": null,
+        "countryId": "USA",
+        "scorerId": 389253,
+        "assistId": 734761,
         "minute": 3,
         "addedTime": null,
         "isPenalty": false,
-        "isOwnGoal": true
+        "isOwnGoal": false
       },
       {
-        "countryId": "NED",
-        "scorerId": 473169,
-        "assistId": 139208,
-        "minute": 7,
+        "countryId": "TUR",
+        "scorerId": 861410,
+        "assistId": 541537,
+        "minute": 10,
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
       },
       {
-        "countryId": "TUN",
-        "scorerId": 953150,
-        "assistId": 607224,
-        "minute": 54,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "NED",
-        "scorerId": 576314,
-        "assistId": 460939,
-        "minute": 62,
+        "countryId": "TUR",
+        "scorerId": 454567,
+        "assistId": 616894,
+        "minute": 31,
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
@@ -305,7 +50,33 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-26T01:32:52.017372Z"
+    "lineupSource": null,
+    "updatedAt": "2026-06-26T02:35:58.853509Z"
+  },
+  {
+    "matchNumber": 60,
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-26T02:35:58.853509Z"
   }
 ]
