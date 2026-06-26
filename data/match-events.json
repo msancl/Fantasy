@@ -5244,41 +5244,213 @@
     "matchNumber": 61,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          380744,
+          367284,
+          743088,
+          364938,
+          308439,
+          564785,
+          223367,
+          647384,
+          670103,
+          661207,
+          429983
+        ],
+        "substitutes": [
+          737837,
+          583404,
+          226524,
+          422355,
+          894914
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          182906,
+          434224,
+          344695,
+          339808,
+          411975,
+          413112,
+          624690,
+          566723,
+          914562,
+          288230,
+          342229
+        ],
+        "substitutes": [
+          357119,
+          620322,
+          607223,
+          708265,
+          420002
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "FRA",
+        "scorerId": 288230,
+        "assistId": 342229,
+        "minute": 7,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 288230,
+        "assistId": 342229,
+        "minute": 20,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 647384,
+        "assistId": 670103,
+        "minute": 21,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 288230,
+        "assistId": 413112,
+        "minute": 32,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 914562,
+        "assistId": 708265,
+        "minute": 90,
+        "addedTime": 4,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-26T21:09:57.935105Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 62,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          164904,
+          265383,
+          291200,
+          375137,
+          126665,
+          918969,
+          876631,
+          490426,
+          200512,
+          410225,
+          1185888
+        ],
+        "substitutes": [
+          485963,
+          525578,
+          1061282,
+          623570,
+          776890
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          560952,
+          933541,
+          217073,
+          166460,
+          530527,
+          303766,
+          686845,
+          877672,
+          560957,
+          833817,
+          610581
+        ],
+        "substitutes": [
+          206782,
+          945266,
+          881506,
+          413268,
+          576265
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "SEN",
+        "scorerId": 876631,
+        "assistId": 265383,
+        "minute": 4,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 410225,
+        "assistId": 918969,
+        "minute": 56,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 485963,
+        "assistId": 410225,
+        "minute": 59,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 485963,
+        "assistId": 623570,
+        "minute": 71,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 623570,
+        "assistId": 485963,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        164904,
+        265383,
+        291200,
+        375137,
+        490426
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-26T21:09:57.935105Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 63,

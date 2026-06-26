@@ -1,149 +1,5 @@
 [
   {
-    "matchNumber": 61,
-    "score": {
-      "home": 1,
-      "away": 4
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "FRA",
-        "scorerId": 288230,
-        "assistId": 342229,
-        "minute": 7,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "FRA",
-        "scorerId": 288230,
-        "assistId": 342229,
-        "minute": 20,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "NOR",
-        "scorerId": 647384,
-        "assistId": 670103,
-        "minute": 21,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "FRA",
-        "scorerId": 288230,
-        "assistId": 413112,
-        "minute": 32,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "FRA",
-        "scorerId": 914562,
-        "assistId": 708265,
-        "minute": 90,
-        "addedTime": 4,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-26T20:58:53.204810Z"
-  },
-  {
-    "matchNumber": 62,
-    "score": {
-      "home": 5,
-      "away": 0
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "SEN",
-        "scorerId": 876631,
-        "assistId": 265383,
-        "minute": 4,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SEN",
-        "scorerId": 410225,
-        "assistId": 918969,
-        "minute": 56,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SEN",
-        "scorerId": 485963,
-        "assistId": 410225,
-        "minute": 59,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SEN",
-        "scorerId": 485963,
-        "assistId": 623570,
-        "minute": 71,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SEN",
-        "scorerId": 623570,
-        "assistId": 485963,
-        "minute": 82,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-26T20:58:53.204810Z"
-  },
-  {
     "matchNumber": 63,
     "score": {
       "home": null,
@@ -167,7 +23,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-26T19:44:50.085208Z"
+    "updatedAt": "2026-06-26T21:09:54.887664Z"
   },
   {
     "matchNumber": 64,
@@ -193,7 +49,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-26T19:44:50.085208Z"
+    "updatedAt": "2026-06-26T21:09:54.887664Z"
   },
   {
     "matchNumber": 65,
@@ -219,7 +75,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-26T19:44:50.085208Z"
+    "updatedAt": "2026-06-26T21:09:54.887664Z"
   },
   {
     "matchNumber": 66,
@@ -245,6 +101,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-26T19:44:50.085208Z"
+    "updatedAt": "2026-06-26T21:09:54.887664Z"
   }
 ]
