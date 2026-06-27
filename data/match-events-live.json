@@ -7,11 +7,35 @@
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          661455,
+          465966,
+          566025,
+          172623,
+          343974,
+          729390,
+          479682,
+          234189,
+          148455,
+          604008,
+          896616
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          229081,
+          527092,
+          213715,
+          249400,
+          333355,
+          188312,
+          603149,
+          249271,
+          856087,
+          204294,
+          307058
+        ],
         "substitutes": []
       }
     },
@@ -41,22 +65,46 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-27T03:56:58.552648Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-27T05:31:48.981884Z"
   },
   {
     "matchNumber": 64,
     "score": {
-      "home": 0,
-      "away": 1
+      "home": 1,
+      "away": 5
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          207843,
+          469211,
+          1007720,
+          724809,
+          149901,
+          617018,
+          345700,
+          485672,
+          203357,
+          350357,
+          108725
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          108390,
+          429915,
+          368891,
+          236168,
+          262226,
+          137576,
+          249565,
+          144028,
+          88755,
+          486049,
+          435772
+        ],
         "substitutes": []
       }
     },
@@ -69,6 +117,51 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 144028,
+        "assistId": 137576,
+        "minute": 50,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 88755,
+        "assistId": null,
+        "minute": 66,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NZL",
+        "scorerId": 485672,
+        "assistId": null,
+        "minute": 84,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 96341,
+        "assistId": 422763,
+        "minute": 86,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 381950,
+        "assistId": 96341,
+        "minute": 90,
+        "addedTime": 4,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -77,7 +170,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-27T03:56:58.552648Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-27T05:31:48.981884Z"
   }
 ]

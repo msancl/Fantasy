@@ -1018,7 +1018,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-21T06:31:53.113681Z",
-      "3d": "2026-06-23T05:54:36.827458Z"
+      "3d": "2026-06-23T05:54:36.827458Z",
+      "7d": "2026-06-27T05:31:44.751732Z"
     }
   },
   {
@@ -1562,7 +1563,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-25T05:48:56.253477Z"
+      "24h": "2026-06-25T05:48:56.253477Z",
+      "3d": "2026-06-27T05:31:44.751732Z"
     }
   },
   {
@@ -1901,7 +1903,10 @@
     "updatedAt": "2026-06-26T04:19:32.707350Z",
     "bbc": "https://www.bbc.com/sport/football/live/cly0j8wjlwjt",
     "transfermarktImported": true,
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "rechecks": {
+      "24h": "2026-06-27T05:31:44.751732Z"
+    }
   },
   {
     "number": 60,
@@ -1929,7 +1934,10 @@
     "updatedAt": "2026-06-26T04:19:32.707350Z",
     "bbc": "https://www.bbc.com/sport/football/live/c8d2e4geze2t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-27T05:31:44.751732Z"
+    }
   },
   {
     "number": 61,
@@ -2119,7 +2127,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cq5186pg2qqt"
   },
   {
     "number": 68,
@@ -2145,7 +2153,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cn072npx0pdt"
   },
   {
     "number": 69,
@@ -2171,7 +2179,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c3ryv4xgd95t"
   },
   {
     "number": 70,
@@ -2197,7 +2205,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c20ye67xgykt"
   },
   {
     "number": 71,
@@ -2223,7 +2231,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cnv9r7j4dlqt"
   },
   {
     "number": 72,
@@ -2249,7 +2257,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c5yzgpr17evt"
   },
   {
     "number": 73,
@@ -2282,10 +2290,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-06-29T20:30:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1E",
-    "awayPlaceholder": "3ABCDF",
+    "homeCountryId": "GER",
+    "awayCountryId": "PAR",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Boston Stadium",
     "city": "Boston",
     "transfermarktId": 4776680,
@@ -2360,10 +2368,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-06-30T21:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1I",
-    "awayPlaceholder": "3CDFGH",
+    "homeCountryId": "FRA",
+    "awayCountryId": "SWE",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "New York/New Jersey Stadium",
     "city": "New Jersey",
     "transfermarktId": 4776683,
@@ -2594,10 +2602,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-03T22:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1J",
-    "awayPlaceholder": "2H",
+    "homeCountryId": "ARG",
+    "awayCountryId": "CPV",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Miami Stadium",
     "city": "Miami",
     "transfermarktId": 4776692,
@@ -2646,10 +2654,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-03T18:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "2D",
-    "awayPlaceholder": "2G",
+    "homeCountryId": "AUS",
+    "awayCountryId": "EGY",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Dallas Stadium",
     "city": "Dallas",
     "transfermarktId": 4776694,
