@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Update finished World Cup match JSON files from Transfermarkt.
 
 The script attempts matches whose kickoff time has passed, then only updates
@@ -213,6 +213,48 @@ def parse_goals(source: str, match_data: dict) -> list[dict]:
         )
     return goals
 
+def parse_missed_penalties(source: str, player_by_id: dict[int, dict]) -> list[dict]:
+    section = section_between(source, 'id="sb-verschossene"', "Substitutions")
+    if not section:
+        return []
+
+    penalties_saved: list[dict] = []
+    for action in re.findall(r'<li class="sb-aktion-(?:heim|gast)">[\s\S]*?</li>', section):
+        text = decode_text(action)
+        if not re.search(r"saved", text, re.I):
+            continue
+
+        detail_ids = [
+            int(value)
+            for value in re.findall(r"leistungsdatendetails/spieler/(\d+)", action)
+        ]
+        goalkeeper_id = detail_ids[1] if len(detail_ids) >= 2 else None
+
+        if goalkeeper_id is None:
+            profile_ids = [
+                int(value)
+                for value in re.findall(r"/profil/spieler/(\d+)", action)
+            ]
+            goalkeeper_id = profile_ids[0] if profile_ids else None
+
+        if goalkeeper_id is None:
+            continue
+
+        goalkeeper = player_by_id.get(int(goalkeeper_id), {})
+        country_id = goalkeeper.get("countryId")
+        minute, added_time = parse_minute(action)
+        penalties_saved.append(
+            {
+                "countryId": country_id,
+                "goalkeeperId": goalkeeper_id,
+                "minute": minute,
+                "addedTime": added_time,
+            }
+        )
+
+    return penalties_saved
+
+
 def parse_score(source: str) -> tuple[int, int] | None:
     score = re.search(r'<div class="sb-endstand">\s*(\d+):(\d+)', source)
     if not score:
@@ -239,6 +281,7 @@ def parse_match_page(source: str, match_data: dict, player_by_id: dict[int, dict
     home_score, away_score = score
     lineups = parse_lineups(source)
     goals = parse_goals(source, match_data)
+    penalties_saved = parse_missed_penalties(source, player_by_id)
     home_participants = lineups["home"]["starters"] + lineups["home"]["substitutes"]
     away_participants = lineups["away"]["starters"] + lineups["away"]["substitutes"]
 
@@ -250,7 +293,7 @@ def parse_match_page(source: str, match_data: dict, player_by_id: dict[int, dict
             "homePlayerIds": clean_sheet_ids(home_participants, player_by_id) if away_score == 0 else [],
             "awayPlayerIds": clean_sheet_ids(away_participants, player_by_id) if home_score == 0 else [],
         },
-        "penaltiesSaved": [],
+        "penaltiesSaved": penalties_saved,
     }
 
 
