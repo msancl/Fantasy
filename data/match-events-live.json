@@ -3,41 +3,114 @@
     "matchNumber": 67,
     "score": {
       "home": 0,
-      "away": 0
+      "away": 2
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          402979,
+          403808,
+          698415,
+          345716,
+          443379,
+          354482,
+          425028,
+          283473,
+          628806,
+          419247,
+          569205
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          130164,
+          743413,
+          392757,
+          413403,
+          632349,
+          567576,
+          258923,
+          581678,
+          503743,
+          433177,
+          132098
+        ],
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": 433177,
+        "minute": 62,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 132098,
+        "assistId": 581678,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
-      "awayPlayerIds": []
+      "awayPlayerIds": [
+        130164,
+        743413,
+        392757,
+        413403,
+        632349
+      ]
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-27T22:18:32.762712Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-27T23:31:09.067776Z"
   },
   {
     "matchNumber": 68,
     "score": {
-      "home": 1,
-      "away": 0
+      "home": 2,
+      "away": 1
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          205927,
+          42460,
+          282144,
+          371001,
+          483046,
+          51471,
+          27992,
+          580451,
+          668207,
+          293200,
+          46413
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          837368,
+          397171,
+          241457,
+          734676,
+          830890,
+          230784,
+          746695,
+          538006,
+          395695,
+          583255,
+          108354
+        ],
         "substitutes": []
       }
     },
@@ -50,6 +123,24 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "GHA",
+        "scorerId": 241457,
+        "assistId": 955070,
+        "minute": 73,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CRO",
+        "scorerId": 293200,
+        "assistId": 27992,
+        "minute": 83,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -58,8 +149,8 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-27T22:18:32.762712Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-27T23:31:09.067776Z"
   },
   {
     "matchNumber": 69,
@@ -137,7 +228,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T05:39:15.144393Z"
+    "updatedAt": "2026-06-27T23:31:09.067776Z"
   },
   {
     "matchNumber": 72,
@@ -163,6 +254,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T05:39:15.144393Z"
+    "updatedAt": "2026-06-27T23:31:09.067776Z"
   }
 ]
