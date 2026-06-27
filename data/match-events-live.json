@@ -2,8 +2,8 @@
   {
     "matchNumber": 67,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -23,13 +23,13 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T05:39:15.144393Z"
+    "updatedAt": "2026-06-27T21:17:18.212559Z"
   },
   {
     "matchNumber": 68,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -49,7 +49,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T05:39:15.144393Z"
+    "updatedAt": "2026-06-27T21:17:18.212559Z"
   },
   {
     "matchNumber": 69,
