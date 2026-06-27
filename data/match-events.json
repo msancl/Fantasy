@@ -5339,8 +5339,15 @@
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
-    "penaltiesSaved": [],
-    "updatedAt": "2026-06-26T21:09:57.935105Z",
+    "penaltiesSaved": [
+      {
+        "countryId": "FRA",
+        "goalkeeperId": 182906,
+        "minute": 50,
+        "addedTime": null
+      }
+    ],
+    "updatedAt": "2026-06-27T02:34:02.876964Z",
     "lineupSource": "transfermarkt"
   },
   {

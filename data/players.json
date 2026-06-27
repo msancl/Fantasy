@@ -61238,8 +61238,8 @@
           "goals": 0,
           "assists": 0,
           "cleanSheets": 1,
-          "penaltiesSaved": 0,
-          "points": 5
+          "penaltiesSaved": 1,
+          "points": 7
         },
         "rounds": {
           "J1": {
@@ -61266,8 +61266,8 @@
             "goals": 0,
             "assists": 0,
             "cleanSheets": 0,
-            "penaltiesSaved": 0,
-            "points": 0
+            "penaltiesSaved": 1,
+            "points": 2
           },
           "R32": {
             "matchesPlayed": null,
