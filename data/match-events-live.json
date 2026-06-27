@@ -23,7 +23,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T00:13:31.685780Z"
+    "updatedAt": "2026-06-27T02:09:41.635633Z"
   },
   {
     "matchNumber": 64,
@@ -49,68 +49,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T00:13:31.685780Z"
-  },
-  {
-    "matchNumber": 65,
-    "score": {
-      "home": 0,
-      "away": 0
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-27T01:31:12.746416Z"
-  },
-  {
-    "matchNumber": 66,
-    "score": {
-      "home": 0,
-      "away": 1
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "ESP",
-        "scorerId": 548111,
-        "assistId": 282411,
-        "minute": 42,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-27T01:31:12.746416Z"
+    "updatedAt": "2026-06-27T02:09:41.635633Z"
   }
 ]
