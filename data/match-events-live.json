@@ -23,12 +23,12 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T21:17:18.212559Z"
+    "updatedAt": "2026-06-27T22:18:32.762712Z"
   },
   {
     "matchNumber": 68,
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
     "lineups": {
@@ -41,7 +41,17 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "CRO",
+        "scorerId": 668207,
+        "assistId": 51471,
+        "minute": 31,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -49,7 +59,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-27T21:17:18.212559Z"
+    "updatedAt": "2026-06-27T22:18:32.762712Z"
   },
   {
     "matchNumber": 69,
