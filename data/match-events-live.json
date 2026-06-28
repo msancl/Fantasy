@@ -1,194 +1,28 @@
 [
   {
-    "matchNumber": 69,
+    "matchNumber": 73,
     "score": {
-      "home": 3,
-      "away": 3
+      "home": null,
+      "away": null
     },
     "lineups": {
       "home": {
-        "starters": [
-          437982,
-          750903,
-          284732,
-          80293,
-          864306,
-          245537,
-          855015,
-          395693,
-          905011,
-          171424,
-          418659
-        ],
+        "starters": [],
         "substitutes": []
       },
       "away": {
-        "starters": [
-          186374,
-          127573,
-          59016,
-          225657,
-          223974,
-          223979,
-          404950,
-          106987,
-          346853,
-          223967,
-          41384
-        ],
+        "starters": [],
         "substitutes": []
       }
     },
-    "goals": [
-      {
-        "countryId": "AUT",
-        "scorerId": 41384,
-        "assistId": 59016,
-        "minute": 28,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ALG",
-        "scorerId": 864306,
-        "assistId": null,
-        "minute": 45,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "AUT",
-        "scorerId": 106987,
-        "assistId": 223967,
-        "minute": 55,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ALG",
-        "scorerId": 171424,
-        "assistId": 395693,
-        "minute": 60,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ALG",
-        "scorerId": 171424,
-        "assistId": 395693,
-        "minute": 90,
-        "addedTime": 3,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "AUT",
-        "scorerId": 369567,
-        "assistId": 120205,
-        "minute": 90,
-        "addedTime": 6,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
+    "goals": [],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-28T11:00:04.453301Z"
-  },
-  {
-    "matchNumber": 70,
-    "score": {
-      "home": 1,
-      "away": 3
-    },
-    "lineups": {
-      "home": {
-        "starters": [
-          261850,
-          895291,
-          539961,
-          882197,
-          883111,
-          561485,
-          734751,
-          310943,
-          664057,
-          1059056,
-          1252820
-        ],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [
-          111873,
-          131225,
-          469781,
-          54781,
-          401578,
-          348795,
-          166237,
-          948294,
-          742201,
-          576024,
-          406625
-        ],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "ARG",
-        "scorerId": 348795,
-        "assistId": null,
-        "minute": 19,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ARG",
-        "scorerId": 406625,
-        "assistId": null,
-        "minute": 31,
-        "addedTime": null,
-        "isPenalty": true,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "JOR",
-        "scorerId": 551505,
-        "assistId": 310943,
-        "minute": 55,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "ARG",
-        "scorerId": 28003,
-        "assistId": null,
-        "minute": 80,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-06-28T11:00:04.453301Z"
+    "lineupSource": null,
+    "updatedAt": "2026-06-28T11:34:17.351126Z"
   }
 ]

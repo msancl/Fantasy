@@ -5967,41 +5967,206 @@
     "matchNumber": 69,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          437982,
+          80293,
+          284732,
+          750903,
+          864306,
+          245537,
+          395693,
+          855015,
+          905011,
+          171424,
+          418659
+        ],
+        "substitutes": [
+          625142,
+          668167,
+          578391,
+          888738
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          186374,
+          225657,
+          59016,
+          223974,
+          127573,
+          223967,
+          404950,
+          223979,
+          106987,
+          346853,
+          41384
+        ],
+        "substitutes": [
+          263236,
+          195736,
+          900909,
+          120205,
+          369567
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "AUT",
+        "scorerId": 41384,
+        "assistId": 59016,
+        "minute": 28,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ALG",
+        "scorerId": 864306,
+        "assistId": null,
+        "minute": 45,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "AUT",
+        "scorerId": 106987,
+        "assistId": 223967,
+        "minute": 55,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ALG",
+        "scorerId": 171424,
+        "assistId": 395693,
+        "minute": 60,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ALG",
+        "scorerId": 171424,
+        "assistId": 395693,
+        "minute": 90,
+        "addedTime": 3,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "AUT",
+        "scorerId": 369567,
+        "assistId": 120205,
+        "minute": 90,
+        "addedTime": 6,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-28T11:34:19.476694Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 70,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          261850,
+          895291,
+          539961,
+          882197,
+          883111,
+          310943,
+          734751,
+          561485,
+          1252820,
+          1059056,
+          664057
+        ],
+        "substitutes": [
+          658807,
+          744040,
+          401086,
+          677986,
+          551505
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          111873,
+          469781,
+          54781,
+          131225,
+          166237,
+          401578,
+          348795,
+          948294,
+          742201,
+          576024,
+          406625
+        ],
+        "substitutes": [
+          849410,
+          534033,
+          576028,
+          28003,
+          844797
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ARG",
+        "scorerId": 348795,
+        "assistId": null,
+        "minute": 19,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 406625,
+        "assistId": null,
+        "minute": 31,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "JOR",
+        "scorerId": 551505,
+        "assistId": 310943,
+        "minute": 55,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": null,
+        "minute": 80,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-28T11:34:19.476694Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 71,
