@@ -1183,7 +1183,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-22T07:37:40.172108Z",
-      "3d": "2026-06-24T05:36:41.628998Z"
+      "3d": "2026-06-24T05:36:41.628998Z",
+      "7d": "2026-06-28T05:59:01.036663Z"
     }
   },
   {
@@ -2036,7 +2037,10 @@
     "updatedAt": "2026-06-27T05:39:19.450036Z",
     "bbc": "https://www.bbc.com/sport/football/live/cgmd2kpyvggt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-28T05:59:01.036663Z"
+    }
   },
   {
     "number": 64,
@@ -2064,7 +2068,10 @@
     "updatedAt": "2026-06-27T05:39:19.450036Z",
     "bbc": "https://www.bbc.com/sport/football/live/c70yxg7804zt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-28T05:59:01.036663Z"
+    }
   },
   {
     "number": 65,
@@ -2316,7 +2323,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cjwg760j4jnt"
   },
   {
     "number": 74,
@@ -2479,10 +2486,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-01T16:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1L",
-    "awayPlaceholder": "3EHIJK",
+    "homeCountryId": "ENG",
+    "awayCountryId": "COD",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Atlanta Stadium",
     "city": "Atlanta",
     "transfermarktId": 4776686,
@@ -2531,10 +2538,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-01T20:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1G",
-    "awayPlaceholder": "3AEHIJ",
+    "homeCountryId": "BEL",
+    "awayCountryId": "SEN",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Seattle Stadium",
     "city": "Seattle",
     "transfermarktId": 4776688,
@@ -2583,10 +2590,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-02T19:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1H",
-    "awayPlaceholder": "2J",
+    "homeCountryId": "ESP",
+    "awayCountryId": "AUT",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Los Angeles Stadium",
     "city": "Los Angeles",
     "transfermarktId": 4776690,
@@ -2609,10 +2616,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-03T03:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1B",
-    "awayPlaceholder": "3EFGIJ",
+    "homeCountryId": "SWI",
+    "awayCountryId": "ALG",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "BC Place Vancouver",
     "city": "Vancouver",
     "transfermarktId": 4776691,
