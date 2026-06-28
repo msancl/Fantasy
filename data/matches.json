@@ -2133,17 +2133,19 @@
     "transfermarktId": 4776669,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776669",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 2,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "ENG",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cq5186pg2qqt"
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cq5186pg2qqt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 68,
@@ -2159,17 +2161,19 @@
     "transfermarktId": 4776670,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776670",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "CRO",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cn072npx0pdt"
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cn072npx0pdt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 69,
@@ -2237,17 +2241,19 @@
     "transfermarktId": 4776667,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776667",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
+    "status": "finished",
     "winnerCountryId": null,
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cnv9r7j4dlqt"
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cnv9r7j4dlqt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 72,
@@ -2263,17 +2269,19 @@
     "transfermarktId": 4776668,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776668",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 3,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "COD",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/c5yzgpr17evt"
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "bbc": "https://www.bbc.com/sport/football/live/c5yzgpr17evt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 73,

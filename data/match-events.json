@@ -5800,41 +5800,168 @@
     "matchNumber": 67,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          402979,
+          698415,
+          403808,
+          345716,
+          443379,
+          354482,
+          628806,
+          419247,
+          425028,
+          283473,
+          569205
+        ],
+        "substitutes": [
+          121791,
+          243298,
+          126019,
+          546803,
+          860998
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          130164,
+          413403,
+          392757,
+          632349,
+          743413,
+          567576,
+          581678,
+          503743,
+          258923,
+          433177,
+          132098
+        ],
+        "substitutes": [
+          483348,
+          61651,
+          479999,
+          503987,
+          324358
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": 433177,
+        "minute": 62,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 132098,
+        "assistId": 581678,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
-      "awayPlayerIds": []
+      "awayPlayerIds": [
+        130164,
+        413403,
+        392757,
+        632349,
+        743413,
+        483348
+      ]
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 68,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          205927,
+          371001,
+          282144,
+          483046,
+          668207,
+          51471,
+          27992,
+          580451,
+          293200,
+          42460,
+          46413
+        ],
+        "substitutes": [
+          475959,
+          205938,
+          395928,
+          605268
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          837368,
+          241457,
+          734676,
+          397171,
+          830890,
+          230784,
+          395695,
+          538006,
+          746695,
+          583255,
+          108354
+        ],
+        "substitutes": [
+          1113451,
+          1240763,
+          864121,
+          955070,
+          451747
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "CRO",
+        "scorerId": 668207,
+        "assistId": 51471,
+        "minute": 31,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GHA",
+        "scorerId": 241457,
+        "assistId": 955070,
+        "minute": 73,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CRO",
+        "scorerId": 293200,
+        "assistId": 27992,
+        "minute": 83,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 69,
@@ -5880,41 +6007,167 @@
     "matchNumber": 71,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          74113,
+          413565,
+          341429,
+          332560,
+          120443,
+          262980,
+          936981,
+          88103,
+          480692,
+          588989,
+          185245
+        ],
+        "substitutes": [
+          493003,
+          857948,
+          735573,
+          122582,
+          424784
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          357153,
+          805714,
+          258004,
+          616341,
+          182712,
+          487469,
+          225161,
+          240306,
+          487465,
+          462250,
+          8198
+        ],
+        "substitutes": [
+          601883,
+          357147,
+          657430,
+          670681,
+          357164
+        ]
       }
     },
     "goals": [],
     "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
+      "homePlayerIds": [
+        74113,
+        413565,
+        341429,
+        332560,
+        120443,
+        493003
+      ],
+      "awayPlayerIds": [
+        357153,
+        805714,
+        258004,
+        616341,
+        182712,
+        601883,
+        357147
+      ]
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 72,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          164915,
+          203348,
+          342046,
+          181380,
+          477758,
+          727089,
+          353403,
+          557614,
+          700565,
+          388165,
+          127048
+        ],
+        "substitutes": [
+          129586,
+          1016015,
+          280701,
+          727157,
+          423678
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          527866,
+          288883,
+          763079,
+          989069,
+          608537,
+          492558,
+          562022,
+          294525,
+          294502,
+          754037,
+          358166
+        ],
+        "substitutes": [
+          288915,
+          431911,
+          260857,
+          492556,
+          185372
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "UZB",
+        "scorerId": 358166,
+        "assistId": 562022,
+        "minute": 10,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "COD",
+        "scorerId": 388165,
+        "assistId": null,
+        "minute": 68,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "COD",
+        "scorerId": 727157,
+        "assistId": null,
+        "minute": 78,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "COD",
+        "scorerId": 388165,
+        "assistId": 423678,
+        "minute": 90,
+        "addedTime": 1,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-28T01:33:26.441622Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 73,
