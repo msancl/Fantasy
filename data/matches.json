@@ -1117,7 +1117,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-22T02:07:40.250738Z",
-      "3d": "2026-06-24T01:27:47.550843Z"
+      "3d": "2026-06-24T01:27:47.550843Z",
+      "7d": "2026-06-28T01:35:28.316871Z"
     }
   },
   {
@@ -1725,7 +1726,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-26T01:32:49.812186Z"
+      "24h": "2026-06-26T01:32:49.812186Z",
+      "3d": "2026-06-28T01:35:28.316871Z"
     }
   },
   {
@@ -1756,7 +1758,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-26T01:32:49.812186Z"
+      "24h": "2026-06-26T01:32:49.812186Z",
+      "3d": "2026-06-28T01:35:28.316871Z"
     }
   },
   {
@@ -2089,7 +2092,10 @@
     "updatedAt": "2026-06-27T02:09:43.642559Z",
     "bbc": "https://www.bbc.com/sport/football/live/c0qylv2wdvvt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-28T01:35:28.316871Z"
+    }
   },
   {
     "number": 66,
@@ -2117,7 +2123,10 @@
     "updatedAt": "2026-06-27T02:09:43.642559Z",
     "bbc": "https://www.bbc.com/sport/football/live/cx2kqd1ywzdt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-06-28T01:35:28.316871Z"
+    }
   },
   {
     "number": 67,
@@ -2548,10 +2557,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-02T23:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "2K",
-    "awayPlaceholder": "2L",
+    "homeCountryId": "POR",
+    "awayCountryId": "CRO",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Toronto Stadium",
     "city": "Toronto",
     "transfermarktId": 4776689,
@@ -2652,10 +2661,10 @@
     "stage": "r32",
     "group": null,
     "kickoff": "2026-07-04T01:30:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "1K",
-    "awayPlaceholder": "3DEIJL",
+    "homeCountryId": "COL",
+    "awayCountryId": "GHA",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Kansas City Stadium",
     "city": "Kansas City",
     "transfermarktId": 4776693,
