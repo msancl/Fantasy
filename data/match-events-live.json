@@ -2,8 +2,8 @@
   {
     "matchNumber": 73,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -23,6 +23,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-28T18:57:04.346404Z"
+    "updatedAt": "2026-06-28T20:11:15.478014Z"
   }
 ]
