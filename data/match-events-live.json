@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "matchNumber": 76,
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "JPN",
+        "scorerId": 643574,
+        "assistId": null,
+        "minute": 29,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-29T17:41:33.602571Z"
+  }
+]
