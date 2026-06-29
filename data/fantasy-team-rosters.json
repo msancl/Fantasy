@@ -349,17 +349,6 @@
         "note": null
       },
       {
-        "slotId": "starter-02",
-        "slotType": "starter",
-        "playerId": 495666,
-        "position": "DF",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
         "slotId": "starter-03",
         "slotType": "starter",
         "playerId": 435338,
@@ -382,6 +371,17 @@
         "note": null
       },
       {
+        "slotId": "transfer-01",
+        "slotType": "starter",
+        "playerId": 282411,
+        "position": "DF",
+        "joinedRound": "R32",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 338424,
+        "note": null
+      },
+      {
         "slotId": "starter-05",
         "slotType": "starter",
         "playerId": 743413,
@@ -393,10 +393,10 @@
         "note": null
       },
       {
-        "slotId": "starter-06",
+        "slotId": "starter-02",
         "slotType": "starter",
-        "playerId": 88755,
-        "position": "MIL",
+        "playerId": 495666,
+        "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
@@ -407,6 +407,28 @@
         "slotId": "starter-07",
         "slotType": "starter",
         "playerId": 598577,
+        "position": "MIL",
+        "joinedRound": "J1",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-11",
+        "slotType": "starter",
+        "playerId": 462250,
+        "position": "MIL",
+        "joinedRound": "J1",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-06",
+        "slotType": "starter",
+        "playerId": 88755,
         "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
@@ -426,17 +448,6 @@
         "note": null
       },
       {
-        "slotId": "starter-09",
-        "slotType": "starter",
-        "playerId": 338424,
-        "position": "MIL",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
         "slotId": "starter-10",
         "slotType": "starter",
         "playerId": 406625,
@@ -448,13 +459,13 @@
         "note": null
       },
       {
-        "slotId": "starter-11",
+        "slotId": "starter-09",
         "slotType": "starter",
-        "playerId": 462250,
+        "playerId": 338424,
         "position": "MIL",
         "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
+        "leftRound": "J3",
+        "replacedByPlayerId": 282411,
         "replacesPlayerId": null,
         "note": null
       },
@@ -1004,6 +1015,17 @@
         "note": null
       },
       {
+        "slotId": "transfer-01",
+        "slotType": "starter",
+        "playerId": 220793,
+        "position": "DF",
+        "joinedRound": "R32",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 466794,
+        "note": null
+      },
+      {
         "slotId": "starter-03",
         "slotType": "starter",
         "playerId": 139208,
@@ -1015,31 +1037,9 @@
         "note": null
       },
       {
-        "slotId": "starter-04",
+        "slotId": "starter-08",
         "slotType": "starter",
-        "playerId": 466794,
-        "position": "DF",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
-        "slotId": "starter-05",
-        "slotType": "starter",
-        "playerId": 371998,
-        "position": "MIL",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
-        "slotId": "starter-06",
-        "slotType": "starter",
-        "playerId": 288230,
+        "playerId": 88755,
         "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
@@ -1059,9 +1059,9 @@
         "note": null
       },
       {
-        "slotId": "starter-08",
+        "slotId": "starter-06",
         "slotType": "starter",
-        "playerId": 88755,
+        "playerId": 288230,
         "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
@@ -1070,10 +1070,10 @@
         "note": null
       },
       {
-        "slotId": "starter-09",
+        "slotId": "starter-05",
         "slotType": "starter",
-        "playerId": 342229,
-        "position": "ATT",
+        "playerId": 371998,
+        "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
@@ -1092,6 +1092,17 @@
         "note": null
       },
       {
+        "slotId": "starter-09",
+        "slotType": "starter",
+        "playerId": 342229,
+        "position": "ATT",
+        "joinedRound": "J1",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
         "slotId": "starter-11",
         "slotType": "starter",
         "playerId": 28003,
@@ -1099,6 +1110,17 @@
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-04",
+        "slotType": "starter",
+        "playerId": 466794,
+        "position": "DF",
+        "joinedRound": "J1",
+        "leftRound": "J3",
+        "replacedByPlayerId": 220793,
         "replacesPlayerId": null,
         "note": null
       },
@@ -2281,17 +2303,6 @@
         "note": null
       },
       {
-        "slotId": "starter-02",
-        "slotType": "starter",
-        "playerId": 161056,
-        "position": "DF",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
         "slotId": "starter-03",
         "slotType": "starter",
         "playerId": 435338,
@@ -2303,10 +2314,32 @@
         "note": null
       },
       {
-        "slotId": "starter-04",
+        "slotId": "starter-02",
         "slotType": "starter",
-        "playerId": 231572,
+        "playerId": 161056,
         "position": "DF",
+        "joinedRound": "J1",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "transfer-01",
+        "slotType": "starter",
+        "playerId": 361104,
+        "position": "DF",
+        "joinedRound": "R32",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 231572,
+        "note": null
+      },
+      {
+        "slotId": "starter-07",
+        "slotType": "starter",
+        "playerId": 937958,
+        "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
@@ -2336,10 +2369,10 @@
         "note": null
       },
       {
-        "slotId": "starter-07",
+        "slotId": "starter-09",
         "slotType": "starter",
-        "playerId": 937958,
-        "position": "MIL",
+        "playerId": 418560,
+        "position": "ATT",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
@@ -2350,17 +2383,6 @@
         "slotId": "starter-08",
         "slotType": "starter",
         "playerId": 132098,
-        "position": "ATT",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
-        "slotId": "starter-09",
-        "slotType": "starter",
-        "playerId": 418560,
         "position": "ATT",
         "joinedRound": "J1",
         "leftRound": null,
@@ -2387,6 +2409,17 @@
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-04",
+        "slotType": "starter",
+        "playerId": 231572,
+        "position": "DF",
+        "joinedRound": "J1",
+        "leftRound": "J3",
+        "replacedByPlayerId": 361104,
         "replacesPlayerId": null,
         "note": null
       },
@@ -2764,20 +2797,9 @@
         "note": null
       },
       {
-        "slotId": "starter-02",
+        "slotId": "starter-05",
         "slotType": "starter",
-        "playerId": 340879,
-        "position": "DF",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
-        "slotId": "starter-03",
-        "slotType": "starter",
-        "playerId": 166158,
+        "playerId": 763079,
         "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
@@ -2797,9 +2819,20 @@
         "note": null
       },
       {
-        "slotId": "starter-05",
+        "slotId": "transfer-01",
         "slotType": "starter",
-        "playerId": 763079,
+        "playerId": 1066953,
+        "position": "DF",
+        "joinedRound": "R32",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 340879,
+        "note": null
+      },
+      {
+        "slotId": "starter-03",
+        "slotType": "starter",
+        "playerId": 166158,
         "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
@@ -2819,31 +2852,20 @@
         "note": null
       },
       {
-        "slotId": "starter-07",
+        "slotId": "transfer-02",
         "slotType": "starter",
-        "playerId": 551505,
+        "playerId": 927353,
         "position": "MIL",
-        "joinedRound": "J1",
+        "joinedRound": "R32",
         "leftRound": null,
         "replacedByPlayerId": null,
-        "replacesPlayerId": null,
+        "replacesPlayerId": 551505,
         "note": null
       },
       {
         "slotId": "starter-08",
         "slotType": "starter",
         "playerId": 480692,
-        "position": "MIL",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
-        "slotId": "starter-09",
-        "slotType": "starter",
-        "playerId": 195332,
         "position": "MIL",
         "joinedRound": "J1",
         "leftRound": null,
@@ -2863,13 +2885,57 @@
         "note": null
       },
       {
+        "slotId": "starter-09",
+        "slotType": "starter",
+        "playerId": 195332,
+        "position": "MIL",
+        "joinedRound": "J1",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "transfer-03",
+        "slotType": "starter",
+        "playerId": 503770,
+        "position": "ATT",
+        "joinedRound": "R32",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 108725,
+        "note": null
+      },
+      {
+        "slotId": "starter-02",
+        "slotType": "starter",
+        "playerId": 340879,
+        "position": "DF",
+        "joinedRound": "J1",
+        "leftRound": "J3",
+        "replacedByPlayerId": 1066953,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-07",
+        "slotType": "starter",
+        "playerId": 551505,
+        "position": "MIL",
+        "joinedRound": "J1",
+        "leftRound": "J3",
+        "replacedByPlayerId": 927353,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
         "slotId": "starter-11",
         "slotType": "starter",
         "playerId": 108725,
         "position": "ATT",
         "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
+        "leftRound": "J3",
+        "replacedByPlayerId": 503770,
         "replacesPlayerId": null,
         "note": null
       },
@@ -3247,20 +3313,9 @@
         "note": null
       },
       {
-        "slotId": "starter-02",
+        "slotId": "starter-05",
         "slotType": "starter",
-        "playerId": 616341,
-        "position": "DF",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
-        "note": null
-      },
-      {
-        "slotId": "starter-03",
-        "slotType": "starter",
-        "playerId": 743413,
+        "playerId": 398073,
         "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
@@ -3280,9 +3335,9 @@
         "note": null
       },
       {
-        "slotId": "starter-05",
+        "slotId": "starter-03",
         "slotType": "starter",
-        "playerId": 398073,
+        "playerId": 743413,
         "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
@@ -3291,14 +3346,25 @@
         "note": null
       },
       {
-        "slotId": "starter-06",
+        "slotId": "starter-02",
         "slotType": "starter",
-        "playerId": 411295,
-        "position": "MIL",
+        "playerId": 616341,
+        "position": "DF",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
         "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "transfer-01",
+        "slotType": "starter",
+        "playerId": 474701,
+        "position": "MIL",
+        "joinedRound": "R32",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 411295,
         "note": null
       },
       {
@@ -3324,9 +3390,9 @@
         "note": null
       },
       {
-        "slotId": "starter-09",
+        "slotId": "starter-11",
         "slotType": "starter",
-        "playerId": 351478,
+        "playerId": 132098,
         "position": "ATT",
         "joinedRound": "J1",
         "leftRound": null,
@@ -3346,13 +3412,24 @@
         "note": null
       },
       {
-        "slotId": "starter-11",
+        "slotId": "starter-09",
         "slotType": "starter",
-        "playerId": 132098,
+        "playerId": 351478,
         "position": "ATT",
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-06",
+        "slotType": "starter",
+        "playerId": 411295,
+        "position": "MIL",
+        "joinedRound": "J1",
+        "leftRound": "J3",
+        "replacedByPlayerId": 474701,
         "replacesPlayerId": null,
         "note": null
       },

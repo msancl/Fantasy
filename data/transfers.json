@@ -8,5 +8,75 @@
     "playerOutId": 411295,
     "effectiveRound": "J3",
     "isFreeTransfer": true
+  },
+  {
+    "id": "montreal-celtic-revival-01",
+    "date": "2026-06-28T09:47:00Z",
+    "fantasyTeamId": "montreal-celtic-revival",
+    "teamTransferNumber": 1,
+    "playerInId": 474701,
+    "playerOutId": 411295,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "portloe-wanderers-01",
+    "date": "2026-06-28T10:23:00Z",
+    "fantasyTeamId": "portloe-wanderers",
+    "teamTransferNumber": 1,
+    "playerInId": 1066953,
+    "playerOutId": 340879,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "portloe-wanderers-02",
+    "date": "2026-06-28T10:23:00Z",
+    "fantasyTeamId": "portloe-wanderers",
+    "teamTransferNumber": 2,
+    "playerInId": 927353,
+    "playerOutId": 551505,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "portloe-wanderers-03",
+    "date": "2026-06-28T10:23:00Z",
+    "fantasyTeamId": "portloe-wanderers",
+    "teamTransferNumber": 3,
+    "playerInId": 503770,
+    "playerOutId": 108725,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "bogosteam-fc-01",
+    "date": "2026-06-28T15:23:00Z",
+    "fantasyTeamId": "bogosteam-fc",
+    "teamTransferNumber": 1,
+    "playerInId": 282411,
+    "playerOutId": 338424,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "aquarela-do-brasil-01",
+    "date": "2026-06-28T16:28:00Z",
+    "fantasyTeamId": "aquarela-do-brasil",
+    "teamTransferNumber": 1,
+    "playerInId": 361104,
+    "playerOutId": 231572,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "u2-united-01",
+    "date": "2026-06-28T16:45:00Z",
+    "fantasyTeamId": "u2-united",
+    "teamTransferNumber": 1,
+    "playerInId": 220793,
+    "playerOutId": 466794,
+    "effectiveRound": "R32",
+    "isFreeTransfer": true
   }
 ]
