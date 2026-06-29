@@ -2426,17 +2426,18 @@
     "transfermarktId": 4776682,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776682",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "BRA",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/c5yzjyq9685t"
+    "updatedAt": "2026-06-29T19:11:27.456585Z",
+    "bbc": "https://www.bbc.com/sport/football/live/c5yzjyq9685t",
+    "transfermarktImported": true
   },
   {
     "number": 77,

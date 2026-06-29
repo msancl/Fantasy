@@ -6452,21 +6452,85 @@
     "matchNumber": 76,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          105470,
+          435338,
+          181767,
+          145707,
+          220793,
+          16306,
+          520624,
+          444523,
+          371998,
+          1012564,
+          517894
+        ],
+        "substitutes": [
+          225693,
+          808509,
+          655488,
+          971570
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          432298,
+          331560,
+          353892,
+          307870,
+          643574,
+          356141,
+          420931,
+          405397,
+          348791,
+          358504,
+          589128
+        ],
+        "substitutes": [
+          848856,
+          405385,
+          489359,
+          550580,
+          351567
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "JPN",
+        "scorerId": 643574,
+        "assistId": null,
+        "minute": 29,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BRA",
+        "scorerId": 16306,
+        "assistId": 435338,
+        "minute": 56,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BRA",
+        "scorerId": 655488,
+        "assistId": null,
+        "minute": 90,
+        "addedTime": 6,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-29T19:11:27.456585Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 77,

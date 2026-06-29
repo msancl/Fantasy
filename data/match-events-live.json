@@ -1,9 +1,9 @@
 [
   {
-    "matchNumber": 76,
+    "matchNumber": 74,
     "score": {
-      "home": 0,
-      "away": 1
+      "home": null,
+      "away": null
     },
     "lineups": {
       "home": {
@@ -15,17 +15,7 @@
         "substitutes": []
       }
     },
-    "goals": [
-      {
-        "countryId": "JPN",
-        "scorerId": 643574,
-        "assistId": null,
-        "minute": 29,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
+    "goals": [],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -33,6 +23,32 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-29T17:41:33.602571Z"
+    "updatedAt": "2026-06-29T19:11:26.009296Z"
+  },
+  {
+    "matchNumber": 75,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-06-29T19:11:26.009296Z"
   }
 ]
