@@ -6412,21 +6412,187 @@
     "matchNumber": 74,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          17259,
+          196357,
+          86202,
+          691892,
+          161056,
+          792380,
+          406640,
+          598577,
+          192565,
+          309400,
+          339314
+        ],
+        "substitutes": [
+          521964,
+          193004,
+          153084,
+          232454,
+          580195,
+          455661
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          643259,
+          215390,
+          402627,
+          273000,
+          756494,
+          323872,
+          661269,
+          861852,
+          660867,
+          272999,
+          358418
+        ],
+        "substitutes": [
+          389399,
+          285548,
+          491596,
+          678439,
+          891672,
+          234523
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "PAR",
+        "scorerId": 660867,
+        "assistId": 661269,
+        "minute": 42,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 309400,
+        "assistId": 598577,
+        "minute": 54,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 309400,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 678439,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 161056,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 215390,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 580195,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 661269,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 455661,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 234523,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 232454,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 285548,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "GER",
+        "scorerId": 196357,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "PAR",
+        "scorerId": 402627,
+        "assistId": null,
+        "minute": null,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-29T23:59:51.418923Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 75,

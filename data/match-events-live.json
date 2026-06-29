@@ -1,50 +1,5 @@
 [
   {
-    "matchNumber": 74,
-    "score": {
-      "home": 1,
-      "away": 1
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "PAR",
-        "scorerId": 660867,
-        "assistId": 661269,
-        "minute": 42,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "GER",
-        "scorerId": 309400,
-        "assistId": 598577,
-        "minute": 54,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-29T23:18:23.786303Z"
-  },
-  {
     "matchNumber": 75,
     "score": {
       "home": null,
@@ -68,6 +23,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-29T19:11:26.009296Z"
+    "updatedAt": "2026-06-29T23:59:50.138642Z"
   }
 ]
