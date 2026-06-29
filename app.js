@@ -2464,6 +2464,7 @@ function initializeTransferHistory() {
       <time datetime="${date.datetime}">${date.label}</time>
       ${createTransferTeamMarkup(transfer.fantasyTeamId)}
       <span class="transfer-number">${transferOrdinal(transfer.teamTransferNumber)}</span>
+      <span class="transfer-round">${getRoundLabel(transfer.effectiveRound || "") || "-"}</span>
       ${createTransferPlayerMarkup(transfer.playerInId)}
       <i class="transfer-swap" aria-hidden="true">⇄</i>
       ${createTransferPlayerMarkup(transfer.playerOutId)}
