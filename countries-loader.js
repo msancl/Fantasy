@@ -189,7 +189,7 @@
       );
 
       (entry.goals || []).forEach((goal) => {
-        if (goal.isOwnGoal) return;
+        if (goal.minute == null || goal.isOwnGoal) return;
         increment(
           playerById.get(goal.scorerId),
           round,

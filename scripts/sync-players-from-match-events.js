@@ -111,15 +111,14 @@ matchEvents.forEach((eventEntry) => {
   );
 
   (eventEntry.goals || []).forEach((goal) => {
-    if (!goal.isOwnGoal) {
-      increment(
-        playerById.get(goal.scorerId),
-        round,
-        goal.isPenalty ? "penalties" : "goals",
-      );
-      if (goal.assistId) {
-        increment(playerById.get(goal.assistId), round, "assists");
-      }
+    if (goal.minute == null || goal.isOwnGoal) return;
+    increment(
+      playerById.get(goal.scorerId),
+      round,
+      goal.isPenalty ? "penalties" : "goals",
+    );
+    if (goal.assistId) {
+      increment(playerById.get(goal.assistId), round, "assists");
     }
   });
 

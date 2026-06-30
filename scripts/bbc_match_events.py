@@ -312,6 +312,9 @@ def collect_bbc_goals(sport: dict, match_data: dict, lineups: dict, indexes: dic
                 continue
             for action in group.get("actions", []):
                 minute, added = parse_minute_label((action.get("timeLabel") or {}).get("value"))
+                # BBC can include shootout actions without a match minute; those are not Fantasy goals.
+                if minute is None:
+                    continue
                 action_label = str(action.get("typeLabel", {}).get("value", "")).lower()
                 is_own_goal = "own" in action_label
                 lookup_side = "away" if side == "home" and is_own_goal else "home" if side == "away" and is_own_goal else side

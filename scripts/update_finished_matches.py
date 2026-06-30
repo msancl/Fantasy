@@ -200,6 +200,10 @@ def parse_goals(source: str, match_data: dict) -> list[dict]:
         side = "home" if side_marker == "heim" else "away"
         ids = [int(value) for value in re.findall(r"leistungsdatendetails/spieler/(\d+)", action)]
         minute, added_time = parse_minute(action)
+        # Transfermarkt lists penalty shootout attempts in the goals block without a match minute.
+        # Fantasy stats only count goals during play, not the shootout.
+        if minute is None:
+            continue
         goals.append(
             {
                 "countryId": match_data["homeCountryId"] if side == "home" else match_data["awayCountryId"],
@@ -380,7 +384,7 @@ def recalculate_players(players: list, matches: list, events: list) -> None:
             register_appearance(player_by_id.get(int(player_id)), round_name)
 
         for goal in event.get("goals", []):
-            if goal.get("isOwnGoal"):
+            if goal.get("minute") is None or goal.get("isOwnGoal"):
                 continue
             scorer = player_by_id.get(int(goal["scorerId"])) if goal.get("scorerId") else None
             increment(scorer, round_name, "penalties" if goal.get("isPenalty") else "goals")
