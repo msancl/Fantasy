@@ -2391,7 +2391,8 @@
     "wentToPenalties": false,
     "updatedAt": "2026-06-29T23:59:51.418923Z",
     "bbc": "https://www.bbc.com/sport/football/live/c621z2nlj2yt",
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "bbcAssistsImported": true
   },
   {
     "number": 75,
