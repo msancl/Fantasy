@@ -2,7 +2,7 @@
   {
     "matchNumber": 77,
     "score": {
-      "home": 2,
+      "home": 3,
       "away": 0
     },
     "lineups": {
@@ -33,6 +33,15 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 342229,
+        "assistId": 566723,
+        "minute": 74,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -42,7 +51,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-06-30T22:38:16.007030Z"
+    "updatedAt": "2026-06-30T22:58:01.693802Z"
   },
   {
     "matchNumber": 79,
