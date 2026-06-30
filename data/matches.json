@@ -1447,7 +1447,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-24T05:36:41.628998Z",
-      "3d": "2026-06-26T05:51:57.726483Z"
+      "3d": "2026-06-26T05:51:57.726483Z",
+      "7d": "2026-06-30T05:43:41.942970Z"
     }
   },
   {
@@ -2054,7 +2055,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-28T05:59:01.036663Z"
+      "24h": "2026-06-28T05:59:01.036663Z",
+      "3d": "2026-06-30T05:43:41.942970Z"
     }
   },
   {
@@ -2085,7 +2087,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-06-28T05:59:01.036663Z"
+      "24h": "2026-06-28T05:59:01.036663Z",
+      "3d": "2026-06-30T05:43:41.942970Z"
     }
   },
   {
@@ -2474,7 +2477,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cpd326dj9xvt"
   },
   {
     "number": 78,
@@ -2500,7 +2503,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c3ryj7r4972t"
   },
   {
     "number": 79,
@@ -2526,7 +2529,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c1jy90n0kz5t"
   },
   {
     "number": 80,
@@ -2793,10 +2796,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-04T17:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W73",
-    "awayPlaceholder": "W75",
+    "homeCountryId": "CAN",
+    "awayCountryId": "MOR",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Houston Stadium",
     "city": "Houston",
     "transfermarktId": 4776695,
