@@ -1480,7 +1480,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-24T21:01:52.625616Z",
-      "3d": "2026-06-26T20:58:51.348302Z"
+      "3d": "2026-06-26T20:58:51.348302Z",
+      "7d": "2026-06-30T20:14:11.207680Z"
     }
   },
   {
@@ -2826,10 +2827,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-05T20:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W76",
-    "awayPlaceholder": "W78",
+    "homeCountryId": "BRA",
+    "awayCountryId": "NOR",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "New York/New Jersey Stadium",
     "city": "New Jersey",
     "transfermarktId": 4776697,

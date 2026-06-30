@@ -66,21 +66,45 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-06-30T18:06:37.338231Z"
+    "updatedAt": "2026-06-30T20:14:13.874206Z"
   },
   {
     "matchNumber": 78,
     "score": {
-      "home": 0,
-      "away": 1
+      "home": 1,
+      "away": 2
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          418651,
+          422850,
+          683895,
+          644771,
+          711980,
+          375885,
+          1390649,
+          1279526,
+          294808,
+          343052,
+          827734
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          73517,
+          661427,
+          464469,
+          328658,
+          583404,
+          308439,
+          333014,
+          316264,
+          894914,
+          418560,
+          238407
+        ],
         "substitutes": []
       }
     },
@@ -93,6 +117,24 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "CIV",
+        "scorerId": 536835,
+        "assistId": 343052,
+        "minute": 74,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "NOR",
+        "scorerId": 418560,
+        "assistId": 308439,
+        "minute": 86,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -101,7 +143,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-06-30T18:06:37.338231Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-06-30T20:14:13.874206Z"
   }
 ]
