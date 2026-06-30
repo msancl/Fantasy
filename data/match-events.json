@@ -6651,21 +6651,94 @@
     "matchNumber": 77,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          182906,
+          495666,
+          344695,
+          126664,
+          411975,
+          413112,
+          182913,
+          708265,
+          566723,
+          342229,
+          288230
+        ],
+        "substitutes": [
+          339808,
+          620322,
+          607223,
+          914562,
+          420002
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          549440,
+          485395,
+          184573,
+          362108,
+          579287,
+          866246,
+          667287,
+          687622,
+          583189,
+          349066,
+          325443
+        ],
+        "substitutes": [
+          715653,
+          342405,
+          475949,
+          731771,
+          320440
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "FRA",
+        "scorerId": 342229,
+        "assistId": 288230,
+        "minute": 45,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 708265,
+        "assistId": 566723,
+        "minute": 53,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 342229,
+        "assistId": 566723,
+        "minute": 74,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        182906,
+        495666,
+        344695,
+        126664,
+        411975,
+        339808,
+        620322
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-06-30T23:10:31.156908Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 78,
