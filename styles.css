@@ -251,6 +251,23 @@
   text-align: center;
 }
 
+.fixture-penalty-score {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  padding: 2px 8px;
+  border: 1px solid rgba(245, 180, 46, 0.26);
+  border-radius: 999px;
+  background: rgba(245, 180, 46, 0.06);
+  color: #d7b765;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
 .fixture-details-toggle {
   position: relative;
   display: grid;
@@ -571,6 +588,12 @@
     width: 22px;
     height: 26px;
     font-size: 0.78rem;
+  }
+
+  .fixture-penalty-score {
+    min-width: 56px;
+    padding: 2px 6px;
+    font-size: 0.58rem;
   }
 
   .fixture-details-toggle {

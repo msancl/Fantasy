@@ -1650,6 +1650,18 @@ function initializeWorldCupFixtures() {
     };
   };
 
+  const shootoutScore = (match) => {
+    const score = match.score || {};
+    if (
+      !match.wentToPenalties ||
+      score.penaltiesHome == null ||
+      score.penaltiesAway == null
+    ) {
+      return null;
+    }
+    return { home: score.penaltiesHome, away: score.penaltiesAway };
+  };
+
   const matchResults = Object.fromEntries(
     matchData.map((match) => {
       const eventEntry = eventsByMatchNumber.get(match.number);
@@ -1658,6 +1670,7 @@ function initializeWorldCupFixtures() {
         {
           home: buildTeamMatchResult(match, eventEntry, "home"),
           away: buildTeamMatchResult(match, eventEntry, "away"),
+          shootout: shootoutScore(match),
         },
       ];
     }),
@@ -1894,6 +1907,11 @@ function initializeWorldCupFixtures() {
                               <i>-</i>
                               <b>${result?.away.score ?? scorePlaceholder}</b>
                             </span>
+                            ${
+                              result?.shootout
+                                ? `<span class="fixture-penalty-score">TAB ${result.shootout.home}-${result.shootout.away}</span>`
+                                : ""
+                            }
                           </span>
                           ${teamIdentityMarkup(fixture.a, fixture.ap)}
                         </div>

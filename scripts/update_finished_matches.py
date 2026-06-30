@@ -277,25 +277,81 @@ def clean_sheet_ids(ids: list[int], player_by_id: dict[int, dict]) -> list[int]:
     return clean_ids
 
 
+def match_play_score(match_data: dict, goals: list[dict]) -> tuple[int, int]:
+    home_country_id = match_data["homeCountryId"]
+    away_country_id = match_data["awayCountryId"]
+    return (
+        sum(1 for goal in goals if goal.get("countryId") == home_country_id),
+        sum(1 for goal in goals if goal.get("countryId") == away_country_id),
+    )
+
+
+def split_score_and_shootout(
+    transfermarkt_score: tuple[int, int], match_data: dict, goals: list[dict]
+) -> dict:
+    final_home_score, final_away_score = transfermarkt_score
+    play_home_score, play_away_score = match_play_score(match_data, goals)
+
+    penalty_home_score = final_home_score - play_home_score
+    penalty_away_score = final_away_score - play_away_score
+    has_shootout_score = (
+        penalty_home_score >= 0
+        and penalty_away_score >= 0
+        and (penalty_home_score > 0 or penalty_away_score > 0)
+        and play_home_score == play_away_score
+    )
+
+    if not has_shootout_score:
+        return {
+            "home": final_home_score,
+            "away": final_away_score,
+            "penaltiesHome": None,
+            "penaltiesAway": None,
+            "wentToPenalties": False,
+        }
+
+    return {
+        "home": play_home_score,
+        "away": play_away_score,
+        "penaltiesHome": penalty_home_score,
+        "penaltiesAway": penalty_away_score,
+        "wentToPenalties": True,
+    }
+
+
+def winner_country_id(match_data: dict, score: dict) -> str | None:
+    if score.get("wentToPenalties"):
+        home_value = score.get("penaltiesHome")
+        away_value = score.get("penaltiesAway")
+    else:
+        home_value = score.get("home")
+        away_value = score.get("away")
+
+    if home_value is None or away_value is None or home_value == away_value:
+        return None
+    return match_data["homeCountryId"] if home_value > away_value else match_data["awayCountryId"]
+
+
 def parse_match_page(source: str, match_data: dict, player_by_id: dict[int, dict]) -> dict | None:
-    score = parse_score(source)
-    if not score:
+    transfermarkt_score = parse_score(source)
+    if not transfermarkt_score:
         return None
 
-    home_score, away_score = score
     lineups = parse_lineups(source)
     goals = parse_goals(source, match_data)
+    score = split_score_and_shootout(transfermarkt_score, match_data, goals)
     penalties_saved = parse_missed_penalties(source, player_by_id)
     home_participants = lineups["home"]["starters"] + lineups["home"]["substitutes"]
     away_participants = lineups["away"]["starters"] + lineups["away"]["substitutes"]
 
     return {
-        "score": {"home": home_score, "away": away_score},
+        "score": score,
+        "winnerCountryId": winner_country_id(match_data, score),
         "lineups": lineups,
         "goals": goals,
         "cleanSheets": {
-            "homePlayerIds": clean_sheet_ids(home_participants, player_by_id) if away_score == 0 else [],
-            "awayPlayerIds": clean_sheet_ids(away_participants, player_by_id) if home_score == 0 else [],
+            "homePlayerIds": clean_sheet_ids(home_participants, player_by_id) if score["away"] == 0 else [],
+            "awayPlayerIds": clean_sheet_ids(away_participants, player_by_id) if score["home"] == 0 else [],
         },
         "penaltiesSaved": penalties_saved,
     }
@@ -484,18 +540,12 @@ def main() -> int:
         away_score = parsed["score"]["away"]
         match_data["score"]["home"] = home_score
         match_data["score"]["away"] = away_score
-        match_data["score"]["penaltiesHome"] = None
-        match_data["score"]["penaltiesAway"] = None
+        match_data["score"]["penaltiesHome"] = parsed["score"].get("penaltiesHome")
+        match_data["score"]["penaltiesAway"] = parsed["score"].get("penaltiesAway")
         match_data["status"] = "finished"
-        match_data["winnerCountryId"] = (
-            None
-            if home_score == away_score
-            else match_data["homeCountryId"]
-            if home_score > away_score
-            else match_data["awayCountryId"]
-        )
+        match_data["winnerCountryId"] = parsed.get("winnerCountryId")
         match_data["wentToExtraTime"] = False
-        match_data["wentToPenalties"] = False
+        match_data["wentToPenalties"] = bool(parsed["score"].get("wentToPenalties"))
         match_data["updatedAt"] = imported_at
 
         event = event_by_match.get(number)
