@@ -2528,7 +2528,10 @@
     "updatedAt": "2026-06-30T21:37:50.314171Z",
     "bbc": "https://www.bbc.com/sport/football/live/c3ryj7r4972t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-01T18:17:46.995565Z"
+    }
   },
   {
     "number": 79,
@@ -2875,10 +2878,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-06T00:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W79",
-    "awayPlaceholder": "W80",
+    "homeCountryId": "MEX",
+    "awayCountryId": "ENG",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Mexico City Stadium",
     "city": "Mexico City",
     "transfermarktId": 4776698,
