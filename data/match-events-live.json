@@ -1,77 +1,80 @@
 [
   {
-    "matchNumber": 79,
+    "matchNumber": 80,
     "score": {
-      "home": 2,
-      "away": 0
+      "home": null,
+      "away": null
     },
     "lineups": {
       "home": {
-        "starters": [
-          802855,
-          344854,
-          532937,
-          387687,
-          356044,
-          532938,
-          602324,
-          1155723,
-          416090,
-          206040,
-          353583
-        ],
+        "starters": [],
         "substitutes": []
       },
       "away": {
-        "starters": [
-          77127,
-          659813,
-          661171,
-          893661,
-          400960,
-          903611,
-          659806,
-          687626,
-          439914,
-          139503,
-          592735
-        ],
+        "starters": [],
         "substitutes": []
       }
     },
-    "goals": [
-      {
-        "countryId": "MEX",
-        "scorerId": 416090,
-        "assistId": 353583,
-        "minute": 22,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "MEX",
-        "scorerId": 206040,
-        "assistId": 416090,
-        "minute": 31,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
+    "goals": [],
     "cleanSheets": {
-      "homePlayerIds": [
-        802855,
-        344854,
-        532937,
-        387687,
-        356044
-      ],
+      "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-07-01T04:48:45.120486Z"
+    "lineupSource": null,
+    "updatedAt": "2026-07-01T05:20:44.411116Z"
+  },
+  {
+    "matchNumber": 81,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-01T05:20:44.411116Z"
+  },
+  {
+    "matchNumber": 82,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-01T05:20:44.411116Z"
   }
 ]

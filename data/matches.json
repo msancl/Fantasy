@@ -2544,17 +2544,19 @@
     "transfermarktId": 4776685,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776685",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "MEX",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/c1jy90n0kz5t"
+    "updatedAt": "2026-07-01T05:20:47.578476Z",
+    "bbc": "https://www.bbc.com/sport/football/live/c1jy90n0kz5t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 80,
