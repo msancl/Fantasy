@@ -2,8 +2,8 @@
   {
     "matchNumber": 80,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 1
     },
     "lineups": {
       "home": {
@@ -15,7 +15,17 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "COD",
+        "scorerId": 700565,
+        "assistId": 203348,
+        "minute": 7,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -23,7 +33,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-01T05:20:44.411116Z"
+    "updatedAt": "2026-07-01T16:15:30.326167Z"
   },
   {
     "matchNumber": 81,
