@@ -75,7 +75,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-01T20:17:02.623055Z"
+    "updatedAt": "2026-07-01T21:50:28.088492Z"
   },
   {
     "matchNumber": 81,
@@ -106,8 +106,8 @@
   {
     "matchNumber": 82,
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 2
     },
     "lineups": {
       "home": {
@@ -119,7 +119,35 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "SEN",
+        "scorerId": 876631,
+        "assistId": null,
+        "minute": 25,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SEN",
+        "scorerId": 410225,
+        "assistId": 291200,
+        "minute": 51,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 96341,
+        "assistId": 100986,
+        "minute": 86,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -127,6 +155,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-01T20:17:02.623055Z"
+    "updatedAt": "2026-07-01T21:50:28.088492Z"
   }
 ]
