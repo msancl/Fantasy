@@ -3324,14 +3324,14 @@
         "note": null
       },
       {
-        "slotId": "starter-04",
+        "slotId": "transfer-03",
         "slotType": "starter",
-        "playerId": 161056,
+        "playerId": 474800,
         "position": "DF",
-        "joinedRound": "J1",
+        "joinedRound": "R16",
         "leftRound": null,
         "replacedByPlayerId": null,
-        "replacesPlayerId": null,
+        "replacesPlayerId": 161056,
         "note": null
       },
       {
@@ -3357,6 +3357,17 @@
         "note": null
       },
       {
+        "slotId": "transfer-02",
+        "slotType": "starter",
+        "playerId": 708265,
+        "position": "MIL",
+        "joinedRound": "R16",
+        "leftRound": null,
+        "replacedByPlayerId": null,
+        "replacesPlayerId": 598577,
+        "note": null
+      },
+      {
         "slotId": "transfer-01",
         "slotType": "starter",
         "playerId": 474701,
@@ -3365,17 +3376,6 @@
         "leftRound": null,
         "replacedByPlayerId": null,
         "replacesPlayerId": 411295,
-        "note": null
-      },
-      {
-        "slotId": "starter-07",
-        "slotType": "starter",
-        "playerId": 598577,
-        "position": "MIL",
-        "joinedRound": "J1",
-        "leftRound": null,
-        "replacedByPlayerId": null,
-        "replacesPlayerId": null,
         "note": null
       },
       {
@@ -3419,6 +3419,28 @@
         "joinedRound": "J1",
         "leftRound": null,
         "replacedByPlayerId": null,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-04",
+        "slotType": "starter",
+        "playerId": 161056,
+        "position": "DF",
+        "joinedRound": "J1",
+        "leftRound": "R32",
+        "replacedByPlayerId": 474800,
+        "replacesPlayerId": null,
+        "note": null
+      },
+      {
+        "slotId": "starter-07",
+        "slotType": "starter",
+        "playerId": 598577,
+        "position": "MIL",
+        "joinedRound": "J1",
+        "leftRound": "R32",
+        "replacedByPlayerId": 708265,
         "replacesPlayerId": null,
         "note": null
       },
