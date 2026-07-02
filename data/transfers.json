@@ -98,5 +98,15 @@
     "playerOutId": 161056,
     "effectiveRound": "R16",
     "isFreeTransfer": true
+  },
+  {
+    "id": "bogosteam-fc-02",
+    "date": "2026-07-02T06:44:00Z",
+    "fantasyTeamId": "bogosteam-fc",
+    "teamTransferNumber": 2,
+    "playerInId": 708265,
+    "playerOutId": 598577,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
   }
 ]

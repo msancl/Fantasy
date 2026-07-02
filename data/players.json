@@ -6859,9 +6859,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 5,
+          "selectedBy": 4,
           "maximumSelections": 2,
-          "selectionPercentage": 16.13
+          "selectionPercentage": 12.9
         },
         "totals": {
           "matchesPlayed": 4,
@@ -62553,10 +62553,10 @@
         "dreamTeamName": "Bradley Barcola",
         "price": null,
         "availability": {
-          "status": "available",
-          "selectedBy": 1,
+          "status": "unavailable",
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 4,
