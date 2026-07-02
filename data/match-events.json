@@ -6994,21 +6994,82 @@
     "matchNumber": 81,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          500309,
+          578539,
+          145466,
+          349701,
+          361104,
+          985806,
+          332705,
+          332697,
+          467437,
+          315779,
+          503770
+        ],
+        "substitutes": [
+          734761,
+          504215,
+          627207
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          248454,
+          679423,
+          422051,
+          384568,
+          94005,
+          519184,
+          226097,
+          651269,
+          929994,
+          335457,
+          28396
+        ],
+        "substitutes": [
+          787907,
+          638990,
+          803049,
+          925862,
+          203123
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "USA",
+        "scorerId": 503770,
+        "assistId": null,
+        "minute": 45,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 467437,
+        "assistId": null,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        500309,
+        578539,
+        145466,
+        349701,
+        361104,
+        985806
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-07-02T02:22:52.846793Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 82,

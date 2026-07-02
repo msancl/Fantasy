@@ -2611,17 +2611,18 @@
     "transfermarktId": 4776687,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776687",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "USA",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cx2j51v3veet"
+    "updatedAt": "2026-07-02T02:22:52.846793Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cx2j51v3veet",
+    "transfermarktImported": true
   },
   {
     "number": 82,
