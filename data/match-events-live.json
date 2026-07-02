@@ -28,7 +28,7 @@
   {
     "matchNumber": 84,
     "score": {
-      "home": 0,
+      "home": 2,
       "away": 0
     },
     "lineups": {
@@ -41,7 +41,26 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ESP",
+        "scorerId": 351478,
+        "assistId": 284857,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ESP",
+        "scorerId": 553875,
+        "assistId": 548111,
+        "minute": 66,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -49,7 +68,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-02T19:46:54.064535Z"
+    "updatedAt": "2026-07-02T20:45:38.189598Z"
   },
   {
     "matchNumber": 85,
