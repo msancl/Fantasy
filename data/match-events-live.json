@@ -2,8 +2,8 @@
   {
     "matchNumber": 81,
     "score": {
-      "home": null,
-      "away": null
+      "home": 0,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -23,102 +23,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-02T00:04:06.229197Z"
-  },
-  {
-    "matchNumber": 82,
-    "score": {
-      "home": 3,
-      "away": 2
-    },
-    "lineups": {
-      "home": {
-        "starters": [
-          108390,
-          429915,
-          368891,
-          236168,
-          262226,
-          137576,
-          249565,
-          486049,
-          88755,
-          144028,
-          435772
-        ],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [
-          164904,
-          375137,
-          291200,
-          525578,
-          490426,
-          485963,
-          126665,
-          876631,
-          200512,
-          410225,
-          623570
-        ],
-        "substitutes": []
-      }
-    },
-    "goals": [
-      {
-        "countryId": "SEN",
-        "scorerId": 876631,
-        "assistId": null,
-        "minute": 25,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "SEN",
-        "scorerId": 410225,
-        "assistId": 291200,
-        "minute": 51,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BEL",
-        "scorerId": 96341,
-        "assistId": 100986,
-        "minute": 86,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BEL",
-        "scorerId": 249565,
-        "assistId": 144028,
-        "minute": 89,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BEL",
-        "scorerId": 249565,
-        "assistId": null,
-        "minute": 120,
-        "addedTime": 5,
-        "isPenalty": true,
-        "isOwnGoal": false
-      }
-    ],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-07-02T00:04:06.229197Z"
+    "updatedAt": "2026-07-02T00:10:10.609458Z"
   }
 ]
