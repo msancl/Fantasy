@@ -1,1 +1,90 @@
-[]
+[
+  {
+    "matchNumber": 83,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-02T19:39:23.518502Z"
+  },
+  {
+    "matchNumber": 84,
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "ESP",
+        "scorerId": 351478,
+        "assistId": 284857,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-02T19:39:23.518502Z"
+  },
+  {
+    "matchNumber": 85,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-02T19:39:23.518502Z"
+  }
+]
