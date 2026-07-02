@@ -1744,7 +1744,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-26T01:32:49.812186Z",
-      "3d": "2026-06-28T01:35:28.316871Z"
+      "3d": "2026-06-28T01:35:28.316871Z",
+      "7d": "2026-07-02T04:16:12.032044Z"
     }
   },
   {
@@ -1776,7 +1777,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-26T01:32:49.812186Z",
-      "3d": "2026-06-28T01:35:28.316871Z"
+      "3d": "2026-06-28T01:35:28.316871Z",
+      "7d": "2026-07-02T04:16:12.032044Z"
     }
   },
   {
@@ -2567,7 +2569,10 @@
     "updatedAt": "2026-07-01T05:20:47.578476Z",
     "bbc": "https://www.bbc.com/sport/football/live/c1jy90n0kz5t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-02T04:16:12.032044Z"
+    }
   },
   {
     "number": 80,
@@ -2622,7 +2627,8 @@
     "wentToPenalties": false,
     "updatedAt": "2026-07-02T02:22:52.846793Z",
     "bbc": "https://www.bbc.com/sport/football/live/cx2j51v3veet",
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "bbcAssistsImported": true
   },
   {
     "number": 82,
@@ -2676,7 +2682,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cvgl19we7v9t"
   },
   {
     "number": 84,
@@ -2702,7 +2708,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c8j2wvnzkvzt"
   },
   {
     "number": 85,
@@ -2728,7 +2734,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cyv05me9d6rt"
   },
   {
     "number": 86,
@@ -2943,10 +2949,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-07T00:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W81",
-    "awayPlaceholder": "W82",
+    "homeCountryId": "USA",
+    "awayCountryId": "BEL",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Seattle Stadium",
     "city": "Seattle",
     "transfermarktId": 4776700,
