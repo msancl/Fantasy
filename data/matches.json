@@ -2453,7 +2453,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-07-01T04:48:41.652966Z"
+      "24h": "2026-07-01T04:48:41.652966Z",
+      "3d": "2026-07-03T01:21:33.248078Z"
     }
   },
   {
@@ -2637,7 +2638,10 @@
     "updatedAt": "2026-07-02T02:22:52.846793Z",
     "bbc": "https://www.bbc.com/sport/football/live/cx2j51v3veet",
     "transfermarktImported": true,
-    "bbcAssistsImported": true
+    "bbcAssistsImported": true,
+    "rechecks": {
+      "24h": "2026-07-03T01:21:33.248078Z"
+    }
   },
   {
     "number": 82,
@@ -2935,10 +2939,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-06T19:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W83",
-    "awayPlaceholder": "W84",
+    "homeCountryId": "POR",
+    "awayCountryId": "ESP",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Dallas Stadium",
     "city": "Dallas",
     "transfermarktId": 4776702,
