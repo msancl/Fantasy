@@ -3,7 +3,7 @@
     "matchNumber": 86,
     "score": {
       "home": 1,
-      "away": 0
+      "away": 1
     },
     "lineups": {
       "home": {
@@ -24,6 +24,15 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "CPV",
+        "scorerId": 432852,
+        "assistId": 111627,
+        "minute": 59,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -33,7 +42,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-03T22:43:29.399339Z"
+    "updatedAt": "2026-07-03T23:43:17.126211Z"
   },
   {
     "matchNumber": 87,
@@ -128,6 +137,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-03T22:43:29.399339Z"
+    "updatedAt": "2026-07-03T23:43:17.126211Z"
   }
 ]

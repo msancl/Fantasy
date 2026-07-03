@@ -2706,7 +2706,10 @@
     "updatedAt": "2026-07-03T06:34:11.990520Z",
     "bbc": "https://www.bbc.com/sport/football/live/cvgl19we7v9t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-03T23:43:15.278368Z"
+    }
   },
   {
     "number": 84,
