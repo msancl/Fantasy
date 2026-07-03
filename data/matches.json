@@ -2690,17 +2690,19 @@
     "transfermarktId": 4776689,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776689",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "POR",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cvgl19we7v9t"
+    "updatedAt": "2026-07-03T06:34:11.990520Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cvgl19we7v9t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 84,
@@ -2716,17 +2718,19 @@
     "transfermarktId": 4776690,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776690",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 3,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "ESP",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/c8j2wvnzkvzt"
+    "updatedAt": "2026-07-03T06:34:11.990520Z",
+    "bbc": "https://www.bbc.com/sport/football/live/c8j2wvnzkvzt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 85,
@@ -2742,17 +2746,19 @@
     "transfermarktId": 4776691,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776691",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 0,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "SWI",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cyv05me9d6rt"
+    "updatedAt": "2026-07-03T06:34:11.990520Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cyv05me9d6rt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 86,
