@@ -2,8 +2,8 @@
   {
     "matchNumber": 86,
     "score": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "lineups": {
       "home": {
@@ -15,7 +15,17 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 480762,
+        "minute": 29,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -23,7 +33,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-03T21:45:34.368827Z"
+    "updatedAt": "2026-07-03T22:43:29.399339Z"
   },
   {
     "matchNumber": 87,
@@ -118,6 +128,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-03T21:45:34.368827Z"
+    "updatedAt": "2026-07-03T22:43:29.399339Z"
   }
 ]
