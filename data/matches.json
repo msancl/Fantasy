@@ -1942,7 +1942,8 @@
     "bbcAssistsImported": true,
     "rechecks": {
       "24h": "2026-06-27T05:31:44.751732Z",
-      "3d": "2026-06-29T06:26:36.489029Z"
+      "3d": "2026-06-29T06:26:36.489029Z",
+      "7d": "2026-07-03T05:02:47.293376Z"
     }
   },
   {
@@ -1974,7 +1975,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-27T05:31:44.751732Z",
-      "3d": "2026-06-29T06:26:36.489029Z"
+      "3d": "2026-06-29T06:26:36.489029Z",
+      "7d": "2026-07-03T05:02:47.293376Z"
     }
   },
   {
@@ -2776,7 +2778,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cz75y0v8qrjt"
   },
   {
     "number": 87,
@@ -2802,7 +2804,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cnv9g087mzyt"
   },
   {
     "number": 88,
@@ -2828,7 +2830,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cwy016e9y9jt"
   },
   {
     "number": 89,
