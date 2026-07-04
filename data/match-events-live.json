@@ -29,15 +29,39 @@
     "matchNumber": 90,
     "score": {
       "home": 0,
-      "away": 1
+      "away": 3
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          189014,
+          417348,
+          921995,
+          1089202,
+          637446,
+          995642,
+          512913,
+          1045375,
+          638793,
+          972465,
+          533738
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          207834,
+          340456,
+          913660,
+          272622,
+          398073,
+          901019,
+          1097139,
+          654982,
+          593482,
+          314678,
+          702869
+        ],
         "substitutes": []
       }
     },
@@ -50,15 +74,39 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "MOR",
+        "scorerId": 593482,
+        "assistId": 314678,
+        "minute": 82,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "MOR",
+        "scorerId": 598506,
+        "assistId": 314678,
+        "minute": 90,
+        "addedTime": 8,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
       "homePlayerIds": [],
-      "awayPlayerIds": []
+      "awayPlayerIds": [
+        207834,
+        340456,
+        913660,
+        272622,
+        398073
+      ]
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-07-04T18:32:43.571714Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-07-04T19:47:35.498743Z"
   }
 ]
