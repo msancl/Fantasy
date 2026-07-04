@@ -2,16 +2,40 @@
   {
     "matchNumber": 86,
     "score": {
-      "home": 1,
-      "away": 1
+      "home": 3,
+      "away": 2
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          111873,
+          474800,
+          480762,
+          355915,
+          424042,
+          576028,
+          648195,
+          534033,
+          255901,
+          406625,
+          28003
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          242277,
+          611855,
+          349570,
+          166158,
+          203517,
+          544586,
+          448466,
+          432852,
+          258513,
+          111627,
+          306166
+        ],
         "substitutes": []
       }
     },
@@ -33,6 +57,33 @@
         "addedTime": null,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 480762,
+        "assistId": 534033,
+        "minute": 92,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CPV",
+        "scorerId": 611855,
+        "assistId": 620307,
+        "minute": 103,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 349570,
+        "assistId": null,
+        "minute": 111,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
       }
     ],
     "cleanSheets": {
@@ -41,8 +92,8 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-07-03T23:43:17.126211Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-07-04T01:17:04.395496Z"
   },
   {
     "matchNumber": 87,
@@ -68,7 +119,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-03T06:34:06.396179Z"
+    "updatedAt": "2026-07-04T01:17:04.395496Z"
   },
   {
     "matchNumber": 88,
@@ -137,6 +188,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-03T23:43:17.126211Z"
+    "updatedAt": "2026-07-04T01:17:04.395496Z"
   }
 ]

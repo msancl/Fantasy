@@ -2138,7 +2138,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-28T01:35:28.316871Z",
-      "3d": "2026-06-30T01:27:43.140201Z"
+      "3d": "2026-06-30T01:27:43.140201Z",
+      "7d": "2026-07-04T01:17:02.629174Z"
     }
   },
   {
@@ -2170,7 +2171,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-28T01:35:28.316871Z",
-      "3d": "2026-06-30T01:27:43.140201Z"
+      "3d": "2026-06-30T01:27:43.140201Z",
+      "7d": "2026-07-04T01:17:02.629174Z"
     }
   },
   {
@@ -2584,7 +2586,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-07-02T04:16:12.032044Z"
+      "24h": "2026-07-02T04:16:12.032044Z",
+      "3d": "2026-07-04T01:17:02.629174Z"
     }
   },
   {
@@ -3009,10 +3012,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-07T16:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W86",
-    "awayPlaceholder": "W88",
+    "homeCountryId": "ARG",
+    "awayCountryId": "EGY",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Atlanta Stadium",
     "city": "Atlanta",
     "transfermarktId": 4776701,
