@@ -34964,9 +34964,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -99242,9 +99242,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 8,
+          "selectedBy": 7,
           "maximumSelections": 2,
-          "selectionPercentage": 25.81
+          "selectionPercentage": 22.58
         },
         "totals": {
           "matchesPlayed": 4,

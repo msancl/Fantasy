@@ -128,5 +128,15 @@
     "playerOutId": 580195,
     "effectiveRound": "R16",
     "isFreeTransfer": true
+  },
+  {
+    "id": "lethal-weapon-athletic-01",
+    "date": "2026-07-04T07:21:00Z",
+    "fantasyTeamId": "lethal-weapon-athletic",
+    "teamTransferNumber": 1,
+    "playerInId": 341429,
+    "playerOutId": 139208,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
   }
 ]
