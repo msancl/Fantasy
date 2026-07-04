@@ -2336,7 +2336,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-28T23:40:03.843953Z",
-      "3d": "2026-07-01T00:04:45.204340Z"
+      "3d": "2026-07-01T00:04:45.204340Z",
+      "7d": "2026-07-04T23:36:52.752724Z"
     }
   },
   {
@@ -2368,7 +2369,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-28T23:40:03.843953Z",
-      "3d": "2026-07-01T00:04:45.204340Z"
+      "3d": "2026-07-01T00:04:45.204340Z",
+      "7d": "2026-07-04T23:36:52.752724Z"
     }
   },
   {
@@ -3084,10 +3086,10 @@
     "stage": "qf",
     "group": null,
     "kickoff": "2026-07-09T20:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W89",
-    "awayPlaceholder": "W90",
+    "homeCountryId": "FRA",
+    "awayCountryId": "MOR",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Boston Stadium",
     "city": "Boston",
     "transfermarktId": 4776703,
