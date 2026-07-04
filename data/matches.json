@@ -2074,7 +2074,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-28T05:59:01.036663Z",
-      "3d": "2026-06-30T05:43:41.942970Z"
+      "3d": "2026-06-30T05:43:41.942970Z",
+      "7d": "2026-07-04T04:54:20.803957Z"
     }
   },
   {
@@ -2106,7 +2107,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-06-28T05:59:01.036663Z",
-      "3d": "2026-06-30T05:43:41.942970Z"
+      "3d": "2026-06-30T05:43:41.942970Z",
+      "7d": "2026-07-04T04:54:20.803957Z"
     }
   },
   {
@@ -2771,7 +2773,10 @@
     "updatedAt": "2026-07-03T06:34:11.990520Z",
     "bbc": "https://www.bbc.com/sport/football/live/cyv05me9d6rt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-04T04:54:20.803957Z"
+    }
   },
   {
     "number": 86,
@@ -2880,7 +2885,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cdx7jwdy5ndt"
   },
   {
     "number": 90,
@@ -2906,7 +2911,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cx2jw3e9gq0t"
   },
   {
     "number": 91,
@@ -3043,10 +3048,10 @@
     "stage": "r16",
     "group": null,
     "kickoff": "2026-07-07T20:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W85",
-    "awayPlaceholder": "W87",
+    "homeCountryId": "SWI",
+    "awayCountryId": "COL",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "BC Place Vancouver",
     "city": "Vancouver",
     "transfermarktId": 4776699,
