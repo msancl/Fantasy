@@ -108,5 +108,25 @@
     "playerOutId": 598577,
     "effectiveRound": "R16",
     "isFreeTransfer": true
+  },
+  {
+    "id": "san-mateo-02",
+    "date": "2026-07-04T04:41:00Z",
+    "fantasyTeamId": "san-mateo",
+    "teamTransferNumber": 2,
+    "playerInId": 144028,
+    "playerOutId": 598577,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "san-mateo-03",
+    "date": "2026-07-04T04:41:00Z",
+    "fantasyTeamId": "san-mateo",
+    "teamTransferNumber": 3,
+    "playerInId": 517894,
+    "playerOutId": 580195,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
   }
 ]

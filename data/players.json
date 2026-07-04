@@ -6859,9 +6859,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 4,
+          "selectedBy": 3,
           "maximumSelections": 2,
-          "selectionPercentage": 12.9
+          "selectionPercentage": 9.68
         },
         "totals": {
           "matchesPlayed": 4,
@@ -6961,9 +6961,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 6,
+          "selectedBy": 5,
           "maximumSelections": 2,
-          "selectionPercentage": 19.35
+          "selectionPercentage": 16.13
         },
         "totals": {
           "matchesPlayed": 4,
@@ -23311,9 +23311,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -29033,9 +29033,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
