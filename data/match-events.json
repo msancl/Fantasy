@@ -7438,21 +7438,105 @@
     "matchNumber": 86,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          111873,
+          355915,
+          480762,
+          474800,
+          424042,
+          255901,
+          648195,
+          534033,
+          576028,
+          28003,
+          406625
+        ],
+        "substitutes": [
+          131225,
+          402733,
+          166237,
+          486031,
+          576024
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          242277,
+          349570,
+          166158,
+          611855,
+          203517,
+          258513,
+          544586,
+          432852,
+          111627,
+          448466,
+          306166
+        ],
+        "substitutes": [
+          620307,
+          272930,
+          531450,
+          840836,
+          820252,
+          676411
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 480762,
+        "minute": 29,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CPV",
+        "scorerId": 432852,
+        "assistId": 111627,
+        "minute": 59,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 480762,
+        "assistId": 534033,
+        "minute": 92,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "CPV",
+        "scorerId": 611855,
+        "assistId": 620307,
+        "minute": 103,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 355915,
+        "assistId": null,
+        "minute": 111,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-07-04T02:37:02.246266Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 87,
@@ -7478,21 +7562,78 @@
     "matchNumber": 88,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          983578,
+          867137,
+          298091,
+          1279984,
+          136834,
+          855731,
+          385918,
+          192557,
+          522223,
+          746891,
+          956920
+        ],
+        "substitutes": [
+          128969,
+          1064377,
+          691326,
+          265625,
+          255729,
+          742770
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          661455,
+          237425,
+          172623,
+          333004,
+          343974,
+          340303,
+          734542,
+          604008,
+          896616,
+          148455,
+          445939
+        ],
+        "substitutes": [
+          737524,
+          729390,
+          234189,
+          620164,
+          1259085
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "EGY",
+        "scorerId": 604008,
+        "assistId": 333004,
+        "minute": 13,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "AUS",
+        "scorerId": 343974,
+        "assistId": null,
+        "minute": 55,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": true
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-07-04T02:37:02.246266Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 89,
