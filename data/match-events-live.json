@@ -1,31 +1,5 @@
 [
   {
-    "matchNumber": 93,
-    "score": {
-      "home": 0,
-      "away": 0
-    },
-    "lineups": {
-      "home": {
-        "starters": [],
-        "substitutes": []
-      },
-      "away": {
-        "starters": [],
-        "substitutes": []
-      }
-    },
-    "goals": [],
-    "cleanSheets": {
-      "homePlayerIds": [],
-      "awayPlayerIds": []
-    },
-    "penaltiesSaved": [],
-    "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-07-06T20:25:16.905771Z"
-  },
-  {
     "matchNumber": 94,
     "score": {
       "home": null,
@@ -49,6 +23,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-06T16:00:55.493297Z"
+    "updatedAt": "2026-07-06T21:05:58.698359Z"
   }
 ]
