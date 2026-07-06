@@ -138,5 +138,65 @@
     "playerOutId": 139208,
     "effectiveRound": "R16",
     "isFreeTransfer": true
+  },
+  {
+    "id": "u2-united-02",
+    "date": "2026-07-04T13:15:00Z",
+    "fantasyTeamId": "u2-united",
+    "teamTransferNumber": 2,
+    "playerInId": 424042,
+    "playerOutId": 86202,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "schtumpik-rovers-01",
+    "date": "2026-07-04T13:15:00Z",
+    "fantasyTeamId": "schtumpik-rovers",
+    "teamTransferNumber": 1,
+    "playerInId": 480762,
+    "playerOutId": 349599,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "schtumpik-rovers-02",
+    "date": "2026-07-04T13:15:00Z",
+    "fantasyTeamId": "schtumpik-rovers",
+    "teamTransferNumber": 2,
+    "playerInId": 588989,
+    "playerOutId": 487469,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "new-atomic-01",
+    "date": "2026-07-04T13:46:00Z",
+    "fantasyTeamId": "new-atomic",
+    "teamTransferNumber": 1,
+    "playerInId": 553875,
+    "playerOutId": 86202,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "golden-boys-waterloo-01",
+    "date": "2026-07-04T13:46:00Z",
+    "fantasyTeamId": "golden-boys-waterloo",
+    "teamTransferNumber": 1,
+    "playerInId": 534033,
+    "playerOutId": 580195,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "golden-boys-waterloo-02",
+    "date": "2026-07-04T13:46:00Z",
+    "fantasyTeamId": "golden-boys-waterloo",
+    "teamTransferNumber": 2,
+    "playerInId": 517894,
+    "playerOutId": 228645,
+    "effectiveRound": "R16",
+    "isFreeTransfer": true
   }
 ]

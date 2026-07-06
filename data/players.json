@@ -5635,9 +5635,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 4,
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 12.9
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 4,
@@ -6961,9 +6961,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 5,
+          "selectedBy": 4,
           "maximumSelections": 2,
-          "selectionPercentage": 16.13
+          "selectionPercentage": 12.9
         },
         "totals": {
           "matchesPlayed": 4,
@@ -13911,10 +13911,10 @@
         "dreamTeamName": "Lisandro Martínez",
         "price": null,
         "availability": {
-          "status": "available",
-          "selectedBy": 1,
+          "status": "unavailable",
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 3,
@@ -14116,9 +14116,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 3,
@@ -14422,9 +14422,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -29032,10 +29032,10 @@
         "dreamTeamName": "Matheus Santos Carneiro da Cunha",
         "price": null,
         "availability": {
-          "status": "available",
-          "selectedBy": 1,
+          "status": "unavailable",
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 5,
@@ -36188,9 +36188,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -51212,9 +51212,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 1,
+          "selectedBy": 0,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 0.0
         },
         "totals": {
           "matchesPlayed": 2,
@@ -56832,9 +56832,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 2,
@@ -100874,9 +100874,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 1,
+          "selectedBy": 0,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 0.0
         },
         "totals": {
           "matchesPlayed": 1,
@@ -103327,9 +103327,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 3,
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 9.68
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 4,
