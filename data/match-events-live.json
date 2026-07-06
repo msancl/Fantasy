@@ -63,7 +63,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-06T01:22:19.358599Z"
+    "updatedAt": "2026-07-06T05:41:52.186633Z"
   },
   {
     "matchNumber": 90,
@@ -147,7 +147,7 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-06T01:22:19.358599Z"
+    "updatedAt": "2026-07-06T05:41:52.186633Z"
   },
   {
     "matchNumber": 91,
@@ -225,32 +225,102 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-06T01:22:19.358599Z"
+    "updatedAt": "2026-07-06T05:41:52.186633Z"
   },
   {
     "matchNumber": 92,
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 2,
+      "away": 3
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          802855,
+          344854,
+          532937,
+          387687,
+          356044,
+          532938,
+          602324,
+          1155723,
+          416090,
+          206040,
+          353583
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          130164,
+          743413,
+          392757,
+          413403,
+          632349,
+          567576,
+          357662,
+          503733,
+          581678,
+          433177,
+          132098
+        ],
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": 433177,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": 132098,
+        "minute": 38,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "MEX",
+        "scorerId": 416090,
+        "assistId": null,
+        "minute": 42,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 132098,
+        "assistId": null,
+        "minute": 60,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "MEX",
+        "scorerId": 206040,
+        "assistId": null,
+        "minute": 69,
+        "addedTime": null,
+        "isPenalty": true,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-07-06T01:22:19.358599Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-07-06T05:41:52.186633Z"
   }
 ]

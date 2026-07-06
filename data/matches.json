@@ -2787,7 +2787,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-07-04T04:54:20.803957Z"
+      "24h": "2026-07-04T04:54:20.803957Z",
+      "3d": "2026-07-06T05:41:49.403586Z"
     }
   },
   {
@@ -3010,7 +3011,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cze9xg6480gt"
   },
   {
     "number": 94,
@@ -3036,7 +3037,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c24y8ded80vt"
   },
   {
     "number": 95,
@@ -3147,10 +3148,10 @@
     "stage": "qf",
     "group": null,
     "kickoff": "2026-07-11T21:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W91",
-    "awayPlaceholder": "W92",
+    "homeCountryId": "NOR",
+    "awayCountryId": "ENG",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Miami Stadium",
     "city": "Miami",
     "transfermarktId": 4776706,
