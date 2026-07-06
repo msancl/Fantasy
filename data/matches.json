@@ -2909,7 +2909,10 @@
     "updatedAt": "2026-07-06T15:29:59.262198Z",
     "bbc": "https://www.bbc.com/sport/football/live/cdx7jwdy5ndt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-06T16:37:33.871465Z"
+    }
   },
   {
     "number": 90,
@@ -2937,7 +2940,10 @@
     "updatedAt": "2026-07-06T15:29:59.262198Z",
     "bbc": "https://www.bbc.com/sport/football/live/cx2jw3e9gq0t",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-06T16:37:33.871465Z"
+    }
   },
   {
     "number": 91,
