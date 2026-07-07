@@ -3119,17 +3119,19 @@
     "transfermarktId": 4776699,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776699",
     "score": {
-      "home": null,
-      "away": null,
-      "penaltiesHome": null,
-      "penaltiesAway": null
+      "home": 0,
+      "away": 0,
+      "penaltiesHome": 4,
+      "penaltiesAway": 3
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "SWI",
     "wentToExtraTime": false,
-    "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cx2vrg8gzr1t"
+    "wentToPenalties": true,
+    "updatedAt": "2026-07-07T23:08:50.031023Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cx2vrg8gzr1t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 97,
