@@ -8218,21 +8218,103 @@
     "matchNumber": 95,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          111873,
+          355915,
+          480762,
+          131225,
+          424042,
+          166237,
+          534033,
+          255901,
+          648195,
+          28003,
+          576024
+        ],
+        "substitutes": [
+          54781,
+          474800,
+          402733,
+          486031,
+          406625
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          661455,
+          237425,
+          172623,
+          333004,
+          343974,
+          479682,
+          734542,
+          604008,
+          896616,
+          148455,
+          620164
+        ],
+        "substitutes": [
+          340303,
+          234189,
+          320722,
+          445939
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "EGY",
+        "scorerId": 237425,
+        "assistId": 734542,
+        "minute": 15,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "EGY",
+        "scorerId": 896616,
+        "assistId": 620164,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 355915,
+        "assistId": 28003,
+        "minute": 79,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 28003,
+        "assistId": 402733,
+        "minute": 83,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 648195,
+        "assistId": 406625,
+        "minute": 90,
+        "addedTime": 2,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-07-07T18:08:18.432566Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 96,
