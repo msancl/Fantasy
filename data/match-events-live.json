@@ -2,8 +2,8 @@
   {
     "matchNumber": 94,
     "score": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 3
     },
     "lineups": {
       "home": {
@@ -15,7 +15,44 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "BEL",
+        "scorerId": 435772,
+        "assistId": 422763,
+        "minute": 9,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 467437,
+        "assistId": null,
+        "minute": 31,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 435772,
+        "assistId": 144028,
+        "minute": 33,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 137576,
+        "assistId": 435772,
+        "minute": 57,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -23,6 +60,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-06T23:53:43.295648Z"
+    "updatedAt": "2026-07-07T01:48:52.220579Z"
   }
 ]
