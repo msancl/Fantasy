@@ -2815,7 +2815,7 @@
     },
     "status": "finished",
     "winnerCountryId": "ARG",
-    "wentToExtraTime": false,
+    "wentToExtraTime": true,
     "wentToPenalties": false,
     "updatedAt": "2026-07-04T02:37:02.246266Z",
     "bbc": "https://www.bbc.com/sport/football/live/cz75y0v8qrjt",

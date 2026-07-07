@@ -7522,12 +7522,12 @@
       },
       {
         "countryId": "ARG",
-        "scorerId": 355915,
+        "scorerId": 349570,
         "assistId": null,
         "minute": 111,
         "addedTime": null,
         "isPenalty": false,
-        "isOwnGoal": false
+        "isOwnGoal": true
       }
     ],
     "cleanSheets": {
@@ -7535,7 +7535,7 @@
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": "2026-07-04T02:37:02.246266Z",
+    "updatedAt": "2026-07-07T13:04:36.535401Z",
     "lineupSource": "transfermarkt"
   },
   {
