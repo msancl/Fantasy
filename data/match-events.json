@@ -8115,21 +8115,104 @@
     "matchNumber": 94,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          500309,
+          578539,
+          145466,
+          349701,
+          361104,
+          985806,
+          332705,
+          332697,
+          467437,
+          315779,
+          503770
+        ],
+        "substitutes": [
+          734761,
+          504215,
+          993063,
+          627207,
+          315291
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          108390,
+          548254,
+          236168,
+          429915,
+          262226,
+          422763,
+          485706,
+          249565,
+          435772,
+          144028,
+          303259
+        ],
+        "substitutes": [
+          35047,
+          381950,
+          137576,
+          486049,
+          96341
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "BEL",
+        "scorerId": 435772,
+        "assistId": 422763,
+        "minute": 9,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "USA",
+        "scorerId": 467437,
+        "assistId": null,
+        "minute": 31,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 435772,
+        "assistId": 144028,
+        "minute": 33,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 137576,
+        "assistId": 435772,
+        "minute": 57,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "BEL",
+        "scorerId": 96341,
+        "assistId": 137576,
+        "minute": 90,
+        "addedTime": 3,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-07-07T11:09:15.244709Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 95,

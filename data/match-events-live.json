@@ -1,98 +1,54 @@
 [
   {
-    "matchNumber": 94,
+    "matchNumber": 95,
     "score": {
-      "home": 1,
-      "away": 4
+      "home": null,
+      "away": null
     },
     "lineups": {
       "home": {
-        "starters": [
-          500309,
-          349701,
-          145466,
-          578539,
-          985806,
-          467437,
-          332705,
-          332697,
-          315779,
-          503770,
-          361104
-        ],
+        "starters": [],
         "substitutes": []
       },
       "away": {
-        "starters": [
-          108390,
-          429915,
-          236168,
-          548254,
-          262226,
-          422763,
-          485706,
-          144028,
-          249565,
-          303259,
-          435772
-        ],
+        "starters": [],
         "substitutes": []
       }
     },
-    "goals": [
-      {
-        "countryId": "BEL",
-        "scorerId": 435772,
-        "assistId": 422763,
-        "minute": 9,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "USA",
-        "scorerId": 467437,
-        "assistId": null,
-        "minute": 31,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BEL",
-        "scorerId": 435772,
-        "assistId": 144028,
-        "minute": 33,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BEL",
-        "scorerId": 137576,
-        "assistId": 435772,
-        "minute": 57,
-        "addedTime": null,
-        "isPenalty": false,
-        "isOwnGoal": false
-      },
-      {
-        "countryId": "BEL",
-        "scorerId": 96341,
-        "assistId": 137576,
-        "minute": 90,
-        "addedTime": 3,
-        "isPenalty": false,
-        "isOwnGoal": false
-      }
-    ],
+    "goals": [],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": "bbc",
-    "updatedAt": "2026-07-07T08:58:26.657011Z"
+    "lineupSource": null,
+    "updatedAt": "2026-07-07T11:09:12.982519Z"
+  },
+  {
+    "matchNumber": 96,
+    "score": {
+      "home": null,
+      "away": null
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-07T11:09:12.982519Z"
   }
 ]
