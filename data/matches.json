@@ -3091,7 +3091,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cdr4m2122lgt"
   },
   {
     "number": 96,
@@ -3117,7 +3117,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/cx2vrg8gzr1t"
   },
   {
     "number": 97,
@@ -3150,10 +3150,10 @@
     "stage": "qf",
     "group": null,
     "kickoff": "2026-07-10T19:00:00Z",
-    "homeCountryId": null,
-    "awayCountryId": null,
-    "homePlaceholder": "W93",
-    "awayPlaceholder": "W94",
+    "homeCountryId": "ESP",
+    "awayCountryId": "BEL",
+    "homePlaceholder": null,
+    "awayPlaceholder": null,
     "venue": "Los Angeles Stadium",
     "city": "Los Angeles",
     "transfermarktId": 4776704,
