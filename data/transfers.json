@@ -198,5 +198,75 @@
     "playerOutId": 228645,
     "effectiveRound": "R16",
     "isFreeTransfer": true
+  },
+  {
+    "id": "universal-players-01",
+    "date": "2026-07-08T08:07:00Z",
+    "fantasyTeamId": "universal-players",
+    "teamTransferNumber": 1,
+    "playerInId": 553875,
+    "playerOutId": 258004,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "universal-players-02",
+    "date": "2026-07-08T08:07:00Z",
+    "fantasyTeamId": "universal-players",
+    "teamTransferNumber": 2,
+    "playerInId": 670103,
+    "playerOutId": 580195,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "universal-players-03",
+    "date": "2026-07-08T08:07:00Z",
+    "fantasyTeamId": "universal-players",
+    "teamTransferNumber": 3,
+    "playerInId": 429915,
+    "playerOutId": 598577,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "lethal-weapon-athletic-02",
+    "date": "2026-07-08T09:19:00Z",
+    "fantasyTeamId": "lethal-weapon-athletic",
+    "teamTransferNumber": 2,
+    "playerInId": 435772,
+    "playerOutId": 8198,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "lethal-weapon-athletic-03",
+    "date": "2026-07-08T09:19:00Z",
+    "fantasyTeamId": "lethal-weapon-athletic",
+    "teamTransferNumber": 3,
+    "playerInId": 144028,
+    "playerOutId": 240306,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "fc-mon-jardin-01",
+    "date": "2026-07-08T09:56:00Z",
+    "fantasyTeamId": "fc-mon-jardin",
+    "teamTransferNumber": 1,
+    "playerInId": 413403,
+    "playerOutId": 196357,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "fc-mon-jardin-02",
+    "date": "2026-07-08T09:56:00Z",
+    "fantasyTeamId": "fc-mon-jardin",
+    "teamTransferNumber": 2,
+    "playerInId": 338424,
+    "playerOutId": 598577,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
   }
 ]
