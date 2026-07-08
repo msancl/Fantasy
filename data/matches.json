@@ -2601,7 +2601,8 @@
     "transfermarktImported": true,
     "rechecks": {
       "24h": "2026-07-02T04:16:12.032044Z",
-      "3d": "2026-07-04T01:17:02.629174Z"
+      "3d": "2026-07-04T01:17:02.629174Z",
+      "7d": "2026-07-08T01:08:00.105537Z"
     }
   },
   {
@@ -3075,7 +3076,10 @@
     "updatedAt": "2026-07-07T11:09:15.244709Z",
     "bbc": "https://www.bbc.com/sport/football/live/c24y8ded80vt",
     "bbcAssistsImported": true,
-    "transfermarktImported": true
+    "transfermarktImported": true,
+    "rechecks": {
+      "24h": "2026-07-08T01:08:00.105537Z"
+    }
   },
   {
     "number": 95,
