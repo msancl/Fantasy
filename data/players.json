@@ -21679,9 +21679,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 5,
@@ -23515,9 +23515,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 5,
@@ -27299,9 +27299,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 7,
+          "selectedBy": 6,
           "maximumSelections": 2,
-          "selectionPercentage": 22.58
+          "selectionPercentage": 19.35
         },
         "totals": {
           "matchesPlayed": 5,
@@ -85651,9 +85651,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 3,
@@ -99242,9 +99242,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 5,
+          "selectedBy": 4,
           "maximumSelections": 2,
-          "selectionPercentage": 16.13
+          "selectionPercentage": 12.9
         },
         "totals": {
           "matchesPlayed": 4,
@@ -102307,9 +102307,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 10,
+          "selectedBy": 9,
           "maximumSelections": 2,
-          "selectionPercentage": 32.26
+          "selectionPercentage": 29.03
         },
         "totals": {
           "matchesPlayed": 5,

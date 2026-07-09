@@ -358,5 +358,35 @@
     "playerOutId": 17259,
     "effectiveRound": "QF",
     "isFreeTransfer": true
+  },
+  {
+    "id": "nikhau-fc-01",
+    "date": "2026-07-09T16:07:00Z",
+    "fantasyTeamId": "nikhau-fc",
+    "teamTransferNumber": 1,
+    "playerInId": 236168,
+    "playerOutId": 139208,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "nikhau-fc-02",
+    "date": "2026-07-09T16:07:00Z",
+    "fantasyTeamId": "nikhau-fc",
+    "teamTransferNumber": 2,
+    "playerInId": 249565,
+    "playerOutId": 240306,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "nikhau-fc-03",
+    "date": "2026-07-09T16:07:00Z",
+    "fantasyTeamId": "nikhau-fc",
+    "teamTransferNumber": 3,
+    "playerInId": 370789,
+    "playerOutId": 435338,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
   }
 ]
