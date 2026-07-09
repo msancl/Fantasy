@@ -5941,9 +5941,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 4,
+          "selectedBy": 3,
           "maximumSelections": 2,
-          "selectionPercentage": 12.9
+          "selectionPercentage": 9.68
         },
         "totals": {
           "matchesPlayed": 4,
@@ -9210,9 +9210,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -14524,9 +14524,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -22086,10 +22086,10 @@
         "dreamTeamName": "Nathan Ngoy",
         "price": null,
         "availability": {
-          "status": "available",
-          "selectedBy": 1,
+          "status": "unavailable",
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 3,
@@ -23821,9 +23821,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 5,
@@ -28523,9 +28523,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 4,
+          "selectedBy": 3,
           "maximumSelections": 2,
-          "selectionPercentage": 12.9
+          "selectionPercentage": 9.68
         },
         "totals": {
           "matchesPlayed": 2,
@@ -28727,9 +28727,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 10,
+          "selectedBy": 9,
           "maximumSelections": 2,
-          "selectionPercentage": 32.26
+          "selectionPercentage": 29.03
         },
         "totals": {
           "matchesPlayed": 5,
@@ -36698,9 +36698,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 3,
+          "selectedBy": 2,
           "maximumSelections": 2,
-          "selectionPercentage": 9.68
+          "selectionPercentage": 6.45
         },
         "totals": {
           "matchesPlayed": 5,
@@ -56730,9 +56730,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 5,
@@ -86773,9 +86773,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -99242,9 +99242,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 7,
+          "selectedBy": 6,
           "maximumSelections": 2,
-          "selectionPercentage": 22.58
+          "selectionPercentage": 19.35
         },
         "totals": {
           "matchesPlayed": 4,
@@ -102307,9 +102307,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 11,
+          "selectedBy": 10,
           "maximumSelections": 2,
-          "selectionPercentage": 35.48
+          "selectionPercentage": 32.26
         },
         "totals": {
           "matchesPlayed": 5,

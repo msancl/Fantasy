@@ -268,5 +268,65 @@
     "playerOutId": 598577,
     "effectiveRound": "QF",
     "isFreeTransfer": true
+  },
+  {
+    "id": "alex-united-01",
+    "date": "2026-07-09T15:42:00Z",
+    "fantasyTeamId": "alex-united",
+    "teamTransferNumber": 1,
+    "playerInId": 962110,
+    "playerOutId": 139208,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "alex-united-02",
+    "date": "2026-07-09T15:42:00Z",
+    "fantasyTeamId": "alex-united",
+    "teamTransferNumber": 2,
+    "playerInId": 648195,
+    "playerOutId": 240306,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "alex-united-03",
+    "date": "2026-07-09T15:42:00Z",
+    "fantasyTeamId": "alex-united",
+    "teamTransferNumber": 3,
+    "playerInId": 96341,
+    "playerOutId": 371998,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "fc-buttercup-01",
+    "date": "2026-07-09T16:06:00Z",
+    "fantasyTeamId": "fc-buttercup",
+    "teamTransferNumber": 1,
+    "playerInId": 548254,
+    "playerOutId": 161056,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "fc-buttercup-02",
+    "date": "2026-07-09T16:06:00Z",
+    "fantasyTeamId": "fc-buttercup",
+    "teamTransferNumber": 2,
+    "playerInId": 503733,
+    "playerOutId": 411295,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "fc-buttercup-03",
+    "date": "2026-07-09T16:06:00Z",
+    "fantasyTeamId": "fc-buttercup",
+    "teamTransferNumber": 3,
+    "playerInId": 316264,
+    "playerOutId": 480692,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
   }
 ]
