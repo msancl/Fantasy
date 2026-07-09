@@ -8392,21 +8392,90 @@
     "matchNumber": 97,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          182906,
+          495666,
+          344695,
+          126664,
+          411975,
+          624690,
+          182913,
+          566723,
+          914562,
+          342229,
+          288230
+        ],
+        "substitutes": [
+          620322,
+          810092,
+          708265,
+          420002
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          207834,
+          272622,
+          485584,
+          340456,
+          398073,
+          593482,
+          1097139,
+          901019,
+          654982,
+          743384,
+          314678
+        ],
+        "substitutes": [
+          820474,
+          287579,
+          851220,
+          1151929,
+          598506
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "FRA",
+        "scorerId": 342229,
+        "assistId": 914562,
+        "minute": 60,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 288230,
+        "assistId": 342229,
+        "minute": 66,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        182906,
+        495666,
+        344695,
+        126664,
+        411975,
+        620322
+      ],
       "awayPlayerIds": []
     },
-    "penaltiesSaved": [],
-    "updatedAt": null
+    "penaltiesSaved": [
+      {
+        "countryId": "MOR",
+        "goalkeeperId": 207834,
+        "minute": 28,
+        "addedTime": null
+      }
+    ],
+    "updatedAt": "2026-07-09T22:57:10.828027Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 98,
