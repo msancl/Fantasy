@@ -328,5 +328,35 @@
     "playerOutId": 480692,
     "effectiveRound": "QF",
     "isFreeTransfer": true
+  },
+  {
+    "id": "fc-mon-jardin-03",
+    "date": "2026-07-08T14:32:00Z",
+    "fantasyTeamId": "fc-mon-jardin",
+    "teamTransferNumber": 3,
+    "playerInId": 131225,
+    "playerOutId": 139208,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "schtumpik-rovers-03",
+    "date": "2026-07-08T19:38:00Z",
+    "fantasyTeamId": "schtumpik-rovers",
+    "teamTransferNumber": 3,
+    "playerInId": 258923,
+    "playerOutId": 371998,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
+  },
+  {
+    "id": "u2-united-03",
+    "date": "2026-07-08T19:38:00Z",
+    "fantasyTeamId": "u2-united",
+    "teamTransferNumber": 3,
+    "playerInId": 207834,
+    "playerOutId": 17259,
+    "effectiveRound": "QF",
+    "isFreeTransfer": true
   }
 ]

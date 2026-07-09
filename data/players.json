@@ -5431,9 +5431,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 1,
+          "selectedBy": 0,
           "maximumSelections": 2,
-          "selectionPercentage": 3.23
+          "selectionPercentage": 0.0
         },
         "totals": {
           "matchesPlayed": 4,
@@ -10026,9 +10026,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -14320,9 +14320,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 4,
@@ -28727,9 +28727,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 9,
+          "selectedBy": 8,
           "maximumSelections": 2,
-          "selectionPercentage": 29.03
+          "selectionPercentage": 25.81
         },
         "totals": {
           "matchesPlayed": 5,
@@ -79929,9 +79929,9 @@
         "price": null,
         "availability": {
           "status": "available",
-          "selectedBy": 0,
+          "selectedBy": 1,
           "maximumSelections": 2,
-          "selectionPercentage": 0.0
+          "selectionPercentage": 3.23
         },
         "totals": {
           "matchesPlayed": 5,
@@ -99242,9 +99242,9 @@
         "price": null,
         "availability": {
           "status": "unavailable",
-          "selectedBy": 6,
+          "selectedBy": 5,
           "maximumSelections": 2,
-          "selectionPercentage": 19.35
+          "selectionPercentage": 16.13
         },
         "totals": {
           "matchesPlayed": 4,
