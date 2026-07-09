@@ -2,27 +2,76 @@
   {
     "matchNumber": 97,
     "score": {
-      "home": 0,
+      "home": 2,
       "away": 0
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          182906,
+          126664,
+          495666,
+          344695,
+          411975,
+          182913,
+          624690,
+          914562,
+          566723,
+          288230,
+          342229
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          207834,
+          485584,
+          340456,
+          272622,
+          398073,
+          901019,
+          1097139,
+          743384,
+          593482,
+          314678,
+          654982
+        ],
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "FRA",
+        "scorerId": 342229,
+        "assistId": 914562,
+        "minute": 60,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "FRA",
+        "scorerId": 288230,
+        "assistId": 342229,
+        "minute": 66,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
-      "homePlayerIds": [],
+      "homePlayerIds": [
+        182906,
+        126664,
+        495666,
+        344695,
+        411975
+      ],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-07-09T20:56:22.703079Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-07-09T22:07:52.619417Z"
   }
 ]
