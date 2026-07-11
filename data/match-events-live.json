@@ -75,13 +75,13 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-11T21:06:12.409502Z"
+    "updatedAt": "2026-07-11T22:02:07.846314Z"
   },
   {
     "matchNumber": 99,
     "score": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "lineups": {
       "home": {
@@ -93,7 +93,26 @@
         "substitutes": []
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "NOR",
+        "scorerId": 670103,
+        "assistId": 316264,
+        "minute": 36,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": 503733,
+        "minute": 45,
+        "addedTime": 2,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
@@ -101,6 +120,6 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": null,
-    "updatedAt": "2026-07-11T21:06:12.409502Z"
+    "updatedAt": "2026-07-11T22:02:07.846314Z"
   }
 ]
