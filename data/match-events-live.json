@@ -75,21 +75,45 @@
     "penaltiesSaved": [],
     "source": "bbc-live",
     "lineupSource": "bbc",
-    "updatedAt": "2026-07-11T22:58:19.772516Z"
+    "updatedAt": "2026-07-11T23:54:58.083196Z"
   },
   {
     "matchNumber": 99,
     "score": {
       "home": 1,
-      "away": 1
+      "away": 2
     },
     "lineups": {
       "home": {
-        "starters": [],
+        "starters": [
+          73517,
+          661427,
+          464469,
+          328658,
+          370789,
+          308439,
+          333014,
+          316264,
+          670103,
+          418560,
+          238407
+        ],
         "substitutes": []
       },
       "away": {
-        "starters": [],
+        "starters": [
+          130164,
+          743413,
+          392757,
+          186590,
+          413403,
+          567576,
+          357662,
+          503733,
+          581678,
+          503987,
+          132098
+        ],
         "substitutes": []
       }
     },
@@ -111,6 +135,15 @@
         "addedTime": 2,
         "isPenalty": false,
         "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 581678,
+        "assistId": null,
+        "minute": 93,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
       }
     ],
     "cleanSheets": {
@@ -119,7 +152,7 @@
     },
     "penaltiesSaved": [],
     "source": "bbc-live",
-    "lineupSource": null,
-    "updatedAt": "2026-07-11T22:58:19.772516Z"
+    "lineupSource": "bbc",
+    "updatedAt": "2026-07-11T23:54:58.083196Z"
   }
 ]
