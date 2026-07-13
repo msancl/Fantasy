@@ -8652,21 +8652,97 @@
     "matchNumber": 100,
     "lineups": {
       "home": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          111873,
+          355915,
+          480762,
+          131225,
+          424042,
+          166237,
+          648195,
+          255901,
+          534033,
+          28003,
+          576024
+        ],
+        "substitutes": [
+          54781,
+          402733,
+          576028,
+          486031,
+          844797,
+          406625
+        ]
       },
       "away": {
-        "starters": [],
-        "substitutes": []
+        "starters": [
+          257814,
+          192635,
+          284730,
+          86784,
+          111455,
+          334526,
+          212723,
+          148252,
+          507341,
+          365108,
+          237662
+        ],
+        "substitutes": [
+          298583,
+          298603,
+          168989,
+          608172,
+          345886,
+          548729
+        ]
       }
     },
-    "goals": [],
+    "goals": [
+      {
+        "countryId": "ARG",
+        "scorerId": 534033,
+        "assistId": 28003,
+        "minute": 10,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "SWI",
+        "scorerId": 365108,
+        "assistId": 86784,
+        "minute": 67,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 576024,
+        "assistId": 844797,
+        "minute": 112,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ARG",
+        "scorerId": 406625,
+        "assistId": null,
+        "minute": 120,
+        "addedTime": 1,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
     "cleanSheets": {
       "homePlayerIds": [],
       "awayPlayerIds": []
     },
     "penaltiesSaved": [],
-    "updatedAt": null
+    "updatedAt": "2026-07-13T13:18:19.582349Z",
+    "lineupSource": "transfermarkt"
   },
   {
     "matchNumber": 101,
