@@ -3208,17 +3208,19 @@
     "transfermarktId": 4776704,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776704",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 2,
+      "away": 1,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "ESP",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cjwgg64ennqt"
+    "updatedAt": "2026-07-13T12:53:39.719174Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cjwgg64ennqt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 99,
@@ -3234,17 +3236,19 @@
     "transfermarktId": 4776706,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776706",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 1,
+      "away": 2,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "ENG",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cgl33l55100t"
+    "updatedAt": "2026-07-13T12:53:39.719174Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cgl33l55100t",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 100,
