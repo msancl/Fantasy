@@ -3306,17 +3306,19 @@
     "transfermarktId": 4776707,
     "transfermarkt": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4776707",
     "score": {
-      "home": null,
-      "away": null,
+      "home": 0,
+      "away": 2,
       "penaltiesHome": null,
       "penaltiesAway": null
     },
-    "status": "scheduled",
-    "winnerCountryId": null,
+    "status": "finished",
+    "winnerCountryId": "ESP",
     "wentToExtraTime": false,
     "wentToPenalties": false,
-    "updatedAt": null,
-    "bbc": "https://www.bbc.com/sport/football/live/cj3gdp4d3nnt"
+    "updatedAt": "2026-07-14T21:29:02.366088Z",
+    "bbc": "https://www.bbc.com/sport/football/live/cj3gdp4d3nnt",
+    "bbcAssistsImported": true,
+    "transfermarktImported": true
   },
   {
     "number": 102,
