@@ -3290,7 +3290,8 @@
     "bbcAssistsImported": true,
     "transfermarktImported": true,
     "rechecks": {
-      "24h": "2026-07-13T15:24:17.895366Z"
+      "24h": "2026-07-13T15:24:17.895366Z",
+      "3d": "2026-07-15T03:34:02.205611Z"
     }
   },
   {
@@ -3345,7 +3346,7 @@
     "wentToExtraTime": false,
     "wentToPenalties": false,
     "updatedAt": null,
-    "bbc": null
+    "bbc": "https://www.bbc.com/sport/football/live/c77yp11e4r6t"
   },
   {
     "number": 103,
