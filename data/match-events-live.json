@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "matchNumber": 103,
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "lineups": {
+      "home": {
+        "starters": [],
+        "substitutes": []
+      },
+      "away": {
+        "starters": [],
+        "substitutes": []
+      }
+    },
+    "goals": [
+      {
+        "countryId": "ENG",
+        "scorerId": 357662,
+        "assistId": null,
+        "minute": 3,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      },
+      {
+        "countryId": "ENG",
+        "scorerId": 413403,
+        "assistId": null,
+        "minute": 18,
+        "addedTime": null,
+        "isPenalty": false,
+        "isOwnGoal": false
+      }
+    ],
+    "cleanSheets": {
+      "homePlayerIds": [],
+      "awayPlayerIds": []
+    },
+    "penaltiesSaved": [],
+    "source": "bbc-live",
+    "lineupSource": null,
+    "updatedAt": "2026-07-18T21:25:12.926348Z"
+  }
+]
