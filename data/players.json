@@ -7991,13 +7991,13 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": null,
-          "penalties": null,
-          "goals": null,
-          "assists": null,
-          "cleanSheets": null,
-          "penaltiesSaved": null,
-          "points": null
+          "matchesPlayed": 1,
+          "penalties": 0,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 0,
+          "penaltiesSaved": 0,
+          "points": 0
         },
         "rounds": {
           "J1": {
@@ -8064,13 +8064,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 13
@@ -8399,7 +8399,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -8472,13 +8472,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 25
@@ -8501,13 +8501,13 @@
           "selectionPercentage": 3.23
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
-          "goals": 0,
+          "goals": 1,
           "assists": 0,
           "cleanSheets": 2,
           "penaltiesSaved": 0,
-          "points": 4
+          "points": 11
         },
         "rounds": {
           "J1": {
@@ -8574,13 +8574,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 1,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 7
           }
         },
         "shirtNumber": 2
@@ -8603,7 +8603,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 2,
+          "matchesPlayed": 3,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -8676,13 +8676,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 26
@@ -8807,7 +8807,7 @@
           "selectionPercentage": 6.45
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -8880,13 +8880,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 6
@@ -9011,7 +9011,7 @@
           "selectionPercentage": 3.23
         },
         "totals": {
-          "matchesPlayed": 4,
+          "matchesPlayed": 5,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -9084,13 +9084,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 24
@@ -9317,13 +9317,13 @@
           "selectionPercentage": 9.68
         },
         "totals": {
-          "matchesPlayed": 6,
-          "penalties": 0,
-          "goals": 0,
+          "matchesPlayed": 7,
+          "penalties": 1,
+          "goals": 2,
           "assists": 3,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 3
+          "points": 16
         },
         "rounds": {
           "J1": {
@@ -9390,13 +9390,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 1,
+            "goals": 2,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 13
           }
         },
         "shirtNumber": 7
@@ -9419,13 +9419,13 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 6,
+          "matchesPlayed": 7,
           "penalties": 0,
-          "goals": 0,
-          "assists": 1,
+          "goals": 1,
+          "assists": 2,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 1
+          "points": 7
         },
         "rounds": {
           "J1": {
@@ -9492,13 +9492,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 1,
+            "assists": 1,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 6
           }
         },
         "shirtNumber": 4
@@ -9521,13 +9521,13 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 4,
+          "matchesPlayed": 5,
           "penalties": 0,
           "goals": 0,
-          "assists": 0,
+          "assists": 1,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 0
+          "points": 1
         },
         "rounds": {
           "J1": {
@@ -9594,13 +9594,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 1,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 1
           }
         },
         "shirtNumber": 21
@@ -9623,7 +9623,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
           "assists": 1,
@@ -9696,13 +9696,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 8
@@ -9827,13 +9827,13 @@
           "selectionPercentage": 9.68
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
-          "goals": 6,
+          "goals": 7,
           "assists": 1,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 31
+          "points": 36
         },
         "rounds": {
           "J1": {
@@ -9900,13 +9900,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 1,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 5
           }
         },
         "shirtNumber": 10
@@ -10031,13 +10031,13 @@
           "selectionPercentage": 3.23
         },
         "totals": {
-          "matchesPlayed": 5,
+          "matchesPlayed": 6,
           "penalties": 0,
           "goals": 1,
-          "assists": 0,
+          "assists": 1,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 5
+          "points": 6
         },
         "rounds": {
           "J1": {
@@ -10104,13 +10104,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 1,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 1
           }
         },
         "shirtNumber": 11
@@ -10133,7 +10133,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 6,
+          "matchesPlayed": 7,
           "penalties": 0,
           "goals": 0,
           "assists": 1,
@@ -10206,13 +10206,13 @@
             "points": 1
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 17
@@ -10439,7 +10439,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -10512,13 +10512,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 22
@@ -10541,7 +10541,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -10614,13 +10614,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 19
@@ -61233,7 +61233,7 @@
           "selectionPercentage": 6.45
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -61306,13 +61306,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 16
@@ -61437,13 +61437,13 @@
           "selectionPercentage": 3.23
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
-          "assists": 0,
+          "assists": 1,
           "cleanSheets": 4,
           "penaltiesSaved": 0,
-          "points": 8
+          "points": 9
         },
         "rounds": {
           "J1": {
@@ -61510,13 +61510,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 1,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 1
           }
         },
         "shirtNumber": 4
@@ -61539,7 +61539,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -61612,13 +61612,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 15
@@ -61641,7 +61641,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -61714,13 +61714,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 5
@@ -61743,7 +61743,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 5,
+          "matchesPlayed": 6,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -61816,13 +61816,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 3
@@ -61947,7 +61947,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 4,
+          "matchesPlayed": 5,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -62020,13 +62020,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 2
@@ -62049,7 +62049,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 2,
+          "matchesPlayed": 3,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -62122,13 +62122,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 26
@@ -62151,7 +62151,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 4,
+          "matchesPlayed": 5,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -62224,13 +62224,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 19
@@ -62355,7 +62355,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 6,
+          "matchesPlayed": 7,
           "penalties": 0,
           "goals": 0,
           "assists": 1,
@@ -62428,13 +62428,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 14
@@ -62559,13 +62559,13 @@
           "selectionPercentage": 6.45
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
-          "goals": 2,
+          "goals": 3,
           "assists": 1,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 11
+          "points": 16
         },
         "rounds": {
           "J1": {
@@ -62632,13 +62632,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 1,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 5
           }
         },
         "shirtNumber": 12
@@ -62661,7 +62661,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 1,
           "assists": 1,
@@ -62734,13 +62734,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 20
@@ -62967,13 +62967,13 @@
           "selectionPercentage": 38.71
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
           "goals": 0,
-          "assists": 5,
+          "assists": 7,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 5
+          "points": 7
         },
         "rounds": {
           "J1": {
@@ -63040,13 +63040,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 2,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 2
           }
         },
         "shirtNumber": 11
@@ -63171,13 +63171,13 @@
           "selectionPercentage": 16.13
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 0,
-          "goals": 5,
+          "goals": 6,
           "assists": 2,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 27
+          "points": 32
         },
         "rounds": {
           "J1": {
@@ -63244,13 +63244,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 1,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 5
           }
         },
         "shirtNumber": 7
@@ -63273,7 +63273,7 @@
           "selectionPercentage": 3.23
         },
         "totals": {
-          "matchesPlayed": 6,
+          "matchesPlayed": 7,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -63346,13 +63346,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 24
@@ -63375,7 +63375,7 @@
           "selectionPercentage": 0.0
         },
         "totals": {
-          "matchesPlayed": 1,
+          "matchesPlayed": 2,
           "penalties": 0,
           "goals": 0,
           "assists": 0,
@@ -63448,13 +63448,13 @@
             "points": null
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 0,
+            "assists": 0,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 0
           }
         },
         "shirtNumber": 18
@@ -63579,13 +63579,13 @@
           "selectionPercentage": 64.52
         },
         "totals": {
-          "matchesPlayed": 7,
+          "matchesPlayed": 8,
           "penalties": 1,
-          "goals": 7,
-          "assists": 3,
+          "goals": 9,
+          "assists": 4,
           "cleanSheets": 0,
           "penaltiesSaved": 0,
-          "points": 27
+          "points": 34
         },
         "rounds": {
           "J1": {
@@ -63652,13 +63652,13 @@
             "points": 0
           },
           "F": {
-            "matchesPlayed": null,
-            "penalties": null,
-            "goals": null,
-            "assists": null,
-            "cleanSheets": null,
-            "penaltiesSaved": null,
-            "points": null
+            "matchesPlayed": 1,
+            "penalties": 0,
+            "goals": 2,
+            "assists": 1,
+            "cleanSheets": 0,
+            "penaltiesSaved": 0,
+            "points": 7
           }
         },
         "shirtNumber": 10
